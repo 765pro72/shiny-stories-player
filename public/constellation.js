@@ -26,10 +26,19 @@
 
   // State
   let W = window.innerWidth, H = window.innerHeight, DPR = Math.min(window.devicePixelRatio || 1, isJoyTrans ? 1.25 : 2);
+  const getProducerDisplayName = () => {
+    try {
+      const fromDesk = window.desktop?.getState?.()?.['shiny.producerName'];
+      const v = String(localStorage.getItem('shiny.producerName') || fromDesk || '').trim();
+      return v || '制作人';
+    } catch { return '制作人'; }
+  };
+
   let catalog = [];
   let catalogByKey = new Map();
   let cardArtMap = {};
   let idolCoverMap = new Map();
+  let storySnippets = {};
   let cIndex = { extra: {}, pairs: {} };
   let dateByGroup = new Map();
   let dateByTitle = new Map();
@@ -128,20 +137,22 @@
     return { x: rx, y: ry };
   }
 
-  // Load real 283 data: units, stories, portraits, script-verified index, chronological dates, and card art
+  // Load real 283 data: units, stories, portraits, script-verified index, chronological dates, card art, and authentic story snippets
   async function initData() {
-    const [groups, cat, portRows, idxData, refData, artData] = await Promise.all([
+    const [groups, cat, portRows, idxData, refData, artData, snipData] = await Promise.all([
       fetch('/guide-groups.json').then(r => r.json()),
       fetch('/data/catalog.json').then(r => r.json()),
       fetch('/portraits.json').then(r => r.json()).catch(() => []),
       fetch('/constellation-index.json').then(r => r.json()).catch(() => ({ extra: {}, pairs: {} })),
       fetch('/guide-reference.json').then(r => r.json()).catch(() => null),
-      fetch('/data/card-art.json').then(r => r.json()).catch(() => ({}))
+      fetch('/data/card-art.json').then(r => r.json()).catch(() => ({})),
+      fetch('/story-snippets.json').then(r => r.json()).catch(() => ({}))
     ]);
 
     catalog = Array.isArray(cat) ? cat : [];
     catalogByKey = new Map(catalog.map(s => [s.key, s]));
     cardArtMap = artData && typeof artData === 'object' ? artData : {};
+    storySnippets = snipData && typeof snipData === 'object' ? snipData : {};
     for (const s of catalog) {
       if (!s.idol) continue;
       const a = cardArtMap[s.key];
@@ -215,10 +226,14 @@
       return out;
     };
 
+    const pDisplayName = getProducerDisplayName();
+    const pChip = document.querySelector('.cn-motif-chip[data-node="制作人"]');
+    if (pChip) pChip.textContent = `👑 ${pDisplayName} (全员)`;
+
     const CORE_FIGURES = [
       {
-        id: '制作人', name: '制作人', unitName: '283 核心恒星 · PRODUCER', color: '#facc15',
-        isCore: true, isCenter: true, bx: 0, by: 0, radius: 30, emblem: '283P',
+        id: '制作人', name: '制作人', displayName: pDisplayName, unitName: '283 核心恒星 · PRODUCER', color: '#facc15',
+        isCore: true, isCenter: true, bx: 0, by: 0, radius: 30, emblem: pDisplayName === '制作人' ? '283P' : pDisplayName.slice(0, 4),
         bio: '位于 283 事务所星系正中央的核心人物。陪伴 28 位偶像走过 W.I.N.G.、G.R.A.D.、感谢祭、L.P. 与 S.T.E.P. 的每一步，与天井社长、七草叶月共同维系事务所的现在与未来。',
         terms: ['制作人', 'プロデューサー', 'w.i.n.g', 'g.r.a.d', '感谢祭', 's.t.e.p'],
         bonds: ['七草叶月', '天井努 社长', '八云奈美', '路加前经纪人', '七草父',
@@ -272,6 +287,7 @@
       const coreNode = {
         id: cf.id,
         name: cf.name,
+        displayName: cf.displayName || cf.name,
         unitIdx: -2,
         unitName: cf.unitName,
         color: cf.color,
@@ -569,9 +585,14 @@
     return raw;
   }
 
+  function isCollabCharacter(s) {
+    return /MEMちょ|有馬かな|有馬加奈|露比|ルビー|黒川あかね|黑川茜/i.test(`${s?.idol || ''} ${s?.group || ''} ${s?.title || ''}`);
+  }
+
   function storyPriority(s) {
     if (!s) return 0;
     let sc = 0;
+    if (isCollabCharacter(s)) sc -= 300;
     const rawCode = isRawCodeTitle(s.title);
     if (!rawCode) sc += 100;
     if (s.category === '活动剧情' || s.idol === '283活动剧情') sc += 90;
@@ -583,6 +604,7 @@
 
   function getStoryDate(s) {
     if (!s) return '';
+    if (isCollabCharacter(s)) return '2023/07/10';
     if (s.group && dateByGroup.has(s.group)) return dateByGroup.get(s.group);
     if (s.originalGroup && dateByGroup.has(s.originalGroup)) return dateByGroup.get(s.originalGroup);
     if (s.title && dateByTitle.has(s.title)) return dateByTitle.get(s.title);
@@ -601,6 +623,10 @@
 
   function sortStoryList(list) {
     return [...list].sort((a, b) => {
+      // Always sink collab characters (我推的孩子 etc.) to the very bottom
+      const colA = isCollabCharacter(a) ? 1 : 0;
+      const colB = isCollabCharacter(b) ? 1 : 0;
+      if (colA !== colB) return colA - colB;
       // Always sink raw unnamed Morning/Audition micro-dialogues to bottom
       const rawA = isRawCodeTitle(a?.title) ? 1 : 0;
       const rawB = isRawCodeTitle(b?.title) ? 1 : 0;
@@ -759,7 +785,7 @@
       avatar.textContent = node.emblem || node.name.slice(0, 1);
     }
     document.getElementById('cnInspSub').textContent = `${node.unitName}`;
-    document.getElementById('cnInspTitle').textContent = node.name;
+    document.getElementById('cnInspTitle').textContent = node.displayName || node.name;
 
     const watched = getWatchedSet();
     const doneCount = node.stories.filter(s => watched.has(s.key)).length;
@@ -890,7 +916,9 @@
         const dt = getStoryDate(s);
         const cov = getEventCover(s.group, s);
         const covHtml = cov ? `<div class="cn-story-cover"><img src="${cov}" alt="" loading="lazy" onerror="this.parentElement.remove()"></div>` : '';
-        a.innerHTML = `${covHtml}<strong>${watched.has(s.key) ? '✓ ' : ''}${niceTitle}</strong><small>${dt ? dt + ' · ' : ''}${s.idol || ''} · ${s.category || ''}${grpLabel ? ' · ' + grpLabel : ''}</small>`;
+        const snip = storySnippets[s.key] || '';
+        const snipHtml = snip ? `<div style="font-size:11.5px;color:#cbd5e1;line-height:1.45;margin-top:2px;">${snip}</div>` : '';
+        a.innerHTML = `${covHtml}<strong>${watched.has(s.key) ? '✓ ' : ''}${niceTitle}</strong><small>${dt ? dt + ' · ' : ''}${s.idol || ''} · ${s.category || ''}${grpLabel ? ' · ' + grpLabel : ''}</small>${snipHtml}`;
         a.onclick = (e) => { e.preventDefault(); openStoryInGuide(s.key); };
         storiesHost.append(a);
       });
@@ -969,11 +997,16 @@
     });
     const storiesHost = document.getElementById('cnInspStories');
     storiesHost.innerHTML = '';
-    [...allStories].sort((a, b) => storyPriority(b) - storyPriority(a)).slice(0, 36).forEach(s => {
+    sortStoryList(allStories).slice(0, 45).forEach(s => {
       const a = document.createElement('a');
       a.className = 'cn-story-item';
       a.href = 'guide.html?story=' + encodeURIComponent(s.key);
-      a.innerHTML = `<strong>${formatStoryTitle(s)}</strong><small>${s.idol || ''} · ${s.group === 'Morning' ? '晨间日常' : (s.group || '')}</small>`;
+      const cov = getEventCover(s.group, s);
+      const covHtml = cov ? `<div class="cn-story-cover"><img src="${cov}" alt="" loading="lazy" onerror="this.parentElement.remove()"></div>` : '';
+      const dt = getStoryDate(s);
+      const snip = storySnippets[s.key] || '';
+      const snipHtml = snip ? `<div style="font-size:11.5px;color:#cbd5e1;line-height:1.45;margin-top:2px;">${snip}</div>` : '';
+      a.innerHTML = `${covHtml}<strong>${formatStoryTitle(s)}</strong><small>${dt ? dt + ' · ' : ''}${s.idol || ''} · ${s.group === 'Morning' ? '晨间日常' : (s.group || '')}</small>${snipHtml}`;
       a.onclick = (e) => { e.preventDefault(); openStoryInGuide(s.key); };
       storiesHost.append(a);
     });
@@ -1049,11 +1082,17 @@
 
     const storiesHost = document.getElementById('cnInspStories');
     storiesHost.innerHTML = '';
-    matchedStories.slice(0, 50).forEach(s => {
+    const watched = getWatchedSet();
+    sortStoryList(matchedStories).slice(0, 60).forEach(s => {
       const a = document.createElement('a');
       a.className = 'cn-story-item';
       a.href = 'guide.html?story=' + encodeURIComponent(s.key);
-      a.innerHTML = `<strong>${s.title}</strong><small>${s.idol} · ${s.category} · ${s.group}</small>`;
+      const cov = getEventCover(s.group, s);
+      const covHtml = cov ? `<div class="cn-story-cover"><img src="${cov}" alt="" loading="lazy" onerror="this.parentElement.remove()"></div>` : '';
+      const dt = getStoryDate(s);
+      const snip = storySnippets[s.key] || '';
+      const snipHtml = snip ? `<div style="font-size:11.5px;color:#cbd5e1;line-height:1.45;margin-top:2px;">${snip}</div>` : '';
+      a.innerHTML = `${covHtml}<strong>${watched.has(s.key) ? '✓ ' : ''}${formatStoryTitle(s)}</strong><small>${dt ? dt + ' · ' : ''}${s.idol || ''} · ${s.category || ''} · ${s.group || ''}</small>${snipHtml}`;
       a.onclick = (e) => { e.preventDefault(); openStoryInGuide(s.key); };
       storiesHost.append(a);
     });
@@ -1424,26 +1463,6 @@
       ctx.beginPath();
       ctx.arc(sp.x, sp.y, rp.r * cam.zoom, 0, Math.PI * 2);
       ctx.stroke();
-
-      // Draw canonical relationship label pill right on focused lore beams!
-      if (activeNodeId && isFocusedEdge && e.relLabel && cam.zoom >= 0.8) {
-        const mx = (pa.x + pb.x) * 0.5;
-        const my = (pa.y + pb.y) * 0.5;
-        ctx.globalAlpha = 0.92;
-        ctx.font = '700 10.5px "Segoe UI", "Microsoft YaHei", sans-serif';
-        const tw = ctx.measureText(e.relLabel).width + 12;
-        ctx.fillStyle = 'rgba(8, 13, 26, 0.86)';
-        ctx.strokeStyle = e.color || '#facc15';
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.roundRect(mx - tw * 0.5, my - 9, tw, 18, 9);
-        ctx.fill();
-        ctx.stroke();
-        ctx.fillStyle = '#f8fafc';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText(e.relLabel, mx, my + 0.5);
-      }
       ctx.restore();
     }
 
@@ -1485,15 +1504,16 @@
       ctx.lineTo(pb.x, pb.y);
       ctx.stroke();
 
-      // Draw canonical relationship label pill right on focused lore beams!
-      if (activeNodeId && isFocusedEdge && e.relLabel && cam.zoom >= 0.8) {
+      // Draw canonical relationship or shared-event label pill right on focused beams!
+      const beamLabel = e.relLabel || (e.type === 'cross' && e.shared?.length ? (e.shared.length > 1 ? `共${e.shared.length}组·${String(e.shared[0]).slice(0, 8)}` : String(e.shared[0]).slice(0, 10)) : '');
+      if (activeNodeId && isFocusedEdge && beamLabel && cam.zoom >= 0.85) {
         const mx = (pa.x + pb.x) * 0.5;
         const my = (pa.y + pb.y) * 0.5;
         ctx.globalAlpha = 0.92;
         ctx.font = '700 10.5px "Segoe UI", "Microsoft YaHei", sans-serif';
-        const tw = ctx.measureText(e.relLabel).width + 12;
+        const tw = ctx.measureText(beamLabel).width + 12;
         ctx.fillStyle = 'rgba(8, 13, 26, 0.86)';
-        ctx.strokeStyle = e.color || '#facc15';
+        ctx.strokeStyle = e.type === 'cross' ? '#38bdf8' : (e.color || '#facc15');
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.roundRect(mx - tw * 0.5, my - 9, tw, 18, 9);
@@ -1502,7 +1522,7 @@
         ctx.fillStyle = '#f8fafc';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText(e.relLabel, mx, my + 0.5);
+        ctx.fillText(beamLabel, mx, my + 0.5);
       }
       ctx.restore();
     }
@@ -1617,7 +1637,7 @@
         ctx.font = `700 ${Math.max(10, Math.round(11.5 * Math.min(1.25, cam.zoom)))}px "Segoe UI", "Microsoft YaHei", sans-serif`;
         ctx.textAlign = 'center';
         ctx.fillStyle = '#f8fafc';
-        ctx.fillText(n.name, sp.x, sp.y + r + 14);
+        ctx.fillText(n.displayName || n.name, sp.x, sp.y + r + 14);
         if (isMotifHit) {
           ctx.fillStyle = '#f472b6';
           ctx.fillText(`★ ${motifHits.get(n.name).length} 篇`, sp.x, sp.y + r + 28);

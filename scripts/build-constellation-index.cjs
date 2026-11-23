@@ -54,6 +54,7 @@ for (const c of CHARACTERS) {
 
 const extraStoriesByChar = new Map(); // charId -> Set<storyKey> (stories where they appear outside their own solo idol slot, or all for core)
 const pairStories = new Map();        // "A||B" -> Set<storyKey>
+const storySnippets = {};             // storyKey -> authentic cast + real translated dialogue excerpt (0% hallucinated!)
 const coreIds = new Set(['制作人', '七草叶月', '天井努 社长', '八云奈美', '路加前经纪人', '七草父']);
 
 let scanned = 0;
@@ -69,6 +70,7 @@ for (const s of catalog) {
   const present = new Set();
   const speakerCounts = new Map();
   let fullText = '';
+  const goodTransLines = [];
 
   for (const r of rows) {
     const nm = String(r.name || '').trim();
@@ -80,7 +82,30 @@ for (const s of catalog) {
       }
     }
     if (r.text) fullText += '\n' + r.text;
-    if (r.trans) fullText += '\n' + r.trans;
+    if (r.trans) {
+      fullText += '\n' + r.trans;
+      if (goodTransLines.length < 3) {
+        const clean = String(r.trans).replace(/\\n|\r?\n/g, ' ').replace(/\s+/g, ' ').trim();
+        // Skip pure punctuation / ellipses / short grunts
+        const coreChars = clean.replace(/[…—\-─ー・。、！？!?（）()「」『』\s\.~～]/g, '');
+        if (coreChars.length >= 8 && !/^https?:/.test(clean)) {
+          goodTransLines.push(clean);
+        }
+      }
+    }
+  }
+
+  // Build authentic, zero-hallucination cast + real opening dialogue preview for this story
+  const castArr = [...speakerCounts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(x => x[0])
+    .filter(c => c !== '制作人')
+    .slice(0, 3);
+  const quote = goodTransLines[0] ? goodTransLines[0].slice(0, 44) + (goodTransLines[0].length > 44 ? '…' : '') : '';
+  if (castArr.length || quote) {
+    const castPart = castArr.length ? `出场：${castArr.join('、')}` : '';
+    const quotePart = quote ? `「${quote}」` : '';
+    storySnippets[s.key] = castPart && quotePart ? `${castPart} · ${quotePart}` : (quotePart || castPart);
   }
 
   // Check mention regexes for lore figures (八云奈美 / 天井社长 / 七草叶月 / 七草父)
@@ -189,8 +214,11 @@ for (const [grp, keys] of eventGroups.entries()) {
 
 const outPath = path.join(ROOT, 'public/constellation-index.json');
 fs.writeFileSync(outPath, JSON.stringify({ generatedAt: new Date().toISOString(), scanned, extra: outExtra, pairs: outPairs, eventCovers }));
+const snipPath = path.join(ROOT, 'public/story-snippets.json');
+fs.writeFileSync(snipPath, JSON.stringify(storySnippets));
 const stat = fs.statSync(outPath);
-console.log(`Scanned ${scanned} story scripts -> ${outPath} (${(stat.size / 1024).toFixed(1)} KB), eventCovers: ${Object.keys(eventCovers).length}/${eventGroups.size}`);
+const snipStat = fs.statSync(snipPath);
+console.log(`Scanned ${scanned} story scripts -> ${outPath} (${(stat.size / 1024).toFixed(1)} KB), eventCovers: ${Object.keys(eventCovers).length}/${eventGroups.size}, snippets: ${Object.keys(storySnippets).length} (${(snipStat.size / 1024).toFixed(1)} KB)`);
 console.log('Sample extra counts:', {
   '斑鸠路加': (outExtra['斑鸠路加'] || []).length,
   '八云奈美': (outExtra['八云奈美'] || []).length,
