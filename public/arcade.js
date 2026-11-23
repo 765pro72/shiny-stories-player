@@ -1384,10 +1384,19 @@
     return cardRankScore(c, 'guandan') === maxScore;
   }
 
+  function isGuandanRankUnderOrEq10(c) {
+    if (!c || c.joker) return false;
+    if (c.val === ct.levelRank) return false; // 级牌不得用于还贡
+    if (isGuandanWild(c, 'guandan')) return false; // 逢人配不得用于还贡
+    // 扑克数据定义中 2 的 val 为 15（沿用斗地主体系），但掼蛋非级牌时 2 是点数最小的牌（<= 10）
+    if (c.val === 15) return true;
+    return c.val <= 10;
+  }
+
   function isEligibleReturnCard(c, hand) {
-    const hasUnder10 = hand.some(x => !x.joker && x.val !== ct.levelRank && x.val <= 10);
-    if (hasUnder10) return !c.joker && c.val !== ct.levelRank && c.val <= 10;
-    return !isGuandanWild(c, 'guandan');
+    const hasUnder10 = hand.some(x => isGuandanRankUnderOrEq10(x));
+    if (hasUnder10) return isGuandanRankUnderOrEq10(c);
+    return !isGuandanWild(c, 'guandan') && c.val !== ct.levelRank && !c.joker;
   }
 
   function pickAiReturnCard(hand) {
