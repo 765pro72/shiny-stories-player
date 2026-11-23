@@ -1204,15 +1204,38 @@ html[data-platform="android"] body.page-home .tools {
   transition: transform 0.14s ease, width 0.14s ease !important;
 }
 
-/* Disable cascade/reveal fade transitions on scrolling lists for instant 60fps mobile scroll */
+/* Lightweight GPU-only Scroll Reveal + Stagger on Mobile/Tablet (60fps smooth, zero scale reflow) */
 :root[data-mobile="1"]:not(#_) .ls-reveal,
-:root[data-mobile="1"]:not(#_) .pm-cascade,
-:root[data-android="1"]:not(#_) .ls-reveal,
-:root[data-android="1"]:not(#_) .pm-cascade {
+:root[data-android="1"]:not(#_) .ls-reveal {
   opacity: 1 !important;
   transform: none !important;
   animation: none !important;
   transition: none !important;
+}
+
+:root[data-mobile="1"]:not(#_) .pm-cascade,
+:root[data-android="1"]:not(#_) .pm-cascade {
+  opacity: 0.28;
+  transform: translate3d(0, 12px, 0);
+  transition:
+    opacity 0.34s cubic-bezier(0.16, 1, 0.3, 1) var(--pm-delay, 0ms),
+    transform 0.38s cubic-bezier(0.16, 1, 0.3, 1) var(--pm-delay, 0ms);
+}
+
+:root[data-mobile="1"]:not(#_) .pm-cascade.pm-revealed,
+:root[data-android="1"]:not(#_) .pm-cascade.pm-revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Huawei JoyTrans / HarmonyOS container: ultra-lightweight reveal & disable parallax for low power draw */
+:root[data-joytrans="1"]:not(#_) .pm-cascade {
+  transition-duration: 0.24s !important;
+}
+:root[data-joytrans="1"]:not(#_) .pm-parallax-host .pm-parallax-art,
+:root[data-joytrans="1"]:not(#_) .pm-parallax-host .pm-parallax-copy {
+  transform: none !important;
+  will-change: auto !important;
 }
 
 /* Simplify heavy multi-layer box-shadows & drop-shadows on dense cards/rows for smooth mobile tile rasterization */

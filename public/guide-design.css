@@ -36,3 +36,823 @@
  .story-overview .overview-copy{background:none}
  .story-overview .collection-cover-shade{background:linear-gradient(90deg,var(--cover-wash) 0%,var(--cover-wash) 40%,transparent 92%)}
 }
+
+/* ── 283 Chronicle Scrollytelling (整体时序编年史) ──────────────────────── */
+.guide-unified #timeline.scrollytelling-chronicle {
+  padding: 28px 26px;
+  border-radius: 24px;
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.86), rgba(240, 245, 250, 0.78));
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 12px 36px rgba(34, 58, 82, 0.06);
+  overflow: visible;
+}
+
+.st-head {
+  margin-bottom: 22px;
+}
+.st-head .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: #7c93a6;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+.st-head h2 {
+  margin: 0;
+  font-size: clamp(22px, 1.55vw, 34px);
+  color: var(--ink, #1e293b);
+}
+
+.st-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
+  gap: 26px;
+  align-items: start;
+}
+
+/* Sticky Left Stage */
+.st-stage {
+  position: sticky;
+  top: calc(var(--header-height, 64px) + 20px);
+  z-index: 2;
+}
+
+.st-stage-card {
+  --st-accent: #38bdf8;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.98);
+  box-shadow: 0 14px 36px rgba(30, 52, 74, 0.08);
+  transition: border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.st-stage-visual {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10.6;
+  overflow: hidden;
+  background: transparent;
+  margin-bottom: -44px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.st-stage-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 22%;
+  display: block;
+  opacity: 0;
+  z-index: 1;
+  transform: scale(1.05);
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0, 0, 0, 0.72) 56%, rgba(0, 0, 0, 0.24) 78%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 0%, #000 30%, rgba(0, 0, 0, 0.72) 56%, rgba(0, 0, 0, 0.24) 78%, transparent 100%);
+  transition: opacity 0.62s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Previous artwork stays 100% opaque underneath while new artwork fades in on top -> ZERO blank flash! */
+.st-stage-art.is-under {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1);
+  transition: none;
+}
+
+.st-stage-art.is-loaded.is-front {
+  opacity: 1;
+  z-index: 2;
+  transform: scale(1);
+}
+
+.st-stage-visual:hover .st-stage-art.is-loaded.is-front {
+  transform: scale(1.045);
+}
+
+/* Staggered portrait chip pop-in + living stage choreography */
+.st-portrait-chip.is-pop-in {
+  animation: stChipPop 0.42s cubic-bezier(0.34, 1.38, 0.64, 1) var(--chip-delay, 0ms) both;
+}
+
+@keyframes stChipPop {
+  from { opacity: 0.35; transform: translate3d(0, 7px, 0) scale(0.86); }
+  to { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+.st-stage-glow {
+  animation: stAuraBreathe 7.5s ease-in-out infinite alternate;
+}
+
+@keyframes stAuraBreathe {
+  0% { transform: translate3d(0, 0, 0) scale(1); opacity: 0.16; }
+  100% { transform: translate3d(-18px, 14px, 0) scale(1.22); opacity: 0.28; }
+}
+
+.st-stage-body.is-switching .st-stage-wm {
+  animation: stWmDrift 0.58s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.st-stage-body.is-switching .st-stage-year {
+  animation: stTextGlideNext 0.44s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.st-stage-card[data-dir="prev"] .st-stage-body.is-switching .st-stage-year {
+  animation: stTextGlidePrev 0.44s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.st-stage-body.is-switching .st-stage-title {
+  animation: stTextGlideNext 0.44s cubic-bezier(0.16, 1, 0.3, 1) 35ms both;
+}
+
+.st-stage-body.is-switching .st-stage-desc {
+  animation: stTextGlideNext 0.46s cubic-bezier(0.16, 1, 0.3, 1) 70ms both;
+}
+
+.st-stage-body.is-switching .st-stage-metrics {
+  animation: stTextGlideNext 0.46s cubic-bezier(0.16, 1, 0.3, 1) 100ms both;
+}
+
+@keyframes stTextGlideNext {
+  from { opacity: 0.38; transform: translate3d(0, 9px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes stTextGlidePrev {
+  from { opacity: 0.38; transform: translate3d(0, -9px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes stWmDrift {
+  from { opacity: 0; transform: translateX(-50%) scale(0.92); }
+  to { opacity: 0.1; transform: translateX(-50%) scale(1); }
+}
+
+.st-progress-fill {
+  position: relative;
+  overflow: hidden;
+}
+
+.st-progress-fill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.65) 50%, transparent 100%);
+  transform: translateX(-100%);
+  animation: stBarSheen 2.8s ease-in-out infinite;
+}
+
+@keyframes stBarSheen {
+  0%, 15% { transform: translateX(-100%); }
+  65%, 100% { transform: translateX(180%); }
+}
+
+.st-dot.is-active {
+  box-shadow: 0 0 14px color-mix(in srgb, var(--st-accent) 55%, transparent);
+}
+
+.st-stage-art-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 36%, rgba(15, 23, 42, 0.14) 74%, transparent 100%);
+  pointer-events: none;
+}
+
+.st-stage-card-hint {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+  background: rgba(15, 23, 42, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  opacity: 0;
+  transform: translate3d(0, -4px, 0);
+  transition: opacity 0.24s ease, transform 0.24s ease;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.st-stage-visual:hover .st-stage-card-hint {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.st-stage-members {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.st-portrait-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.25);
+  margin-left: -8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1e293b;
+  flex-shrink: 0;
+}
+
+.st-portrait-chip:first-child {
+  margin-left: 0;
+}
+
+.st-portrait-chip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.st-stage-body {
+  position: relative;
+  padding: 20px 20px 18px;
+  text-align: center;
+}
+
+.st-stage-glow {
+  position: absolute;
+  inset: -40% -20% auto auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--st-accent), transparent 70%);
+  opacity: 0.18;
+  pointer-events: none;
+  transition: background 0.45s ease;
+}
+
+.st-stage-eyebrow {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  color: var(--st-accent);
+  margin-bottom: 6px;
+}
+
+.st-stage-year {
+  font-size: clamp(42px, 3.8vw, 68px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink, #0f172a);
+  margin-bottom: 10px;
+}
+
+.st-stage-year.is-bump {
+  animation: stYearBump 0.34s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes stYearBump {
+  from { opacity: 0.6; transform: translate3d(0, 6px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+.st-stage-title {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink, #1e293b);
+}
+
+.st-stage-desc {
+  margin: 0 0 16px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #5b6e80;
+}
+
+.st-stage-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.st-metric {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.05);
+  color: #334155;
+}
+
+.st-progress-track {
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.st-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--st-accent), #818cf8);
+  transition: width 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.st-year-dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.st-dot {
+  padding: 4px 9px !important;
+  border-radius: 999px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  border: 1px solid rgba(15, 23, 42, 0.1) !important;
+  background: rgba(255, 255, 255, 0.72) !important;
+  color: #64748b !important;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+
+.st-dot.is-active,
+.st-dot:hover {
+  background: var(--st-accent) !important;
+  border-color: var(--st-accent) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+/* Right Narrative Chapters */
+.st-chapters {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.st-chapter {
+  --st-accent: #38bdf8;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 22px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-left: 4px solid rgba(148, 163, 184, 0.3);
+  opacity: 0.72;
+  transition: opacity 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease, background 0.28s ease;
+}
+
+.st-chapter-art {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 25%;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
+  -webkit-mask-image: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 0%, transparent 92%);
+  mask-image: linear-gradient(270deg, rgba(0, 0, 0, 0.9) 0%, transparent 92%);
+  transition: opacity 0.4s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(1.04);
+}
+
+.st-chapter.is-active .st-chapter-art {
+  opacity: 0.24;
+  transform: scale(1);
+}
+
+.st-chapter > *:not(.st-chapter-art) {
+  position: relative;
+  z-index: 1;
+}
+
+.st-chapter-portraits {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.st-chapter-portraits .st-portrait-chip {
+  width: 26px;
+  height: 26px;
+  border-width: 1.5px;
+  margin-left: -6px;
+}
+
+.st-chapter-portraits .st-portrait-chip:first-child {
+  margin-left: 0;
+}
+
+.st-chapter.is-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  background: rgba(255, 255, 255, 0.96);
+  border-left-color: var(--st-accent);
+  box-shadow: 0 12px 30px rgba(30, 52, 74, 0.09);
+}
+
+.st-chapter-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.st-chapter-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #ffffff;
+  background: var(--st-accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.st-chapter-era {
+  font-size: 15px;
+  color: var(--ink, #1e293b);
+}
+
+.st-chapter-stat {
+  margin-left: auto;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.st-chapter-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.st-hl-chip {
+  font-size: 11.5px;
+  padding: 3px 9px;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.045);
+  color: #475569;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.st-chapter-details {
+  border: 1px solid rgba(148, 163, 184, 0.18) !important;
+  border-radius: 12px !important;
+  padding: 8px 12px !important;
+  margin-top: 8px;
+  background: rgba(15, 23, 42, 0.035) !important;
+  overflow: hidden;
+  transition: background 0.22s ease, border-color 0.22s ease;
+}
+
+.st-chapter-details:hover {
+  background: rgba(15, 23, 42, 0.06) !important;
+}
+
+.st-chapter-details > summary {
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+html[data-theme="dark"] .st-chapter-details {
+  background: rgba(255, 255, 255, 0.055) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+html[data-theme="dark"] .st-chapter-details:hover {
+  background: rgba(255, 255, 255, 0.09) !important;
+}
+
+/* Dark Theme Support */
+html[data-theme="dark"] .guide-unified #timeline.scrollytelling-chronicle {
+  background: linear-gradient(160deg, rgba(22, 27, 38, 0.9), rgba(15, 19, 28, 0.88));
+  border-color: rgba(255, 255, 255, 0.1);
+}
+html[data-theme="dark"] .st-stage-card {
+  background: rgba(26, 32, 46, 0.94);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+html[data-theme="dark"] .st-stage-year,
+html[data-theme="dark"] .st-stage-title,
+html[data-theme="dark"] .st-chapter-era,
+html[data-theme="dark"] .st-head h2 {
+  color: #f1f5f9;
+}
+html[data-theme="dark"] .st-stage-desc,
+html[data-theme="dark"] .st-chapter-stat {
+  color: #94a3b8;
+}
+html[data-theme="dark"] .st-metric,
+html[data-theme="dark"] .st-hl-chip {
+  background: rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+}
+html[data-theme="dark"] .st-dot {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #cbd5e1 !important;
+}
+html[data-theme="dark"] .st-chapter {
+  background: rgba(24, 30, 44, 0.64);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] .st-chapter.is-active {
+  background: rgba(30, 38, 56, 0.95);
+  border-left-color: var(--st-accent);
+}
+
+/* Mobile (20:9 / 21:9) & Tablet (16:10 / 3:2) Responsive Scrollytelling */
+@media (max-width: 960px) {
+  .guide-unified #timeline.scrollytelling-chronicle {
+    padding: 16px 12px;
+    border-radius: 18px;
+  }
+  .st-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .st-stage {
+    position: sticky;
+    top: calc(var(--header-height, 52px) + 4px);
+    width: 100%;
+    z-index: 6;
+  }
+  .st-stage-card {
+    padding: 0;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+  }
+  .st-stage-body {
+    padding: 10px 12px 8px;
+  }
+  .st-stage-visual,
+  .st-stage-eyebrow,
+  .st-stage-desc,
+  .st-stage-metrics {
+    display: none;
+  }
+  .st-stage-year {
+    font-size: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px 4px 0;
+  }
+  .st-stage-title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12.5px;
+    margin: 0 0 4px;
+    max-width: calc(100% - 74px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .st-progress-track {
+    height: 3px;
+    margin-bottom: 6px;
+  }
+  .st-year-dots {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 5px;
+    padding-bottom: 2px;
+  }
+  .st-year-dots::-webkit-scrollbar {
+    display: none;
+  }
+  .st-dot {
+    flex: 0 0 auto;
+    padding: 2px 8px !important;
+    font-size: 10.5px !important;
+  }
+  .st-chapters {
+    gap: 12px;
+  }
+  .st-chapter {
+    opacity: 1;
+    transform: none;
+    padding: 13px 13px 10px;
+    border-radius: 14px;
+  }
+}
+
+/* Huawei JoyTrans low-power safeguard */
+:root[data-joytrans="1"] .st-stage-glow {
+  display: none !important;
+}
+:root[data-joytrans="1"] .st-chapter {
+  opacity: 1;
+  transform: none;
+  transition: border-color 0.2s ease;
+}
+
+/* ── Bespoke Per-Year Visual Personalities (每一年独一无二的视觉氛围) ────── */
+.st-stage-body {
+  overflow: hidden;
+}
+
+.st-stage-wm {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -6px;
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  color: var(--st-accent, #38bdf8);
+  opacity: 0.08;
+  pointer-events: none;
+  user-select: none;
+  font-variant-numeric: tabular-nums;
+  transition: color 0.45s ease, opacity 0.45s ease;
+}
+
+.st-stage-card {
+  transition: background 0.55s ease, border-color 0.45s ease, box-shadow 0.45s ease, color 0.45s ease;
+}
+
+/* 2018: 翼启之年 · 晨曦天穹白金 */
+.st-stage-card[data-era="2018"] {
+  background: linear-gradient(155deg, #f0f9ff 0%, #ffffff 48%, #fffbeb 100%) !important;
+  border-color: rgba(56, 189, 248, 0.35) !important;
+  box-shadow: 0 18px 42px rgba(56, 189, 248, 0.16) !important;
+}
+.st-stage-card[data-era="2018"] .st-stage-year {
+  background: linear-gradient(135deg, #0284c7, #f59e0b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 2019: 迷光初绽 · Straylight 赛博暗夜霓虹 */
+.st-stage-card[data-era="2019"] {
+  background: linear-gradient(155deg, #1a0b1e 0%, #260d24 55%, #12172a 100%) !important;
+  border-color: rgba(244, 63, 94, 0.55) !important;
+  box-shadow: 0 18px 44px rgba(244, 63, 94, 0.28), inset 0 0 28px rgba(34, 211, 238, 0.08) !important;
+}
+.st-stage-card[data-era="2019"] .st-stage-year {
+  color: #fff1f2 !important;
+  text-shadow: 0 0 22px rgba(244, 63, 94, 0.65);
+}
+.st-stage-card[data-era="2019"] .st-stage-title { color: #fda4af !important; }
+.st-stage-card[data-era="2019"] .st-stage-desc { color: #cbd5e1 !important; }
+.st-stage-card[data-era="2019"] .st-metric { background: rgba(244, 63, 94, 0.18) !important; color: #fecdd3 !important; }
+.st-stage-card[data-era="2019"] .st-dot { background: rgba(255, 255, 255, 0.08) !important; color: #e2e8f0 !important; border-color: rgba(244, 63, 94, 0.25) !important; }
+.st-stage-card[data-era="2019"] .st-stage-wm { opacity: 0.16; }
+
+/* 2020: 透明之夏 · noctchill 清澈海风玻璃 */
+.st-stage-card[data-era="2020"] {
+  background: linear-gradient(160deg, #ecfeff 0%, #e0f2fe 52%, #eff6ff 100%) !important;
+  border-color: rgba(14, 165, 233, 0.4) !important;
+  box-shadow: 0 18px 42px rgba(14, 165, 233, 0.18) !important;
+}
+.st-stage-card[data-era="2020"] .st-stage-year {
+  background: linear-gradient(135deg, #0369a1, #06b6d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 2021: 绯红与紫罗兰 · SHHis 祖母绿聚光灯舞台 */
+.st-stage-card[data-era="2021"] {
+  background: linear-gradient(155deg, #0b1f1a 0%, #142824 52%, #231325 100%) !important;
+  border-color: rgba(16, 185, 129, 0.5) !important;
+  box-shadow: 0 18px 44px rgba(16, 185, 129, 0.24) !important;
+}
+.st-stage-card[data-era="2021"] .st-stage-year {
+  color: #ecfdf5 !important;
+  text-shadow: 0 0 20px rgba(16, 185, 129, 0.55);
+}
+.st-stage-card[data-era="2021"] .st-stage-title { color: #6ee7b7 !important; }
+.st-stage-card[data-era="2021"] .st-stage-desc { color: #cbd5e1 !important; }
+.st-stage-card[data-era="2021"] .st-metric { background: rgba(16, 185, 129, 0.18) !important; color: #a7f3d0 !important; }
+.st-stage-card[data-era="2021"] .st-dot { background: rgba(255, 255, 255, 0.08) !important; color: #e2e8f0 !important; border-color: rgba(16, 185, 129, 0.25) !important; }
+.st-stage-card[data-era="2021"] .st-stage-wm { opacity: 0.14; }
+
+/* 2022: 越境共鸣 · 棱镜丁香虹彩 */
+.st-stage-card[data-era="2022"] {
+  background: linear-gradient(155deg, #f5f3ff 0%, #faf5ff 50%, #e0f2fe 100%) !important;
+  border-color: rgba(139, 92, 246, 0.38) !important;
+  box-shadow: 0 18px 42px rgba(139, 92, 246, 0.18) !important;
+}
+.st-stage-card[data-era="2022"] .st-stage-year {
+  background: linear-gradient(135deg, #6d28d9, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 2023: 彗星划破夜空 · CoMETIK 极夜黑曜石 */
+.st-stage-card[data-era="2023"] {
+  background: linear-gradient(145deg, #090a12 0%, #141629 55%, #0c1220 100%) !important;
+  border-color: rgba(129, 140, 248, 0.55) !important;
+  box-shadow: 0 20px 48px rgba(99, 102, 241, 0.32) !important;
+}
+.st-stage-card[data-era="2023"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(125deg, transparent 42%, rgba(165, 180, 252, 0.16) 50%, transparent 58%);
+  pointer-events: none;
+}
+.st-stage-card[data-era="2023"] .st-stage-year {
+  color: #eef2ff !important;
+  text-shadow: 0 0 24px rgba(129, 140, 248, 0.7);
+}
+.st-stage-card[data-era="2023"] .st-stage-title { color: #a5b4fc !important; }
+.st-stage-card[data-era="2023"] .st-stage-desc { color: #cbd5e1 !important; }
+.st-stage-card[data-era="2023"] .st-metric { background: rgba(99, 102, 241, 0.22) !important; color: #c7d2fe !important; }
+.st-stage-card[data-era="2023"] .st-dot { background: rgba(255, 255, 255, 0.08) !important; color: #e2e8f0 !important; border-color: rgba(129, 140, 248, 0.28) !important; }
+.st-stage-card[data-era="2023"] .st-stage-wm { opacity: 0.16; }
+
+/* 2024: 闪耀新章 · 玫瑰石英庆典 */
+.st-stage-card[data-era="2024"] {
+  background: linear-gradient(155deg, #fff1f2 0%, #fdf2f8 52%, #f0f9ff 100%) !important;
+  border-color: rgba(236, 72, 153, 0.38) !important;
+  box-shadow: 0 18px 42px rgba(236, 72, 153, 0.18) !important;
+}
+.st-stage-card[data-era="2024"] .st-stage-year {
+  background: linear-gradient(135deg, #db2777, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 2025: 流光续篇 · 琥珀落日流金 */
+.st-stage-card[data-era="2025"] {
+  background: linear-gradient(155deg, #fffbeb 0%, #fef3c7 52%, #ffedd5 100%) !important;
+  border-color: rgba(245, 158, 11, 0.42) !important;
+  box-shadow: 0 18px 42px rgba(245, 158, 11, 0.2) !important;
+}
+.st-stage-card[data-era="2025"] .st-stage-year {
+  background: linear-gradient(135deg, #d97706, #ea580c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 2026: 向阳而行 · 极光星穹未来 */
+.st-stage-card[data-era="2026"] {
+  background: linear-gradient(155deg, #ecfeff 0%, #eff6ff 50%, #f5f3ff 100%) !important;
+  border-color: rgba(6, 182, 212, 0.42) !important;
+  box-shadow: 0 18px 42px rgba(6, 182, 212, 0.2) !important;
+}
+.st-stage-card[data-era="2026"] .st-stage-year {
+  background: linear-gradient(135deg, #0891b2, #6366f1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Dark theme overrides for light-era cards so Dark Mode stays harmonious & deep */
+html[data-theme="dark"] .st-stage-card[data-era="2018"],
+html[data-theme="dark"] .st-stage-card[data-era="2020"],
+html[data-theme="dark"] .st-stage-card[data-era="2022"],
+html[data-theme="dark"] .st-stage-card[data-era="2024"],
+html[data-theme="dark"] .st-stage-card[data-era="2025"],
+html[data-theme="dark"] .st-stage-card[data-era="2026"] {
+  background: linear-gradient(155deg, rgba(24, 32, 48, 0.96), rgba(16, 22, 34, 0.94)) !important;
+}
+html[data-theme="dark"] .st-stage-card[data-era="2018"] .st-stage-year,
+html[data-theme="dark"] .st-stage-card[data-era="2020"] .st-stage-year,
+html[data-theme="dark"] .st-stage-card[data-era="2022"] .st-stage-year,
+html[data-theme="dark"] .st-stage-card[data-era="2024"] .st-stage-year,
+html[data-theme="dark"] .st-stage-card[data-era="2025"] .st-stage-year,
+html[data-theme="dark"] .st-stage-card[data-era="2026"] .st-stage-year {
+  filter: brightness(1.35);
+}

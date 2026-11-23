@@ -1044,27 +1044,216 @@ html[data-theme="dark"] *::-webkit-scrollbar-thumb {
   border-color: rgba(255, 255, 255, 0.65);
 }
 
-/* Choreographed Staggered Cascade Wave Entrance */
+/* ── Butter-Smooth Zero-Flash Scroll Reveal + Spatial Stagger (CSS Transition) ── */
 .pm-cascade {
-  opacity: 0;
-  transform: translate3d(0, 18px, 0) scale(0.97);
+  opacity: 0.14;
+  transform: translate3d(0, 22px, 0) scale(0.975);
+  transition:
+    opacity 0.48s cubic-bezier(0.16, 1, 0.3, 1) var(--pm-delay, 0ms),
+    transform 0.56s cubic-bezier(0.16, 1, 0.3, 1) var(--pm-delay, 0ms);
+  will-change: opacity, transform;
 }
 
-.pm-cascade.pm-revealed {
-  animation: pmCascadeIn 0.48s cubic-bezier(0.16, 1, 0.3, 1) var(--pm-delay, 0ms) both;
+.pm-cascade.pm-from-top {
+  opacity: 0.28;
+  transform: translate3d(0, -16px, 0) scale(0.985);
 }
 
-@keyframes pmCascadeIn {
-  from { opacity: 0; transform: translate3d(0, 18px, 0) scale(0.97); }
-  to { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+.pm-cascade.pm-stagger-row {
+  opacity: 0.22;
+  transform: translate3d(0, 14px, 0);
+  transition:
+    opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1) var(--pm-delay, 0ms),
+    transform 0.46s cubic-bezier(0.16, 1, 0.3, 1) var(--pm-delay, 0ms);
+}
+
+.pm-cascade.pm-stagger-row.pm-from-top {
+  opacity: 0.32;
+  transform: translate3d(0, -12px, 0);
+}
+
+.pm-cascade.pm-revealed,
+.pm-cascade.pm-from-top.pm-revealed,
+.pm-cascade.pm-stagger-row.pm-revealed,
+.pm-cascade.pm-stagger-row.pm-from-top.pm-revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* Instant silent reset ONLY when completely off-screen (far outside viewport) */
+.pm-cascade.pm-resetting {
+  transition: none !important;
+}
+
+/* ── Parallax Scrolling (GPU Depth Layering on Hero Banners) ────────────── */
+.pm-parallax-host {
+  overflow: hidden;
+}
+
+.pm-parallax-host .pm-parallax-art {
+  transform: translate3d(0, var(--pm-par-art-y, 0px), 0) scale(1.14);
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.pm-parallax-host .pm-parallax-copy {
+  transform: translate3d(0, var(--pm-par-copy-y, 0px), 0);
+  will-change: transform;
+}
+
+/* ── Ultra-Compact Collection Browser Headers & Filter Bars (Card / Voice / Wardrobe) ── */
+.card-archive #cardArchive.gallery-results,
+.page-voice .voice-browser,
+.page-wardrobe .model-results {
+  padding-top: 12px !important;
+}
+
+.card-archive #cardArchive .collection-heading,
+.page-voice .voice-browser .collection-heading,
+.page-wardrobe .model-results .collection-heading {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 8px 10px !important;
+  margin: 0 0 8px !important;
+  padding: 0 !important;
+  min-height: 28px !important;
+  overflow: visible !important;
+}
+
+.card-archive #cardArchive .collection-heading > div,
+.page-voice .voice-browser .collection-heading > div,
+.page-wardrobe .model-results .collection-heading > div {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: static !important;
+  flex: 0 0 auto !important;
+}
+
+.card-archive #cardArchive .collection-heading .eyebrow,
+.page-voice .voice-browser .collection-heading .eyebrow,
+.page-wardrobe .model-results .collection-heading .eyebrow {
+  display: none !important;
+}
+
+.card-archive #cardArchive .collection-heading h2,
+.page-voice .voice-browser .collection-heading h2,
+.page-wardrobe .model-results .collection-heading h2 {
+  display: inline-flex !important;
+  align-items: center !important;
+  font-size: 17px !important;
+  line-height: 28px !important;
+  height: 28px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+}
+
+.card-archive #cardArchive .collection-heading button,
+.page-voice .voice-browser .collection-heading button,
+.page-wardrobe .model-results .collection-heading button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 0 0 auto !important;
+  padding: 0 11px !important;
+  font-size: 11.5px !important;
+  height: 28px !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  vertical-align: middle !important;
+}
+
+.card-archive #cardArchive .collection-result-count,
+.page-voice .voice-browser .listening-mark,
+.page-wardrobe .model-results .collection-result-count {
+  margin-left: auto !important;
+  font-size: 12px !important;
+  line-height: 28px !important;
+}
+
+.card-archive #cardArchive .gallery-controls,
+.page-voice .voice-browser .filters,
+.page-wardrobe .model-results .filters {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 6px !important;
+  margin: 0 0 8px !important;
+  padding: 0 !important;
+}
+
+.card-archive #cardArchive .gallery-controls .collection-field,
+.page-voice .voice-browser .filters .collection-field,
+.page-wardrobe .model-results .filters .collection-field {
+  margin: 0 !important;
+  gap: 0 !important;
+  flex: 0 0 auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  overflow: visible !important;
+}
+
+.card-archive #cardArchive .gallery-controls .collection-field > span,
+.page-voice .voice-browser .filters .collection-field > span,
+.page-wardrobe .model-results .filters .collection-field > span {
+  display: none !important;
+}
+
+.card-archive #cardArchive .gallery-controls input[type="search"],
+.page-voice .voice-browser .filters input[type="search"],
+.page-wardrobe .model-results .filters input[type="search"] {
+  height: 32px !important;
+  padding: 0 11px !important;
+  font-size: 12.5px !important;
+  width: clamp(160px, 18vw, 240px) !important;
+  margin: 0 !important;
+}
+
+.card-archive #cardArchive .gallery-controls select,
+.page-voice .voice-browser .filters select,
+.page-wardrobe .model-results .filters select {
+  height: 32px !important;
+  line-height: 30px !important;
+  padding: 0 28px 0 10px !important;
+  font-size: 12.5px !important;
+  margin: 0 !important;
+  width: auto !important;
+  min-width: max-content !important;
+  max-width: none !important;
+  overflow: visible !important;
+}
+
+.card-archive #cardArchive #cardScope,
+.card-archive #cardArchive .scope-line,
+.card-archive #cardArchive p.notice,
+.page-voice .voice-browser #status {
+  margin: 0 0 8px !important;
+  padding: 0 !important;
+  font-size: 11.5px !important;
+  line-height: 1.3 !important;
+  opacity: 0.78;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .pm-cascade,
-  .pm-cascade.pm-revealed {
+  .pm-cascade.pm-revealed,
+  .pm-cascade.pm-stagger-row,
+  .pm-cascade.pm-stagger-row.pm-revealed {
     opacity: 1 !important;
     transform: none !important;
     animation: none !important;
+    will-change: auto !important;
+  }
+  .pm-parallax-host .pm-parallax-art,
+  .pm-parallax-host .pm-parallax-copy {
+    transform: none !important;
+    will-change: auto !important;
   }
 }
 

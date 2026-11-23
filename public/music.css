@@ -1654,7 +1654,7 @@ body[data-franchise="as"] {
   color: #ffffff;
 }
 
-/* ── Unit Selection Carousel (组合专区) ── */
+/* ── Unit Selection Carousel (组合专区 · 无缝匀速 Marquee) ── */
 .unit-carousel-track {
   display: flex;
   gap: 8px;
@@ -1663,6 +1663,49 @@ body[data-franchise="as"] {
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
   -webkit-overflow-scrolling: touch;
+}
+
+.unit-carousel-track.is-marquee {
+  display: block;
+  overflow: hidden;
+  padding: 5px 0 8px;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 28px, #000 calc(100% - 28px), transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 28px, #000 calc(100% - 28px), transparent 100%);
+}
+
+.unit-carousel-track.is-marquee.is-dragging {
+  cursor: grabbing;
+}
+
+.unit-marquee-belt {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  will-change: transform;
+}
+
+.unit-marquee-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-right: 8px;
+  flex-shrink: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .unit-carousel-track.is-marquee {
+    overflow-x: auto;
+    cursor: default;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .unit-marquee-group[aria-hidden="true"] {
+    display: none;
+  }
 }
 
 .unit-card-pill,

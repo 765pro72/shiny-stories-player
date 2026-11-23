@@ -13,7 +13,7 @@ async function main(){fs.mkdirSync(build,{recursive:true});const assets=path.joi
  for(const name of fs.readdirSync(root))if(name.endsWith('.cjs')&&!name.startsWith('desktop')&&name!=='preload.cjs')list.push(name);
  for(const dir of ['public','data'])for(const file of walk(path.join(root,dir)))list.push(dir+'/'+file);
  for(const dir of ['fflate','papaparse','pinyin-pro','pngjs'])for(const file of walk(path.join(root,'node_modules',dir)))list.push('node_modules/'+dir+'/'+file);
- list.push('package.json','package-lock.json','vendor/official-resource-codec.js','scripts/cache-all.cjs','scripts/catalog.cjs','剧情播放器迁移-2026-11-16.md','字体字号修复-2026-11-16.md');
+ list.push(...['package.json','package-lock.json','vendor/official-resource-codec.js','scripts/cache-all.cjs','scripts/catalog.cjs','docs/handover/剧情播放器迁移-2026-11-16.md','docs/handover/字体字号修复-2026-11-16.md'].filter(f=>fs.existsSync(path.join(root,f))));
  const bdayVoices = walk(path.join(root, 'cache/sounds/voice/events/special_communications')).filter(f => f.includes('4903001'));
  for (const f of bdayVoices) list.push('cache/sounds/voice/events/special_communications/' + f);
  for (const f of ['cache/sounds/bgm/005.m4a', 'cache/images/event/bg/00001.jpg', 'cache/images/event/text_frame/001.png']) {

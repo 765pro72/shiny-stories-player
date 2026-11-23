@@ -1453,7 +1453,7 @@
       }));
     }
 
-    elUnitTrack.innerHTML = unitList.map(u => `
+    const pillsHtml = unitList.map(u => `
       <button class="unit-card-pill ${selectedUnit === u.key ? 'active' : ''}" 
               data-unit="${u.key}" 
               style="--unit-color:${u.color};--unit-glow:${u.glow};--unit-shadow:${u.shadow}">
@@ -1462,8 +1462,165 @@
       </button>
     `).join('');
 
+    if (unitList.length >= 4) {
+      elUnitTrack.classList.add('is-marquee');
+      elUnitTrack.innerHTML = `
+        <div class="unit-marquee-belt">
+          <div class="unit-marquee-group">${pillsHtml}</div>
+          <div class="unit-marquee-group" aria-hidden="true">${pillsHtml}</div>
+        </div>
+      `;
+    } else {
+      elUnitTrack.classList.remove('is-marquee', 'is-dragging');
+      elUnitTrack.innerHTML = pillsHtml;
+    }
+
+    // Draggable + Hover-Pause + Constant-Speed Seamless Marquee Engine
+    if (!elUnitTrack._marqueeCtrl) {
+      const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const ctrl = {
+        offset: 0,
+        halfW: 0,
+        speedPxPerSec: 38,
+        hovering: false,
+        dragging: false,
+        dragMoved: false,
+        startX: 0,
+        lastX: 0,
+        velocity: 0,
+        lastTs: 0,
+        raf: 0,
+        resumeTimer: 0
+      };
+
+      const wrapOffset = () => {
+        if (ctrl.halfW <= 0) return;
+        ctrl.offset = ((ctrl.offset % ctrl.halfW) + ctrl.halfW) % ctrl.halfW;
+      };
+
+      const measure = () => {
+        const grp = elUnitTrack.querySelector('.unit-marquee-group');
+        ctrl.halfW = grp ? grp.offsetWidth : 0;
+        wrapOffset();
+      };
+
+      const applyTransform = () => {
+        const belt = elUnitTrack.querySelector('.unit-marquee-belt');
+        if (belt) belt.style.transform = `translate3d(${(-ctrl.offset).toFixed(2)}px, 0, 0)`;
+      };
+
+      const tick = (now) => {
+        ctrl.raf = requestAnimationFrame(tick);
+        if (document.hidden || !elUnitTrack.classList.contains('is-marquee')) {
+          ctrl.lastTs = now;
+          return;
+        }
+        if (ctrl.halfW <= 0) measure();
+        if (ctrl.halfW <= 0) return;
+
+        const dt = ctrl.lastTs ? Math.min(0.05, (now - ctrl.lastTs) / 1000) : 0.016;
+        ctrl.lastTs = now;
+
+        if (ctrl.dragging) {
+          applyTransform();
+          return;
+        }
+
+        // Smooth inertia decay right after releasing a drag
+        if (Math.abs(ctrl.velocity) > 0.35) {
+          ctrl.offset -= ctrl.velocity * dt;
+          ctrl.velocity *= Math.pow(0.06, dt);
+          wrapOffset();
+          applyTransform();
+          return;
+        } else {
+          ctrl.velocity = 0;
+        }
+
+        if (!ctrl.hovering && !reducedMotion) {
+          ctrl.offset += ctrl.speedPxPerSec * dt;
+          wrapOffset();
+          applyTransform();
+        }
+      };
+
+      elUnitTrack.addEventListener('pointerenter', (e) => {
+        if (e.pointerType === 'mouse') ctrl.hovering = true;
+      });
+      elUnitTrack.addEventListener('pointerleave', (e) => {
+        if (e.pointerType === 'mouse') ctrl.hovering = false;
+      });
+
+      elUnitTrack.addEventListener('pointerdown', (e) => {
+        if (!elUnitTrack.classList.contains('is-marquee')) return;
+        if (e.pointerType === 'mouse' && e.button !== 0) return;
+        clearTimeout(ctrl.resumeTimer);
+        ctrl.dragging = true;
+        ctrl.dragMoved = false;
+        ctrl.startX = e.clientX;
+        ctrl.lastX = e.clientX;
+        ctrl.velocity = 0;
+        if (ctrl.halfW <= 0) measure();
+        elUnitTrack.classList.add('is-dragging');
+        try { elUnitTrack.setPointerCapture(e.pointerId); } catch {}
+      });
+
+      elUnitTrack.addEventListener('pointermove', (e) => {
+        if (!ctrl.dragging) return;
+        const dx = e.clientX - ctrl.lastX;
+        ctrl.lastX = e.clientX;
+        if (Math.abs(e.clientX - ctrl.startX) > 5) ctrl.dragMoved = true;
+        ctrl.offset -= dx;
+        ctrl.velocity = dx * 28;
+        wrapOffset();
+        applyTransform();
+      });
+
+      const endDrag = (e) => {
+        if (!ctrl.dragging) return;
+        ctrl.dragging = false;
+        elUnitTrack.classList.remove('is-dragging');
+        try { elUnitTrack.releasePointerCapture(e.pointerId); } catch {}
+        if (e.pointerType !== 'mouse') {
+          ctrl.hovering = true;
+          clearTimeout(ctrl.resumeTimer);
+          ctrl.resumeTimer = setTimeout(() => { ctrl.hovering = false; }, 1200);
+        }
+        // Reset dragMoved on next microtask so click handler can inspect it
+        setTimeout(() => { ctrl.dragMoved = false; }, 40);
+      };
+      elUnitTrack.addEventListener('pointerup', endDrag);
+      elUnitTrack.addEventListener('pointercancel', endDrag);
+
+      // Horizontal wheel scrolling support when hovering over marquee
+      elUnitTrack.addEventListener('wheel', (e) => {
+        if (!elUnitTrack.classList.contains('is-marquee')) return;
+        const delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+        if (!delta) return;
+        e.preventDefault();
+        if (ctrl.halfW <= 0) measure();
+        ctrl.offset += delta * 0.7;
+        wrapOffset();
+        applyTransform();
+      }, { passive: false });
+
+      window.addEventListener('resize', measure, { passive: true });
+      ctrl.measure = measure;
+      elUnitTrack._marqueeCtrl = ctrl;
+      ctrl.raf = requestAnimationFrame(tick);
+    }
+
+    if (elUnitTrack._marqueeCtrl) {
+      requestAnimationFrame(() => elUnitTrack._marqueeCtrl.measure());
+    }
+
     $$('.unit-card-pill').forEach(pill => {
-      pill.addEventListener('click', () => {
+      pill.addEventListener('click', (e) => {
+        if (elUnitTrack._marqueeCtrl?.dragMoved) {
+          e.preventDefault();
+          e.stopPropagation();
+          return;
+        }
         selectUnit(pill.dataset.unit);
       });
     });
