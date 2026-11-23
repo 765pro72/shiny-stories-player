@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <link rel="icon" href="/app-icon.png">
+  <title>283 剧情星图与伏笔关系网 · 闪耀色彩</title>
+  <link rel="stylesheet" href="/fonts.css">
+  <script src="/interface-font-core.js"></script>
+  <script src="/interface-font.js"></script>
+  <link rel="stylesheet" href="/navigation.css">
+  <link rel="stylesheet" href="/constellation.css">
+  <script src="/navigation.js"></script>
+</head>
+<body class="page-constellation">
+  <canvas id="constellationCanvas" aria-label="283 剧情星图画布"></canvas>
+
+  <!-- Floating Top HUD Stack (prevents header/motif overlap at any width) -->
+  <div class="cn-hud-stack">
+    <header class="cn-hud-top">
+      <div class="cn-brand">
+        <a href="guide.html" class="cn-back-btn" id="cnBackBtn">← 返回剧情馆</a>
+        <div class="cn-title-block">
+          <small>283 PRODUCTION · STORY CONSTELLATION</small>
+          <h1>283 剧情星图与伏笔关系网</h1>
+        </div>
+      </div>
+
+      <div class="cn-controls">
+        <div class="cn-search-box">
+          <input type="search" id="cnKeywordInput" placeholder="输入伏笔关键词（如 翼、夏、雨、屋顶、舞台）…" aria-label="搜索伏笔关键词">
+          <button type="button" id="cnSearchBtn">星图检索</button>
+        </div>
+        <div class="cn-view-btns">
+          <button type="button" id="cnResetView" title="重置星图视角">◎ 全景重置</button>
+          <button type="button" id="cnAutoOrbit" class="active" title="开启或暂停星系缓速自转">✦ 星系公转：开</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Foreshadowing Motif Chips Bar -->
+    <nav class="cn-motif-bar" id="cnMotifBar" aria-label="热门伏笔与意象">
+      <span class="cn-motif-label">伏笔意象</span>
+      <button type="button" class="cn-motif-chip" data-motif="翼">✦ 翼 / 羽翼</button>
+      <button type="button" class="cn-motif-chip" data-motif="星">★ 星 / 星空</button>
+      <button type="button" class="cn-motif-chip" data-motif="空">☁ 天空</button>
+      <button type="button" class="cn-motif-chip" data-motif="夏">☀ 夏日</button>
+      <button type="button" class="cn-motif-chip" data-motif="海">🌊 海风</button>
+      <button type="button" class="cn-motif-chip" data-motif="雨">🌧 雨天</button>
+      <button type="button" class="cn-motif-chip" data-motif="夜">🌙 夜晚</button>
+      <button type="button" class="cn-motif-chip" data-motif="光">✨ 光芒</button>
+      <button type="button" class="cn-motif-chip" data-motif="梦">💫 梦想</button>
+      <button type="button" class="cn-motif-chip" data-motif="舞台">🎤 舞台</button>
+      <button type="button" class="cn-motif-chip" data-motif="花">🌸 花</button>
+      <button type="button" class="cn-motif-chip" data-motif="未来">🚀 未来</button>
+    </nav>
+  </div>
+
+  <!-- Unit Legend Bar (Bottom Left) -->
+  <div class="cn-unit-legend" id="cnUnitLegend" aria-label="组合星群筛选"></div>
+
+  <!-- Right Inspector Drawer -->
+  <aside class="cn-inspector" id="cnInspector" aria-label="星图节点详情">
+    <div class="cn-inspector-head">
+      <div class="cn-insp-avatar" id="cnInspAvatar">✦</div>
+      <div class="cn-insp-meta">
+        <small id="cnInspSub">点击任意星辰或伏笔意象开始探索</small>
+        <h2 id="cnInspTitle">283 全员星系总览</h2>
+      </div>
+      <button type="button" class="cn-insp-close" id="cnInspClose" title="收起详情">×</button>
+    </div>
+    <div class="cn-insp-stats" id="cnInspStats"></div>
+    <div class="cn-insp-bonds" id="cnInspBonds"></div>
+    <div class="cn-insp-stories" id="cnInspStories"></div>
+  </aside>
+
+  <!-- Subtle Hint Toast -->
+  <div class="cn-hint-bar">滚轮缩放 · 拖拽漫游 · 点击偶像星辰点亮羁绊连线 · 点击上方伏笔关键词触发全星系共振</div>
+
+  <script src="/constellation.js"></script>
+</body>
+</html>

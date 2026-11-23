@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/app-icon.png">
+  <title>283 透明桌面伙伴 · 闪耀色彩</title>
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/companion.css">
+</head>
+<body class="companion-body">
+  <div class="cmp-shell" id="cmpShell">
+    <!-- Top Drag & Mini Controls Bar (reveals smoothly on hover) -->
+    <header class="cmp-topbar" id="cmpTopbar">
+      <div class="cmp-drag-grip" title="按住此处拖动桌面伙伴">
+        <span class="cmp-dot"></span>
+        <span class="cmp-name" id="cmpIdolName">七草日花</span>
+        <span class="cmp-unit" id="cmpIdolUnit">SHHis</span>
+      </div>
+      <div class="cmp-actions">
+        <button type="button" class="cmp-btn" id="btnSwitchIdol" title="切换 283 偶像">🎭</button>
+        <button type="button" class="cmp-btn" id="btnTtsSlot" title="本地语音模型一键接入窗口">🔌</button>
+        <button type="button" class="cmp-btn active" id="btnPinTop" title="窗口置顶：开">📌</button>
+        <button type="button" class="cmp-btn cmp-btn-close" id="btnCloseCompanion" title="关闭桌面伙伴">×</button>
+      </div>
+    </header>
+
+    <!-- Speech Bubble -->
+    <div class="cmp-bubble" id="cmpBubble" role="status" aria-live="polite">
+      <div class="cmp-bubble-meta">
+        <span class="cmp-time-tag" id="cmpTimeTag">283 事务所</span>
+        <span class="cmp-outfit-tag" id="cmpOutfitTag">☀ 日间便服</span>
+        <span class="cmp-tts-badge" id="cmpTtsBadge" data-state="idle">未接入语音</span>
+      </div>
+      <p class="cmp-bubble-text" id="cmpBubbleText">制作人，今天也一起加油吧！点击我可以随机对话，点击 🔌 可一键接入本机语音或 AI 对话 API。</p>
+      <div class="cmp-music-strip" id="cmpMusicStrip" hidden>
+        <span class="cmp-music-eq" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="cmp-music-title" id="cmpMusicTitle">正在随音乐馆打拍子…</span>
+      </div>
+      <div class="cmp-bubble-foot">
+        <button type="button" class="cmp-mini-btn active" id="btnHourlyChime" title="整点自动报时">🔔 整点报时</button>
+        <button type="button" class="cmp-mini-btn" id="btnNextLine">下一句 ✦</button>
+        <button type="button" class="cmp-mini-btn" id="btnSpeakNow" title="使用已接入的本机语音模型朗读">🔊 朗读</button>
+      </div>
+    </div>
+
+    <!-- Transparent Character Avatar Stage -->
+    <div class="cmp-stage" id="cmpStage" title="点击互动 · 双击应援 · 顶部可拖动">
+      <div class="cmp-aura" id="cmpAura" aria-hidden="true"></div>
+      <div class="cmp-voice-ring" id="cmpVoiceRing" aria-hidden="true"></div>
+      <button type="button" class="cmp-avatar-btn" id="cmpAvatarBtn" aria-label="与桌面伙伴互动">
+        <span class="cmp-avatar-frame" id="cmpAvatarFrame"></span>
+      </button>
+      <div class="cmp-sparkle-layer" id="cmpSparkleLayer" aria-hidden="true"></div>
+    </div>
+
+    <!-- Quick Idol Picker Popover -->
+    <section class="cmp-drawer" id="cmpIdolDrawer" hidden aria-label="选择 283 桌面伙伴">
+      <div class="cmp-drawer-head">
+        <strong>选择 283 桌面伙伴</strong>
+        <button type="button" class="cmp-drawer-close" data-close-drawer>×</button>
+      </div>
+      <div class="cmp-idol-grid" id="cmpIdolGrid"></div>
+    </section>
+
+    <!-- Local TTS One-Click Connection Slot (Model NOT bundled; connects on demand) -->
+    <section class="cmp-drawer cmp-tts-drawer" id="cmpTtsDrawer" hidden aria-label="本地语音模型一键接入窗口">
+      <div class="cmp-drawer-head">
+        <div>
+          <strong>🔌 本地语音模型 · 一键接入</strong>
+          <small>不内置权重 · 支持 Irodori-TTS / OpenAI 兼容接口</small>
+        </div>
+        <button type="button" class="cmp-drawer-close" data-close-drawer>×</button>
+      </div>
+
+      <div class="cmp-tts-presets">
+        <button type="button" class="cmp-preset-chip" data-url="http://127.0.0.1:8088" data-voice="nichika">SHHis · 日花 (8088)</button>
+        <button type="button" class="cmp-preset-chip" data-url="http://127.0.0.1:8088" data-voice="mikoto">SHHis · 美琴 (8088)</button>
+        <button type="button" class="cmp-preset-chip" data-url="http://127.0.0.1:8089" data-voice="asahi">Straylight (8089)</button>
+      </div>
+
+      <div class="cmp-tts-form">
+        <label class="cmp-field">
+          <span>本机服务地址</span>
+          <input type="url" id="ttsBaseUrl" value="http://127.0.0.1:8088" placeholder="http://127.0.0.1:8088">
+        </label>
+        <div class="cmp-field-row">
+          <label class="cmp-field">
+            <span>声线 / 角色 ID</span>
+            <input type="text" id="ttsVoice" list="ttsVoiceList" value="nichika" placeholder="nichika / asahi…">
+            <datalist id="ttsVoiceList">
+              <option value="nichika">nichika (七草日花)</option>
+              <option value="mikoto">mikoto (绯田美琴)</option>
+              <option value="asahi">asahi (芹泽朝日)</option>
+              <option value="fuyuko">fuyuko (黛冬优子)</option>
+              <option value="mei">mei (和泉爱依)</option>
+            </datalist>
+          </label>
+          <label class="cmp-field">
+            <span>情绪路由</span>
+            <select id="ttsEmotion">
+              <option value="">自动识别</option>
+              <option value="calm">平静 calm</option>
+              <option value="happy">开心 happy</option>
+              <option value="shy">害羞 shy</option>
+              <option value="angry">生气 angry</option>
+              <option value="sad">低落 sad</option>
+              <option value="surprised">惊讶 surprised</option>
+              <option value="thinking">思考 thinking</option>
+            </select>
+          </label>
+        </div>
+        <label class="cmp-field">
+          <span>API Key（可选，无鉴权留空）</span>
+          <input type="password" id="ttsApiKey" placeholder="IRODORI_API_KEY（可留空）" autocomplete="off">
+        </label>
+        <label class="cmp-field">
+          <span>自定义试听文本（日语效果最佳）</span>
+          <input type="text" id="ttsSampleText" value="プロデューサーさん、今日もお疲れ様です！" placeholder="输入要朗读的台词…">
+        </label>
+      </div>
+
+      <p class="cmp-tts-status" id="ttsStatusText">当前未接入。启动本机 api_server.py 后点击下方一键接入即可使用。</p>
+
+      <div class="cmp-tts-actions">
+        <button type="button" class="cmp-primary-btn" id="btnTtsConnect">⚡ 一键检测并接入</button>
+        <button type="button" class="cmp-ghost-btn" id="btnTtsTest">🔊 试听</button>
+        <button type="button" class="cmp-ghost-btn" id="btnTtsDisconnect">断开</button>
+      </div>
+
+      <hr class="cmp-divider">
+      <div class="cmp-api-block">
+        <div class="cmp-drawer-head">
+          <div>
+            <strong>🧠 AI 对话 API · 可选插槽</strong>
+            <small>接入任意 OpenAI 兼容接口后，可实时闲聊、报时与曲目点评</small>
+          </div>
+        </div>
+        <div class="cmp-tts-form">
+          <label class="cmp-field">
+            <span>Chat API Base URL</span>
+            <input type="url" id="aiApiUrl" placeholder="https://api.openai.com/v1 或 http://127.0.0.1:11434/v1">
+          </label>
+          <div class="cmp-field-row">
+            <label class="cmp-field">
+              <span>Model 名称</span>
+              <input type="text" id="aiApiModel" placeholder="gpt-4o-mini / qwen2.5">
+            </label>
+            <label class="cmp-field">
+              <span>API Key</span>
+              <input type="password" id="aiApiKey" placeholder="sk-…" autocomplete="off">
+            </label>
+          </div>
+          <div class="cmp-chat-row">
+            <input type="text" id="aiQuickPrompt" placeholder="对桌面伙伴说句话（回车发送）…">
+            <button type="button" class="cmp-ghost-btn" id="btnAiSend">发送</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/portraits.js"></script>
+  <script src="/companion.js"></script>
+</body>
+</html>

@@ -964,6 +964,16 @@
     elIsland.classList.toggle('is-playing', !!isPlaying);
     elIslandPopover.classList.toggle('is-playing', !!isPlaying);
     elIpFavBtn.classList.toggle('is-fav', !!isFav);
+    const nowPlayingSig = `${isPlaying ? 1 : 0}|${title}|${artist}`;
+    if (window.__lastNowPlayingSig !== nowPlayingSig) {
+      window.__lastNowPlayingSig = nowPlayingSig;
+      const npPayload = { playing: !!isPlaying, title, artist, accent, bpm: Number(song.bpm) || 124 };
+      try { localStorage.setItem('shiny.nowPlaying', JSON.stringify(npPayload)); } catch {}
+      try {
+        window.__companionSyncCh = window.__companionSyncCh || new BroadcastChannel('shiny-companion-sync');
+        window.__companionSyncCh.postMessage({ type: 'music-state', state: npPayload });
+      } catch {}
+    }
     if (window.__lastBroadcastPlaying !== !!isPlaying) {
       window.__lastBroadcastPlaying = !!isPlaying;
       try { localStorage.setItem('shiny.musicPlaying', isPlaying ? '1' : '0'); } catch {}
@@ -2449,6 +2459,67 @@
       dismissBoot();
     })();
   }
+
+  // Transparent Desktop Companion Launcher + Normal-Mode Hourly Chime Toast
+  (() => {
+    const btnCompanion = $('#btnCompanion');
+    const isMob = document.documentElement.dataset.mobile === '1';
+    if (btnCompanion) {
+      if (isMob) {
+        btnCompanion.hidden = true;
+      } else {
+        btnCompanion.addEventListener('click', async () => {
+          if (window.desktop?.toggleCompanion) {
+            try {
+              const res = await window.desktop.toggleCompanion();
+              btnCompanion.classList.toggle('is-on', !!res?.open);
+            } catch {}
+          } else {
+            window.open('/companion.html', 'shinyCompanion', 'width=360,height=500,resizable=yes');
+          }
+        });
+        try {
+          window.desktop?.onCompanionState?.(st => {
+            btnCompanion.classList.toggle('is-on', !!st?.open);
+          });
+        } catch {}
+      }
+    }
+
+    // Normal-mode gentle hourly chime toast (respects shiny.companionConfig.hourlyChime !== false)
+    let lastShellChimeKey = '';
+    const showHourlyToast = (hh, text) => {
+      let el = document.getElementById('shellHourlyToast');
+      if (!el) {
+        el = document.createElement('div');
+        el.id = 'shellHourlyToast';
+        el.style.cssText = 'position:fixed;top:70px;left:50%;transform:translateX(-50%) translateY(-10px);z-index:9999;padding:10px 18px;border-radius:999px;background:rgba(15,23,42,0.88);color:#f8fafc;border:1px solid rgba(56,189,248,0.42);box-shadow:0 16px 40px rgba(2,6,23,0.45);font-size:13px;font-weight:600;display:flex;align-items:center;gap:8px;opacity:0;transition:opacity .35s ease,transform .35s ease;pointer-events:none;backdrop-filter:blur(14px);';
+        document.body.appendChild(el);
+      }
+      el.textContent = `🔔 ${hh}:00 整点报时 · ${text}`;
+      requestAnimationFrame(() => { el.style.opacity = '1'; el.style.transform = 'translateX(-50%) translateY(0)'; });
+      clearTimeout(el.__hideTimer);
+      el.__hideTimer = setTimeout(() => { el.style.opacity = '0'; el.style.transform = 'translateX(-50%) translateY(-10px)'; }, 6200);
+    };
+    setInterval(() => {
+      try {
+        const cfg = JSON.parse(localStorage.getItem('shiny.companionConfig') || '{}');
+        if (cfg.hourlyChime === false) return;
+      } catch {}
+      const now = new Date();
+      if (now.getMinutes() !== 0) return;
+      const key = `${now.getFullYear()}-${now.getMonth()}-${now.getDate()}-${now.getHours()}`;
+      if (key === lastShellChimeKey) return;
+      lastShellChimeKey = key;
+      const h = now.getHours();
+      const hh = String(h).padStart(2, '0');
+      const greet = h < 11 ? '早安制作人，283 事务所元气满满的一天开始啦！'
+        : h < 17 ? '排练辛苦啦，记得起身喝口水放松一下哦！'
+        : h < 22 ? '傍晚好制作人，要不要听首歌或重温一篇剧情？'
+        : '夜深了制作人，早点休息明天会更闪耀哦。';
+      showHourlyToast(hh, greet);
+    }, 20000);
+  })();
 
   boot();
 })();

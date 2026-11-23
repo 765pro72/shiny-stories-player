@@ -1,5 +1,5 @@
 if(!require('./assistant-test-entry.cjs').tryRun()){
-const {app,BrowserWindow,ipcMain,shell,net,dialog}=require('electron'),path=require('path'),fs=require('fs');const {start}=require('./server.cjs');const {BackgroundUpdates}=require('./update-background.cjs');const {downloadAll}=require('./offline-downloader.cjs');let server,w,busy=false,updates,assistant;
+const {app,BrowserWindow,ipcMain,shell,net,dialog,screen}=require('electron'),path=require('path'),fs=require('fs');const {start}=require('./server.cjs');const {BackgroundUpdates}=require('./update-background.cjs');const {downloadAll}=require('./offline-downloader.cjs');let server,w,companionWin=null,busy=false,updates,assistant;
 try{
   app.commandLine.appendSwitch('high-dpi-support','1');
   app.commandLine.appendSwitch('autoplay-policy','no-user-gesture-required');
@@ -57,7 +57,7 @@ ipcMain.on('read-state',e=>{try{e.returnValue=JSON.parse(fs.readFileSync(stateFi
 ipcMain.handle('open-download-folder',async e=>{if(e.sender!==w.webContents)return;await shell.openPath(downloadDir);return downloadDir});
 ipcMain.handle('open-assistant-folder',async(e,id)=>{if(e.sender!==w.webContents)return;const folder=assistant?.folder(id);if(folder)await shell.openPath(folder)});
 ipcMain.on('read-mode',e=>{e.returnValue=mode});
-ipcMain.on('write-state',(e,v)=>{if(e.sender!==w.webContents||!v||typeof v!=='object')return;let state={};try{state=JSON.parse(fs.readFileSync(stateFile));}catch{}const fixedKeys=new Set(['favorites','recent','overrides','home','homeMusic','updateNotice','anime4k','qualityPipeline','archiveBanner','moduleBanners','translationImportHistory','storySubtitleLanguage','interfaceFont','story-ai-connections','story-ai-draft','story-voice-settings','story-voice-profiles','story-material-moods','story-material-notes','idol-assistant-settings','idol-assistant-chat','producer_birthday','producer_bday_greeted_date']);for(const[k,val]of Object.entries(v)){if(!fixedKeys.has(k)&&!k.startsWith('shiny.'))continue;if(val===null){delete state[k];}else if(typeof val==='string'&&val.length<524288){state[k]=val;}}fs.writeFileSync(stateFile+'.tmp',JSON.stringify(state));fs.renameSync(stateFile+'.tmp',stateFile);});
+ipcMain.on('write-state',(e,v)=>{const okSender=e.sender===w?.webContents||(companionWin&&!companionWin.isDestroyed()&&e.sender===companionWin.webContents);if(!okSender||!v||typeof v!=='object')return;let state={};try{state=JSON.parse(fs.readFileSync(stateFile));}catch{}const fixedKeys=new Set(['favorites','recent','overrides','home','homeMusic','updateNotice','anime4k','qualityPipeline','archiveBanner','moduleBanners','translationImportHistory','storySubtitleLanguage','interfaceFont','story-ai-connections','story-ai-draft','story-voice-settings','story-voice-profiles','story-material-moods','story-material-notes','idol-assistant-settings','idol-assistant-chat','producer_birthday','producer_bday_greeted_date']);for(const[k,val]of Object.entries(v)){if(!fixedKeys.has(k)&&!k.startsWith('shiny.'))continue;if(val===null){delete state[k];}else if(typeof val==='string'&&val.length<524288){state[k]=val;}}fs.writeFileSync(stateFile+'.tmp',JSON.stringify(state));fs.renameSync(stateFile+'.tmp',stateFile);});
 updates=new BackgroundUpdates(downloadDir,{fetch:(...args)=>net.fetch(...args),onState:state=>{if(w&&!w.isDestroyed())w.webContents.send('update-state',state)},onActivate:r=>{let bundledCount=0;try{bundledCount=JSON.parse(fs.readFileSync(path.join(__dirname,'data','summary.json'),'utf8')).translationFiles||0;}catch{}const newCount=r.summary?.translationFiles||0;if(newCount<bundledCount){console.log('跳过更新降级:',newCount,'< 内置:',bundledCount);return;}data=r.data;try{let state={};try{state=JSON.parse(fs.readFileSync(stateFile,'utf8'))}catch{}state.updateNotice=JSON.stringify({at:new Date().toISOString(),summary:r.summary});fs.writeFileSync(stateFile+'.tmp',JSON.stringify(state));fs.renameSync(stateFile+'.tmp',stateFile)}catch{}}});
 ipcMain.handle('check-updates',async e=>{if(e.sender!==w.webContents)return;return updates.check()});
 ipcMain.handle('update-state',e=>{if(e.sender===w.webContents)return updates.snapshot()});
@@ -67,5 +67,27 @@ ipcMain.handle('set-fullscreen',(e,flag)=>{if(w&&!w.isDestroyed()){w.setFullScre
 ipcMain.handle('is-fullscreen',()=>w&&!w.isDestroyed()?w.isFullScreen():false);
 ipcMain.handle('set-zoom-factor',(e,factor)=>{if(w&&!w.isDestroyed()){w.webContents.setZoomFactor(factor);return w.webContents.getZoomFactor();}return 1;});
 ipcMain.handle('get-zoom-factor',()=>w&&!w.isDestroyed()?w.webContents.getZoomFactor():1);
-w=new BrowserWindow(require('./desktop-window.cjs').windowOptions(__dirname));require('./desktop-window.cjs').watchWindowChrome(w);require('./desktop-window.cjs').watchUnsaved(w,dialog);w.setMenuBarVisibility(false);w.webContents.setWindowOpenHandler(()=>({action:'deny'}));w.webContents.on('will-navigate',(e,url)=>{if(new URL(url).origin!==s.url)e.preventDefault();});require('./assistant-desktop.cjs').bind({app,win:w,ipcMain,dialog,assistant,userData:dir,runtimeRoot:path.dirname(app.getPath('exe')),isBusy:()=>busy||updates?.state.status==='running'});await w.loadURL(s.url+'/'+(repairReceipt?.config.page||'shell.html'));if(repairReceipt)try{await require('./assistant-desktop.cjs').restore({receipt:repairReceipt,win:w,assistant})}catch(e){await dialog.showMessageBox(w,{type:'error',title:'修复启动确认',message:e.message,detail:'原程序备份和恢复草稿保留在本次任务文件夹。'})}});app.on('window-all-closed',()=>{assistant?.dispose();server?.close();updates?.dispose();app.quit();});
+ipcMain.handle('toggle-companion',async()=>{
+ if(companionWin&&!companionWin.isDestroyed()){companionWin.close();companionWin=null;return{open:false};}
+ const wa=screen.getPrimaryDisplay().workArea;
+ const cw=350,ch=490;
+ companionWin=new BrowserWindow({
+  width:cw,height:ch,minWidth:260,minHeight:360,
+  x:Math.max(wa.x+20,wa.x+wa.width-cw-28),
+  y:Math.max(wa.y+20,wa.y+wa.height-ch-24),
+  transparent:true,frame:false,alwaysOnTop:true,resizable:true,hasShadow:false,
+  backgroundColor:'#00000000',title:'283 桌面伙伴',icon:path.join(__dirname,'assets/app.ico'),
+  webPreferences:{preload:path.join(__dirname,'preload.cjs'),nodeIntegration:false,contextIsolation:true,sandbox:true,backgroundThrottling:false,autoplayPolicy:'no-user-gesture-required'}
+ });
+ companionWin.setMenuBarVisibility(false);
+ companionWin.on('closed',()=>{companionWin=null;if(w&&!w.isDestroyed())w.webContents.send('companion-state',{open:false});});
+ await companionWin.loadURL(s.url+'/companion.html');
+ if(w&&!w.isDestroyed())w.webContents.send('companion-state',{open:true});
+ return{open:true};
+});
+ipcMain.handle('is-companion-open',()=>!!(companionWin&&!companionWin.isDestroyed()));
+ipcMain.handle('companion-close',()=>{if(companionWin&&!companionWin.isDestroyed()){companionWin.close();companionWin=null;}return{open:false};});
+ipcMain.handle('companion-set-always-on-top',(e,flag)=>{if(companionWin&&!companionWin.isDestroyed()){companionWin.setAlwaysOnTop(!!flag);return companionWin.isAlwaysOnTop();}return false;});
+ipcMain.handle('companion-set-ignore-mouse',(e,ignore,opts)=>{if(companionWin&&!companionWin.isDestroyed()){companionWin.setIgnoreMouseEvents(!!ignore,opts||{forward:true});return true;}return false;});
+w=new BrowserWindow(require('./desktop-window.cjs').windowOptions(__dirname));w.on('closed',()=>{if(companionWin&&!companionWin.isDestroyed())companionWin.close();});require('./desktop-window.cjs').watchWindowChrome(w);require('./desktop-window.cjs').watchUnsaved(w,dialog);w.setMenuBarVisibility(false);w.webContents.setWindowOpenHandler(()=>({action:'deny'}));w.webContents.on('will-navigate',(e,url)=>{if(new URL(url).origin!==s.url)e.preventDefault();});require('./assistant-desktop.cjs').bind({app,win:w,ipcMain,dialog,assistant,userData:dir,runtimeRoot:path.dirname(app.getPath('exe')),isBusy:()=>busy||updates?.state.status==='running'});await w.loadURL(s.url+'/'+(repairReceipt?.config.page||'shell.html'));if(repairReceipt)try{await require('./assistant-desktop.cjs').restore({receipt:repairReceipt,win:w,assistant})}catch(e){await dialog.showMessageBox(w,{type:'error',title:'修复启动确认',message:e.message,detail:'原程序备份和恢复草稿保留在本次任务文件夹。'})}});app.on('window-all-closed',()=>{assistant?.dispose();server?.close();updates?.dispose();app.quit();});
 }
