@@ -941,17 +941,34 @@
           const st = countActive.get(el);
           if (st && st.animating) return;
           const spec = parseNumericText(el.textContent);
-          if (spec && spec.raw !== countLastTarget.get(el) && pageEverVisible) {
+          // NEVER overwrite target with 0 (prevents our own reset-to-0 from wiping countLastTarget!)
+          if (spec && spec.value > 0 && spec.raw !== countLastTarget.get(el) && pageEverVisible) {
             countLastTarget.set(el, spec.raw);
+            el.textContent = formatNumber(0, spec);
             animateCountUp(el, true);
           }
         }).observe(el, { childList: true, characterData: true, subtree: true });
       }
     };
 
+    const scanCountUps = (root = document) => {
+      if (!root?.querySelectorAll) return;
+      root.querySelectorAll(COUNTUP_SELECTOR).forEach(watchCountEl);
+    };
+
     const bootCountUp = () => {
       whenVisible(() => {
-        document.querySelectorAll(COUNTUP_SELECTOR).forEach(watchCountEl);
+        scanCountUps(document);
+        if (typeof MutationObserver !== 'undefined' && document.body) {
+          let cMo = 0;
+          new MutationObserver(() => {
+            if (cMo) return;
+            cMo = requestAnimationFrame(() => {
+              cMo = 0;
+              scanCountUps(document);
+            });
+          }).observe(document.body, { childList: true, subtree: true });
+        }
       });
     };
 

@@ -144,6 +144,7 @@
         for (const group of row.groups) {
           const link = el('a', row.title + (row.groups.length > 1 ? ' ／ ' + group : ''));
           link.href = '/guide.html?' + new URLSearchParams({ group }) + '#archive';
+          link.dataset.timelineGroup = group;
           item.append(link, el('br'));
         }
       } else {
@@ -152,6 +153,7 @@
           ? '〔待匹配 · 疑似「' + String(near[0]).replace(/^【/, '').replace(/】.*$/, '') + '」〕'
           : '〔本地待匹配〕';
         const span = el('span', row.title + hint, 'unmatched');
+        span.dataset.timelineKey = `${row.date || ''}::${row.title || ''}`;
         if (near) span.title = '本地近似分组：' + near.join('、');
         item.append(span);
       }
@@ -435,6 +437,7 @@
 
       chapterMeta.forEach(m => stIO.observe(m.chapter));
     }
+    window.ShinyWatchedStories?.syncAll?.();
   }
 
   mount();
