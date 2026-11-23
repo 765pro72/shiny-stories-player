@@ -435,6 +435,21 @@
         }
       }, { rootMargin: '-28% 0px -48% 0px', threshold: 0.05 });
 
+      // Hover over any chapter card or year dot -> smoothly showcase that year on the sticky stage!
+      let hoverTimer = 0;
+      const scheduleHoverActivate = (targetIdx) => {
+        clearTimeout(hoverTimer);
+        hoverTimer = setTimeout(() => activateChapter(targetIdx), 55);
+      };
+      chapterMeta.forEach((m, i) => {
+        m.chapter.addEventListener('pointerenter', (e) => {
+          if (e.pointerType === 'mouse') scheduleHoverActivate(i);
+        });
+        m.dot.addEventListener('pointerenter', (e) => {
+          if (e.pointerType === 'mouse') scheduleHoverActivate(i);
+        });
+      });
+
       chapterMeta.forEach(m => stIO.observe(m.chapter));
     }
     window.ShinyWatchedStories?.syncAll?.();

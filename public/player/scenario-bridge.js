@@ -54,7 +54,7 @@
      } catch (e) {}
    });
  }
- let raw=[],tracks=[],translation={},names={},common={},overrides={},language=params.get('lang')||localStorage.getItem('storySubtitleLanguage')||'zh',volume=1,player,app,converter,disposed=false,started=false,ended=false;
+ let raw=[],tracks=[],lastRows=[],translation={},names={},common={},overrides={},language=params.get('lang')||localStorage.getItem('storySubtitleLanguage')||'zh',volume=1,player,app,converter,disposed=false,started=false,ended=false;
  let hasFailed=false;
  const history=[],finishedVoices=new WeakSet(),knownUnavailable=new Set(),emit=(type,value)=>{if(parent!==window)parent.postMessage({type,value},location.origin)};
  const status=text=>{if(disposed)return;emit('status',text);if(!hasFailed)$('#loading').textContent=text};
@@ -85,7 +85,7 @@
  function annotate(){
   const result=ScenarioText.annotate(raw,translation,names,common,overrides,language),converted=converter.convertResourcePaths(result.tracks);
   if(!tracks.length)tracks=converted;else for(let i=0;i<tracks.length;i++){if(converted[i].text!==undefined)tracks[i].text=converted[i].text;if(converted[i].select!==undefined)tracks[i].select=converted[i].select}
-  emit('lines',result.rows);refreshLanguage();
+  lastRows=result.rows||[];emit('lines',lastRows);refreshLanguage();
  }
  function refreshLanguage(){
   if(!player)return;const log=player._scenarioLogLayer;log._tracks=[];
@@ -157,7 +157,7 @@
    if(preset.opensLog){controlMode(preset);return}const waiting=p._isWaiting();p._detachVoiceEndListener();if(waiting){p._schedule.cancelAll();p._state=State.LOCKED}controlMode(preset);if(waiting)p._changeToWaiting();if(preset.soundDisabled)stage.stopLipAnimations();emit('auto',p._mode===SpeedMode.AUTO);
   });
   const speaker=p._scenarioPlayer.controlSpeaker.bind(p._scenarioPlayer);const producerRe=/^(?:制作人|製作人|プロデューサー|producer|p)(?:[（(].*[）)])?$/i;let producerName='';try{producerName=(localStorage.getItem('shiny.producerName')||'').trim()}catch(e){}const speakerLabel=name=>{const text=names[name]||name;return producerName&&producerRe.test(String(text).replace(/[\s\u3000]/g,''))?producerName:text};p._scenarioPlayer.controlSpeaker=name=>speaker(speakerLabel(name));
-  const log=p._scenarioLogLayer;log.stackTrackOriginal=log.stackTrack.bind(log);log.stackTrack=t=>{history.push(Number.isInteger(t?._storyIndex)?t._storyIndex:{...t});log.stackTrackOriginal(t)};
+  const log=p._scenarioLogLayer;log.stackTrackOriginal=log.stackTrack.bind(log);log.stackTrack=t=>{history.push(Number.isInteger(t?._storyIndex)?t._storyIndex:{...t});if(t&&t.text){const row=Number.isInteger(t._storyIndex)?lastRows.find(r=>r.index===t._storyIndex):null;const rawLine=String(t.text||'').trim();emit('currentLine',{speaker:speakerLabel(t.speaker||row?.speaker||''),original:row?.original||rawLine,translation:row?.translation||rawLine})}log.stackTrackOriginal(t)};
   const movie=p._movieLayer.control.bind(p._movieLayer);p._movieLayer.control=(url,options={})=>{const result=movie(url,{...options,onError:message=>{if(disposed)return;status('一段过场影片暂未取得或无法播放，已跳过；其余剧情继续播放。'+message);$('#loading').style.display='none'}});setVolume(volume);return result};
   const nativePause=p.pause.bind(p),nativeResume=p.resume.bind(p);p.pause=()=>{nativePause();stage._spineMap.forEach(s=>{s.autoUpdate=false})};p.resume=()=>{nativeResume();stage._spineMap.forEach(s=>{s.autoUpdate=true})};
   const fatal=p._handleFatalError.bind(p);p._handleFatalError=(message,error,context)=>{fatal(message,error,context);fail(error||message)};
