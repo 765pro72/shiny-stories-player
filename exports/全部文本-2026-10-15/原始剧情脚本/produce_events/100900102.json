@@ -1,0 +1,702 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "果穂ー、そろそろレッスンの時間……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1009001020010,
+    "speaker": "果穂",
+    "text": "わぁっ……！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "009",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "x": 200,
+      "alpha": 0,
+      "time": 700
+    },
+    "voice": "produce_events/100900102/1009001020010"
+  },
+  {
+    "speaker": "off",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "se": "0118",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうしたんだ？",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 1009001020020,
+    "speaker": "果穂",
+    "text": "あっ、プロデューサーさん！\r\nやっぱり事務所ってスゴいですねっ",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "x": 200,
+      "alpha": 1,
+      "time": 700
+    },
+    "voice": "produce_events/100900102/1009001020020"
+  },
+  {
+    "id": 1009001020030,
+    "speaker": "果穂",
+    "text": "ヒーローの秘密基地に来たみたいで楽しいです！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そ、そうか\r\nたしかに果穂には珍しいかもな",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001020040,
+    "speaker": "果穂",
+    "text": "はい！\r\n……あっ！　プロデューサーさん、見てくださいっ！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020040"
+  },
+  {
+    "effectLabel": "black２",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black２",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "id": 1009001020260,
+    "speaker": "はづき",
+    "text": "……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sleep_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/100900102/1009001020260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はづきさんがどうかしたのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001020050,
+    "speaker": "果穂",
+    "text": "スゴいスピードでパソコンを使ってますっ",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020050"
+  },
+  {
+    "id": 1009001020060,
+    "speaker": "果穂",
+    "text": "いつも眠そうにしてるのに、すごいです！",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020060"
+  },
+  {
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim1": "wait2",
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "id": 1009001020070,
+    "speaker": "果穂",
+    "text": "なんだか……ピンチのヒーローを助ける、\r\n正義の味方って感じがします！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100900102/1009001020070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほど……\r\nそれは俺もわかるよ",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001020080,
+    "speaker": "果穂",
+    "text": "ですよねっ。カッコいいなーっ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020080"
+  },
+  {
+    "id": 1009001020090,
+    "speaker": "果穂",
+    "text": "ここでなら、\r\n本当にヒーローになれる気がしてきました！",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "果穂はヒーローじゃなくて、\r\nアイドルなんだけどな……",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001020270,
+    "speaker": "はづき",
+    "text": "ふふっ",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "waitType": "time",
+    "waitTime": 1500,
+    "voice": "produce_events/100900102/1009001020270"
+  },
+  {
+    "effectLabel": "black4",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black4",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、はづきさん\r\nお疲れ様です",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 1009001020280,
+    "speaker": "はづき",
+    "text": "お疲れ様です、プロデューサーさん。……果穂さんを\r\n見てると、あたしたちまで元気がもらえますね",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/100900102/1009001020280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですね。\r\nあの元気いっぱいさなら……",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "世の中に旋風を巻き起こすヒーローみたいな……\r\n本当に、そんなアイドルになれるかもしれません",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 1009001020100,
+    "speaker": "果穂",
+    "text": "えっ、ヒーローですか！？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100900102/1009001020100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん。今、果穂がヒーローみたいに\r\nなれるかもって話してたんだよ",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001020110,
+    "speaker": "果穂",
+    "text": "あたしもいつか、\r\nヒーローみたいになれるんですか！？",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな……",
+    "charLabel": "kaho",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "なれるから\r\nスカウトしたんだ",
+    "nextLabel": "1"
+  },
+  {
+    "select": "果穂はなりたいんだろ？",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "レッスンあるのみだ！",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "果穂は、ヒーローみたいにみんなを笑顔にできる……\r\nそんなアイドルになれると思うよ",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001020120,
+    "speaker": "果穂",
+    "text": "本当ですか！？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。そのためにも\r\nしっかりプロデュースしてやるからな",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001020130,
+    "speaker": "果穂",
+    "text": "あたしがヒーローみたいに……\r\nじゃあ、カッコいいポーズとかも必要ですよね！！",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020130"
+  },
+  {
+    "id": 1009001020140,
+    "speaker": "果穂",
+    "text": "今から考えておかないとっ\r\nどんなポーズがカッコいいかなー",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは。ポーズも大事だけど、\r\nまずはレッスンからだな",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これから、一緒に頑張っていこう",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001020150,
+    "speaker": "果穂",
+    "text": "はいっ。えへへ！\r\nヒーローみたいになれるように、頑張りますっ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/100900102/1009001020150"
+  },
+  {
+    "id": 1009001020160,
+    "label": "2",
+    "speaker": "果穂",
+    "text": "はい、なりたいです！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、いい返事だ\r\nそういう気持ちの強さが大事なんだ",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001020170,
+    "speaker": "果穂",
+    "text": "あっ。それ、聞いたことがありますっ",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020170"
+  },
+  {
+    "id": 1009001020180,
+    "speaker": "果穂",
+    "text": "好きな特撮番組でも、\r\nこーじょーしんが大事だ、って言ってました！",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020180"
+  },
+  {
+    "id": 1009001020190,
+    "speaker": "果穂",
+    "text": "やっぱりアイドルとヒーローって\r\n似てるんですね！",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "たしかにそうだな。アイドルもヒーローも、\r\nみんなを笑顔にし続けるには向上心が必要だ",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だから上を目指して、一緒に戦っていこうな",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001020200,
+    "speaker": "果穂",
+    "text": "はいっ。あたし、プロデューサーさんと戦います！\r\nとぉっ！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/100900102/1009001020200"
+  },
+  {
+    "label": "3",
+    "speaker": "プロデューサー",
+    "text": "ヒーローみたいになるには、\r\n毎日のレッスンは欠かせないぞ",
+    "charAnim2": "face_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001020210,
+    "speaker": "果穂",
+    "text": "ヒーローも毎日の特訓が大事だって言ってました\r\nみんなの笑顔を守るには、日々のたんれんが必要だって！",
+    "charAnim1": "think",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020210"
+  },
+  {
+    "id": 1009001020220,
+    "speaker": "果穂",
+    "text": "みんなの笑顔を守るために、アイドルも\r\n毎日のレッスンが大事なんですねっ",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。それに、\r\n果穂にはすごい潜在能力が眠ってるはずだからな",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001020230,
+    "speaker": "果穂",
+    "text": "せんざいのーりょく！\r\nあたし、知ってます！　眠れる力です！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだ。その力を解放するためにも、\r\nまずはレッスンだ",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001020240,
+    "speaker": "果穂",
+    "text": "はいっ！　みんなを笑顔にできる、\r\nヒーローみたいなアイドルになるために……",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100900102/1009001020240"
+  },
+  {
+    "id": 1009001020250,
+    "speaker": "果穂",
+    "text": "今日もレッスン、頑張ります！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/100900102/1009001020250"
+  },
+  {
+    "label": "end"
+  }
+]

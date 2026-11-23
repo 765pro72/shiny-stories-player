@@ -1,0 +1,116 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019"
+  },
+  {
+    "id": 4021001000210010,
+    "speaker": "円香",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communication_cheers/402100100021/4021001000210010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（なんとなく調子が悪そうだな……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "無理できるか",
+    "nextLabel": "4021001000211"
+  },
+  {
+    "select": "無理するな",
+    "nextLabel": "4021001000212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "大丈夫か",
+    "nextLabel": "4021001000213"
+  },
+  {
+    "id": 4021001000210020,
+    "label": "4021001000211",
+    "speaker": "円香",
+    "text": "……さあ？　やってみないとわかりません",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402100100021/4021001000210020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（期待しているぞ……！）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4021001000210030,
+    "label": "4021001000212",
+    "speaker": "円香",
+    "text": "……そうですか。では、そうします",
+    "charAnim1": "shy1",
+    "charAnim2": "face_serious",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402100100021/4021001000210030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（違うことを言った方がよかったか……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4021001000210040,
+    "label": "4021001000213",
+    "speaker": "円香",
+    "text": "……なんのことですか？　別にいつも通りです",
+    "charAnim1": "sad2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402100100021/4021001000210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（はぐらかされてしまった……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019"
+  },
+  {
+    "id": 4023001000130010,
+    "speaker": "雛菜",
+    "text": "ん～、なんか可愛い子ばっかりって感じだね～？\r\nさすがアイドル～！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "023",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communication_cheers/402300100013/4023001000130010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（他の参加者が気になるみたいだな……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "雛菜が一番だろ？",
+    "nextLabel": "4023001000131"
+  },
+  {
+    "select": "雛菜もアイドルだろ？",
+    "nextLabel": "4023001000132"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "周りは気にしなくていい",
+    "nextLabel": "4023001000133"
+  },
+  {
+    "id": 4023001000130020,
+    "label": "4023001000131",
+    "speaker": "雛菜",
+    "text": "やは～！\r\nそっか～、そうだったね～？",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402300100013/4023001000130020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（いつもの調子に戻ったみたいだ）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 4023001000130030,
+    "label": "4023001000132",
+    "speaker": "雛菜",
+    "text": "あは～、そうだった～！\r\nさすが雛菜～～～！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402300100013/4023001000130030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（とりあえず自信はあるみたいだな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 4023001000130040,
+    "label": "4023001000133",
+    "speaker": "雛菜",
+    "text": "え～、だって周りの人に勝たなきゃでしょ～？\r\n雛菜、別に負けないけど～……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402300100013/4023001000130040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うーん、上手く伝えられなかったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

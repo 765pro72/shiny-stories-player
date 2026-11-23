@@ -1,0 +1,167 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "小糸！\r\nおはよう！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001001510010,
+    "speaker": "小糸",
+    "text": "は、はい！\r\nおはようございます、プロデューサーさん……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "022",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102200100151/1022001001510010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………！\r\n小糸も随分慣れてくれたな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001001510020,
+    "speaker": "小糸",
+    "text": "な、なんですか……も、もしかして\r\nわたしと挨拶できて嬉しいんですか……！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100151/1022001001510020"
+  },
+  {
+    "select": "すごく\r\n嬉しいよ",
+    "nextLabel": "1022001001511"
+  },
+  {
+    "select": "当たり前だろ",
+    "nextLabel": "1022001001512"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "はは、\r\nどうかな",
+    "nextLabel": "1022001001513"
+  },
+  {
+    "id": 1022001001510030,
+    "label": "1022001001511",
+    "speaker": "小糸",
+    "text": "な……なんですか\r\nほ、ほんとにもう……！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100151/1022001001510030"
+  },
+  {
+    "id": 1022001001510040,
+    "speaker": "小糸",
+    "text": "わ、わたしがいないと\r\nだめだめプロデューサーさんですね……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100151/1022001001510040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1022001001510050,
+    "label": "1022001001512",
+    "speaker": "小糸",
+    "text": "そ、そうですか……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100151/1022001001510050"
+  },
+  {
+    "id": 1022001001510060,
+    "speaker": "小糸",
+    "text": "よ、よかったですね……！\r\n明日も明後日も挨拶できます、よ……！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100151/1022001001510060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1022001001510070,
+    "label": "1022001001513",
+    "speaker": "小糸",
+    "text": "え……！\r\nち、違うんですか……！",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100151/1022001001510070"
+  },
+  {
+    "id": 1022001001510080,
+    "speaker": "小糸",
+    "text": "そ、そうですか……！\r\nべ、別にいいですけど……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100151/1022001001510080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

@@ -1,0 +1,405 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "off",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですか……参加はできませんでしたか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7024001080080,
+    "speaker": "はづき",
+    "text": "……本当に\r\n厳しい世界なんですね……プロデューサーさん",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702400108/7024001080080"
+  },
+  {
+    "id": 7024001080090,
+    "speaker": "はづき",
+    "text": "……\r\n今日のあの子を見ていたら、私────",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702400108/7024001080090"
+  },
+  {
+    "id": 7024001080100,
+    "speaker": "社長",
+    "text": "──お前にとっても重い結果だっただろう",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702400108/7024001080100"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textFrame": "off"
+  },
+  {
+    "id": 7024001080110,
+    "speaker": "はづき",
+    "text": "……あの子との約束\r\n私、あんな顔をさせるためにしたんだっけって──",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702400108/7024001080110"
+  },
+  {
+    "id": 7024001080120,
+    "speaker": "はづき",
+    "text": "──そう思うと、心が迷いそうになるんですけど\r\nでも、結果をしっかり抱いて……歩いていってほしくて",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702400108/7024001080120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……彼女だけの結果ではないです",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "行ってきます\r\n社長、はづきさん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black99",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "effectLabel": "black99",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0730",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────……\r\n通過できなかった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『W.I.N.G.』は……ここまでだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00432",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1400,
+    "bgEffectTime": 1000
+  },
+  {
+    "id": 7024001080010,
+    "speaker": "にちか",
+    "text": "──────あぁ……\r\nそうですよね…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0328",
+    "voice": "produce_events/702400108/7024001080010"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 7024001080020,
+    "speaker": "にちか",
+    "text": "なみちゃんとか、アイドルとか……\r\n雲の上の話で……私が目指せるわけないっていうか",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702400108/7024001080020"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1400,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 7024001080030,
+    "speaker": "にちか",
+    "text": "────夢見てる方が、どうかしてるので……！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "024",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/702400108/7024001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………にちか、それはちが──────",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0328"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00224",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1400,
+    "bgEffectTime": 1000
+  },
+  {
+    "id": 7024001080040,
+    "speaker": "にちか",
+    "text": "違ってないって、わかったじゃないですか……これで",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702400108/7024001080040"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 300
+  },
+  {
+    "id": 7024001080050,
+    "speaker": "にちか",
+    "text": "大丈夫ですよ\r\n私……案外大丈夫みたいです…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702400108/7024001080050"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1400,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 7024001080060,
+    "speaker": "にちか",
+    "text": "ずっと……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/702400108/7024001080060"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_tear1",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1000
+  },
+  {
+    "id": 7024001080070,
+    "speaker": "にちか",
+    "text": "こうやって、負ける時のこと\r\n考えてきたから",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702400108/7024001080070"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "end"
+  }
+]

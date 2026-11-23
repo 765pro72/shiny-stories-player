@@ -1,0 +1,773 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00010",
+    "bgm": "012"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charType": "characters",
+    "charId": "014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "charCategory": "stand_fix"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charType": "characters",
+    "charId": "016",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "charCategory": "stand_fix"
+  },
+  {
+    "se": "0120",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 3015004030010,
+    "speaker": "甜花",
+    "text": "お、お待たせ……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "015",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "x": 200,
+      "alpha": 0,
+      "time": 700
+    },
+    "voice": "produce_events/301500403/3015004030010",
+    "charCategory": "stand_fix"
+  },
+  {
+    "id": 3015004030020,
+    "speaker": "甘奈",
+    "text": "あ、甜花ちゃん！\r\nよしっ、これでみんな揃ったね",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030020"
+  },
+  {
+    "id": 3015004030030,
+    "speaker": "千雪",
+    "text": "それじゃあ、今日はこの間行けなかったお店に行きましょうか",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030030"
+  },
+  {
+    "id": 3015004030040,
+    "speaker": "甘奈",
+    "text": "うん！\r\nやっぱり服はいろいろ見ないとだもんね",
+    "charAnim1": "smile2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030040"
+  },
+  {
+    "id": 3015004030050,
+    "speaker": "甜花",
+    "text": "う、うん……この前は……全然、わかんなかったから……\r\n今日は……がんばる、ね……！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030050"
+  },
+  {
+    "id": 3015004030060,
+    "speaker": "甘奈",
+    "text": "甜花ちゃん、そんなに急がなくても大丈夫\r\nゆっくり、探していこう？",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030060"
+  },
+  {
+    "id": 3015004030070,
+    "speaker": "千雪",
+    "text": "今日はかわいいお洋服が見つかるといいですね♪",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030070"
+  },
+  {
+    "id": 3015004030080,
+    "speaker": "甜花",
+    "text": "……うん……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030080"
+  },
+  {
+    "id": 3015004030090,
+    "speaker": "甘奈",
+    "text": "よーしっ、じゃあとりあえず、\r\nお店に入ってみよー",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030090"
+  },
+  {
+    "id": 3015004030100,
+    "speaker": "甜花",
+    "text": "お、おー……？",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030100"
+  },
+  {
+    "id": 3015004030110,
+    "speaker": "千雪",
+    "text": "ふふ、おー♪",
+    "charAnim1": "sad1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030110"
+  },
+  {
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "id": 3015004030120,
+    "speaker": "甜花",
+    "text": "やっぱり……わかんなかった……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030120"
+  },
+  {
+    "id": 3015004030130,
+    "speaker": "甘奈",
+    "text": "うーん……これ！　って服は\r\nなかなか見つけられないもんねー",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030130"
+  },
+  {
+    "id": 3015004030140,
+    "speaker": "甘奈",
+    "text": "でも、だからこそ見つけたときって嬉しいんだ！\r\nきっと甜花ちゃんも、そんな服を見つけられるよ！",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030140"
+  },
+  {
+    "id": 3015004030150,
+    "speaker": "甜花",
+    "text": "う、うん……\r\nふぅ……",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030150"
+  },
+  {
+    "id": 3015004030160,
+    "speaker": "甘奈",
+    "text": "あれっ、どうしたの甜花ちゃん？",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030160"
+  },
+  {
+    "id": 3015004030170,
+    "speaker": "甘奈",
+    "text": "……あっ、もしかして、甘奈また張り切りすぎちゃった？\r\n疲れさせちゃったかなぁ……？",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030170"
+  },
+  {
+    "id": 3015004030180,
+    "speaker": "甜花",
+    "text": "う、ううん……\r\nそんなことない……けど……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030180"
+  },
+  {
+    "id": 3015004030190,
+    "speaker": "甘奈",
+    "text": "けど？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030190"
+  },
+  {
+    "id": 3015004030200,
+    "speaker": "甜花",
+    "text": "……あの……ふたりとも……\r\nぜんぜん決められなくて、ごめんね……？",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030200"
+  },
+  {
+    "id": 3015004030210,
+    "speaker": "甜花",
+    "text": "こないだも、いっぱい服、見てくれたのに……\r\n甜花、ちゃんと選べなくて……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030210"
+  },
+  {
+    "id": 3015004030220,
+    "speaker": "千雪",
+    "text": "そんなことないですよ\r\n甜花ちゃんと一緒にお洋服を見られるだけで楽しいですから♪",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030220"
+  },
+  {
+    "id": 3015004030230,
+    "speaker": "甘奈",
+    "text": "そうだよー！",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030230"
+  },
+  {
+    "id": 3015004030240,
+    "speaker": "甘奈",
+    "text": "だって甘奈たちはファンのみんなも見れないような、\r\nいろんな服を着てる甜花ちゃんが見れてるんだよ！？",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030240"
+  },
+  {
+    "id": 3015004030250,
+    "speaker": "甘奈",
+    "text": "甘奈、もうそれだけですっごく幸せだもん！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030250"
+  },
+  {
+    "id": 3015004030260,
+    "speaker": "千雪",
+    "text": "私も、かわいい甜花ちゃんが見られるのはうれしいわ",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030260"
+  },
+  {
+    "id": 3015004030270,
+    "speaker": "甜花",
+    "text": "ふたりとも……\r\nにへへ、ありがとう……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030270"
+  },
+  {
+    "id": 3015004030280,
+    "speaker": "甜花",
+    "text": "でも……ぜんぜんだめで……\r\nやっぱり甜花、おしゃれなんて、むり……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030280"
+  },
+  {
+    "id": 3015004030290,
+    "speaker": "甘奈",
+    "text": "甜花ちゃん……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030290"
+  },
+  {
+    "id": 3015004030300,
+    "speaker": "甜花",
+    "text": "だって……なーちゃんも千雪さんも……\r\n自分の服……すぐに、決められるよね……？",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030300"
+  },
+  {
+    "id": 3015004030310,
+    "speaker": "甘奈",
+    "text": "うーん、甘奈は結構決めるの早いかもしれないけど\r\nでも迷うときだってあるから、全然普通だよ！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030310"
+  },
+  {
+    "id": 3015004030320,
+    "speaker": "甜花",
+    "text": "そうなの、かな……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030320"
+  },
+  {
+    "id": 3015004030330,
+    "speaker": "甜花",
+    "text": "普通、とか……\r\n甜花、わかんないから……",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030330"
+  },
+  {
+    "id": 3015004030340,
+    "speaker": "千雪",
+    "text": "……ねえ、甘奈ちゃん",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030340"
+  },
+  {
+    "id": 3015004030350,
+    "speaker": "千雪",
+    "text": "私たち、\r\nいろいろ言い過ぎちゃったんじゃないかしら……？",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030350"
+  },
+  {
+    "id": 3015004030360,
+    "speaker": "千雪",
+    "text": "甜花ちゃん、\r\n何がいいのかわからなくなっちゃうのかも",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030360"
+  },
+  {
+    "id": 3015004030370,
+    "speaker": "甘奈",
+    "text": "そっか……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030370"
+  },
+  {
+    "id": 3015004030380,
+    "speaker": "甘奈",
+    "text": "ごめんね、甜花ちゃん\r\n甘奈、甜花ちゃんの服を選ぶのがすっごく楽しくて……",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030380"
+  },
+  {
+    "id": 3015004030390,
+    "speaker": "甘奈",
+    "text": "もっと選び方とか話せばよかったのかもしれないね",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030390"
+  },
+  {
+    "id": 3015004030400,
+    "speaker": "甜花",
+    "text": "うん……えっと、それも知りたい、けど……",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030400"
+  },
+  {
+    "id": 3015004030410,
+    "speaker": "甜花",
+    "text": "で、でも……ふたりが見てくれないと……",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030410"
+  },
+  {
+    "id": 3015004030420,
+    "speaker": "甜花",
+    "text": "甜花、いい服とか、似合ってるとか、そんなの……\r\nぜんぜん、わかんないから……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030420"
+  },
+  {
+    "id": 3015004030430,
+    "speaker": "甜花",
+    "text": "いっしょに、服……\r\n見てくれると、うれしいな……",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030430"
+  },
+  {
+    "id": 3015004030440,
+    "speaker": "甘奈",
+    "text": "うんうん、甜花ちゃんのお気に入りが見つかるまで\r\n甘奈は何着でも見るよ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030440"
+  },
+  {
+    "id": 3015004030450,
+    "speaker": "甘奈",
+    "text": "でも、似合う服がわかんないなんてことないよ",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030450"
+  },
+  {
+    "id": 3015004030460,
+    "speaker": "甘奈",
+    "text": "甜花ちゃん、大人系コーデでまとめても、\r\n元気系のコーデでまとめてもバッチリだったんだから！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030460"
+  },
+  {
+    "id": 3015004030470,
+    "speaker": "千雪",
+    "text": "ふふ、そうね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030470"
+  },
+  {
+    "id": 3015004030480,
+    "speaker": "千雪",
+    "text": "それに、もしイメージが違ったら\r\n私が仕立て直してあげます♪",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030480"
+  },
+  {
+    "id": 3015004030490,
+    "speaker": "千雪",
+    "text": "だから、甜花ちゃんの好きなお洋服を選んで？",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030490"
+  },
+  {
+    "id": 3015004030500,
+    "speaker": "甜花",
+    "text": "あ……\r\nあ、ありがとう……！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030500"
+  },
+  {
+    "id": 3015004030510,
+    "speaker": "千雪",
+    "text": "ふふ、これまでに気になったお洋服とか無かった？",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030510"
+  },
+  {
+    "id": 3015004030520,
+    "speaker": "甜花",
+    "text": "え、えっと……えっと……",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030520"
+  },
+  {
+    "id": 3015004030530,
+    "speaker": "甜花",
+    "text": "……あっ……\r\nあの……じ、実はね……",
+    "charAnim1": "shy2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030530"
+  },
+  {
+    "id": 3015004030540,
+    "speaker": "甜花",
+    "text": "さっき見かけたお店で……\r\n気になった服が、あって……",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030540"
+  },
+  {
+    "id": 3015004030550,
+    "speaker": "甘奈",
+    "text": "本当に！？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030550"
+  },
+  {
+    "id": 3015004030560,
+    "speaker": "甜花",
+    "text": "う、うん……\r\nちょっと、いいなって……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030560"
+  },
+  {
+    "id": 3015004030570,
+    "speaker": "千雪",
+    "text": "甜花ちゃんが気に入ったお洋服……\r\nふふ、見てみたいです♪",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030570"
+  },
+  {
+    "id": 3015004030580,
+    "speaker": "甘奈",
+    "text": "甜花ちゃん！\r\nそのお店、どこか覚えてる？",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030580"
+  },
+  {
+    "id": 3015004030590,
+    "speaker": "甜花",
+    "text": "えっと……\r\nあっちのほう……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030590"
+  },
+  {
+    "id": 3015004030600,
+    "speaker": "甘奈",
+    "text": "じゃあ行ってみよっか！\r\nね、甜花ちゃん、千雪さん！",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500403/3015004030600"
+  },
+  {
+    "label": "end"
+  }
+]

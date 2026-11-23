@@ -1,0 +1,507 @@
+[
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1040050030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00200",
+    "bgm": "001",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim2": "face_wait3",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "surp1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2005008020010,
+    "speaker": "摩美々",
+    "text": "ふふー……",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020010"
+  },
+  {
+    "id": 2005008020020,
+    "speaker": "摩美々",
+    "text": "貸し切り──\r\n最高じゃーん",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……摩美々、楽しそうだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008020030,
+    "speaker": "摩美々",
+    "text": "まぁ……そうかもですねー\r\n衣装もセットも可愛いですしー",
+    "charAnim1": "play",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020030"
+  },
+  {
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2005008020040,
+    "speaker": "摩美々",
+    "text": "……私、\r\nその辺のセット見てきますねー",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ\r\nそれじゃあ、戻ったら軽く打ち合わせをしよう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00000",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──『田中摩美々の亜熱帯』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bg": "00200"
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2005008020050,
+    "speaker": "摩美々",
+    "text": "なんですか、それ\r\n……なんか嫌ですねー",
+    "charAnim1": "touch",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……前にも伝えたんだが……\r\n……それに",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "雑誌社さんが考えてくださったコピーだぞ\r\n悪く言うんじゃない",
+    "charAnim2": "face_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008020060,
+    "speaker": "摩美々",
+    "text": "でもー、亜熱帯──の割には\r\nセットとかポップな感じじゃないですかぁ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020060"
+  },
+  {
+    "id": 2005008020070,
+    "speaker": "摩美々",
+    "text": "あと、そういう暑苦しいのは\r\n私よりも誰かさんのイメージなんですケド……",
+    "charAnim1": "think",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──とにかく、夏に絡めて、\r\n摩美々の熱さを表現したいってことだ",
+    "charAnim2": "face_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008020080,
+    "speaker": "摩美々",
+    "text": "はぁ……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020080"
+  },
+  {
+    "id": 2005008020090,
+    "speaker": "摩美々",
+    "text": "熱さ……\r\n私にありますかねー？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "う、そうだな\r\nえーと……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008020100,
+    "speaker": "摩美々",
+    "text": "ありますかねー？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ど、どっちかというとクールかな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……でも、摩美々はこれから\r\n内に秘めたる熱さを出してくれると思うぞ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008020110,
+    "speaker": "摩美々",
+    "text": "…………",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020110"
+  },
+  {
+    "id": 2005008020120,
+    "speaker": "摩美々",
+    "text": "ふーん……\r\nでもまぁ、亜熱帯って爬虫類っぽいし、それならそれでー",
+    "charAnim1": "play",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そ、そうか……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008020130,
+    "speaker": "摩美々",
+    "text": "──じゃー、撮影、やってきますねー",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……おう\r\n頑張ってこい！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008020140,
+    "speaker": "摩美々",
+    "text": "ほどほどにー",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020140"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0240",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2005008020150,
+    "speaker": "摩美々",
+    "text": "あ、このドリンク光るんだぁ\r\n可愛いー",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020150"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "──それでは\r\n撮影、開始しまーす！",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "bgm": "fade_out"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00093",
+    "bgm": "029",
+    "se": "1040050030",
+    "movie": "1040050030"
+  },
+  {
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "bg": "00200",
+    "bgEffect": "fade",
+    "se": "0116",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "摩美々、お疲れ様",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "撮影すごくよかったよ\r\nスタッフさんにも好評だったぞ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008020160,
+    "speaker": "摩美々",
+    "text": "ふふー……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020160"
+  },
+  {
+    "id": 2005008020170,
+    "speaker": "摩美々",
+    "text": "まぁ、『内に秘めたる熱さ』を\r\n出してみようかなって思ったんでー",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500802/2005008020170"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

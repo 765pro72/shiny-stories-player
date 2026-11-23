@@ -1,0 +1,864 @@
+[
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "009",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3004002010010,
+    "speaker": "恋鐘",
+    "text": "おはよー！！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300400201/3004002010010",
+    "charCategory": "stand_fix"
+  },
+  {
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "charType": "characters",
+    "charId": "006",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "charCategory": "stand_fix"
+  },
+  {
+    "id": 3004002010020,
+    "speaker": "霧子",
+    "text": "……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "008",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300400201/3004002010020",
+    "charCategory": "stand_fix"
+  },
+  {
+    "id": 3004002010030,
+    "speaker": "咲耶",
+    "text": "おはよう。恋鐘\r\n今日も元気だね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010030"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004002010040,
+    "speaker": "恋鐘",
+    "text": "当たり前っちゃよー！\r\n朝からしょんぼりしとってどうするとよ！",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400201/3004002010040"
+  },
+  {
+    "charLabel": "kogane",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004002010050,
+    "speaker": "恋鐘",
+    "text": "霧子もおはよう！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010050"
+  },
+  {
+    "id": 3004002010060,
+    "speaker": "霧子",
+    "text": "う、うん……おはよう……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010060"
+  },
+  {
+    "id": 3004002010070,
+    "speaker": "霧子",
+    "text": "え、えっと……わたし、お茶淹れてくるね……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010070"
+  },
+  {
+    "speaker": "off",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "se": "0118",
+    "charEffect": {
+      "type": "to",
+      "x": 200,
+      "alpha": 0,
+      "time": 450
+    },
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 3004002010080,
+    "speaker": "恋鐘",
+    "text": "いやいや、そんな気を遣わんでよかよ～\r\n……って、もうおらんかった",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400201/3004002010080"
+  },
+  {
+    "charLabel": "kogane",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004002010090,
+    "speaker": "恋鐘",
+    "text": "なんやろ……？\r\n出て行ったの、うちのせいやろか……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010090"
+  },
+  {
+    "id": 3004002010100,
+    "speaker": "咲耶",
+    "text": "フフ、そんなことはないと思うよ？\r\n恋鐘がすごく元気だったから、びっくりしたんじゃないかな",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010100"
+  },
+  {
+    "id": 3004002010110,
+    "speaker": "恋鐘",
+    "text": "あっ、さっきの挨拶のせいとね！？\r\nそれは霧子に悪いことしたばい",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010110"
+  },
+  {
+    "id": 3004002010120,
+    "speaker": "恋鐘",
+    "text": "……う～ん",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010120"
+  },
+  {
+    "id": 3004002010130,
+    "speaker": "咲耶",
+    "text": "霧子のことが気になっているのかい？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010130"
+  },
+  {
+    "id": 3004002010140,
+    "speaker": "恋鐘",
+    "text": "そりゃ、仲間なんやけん当たり前たい！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010140"
+  },
+  {
+    "id": 3004002010150,
+    "speaker": "恋鐘",
+    "text": "早く仲良うなって、いろんなおしゃべりしたり\r\n遊びに行ったりしたいもん！",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010150"
+  },
+  {
+    "id": 3004002010160,
+    "speaker": "咲耶",
+    "text": "フフ、恋鐘はいい子だね",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010160"
+  },
+  {
+    "id": 3004002010170,
+    "speaker": "恋鐘",
+    "text": "んふふ、やろ～？",
+    "charAnim1": "smile3",
+    "charAnim2": "face_doya",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010170"
+  },
+  {
+    "id": 3004002010180,
+    "speaker": "恋鐘",
+    "text": "そんで咲耶。相談なんやけど\r\nうち、どうしたら霧子と仲良くできるやろか……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010180"
+  },
+  {
+    "id": 3004002010190,
+    "speaker": "咲耶",
+    "text": "そうだね……\r\nその答えを私から教えるのは難しいな",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010190"
+  },
+  {
+    "id": 3004002010200,
+    "speaker": "咲耶",
+    "text": "恋鐘が霧子のことを考えて、\r\n自分で答えを出すべきことだからね",
+    "charAnim1": "wait5",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010200"
+  },
+  {
+    "id": 3004002010210,
+    "speaker": "恋鐘",
+    "text": "なるほど……さっすが咲耶やね！\r\n早速やってみるばい！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010210"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0116",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kogane",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    }
+  },
+  {
+    "speaker": "off",
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004002010220,
+    "speaker": "霧子",
+    "text": "あ、あの……恋鐘ちゃん、咲耶さん……\r\nお茶……よかったら……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010220"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0166",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0166",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko"
+  },
+  {
+    "id": 3004002010230,
+    "speaker": "咲耶",
+    "text": "ああ、ありがとう霧子\r\nいただくよ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010230"
+  },
+  {
+    "id": 3004002010240,
+    "speaker": "恋鐘",
+    "text": "……ありがとー……霧子……\r\n……うん……ばり……うまかよー……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010240"
+  },
+  {
+    "id": 3004002010250,
+    "speaker": "霧子",
+    "text": "ど、どうしたの……？\r\n恋鐘ちゃん、具合……悪いの……？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010250"
+  },
+  {
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3004002010260,
+    "speaker": "咲耶",
+    "text": "フフ、大丈夫だよ、霧子\r\n恋鐘はいつも通り元気だから",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "voice": "produce_events/300400201/3004002010260"
+  },
+  {
+    "id": 3004002010270,
+    "speaker": "霧子",
+    "text": "え？　で、でも……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010270"
+  },
+  {
+    "id": 3004002010280,
+    "speaker": "咲耶",
+    "text": "気になるなら、本人に聞いてごらん",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010280"
+  },
+  {
+    "id": 3004002010290,
+    "speaker": "霧子",
+    "text": "う、うん……\r\n恋鐘ちゃん……？",
+    "charAnim1": "wait",
+    "charAnim2": "face_serious",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010290"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004002010300,
+    "speaker": "恋鐘",
+    "text": "うち霧子と仲良くなりたいんよ！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400201/3004002010300"
+  },
+  {
+    "id": 3004002010310,
+    "speaker": "霧子",
+    "text": "ふぁ……っ！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010310"
+  },
+  {
+    "id": 3004002010320,
+    "speaker": "恋鐘",
+    "text": "はっ！　また声大きくなっとった……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010320"
+  },
+  {
+    "id": 3004002010330,
+    "speaker": "恋鐘",
+    "text": "いや～、やっぱりびっくりさせてしまってたんやね……\r\nちょっと反省しとるんよ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010330"
+  },
+  {
+    "id": 3004002010340,
+    "speaker": "恋鐘",
+    "text": "うち、これからはできるだけ霧子のこと考えて話そう思って\r\nやけん、仲良くしてくれる？　霧子",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010340"
+  },
+  {
+    "id": 3004002010350,
+    "speaker": "霧子",
+    "text": "う、うん……\r\nわたしも……恋鐘ちゃんと仲良くなりたい……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010350"
+  },
+  {
+    "id": 3004002010360,
+    "speaker": "霧子",
+    "text": "でも、わたしは……\r\n恋鐘ちゃんみたいに、誰かを元気にしてあげられない……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010360"
+  },
+  {
+    "id": 3004002010370,
+    "speaker": "恋鐘",
+    "text": "そんなわけなかよ～！\r\nうちは霧子が一緒におってくれるだけで楽しか！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010370"
+  },
+  {
+    "id": 3004002010380,
+    "speaker": "恋鐘",
+    "text": "やけん\r\n気にせずいつも通りの霧子でおって！",
+    "charAnim1": "wait5",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010380"
+  },
+  {
+    "id": 3004002010390,
+    "speaker": "恋鐘",
+    "text": "……はっ！　また声が大きく……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010390"
+  },
+  {
+    "id": 3004002010400,
+    "speaker": "霧子",
+    "text": "あ……さ、さっきは……\r\nちょっと驚いちゃって……ごめんね……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010400"
+  },
+  {
+    "id": 3004002010410,
+    "speaker": "霧子",
+    "text": "わたしは……\r\nい、いつもの恋鐘ちゃんで……いてほしいな……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010410"
+  },
+  {
+    "id": 3004002010420,
+    "speaker": "恋鐘",
+    "text": "霧子……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010420"
+  },
+  {
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "x": 200,
+      "alpha": 0,
+      "time": 450
+    }
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0107",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "kiriko"
+  },
+  {
+    "id": 3004002010440,
+    "speaker": "恋鐘",
+    "text": "霧子はほんとにいい子やね～！\r\nうち、霧子のこと大好きたい！",
+    "charAnim1": "smile4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400201/3004002010440"
+  },
+  {
+    "id": 3004002010450,
+    "speaker": "霧子",
+    "text": "わわ……！\r\nこ、恋鐘ちゃん……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400201/3004002010450"
+  },
+  {
+    "id": 3004002010460,
+    "speaker": "咲耶",
+    "text": "フフ、無事に想いは通じたというわけだね\r\nさあふたりとも、親睦の証にお茶でもいただこうか",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400201/3004002010460"
+  },
+  {
+    "label": "end"
+  }
+]

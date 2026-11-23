@@ -1,0 +1,296 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0114",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、にちか\r\n宿題終わったのか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1024001000310010,
+    "speaker": "にちか",
+    "text": "えっ、はい……\r\n終わりましたけど────",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "024",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0152",
+    "voice": "produce_communications/102400100031/1024001000310010"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0767",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1024001000310020,
+    "speaker": "にちか",
+    "text": "なんかそういう感じ、\r\nおじさんぽくてやばいですよ！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102400100031/1024001000310020"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────えっ",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "よ、容赦ないな！",
+    "nextLabel": "1024001000311"
+  },
+  {
+    "select": "いや、偉いな\r\nと言おうと思って",
+    "nextLabel": "1024001000312"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "やばいかな……",
+    "nextLabel": "1024001000313"
+  },
+  {
+    "id": 1024001000310030,
+    "label": "1024001000311",
+    "speaker": "にちか",
+    "text": "えっ？\r\nそうですかね",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0220",
+    "voice": "produce_communications/102400100031/1024001000310030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "う、うん……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1024001000310040,
+    "speaker": "にちか",
+    "text": "プロデューサーさん、たぶん\r\n可愛い寄りでセルフプロデュースしてった方がいいなって！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0328",
+    "voice": "produce_communications/102400100031/1024001000310040"
+  },
+  {
+    "charAnim2": "face_smile1",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1024001000310050,
+    "label": "1024001000312",
+    "speaker": "にちか",
+    "text": "うわー\r\nめちゃめちゃおじさんじゃないですかー！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0328",
+    "voice": "produce_communications/102400100031/1024001000310050"
+  },
+  {
+    "textFrame": "off",
+    "se": "0730",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そ、そうか……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1024001000310060,
+    "speaker": "にちか",
+    "text": "はい",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100031/1024001000310060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "1024001000313",
+    "textFrame": "off"
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1024001000310070,
+    "speaker": "にちか",
+    "text": "知らないですけど……",
+    "charLipAnim": "lip_anger",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100031/1024001000310070"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 300
+  },
+  {
+    "textFrame": "off",
+    "se": "0100",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1024001000310080,
+    "speaker": "にちか",
+    "text": "プロデューサーなんだし、\r\nそういうの敏感な方がいいと思います……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102400100031/1024001000310080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、おう……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

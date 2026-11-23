@@ -1,0 +1,986 @@
+[
+  {
+    "id": 3005003020010,
+    "speaker": "摩美々",
+    "text": "おはよーございまぁす",
+    "charAnim1": "anger2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030050010",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "bg": "00001",
+    "bgm": "003",
+    "voice": "produce_events/300500302/3005003020010"
+  },
+  {
+    "id": 3005003020020,
+    "speaker": "摩美々",
+    "text": "（んー？　……なんだか、\r\n事務所が服だらけになってるー……）",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020020"
+  },
+  {
+    "id": 3005003020030,
+    "speaker": "摩美々",
+    "text": "（あ、あそこにいるの……三峰かな）",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020030"
+  },
+  {
+    "id": 3005003020040,
+    "speaker": "結華",
+    "text": "お、まみみんだ\r\nおはよー",
+    "charAnim1": "surp1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "007",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "voice": "produce_events/300500302/3005003020040",
+    "charCategory": "stand_fix"
+  },
+  {
+    "id": 3005003020050,
+    "speaker": "摩美々",
+    "text": "おはよー三峰",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020050"
+  },
+  {
+    "id": 3005003020060,
+    "speaker": "摩美々",
+    "text": "これ全部三峰の服―？\r\n……足の踏み場がないねー",
+    "charAnim1": "sad2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020060"
+  },
+  {
+    "id": 3005003020070,
+    "speaker": "結華",
+    "text": "ごめんごめん、散らかしすぎちゃった",
+    "charAnim1": "sad2",
+    "charAnim3Loop": false,
+    "charAnim3": "no",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020070"
+  },
+  {
+    "id": 3005003020080,
+    "speaker": "摩美々",
+    "text": "三峰ほどじゃないけど、私もけっこー持って来ちゃったぁ\r\nこれねー",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020080"
+  },
+  {
+    "id": 3005003020090,
+    "speaker": "結華",
+    "text": "おー、可愛い服がいっぱい！\r\nじゃあじゃあ始めちゃう？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020090"
+  },
+  {
+    "id": 3005003020100,
+    "speaker": "摩美々",
+    "text": "うん、いいよー\r\n私も三峰に着せる服、考えるからぁ",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020100"
+  },
+  {
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "id": 3005003020110,
+    "speaker": "結華",
+    "text": "いやー、この攻撃的な服！　実にまみみんらしいなぁ",
+    "charAnim1": "wait2",
+    "charAnim3Loop": false,
+    "charAnim3": "yes",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300500302/3005003020110"
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3005003020120,
+    "speaker": "摩美々",
+    "text": "原色と一面に広がる幾何学模様……\r\nこういうの三峰好きそうー",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300500302/3005003020120"
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3005003020130,
+    "speaker": "結華",
+    "text": "へぇー……こんな服もあるんだ\r\nどこに売ってるんだろ？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300500302/3005003020130"
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3005003020140,
+    "speaker": "摩美々",
+    "text": "あ、かわいいかもー\r\nこーゆータイプのは知らなかったな",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300500302/3005003020140"
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3005003020150,
+    "speaker": "結華",
+    "text": "うん？　これもまたすごいねぇ\r\nダメージ加工レベル100みたいになってる",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300500302/3005003020150"
+  },
+  {
+    "id": 3005003020160,
+    "speaker": "結華",
+    "text": "これもすごくまみみんって感じ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020160"
+  },
+  {
+    "id": 3005003020170,
+    "speaker": "結華",
+    "text": "あー待って、こっちとこれ合わせたらすごく……\r\nおおお、いいんじゃないです！？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020170"
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3005003020180,
+    "speaker": "摩美々",
+    "text": "これもいい感じー\r\nさっきのと合わせるといいかもー",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300500302/3005003020180"
+  },
+  {
+    "id": 3005003020190,
+    "speaker": "摩美々",
+    "text": "三峰の服はカラフルだねー\r\nだけど、ここにキレを足したいかもー",
+    "charAnim2": "face_wait3",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020190"
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3005003020200,
+    "speaker": "結華",
+    "text": "ねぇねぇまみみん！　\r\nちょっとまみみんの服着てみてもいい？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300500302/3005003020200"
+  },
+  {
+    "id": 3005003020210,
+    "speaker": "摩美々",
+    "text": "別にいいけど、どうしたのー？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300500302/3005003020210"
+  },
+  {
+    "id": 3005003020220,
+    "speaker": "結華",
+    "text": "どうしても気になるのがあってさ！\r\nありがと、着させてもらうね！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020220"
+  },
+  {
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00000",
+    "waitType": "time",
+    "waitTime": 800,
+    "bgEffect": "fade"
+  },
+  {
+    "id": 3005003020230,
+    "speaker": "結華",
+    "text": "見て見て、これどうかな？",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0152",
+    "voice": "produce_events/300500302/3005003020230"
+  },
+  {
+    "id": 3005003020240,
+    "speaker": "摩美々",
+    "text": "いい感じで、似合ってるよー\r\n可愛いと思うー",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020240"
+  },
+  {
+    "id": 3005003020250,
+    "speaker": "結華",
+    "text": "やーった！　まみみんのお墨付き！",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020250"
+  },
+  {
+    "id": 3005003020260,
+    "speaker": "摩美々",
+    "text": "あれー？　\r\nでもー、お互いにコーディネートするんじゃないのー？",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020260"
+  },
+  {
+    "id": 3005003020270,
+    "speaker": "摩美々",
+    "text": "三峰、自分で服着ちゃってるしー",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020270"
+  },
+  {
+    "id": 3005003020280,
+    "speaker": "結華",
+    "text": "いやぁごめん、我慢できなくってさぁ\r\n三峰の素敵な服アンテナが反応しちゃったんだよ！",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020280"
+  },
+  {
+    "id": 3005003020290,
+    "speaker": "摩美々",
+    "text": "……それじゃあ、しょーがないかもー？",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020290"
+  },
+  {
+    "id": 3005003020300,
+    "speaker": "結華",
+    "text": "ついでにまみみんも何か着てみる？",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020300"
+  },
+  {
+    "id": 3005003020310,
+    "speaker": "摩美々",
+    "text": "そうだねー三峰も着てるし、\r\n私も着てみよーかなぁ",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020310"
+  },
+  {
+    "id": 3005003020320,
+    "speaker": "結華",
+    "text": "おっけおっけ！\r\n三峰のおすすめはね……んーっと……",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020320"
+  },
+  {
+    "id": 3005003020330,
+    "speaker": "結華",
+    "text": "あ、ほらっ、これとか、これもおすすめ！\r\nあとこっちも気に入ってるんだ～！",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0152",
+    "voice": "produce_events/300500302/3005003020330"
+  },
+  {
+    "id": 3005003020340,
+    "speaker": "摩美々",
+    "text": "へー、面白い服だねー\r\nあ、これに私の服合わせたら、もっと面白くなりそー",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020340"
+  },
+  {
+    "id": 3005003020350,
+    "speaker": "結華",
+    "text": "わかる！　楽しそう！\r\nどっちの服も混ぜて自由にコーデしちゃおうよ！",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020350"
+  },
+  {
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    }
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "stillType": "support_idols",
+    "stillId": "2030050010"
+  },
+  {
+    "id": 3005003020360,
+    "speaker": "結華",
+    "text": "やっぱりまみみん超かわいい！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020360"
+  },
+  {
+    "id": 3005003020370,
+    "speaker": "結華",
+    "text": "ポップ路線も行けちゃうんだねぇ\r\nフリフリだしキラキラだし、お人形さんみたいになってるよ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020370"
+  },
+  {
+    "id": 3005003020380,
+    "speaker": "摩美々",
+    "text": "んー、いつもだったら選ばないケド\r\nこの服は悪くないかもー",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020380"
+  },
+  {
+    "id": 3005003020390,
+    "speaker": "結華",
+    "text": "ほんと？　お気に召したなら何より",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020390"
+  },
+  {
+    "id": 3005003020400,
+    "speaker": "摩美々",
+    "text": "いい感じだと思うー\r\nこの服、気に入っちゃったかもー",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020400"
+  },
+  {
+    "id": 3005003020410,
+    "speaker": "結華",
+    "text": "そう言ってくれるともっとやる気になっちゃうよー！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020410"
+  },
+  {
+    "id": 3005003020420,
+    "speaker": "結華",
+    "text": "まだこれも着てほしいし、あのプリントが派手めな服も\r\n着てほしいんだよね！　迷っちゃうな～",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020420"
+  },
+  {
+    "id": 3005003020430,
+    "speaker": "摩美々",
+    "text": "あ、それなら私もー、三峰に着て欲しい服があるかもー",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020430"
+  },
+  {
+    "effectLabel": "white2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "effectLabel": "white2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "stillCtrl": "off"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 3005003020440,
+    "speaker": "結華",
+    "text": "どれどれ見せてー？\r\nまみみんにも選んでほし……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020440"
+  },
+  {
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3005003020450,
+    "speaker": "摩美々",
+    "text": "三峰どうしたのー？",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020450"
+  },
+  {
+    "id": 3005003020460,
+    "speaker": "結華",
+    "text": "あーっ、もうレッスンが始まる時間じゃーん！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020460"
+  },
+  {
+    "charLabel": "yuika"
+  },
+  {
+    "id": 3005003020470,
+    "speaker": "摩美々",
+    "text": "あ、そーいえばぁ……\r\nいいところだったんだケドー",
+    "charAnim1": "sad2",
+    "charAnim3Loop": false,
+    "charAnim3": "no",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020470"
+  },
+  {
+    "id": 3005003020480,
+    "speaker": "結華",
+    "text": "今日のところはここまでだねぇ\r\nレッスンのこと忘れてたよ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020480"
+  },
+  {
+    "id": 3005003020490,
+    "speaker": "摩美々",
+    "text": "まーしょーがないねー\r\nけっこー楽しかったからぁ、いいってことでー",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020490"
+  },
+  {
+    "id": 3005003020500,
+    "speaker": "結華",
+    "text": "そうだね！\r\nこの感じで本番のお仕事もがんばろうね！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020500"
+  },
+  {
+    "id": 3005003020510,
+    "speaker": "摩美々",
+    "text": "あ、そーいえばこれ仕事のための衣装合わせだったんだぁ",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020510"
+  },
+  {
+    "id": 3005003020520,
+    "speaker": "結華",
+    "text": "忘れてたのまみみん！？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020520"
+  },
+  {
+    "id": 3005003020530,
+    "speaker": "摩美々",
+    "text": "ふふー、どーかなぁ",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020530"
+  },
+  {
+    "id": 3005003020540,
+    "speaker": "結華",
+    "text": "って、それより片付けしなきゃだよ！\r\nレッスンに間に合わないー！",
+    "charAnim1": "wait1",
+    "charAnim3Loop": false,
+    "charAnim3": "no",
+    "charLipAnim": "lip_shy",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020540"
+  },
+  {
+    "id": 3005003020550,
+    "speaker": "摩美々",
+    "text": "手分けしてさっさと終わらせよー",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020550"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3005003020560,
+    "speaker": "摩美々",
+    "text": "……ねーねー三峰、よかったらさぁ\r\nまた、三峰の服みせてよー",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020560"
+  },
+  {
+    "id": 3005003020570,
+    "speaker": "結華",
+    "text": "もちろん！\r\nまみみんだったら大歓迎だよ",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020570"
+  },
+  {
+    "id": 3005003020580,
+    "speaker": "摩美々",
+    "text": "ふふー、よかったぁ\r\nお願いねー",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300500302/3005003020580"
+  },
+  {
+    "label": "end"
+  }
+]

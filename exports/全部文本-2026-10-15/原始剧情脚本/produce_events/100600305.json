@@ -1,0 +1,725 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00056",
+    "fg": "002341",
+    "bgm": "060"
+  },
+  {
+    "id": 1006003050010,
+    "speaker": "咲耶",
+    "text": "『アニマルバラエティ・わんにゃんパーク！』",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/100600305/1006003050010"
+  },
+  {
+    "id": 1006003050020,
+    "speaker": "咲耶",
+    "text": "こんにちは、リポーターの白瀬です\r\n今日はこちらの山内さん宅にお邪魔しています",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050020"
+  },
+  {
+    "id": 1006003050030,
+    "speaker": "咲耶",
+    "text": "ここに住むわんちゃんには、\r\nあるすごい特技があるようで──……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050030"
+  },
+  {
+    "id": 1006003050040,
+    "speaker": "咲耶",
+    "text": "さっそく、お邪魔してみましょう！",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050040"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00129",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0008",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "咲耶、お疲れ\r\n次の現場まで少しかかるから、休んでくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050050,
+    "speaker": "咲耶",
+    "text": "ああ、ありがとう",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100600305/1006003050050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "把握してると思うけど、次はドラマの収録だ\r\n２時間サスペンスの、主人公のかつての相棒役",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050060,
+    "speaker": "咲耶",
+    "text": "ああ、台本だけでも面白かったよ\r\nアクションシーンや銃撃戦も楽しみだ",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………動物系バラエティ収録から、\r\n２時間サスペンスの収録……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050070,
+    "speaker": "咲耶",
+    "text": "ん？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、仕事とはいえすごい差だと思ってさ……\r\n……切り替え、大丈夫か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050080,
+    "speaker": "咲耶",
+    "text": "心配ご無用だよ\r\n……気遣ってくれて、ありがとう",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050080"
+  },
+  {
+    "id": 1006003050090,
+    "speaker": "咲耶",
+    "text": "──ああ、アナタにお礼を言うべきことはまだあるか",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050100,
+    "speaker": "咲耶",
+    "text": "……私に来る仕事を、全て受けてくれてありがとう",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050100"
+  },
+  {
+    "id": 1006003050110,
+    "speaker": "咲耶",
+    "text": "私に無理がないようスケジュールを組むのに、\r\nかなり難儀しているのではないかな？",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、俺は今までと同じようにしているだけだよ\r\n仕事を全部受けてくれるのは、ありがたいことだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050120,
+    "speaker": "咲耶",
+    "text": "…………フフ、それならウイン・ウイン、かな",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050120"
+  },
+  {
+    "id": 1006003050130,
+    "speaker": "咲耶",
+    "text": "………………",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "fade_out",
+    "voice": "produce_events/100600305/1006003050130"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00346",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2700
+  },
+  {
+    "id": 1006003050140,
+    "speaker": "咲耶",
+    "text": "……戻ることは、できないんだ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "062",
+    "voice": "produce_events/100600305/1006003050140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00129",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2700
+  },
+  {
+    "id": 1006003050150,
+    "speaker": "咲耶",
+    "text": "………………\r\n私はもう、あの頃の私に戻れない",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100600305/1006003050150"
+  },
+  {
+    "id": 1006003050160,
+    "speaker": "咲耶",
+    "text": "私はアイドルを、アンティーカを、アナタを、\r\n知ってしまったから",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050160"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00161",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2700
+  },
+  {
+    "speaker": "off",
+    "text": "──『モデルの頃の咲耶様に、戻ってほしいです』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00129",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2700
+  },
+  {
+    "id": 1006003050170,
+    "speaker": "咲耶",
+    "text": "だから私は──……\r\nもう、戻ることはできない",
+    "charAnim1": "anger2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100600305/1006003050170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………それが、咲耶にとって後悔しない、\r\n一番いい選択だと思えるなら",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050180,
+    "speaker": "咲耶",
+    "text": "フフ、私の選択はいつも最良だよ\r\n私はいつも、最良の選択をしてここにいる",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050180"
+  },
+  {
+    "id": 1006003050190,
+    "speaker": "咲耶",
+    "text": "誰もが、瞬間ごとの最良を選び続けて……\r\nそうして私たちは出会った",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050190"
+  },
+  {
+    "id": 1006003050200,
+    "speaker": "咲耶",
+    "text": "そう思って、生きている\r\n……生きていきたいと、思っている",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………そうか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050210,
+    "speaker": "咲耶",
+    "text": "…………アイドルになってから、\r\nもらう言葉の種類が増えた",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050210"
+  },
+  {
+    "id": 1006003050220,
+    "speaker": "咲耶",
+    "text": "……かっこいい、綺麗、可愛い、素敵、面白い",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050220"
+  },
+  {
+    "id": 1006003050230,
+    "speaker": "咲耶",
+    "text": "……クス、『面白い』だなんて、\r\nアイドルになる前の私では到底もらえなかった言葉だ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "確かに……\r\nでも、アンティーカといる時の咲耶を見たら……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050240,
+    "speaker": "咲耶",
+    "text": "おや、アナタにも笑いを提供できているということか\r\nそれは素晴らしいことだ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "みんなトークが上手いんだよな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 1006003050250,
+    "speaker": "咲耶",
+    "text": "私を好きになってくれた人たちは、\r\nとても嬉しい言葉を私にくれた",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050250"
+  },
+  {
+    "id": 1006003050260,
+    "speaker": "咲耶",
+    "text": "私はワガママだからね、\r\nその中でどれかだけを選ぶなんてことは、できないんだ",
+    "charAnim1": "sad1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050260"
+  },
+  {
+    "id": 1006003050270,
+    "speaker": "咲耶",
+    "text": "だから──\r\nだから、私は、そのすべてに応える私でいたい",
+    "charAnim1": "anger2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………ああ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050280,
+    "speaker": "咲耶",
+    "text": "かっこいい、でも。綺麗、でも。\r\n可愛い、でも。素敵、でも。面白い、でも",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050280"
+  },
+  {
+    "id": 1006003050290,
+    "speaker": "咲耶",
+    "text": "ひとが私に求めるものすべてに、私は応えよう\r\n──そう、思うんだ",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050290"
+  },
+  {
+    "id": 1006003050291,
+    "speaker": "咲耶＆プロデューサー",
+    "text": "………………………………\r\n………………………………………………",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050291"
+  },
+  {
+    "id": 1006003050300,
+    "speaker": "咲耶",
+    "text": "…………これは綺麗事だよ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050310,
+    "speaker": "咲耶",
+    "text": "私にとって最良でも、これが正解ではないとはわかっている\r\nあの子が求めた形が、これでないことも理解している",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050310"
+  },
+  {
+    "id": 1006003050320,
+    "speaker": "咲耶",
+    "text": "そもそも、こんなやり方がいつまでも続けられるわけがない\r\n──そう、わかっているよ",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050320"
+  },
+  {
+    "id": 1006003050330,
+    "speaker": "咲耶",
+    "text": "だからこれは、\r\n誰のためでもなくて──……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050330"
+  },
+  {
+    "id": 1006003050340,
+    "speaker": "咲耶",
+    "text": "私の、自己満足にすぎないんだ",
+    "charAnim1": "wait5",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050340"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "………………………………\r\n………………………………………………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050350,
+    "speaker": "咲耶",
+    "text": "すまないね、\r\nそんなものに付き合わせてしまって",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050350"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……いや\r\n今の咲耶にとってそれが最良なら、それでいいんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050360,
+    "speaker": "咲耶",
+    "text": "え？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050360"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "咲耶は、咲耶にしかなれない\r\n咲耶は他の誰にもなれないし、他の誰も咲耶にはなれない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だから咲耶は、咲耶が満足できる、後悔しない、\r\n今の咲耶にとって最良の道を進もう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺も、俺にとって最良だと思うやり方で、付き合うよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006003050370,
+    "speaker": "咲耶",
+    "text": "…………ああ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050370"
+  },
+  {
+    "id": 1006003050380,
+    "speaker": "咲耶",
+    "text": "そうだね、プロデューサー",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100600305/1006003050380"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

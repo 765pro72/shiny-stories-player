@@ -1,0 +1,253 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "id": 7901001040010,
+    "speaker": "はづき",
+    "text": "残念ですね……。一次審査を突破できたんですし、\r\nこの調子で、と思ったんですけど",
+    "charAnim1": "sad1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701700104/7901001040010"
+  },
+  {
+    "id": 7901001040020,
+    "speaker": "はづき",
+    "text": "現実は、なかなか厳しいですね……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701700104/7901001040020"
+  },
+  {
+    "id": 7902001040010,
+    "speaker": "社長",
+    "text": "しかし、新人アイドルと新人プロデューサーにしては、\r\n悪くない結果だった",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701700104/7902001040010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、まだまだ先にも行けたと思うんです\r\n俺にもっと力があれば……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001040020,
+    "speaker": "社長",
+    "text": "評価はしているが、弱音を聞きたいわけではないぞ",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701700104/7902001040020"
+  },
+  {
+    "id": 7902001040030,
+    "speaker": "社長",
+    "text": "力が足りないのなら、彼女とともに\r\nこれから成長していけばいいだけのことだ",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701700104/7902001040030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうですね\r\n彼女に、会いに行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001040040,
+    "speaker": "社長",
+    "text": "ああ、行ってこい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701700104/7902001040040"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 101
+  },
+  {
+    "bg": "00002",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "すまない、二次審査は突破できなかった……",
+    "charAnim1": "wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 7017001040010,
+    "speaker": "あさひ",
+    "text": "……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701700104/7017001040010"
+  },
+  {
+    "id": 7017001040020,
+    "speaker": "あさひ",
+    "text": "もう少しで見えそうだったんすけどね……",
+    "charAnim1": "wait2",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701700104/7017001040020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "見えそうだった？",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7017001040030,
+    "speaker": "あさひ",
+    "text": "あのステップ、もう少しで何か……\r\nこれだってものが見えそうだったんす",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701700104/7017001040030"
+  },
+  {
+    "id": 7017001040040,
+    "speaker": "あさひ",
+    "text": "ごめんなさいっす、プロデューサーさん\r\n色々教えてもらったのに",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701700104/7017001040040"
+  },
+  {
+    "id": 7017001040050,
+    "speaker": "あさひ",
+    "text": "ダメだったのは、きっと\r\n何かを見つけられなかったから……",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701700104/7017001040050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、あの時点で充分ステップの出来は良かった\r\n俺がもっと他に的確なアドバイスをしていれば……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7017001040060,
+    "speaker": "あさひ",
+    "text": "プロデューサーさんのせいじゃないっす",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701700104/7017001040060"
+  },
+  {
+    "id": 7017001040070,
+    "speaker": "あさひ",
+    "text": "わたしが気付けなかったから……\r\nなんかこう……モヤモヤするっす",
+    "charAnim1": "anger1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701700104/7017001040070"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

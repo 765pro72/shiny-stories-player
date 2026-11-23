@@ -1,0 +1,268 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0455",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1020001000810010,
+    "speaker": "透",
+    "text": "あっつ……\r\nちょっとこぼれちゃった、コーヒー",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close3",
+    "charLipAnim": "lip_serious",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102000100081/1020001000810010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "透？　大丈夫か",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1020001000810020,
+    "speaker": "透",
+    "text": "あつあつ……\r\nごめん、タオルないかな",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100081/1020001000810020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おう\r\n──ほら",
+    "textCtrl": "l",
+    "textFrame": "002",
+    "se": "0220"
+  },
+  {
+    "select": "マグも、\r\nちゃんと置いて",
+    "nextLabel": "1020001000811"
+  },
+  {
+    "select": "気を付けてな",
+    "nextLabel": "1020001000812"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "シミになるかな",
+    "nextLabel": "1020001000813"
+  },
+  {
+    "id": 1020001000810030,
+    "label": "1020001000811",
+    "speaker": "透",
+    "text": "ありがと",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100081/1020001000810030"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "toru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1020001000810040,
+    "speaker": "透",
+    "text": "ごめんね\r\n熱いの苦手なんだ",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102000100081/1020001000810040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1020001000810050,
+    "label": "1020001000812",
+    "speaker": "透",
+    "text": "うん\r\n──あ、これプロデューサーの？",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100081/1020001000810050"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "toru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1020001000810060,
+    "speaker": "透",
+    "text": "ごめんね、\r\n洗って返すから",
+    "charAnim1": "anger1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102000100081/1020001000810060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1020001000810070,
+    "label": "1020001000813",
+    "speaker": "透",
+    "text": "うん\r\n……コーヒー、そんなに得意じゃないのに",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100081/1020001000810070"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "toru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0166",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1020001000810080,
+    "speaker": "透",
+    "text": "やめとけばよかった",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close3",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102000100081/1020001000810080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

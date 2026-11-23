@@ -1,0 +1,647 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00021",
+    "bgm": "0000"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──小糸\r\nまだやってたのか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040010,
+    "speaker": "小糸",
+    "text": "ぴゃ！？\r\n……あ、プロデューサーさん……！",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "3000220030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "009",
+    "voice": "produce_events/102200104/1022001040010"
+  },
+  {
+    "id": 1022001040020,
+    "speaker": "小糸",
+    "text": "どうしたんですか……\r\nま、また何かありましたか……！？",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、ここの電気が点いてたから\r\n様子を見に来ただけだよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040030,
+    "speaker": "小糸",
+    "text": "あ……そうでしたか……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "車で送っていくからそろそろ上がらないか？\r\n遅くなると親御さんも心配するだろ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040040,
+    "speaker": "小糸",
+    "text": "はっ、そうでした！\r\n……そういう、条件になったんでした",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "条件っていうか……親御さんとの約束な\r\nアイドルと勉強と、ちゃんと両立していくって",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040050,
+    "speaker": "小糸",
+    "text": "──はい、そうでした",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040050"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "koito",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charLabel": "koito",
+    "charType": "characters",
+    "charId": "022",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00130",
+    "bgm": "0008",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 1022001040060,
+    "speaker": "小糸",
+    "text": "……………………",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "小糸、疲れてないか？\r\n家まで眠ってても大丈夫だぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 700
+  },
+  {
+    "id": 1022001040070,
+    "speaker": "小糸",
+    "text": "い、いえ！　わたしはよゆーですよ\r\n全然平気です！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、そうか\r\nそれならいいんだけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "小糸、すごく頑張ってるみたいだからさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040080,
+    "speaker": "小糸",
+    "text": "……別に普通ですよ、このくらい\r\nわたしにしてみれば、朝飯前って感じです！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、だけど心配はするよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040090,
+    "speaker": "小糸",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もしかしたら小糸は、頑張ってるところ見られるの\r\nあまり好きじゃないのかもしれないけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、どのくらい小糸が頑張ってるか\r\n知っておきたいからさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "こっそりでもいいから、教えてもらえると嬉しいよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040100,
+    "speaker": "小糸",
+    "text": "………………\r\nわたし、頑張ってるって思いますか？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、もちろん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040110,
+    "speaker": "小糸",
+    "text": "……だけど、わたしが頑張って\r\nようやく他のみんなの普通くらいです",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040110"
+  },
+  {
+    "id": 1022001040120,
+    "speaker": "小糸",
+    "text": "だから、これは頑張ってるうちに入りません\r\n……普通の、当たり前のことだから",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そんなこと……",
+    "charAnim2": "face_wait",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "fade_out"
+  },
+  {
+    "id": 1022001040130,
+    "speaker": "小糸",
+    "text": "みんな、すごいんですよー\r\nダンスだって、ちょっとやったらすぐ覚えるし！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "008",
+    "voice": "produce_events/102200104/1022001040130"
+  },
+  {
+    "id": 1022001040140,
+    "speaker": "小糸",
+    "text": "……昔からそうでした\r\nみんな、なんでもできて……きっと、特別なんです",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040140"
+  },
+  {
+    "id": 1022001040150,
+    "speaker": "小糸",
+    "text": "わたしもそうなりたくて…………\r\nいつも…………",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040150"
+  },
+  {
+    "id": 1022001040160,
+    "speaker": "小糸",
+    "text": "みんなと一緒にいたいのに、\r\n一緒にいてもわたしだけいつも遅れてて",
+    "charAnim2": "face_close2",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040160"
+  },
+  {
+    "id": 1022001040170,
+    "speaker": "小糸",
+    "text": "一緒にいるはずなのに、\r\nひとりぼっちになるんじゃないかって",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………うん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040180,
+    "speaker": "小糸",
+    "text": "だから、わたし……\r\n全然よゆーなんです、プロデューサーさん",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040180"
+  },
+  {
+    "id": 1022001040190,
+    "speaker": "小糸",
+    "text": "そういうふうに、言ってないと……\r\n……………………",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……うん、そうか",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だけど、結果がどんなものでも\r\n小糸が頑張ったってことは絶対に変わらないよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "努力ができるってことも、特別な才能のひとつだ",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040200,
+    "speaker": "小糸",
+    "text": "！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "小糸が頑張ったこと、ちゃんと知っていたいんだ\r\nプロデューサーとして",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "それでもいいか",
+    "nextLabel": "1"
+  },
+  {
+    "select": "みんなには\r\n秘密にするから",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "小糸はすごいよ",
+    "nextLabel": "3"
+  },
+  {
+    "id": 1022001040210,
+    "label": "1",
+    "speaker": "小糸",
+    "text": "……嫌です、って……\r\n言えるわけないじゃないですか……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、そうか\r\nよかった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040220,
+    "speaker": "小糸",
+    "text": "わたし、やればできるんですから！\r\n全部、よゆーなんですからね……！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、わかってる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ちゃんと、わかってるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040230,
+    "speaker": "小糸",
+    "text": "……はい\r\nありがとうございます、プロデューサーさん",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/102200104/1022001040230"
+  },
+  {
+    "label": "2",
+    "speaker": "プロデューサー",
+    "text": "小糸の頑張ってるところ、知ってて\r\n応援して……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "できることがあればなんでも\r\nサポートしたいと思ってる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040240,
+    "speaker": "小糸",
+    "text": "プロデューサーさん……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_down",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そのためにいるんだからさ\r\n何かさせてくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040250,
+    "speaker": "小糸",
+    "text": "…………ま、全く、仕方ないですねー！\r\nプロデューサーさんは……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040250"
+  },
+  {
+    "id": 1022001040260,
+    "speaker": "小糸",
+    "text": "わ、わたしがいないと、\r\n何もできないですもんねー！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/102200104/1022001040260"
+  },
+  {
+    "label": "3",
+    "speaker": "プロデューサー",
+    "text": "本当に、よく頑張ってる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040270,
+    "speaker": "小糸",
+    "text": "……そんなことないです\r\nこのくらい普通で、よゆーです",
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうやって言えるところが\r\n小糸の本当にすごいところかもしれないな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040280,
+    "speaker": "小糸",
+    "text": "………………",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102200104/1022001040280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "結果がどんなものでも\r\n小糸が頑張ったってことは絶対に変わらない",
+    "charAnim4": "blank",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だからこそ、いい結果が出るように\r\n頑張っていこう、……一緒に",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001040290,
+    "speaker": "小糸",
+    "text": "…………はい",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/102200104/1022001040290"
+  },
+  {
+    "label": "end"
+  }
+]

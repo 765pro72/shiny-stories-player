@@ -1,0 +1,243 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "008"
+  },
+  {
+    "id": 6902001070010,
+    "speaker": "社長",
+    "text": "お前、担当アイドルのことをどう思っている？",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601700107/6902001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……たしかに負けてしまいましたけど、\r\n彼女こそが最高のアイドルだと思っています",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6902001070020,
+    "speaker": "社長",
+    "text": "……！　そうか……",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601700107/6902001070020"
+  },
+  {
+    "id": 6901001070010,
+    "speaker": "はづき",
+    "text": "ふふ\r\n社長が聞きたかった言葉、そのまま出てきましたね",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/601700107/6901001070010"
+  },
+  {
+    "id": 6901001070020,
+    "speaker": "はづき",
+    "text": "もし違う言葉が出てきたら、\r\n説教してやるって言って聞かなかったのに",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/601700107/6901001070020"
+  },
+  {
+    "id": 6902001070030,
+    "speaker": "社長",
+    "text": "……うるさいぞ。とにかく、\r\nそういうことなら私から言うことはない",
+    "charAnim1": "wait2",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601700107/6902001070030"
+  },
+  {
+    "id": 6902001070040,
+    "speaker": "社長",
+    "text": "さあ、早くその最高のアイドルに\r\n会いに行ってこい",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601700107/6902001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい！",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 101
+  },
+  {
+    "bg": "00002",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あさひ、大丈夫か……？",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 6017001070010,
+    "speaker": "あさひ",
+    "text": "わたし、気持ちの整理がつかないっす",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601700107/6017001070010"
+  },
+  {
+    "id": 6017001070020,
+    "speaker": "あさひ",
+    "text": "プロデューサーさん\r\nあの時、こうしていれば、ああしていれば",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601700107/6017001070020"
+  },
+  {
+    "id": 6017001070030,
+    "speaker": "あさひ",
+    "text": "そういうのが、頭の中で\r\nずっとぐるぐる回ってるんすよ",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601700107/6017001070030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ああ、俺も同じだ",
+    "charAnim2": "face_cry",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "悔しいな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6017001070040,
+    "speaker": "あさひ",
+    "text": "悔しい……そうっす、悔しいっす",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "r",
+    "voiceKeep": true,
+    "textFrame": "001",
+    "voice": "produce_events/601700107/6017001070040"
+  },
+  {
+    "text": "今、生まれてはじめて悔しいっす！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi"
+  },
+  {
+    "id": 6017001070050,
+    "speaker": "あさひ",
+    "text": "でも、だからこそ……次は絶対……\r\n絶対絶対、ぜったい！　やってみせるっす！",
+    "charAnim2": "face_anger2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601700107/6017001070050"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "千雪、おはよう\r\n今日はちょっと遅かったんだな",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad2_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "016",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001"
+  },
+  {
+    "id": 1016001000410010,
+    "speaker": "千雪",
+    "text": "はい。ここに来るまでに道を尋ねられて……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100041/1016001000410010"
+  },
+  {
+    "id": 1016001000410020,
+    "speaker": "千雪",
+    "text": "その方、かなりお困りみたいだったので\r\n案内してきたんです",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100041/1016001000410020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（話している様子からすると、よくあることみたいだな）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "千雪は優しいな",
+    "nextLabel": "1016001000411"
+  },
+  {
+    "select": "道案内に\r\n慣れているんだな？",
+    "nextLabel": "1016001000412"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "口で伝えるだけじゃ\r\nダメだったのか？",
+    "nextLabel": "1016001000413"
+  },
+  {
+    "id": 1016001000410030,
+    "label": "1016001000411",
+    "speaker": "千雪",
+    "text": "いえいえ……！\r\nそんな大したことじゃないですから",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100041/1016001000410030"
+  },
+  {
+    "id": 1016001000410040,
+    "speaker": "千雪",
+    "text": "プロデューサーさんも道に迷っちゃったら\r\nぜひ私に声をかけてくださいね",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100041/1016001000410040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1016001000410050,
+    "label": "1016001000412",
+    "speaker": "千雪",
+    "text": "そうですね\r\nなぜか道を尋ねられることが多くて",
+    "charAnim1": "anger2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100041/1016001000410050"
+  },
+  {
+    "id": 1016001000410060,
+    "speaker": "千雪",
+    "text": "それに、\r\n雑貨屋はお客様を案内することもありますから",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100041/1016001000410060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1016001000410070,
+    "label": "1016001000413",
+    "speaker": "千雪",
+    "text": "たしかに\r\nそれで大丈夫だったかもしれないんですけど……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100041/1016001000410070"
+  },
+  {
+    "id": 1016001000410080,
+    "speaker": "千雪",
+    "text": "もし、道を間違えちゃったらって\r\n不安になってしまって……",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100041/1016001000410080",
+    "charAnim3Loop": false
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

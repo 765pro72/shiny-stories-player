@@ -1,0 +1,701 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00133",
+    "bgm": "0000",
+    "se": "0345",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 2018005110010,
+    "speaker": "冬優子",
+    "text": "むー……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……冬優子、いつまでそんな顔してるんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00129",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "現場に着いたら、その不機嫌顔はやめるんだぞ",
+    "charAnim1": "wait",
+    "charAnim2": "face_anger2",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "018",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "006"
+  },
+  {
+    "id": 2018005110020,
+    "speaker": "冬優子",
+    "text": "うっさい、あんたに言われるまでもないし\r\n……でも、仕方ないじゃない",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110020"
+  },
+  {
+    "id": 2018005110030,
+    "speaker": "冬優子",
+    "text": "……だって──",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110030"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim4": "blank",
+    "charLabel": "fuyuko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00133"
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2018005110040,
+    "speaker": "冬優子",
+    "text": "せっかくの野外ロケなのに……\r\nなんなのよ、このどんよりした天気は！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "雨じゃないだけましだろ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "fuyuko",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bg": "00129"
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2018005110050,
+    "speaker": "冬優子",
+    "text": "わかってるわよ\r\n曇りでも、いい感じに撮ってくれる……ってこともね",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110050"
+  },
+  {
+    "id": 2018005110060,
+    "speaker": "冬優子",
+    "text": "でも、今日の撮影場所、\r\n絶対晴れのが映えるじゃない！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110060"
+  },
+  {
+    "id": 2018005110070,
+    "speaker": "冬優子",
+    "text": "最高のふゆを撮るためには、\r\nギラッギラの太陽が必要なの！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110070"
+  },
+  {
+    "id": 2018005110080,
+    "speaker": "冬優子",
+    "text": "あんたもそう思うでしょ！？",
+    "charAnim1": "anger3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（確かに……\r\n晴れなら一番いいものが撮れそうだけど……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうは言っても、こればっかりはなぁ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018005110090,
+    "speaker": "冬優子",
+    "text": "…………ったく",
+    "charAnim1": "anger1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110090"
+  },
+  {
+    "id": 2018005110100,
+    "speaker": "冬優子",
+    "text": "…………",
+    "charAnim1": "think",
+    "charAnim2": "face_anger",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……今度は何してるんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018005110110,
+    "speaker": "冬優子",
+    "text": "見てわかんない？\r\n念を送ってんの",
+    "charAnim1": "wait2",
+    "charAnim2": "face_serious",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110110"
+  },
+  {
+    "id": 2018005110120,
+    "speaker": "冬優子",
+    "text": "晴れろー、晴れろーって",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110120"
+  },
+  {
+    "id": 2018005110130,
+    "speaker": "冬優子",
+    "text": "…………",
+    "charAnim2": "face_anger",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そんなことしたって、晴れるわけ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018005110140,
+    "speaker": "冬優子",
+    "text": "……うっさいわね、正論ばっか言わないでよ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "fuyuko",
+    "textCtrl": "r",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110140",
+    "voiceKeep": true
+  },
+  {
+    "speaker": "冬優子",
+    "text": "…………わかってるって、言ってるじゃない",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "id": 2018005110150,
+    "speaker": "冬優子",
+    "text": "でも、ぼんやりした気持ちのまま、\r\nぼんやりした空の下で撮るのは嫌なの",
+    "charAnim1": "anger1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110150"
+  },
+  {
+    "id": 2018005110160,
+    "speaker": "冬優子",
+    "text": "せめて、気持ちに踏ん切りつけてから、\r\n現場に行きたいじゃない",
+    "charAnim2": "face_close",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018005110170,
+    "speaker": "冬優子",
+    "text": "だから、あんたはちゃんと、\r\n安全運転でふゆを現場まで連れて行きなさい！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、もちろんだ。冬優子も、窓の外を見るのはいいけど、\r\nちゃんとシートベルトはしてるんだぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "surp3",
+    "charLabel": "fuyuko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00133",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0345",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（晴れろ、晴れろ、か……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（そんなことで、晴れるわけない……けど……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（もし想いの強さで天気が決まるなら、\r\nきっと冬優子の晴れろって想いが一番だから……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……もし、叶うなら……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……なんて、そんなことで晴れるわけ……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00000"
+  },
+  {
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2018005110180,
+    "speaker": "冬優子",
+    "text": "──あっ！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "fade_out",
+    "voice": "produce_events/201800511/2018005110180"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black4",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "fuyuko",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bg": "00129"
+  },
+  {
+    "effectLabel": "black4",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "！？\r\n急にどうした？　何か忘れ物でも──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018005110190,
+    "speaker": "冬優子",
+    "text": "ばか、違うわよ！　見てよあっち！　あっちの空！\r\n──今日の現場の方向よね！？",
+    "charAnim1": "anger3",
+    "charAnim2": "face_surp",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110190"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "fuyuko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 2018005110200,
+    "speaker": "冬優子",
+    "text": "ほら、陽が差してる！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3500,
+    "voice": "produce_events/201800511/2018005110200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00133",
+    "bgEffect": "fade",
+    "bgm": "005",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "bg": "00160",
+    "bgEffect": "white_add",
+    "waitType": "time",
+    "waitTime": 5000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "まさか、本当に晴れになるなんてな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black5",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "fuyuko",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bg": "00129"
+  },
+  {
+    "effectLabel": "black5",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2018005110210,
+    "speaker": "冬優子",
+    "text": "ばーか、何言ってんのよ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018005110220,
+    "speaker": "冬優子",
+    "text": "晴れになったんじゃないの……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110220"
+  },
+  {
+    "id": 2018005110230,
+    "speaker": "冬優子",
+    "text": "──ふゆが、晴れにしてやったのよ！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800511/2018005110230"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

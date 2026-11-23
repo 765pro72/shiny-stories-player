@@ -1,0 +1,253 @@
+[
+  {
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "id": 7902001060010,
+    "speaker": "社長",
+    "text": "やはりここまで来ると、\r\n乗り越えるべき壁も高かったな……",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/702700106/7902001060010"
+  },
+  {
+    "id": 7901001060010,
+    "speaker": "はづき",
+    "text": "結果は残念でしたけど……\r\nおふたりは立派にやってましたよ！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702700106/7901001060010"
+  },
+  {
+    "id": 7901001060020,
+    "speaker": "はづき",
+    "text": "ここまで来れただけでも、\r\n胸を張って誇れることだと私は思います",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702700106/7901001060020"
+  },
+  {
+    "id": 7902001060020,
+    "speaker": "社長",
+    "text": "ああ、良い活躍だった\r\nそれはたしかだ",
+    "charAnim1": "wait1",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702700106/7902001060020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……俺もそう思います\r\n彼女はよくやってくれました",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001060030,
+    "speaker": "はづき",
+    "text": "その言葉を、彼女に直接\r\n言ってあげましょう？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702700106/7901001060030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00002",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──羽那",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "三次審査、通過できなかったそうだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7027001060010,
+    "speaker": "羽那",
+    "text": "そっかー、残念ー……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "027",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/702700106/7027001060010"
+  },
+  {
+    "id": 7027001060020,
+    "speaker": "羽那",
+    "text": "あたし、レッスンとか\r\n頑張ってたんだけどなー",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702700106/7027001060020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……うん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim2": "face_anger",
+    "charLabel": "hana",
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『W.I.N.G.』の舞台には届かなかったけど……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "羽那は、\r\nこんなところで終わるべきアイドルじゃないよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hana",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "羽那はこれから先、絶対に\r\nもっと大きなステージに行ける──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だから……\r\nこれから先も、俺と一緒に頑張ってくれないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7027001060030,
+    "speaker": "羽那",
+    "text": "あはっ、うん",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702700106/7027001060030"
+  },
+  {
+    "id": 7027001060040,
+    "speaker": "羽那",
+    "text": "あたしも、そのつもり──！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702700106/7027001060040"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

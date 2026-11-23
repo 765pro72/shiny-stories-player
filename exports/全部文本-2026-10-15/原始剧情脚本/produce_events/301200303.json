@@ -1,0 +1,1370 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "012",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "bg": "00058",
+    "bgm": "005",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3012003030010,
+    "speaker": "果穂",
+    "text": "あ……\r\n火が、弱くなってきちゃいました……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "009",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/301200303/3012003030010"
+  },
+  {
+    "id": 3012003030020,
+    "speaker": "果穂",
+    "text": "……\r\n……あの、凛世さんっ！",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030020"
+  },
+  {
+    "id": 3012003030030,
+    "speaker": "凛世",
+    "text": "はい……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030030"
+  },
+  {
+    "id": 3012003030040,
+    "speaker": "果穂",
+    "text": "あたし、キャンプファイヤーが終わっちゃう前に……\r\nやりたいことがあるんですっ！",
+    "charAnim2": "face_serious",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030040"
+  },
+  {
+    "id": 3012003030050,
+    "speaker": "果穂",
+    "text": "ちょっと、待っててください！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030050"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "rinze",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3012003030060,
+    "speaker": "果穂",
+    "text": "はぁっ……はぁっ……お待たせしました……！\r\nり、凛世さんは甘いもの、お好きですか……？",
+    "charAnim1": "sleep",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301200303/3012003030060"
+  },
+  {
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3012003030070,
+    "speaker": "凛世",
+    "text": "大抵の甘味は……\r\n凛世も、好いております……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301200303/3012003030070"
+  },
+  {
+    "id": 3012003030080,
+    "speaker": "果穂",
+    "text": "わあ、良かったです！　……じゃーん！\r\n凛世さん、マシュマロを持ってきました！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030080"
+  },
+  {
+    "id": 3012003030090,
+    "speaker": "果穂",
+    "text": "あたし……これを焼いてみたいですっ！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030090"
+  },
+  {
+    "id": 3012003030100,
+    "speaker": "凛世",
+    "text": "そちらを……焼くのですか……？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030100"
+  },
+  {
+    "id": 3012003030110,
+    "speaker": "果穂",
+    "text": "はい、学校の友達が言ってたんですっ！\r\nキャンプファイヤーはマシュマロを焼くものだって！",
+    "charAnim1": "think",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030110"
+  },
+  {
+    "id": 3012003030120,
+    "speaker": "凛世",
+    "text": "そのような……習わしが……\r\nあるのですね……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030120"
+  },
+  {
+    "id": 3012003030130,
+    "speaker": "果穂",
+    "text": "串も借りてきたので、これで焼きましょう！\r\nぜったい……スッゴく美味しいです！",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030130"
+  },
+  {
+    "id": 3012003030140,
+    "speaker": "凛世",
+    "text": "はい……ですが……\r\n燃えて……溶けてしまうのではないでしょうか……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030140"
+  },
+  {
+    "id": 3012003030150,
+    "speaker": "果穂",
+    "text": "い、いえ！　みんなこうやってるって言ってました！\r\nいっ、行きます！　……ていっ！",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030150"
+  },
+  {
+    "id": 3012003030160,
+    "speaker": "果穂",
+    "text": "……あ、熱いですっ！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030160"
+  },
+  {
+    "id": 3012003030170,
+    "speaker": "凛世",
+    "text": "果穂さん……火が……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030170"
+  },
+  {
+    "id": 3012003030180,
+    "speaker": "果穂",
+    "text": "わっ！？　ふぅーっ、ふぅーっ！\r\nあ……ごめんなさい、マシュマロが……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030180"
+  },
+  {
+    "id": 3012003030190,
+    "speaker": "果穂",
+    "text": "……焦げちゃいました……\r\nで、でも、実は美味しかったり……むぐっ……！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030190"
+  },
+  {
+    "id": 3012003030200,
+    "speaker": "果穂",
+    "text": "う、うぅ……ちょっと苦いです……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030200"
+  },
+  {
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "rinze",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0116",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3012003030210,
+    "speaker": "夏葉",
+    "text": "あら、賑やかね\r\n何をしているの？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/301200303/3012003030210"
+  },
+  {
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3012003030220,
+    "speaker": "果穂",
+    "text": "夏葉さん！　マシュマロを焼いてみたいんですけど……\r\n上手くいかなくて……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301200303/3012003030220"
+  },
+  {
+    "id": 3012003030230,
+    "speaker": "夏葉",
+    "text": "あら、マシュマロを？　知っているわ！\r\nアメリカのキャンプでは一般的ね",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030230"
+  },
+  {
+    "id": 3012003030240,
+    "speaker": "夏葉",
+    "text": "ただ……そのまま食べるっていうのは斬新だわ\r\nふつう、チョコとかクッキーとかで挟むものだから",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030240"
+  },
+  {
+    "id": 3012003030250,
+    "speaker": "果穂",
+    "text": "そ、そうだったんですか……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030250"
+  },
+  {
+    "id": 3012003030260,
+    "speaker": "夏葉",
+    "text": "でも、面白そうね……\r\n私も少しやっていいかしら？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030260"
+  },
+  {
+    "id": 3012003030270,
+    "speaker": "果穂",
+    "text": "わぁ！　じゃあ夏葉さんもやりましょう！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030270"
+  },
+  {
+    "id": 3012003030280,
+    "speaker": "夏葉",
+    "text": "ええ、貸してみて\r\n……あ！　燃え移っちゃったわ！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030280"
+  },
+  {
+    "id": 3012003030290,
+    "speaker": "夏葉",
+    "text": "火、強過ぎじゃないかしら……？\r\nすぐに焦げてしまったわね……",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030290"
+  },
+  {
+    "id": 3012003030300,
+    "speaker": "果穂",
+    "text": "あたしも、もう１回……！\r\n──……やっぱり、ダメです……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030300"
+  },
+  {
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3012003030310,
+    "speaker": "果穂",
+    "text": "あ、あれ……？　凛世さんの、全然焦げてない……？\r\nど、どうやったんですか！？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301200303/3012003030310"
+  },
+  {
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3012003030320,
+    "speaker": "凛世",
+    "text": "はい……\r\n熾火を……利用いたしました……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301200303/3012003030320"
+  },
+  {
+    "id": 3012003030330,
+    "speaker": "果穂",
+    "text": "おきび……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030330"
+  },
+  {
+    "id": 3012003030340,
+    "speaker": "凛世",
+    "text": "はい……\r\n燃えた後の……熱を帯びた薪のことでございます……",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030340"
+  },
+  {
+    "id": 3012003030350,
+    "speaker": "凛世",
+    "text": "炎ほど……強くはございませんので……\r\nこのように……よい加減となります……",
+    "charAnim2": "face_serious",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030350"
+  },
+  {
+    "id": 3012003030360,
+    "speaker": "果穂",
+    "text": "す、スゴいですっ！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030360"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "kaho"
+  },
+  {
+    "id": 3012003030370,
+    "speaker": "凛世",
+    "text": "如何なるときも……\r\n物事は……じっくりと……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030370"
+  },
+  {
+    "id": 3012003030380,
+    "speaker": "果穂",
+    "text": "物事は……じっくりと……！",
+    "charAnim2": "face_serious",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030380"
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3012003030390,
+    "speaker": "凛世",
+    "text": "はい……\r\n想いは……熾火のように、静かに熱く……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301200303/3012003030390"
+  },
+  {
+    "id": 3012003030400,
+    "speaker": "凛世",
+    "text": "じっくりと……炙っていけば……\r\n姿よきものに……成るのでしょう……",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030400"
+  },
+  {
+    "charLabel": "rinze",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3012003030410,
+    "speaker": "夏葉",
+    "text": "へぇ、それがマシュマロの美味しい焼き方ってわけね……\r\nなるほど、やるじゃない！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301200303/3012003030410"
+  },
+  {
+    "id": 3012003030420,
+    "speaker": "果穂",
+    "text": "む、難しいです……っ！\r\nメモしますっ！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030420"
+  },
+  {
+    "id": 3012003030430,
+    "speaker": "夏葉",
+    "text": "それじゃ\r\n私も美味しく焼けるまで練習してみるわ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030430"
+  },
+  {
+    "id": 3012003030440,
+    "speaker": "夏葉",
+    "text": "……この串、しばらく借りてもいいかしら？\r\n火力の弱まったところを探してみるから",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030440"
+  },
+  {
+    "id": 3012003030450,
+    "speaker": "果穂",
+    "text": "はいっ！\r\n美味しく焼けたら、あたしにも見せてくださいっ！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030450"
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3012003030460,
+    "speaker": "夏葉",
+    "text": "ありがとう、果穂\r\n絶品のマシュマロを作ってみせるわ！",
+    "charAnim2": "face_smile1",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301200303/3012003030460"
+  },
+  {
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3012003030470,
+    "speaker": "凛世",
+    "text": "夏葉さん……\r\n応援……しております……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301200303/3012003030470"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "se": "0118",
+    "charEffect": {
+      "type": "to",
+      "x": 200,
+      "alpha": 0,
+      "time": 450
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charLabel": "rinze",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3012003030480,
+    "speaker": "果穂",
+    "text": "あの、凛世さん、もう１回焼いてくれませんか！？\r\nあたし、その様子を撮影したいですっ！",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301200303/3012003030480"
+  },
+  {
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3012003030490,
+    "speaker": "凛世",
+    "text": "では……\r\n果穂さんの分を……お作りいたしましょう……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301200303/3012003030490"
+  },
+  {
+    "id": 3012003030500,
+    "speaker": "果穂",
+    "text": "ほ、本当ですかっ！？\r\nやったーっ！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030500"
+  },
+  {
+    "textFrame": "off",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3012003030510,
+    "speaker": "凛世",
+    "text": "ふふ……\r\nまだ出来上がっては……おりませんよ……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030510"
+  },
+  {
+    "id": 3012003030520,
+    "speaker": "果穂",
+    "text": "はいっ！　いつ焼き上がってもいいように\r\nしっかり準備しておきます！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030520"
+  },
+  {
+    "id": 3012003030530,
+    "speaker": "凛世",
+    "text": "はい……\r\nそれでは凛世も……心して焼きましょう……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030530"
+  },
+  {
+    "textFrame": "off",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3012003030540,
+    "speaker": "果穂",
+    "text": "……えへへっ！\r\n今の、スゴくいい感じに撮れたと思いますっ！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030540"
+  },
+  {
+    "id": 3012003030550,
+    "speaker": "凛世",
+    "text": "凛世も……よい加減に焼けたようです……\r\n……どうぞ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030550"
+  },
+  {
+    "id": 3012003030560,
+    "speaker": "果穂",
+    "text": "わぁっ、いただきます！\r\n……わ、おいしーです！　凛世さんっ！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030560"
+  },
+  {
+    "id": 3012003030570,
+    "speaker": "果穂",
+    "text": "あたし……\r\nついに焼いたマシュマロを食べてるんですね……！",
+    "charAnim1": "sleep",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030570"
+  },
+  {
+    "id": 3012003030580,
+    "speaker": "凛世",
+    "text": "はい……これが……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030580"
+  },
+  {
+    "id": 3012003030590,
+    "speaker": "凛世",
+    "text": "焼いたマシュマロ……なのですね……",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030590"
+  },
+  {
+    "id": 3012003030600,
+    "speaker": "果穂",
+    "text": "はいっ！　焼いたマシュマロですっ！\r\nほら、写真にもばっちり撮りました！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030600"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "rinze",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect",
+    "stillType": "support_idols",
+    "stillId": "2030120010"
+  },
+  {
+    "id": 3012003030610,
+    "speaker": "凛世",
+    "text": "拝見しましょう……\r\nよく……撮れていますね……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030610"
+  },
+  {
+    "id": 3012003030620,
+    "speaker": "凛世",
+    "text": "ですが……他は……\r\n凛世ばかりが、映っております……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030620"
+  },
+  {
+    "id": 3012003030630,
+    "speaker": "果穂",
+    "text": "……火と向かい合ってる凛世さん、\r\nスッゴく綺麗だったのでつい……えへへっ！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030630"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 1500,
+    "stillCtrl": "off"
+  },
+  {
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3012003030640,
+    "speaker": "夏葉",
+    "text": "待たせたわね、果穂\r\nさぁ、この絶品のマシュマロを食べてみるといいわ！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301200303/3012003030640"
+  },
+  {
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3012003030650,
+    "speaker": "果穂",
+    "text": "夏葉さん！　では、さっそくいただきます……\r\nん～っ！　たしかに絶品の焼き加減ですっ……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301200303/3012003030650"
+  },
+  {
+    "id": 3012003030660,
+    "speaker": "夏葉",
+    "text": "うふふ\r\nよかったわ、頑張った甲斐があったということね",
+    "charAnim2": "face_smile2",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030660"
+  },
+  {
+    "id": 3012003030670,
+    "speaker": "果穂",
+    "text": "……あれ？\r\nマシュマロ、だいぶ少なくなってます……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030670"
+  },
+  {
+    "id": 3012003030680,
+    "speaker": "夏葉",
+    "text": "……完璧なものを仕上げるためには、\r\n苦い思いもたくさん味わったわ",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030680"
+  },
+  {
+    "id": 3012003030690,
+    "speaker": "果穂",
+    "text": "それって……\r\nそんなにたくさんマシュマロを焼いたんですか！？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030690"
+  },
+  {
+    "id": 3012003030700,
+    "speaker": "夏葉",
+    "text": "ええ\r\nけれど、おかげでこうして絶品のマシュマロが完成したのよ",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030700"
+  },
+  {
+    "id": 3012003030710,
+    "speaker": "夏葉",
+    "text": "もちろん、摂取したカロリーを消費する算段もついてるわ\r\n……少し走り込むけど、アナタたちもどう？",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030710"
+  },
+  {
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3012003030720,
+    "speaker": "果穂",
+    "text": "何度でも諦めずにチャレンジする……\r\n夏葉さん、やっぱりスゴいですっ！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301200303/3012003030720"
+  },
+  {
+    "id": 3012003030730,
+    "speaker": "果穂",
+    "text": "あたしも一緒に走りたいです！\r\n待ってくださいっ！",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301200303/3012003030730"
+  },
+  {
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 1000,
+    "stillCtrl": "off"
+  },
+  {
+    "id": 3012003030740,
+    "speaker": "凛世",
+    "text": "ふふ……\r\n夏葉さんには……敵わないようです……",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301200303/3012003030740"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

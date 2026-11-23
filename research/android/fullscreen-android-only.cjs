@@ -1,0 +1,1 @@
+const fs=require('fs');const p='public/story-fullscreen.js';let s=fs.readFileSync(p,'utf8').replace('document.head.append(css);const $',"if(window.desktop?.platform==='android'||window.ShinyAndroid)document.head.append(css);const $");fs.writeFileSync(p,s);

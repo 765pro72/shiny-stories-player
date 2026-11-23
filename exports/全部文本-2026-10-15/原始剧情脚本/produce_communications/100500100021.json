@@ -1,0 +1,166 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう、摩美々！",
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "005",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001"
+  },
+  {
+    "id": 1005001000210010,
+    "speaker": "摩美々",
+    "text": "あ……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100021/1005001000210010"
+  },
+  {
+    "id": 1005001000210020,
+    "speaker": "摩美々",
+    "text": "プロデューサー、はいポーズ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100021/1005001000210020"
+  },
+  {
+    "select": "ピース！　んっ！？",
+    "nextLabel": "1005001000211"
+  },
+  {
+    "select": "なんでいきなり？",
+    "nextLabel": "1005001000212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "変顔しようか？",
+    "nextLabel": "1005001000213"
+  },
+  {
+    "label": "1005001000211",
+    "textFrame": "off",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1005001000210030,
+    "speaker": "摩美々",
+    "text": "驚かせちゃいましたぁ？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100021/1005001000210030"
+  },
+  {
+    "id": 1005001000210040,
+    "speaker": "摩美々",
+    "text": "私もノってくれるプロデューサーに、\r\nビックリしましたけどねー",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100021/1005001000210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "1005001000212",
+    "textFrame": "off",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1005001000210050,
+    "speaker": "摩美々",
+    "text": "朝からいい顔をしてたのでー、\r\nこれは残しておかないと、って思ったんですー",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100021/1005001000210050"
+  },
+  {
+    "id": 1005001000210060,
+    "speaker": "摩美々",
+    "text": "はい。よく撮れてますよー",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100021/1005001000210060",
+    "charAnim3Loop": false
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1005001000210070,
+    "label": "1005001000213",
+    "speaker": "摩美々",
+    "text": "……そういうのはちょっとー、\r\n求めてないですねー……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100021/1005001000210070"
+  },
+  {
+    "id": 1005001000210080,
+    "speaker": "摩美々",
+    "text": "普通の写真がいいかな……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100021/1005001000210080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……)",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

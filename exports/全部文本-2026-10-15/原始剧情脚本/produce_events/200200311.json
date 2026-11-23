@@ -1,0 +1,434 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "ふぅ……午前の外回りも一段落したし\r\nちょっと事務所に戻って休憩するか",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00003",
+    "bgm": "012"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001"
+  },
+  {
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLabel": "hiori",
+    "charType": "idols",
+    "charId": "1030020010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    }
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2002003110010,
+    "speaker": "灯織",
+    "text": "あ……！　プロデューサー……！\r\nお、お疲れ様です……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あれ？　灯織、お疲れ\r\nどうしたんだ？　今日、何かスケジュールあったか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002003110020,
+    "speaker": "灯織",
+    "text": "あ、いえ、特にそういうわけではないんですけど\r\n近くに寄ったものですから……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110020"
+  },
+  {
+    "id": 2002003110030,
+    "speaker": "灯織",
+    "text": "……お邪魔でしたか？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、いつでも大歓迎だよ\r\nでも、休めるときに休んでおいた方がいいと思ってな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002003110040,
+    "speaker": "灯織",
+    "text": "……ふふ、いつも私の心配ばかりですね\r\nでも、たまには自分のことにも気を遣ってください",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charLipAnim": "lip_smile",
+    "charAnim3Loop": false,
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ははは\r\nありがとう、気を付けるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002003110050,
+    "speaker": "灯織",
+    "text": "……実は今日、最近のプロデューサーが\r\nちょっと心配で様子を見にきたんです",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺のことが？\r\n何か心配させるようなことをしたか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002003110060,
+    "speaker": "灯織",
+    "text": "いえ、そういうわけじゃないんですが……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110060"
+  },
+  {
+    "id": 2002003110070,
+    "speaker": "灯織",
+    "text": "ただ……『W.I.N.G.』で優勝して\r\nたくさんお仕事をいただけるようになりました",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110070"
+  },
+  {
+    "id": 2002003110080,
+    "speaker": "灯織",
+    "text": "そのおかげで\r\n私もアイドルとして成長できていると実感しています",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なんだ、いいことじゃないか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002003110090,
+    "speaker": "灯織",
+    "text": "……でも、それがプロデューサーの\r\n負担を増やしてしまっているんじゃないかと思ったんです",
+    "charAnim1": "surp1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110090"
+  },
+  {
+    "id": 2002003110100,
+    "speaker": "灯織",
+    "text": "最近、あんまりお休みが取れていないみたいですし……",
+    "charAnim1": "wait",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charLipAnim": "lip_wait",
+    "charAnim3Loop": false,
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それで心配してくれたのか……ありがとう、灯織",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、俺は担当アイドルがどんどん成長していってるのが\r\n嬉しいんだよ。だから、全然大丈夫だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002003110110,
+    "speaker": "灯織",
+    "text": "……ありがとうございます\r\nでも、無理はしないでくださいね",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは。今までは、俺が心配するばかりだったのに\r\nすっかり立場が逆転しちゃったな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002003110120,
+    "speaker": "灯織",
+    "text": "もう……\r\n笑いごとじゃないですよ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110120"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2002003110130,
+    "speaker": "灯織",
+    "text": "あ、あの、プロデューサー……！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110130"
+  },
+  {
+    "id": 2002003110140,
+    "speaker": "灯織",
+    "text": "実は、受け取ってもらいたい物があるんです\r\nこれ、良かったら……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？　これは？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect",
+    "stillType": "idols",
+    "stillId": "1030020010"
+  },
+  {
+    "id": 2002003110150,
+    "speaker": "灯織",
+    "text": "私が作ってきたお弁当です",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ、俺にくれるのか？\r\nでも、どうして急に？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002003110160,
+    "speaker": "灯織",
+    "text": "『身体が資本なんだから、しっかり食べないと』ですよね？\r\nだから、ちゃんとしたものを食べてください",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……俺が言ったこと、覚えててくれたんだな\r\nありがとう。さっそく食べてもいいか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002003110170,
+    "speaker": "灯織",
+    "text": "はい\r\n……お口に合うと良いんですが",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それじゃあ、いただくとするよ\r\n中身は、っと……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0165",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……おお！\r\nこれは、すごく豪勢だな……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002003110180,
+    "speaker": "灯織",
+    "text": "少し前に聞いた、プロデューサーの好きなもの\r\nたくさん入れてみました",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110180"
+  },
+  {
+    "id": 2002003110190,
+    "speaker": "灯織",
+    "text": "ちょっと偏っているかもしれないんですけど\r\nやっぱり、喜んで欲しかったので……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "覚えていてくれたんだな。ありがとう、嬉しいよ\r\nこれで、もっとがんばれそうだ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002003110200,
+    "speaker": "灯織",
+    "text": "そ、そうですか……ふふ\r\n喜んでもらえて、良かったです",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110200"
+  },
+  {
+    "id": 2002003110210,
+    "speaker": "灯織",
+    "text": "プロデューサー。しっかり食べて、これからも\r\n私のプロデュースをしてください",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110210"
+  },
+  {
+    "id": 2002003110220,
+    "speaker": "灯織",
+    "text": "……あなたがいないと、困りますから",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200311/2002003110220"
+  },
+  {
+    "label": "end"
+  }
+]

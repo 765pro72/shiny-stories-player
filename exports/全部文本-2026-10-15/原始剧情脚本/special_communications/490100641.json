@@ -1,0 +1,79 @@
+[
+  {
+    "id": 4901006040010,
+    "speaker": "社長",
+    "text": "アイドルが頼りになるのは良いことだが……",
+    "charLabel": "ceo",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "charType": "sub_characters",
+    "charId": "ceo",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00006",
+    "bgm": "001",
+    "voice": "special_communications/490100641/4901006040010"
+  },
+  {
+    "id": 4901006040020,
+    "speaker": "社長",
+    "text": "頼ってばかりでは困るぞ\r\nお前にはアイドルを導いてもらわねばならんからな",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "voice": "special_communications/490100641/4901006040020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "は、はい、気を付けます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901006040030,
+    "speaker": "社長",
+    "text": "ああ、わかればいい\r\n次は、お前の強みを教えてくれ",
+    "textCtrl": "l",
+    "textFrame": "015",
+    "voice": "special_communications/490100641/4901006040030"
+  },
+  {
+    "select": "仕事のスピードです",
+    "nextLabel": "1"
+  },
+  {
+    "select": "アイドルに\r\n向き合う気持ち",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "ユーモアです",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "2",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "3",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

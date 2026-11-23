@@ -1,0 +1,861 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0000",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0757",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "3000090140",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "3000120140",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00008",
+    "fg": "003252",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 1010003020010,
+    "speaker": "智代子",
+    "text": "『リハーサルが終わりました！\r\n私たちの出番は本日18時頃からです！』",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020010"
+  },
+  {
+    "id": 1010003020020,
+    "speaker": "智代子",
+    "text": "『会場に来てくださる方も、中継で見てくださる方も、\r\n楽しみに待っていてくださいね～っ！』",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020020"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "3000110140",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 1010003020030,
+    "speaker": "智代子",
+    "text": "『#放課後クライマックスガールズ　#放クラ』",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "3000130140",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101000302/1010003020030"
+  },
+  {
+    "id": 1010003020040,
+    "speaker": "智代子",
+    "text": "『#小宮果穂　#西城樹里　#杜野凛世\r\n#有栖川夏葉　#園田智代子』",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020040"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0757",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "1040090010",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "1040110010",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00238",
+    "fg": "003252",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 1010003020050,
+    "speaker": "智代子",
+    "text": "『なんと！\r\n今日は文化祭にお邪魔しています！』",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020050"
+  },
+  {
+    "id": 1010003020060,
+    "speaker": "智代子",
+    "text": "『学校でのお仕事は、やっぱり特別ですね……！\r\nなんと言っても放クラなので！』",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020060"
+  },
+  {
+    "id": 1010003020070,
+    "speaker": "智代子",
+    "text": "『写真は、果穂と樹里ちゃんが\r\n私の分の食べ物を調達してくれているところです！』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020070"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0757",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00259",
+    "fg": "003252",
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 1010003020080,
+    "speaker": "智代子",
+    "text": "『いつもとは違う雰囲気の放クラを、\r\nお届けできると思います……！』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020080"
+  },
+  {
+    "id": 1010003020090,
+    "speaker": "智代子",
+    "text": "『雑誌の発売は、来週の水曜日ですよ～！』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020090"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "black4",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "fg": "off"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black4",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00129",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1010003020100,
+    "speaker": "智代子",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "0008",
+    "se": "0461",
+    "voice": "produce_events/101000302/1010003020100"
+  },
+  {
+    "id": 1010003020110,
+    "speaker": "智代子",
+    "text": "──……よし",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101000302/1010003020110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……今日の投稿は何にしたんだ？",
+    "charAnim2": "face_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010003020120,
+    "speaker": "智代子",
+    "text": "えっとですね──",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020120"
+  },
+  {
+    "id": 1010003020130,
+    "speaker": "智代子",
+    "text": "さっき控室で、凛世ちゃんと夏葉ちゃんに\r\n髪をいじってもらってた時の写真を……！",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、なるほど\r\n綺麗に結べてたもんなぁ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010003020140,
+    "speaker": "智代子",
+    "text": "はい！\r\nえへへ、せっかくですから……！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020140"
+  },
+  {
+    "id": 1010003020150,
+    "speaker": "智代子",
+    "text": "……ちなみにプロデューサーさんから見て、\r\n最近の内容っていかがでしょう……？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺がただのファンだったら嬉しいものばっかりだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "出演情報はちゃんとまとまってるし、\r\n当日にリマインドしてくれるし、オフショットもあるし──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あと、投稿頻度が上がってるのもシンプルに嬉しい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010003020160,
+    "speaker": "智代子",
+    "text": "……",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101000302/1010003020160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ただ、俺は他の人には見えないところも\r\n知っちゃってるから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これまでより負荷が上がってることに対して、\r\n若干心配をしてる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010003020170,
+    "speaker": "智代子",
+    "text": "あ、あはははは……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "逆に聞かせてくれ\r\n本人としてはどう思ってる？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010003020180,
+    "speaker": "智代子",
+    "text": "……無理、ってラインまではいってないと思ってますよ\r\nあくまで、これまでより頑張ってる、の範囲です",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……なるほど？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010003020190,
+    "speaker": "智代子",
+    "text": "あ～～…………",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_shy",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "charAnim2": "face_close",
+    "charAnim4": "blank",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010003020200,
+    "speaker": "智代子",
+    "text": "……もうっ\r\n今日のプロデューサーさんは意地悪です……！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020200"
+  },
+  {
+    "id": 1010003020210,
+    "speaker": "智代子",
+    "text": "私たちは──いえ、私は！\r\nまだまだ知ってもらえていないんですから！",
+    "charAnim2": "face_anger3",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020210"
+  },
+  {
+    "id": 1010003020220,
+    "speaker": "智代子",
+    "text": "いっきに注目を集められる今のタイミングって\r\n逃すべきじゃないじゃないですか～～！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger3",
+    "charLipAnim": "lip_anger",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……\r\nいや、すまんすまん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "頑張ってるのも、頑張りたいと思ってくれてるのも\r\n知ってるし、水を差すつもりはないんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ただ、ちょっとのことだったはずのものが、\r\n知らず知らずのうちに大変なことにならないように──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "息切れしないように、っていう念押しをしときたくてな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010003020230,
+    "speaker": "智代子",
+    "text": "……プロデューサーさん……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101000302/1010003020230"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……『G.R.A.D.』の告知があってから、\r\n少しずつではあるけど、またフォロワーが増えてきてる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ちゃんと結果がついてきてるってことだ\r\nだからこそ──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "自分の状態は、しっかり把握しておくべきだと思うぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010003020240,
+    "speaker": "智代子",
+    "text": "……はい！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101000302/1010003020240"
+  },
+  {
+    "id": 1010003020250,
+    "speaker": "智代子",
+    "text": "アドバイス、ありがとうございます\r\nちょっと前のめりになりすぎてるところは調整して──",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020250"
+  },
+  {
+    "id": 1010003020260,
+    "speaker": "智代子",
+    "text": "きちんとペース配分も考えて、無理にならない範囲で、\r\n楽しみながら投稿できるように！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020260"
+  },
+  {
+    "id": 1010003020270,
+    "speaker": "智代子",
+    "text": "引き続き頑張りますので、何卒どうぞご贔屓に……？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もちろんだ\r\n楽しみに待ってるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺も、俺以外のファンもみんなだ\r\n──よろしく頼む",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010003020280,
+    "speaker": "智代子",
+    "text": "お任せください！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000302/1010003020280"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

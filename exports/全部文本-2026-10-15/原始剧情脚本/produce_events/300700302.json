@@ -1,0 +1,757 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1030080010",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "bg": "00001",
+    "bgm": "008",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3007003020010,
+    "speaker": "結華",
+    "text": "（あー……きりりん、ひとりで残ってる）",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "007",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300700302/3007003020010"
+  },
+  {
+    "charAnim1": "shy1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "kiriko"
+  },
+  {
+    "id": 3007003020020,
+    "speaker": "結華",
+    "text": "（まみみんが出てっちゃったこと、\r\n気にしてるんだろうなー……）",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020020"
+  },
+  {
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3007003020030,
+    "speaker": "結華",
+    "text": "きーりりん",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020030"
+  },
+  {
+    "id": 3007003020040,
+    "speaker": "霧子",
+    "text": "……あっ、結華ちゃん……\r\nどうしたの……？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020040"
+  },
+  {
+    "id": 3007003020050,
+    "speaker": "結華",
+    "text": "うんにゃ？　三峰これから帰るから、\r\nきりりんも一緒にどうかと思って",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020050"
+  },
+  {
+    "id": 3007003020060,
+    "speaker": "霧子",
+    "text": "ありがとう……\r\nえっと……でも……",
+    "charAnim1": "shy1",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020060"
+  },
+  {
+    "id": 3007003020070,
+    "speaker": "霧子",
+    "text": "わ、わたし……\r\nもうちょっと残って、考えたいことがあって……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020070"
+  },
+  {
+    "id": 3007003020080,
+    "speaker": "霧子",
+    "text": "えっと……その……",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020080"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007003020090,
+    "speaker": "結華",
+    "text": "（……さすがにまだ話せはしないよね）",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300700302/3007003020090"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007003020100,
+    "speaker": "結華",
+    "text": "んーと……もしかして、衣装のアレンジどうしよっかーって\r\n決まりきってない、とか？",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "voice": "produce_events/300700302/3007003020100"
+  },
+  {
+    "id": 3007003020110,
+    "speaker": "霧子",
+    "text": "あ……う、うん……！",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020110"
+  },
+  {
+    "id": 3007003020120,
+    "speaker": "結華",
+    "text": "そっかそっか。きりりんゴシック好きなんだもんね、\r\nもう少しこだわりたいってとこもあるよね",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020120"
+  },
+  {
+    "id": 3007003020130,
+    "speaker": "霧子",
+    "text": "うん……あの、それで……時間もかかりそうだから……\r\n……先に帰ってもらって、大丈夫だよ……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020130"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007003020140,
+    "speaker": "結華",
+    "text": "（人払いに必死って感じだなぁ……）",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300700302/3007003020140"
+  },
+  {
+    "id": 3007003020150,
+    "speaker": "結華",
+    "text": "（ここで衣装のこと手伝うって言っても、\r\nきっと遠慮するだろうし）",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020150"
+  },
+  {
+    "id": 3007003020160,
+    "speaker": "結華",
+    "text": "（……相談に乗るとかは、難しそうだよね……）",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020160"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007003020170,
+    "speaker": "結華",
+    "text": "わかった。じゃあ三峰も、いいなって思ったのがあったら\r\n後で画像送っとくよ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "voice": "produce_events/300700302/3007003020170"
+  },
+  {
+    "id": 3007003020180,
+    "speaker": "結華",
+    "text": "参考になるかはわかんないけど\r\n拾えるものがありそうだったら拾ってみてー",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020180"
+  },
+  {
+    "id": 3007003020190,
+    "speaker": "霧子",
+    "text": "で、でも……\r\n結華ちゃんも忙しいのに……",
+    "charAnim1": "sad1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020190"
+  },
+  {
+    "id": 3007003020200,
+    "speaker": "結華",
+    "text": "いいからいいから！　きりりんが納得する衣装を\r\n作れるように、三峰も協力したいんだよ",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020200"
+  },
+  {
+    "id": 3007003020210,
+    "speaker": "結華",
+    "text": "だってせっかくユニットのみんなが\r\nゴシックいいねって言ってたんだし",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020210"
+  },
+  {
+    "id": 3007003020220,
+    "speaker": "結華",
+    "text": "こがたんもさくやんも……まみみんだって",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020220"
+  },
+  {
+    "id": 3007003020230,
+    "speaker": "霧子",
+    "text": "……結華ちゃん……",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020230"
+  },
+  {
+    "id": 3007003020240,
+    "speaker": "結華",
+    "text": "みんな、いい衣装ができるの楽しみにしてたと思うんだよね",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020240"
+  },
+  {
+    "id": 3007003020250,
+    "speaker": "結華",
+    "text": "だから、思ってたのと違って、あれ？　ってなったんだし",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020250"
+  },
+  {
+    "id": 3007003020260,
+    "speaker": "結華",
+    "text": "ひとりで頑張るのもいいけどさ、三峰たちは\r\nユニットなんだから、もっと相談してくれてもいいんだよ？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020260"
+  },
+  {
+    "id": 3007003020270,
+    "speaker": "結華",
+    "text": "頼ってもらえる方も、結構嬉しかったりするし！\r\n……きりりんもそういうの、わかるんじゃない？",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020270"
+  },
+  {
+    "id": 3007003020280,
+    "speaker": "霧子",
+    "text": "っ……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020280"
+  },
+  {
+    "id": 3007003020290,
+    "speaker": "霧子",
+    "text": "うん……\r\n結華ちゃん、ありがとう……",
+    "charAnim2": "face_close",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020290",
+    "charAnim3Loop": false
+  },
+  {
+    "id": 3007003020300,
+    "speaker": "結華",
+    "text": "いえいえー。たいしたお構いもできませんで",
+    "charAnim1": "wait2",
+    "charAnim3": "no",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020300",
+    "charAnim3Loop": false
+  },
+  {
+    "id": 3007003020310,
+    "speaker": "結華",
+    "text": "いつでも……電話とかくれたら、\r\nまたこっち戻ってこれるから。お気軽にどうぞ",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020310"
+  },
+  {
+    "id": 3007003020320,
+    "speaker": "霧子",
+    "text": "うん……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020320"
+  },
+  {
+    "id": 3007003020330,
+    "speaker": "結華",
+    "text": "……後はそうだなぁ、プロデューサーに話してみるのも\r\n手かもしれないね",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020330"
+  },
+  {
+    "id": 3007003020340,
+    "speaker": "結華",
+    "text": "プロデューサーはアイドルを支えるのが仕事なんだもん、\r\n真っ先に頼ったって怒られないでしょ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020340"
+  },
+  {
+    "id": 3007003020350,
+    "speaker": "結華",
+    "text": "きっといい答え、くれると思うよ",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020350"
+  },
+  {
+    "id": 3007003020360,
+    "speaker": "霧子",
+    "text": "うん……そうかも……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020360"
+  },
+  {
+    "id": 3007003020370,
+    "speaker": "結華",
+    "text": "ん。……それじゃ、三峰そろそろ帰ろーっと",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020370"
+  },
+  {
+    "id": 3007003020380,
+    "speaker": "霧子",
+    "text": "あの……気をつけて、帰ってね……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020380"
+  },
+  {
+    "id": 3007003020390,
+    "speaker": "結華",
+    "text": "ありがとう！\r\nきりりんの衣装、楽しみにしてるね",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020390"
+  },
+  {
+    "id": 3007003020400,
+    "speaker": "霧子",
+    "text": "うん……気に入ってもらえるかわからないけど……\r\n頑張ってみる……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020400"
+  },
+  {
+    "id": 3007003020410,
+    "speaker": "結華",
+    "text": "うん、それで大丈夫だよ\r\nじゃあ、お疲れ様",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020410"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00004",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3007003020420,
+    "speaker": "結華",
+    "text": "（あれで良かったかなぁ……\r\nちょっとでも気が楽になってたらいいけど）",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020420"
+  },
+  {
+    "id": 3007003020430,
+    "speaker": "結華",
+    "text": "（……もう少し、せめて頼ってもらえるくらいには、\r\n仲良くなりたいと思うけど）",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020430"
+  },
+  {
+    "charAnim2": "face_surp",
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "se": "0106",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 3007003020440,
+    "speaker": "結華",
+    "text": "──あ、もしもしプロデューサー？\r\nきりりんのことで頼みがあるんだけど──……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020440"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy2",
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3007003020450,
+    "speaker": "結華",
+    "text": "（……きりりんがちょっとでも荷物をおろせますように！）",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700302/3007003020450"
+  },
+  {
+    "label": "end"
+  }
+]

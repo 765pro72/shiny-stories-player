@@ -1,0 +1,762 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "0000"
+  },
+  {
+    "textFrame": "off",
+    "se": "0129",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0134",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、なんだろう",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "se": "0399",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "off",
+    "text": "『和泉愛依様へのインタビューの件』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "off",
+    "text": "『お写真の次ページに掲載する\r\n和泉様へのインタビュー質問がまとまりました』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "off",
+    "text": "『ご確認いただけますと幸いです』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……結構な数があるな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "off",
+    "text": "『質問はいくつかピックしていただければ\r\n大丈夫です』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（なるほど）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "012",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 2019009040010,
+    "speaker": "愛依",
+    "text": "お疲れ様でーす！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "019",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/201900904/2019009040010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、愛依、ちょうどいいところに来てくれた",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2019009040020,
+    "speaker": "愛依",
+    "text": "？\r\nどしたん～？",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ちょっと見てもらいたいものがあってな\r\nこれなんだが──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile1",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──てことで、いくつかの質問に\r\n答えてもらいたいんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺が愛依の答えをまとめるから\r\nキャラとかは気にせず、自由に話してくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2019009040030,
+    "speaker": "愛依",
+    "text": "はいはーい♪",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201900904/2019009040030"
+  },
+  {
+    "id": 2019009040040,
+    "speaker": "愛依",
+    "text": "あ、けどさ！　このあとレッスンあるから\r\n今全部答えんのはちょっと無理かも",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "すまん、説明を忘れてた\r\nこの中から３つくらいで大丈夫なんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "答えやすそうなのをいくつか\r\nピックアップしておいたから、見てもらえないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2019009040050,
+    "speaker": "愛依",
+    "text": "マジで！　サンキュ！\r\nどれどれ～？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "このあたりがいいと思うんだが",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "撮影期間中の印象的な\r\nエピソードは？",
+    "nextLabel": "1"
+  },
+  {
+    "select": "こういう服を着るのは\r\n初めて？",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "他の人に同じ衣装を\r\n着せてみたい？",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2019009040060,
+    "label": "1",
+    "speaker": "愛依",
+    "text": "うーん…………あ！\r\nあれよくない？",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040060"
+  },
+  {
+    "id": 2019009040070,
+    "speaker": "愛依",
+    "text": "事務所で高いフレンチっぽく食事した時の！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040070"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00099",
+    "fg": "001921",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2019009040080,
+    "speaker": "愛依",
+    "text": "うひゃー……食器がちょーたくさん……！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "010",
+    "voice": "produce_events/201900904/2019009040080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ナイフとフォークはひと皿ごとに別のを使うんだ\r\n外側から順番に取るんだぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0829",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 2019009040090,
+    "speaker": "愛依",
+    "text": "えぇ～？\r\nひとつだけで十分じゃない？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201900904/2019009040090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そういうマナーだからな\r\n我慢してくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2019009040100,
+    "speaker": "愛依",
+    "text": "マジか～……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040100",
+    "autoWaitTime": 2200
+  },
+  {
+    "id": 2019009040110,
+    "speaker": "愛依",
+    "text": "！　この水ちょー綺麗！　花とか浮いてるし！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040110"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile1",
+    "charAnim4": "blank",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ！　それは──",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 1500
+  },
+  {
+    "id": 2019009040120,
+    "speaker": "愛依",
+    "text": "……！\r\n美味しいね～、この水",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201900904/2019009040120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "愛依……それは飲んじゃいけない水なんだ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00001",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "インパクトあるし、いいな\r\n愛依のキャラの範囲で問題ないようにまとめておくよ",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "012"
+  },
+  {
+    "id": 2019009040130,
+    "speaker": "愛依",
+    "text": "よっしゃ～！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "nextLabel": "end",
+    "voice": "produce_events/201900904/2019009040130",
+    "autoWaitTime": 3000
+  },
+  {
+    "id": 2019009040140,
+    "label": "2",
+    "speaker": "愛依",
+    "text": "だね～！　\r\nロンスカとか持ってないし！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "愛依は動きやすそうな服装が多いよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2019009040150,
+    "speaker": "愛依",
+    "text": "アハハ、楽だからね～♪",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040150"
+  },
+  {
+    "id": 2019009040160,
+    "speaker": "愛依",
+    "text": "あと、お姉もそういう服が好きだからってのもあるかも",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "？　どういうことだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2019009040170,
+    "speaker": "愛依",
+    "text": "うちら体型似てるからね～\r\nシェアしたりしてんの♪",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほど、\r\nバリエーションが増えてよさそうだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2019009040180,
+    "speaker": "愛依",
+    "text": "ね～\r\nそのうち妹とも一緒にシェアしたりしたいわ～♪",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201900904/2019009040180"
+  },
+  {
+    "id": 2019009040190,
+    "label": "3",
+    "speaker": "愛依",
+    "text": "あさひちゃんと冬優子ちゃんに着てもらいたいわ～♪",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040190"
+  },
+  {
+    "id": 2019009040200,
+    "speaker": "愛依",
+    "text": "冬優子ちゃんとか絶対似合うっしょ！",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040200"
+  },
+  {
+    "id": 2019009040210,
+    "speaker": "愛依",
+    "text": "バッチリ決めて～\r\n広い庭でティータイムしててほしい！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "確かに、似合いそうだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2019009040220,
+    "speaker": "愛依",
+    "text": "あさひちゃんもかなりいいカンジだよね～",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040220"
+  },
+  {
+    "id": 2019009040230,
+    "speaker": "愛依",
+    "text": "けど、嫌がるだろうな～",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040230"
+  },
+  {
+    "id": 2019009040240,
+    "speaker": "愛依",
+    "text": "動きにくいっすー！\r\nとか言ってすぐ着替えちゃいそう",
+    "charAnim1": "anger1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201900904/2019009040240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、確かにな",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end",
+    "autoWaitTime": 1500
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "samples": 99,
+  "unique": [
+    [
+      "[[\"mouth_open\",\"mouth_close1\"]]",
+      "[[\"mouth_open\",\"mouth_open4\"]]"
+    ],
+    [
+      "[[\"mouth_close1\",\"mouth_close1\"]]",
+      "[[\"mouth_close1\",\"mouth_open1\"]]",
+      "[[\"mouth_close1\",\"mouth_close6\"]]"
+    ]
+  ],
+  "actions": [
+    [
+      "yes"
+    ],
+    [
+      "smile2"
+    ]
+  ],
+  "trackNames": [
+    [
+      "wait1",
+      "yes"
+    ],
+    [
+      "smile2",
+      "wait1"
+    ]
+  ],
+  "events": [
+    {
+      "type": "start",
+      "id": "normal:10240250100",
+      "title": "トーク(にちか・美琴1)"
+    },
+    {
+      "type": "line",
+      "id": "normal:10240250100",
+      "slot": 1,
+      "characterId": "24",
+      "path": "sounds/voice/characters/024/mypage_talking_duo_0240250010010.m4a"
+    },
+    {
+      "type": "line",
+      "id": "normal:10240250100",
+      "slot": 0,
+      "characterId": "25",
+      "path": "sounds/voice/characters/025/mypage_talking_duo_0240250010020.m4a"
+    },
+    {
+      "type": "end",
+      "id": "normal:10240250100"
+    }
+  ]
+}

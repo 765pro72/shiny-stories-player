@@ -1,0 +1,266 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "038"
+  },
+  {
+    "speaker": "off",
+    "text": "ハッピーハロウィンという\r\nメッセージが添えられたお菓子────",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "off",
+    "text": "それは見た目はそっくりだが、 \r\nどちらかが『超すっぱい』ふたつのプチケーキだった",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2100
+  },
+  {
+    "id": 4901025270010,
+    "speaker": "羽那",
+    "text": "えーっ、それなら\r\n一緒に美味しいケーキを食べた方がよくない？",
+    "charAnim1": "think",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "027",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "mypage_communications/490102527/4901025270010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……！\r\nまぁそうなんだが、せっかくのハロウィンだしさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901025270020,
+    "speaker": "羽那",
+    "text": "そっかー\r\nじゃあ、プロデューサーから選んでいいよ？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hana",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "mypage_communications/490102527/4901025270020"
+  },
+  {
+    "select": "左を食べる",
+    "nextLabel": "1"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "右を食べる",
+    "nextLabel": "2"
+  },
+  {
+    "label": "2",
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………！！\r\nす、すっぱ…………！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901025270030,
+    "speaker": "羽那",
+    "text": "えーっ、プロデューサーがはずれ？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "mypage_communications/490102527/4901025270030"
+  },
+  {
+    "id": 4901025270040,
+    "speaker": "羽那",
+    "text": "……じゃなくて、当たり？",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "mypage_communications/490102527/4901025270040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……\r\nど、どっちだろうな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901025270050,
+    "speaker": "羽那",
+    "text": "大丈夫？　今、飲み物持ってくるね\r\nちょっと待ってて──！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "mypage_communications/490102527/4901025270050"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "1",
+    "charAnim1": "wait",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──……\r\n甘くて美味しいな──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（ってことは──）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901025270060,
+    "speaker": "羽那",
+    "text": "～～っ……\r\nすっぱーいっ……",
+    "charAnim1": "smile3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "mypage_communications/490102527/4901025270060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "す、すまん……！\r\nこっちの甘いやつで口直しするか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901025270070,
+    "speaker": "羽那",
+    "text": "……いいの？\r\nありがとうーっ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "mypage_communications/490102527/4901025270070"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

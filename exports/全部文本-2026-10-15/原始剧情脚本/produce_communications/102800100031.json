@@ -1,0 +1,182 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "id": 1028001000310010,
+    "speaker": "はるき",
+    "text": "むむ……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "028",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102800100031/1028001000310010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうした？　はるき",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1028001000310020,
+    "speaker": "はるき",
+    "text": "実は今日、朝ごはん食べずに\r\n来てしまいまして……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100031/1028001000310020"
+  },
+  {
+    "id": 1028001000310030,
+    "speaker": "はるき",
+    "text": "今頃になってお腹が……",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100031/1028001000310030"
+  },
+  {
+    "select": "ヨーグルトなら\r\nあるぞ",
+    "nextLabel": "1028001000311"
+  },
+  {
+    "select": "おやつなら\r\nあるんだが",
+    "nextLabel": "1028001000312"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "もう少し我慢だ",
+    "nextLabel": "1028001000313"
+  },
+  {
+    "id": 1028001000310040,
+    "label": "1028001000311",
+    "speaker": "はるき",
+    "text": "いただいてもいいんですか……？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100031/1028001000310040"
+  },
+  {
+    "id": 1028001000310050,
+    "speaker": "はるき",
+    "text": "ありがとうございます\r\n助かります～",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100031/1028001000310050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1028001000310060,
+    "label": "1028001000312",
+    "speaker": "はるき",
+    "text": "そうですね、ちょっとだけ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100031/1028001000310060"
+  },
+  {
+    "id": 1028001000310070,
+    "speaker": "はるき",
+    "text": "でも、みんなが来てからがいいですよね……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100031/1028001000310070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1028001000310080,
+    "label": "1028001000313",
+    "speaker": "はるき",
+    "text": "そ、そうですね……！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100031/1028001000310080"
+  },
+  {
+    "id": 1028001000310090,
+    "speaker": "はるき",
+    "text": "…………",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close3",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100031/1028001000310090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

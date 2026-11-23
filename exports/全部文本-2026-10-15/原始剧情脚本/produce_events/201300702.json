@@ -1,0 +1,704 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00087",
+    "bgm": "0000",
+    "se": "0103",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あれ、夏葉からか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もう打ち合わせ終わったのか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もしもし──……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "bg": "00129",
+    "se": "0384",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "natsuha",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……それで\r\n一体どうしたんだ、夏葉",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "017"
+  },
+  {
+    "id": 2013007020010,
+    "speaker": "夏葉",
+    "text": "プロデューサー……\r\nさっき打ち合わせでね",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020010"
+  },
+  {
+    "id": 2013007020020,
+    "speaker": "夏葉",
+    "text": "『鍛えてるって聞いてたけど細いんですね』\r\nって言われたのよ……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、おお……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020030,
+    "speaker": "夏葉",
+    "text": "もしかしたら褒め言葉のつもりだったのかも\r\nしれないけれど……なんだか悔しくて",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020030"
+  },
+  {
+    "id": 2013007020040,
+    "speaker": "夏葉",
+    "text": "それで打ち合わせが終わってすぐ\r\n電話してしまったの……ごめんなさい",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、それは構わないよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020050,
+    "speaker": "夏葉",
+    "text": "もちろん、打ち合わせはきちんと\r\nこなしてきたから安心してちょうだい",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ……でも珍しいな\r\n夏葉がそんなふうに言うなんて",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020060,
+    "speaker": "夏葉",
+    "text": "だって……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020060"
+  },
+  {
+    "id": 2013007020070,
+    "speaker": "夏葉",
+    "text": "まさかそんなこと言われるなんて\r\n思わないじゃない……！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうだよな\r\n打ち合わせ、俺も一緒に出られていれば……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020080,
+    "speaker": "夏葉",
+    "text": "いいえ\r\nアナタのせいじゃないわ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020080"
+  },
+  {
+    "id": 2013007020090,
+    "speaker": "夏葉",
+    "text": "そもそも会ったばかりの相手に対して\r\n身体的なことで何か言うなんて……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020090"
+  },
+  {
+    "id": 2013007020100,
+    "speaker": "夏葉",
+    "text": "アナタだったり、メンバーやトレーナーに\r\n言われるのとは違うんだから……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020110,
+    "speaker": "夏葉",
+    "text": "でも、一番許せないのは自分自身よ！",
+    "charAnim1": "hello",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……どうしてだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020120,
+    "speaker": "夏葉",
+    "text": "──これが私のベストだって、言い返せなかった",
+    "charAnim1": "shy2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020120"
+  },
+  {
+    "id": 2013007020130,
+    "speaker": "夏葉",
+    "text": "私はアイドルとして……人前に立つ人間として",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020130"
+  },
+  {
+    "id": 2013007020140,
+    "speaker": "夏葉",
+    "text": "綺麗に衣装が着られることも、それと同じくらい\r\n痩せすぎないことも大事だと思っているわ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……うん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020150,
+    "speaker": "夏葉",
+    "text": "私が私自身の理想に追いつけていないから\r\n言葉に詰まってしまったのよ",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020150"
+  },
+  {
+    "id": 2013007020160,
+    "speaker": "夏葉",
+    "text": "──もっと、頑張らなくちゃね",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020160"
+  },
+  {
+    "id": 2013007020170,
+    "speaker": "夏葉",
+    "text": "…………",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──夏葉",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020180,
+    "speaker": "夏葉",
+    "text": "…………",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "fade_out",
+    "voice": "produce_events/201300702/2013007020180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……夏葉、話してくれてありがとう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、夏葉は頑張り過ぎなくらい\r\n頑張ってると思うよ",
+    "charAnim2": "face_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "005"
+  },
+  {
+    "id": 2013007020190,
+    "speaker": "夏葉",
+    "text": "……そうかしら",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だからたまには、\r\nもっと自分を甘やかしてもいいと思う",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020200,
+    "speaker": "夏葉",
+    "text": "……そうは言っても\r\nいつもやりたいようにしているのよ？",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "じゃあ、何かやりたいことを\r\n思いっきりやってみるとかさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020210,
+    "speaker": "夏葉",
+    "text": "もうやっているじゃない、『アイドル』\r\n私のやりたいことよ",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか……！\r\nうーん……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それなら、何か好きなものを\r\n思い切り食べてみるとか、どうだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺も付き合うからさ",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020220,
+    "speaker": "夏葉",
+    "text": "それってやけ食いって言うんじゃないかしら",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そ、そんなことは……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020230,
+    "speaker": "夏葉",
+    "text": "うふふ、いいわ\r\n私やったことないもの、やけ食い",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020230"
+  },
+  {
+    "id": 2013007020240,
+    "speaker": "夏葉",
+    "text": "食べて、\r\n──それでまたトレーニングね！",
+    "charAnim1": "wink",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、それじゃあ──……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "ケーキなんてどうだ！",
+    "nextLabel": "1"
+  },
+  {
+    "select": "焼肉だな！",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "アイスとかさ！",
+    "nextLabel": "3"
+  },
+  {
+    "text": "★選択肢①【ケーキなんてどうだ！】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ケーキなんてどうだ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020250,
+    "label": "1",
+    "speaker": "夏葉",
+    "text": "いいわね、ケーキ！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "たくさん買って事務所で\r\nケーキバイキングでも開くか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020260,
+    "speaker": "夏葉",
+    "text": "そうね……\r\nああ、でもホールケーキも捨てがたいわね",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020260"
+  },
+  {
+    "id": 2013007020270,
+    "speaker": "夏葉",
+    "text": "ロウソクを立てて……\r\nそうよ、プレートも乗せなくちゃ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020270"
+  },
+  {
+    "id": 2013007020280,
+    "speaker": "夏葉",
+    "text": "……プロデューサーとはじめての\r\n『やけ食い記念日』って！",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201300702/2013007020280"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "text": "★選択肢②【焼肉だな！】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "焼肉だな！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020290,
+    "label": "2",
+    "speaker": "夏葉",
+    "text": "いいわね、焼肉！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "夏葉、肉の部位とか\r\n詳しそうだもんな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020300,
+    "speaker": "夏葉",
+    "text": "ええ、燃えるわね……！\r\nこれを糧に必ず自分の理想に近づいてみせるわ！",
+    "charAnim1": "hello",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、夏葉が熱くて\r\n火傷しそうだよ",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "text": "★選択肢③【アイスとかさ！】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "アイスとかさ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020310,
+    "label": "3",
+    "speaker": "夏葉",
+    "text": "いいわね、アイス！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうせなら何段も乗せてもらおう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020320,
+    "speaker": "夏葉",
+    "text": "それなら、５段ね！\r\nイチゴとチョコとレモンとソーダ……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300702/2013007020320"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それから──メロンかな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007020330,
+    "speaker": "夏葉",
+    "text": "ええ、下から支えてくれるコーンがあれば\r\n『放課後クライマックスアイス』の完成よ！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201300702/2013007020330"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

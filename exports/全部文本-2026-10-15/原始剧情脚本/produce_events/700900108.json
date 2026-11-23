@@ -1,0 +1,240 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00023",
+    "bgm": "017",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですか……参加はできませんでしたか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001080010,
+    "speaker": "はづき",
+    "text": "……不参加って連絡が来たとき、\r\n聞き間違いかと思いました",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700900108/7901001080010"
+  },
+  {
+    "id": 7901001080020,
+    "speaker": "はづき",
+    "text": "私には、どうして彼女が参加できないのか\r\nちっともわかりません……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700900108/7901001080020"
+  },
+  {
+    "id": 7902001080010,
+    "speaker": "社長",
+    "text": "その気持ちはわかるが……これが結果なんだ\r\n受け入れるより他にあるまい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700900108/7902001080010"
+  },
+  {
+    "id": 7901001080030,
+    "speaker": "はづき",
+    "text": "……私、きっとあの子のファンだったんですね\r\nだからこの結果が、悔しくてたまらないんです……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700900108/7901001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺もです。彼女のプロデューサーである俺自身が、\r\n誰よりも彼女のファンでしたから",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……社長\r\n俺、彼女に会いに行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001080020,
+    "speaker": "社長",
+    "text": "ああ、そうするといい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700900108/7902001080020"
+  },
+  {
+    "speaker": "off",
+    "textCtrl": "p",
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kaho",
+    "charType": "characters",
+    "charId": "009",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "最終審査、通過ならずだった……\r\n残念だけれど……『W.I.N.G.』には、出場できない",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "そうですか……\r\nあたしの力が、まだ足りなかったんですね",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700900108/7009001080010"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "みんなから応援されるヒーローに\r\nなれたかな、って思ってたんですけど……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700900108/7009001080020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……果穂がヒーローになるために、\r\n今まで頑張ってきたことは、俺が良く知ってる",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これまで積み重ねてきたものを、次に活かそう",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "はい……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700900108/7009001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ヒーローだって、強敵に出会ったら\r\n一度引き下がって特訓するだろう？",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これは果穂がパワーアップするのに、必要な試練なんだよ\r\nだって果穂のアイドル活動は、まだ続いてるんだからな！",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "……そうですよね。ヒーローは諦めたりしませんっ！\r\nえへへ……",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700900108/7009001080040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（果穂の笑顔のためにも、\r\nこれからより一層サポートしていかないとな……！）",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end"
+  }
+]

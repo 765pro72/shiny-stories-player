@@ -1,0 +1,858 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00438",
+    "bgm": "100"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00964",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffectTime": 1000
+  },
+  {
+    "id": 2006014020010,
+    "speaker": "咲耶",
+    "text": "んー……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020010"
+  },
+  {
+    "id": 2006014020020,
+    "speaker": "咲耶",
+    "text": "（……早速着るのは、\r\n浮かれているように見えるかな……？）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00695",
+    "fg": "004521",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "よく似合ってるなぁ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006014020030,
+    "speaker": "咲耶",
+    "text": "え……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040060080",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200601402/2006014020030",
+    "autoWaitTime": 2000
+  },
+  {
+    "id": 2006014020040,
+    "speaker": "咲耶",
+    "text": "……ありがとう、プロデューサー",
+    "charAnim1": "wait1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "やっぱり咲耶はどんな服でも似合っちゃうんだな\r\nすごいよ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "スタイリスト",
+    "text": "ちょっとちょっとプロデューサーさーん？\r\n何着ても似合うは褒め方が雑じゃなーい？",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "0454"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え！",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 500
+  },
+  {
+    "speaker": "スタイリスト",
+    "text": "どんな服でも似合うっていう素材のよさに加えて、\r\n今着てる服だからこその褒めも入れてかないと！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "スタイリスト",
+    "text": "ねっ、咲耶ちゃん！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2006014020050,
+    "speaker": "咲耶",
+    "text": "フフ、確かに……\r\nその方が嬉しいですね",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601402/2006014020050"
+  },
+  {
+    "speaker": "スタイリスト",
+    "text": "ほらー",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "autoWaitTime": 800
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "は、はい……！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "スタイリスト",
+    "text": "──じゃあやり直しいってみよう！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "わ、わかりました……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっと……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 800
+  },
+  {
+    "charAnim1": "shy2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2800
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "私服のスカート姿……\r\nあまり見ないから、新鮮で──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "綺麗な緑色が──なんて言ったらいいんだ……？\r\n咲耶の……爽やかな感じ！　爽やかな感じとピッタリで──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "上の黒も……\r\nそうだな……大人っぽさと合ってるっていうか……",
+    "charAnim1": "wink",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──────とにかく、似合ってる！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006014020060,
+    "speaker": "咲耶",
+    "text": "フフッ、ありがとう",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020060"
+  },
+  {
+    "speaker": "スタイリスト",
+    "text": "えー咲耶ちゃん優しい\r\n今のぎこちない感じで許してあげちゃうの？",
+    "charAnim2": "face_shy3",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "0888"
+  },
+  {
+    "speaker": "スタイリスト",
+    "text": "もっとあるのにー",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2006014020070,
+    "speaker": "咲耶",
+    "text": "そんな、もったいないぐらいの褒め言葉ですよ",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020070"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "そうですかねぇ\r\n肝心なの言ってない気がするんですけど",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "1002"
+  },
+  {
+    "speaker": "スタイリスト",
+    "text": "だよねだよね！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2006014020080,
+    "speaker": "咲耶",
+    "text": "……？",
+    "charAnim1": "anger1",
+    "charAnim2": "face_shy3",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "すみません、俺の語彙力が足りないばっかりに……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "スタイリスト",
+    "text": "それはそう\r\n緑って。ざっくりした色で終わらせるのよくないよー",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "面目ないです……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それで、あの……\r\n肝心なのっていうのは──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "スタイリスト＆スタッフ",
+    "text": "『可愛い』！",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "0478"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ！　それはもちろん思ってます！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "可愛いよ、咲耶",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006014020090,
+    "speaker": "咲耶",
+    "text": "……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601402/2006014020090",
+    "autoWaitTime": 2500
+  },
+  {
+    "id": 2006014020100,
+    "speaker": "咲耶",
+    "text": "ああ、もう……",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020100",
+    "autoWaitTime": 3000
+  },
+  {
+    "id": 2006014020110,
+    "speaker": "咲耶",
+    "text": "……今日のアイテム一式\r\n買い取らせていただいてもいいですか？",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020110"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close3",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00964",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 2006014020120,
+    "speaker": "咲耶",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020120"
+  },
+  {
+    "id": 2006014020130,
+    "speaker": "咲耶",
+    "text": "（やっぱりいつもどおりに……いや、でも……）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020130"
+  },
+  {
+    "id": 2006014020140,
+    "speaker": "咲耶",
+    "text": "（────せっかく、心ときめく服なのだから）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020140"
+  },
+  {
+    "textFrame": "off",
+    "se": "1521",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2006014020150,
+    "speaker": "咲耶",
+    "text": "！\r\nいけない────",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020150"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "se": "1459",
+    "waitType": "time",
+    "waitTime": 4500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00087",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1600
+  },
+  {
+    "textFrame": "off",
+    "se": "1226",
+    "waitType": "time",
+    "waitTime": 1100
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 300
+  },
+  {
+    "id": 2006014020160,
+    "speaker": "咲耶",
+    "text": "──おはよう、プロデューサー",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、おはよう──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0496",
+    "waitType": "time",
+    "waitTime": 1600
+  },
+  {
+    "textFrame": "off",
+    "se": "0152",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00129",
+    "bgEffect": "fade",
+    "se": "0384",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 500
+  },
+  {
+    "id": 2006014020170,
+    "speaker": "咲耶",
+    "text": "……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close3",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601402/2006014020170"
+  },
+  {
+    "select": "この間の格好だな！",
+    "nextLabel": "1"
+  },
+  {
+    "select": "どこのお嬢さんかと\r\n思ったよ",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "可愛い",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2006014020180,
+    "label": "1",
+    "speaker": "咲耶",
+    "text": "フフッ\r\nよくお気付きだね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020180"
+  },
+  {
+    "id": 2006014020190,
+    "speaker": "咲耶",
+    "text": "早速着てきてしまった",
+    "charAnim1": "wait5",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "せっかく買ったんだしな\r\nいいと思うぞ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "今日も似合ってる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006014020200,
+    "speaker": "咲耶",
+    "text": "……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020200"
+  },
+  {
+    "id": 2006014020210,
+    "speaker": "咲耶",
+    "text": "──ありがとう、プロデューサー",
+    "charAnim1": "wait1",
+    "charAnim2": "face_shy3",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020210"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 2006014020220,
+    "label": "2",
+    "speaker": "咲耶",
+    "text": "うん？\r\n私らしくないとの仰せかな？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020220"
+  },
+  {
+    "id": 2006014020230,
+    "speaker": "咲耶",
+    "text": "その自覚はあるけれど……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "違う違う！\r\nそうじゃなくて！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "咲耶みたいに気の利いた言い回ししようとして\r\nしくじっただけなんだ、ほんと気にしないでくれ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006014020240,
+    "speaker": "咲耶",
+    "text": "ええ？\r\nなんだいそれは",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "素敵だよってこと……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006014020250,
+    "speaker": "咲耶",
+    "text": "フフッ、もう\r\nそういうことにしておこうか──",
+    "charAnim1": "sad2",
+    "charAnim2": "face_shy3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020250"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 2006014020260,
+    "label": "3",
+    "speaker": "咲耶",
+    "text": "おや\r\n先日指導を受けた成果が出ているね",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……\r\nまぁそう言わないでくれ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "本当に思ってるからな？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006014020270,
+    "speaker": "咲耶",
+    "text": "フフ、ありがとう",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020270"
+  },
+  {
+    "id": 2006014020280,
+    "speaker": "咲耶",
+    "text": "アナタのそういう真っ直ぐなところ、\r\n私も可愛らしいと思っているよ？",
+    "charAnim1": "wink",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああもう……！\r\nすぐ咲耶の方がスマートになる……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006014020290,
+    "speaker": "咲耶",
+    "text": "フフフッ、ごめんね？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601402/2006014020290"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

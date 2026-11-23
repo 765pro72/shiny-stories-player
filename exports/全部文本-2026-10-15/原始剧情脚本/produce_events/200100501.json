@@ -1,0 +1,609 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "しまった……\r\n事務所を出るのが遅くなってしまった……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00028",
+    "bgm": "012"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（真乃のインタビューが載った雑誌、\r\n売り切れてなければいいけど……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0116",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっと……雑誌はこのあたりか……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あったあった\r\n……おっと",
+    "textFrame": "002",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0108",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2001005010010,
+    "speaker": "？？？",
+    "text": "あっ……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010010"
+  },
+  {
+    "id": 2001005010020,
+    "speaker": "？？？",
+    "text": "す、すみません……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いえ、こちらこそ──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect",
+    "stillType": "idols",
+    "stillId": "1030010020"
+  },
+  {
+    "id": 2001005010030,
+    "speaker": "真乃",
+    "text": "あれ……？\r\nプロデューサーさん……？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……真乃？\r\nこんなところで会うなんて、珍しいな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010040,
+    "speaker": "真乃",
+    "text": "そ、そうですね……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010040"
+  },
+  {
+    "id": 2001005010050,
+    "speaker": "真乃",
+    "text": "さっき手が当たっちゃったの\r\nプロデューサーさんだったんだ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？　今、何か言ったか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010060,
+    "speaker": "真乃",
+    "text": "あっ……！　い、いえっ\r\nなんでもないです",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか？　何もないならいいけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃も、この雑誌を買いに来たのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010070,
+    "speaker": "真乃",
+    "text": "はい、そうなんです\r\n……プロデューサーさんもですか？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、貰った見本誌は\r\n事務所で保管しないといけないからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "せっかく真乃が記事になってるんだから、\r\n自分用にも欲しくなったんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010080,
+    "speaker": "真乃",
+    "text": "そ、そうだったんですね……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010080"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charType": "idols",
+    "charId": "1030010020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect",
+    "stillCtrl": "off"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃も、自分用にか？\r\nせっかくだから、仕事の記念にとっておきたいよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010090,
+    "speaker": "真乃",
+    "text": "はい……。それもあるんですけれど\r\nこの前の撮影で、気になることがあったので……",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうなのか？\r\nいったい、どんなところが気になったんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010100,
+    "speaker": "真乃",
+    "text": "えっと……私、みんなに比べて\r\nあんまり自然に笑えてない気がしていて……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010100"
+  },
+  {
+    "id": 2001005010110,
+    "speaker": "真乃",
+    "text": "だから、色んな写真を見て\r\n自分なりに勉強をしてみようと思ったんです",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほど……\r\n真乃がアイドルに対して勉強熱心で、嬉しいよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010120,
+    "speaker": "真乃",
+    "text": "い、いえ……！　そんなっ\r\nプ、プロデューサーさんほどじゃありません",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは。じゃあ、ふたりとも同じくらい熱心なのかもな\r\n同じ本を買いに来るわけだしさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "しかも、同時に同じ本屋に来るなんて\r\n本当に偶然だよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010130,
+    "speaker": "真乃",
+    "text": "ふふ、私もビックリしちゃいました",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010130"
+  },
+  {
+    "id": 2001005010140,
+    "speaker": "真乃",
+    "text": "プロデューサーさんともお会いできましたし\r\nこの本屋さんに来て正解でした",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、俺もだよ\r\n——あ、ここで立ち話してるのはお店に悪いよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ふたりで同じ本を買うっていうのも変な感じがするけど……\r\nとりあえず、お会計を済ませるか",
+    "charAnim2": "face_wait",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010150,
+    "speaker": "真乃",
+    "text": "はいっ、そうですね",
+    "charAnim1": "sad2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010150"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2001005010160,
+    "speaker": "真乃",
+    "text": "ふぅ……ちゃんと買えて良かったです",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃は、この後どうするんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010170,
+    "speaker": "真乃",
+    "text": "今日は１日お休みなので\r\nこの雑誌を見て勉強をしようって思います",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか\r\nならその雑誌、ゆっくり読めるな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010180,
+    "speaker": "真乃",
+    "text": "はいっ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010180"
+  },
+  {
+    "id": 2001005010190,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010190"
+  },
+  {
+    "id": 2001005010200,
+    "speaker": "真乃",
+    "text": "……あのっ\r\nプロデューサーさんっ",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？　どうした？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010210,
+    "speaker": "真乃",
+    "text": "えっと……\r\nこの後、お時間ってありますか？",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、時間なら大丈夫だよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010220,
+    "speaker": "真乃",
+    "text": "本当ですかっ、それなら……あの……\r\n一緒に雑誌を見ながら、お話ししたいんです……っ",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010220"
+  },
+  {
+    "id": 2001005010230,
+    "speaker": "真乃",
+    "text": "アイドルとしての自然な笑顔ってどんなのか、\r\nプロデューサーさんに聞いてみたくて……",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほどな、そういうことか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010240,
+    "speaker": "真乃",
+    "text": "……で、でも\r\n忙しかったら大丈夫ですっ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、もちろん大丈夫だよ\r\n真乃の勉強になるなら、いくらでも話すぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010250,
+    "speaker": "真乃",
+    "text": "ほわぁ……。ありがとうございますっ\r\nプロデューサーさんっ",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010250"
+  },
+  {
+    "id": 2001005010260,
+    "speaker": "真乃",
+    "text": "ふふっ、どんなアドバイスがもらえるのか\r\nとっても楽しみですっ",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……！　いい笑顔だ）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（本当は、必要以上に気にすることじゃないのになぁ\r\nだって真乃は、こんなに素敵に笑えるんだから）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（どうやって伝えるのが、\r\n真乃にとって１番わかりやすいだろうか……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001005010270,
+    "speaker": "真乃",
+    "text": "行きましょう、プロデューサーさんっ",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100501/2001005010270"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

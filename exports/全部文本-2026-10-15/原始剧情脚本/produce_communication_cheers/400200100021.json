@@ -1,0 +1,111 @@
+[
+  {
+    "id": 4002001000210010,
+    "speaker": "灯織",
+    "text": "……ふぅ。プロデューサー\r\nもうすぐ本番です。何か１言お願いします",
+    "charCategory": "stand_costume",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00007",
+    "bgm": "019",
+    "voice": "produce_communication_cheers/400200100021/4002001000210010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（今の灯織は、かなりリラックスできてるみたいだし……\r\nなんて声をかけようか？）",
+    "charLabel": "hiori",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "必ず勝つ！",
+    "nextLabel": "4002001000211"
+  },
+  {
+    "select": "この調子でいこう！",
+    "nextLabel": "4002001000212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "落ち着いていこう！",
+    "nextLabel": "4002001000213"
+  },
+  {
+    "id": 4002001000210020,
+    "label": "4002001000211",
+    "speaker": "灯織",
+    "text": "もちろんです。全力を出して、絶対に勝ちます",
+    "charAnim1": "wait3",
+    "charAnim2": "yes",
+    "charLipAnim": "lip_wait",
+    "charAnim2Loop": false,
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/400200100021/4002001000210020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うーん、気合を入れすぎたか……？）",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4002001000210030,
+    "label": "4002001000212",
+    "speaker": "灯織",
+    "text": "はい。冷静に取り組みます",
+    "charAnim1": "wait1",
+    "charAnim2": "yes",
+    "charLipAnim": "lip_smile",
+    "charAnim2Loop": false,
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/400200100021/4002001000210030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（冷静だが、情熱も感じる。本当に調子が良さそうだ）",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4002001000210040,
+    "label": "4002001000213",
+    "speaker": "灯織",
+    "text": "……落ち着いてはいます",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/400200100021/4002001000210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……今、わざわざ言うことじゃなかったな）",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

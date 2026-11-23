@@ -1,0 +1,1 @@
+const fs=require('fs');let s=fs.readFileSync('E:/Desktop/闪耀色彩入坑指引＆剧情整合.html','utf8');s=s.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,'').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,'');s=s.replace(/<[^>]+>/g,'\n').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/\n\s*\n/g,'\n');fs.writeFileSync('research/story-guide-text.txt',s);console.log(s.slice(0,22000));

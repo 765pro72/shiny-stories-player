@@ -1,0 +1,246 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00023",
+    "bgm": "017",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですか……参加はできませんでしたか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001080010,
+    "speaker": "はづき",
+    "text": "……不参加って連絡が来たとき、\r\n聞き間違いかと思いました",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701100108/7901001080010"
+  },
+  {
+    "id": 7901001080020,
+    "speaker": "はづき",
+    "text": "私には、どうして彼女が参加できないのか\r\nちっともわかりません……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701100108/7901001080020"
+  },
+  {
+    "id": 7902001080010,
+    "speaker": "社長",
+    "text": "その気持ちはわかるが……これが結果なんだ\r\n受け入れるより他にあるまい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701100108/7902001080010"
+  },
+  {
+    "id": 7901001080030,
+    "speaker": "はづき",
+    "text": "……私、きっとあの子のファンだったんですね\r\nだからこの結果が、悔しくてたまらないんです……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701100108/7901001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺もです。彼女のプロデューサーである俺自身が、\r\n誰よりも彼女のファンでしたから",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……社長\r\n俺、彼女に会いに行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001080020,
+    "speaker": "社長",
+    "text": "ああ、そうするといい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701100108/7902001080020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "off",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "charType": "characters",
+    "charId": "011",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "樹里……\r\n残念だが、『W.I.N.G.』には参加できない……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7011001080010,
+    "speaker": "樹里",
+    "text": "……そうか、ダメだったか",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701100108/7011001080010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（毎日あれだけ真剣にレッスンしてたのにな……\r\n俺にできることがもっとあったはずなんだ）",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7011001080020,
+    "speaker": "樹里",
+    "text": "……さすがにヘコむぜ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701100108/7011001080020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだろうな……\r\nでもここでへこたれずに……",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7011001080030,
+    "speaker": "樹里",
+    "text": "わかってるっての！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701100108/7011001080030"
+  },
+  {
+    "id": 7011001080040,
+    "speaker": "樹里",
+    "text": "アタシには、支えてくれるたくさんのファンがいて、\r\n……プロデュ－サ－もいるからな",
+    "charAnim1": "sad1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701100108/7011001080040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "やっぱり成長したな……樹里",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7011001080050,
+    "speaker": "樹里",
+    "text": "ま、ま－な",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701100108/7011001080050"
+  },
+  {
+    "id": 7011001080060,
+    "speaker": "樹里",
+    "text": "アイドルとして上に行く目標は変わらね－\r\n……これからも頼むぜ、プロデュ－サ－",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701100108/7011001080060"
+  },
+  {
+    "label": "end"
+  }
+]

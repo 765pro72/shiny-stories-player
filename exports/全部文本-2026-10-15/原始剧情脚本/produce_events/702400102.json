@@ -1,0 +1,368 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "id": 7902001020010,
+    "speaker": "社長",
+    "text": "結果は聞いた\r\n……ここまでだったようだな",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702400102/7902001020010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい。目標には、届きませんでした",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7024001020090,
+    "speaker": "はづき",
+    "text": "『W.I.N.G.』はあらゆるアイドルが\r\n憧れるステージですから……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702400102/7024001020090"
+  },
+  {
+    "id": 7024001020100,
+    "speaker": "はづき",
+    "text": "…………簡単なはずはないんです",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702400102/7024001020100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "結果を出せず、申し訳ありませんでした……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001020020,
+    "speaker": "社長",
+    "text": "……私たちに謝っている場合じゃない\r\n彼女が、お前を待っているだろう？",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702400102/7902001020020"
+  },
+  {
+    "id": 7902001020030,
+    "speaker": "社長",
+    "text": "つらいだろうが、これもプロデューサーの仕事だ",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702400102/7902001020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────にちか\r\n一次審査は……通過できなかった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "024",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 7024001020010,
+    "speaker": "にちか",
+    "text": "……えっ\r\nそれって…………",
+    "charLipAnim": "lip_sad",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702400102/7024001020010"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00224",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1400,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『W.I.N.G.』は、ここまでになる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "id": 7024001020020,
+    "speaker": "にちか",
+    "text": "……えっ、と──────\r\n──────",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702400102/7024001020020",
+    "autoWaitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1400,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 7024001020030,
+    "speaker": "にちか",
+    "text": "終わりって……ことなんですか",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/702400102/7024001020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……少し、話し合ってみよう\r\nここのところ、にちかは本当によく頑張ってた",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0328"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00432",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1400,
+    "bgEffectTime": 1000
+  },
+  {
+    "id": 7024001020040,
+    "speaker": "にちか",
+    "text": "そ、そうですよね……！\r\n私、ちょっと時間が……足りなかっただけで────",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702400102/7024001020040"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 7024001020050,
+    "speaker": "にちか",
+    "text": "────────\r\n────",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702400102/7024001020050",
+    "autoWaitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 7024001020060,
+    "speaker": "にちか",
+    "text": "お、終わりたくないよ…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702400102/7024001020060"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 7024001020070,
+    "speaker": "にちか",
+    "text": "だって\r\n始まってもいないじゃないですか…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702400102/7024001020070"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "end"
+  }
+]

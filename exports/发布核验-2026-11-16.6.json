@@ -1,0 +1,126 @@
+{
+  "at": "2026-11-16T05:49:07.077Z",
+  "version": "2026-11-16.6",
+  "windows": {
+    "at": "2026-11-16T05:49:07.077Z",
+    "archive": "F:\\sc\\dist\\ShinyStories-Lite-win32-x64.7z",
+    "archiveFormat": "7z",
+    "bytes": 175424777,
+    "sha256": "f9af3b0f475287b197c04653eb50ee2252d610e2f7bfd24d3a575de2d73223a3",
+    "checked": 14667,
+    "mismatches": [],
+    "iconSizes": [
+      16,
+      24,
+      32,
+      48,
+      64,
+      128,
+      256
+    ],
+    "anime4kDefault": "off",
+    "uiVersion": "2026-11-16.6",
+    "officialPortraits": 33,
+    "independentEnhancementSwitches": true,
+    "draggableOrder": true,
+    "cunnyRemoved": true,
+    "modelWeightsBundled": 0,
+    "modelPreviews": {
+      "bundled": 3210,
+      "bytes": 44548566,
+      "width": 360,
+      "height": 480,
+      "format": "WebP",
+      "lazyOriginalModelFallback": true
+    },
+    "translationFilesVerified": 10802,
+    "releaseGatePassed": true,
+    "packagedScenarioRegressionPassed": false
+  },
+  "android": {
+    "at": "2026-11-16T05:49:07.077Z",
+    "apk": "F:\\sc\\dist\\ShinyStories-Android.apk",
+    "bytes": 137507871,
+    "sha256": "99f6763582eac96060ba1d1bed3edaaca6851a2fe57e1d47c8f1bfe0392d3b95",
+    "debug": false,
+    "versionCode": 2026111606,
+    "versionName": "2026.11.16.6",
+    "abis": [
+      "arm64-v8a"
+    ],
+    "minAndroid": 9,
+    "targetAPI": 35,
+    "bundleFiles": 14441,
+    "bundleSHA256": "c668955d531fddac93baf6469657e119e2651b65eb2ba5066af8186ad8faec6b",
+    "runtime": {
+      "platform": "android",
+      "arch": "arm64",
+      "node": "24.22.1",
+      "version": "2026.11.16.6"
+    },
+    "alignment": "16KB",
+    "nativeLibrariesELF16KB": true,
+    "releaseDebugging": false,
+    "beta": true,
+    "installedOrRun": true,
+    "install": {
+      "result": "Success",
+      "serial": "emulator-5554",
+      "command": "adb install -r dist\\ShinyStories-Android.apk",
+      "method": "incremental/streamed"
+    },
+    "testEnvironment": "Android 15 (API 35) emulator, arm64 app on x86_64 host translation; 1920x864@480 override reproduces a 20:9 phone with 16:9 letterbox (CSS viewport 512x288); not a physical phone.",
+    "tests": {
+      "report": "exports/android-runtime-qa-2026-11-16.6.json",
+      "passed": [
+        "install + cold start after pm clear (fresh state)",
+        "20:9 screen (1920x864@480): 16:9 content 1536x864 centered, 192px bars each side",
+        "home: single-row nav with all 8 items, no wrap",
+        "home: side shortcuts in one 46px row, clear of the caption",
+        "home: right-side tools in one 44px row",
+        "home: caption 236x83 at 13px, no overlap with shortcuts or assistant",
+        "assistant pill: name on one line, 202x58, clear of the caption",
+        "story archive page: nav fits, assistant stays inside the viewport",
+        "probe at 512/560/640/700/800 CSS width: every control at least 44px tall, no overlaps"
+      ],
+      "limitations": [
+        "Emulator arm64 translation, not a physical Snapdragon/Dimensity phone.",
+        "Device screenshots are 1920x864@480 (CSS 512x288); the user 2800x1260 phone may land on a different CSS width in the same 512-800 range."
+      ]
+    },
+    "screenshots": [
+      "exports/android-2026-11-16.6-home-20x9.png",
+      "exports/android-2026-11-16.6-story-list.png",
+      "exports/android-2026-11-16.6-probe-512x288.png"
+    ]
+  },
+  "changes": {
+    "phoneLayout": {
+      "problem": "On a 20:9 phone the 16:9 letterbox leaves a 512x288 CSS viewport; desktop rules put the 52px side rail on top of the caption, 35px tool buttons, a wrapped two-row nav, and the assistant name split into two lines.",
+      "files": [
+        "public/mobile.css",
+        "public/assistant.css"
+      ],
+      "fix": [
+        "public/mobile.css: Android-only @media(max-height:540px) and (max-width:1000px) block using html[data-platform=android] selectors to beat home.css/interface.css/module-design.css.",
+        "Header: width:auto, right:8px, 56px tall, nowrap, single-row scrollable nav with 44px tap height and 11px labels.",
+        "Side shortcuts: one horizontal 46px row at top:100px instead of the overlapping vertical rail.",
+        "Tools: display:flex row at top:62px, 44x44 each.",
+        "Caption: width min(46%,300px), height auto, 13px text, bottom-left.",
+        "public/assistant.css: collapsed pill uses width:max-content and nowrap+ellipsis so 七草日花 stays on one line; avatar 34px, buttons keep 44px height."
+      ],
+      "verification": [
+        "exports/android-2026-11-16.6-home-20x9.png (device, fresh data)",
+        "exports/android-2026-11-16.6-story-list.png (device)",
+        "exports/android-2026-11-16.6-probe-512x288.png (layout probe)"
+      ]
+    },
+    "versionBump": "2026-11-16.5 -> 2026-11-16.6 (Windows uiVersion, Android versionCode 2026111606 / versionName 2026.11.16.6).",
+    "translationEdits": false,
+    "newZIP": false
+  },
+  "userRequestedStopFurtherTests": false,
+  "newZIP": false,
+  "translationEdits": false,
+  "userProgramRestarted": false
+}

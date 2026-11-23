@@ -1,0 +1,9 @@
+// Real endpoints, independent test directory. Never activates the user's data.
+const fs=require('node:fs'),path=require('node:path'),electron=require('electron');
+if(!electron.app){const env={...process.env};delete env.ELECTRON_RUN_AS_NODE;const result=require('node:child_process').spawnSync(electron,[__filename],{env,stdio:'inherit'});process.exit(result.status??1)}
+const {app,net}=electron,root=path.resolve(__dirname,'..'),user=path.join(root,'exports','background-update-live');app.setPath('userData',path.join(user,'electron-profile'));
+app.whenReady().then(async()=>{let updates;const timeout=setTimeout(()=>app.exit(1),900000);try{
+ fs.mkdirSync(user,{recursive:true});if(!fs.existsSync(path.join(user,'active-data.json')))fs.writeFileSync(path.join(user,'active-data.json'),JSON.stringify({data:path.join(root,'data')}));
+ const history=[];let last=0;updates=new(require('../update-background.cjs').BackgroundUpdates)(user,{fetch:(...args)=>net.fetch(...args),onState:state=>{if(state.message!==history.at(-1)?.message){history.push({at:new Date().toISOString(),message:state.message});if(Date.now()-last>4000||state.status!=='running'){console.log(state.message);last=Date.now()}}}});
+ updates.start();await updates.job;const report={at:new Date().toISOString(),transport:'Electron net.fetch / system network session',state:updates.snapshot(),history,isolated:true};fs.writeFileSync(path.join(root,'exports/live-background-update-verification.json'),JSON.stringify(report,null,2));if(report.state.status!=='complete')throw Error(report.state.message);console.log(JSON.stringify({status:report.state.status,summary:report.state.summary,seconds:Math.round(report.state.elapsedMs/1000)}));
+ }catch(error){console.error(error);process.exitCode=1}finally{clearTimeout(timeout);await updates?.dispose();app.exit(process.exitCode||0)}});

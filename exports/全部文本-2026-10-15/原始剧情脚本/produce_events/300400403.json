@@ -1,0 +1,880 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "bgm": "001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "charCategory": "stand_fix"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "charType": "characters",
+    "charId": "006",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "charCategory": "stand_fix"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charType": "characters",
+    "charId": "007",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "charCategory": "stand_fix"
+  },
+  {
+    "id": 3004004030010,
+    "speaker": "恋鐘",
+    "text": "ふぃー、今日もばりレッスン頑張ったばいー",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030010"
+  },
+  {
+    "id": 3004004030020,
+    "speaker": "咲耶",
+    "text": "ああ、今日もいい汗をかいたよ",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030020"
+  },
+  {
+    "id": 3004004030030,
+    "speaker": "結華",
+    "text": "やっぱユニット練は盛り上がるねぇ",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030030"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030040,
+    "speaker": "摩美々",
+    "text": "えー、だるいだけなんだケドー\r\n喉乾くし、疲れるしー",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "005",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300400403/3004004030040",
+    "charCategory": "stand_fix"
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030050,
+    "speaker": "霧子",
+    "text": "お、お疲れさま……\r\n摩美々ちゃん、何か飲む……？",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "008",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300400403/3004004030050",
+    "charCategory": "stand_fix"
+  },
+  {
+    "id": 3004004030060,
+    "speaker": "摩美々",
+    "text": "いいのー？　霧子ありがとー\r\nじゃあ、私はねー……",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030060"
+  },
+  {
+    "id": 3004004030070,
+    "speaker": "恋鐘",
+    "text": "あー、大丈夫大丈夫\r\nありがとーね、霧子",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030070"
+  },
+  {
+    "id": 3004004030080,
+    "speaker": "恋鐘",
+    "text": "摩美々、なんでも霧子にやらせちゃいかんばいー\r\nたまには自分で動かんと",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030080"
+  },
+  {
+    "id": 3004004030090,
+    "speaker": "摩美々",
+    "text": "えー……",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030090"
+  },
+  {
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030100,
+    "speaker": "恋鐘",
+    "text": "そういえば、こないだ結華と霧子と出かけたんよね\r\n今度はみんなと遊びに行きたかー",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030100"
+  },
+  {
+    "id": 3004004030110,
+    "speaker": "結華",
+    "text": "確かに確かに！　あれは楽しかったもんね\r\n三峰もまた行きたいなぁ",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030110"
+  },
+  {
+    "id": 3004004030120,
+    "speaker": "霧子",
+    "text": "わ、わたしも……",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030120"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030130,
+    "speaker": "咲耶",
+    "text": "それはいいね！\r\n私もみんなと一緒に出かけたいな",
+    "charAnim1": "wait3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400403/3004004030130"
+  },
+  {
+    "id": 3004004030140,
+    "speaker": "恋鐘",
+    "text": "やろー？　うち、みんなと旅行とか行きたかばい！\r\nもちろん長崎！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030140"
+  },
+  {
+    "id": 3004004030150,
+    "speaker": "結華",
+    "text": "うん、旅行はナイスだけど、お仕事あるからねー\r\nそれはまた今度じゃない？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030150"
+  },
+  {
+    "id": 3004004030160,
+    "speaker": "恋鐘",
+    "text": "あー、それもそーやね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030160"
+  },
+  {
+    "id": 3004004030170,
+    "speaker": "恋鐘",
+    "text": "じゃあ、みんなどこ行きたいか\r\nアイデア出ししよーや！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030170"
+  },
+  {
+    "id": 3004004030180,
+    "speaker": "咲耶",
+    "text": "では、ひとまずは近場で決めよう\r\nそれなら、多少融通がきくだろうからね",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030180"
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030190,
+    "speaker": "摩美々",
+    "text": "みんなが決めてくれれば私はどこでもいいかなー\r\nめんどいしー",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400403/3004004030190"
+  },
+  {
+    "id": 3004004030200,
+    "speaker": "恋鐘",
+    "text": "そんなこと言わんと\r\n摩美々もなんか考えんねー！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030200"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030210,
+    "speaker": "霧子",
+    "text": "近くで……何かあるかな？",
+    "charAnim1": "shy2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400403/3004004030210"
+  },
+  {
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030220,
+    "speaker": "結華",
+    "text": "まぁ、都内だし大抵なんでもあるよね",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400403/3004004030220"
+  },
+  {
+    "id": 3004004030230,
+    "speaker": "恋鐘",
+    "text": "じゃあ、うち遊園地いきたかばい！\r\nみんなでジェットコースター乗ろ！",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030230"
+  },
+  {
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030240,
+    "speaker": "摩美々",
+    "text": "しんどいからパスー",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400403/3004004030240"
+  },
+  {
+    "id": 3004004030250,
+    "speaker": "恋鐘",
+    "text": "えー",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030250"
+  },
+  {
+    "id": 3004004030260,
+    "speaker": "霧子",
+    "text": "動物園、とか……？",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030260"
+  },
+  {
+    "id": 3004004030270,
+    "speaker": "恋鐘",
+    "text": "おお！\r\nうちも可愛い動物と遊びたかばい！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030270"
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030280,
+    "speaker": "咲耶",
+    "text": "映画とか、いいんじゃないかな？",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400403/3004004030280"
+  },
+  {
+    "id": 3004004030290,
+    "speaker": "恋鐘",
+    "text": "映画もよかね！\r\nみんなで感想を言うのも楽しそうたい！",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030290"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030300,
+    "speaker": "結華",
+    "text": "あーでもさ。この間プロデューサーが、\r\n身バレに気をつけろって言ってたじゃん……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400403/3004004030300"
+  },
+  {
+    "id": 3004004030310,
+    "speaker": "結華",
+    "text": "ひとりとかならまだしも、ユニット全員で行くとなると\r\n発見率かなり高くなるよ",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030310"
+  },
+  {
+    "id": 3004004030320,
+    "speaker": "恋鐘",
+    "text": "……それは、良くなかー",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030320"
+  },
+  {
+    "id": 3004004030330,
+    "speaker": "咲耶",
+    "text": "となると、行ける場所は相当限られてしまうね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030330"
+  },
+  {
+    "id": 3004004030340,
+    "speaker": "結華",
+    "text": "人目につかなくて……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030340"
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030350,
+    "speaker": "霧子",
+    "text": "近くで……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400403/3004004030350"
+  },
+  {
+    "id": 3004004030360,
+    "speaker": "恋鐘",
+    "text": "ちょっとの時間でも楽しいとこ……",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030360"
+  },
+  {
+    "id": 3004004030370,
+    "speaker": "霧子",
+    "text": "難しいね……",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030370"
+  },
+  {
+    "id": 3004004030380,
+    "speaker": "咲耶",
+    "text": "何かいい考えはないものかな……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030380"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030390,
+    "speaker": "摩美々",
+    "text": "カラオケ……になっちゃうでしょー",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400403/3004004030390"
+  },
+  {
+    "id": 3004004030400,
+    "speaker": "咲耶",
+    "text": "まあ、それが一番現実的じゃないかな",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030400"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030410,
+    "speaker": "結華",
+    "text": "アンティーカの定番だもんね",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400403/3004004030410"
+  },
+  {
+    "id": 3004004030420,
+    "speaker": "摩美々",
+    "text": "まあ、私、聞く専でごろごろしてるから\r\nみんな盛り上がってねー",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030420"
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004004030430,
+    "speaker": "霧子",
+    "text": "ふふ……\r\nみんなとカラオケ行くの、好き……♪",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400403/3004004030430"
+  },
+  {
+    "id": 3004004030440,
+    "speaker": "恋鐘",
+    "text": "よし、カラオケで決まりたい！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030440"
+  },
+  {
+    "id": 3004004030450,
+    "speaker": "恋鐘",
+    "text": "ああ、もう楽しみになってきたばいー！\r\n早く行きたかー！",
+    "charAnim1": "smile4",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030450"
+  },
+  {
+    "id": 3004004030460,
+    "speaker": "結華",
+    "text": "じゃ、三峰たちのお休み合わせてもらわなきゃだね",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030460"
+  },
+  {
+    "id": 3004004030470,
+    "speaker": "恋鐘",
+    "text": "うん！\r\nうち、さっそくプロデューサーに頼んでくるばい！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400403/3004004030470"
+  },
+  {
+    "label": "end"
+  }
+]

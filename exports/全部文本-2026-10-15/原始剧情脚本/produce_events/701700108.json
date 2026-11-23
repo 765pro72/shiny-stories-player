@@ -1,0 +1,255 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですか……参加はできませんでしたか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001080010,
+    "speaker": "はづき",
+    "text": "……不参加って連絡が来たとき、\r\n聞き間違いかと思いました",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701700108/7901001080010"
+  },
+  {
+    "id": 7901001080020,
+    "speaker": "はづき",
+    "text": "私には、どうして彼女が参加できないのか\r\nちっともわかりません……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701700108/7901001080020"
+  },
+  {
+    "id": 7902001080010,
+    "speaker": "社長",
+    "text": "その気持ちはわかるが……これが結果なんだ\r\n受け入れるより他にあるまい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701700108/7902001080010"
+  },
+  {
+    "id": 7901001080030,
+    "speaker": "はづき",
+    "text": "……私、きっとあの子のファンだったんですね\r\nだからこの結果が、悔しくてたまらないんです……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701700108/7901001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺もです。彼女のプロデューサーである俺自身が、\r\n誰よりも彼女のファンでしたから",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……社長\r\n俺、彼女に会いに行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001080020,
+    "speaker": "社長",
+    "text": "ああ、そうするといい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701700108/7902001080020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 101
+  },
+  {
+    "bg": "00002",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……あさひ\r\n残念だが、『W.I.N.G.』には参加できない",
+    "charAnim1": "wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 7017001080010,
+    "speaker": "あさひ",
+    "text": "そんな……\r\nなんで、なんすか……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701700108/7017001080010"
+  },
+  {
+    "id": 7017001080020,
+    "speaker": "あさひ",
+    "text": "わたし、もっとワクワクしたかったっす！\r\nひとりじゃなくて……プロデューサーさんと……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701700108/7017001080020"
+  },
+  {
+    "id": 7017001080030,
+    "speaker": "あさひ",
+    "text": "ここでおしまいなんて\r\nわたし、諦められないっす……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701700108/7017001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうだ、諦める必要なんてない",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7017001080040,
+    "speaker": "あさひ",
+    "text": "え……？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701700108/7017001080040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あさひの気持ちが続く限り\r\n俺はどこまでも力になる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だからあさひ\r\nこれからも、一緒に頑張っていこう……な？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7017001080050,
+    "speaker": "あさひ",
+    "text": "プロデューサーさん……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701700108/7017001080050"
+  },
+  {
+    "id": 7017001080060,
+    "speaker": "あさひ",
+    "text": "はいっす！　わたし、まだ終わりにしたくないっす！\r\n……これからもプロデュース、してほしいっす！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701700108/7017001080060"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

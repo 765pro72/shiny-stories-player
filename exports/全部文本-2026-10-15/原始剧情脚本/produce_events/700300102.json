@@ -1,0 +1,231 @@
+[
+  {
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    }
+  },
+  {
+    "id": 7902001020010,
+    "speaker": "社長",
+    "text": "結果は聞いた\r\n……ここまでだったようだな",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700300102/7902001020010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい。目標には、届きませんでした",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001020010,
+    "speaker": "はづき",
+    "text": "『W.I.N.G.』はあらゆるアイドルが\r\n憧れるステージですからね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700300102/7901001020010"
+  },
+  {
+    "id": 7901001020020,
+    "speaker": "はづき",
+    "text": "道はとっても険しかった、\r\nということなのでしょう……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700300102/7901001020020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "結果を出せず、申し訳ありませんでした……",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001020020,
+    "speaker": "社長",
+    "text": "……私たちに謝っている場合じゃない\r\n彼女が、お前を待っているだろう？",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700300102/7902001020020"
+  },
+  {
+    "id": 7902001020030,
+    "speaker": "社長",
+    "text": "つらいだろうが、これもプロデューサーの仕事だ",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700300102/7902001020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……行ってきます",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "sad2",
+    "charLabel": "meguru",
+    "charType": "characters",
+    "charId": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……一次審査は通過できなかったな\r\n力になれなくて、悪い……",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7003001020010,
+    "speaker": "めぐる",
+    "text": "ううん、プロデューサーが謝ることじゃないよ！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700300102/7003001020010"
+  },
+  {
+    "id": 7003001020020,
+    "speaker": "めぐる",
+    "text": "きっと、わたしの頑張りが足りてなかっただけだもん！",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700300102/7003001020020"
+  },
+  {
+    "id": 7003001020030,
+    "speaker": "めぐる",
+    "text": "プロデューサーは、いっぱいわたしを\r\n助けてくれたよ！",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700300102/7003001020030"
+  },
+  {
+    "id": 7003001020040,
+    "speaker": "めぐる",
+    "text": "次はちゃんとプロデューサーの期待に応えられるように\r\n頑張るから……",
+    "charAnim1": "no",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charAnim1Loop": false,
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700300102/7003001020040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "めぐる……\r\n……次のステージでは絶対に輝こう！",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7003001020050,
+    "speaker": "めぐる",
+    "text": "……えへへ\r\nもちろんだよ！",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700300102/7003001020050"
+  },
+  {
+    "id": 7003001020060,
+    "speaker": "めぐる",
+    "text": "だから、これからもよろしくね！",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700300102/7003001020060"
+  },
+  {
+    "label": "end"
+  }
+]

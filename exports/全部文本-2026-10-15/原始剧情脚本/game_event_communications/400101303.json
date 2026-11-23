@@ -1,0 +1,2779 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0000",
+    "se": "0526",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 4001013030010,
+    "speaker": "？？？",
+    "text": "──281、282、283…………",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "se": "0526",
+    "voice": "game_event_communications/400101303/4001013030010"
+  },
+  {
+    "textFrame": "off",
+    "se": "0526",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001013030020,
+    "speaker": "？？？",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030020"
+  },
+  {
+    "id": 4001013030030,
+    "speaker": "？？？",
+    "text": "待っていなさい……モリノリンゼ……！",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030030"
+  },
+  {
+    "id": 4001013030040,
+    "speaker": "？？？",
+    "text": "今日こそ、のぼらせてもらうわよ──！",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030040"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00042",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0283",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4001013030050,
+    "speaker": "ジュリ",
+    "text": "──つまり、このおかしな学園を変えるためには\r\nまず生徒会長を抑えねーとなのか……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "1040110020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "0009",
+    "voice": "game_event_communications/400101303/4001013030050"
+  },
+  {
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001013030060,
+    "speaker": "カホ",
+    "text": "はい……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "1040090020",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030060"
+  },
+  {
+    "id": 4001013030070,
+    "speaker": "ジュリ",
+    "text": "てことは、その生徒会長とやらのところに\r\n乗り込んでいって……",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030070"
+  },
+  {
+    "id": 4001013030080,
+    "speaker": "ジュリ",
+    "text": "場合によっては力づくで、\r\n話つければいいだけの話じゃねーか！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030080"
+  },
+  {
+    "id": 4001013030090,
+    "speaker": "カホ",
+    "text": "それは、その通りなんですけど……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030090"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030100,
+    "speaker": "ジュリ",
+    "text": "？　どうした？\r\n生徒会長はどこにいるんだよ？",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101303/4001013030100"
+  },
+  {
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001013030110,
+    "speaker": "チヨコ",
+    "text": "……校長室だよ\r\n校長先生がいない間は、会長さんが守ってて──",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "1040100020",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030110"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030120,
+    "speaker": "ジュリ",
+    "text": "──うし\r\nならさっさと校長室に乗り込むぞ！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101303/4001013030120"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030130,
+    "speaker": "チヨコ",
+    "text": "ちょ、ちょっと待ってジュリちゃん！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_fear",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030130"
+  },
+  {
+    "id": 4001013030140,
+    "speaker": "カホ",
+    "text": "そう簡単には、いかないんです……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030140"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030150,
+    "speaker": "ジュリ",
+    "text": "……？\r\nなんでだよ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030150"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00187",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4001013030160,
+    "speaker": "チヨコ",
+    "text": "校長室は階段の上……なんだけど、\r\nいっつも見張りのクマがたくさんいて……",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030160"
+  },
+  {
+    "id": 4001013030170,
+    "speaker": "チヨコ",
+    "text": "見つからずに通るのは難しいし、\r\n戦うのだって、何も策がないままじゃ──……",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030170"
+  },
+  {
+    "bg": "00000",
+    "fg": "off"
+  },
+  {
+    "id": 4001013030180,
+    "speaker": "？？？",
+    "text": "──アナタたち、そこをどきなさい！",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030180"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00042"
+  },
+  {
+    "se": "0284",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "juri",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030190,
+    "speaker": "カホ",
+    "text": "あっ……！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_a",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030190"
+  },
+  {
+    "id": 4001013030200,
+    "speaker": "ジュリ",
+    "text": "な、なんだ！？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "bgm": "010",
+    "voice": "game_event_communications/400101303/4001013030200"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00187",
+    "bgEffect": "fade",
+    "se": "0284",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "se": "0282",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 4001013030210,
+    "speaker": "ナツハ",
+    "text": "今日こそ……\r\nのぼらせてもらいましょうか……！",
+    "charAnim1": "think",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "1040130020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030210"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0536",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4001013030220,
+    "speaker": "ナツハ",
+    "text": "邪魔よ、クマ！\r\n私は……モリノリンゼに用があるのッ！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030220"
+  },
+  {
+    "id": 4001013030230,
+    "speaker": "ナツハ",
+    "text": "はあああああああああああ！",
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0284",
+    "voice": "game_event_communications/400101303/4001013030230"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 100
+  },
+  {
+    "bg": "99999",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "bg": "00000",
+    "se": "0206",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "bg": "99999",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "bg": "00191"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0519",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00187",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4001013030240,
+    "speaker": "ナツハ",
+    "text": "…………なるほど",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030240"
+  },
+  {
+    "id": 4001013030250,
+    "speaker": "ナツハ",
+    "text": "──相変わらずの硬さだわ\r\nふふっ……でも、それでこそよ！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030250"
+  },
+  {
+    "id": 4001013030260,
+    "speaker": "ナツハ",
+    "text": "簡単に倒せちゃつまらない……\r\n高い壁の方が、のぼった時気持ちいいもの……！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030260"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0536",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001013030270,
+    "speaker": "ナツハ",
+    "text": "さあ、続けましょう\r\nアナタが倒れるまで──……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030270"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "juri",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001013030280,
+    "speaker": "ジュリ",
+    "text": "──おい\r\nなんなんだよあいつ……！",
+    "charAnim1": "wait5",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030280"
+  },
+  {
+    "id": 4001013030290,
+    "speaker": "カホ",
+    "text": "あの人は……ナツハさんですっ！",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030290"
+  },
+  {
+    "id": 4001013030300,
+    "speaker": "チヨコ",
+    "text": "そう、アリスガワナツハちゃん\r\nうちの３年生で──",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030300"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030310,
+    "speaker": "チヨコ",
+    "text": "校長室に乗り込もうって、\r\nああやって毎日クマに挑んでるんだ",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_serious",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101303/4001013030310"
+  },
+  {
+    "id": 4001013030320,
+    "speaker": "チヨコ",
+    "text": "……まぁ、まだ一度も乗り込めてないみたいだけど……",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030320"
+  },
+  {
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001013030330,
+    "speaker": "ジュリ",
+    "text": "……へえ\r\n詳しいんだな",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030330"
+  },
+  {
+    "id": 4001013030340,
+    "speaker": "チヨコ",
+    "text": "えへへっ\r\n喧嘩は苦手だけど、こういうところなら任せて！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030340"
+  },
+  {
+    "id": 4001013030350,
+    "speaker": "ジュリ",
+    "text": "……ああ\r\nチョコって──",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030350"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bgm": "off",
+    "se": "0133",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030360,
+    "speaker": "カホ",
+    "text": "わっ、ナツハさん……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030360"
+  },
+  {
+    "id": 4001013030370,
+    "speaker": "チヨコ",
+    "text": "ナツハちゃん！？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030370"
+  },
+  {
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030380,
+    "speaker": "ジュリ",
+    "text": "おい、あいつ大丈夫なのかよ……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_anger",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030380"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim4": "blank",
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0536",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4001013030390,
+    "speaker": "ナツハ",
+    "text": "……っ\r\n今日は一段と、やるじゃない……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030390"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black4",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "effectLabel": "black4",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001013030400,
+    "speaker": "ジュリ",
+    "text": "助けたほうがいいんじゃ……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030400"
+  },
+  {
+    "id": 4001013030410,
+    "speaker": "チヨコ",
+    "text": "でも、下手に出ていったら……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_serious",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030410"
+  },
+  {
+    "id": 4001013030420,
+    "speaker": "カホ",
+    "text": "だけどこのままじゃ……！",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030420"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0536",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4001013030430,
+    "speaker": "ジュリ",
+    "text": "……っ\r\nあぶな──！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030430"
+  },
+  {
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "y": 50,
+      "scale": 1.1,
+      "time": 400
+    },
+    "se": "0284",
+    "effectLabel": "black5",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "y": -50,
+      "scale": 1,
+      "time": 400
+    },
+    "waitType": "time",
+    "waitTime": 300
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00000"
+  },
+  {
+    "effectLabel": "black5",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001013030440,
+    "speaker": "ジュリ",
+    "text": "っらあ──！！",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "bgm": "fade_out",
+    "voice": "game_event_communications/400101303/4001013030440"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 100
+  },
+  {
+    "bg": "99999",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "bg": "00000",
+    "se": "0206",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "se": "0519",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0520",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "bg": "00187",
+    "bgEffect": "fade",
+    "se": "0521",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4001013030450,
+    "speaker": "ジュリ",
+    "text": "……大丈夫か？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030450"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030460,
+    "speaker": "ナツハ",
+    "text": "……！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030460"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "natsuha",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "natsuha",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 4001013030470,
+    "speaker": "ナツハ",
+    "text": "アナタ、どういうつもり？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030470"
+  },
+  {
+    "id": 4001013030480,
+    "speaker": "ナツハ",
+    "text": "他人の獲物を横取りなんて……感心しないわね",
+    "charAnim1": "shy1",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030480"
+  },
+  {
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001013030490,
+    "speaker": "ジュリ",
+    "text": "はぁ！？　なんだよその言い方！\r\nアタシはただ助けてやろうと……！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030490"
+  },
+  {
+    "id": 4001013030500,
+    "speaker": "ナツハ",
+    "text": "せっかくあとクマ１匹ってところまできたのに……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030500"
+  },
+  {
+    "id": 4001013030510,
+    "speaker": "ナツハ",
+    "text": "さては、アナタも\r\nこの学園のテッペン……狙っているのね？",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "bgm": "009",
+    "voice": "game_event_communications/400101303/4001013030510"
+  },
+  {
+    "id": 4001013030520,
+    "speaker": "ジュリ",
+    "text": "は、違──",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030520"
+  },
+  {
+    "id": 4001013030530,
+    "speaker": "ナツハ",
+    "text": "それじゃあ……モリノリンゼの前に\r\nまずは、アナタを倒さなくちゃ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030530"
+  },
+  {
+    "id": 4001013030540,
+    "speaker": "ジュリ",
+    "text": "だから、アタシは──……！",
+    "charAnim1": "anger3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030540"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030550,
+    "speaker": "ナツハ",
+    "text": "御託はいらないわ、……いくわよ",
+    "charAnim1": "hello",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101303/4001013030550"
+  },
+  {
+    "id": 4001013030560,
+    "speaker": "ナツハ",
+    "text": "はぁあああああああああああああああ",
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0284",
+    "voice": "game_event_communications/400101303/4001013030560"
+  },
+  {
+    "id": 4001013030570,
+    "speaker": "ジュリ",
+    "text": "──ったく……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030570"
+  },
+  {
+    "id": 4001013030580,
+    "speaker": "ジュリ",
+    "text": "しゃあねぇなあ！！！！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030580"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "black6",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "se": "0206",
+    "waitType": "time",
+    "waitTime": 300
+  },
+  {
+    "se": "0206",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "se": "0109",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "se": "0206",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "se": "0109",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "se": "0206",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black6",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001013030590,
+    "speaker": "カホ",
+    "text": "ジュリちゃん……\r\nナツハさん……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030590"
+  },
+  {
+    "id": 4001013030600,
+    "speaker": "チヨコ",
+    "text": "…………",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030600"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030610,
+    "speaker": "ナツハ",
+    "text": "──うふふっ、やるじゃない",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030610"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030620,
+    "speaker": "ジュリ",
+    "text": "それは……こっちのセリフだっての……！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030620"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4001013030630,
+    "speaker": "ジュリ",
+    "text": "……あのさ\r\nひとつ、聞いていいか",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030630"
+  },
+  {
+    "charLabel": "juri",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001013030640,
+    "speaker": "ナツハ",
+    "text": "ええ\r\n……どうぞ？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "0009",
+    "voice": "game_event_communications/400101303/4001013030640"
+  },
+  {
+    "id": 4001013030650,
+    "speaker": "ジュリ",
+    "text": "アンタは……\r\nなんのためにこのクマと戦ってんだ？",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030650"
+  },
+  {
+    "id": 4001013030660,
+    "speaker": "ナツハ",
+    "text": "モリノリンゼと戦って……勝つためよ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030660"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1800
+  },
+  {
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4001013030670,
+    "speaker": "ジュリ",
+    "text": "……それじゃあ\r\nアンタは戦って勝って、どうすんだ？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030670"
+  },
+  {
+    "charLabel": "juri",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001013030680,
+    "speaker": "ナツハ",
+    "text": "あら、ふたつめの質問ね",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030680"
+  },
+  {
+    "id": 4001013030690,
+    "speaker": "ジュリ",
+    "text": "っ……",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030690"
+  },
+  {
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030700,
+    "speaker": "ナツハ",
+    "text": "……ふふ、いいわ\r\n──そんなの決まってるじゃない",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101303/4001013030700"
+  },
+  {
+    "id": 4001013030710,
+    "speaker": "ナツハ",
+    "text": "この学園のテッペンを獲るのよ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030710"
+  },
+  {
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001013030720,
+    "speaker": "ジュリ",
+    "text": "テッペン……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030720"
+  },
+  {
+    "id": 4001013030730,
+    "speaker": "ナツハ",
+    "text": "のぼりつめたいの、一番高いところに\r\n──だから一番、強くなりたいのよ",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030730"
+  },
+  {
+    "id": 4001013030740,
+    "speaker": "ジュリ",
+    "text": "それが、理由……？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030740"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030750,
+    "speaker": "ナツハ",
+    "text": "あら、そもそも理由なんて必要かしら？\r\n戦って、勝ちたいことに",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101303/4001013030750"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030760,
+    "speaker": "ジュリ",
+    "text": "…………",
+    "charAnim1": "think",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030760"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030770,
+    "speaker": "ナツハ",
+    "text": "鍛錬を積んで、自分を追い込んで、\r\n強くなって、勝って勝って勝って……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030770"
+  },
+  {
+    "id": 4001013030780,
+    "speaker": "ナツハ",
+    "text": "そうやってのぼりつめた高いところから見る景色の方が、\r\n今よりもずっと綺麗に決まっているわ",
+    "charAnim2": "face_close",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030780"
+  },
+  {
+    "id": 4001013030790,
+    "speaker": "ナツハ",
+    "text": "……もしどうしても理由が必要なら、そうね\r\nその景色が見たいからってことにしておこうかしらね",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030790"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030800,
+    "speaker": "ジュリ",
+    "text": "…………なるほどな",
+    "charAnim1": "smile2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030800"
+  },
+  {
+    "id": 4001013030810,
+    "speaker": "ジュリ",
+    "text": "…………",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "bgm": "fade_out",
+    "voice": "game_event_communications/400101303/4001013030810"
+  },
+  {
+    "id": 4001013030820,
+    "speaker": "ジュリ",
+    "text": "──やっぱアタシたち、\r\n一時休戦ってことにしねーか",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030820"
+  },
+  {
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001013030830,
+    "speaker": "ナツハ",
+    "text": "ええ？\r\nアナタ、私の話ちゃんと聞いていたの？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030830"
+  },
+  {
+    "id": 4001013030840,
+    "speaker": "ジュリ",
+    "text": "ああ、聞いてたよ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030840"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_close",
+    "charLabel": "juri",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    }
+  },
+  {
+    "id": 4001013030850,
+    "speaker": "ジュリ",
+    "text": "……アタシたちはこの学園の自由を取り戻したいと思ってる\r\nだから生徒会長を倒さなくちゃいけない",
+    "charAnim1": "hello",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "bgm": "008",
+    "voice": "game_event_communications/400101303/4001013030850"
+  },
+  {
+    "id": 4001013030860,
+    "speaker": "ジュリ",
+    "text": "それでアンタは、生徒会長と戦って、勝ちたい\r\n……目的は一緒じゃねーか",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030860"
+  },
+  {
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001013030870,
+    "speaker": "ナツハ",
+    "text": "それは……そうかもしれないけど\r\nでも──",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030870"
+  },
+  {
+    "id": 4001013030880,
+    "speaker": "ジュリ",
+    "text": "……わかったよ、じゃああれだな\r\nアタシたちみんなでここを元の自由な学園に戻せたらさ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030880"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030890,
+    "speaker": "ジュリ",
+    "text": "そしたらまた、勝負だ！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101303/4001013030890"
+  },
+  {
+    "id": 4001013030900,
+    "speaker": "ジュリ",
+    "text": "勝負して、真のテッペンが誰なのか……\r\n決めたらいいじゃねーか",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030900"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030910,
+    "speaker": "ナツハ",
+    "text": "…………！",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030910"
+  },
+  {
+    "id": 4001013030920,
+    "speaker": "ナツハ",
+    "text": "……仕方ないわね、乗ってあげる\r\nアナタ、言っても聞かなそうだし",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030920"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030930,
+    "speaker": "ジュリ",
+    "text": "はぁ！？\r\nそれはこっちの台詞──",
+    "charAnim1": "anger3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030930"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bgm": "off",
+    "se": "0200",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 420,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "juri",
+    "charPosition": {
+      "x": 150,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp2",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 986,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001013030931,
+    "speaker": "一同",
+    "text": "…………！！！！！！！！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030931"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0552",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4001013030940,
+    "speaker": "リンゼ",
+    "text": "静粛に……",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030940"
+  },
+  {
+    "id": 4001013030950,
+    "speaker": "ジュリ",
+    "text": "お前──！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101303/4001013030950"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "sad2",
+    "charAnim2": "face_serious",
+    "charAnim4": "no_bag",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "1040120020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4001013030960,
+    "speaker": "リンゼ",
+    "text": "校則違反です──",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "0014",
+    "voice": "game_event_communications/400101303/4001013030960"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

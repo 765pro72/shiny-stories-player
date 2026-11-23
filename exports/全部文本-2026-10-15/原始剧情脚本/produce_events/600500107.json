@@ -1,0 +1,250 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00023",
+    "bgm": "008",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 6902001070010,
+    "speaker": "社長",
+    "text": "お前、担当アイドルのことをどう思っている？",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/600500107/6902001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……たしかに負けてしまいましたけど、\r\n彼女こそが最高のアイドルだと思っています",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6902001070020,
+    "speaker": "社長",
+    "text": "……！　そうか……",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/600500107/6902001070020"
+  },
+  {
+    "id": 6901001070010,
+    "speaker": "はづき",
+    "text": "ふふ\r\n社長が聞きたかった言葉、そのまま出てきましたね",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/600500107/6901001070010"
+  },
+  {
+    "id": 6901001070020,
+    "speaker": "はづき",
+    "text": "もし違う言葉が出てきたら、\r\n説教してやるって言って聞かなかったのに",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/600500107/6901001070020"
+  },
+  {
+    "id": 6902001070030,
+    "speaker": "社長",
+    "text": "……うるさいぞ。とにかく、\r\nそういうことなら私から言うことはない",
+    "charAnim1": "wait2",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/600500107/6902001070030"
+  },
+  {
+    "id": 6902001070040,
+    "speaker": "社長",
+    "text": "さあ、早くその最高のアイドルに\r\n会いに行ってこい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/600500107/6902001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charType": "characters",
+    "charId": "005",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00021",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "大丈夫か、摩美々\r\n少しは心の整理ができたか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6005001070010,
+    "speaker": "摩美々",
+    "text": "……まみみ、小さい頃から甘やかされて育って\r\n何をやっても褒められてきたんですよねー",
+    "charAnim1": "surp1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600500107/6005001070010"
+  },
+  {
+    "id": 6005001070020,
+    "speaker": "摩美々",
+    "text": "失敗しても怒られなくて、\r\nイタズラしても見て見ぬフリされてて",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600500107/6005001070020"
+  },
+  {
+    "id": 6005001070030,
+    "speaker": "摩美々",
+    "text": "生きている意味がわからない、は大げさですけどー\r\nなにかをやりたいって思ったことがなかったんですー",
+    "charAnim1": "anger2",
+    "charAnim2": "no",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600500107/6005001070030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "摩美々……\r\nそれでアイドルに……？",
+    "charAnim2": "blank",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6005001070040,
+    "speaker": "摩美々",
+    "text": "プロデューサーに興味があったから\r\nなんとなくで始めただけなんですよー",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600500107/6005001070040"
+  },
+  {
+    "id": 6005001070050,
+    "speaker": "摩美々",
+    "text": "でも、ファンから応援して貰ったら、純粋にうれしくてー\r\nずっと続けたらぁ、やりたいことが見つかるかもなんてー",
+    "charAnim1": "wait2",
+    "charAnim2": "yes",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600500107/6005001070050",
+    "charAnim2Loop": false
+  },
+  {
+    "id": 6005001070060,
+    "speaker": "摩美々",
+    "text": "思ってたんですけどー、……ライブで負けちゃったらぁ\r\nなんか、頑張りたくなくなっちゃったぁ……",
+    "charAnim1": "sad2",
+    "charAnim2": "no",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600500107/6005001070060",
+    "charAnim2Loop": false
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……今は悔しくてやる気がなくなったのかもしれない\r\nけど、これからもアイドルは続けられるんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ファンに応援して貰って嬉しかったなら\r\nもっと頑張ってみれば、目標が見つかるかもしれないぞ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6005001070070,
+    "speaker": "摩美々",
+    "text": "……わかりましたぁ、まみみ、プロデューサーの言う通り\r\nもう少しだけ頑張ってみます……！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600500107/6005001070070"
+  },
+  {
+    "label": "end"
+  }
+]

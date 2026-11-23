@@ -1,0 +1,2050 @@
+[
+  {
+    "id": 4001015030010,
+    "speaker": "off",
+    "text": "『１日目、夜』",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bg": "00093",
+    "bgm": "0019",
+    "voice": "game_event_communications/400101503/4001015030010"
+  },
+  {
+    "id": 4001015030020,
+    "speaker": "off",
+    "text": "『旅のしおり　時間について』",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030020"
+  },
+  {
+    "id": 4001015030030,
+    "speaker": "off",
+    "text": "『夕方６時から朝６時までは旅館の外に出ないこと』",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030030"
+  },
+  {
+    "id": 4001015030040,
+    "speaker": "off",
+    "text": "『消灯時間は夜10時』",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030040"
+  },
+  {
+    "id": 4001015030050,
+    "speaker": "off",
+    "text": "『夜更かしはいけません、ゆっくり休みましょう』",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030050"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00211",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001015030051,
+    "speaker": "一同",
+    "text": "おやすみなさーい",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030051"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00212",
+    "bgEffect": "fade",
+    "se": "0213",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "se": "0156",
+    "waitType": "time",
+    "waitTime": 1400
+  },
+  {
+    "id": 4001015030060,
+    "speaker": "愛依",
+    "text": "っあー……！\r\nマージ布団ってば極楽ー……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charType": "idols",
+    "charId": "3000190030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030060"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mei",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "charType": "idols",
+    "charId": "3000160030",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030070,
+    "speaker": "結華",
+    "text": "あはは\r\nめいめい、てんちゃんみたい",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charType": "idols",
+    "charId": "3000070030",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030070"
+  },
+  {
+    "id": 4001015030080,
+    "speaker": "千雪",
+    "text": "ふふっ",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030080"
+  },
+  {
+    "id": 4001015030090,
+    "speaker": "千雪",
+    "text": "今日はハードだったもんね",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030090"
+  },
+  {
+    "id": 4001015030100,
+    "speaker": "千雪",
+    "text": "朝も早かったし、自由時間の後も\r\nみんなでトレーニングがあったし──",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030100"
+  },
+  {
+    "id": 4001015030110,
+    "speaker": "結華",
+    "text": "プロデューサーも鬼だよねぇ\r\n何も、遊んだ後にトレーニング持ってこなくてもさぁ",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030110"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030120,
+    "speaker": "結華",
+    "text": "こっちは遊びに来てるっていうのにー\r\nおかげさまでくたくただよー",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101503/4001015030120"
+  },
+  {
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001015030130,
+    "speaker": "真乃",
+    "text": "ふふふっ",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charType": "idols",
+    "charId": "3000010030",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030130"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyoko",
+    "charType": "idols",
+    "charId": "3000100030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4001015030140,
+    "speaker": "智代子",
+    "text": "──……でも、平和だなぁ",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030140"
+  },
+  {
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "mei",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030150,
+    "speaker": "千雪",
+    "text": "平和……？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030150"
+  },
+  {
+    "id": 4001015030160,
+    "speaker": "智代子",
+    "text": "うちのメンバーだと、ここから枕投げが始まったりするので",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030160"
+  },
+  {
+    "id": 4001015030170,
+    "speaker": "愛依",
+    "text": "わーお……\r\nバリバリに元気じゃん……",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "fade_out",
+    "voice": "game_event_communications/400101503/4001015030170"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mei",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030180,
+    "speaker": "智代子",
+    "text": "えへへ……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bgm": "029",
+    "voice": "game_event_communications/400101503/4001015030180"
+  },
+  {
+    "id": 4001015030190,
+    "speaker": "智代子",
+    "text": "枕投げとか、トランプとか、\r\nゲームがあったら対戦したりとか──",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030190"
+  },
+  {
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001015030200,
+    "speaker": "結華",
+    "text": "怪談は？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030200"
+  },
+  {
+    "id": 4001015030210,
+    "speaker": "智代子",
+    "text": "怪談は──！\r\nそのっ、怖い人もいるから、うちでは避けるかな……！",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030210"
+  },
+  {
+    "id": 4001015030220,
+    "speaker": "結華",
+    "text": "ほほーう？\r\nちなみにチョコちゃんてどっち側ー？",
+    "charAnim1": "surp3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030220"
+  },
+  {
+    "id": 4001015030230,
+    "speaker": "智代子",
+    "text": "ノーコメントで！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030230"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030240,
+    "speaker": "千雪",
+    "text": "ふふっ、わかるなぁ\r\nお泊まりって、電気を消してからが本番って感じがするよね",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030240"
+  },
+  {
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001015030250,
+    "speaker": "愛依",
+    "text": "えー……？\r\n千雪さんでも、そういうこと思うんだ……？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030250"
+  },
+  {
+    "id": 4001015030260,
+    "speaker": "千雪",
+    "text": "うん\r\n楽しみなことがあると眠れなくなっちゃったりもするの",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030260"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030270,
+    "speaker": "愛依",
+    "text": "マジでー……？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101503/4001015030270"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mei",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030280,
+    "speaker": "真乃",
+    "text": "一緒ですねっ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030280"
+  },
+  {
+    "id": 4001015030290,
+    "speaker": "千雪",
+    "text": "ふふ、一緒……！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030290"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030300,
+    "speaker": "結華",
+    "text": "──そしたら\r\n三峰たちも、もっとお楽しみ、するー？",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030300"
+  },
+  {
+    "id": 4001015030310,
+    "speaker": "智代子",
+    "text": "おっ、盛り上げていきますか？",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030310"
+  },
+  {
+    "id": 4001015030320,
+    "speaker": "結華",
+    "text": "あははっ、さすが放クラ！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030320"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030330,
+    "speaker": "愛依",
+    "text": "いーじゃん……楽しそー……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030330"
+  },
+  {
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mei",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mei",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030340,
+    "speaker": "結華",
+    "text": "──とりあえず今日は計画だけにして、明日とかさ\r\n本格的に朝活ならぬ夜活するの、アリじゃない？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030340"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030350,
+    "speaker": "智代子",
+    "text": "もちろん、賛成です！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030350"
+  },
+  {
+    "id": 4001015030360,
+    "speaker": "真乃",
+    "text": "ほわ……\r\n私、枕投げってしたことがなくて……",
+    "charAnim1": "think",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030360"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030370,
+    "speaker": "結華",
+    "text": "競技は全然枕投げじゃなくてもいいよ！\r\nトランプとか誰か持ってるだろうし──",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030370"
+  },
+  {
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001015030380,
+    "speaker": "智代子",
+    "text": "はい……！\r\n実は私……持ってきております……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030380"
+  },
+  {
+    "id": 4001015030390,
+    "speaker": "結華",
+    "text": "さすが放クラ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030390"
+  },
+  {
+    "id": 4001015030400,
+    "speaker": "結華",
+    "text": "──それこそ肝試しでもいいし？",
+    "charAnim1": "wink",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030400"
+  },
+  {
+    "id": 4001015030410,
+    "speaker": "智代子",
+    "text": "や、ダメダメダメっ！\r\nそれはやめよう！？！？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030410"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030420,
+    "speaker": "真乃",
+    "text": "ふふっ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030420"
+  },
+  {
+    "id": 4001015030430,
+    "speaker": "真乃",
+    "text": "全部できたら、楽しそう……",
+    "charAnim1": "smile3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030430"
+  },
+  {
+    "charLabel": "mano",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001015030440,
+    "speaker": "千雪",
+    "text": "それじゃあ、やっちゃう？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030440"
+  },
+  {
+    "id": 4001015030450,
+    "speaker": "真乃",
+    "text": "ほわっ",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030450"
+  },
+  {
+    "id": 4001015030460,
+    "speaker": "千雪",
+    "text": "だって、明日の夜もあさっての夜もあるんだもん\r\n楽しそうなこと、全部できちゃうんじゃないかな",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030460"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030470,
+    "speaker": "結華",
+    "text": "ひゅーう、千雪姉さんイケメン～",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030470"
+  },
+  {
+    "id": 4001015030480,
+    "speaker": "千雪",
+    "text": "えぇ……？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030480"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030490,
+    "speaker": "千雪",
+    "text": "肝試しは要検討だけど──",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101503/4001015030490"
+  },
+  {
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001015030500,
+    "speaker": "智代子",
+    "text": "ありがとう千雪さん……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030500"
+  },
+  {
+    "id": 4001015030510,
+    "speaker": "千雪",
+    "text": "他に、夜こっそりできそうなこと\r\nみんなで楽しんじゃうの",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030510"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030520,
+    "speaker": "千雪",
+    "text": "私は、まずトランプに一票",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101503/4001015030520"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030530,
+    "speaker": "智代子",
+    "text": "はい！\r\nトランプだったらインディアンポーカーもやりたいです！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030530"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030540,
+    "speaker": "真乃",
+    "text": "インディアンポーカー……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030540"
+  },
+  {
+    "id": 4001015030550,
+    "speaker": "結華",
+    "text": "まののんが初めてのゲームは、ちゃんと説明するからね",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030550"
+  },
+  {
+    "id": 4001015030560,
+    "speaker": "真乃",
+    "text": "はいっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030560"
+  },
+  {
+    "id": 4001015030570,
+    "speaker": "真乃",
+    "text": "……そのっ、そしたら──\r\n枕投げも、やってみたいです……っ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030570"
+  },
+  {
+    "id": 4001015030580,
+    "speaker": "結華",
+    "text": "いいねー\r\n思いの外アグレッシブ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030580"
+  },
+  {
+    "id": 4001015030590,
+    "speaker": "結華",
+    "text": "いっそ放クラの精鋭たちとか呼んじゃう？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030590"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030600,
+    "speaker": "智代子",
+    "text": "多分、夏葉ちゃんとか\r\nノリノリでコンディション整えてから来てくれるよ",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030600"
+  },
+  {
+    "id": 4001015030610,
+    "speaker": "千雪",
+    "text": "お部屋のものを壊さないようにだけ\r\n気を付けなくちゃね……！",
+    "charAnim1": "touch",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030610"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030620,
+    "speaker": "真乃",
+    "text": "ほわぁ……っ",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030620"
+  },
+  {
+    "id": 4001015030630,
+    "speaker": "真乃",
+    "text": "……えっと、それじゃあ\r\n愛依ちゃんは、やりたいこと、ありますか……？",
+    "charAnim1": "think",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030630"
+  },
+  {
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030640,
+    "speaker": "愛依",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030640"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030650,
+    "speaker": "結華",
+    "text": "……あれ？　めいめい？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030650"
+  },
+  {
+    "id": 4001015030660,
+    "speaker": "千雪",
+    "text": "……寝ちゃってるみたい",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030660"
+  },
+  {
+    "id": 4001015030670,
+    "speaker": "結華",
+    "text": "あらら、落ちちゃったか\r\nまぁでも消灯時間だもんね、めいめいが正しい",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "fade_out",
+    "voice": "game_event_communications/400101503/4001015030670"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030680,
+    "speaker": "愛依",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "0000",
+    "voice": "game_event_communications/400101503/4001015030680"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030690,
+    "speaker": "智代子",
+    "text": "──私たちも寝ます？",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030690"
+  },
+  {
+    "id": 4001015030700,
+    "speaker": "千雪",
+    "text": "そうだね",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030700"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015030710,
+    "speaker": "結華",
+    "text": "じゃあ改めまして、おやすみなさーい",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030710"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030711"
+  },
+  {
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030711"
+  },
+  {
+    "id": 4001015030711,
+    "speaker": "真乃＆智代子＆千雪",
+    "text": "おやすみなさーい",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101503/4001015030711"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00093",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0156",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4001015030720,
+    "speaker": "智代子",
+    "text": "……ふふっ",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030720"
+  },
+  {
+    "id": 4001015030730,
+    "speaker": "真乃",
+    "text": "……智代子ちゃん？",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030730"
+  },
+  {
+    "id": 4001015030740,
+    "speaker": "智代子",
+    "text": "ああっ、ごめんね……！\r\n早く明日にならないかなーって思って！",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030740"
+  },
+  {
+    "id": 4001015030750,
+    "speaker": "結華",
+    "text": "こーら、チョコ～\r\n自分から言ったくせにまだ寝ないつもりー？",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030750"
+  },
+  {
+    "id": 4001015030760,
+    "speaker": "智代子",
+    "text": "違います違いますっ\r\nちゃんと寝るよ！",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030760"
+  },
+  {
+    "id": 4001015030770,
+    "speaker": "智代子",
+    "text": "今のはどうぞ、忘れてください……！",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030770"
+  },
+  {
+    "id": 4001015030771,
+    "speaker": "真乃＆結華＆千雪",
+    "text": "ふふふっ……",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030771"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 5000
+  },
+  {
+    "bg": "00213",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4001015030780,
+    "speaker": "真乃",
+    "text": "……っ",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "0019",
+    "voice": "game_event_communications/400101503/4001015030780"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4001015030790,
+    "speaker": "千雪",
+    "text": "……眠れない？",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "se": "0454",
+    "voice": "game_event_communications/400101503/4001015030790"
+  },
+  {
+    "id": 4001015030800,
+    "speaker": "真乃",
+    "text": "あっ……ごめんなさい……っ",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030800"
+  },
+  {
+    "id": 4001015030810,
+    "speaker": "千雪",
+    "text": "ううん、違うの\r\n私もだから──",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030810"
+  },
+  {
+    "id": 4001015030820,
+    "speaker": "真乃",
+    "text": "……やっぱり、一緒ですね",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030820"
+  },
+  {
+    "id": 4001015030830,
+    "speaker": "千雪",
+    "text": "そう！\r\n……だって、すごく楽しいもんね",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030830"
+  },
+  {
+    "id": 4001015030840,
+    "speaker": "真乃",
+    "text": "はいっ……ふふ……\r\nみんなでこうやって、お泊りができて……",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030840"
+  },
+  {
+    "id": 4001015030850,
+    "speaker": "真乃",
+    "text": "明日もあさっても楽しみで、ドキドキするんです",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030850"
+  },
+  {
+    "id": 4001015030860,
+    "speaker": "真乃",
+    "text": "──……寝なきゃいけないのもわかってるんですけど……",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030860"
+  },
+  {
+    "id": 4001015030870,
+    "speaker": "千雪",
+    "text": "そうなんだよね……\r\nどうしたらいいかなぁ……",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030870"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 4001015030871,
+    "speaker": "真乃＆千雪",
+    "text": "……羊？",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030871"
+  },
+  {
+    "id": 4001015030880,
+    "speaker": "結華",
+    "text": "ぶふっ……",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030880"
+  },
+  {
+    "id": 4001015030881,
+    "speaker": "真乃＆千雪",
+    "text": "！？",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030881"
+  },
+  {
+    "id": 4001015030890,
+    "speaker": "真乃",
+    "text": "ゆ、結華ちゃん……？",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030890"
+  },
+  {
+    "id": 4001015030900,
+    "speaker": "結華",
+    "text": "ふふっ……！　や、ごめん、\r\nチョコが言うみたいにあんまり平和だったからつい……！",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030900"
+  },
+  {
+    "id": 4001015030910,
+    "speaker": "結華",
+    "text": "三峰も眠れないからさぁ──\r\n羊、一緒に、数えさせて！",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101503/4001015030910"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end"
+  }
+]

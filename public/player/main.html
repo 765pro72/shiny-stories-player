@@ -1,0 +1,31 @@
+<!doctype html><html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>剧情播放器 · ShinyScenarioViewer</title><meta name="robots" content="noindex,nofollow">
+<script src="/interface-font-core.js"></script><script src="/interface-font.js"></script>
+<script src="./lib/pixi.js"></script>
+<script src="./lib/pixi-sound.js"></script>
+<script src="./lib/pixi-spine.umd.js"></script>
+<script src="./lib/gsap.min.js"></script>
+<script src="./lib/PixiPlugin.min.js"></script>
+<script src="./scenario/Constants.js"></script>
+<script src="./scenario/Schedule.js"></script>
+<script src="./scenario/AdvResourceConverter.js"></script>
+<script src="./scenario/TextPlayer.js"></script>
+<script src="./scenario/TrackManager.js"></script>
+<script src="./scenario/BgLayer.js"></script>
+<script src="./scenario/MiddleFgLayer.js"></script>
+<script src="./scenario/FgLayer.js"></script>
+<script src="./scenario/CharacterStage.js"></script>
+<script src="./scenario/StillLayer.js"></script>
+<script src="./scenario/ScenarioPlayer.js"></script>
+<script src="./scenario/SelectList.js"></script>
+<script src="./scenario/SoundController.js"></script>
+<script src="./scenario/EffectLayer.js"></script>
+<script src="./scenario/MovieLayer.js"></script>
+<script src="./scenario/MainController.js"></script>
+<script src="./scenario/ScenarioLogLayer.js"></script>
+<script src="./scenario/TapEffectLayer.js"></script>
+<script src="./scenario/AdvPlayer.js"></script>
+<script src="/home-voice-policy.js"></script><script src="./scenario-text.js"></script>
+<link rel="stylesheet" href="./main.css"><link rel="stylesheet" href="/anime4k.css">
+<style>html,body{overflow:hidden;background:#211b26}#loading{position:fixed;inset:0;z-index:9;display:grid;place-content:center;background:#211b26;color:#ecd9e5;font:16px "Microsoft YaHei",sans-serif;text-align:center;padding:32px}#loading button{margin:16px auto;padding:10px 16px;cursor:pointer}</style>
+<script src="/anime4k.js"></script></head><body class="player-page"><button id="playerExitBtn" type="button" class="player-exit-btn" title="退出 / 返回" aria-label="返回">✕ 返回</button><div id="loading" role="status">正在准备剧情…</div><script src="./engine-controls.js"></script><script src="./scenario-bridge.js"></script></body></html>

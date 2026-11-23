@@ -1,0 +1,1079 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "bgm": "001",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──お、このファンレター\r\n桜の便せんの人から……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うん、真乃宛てだしやっぱりいつもの人からだ\r\nこうしてまめに手紙をくれるの本当にありがたい……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（…………真乃、確か今日も自主レッスンで、\r\nレッスン場に来てたはずだよな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（ファンレターの仕分けも、もう終わるし\r\n外部との打ち合わせにも、まだ少し時間はあるな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……よし──！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00014",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0358",
+    "waitType": "time",
+    "waitTime": 250
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 100
+  },
+  {
+    "textFrame": "off",
+    "se": "0358",
+    "waitType": "time",
+    "waitTime": 250
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 50
+  },
+  {
+    "textFrame": "off",
+    "se": "0358",
+    "waitType": "time",
+    "waitTime": 250
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0358",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim1": "tired",
+    "charAnim2": "blank",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "3000010030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2250
+  },
+  {
+    "charAnim1": "anger2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "face_shy",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "0000",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……──真乃、お疲れ様\r\n少しだけいいかな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050010,
+    "speaker": "真乃",
+    "text": "あ……プロデューサーさん、お疲れさまです\r\nえっと、なんでしょうか……？",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "001",
+    "voice": "produce_events/100100305/1001003050010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これ──届いてたファンレター持ってきたんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "桜の便せんの人からのもあってな\r\n出掛けのついでだけど、早く渡そうと思って",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050020,
+    "speaker": "真乃",
+    "text": "──ありがとうございます……っ\r\nほわぁ……っ",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050020"
+  },
+  {
+    "id": 1001003050030,
+    "speaker": "真乃",
+    "text": "レッスンが終わったら\r\n大切に読ませていただきますね……っ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（…………よかった……\r\nここのところどこか張り詰めてたから）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ\r\n……それじゃあ、レッスン中にすまなかったな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺ももう行くから\r\n真乃も無理せず頑張ってくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050040,
+    "speaker": "真乃",
+    "text": "はいっ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050040"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00086",
+    "bgEffect": "fade",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "se": "0406",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（予定より早く終わったな……\r\n戻ってメールを１通送ったら今日の仕事は終わり──）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……あれ\r\nあそこにいるの……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00017",
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0093",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 1001003050050,
+    "speaker": "真乃",
+    "text": "…………\r\n鳩さん……私……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……──真乃？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050060,
+    "speaker": "真乃",
+    "text": "あ……っ\r\nプロデューサーさん……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050060"
+  },
+  {
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "se": "0097",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──わ、すまん\r\n鳩、みんな飛んでっちゃったな……",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃も驚かせたよな……\r\n座ったままでいいんだぞ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050070,
+    "speaker": "真乃",
+    "text": "いえ……\r\n鳩さんたちも、きっと大丈夫です……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうか？\r\nでも、せっかく一緒にいたのに、すまない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050080,
+    "speaker": "真乃",
+    "text": "いえ……",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──鳩の代わりには、なれないけど\r\n俺も一緒に座っていいか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050090,
+    "speaker": "真乃",
+    "text": "あっ、は、はいっ\r\nどうぞです……っ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ありがとう\r\nよいしょ──っと……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1001003050100,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100100305/1001003050100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……手に持ってるの、\r\n朝に渡したファンレターか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050110,
+    "speaker": "真乃",
+    "text": "……はい\r\nレッスンが終わったので、読んでから帰りたいなって……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか、だからここに\r\n…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……真乃がしょんぼりしているように見えるのは\r\nそのファンレターが関係あったりするのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050120,
+    "speaker": "真乃",
+    "text": "──！\r\nい、いえ…………それは、その……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050120"
+  },
+  {
+    "charAnim1": "sad1",
+    "charAnim2": "face_shy",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim4": "eye_left",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1001003050130,
+    "speaker": "真乃",
+    "text": "……あたたかい言葉がたくさんの、\r\nとってもうれしいファンレターです……",
+    "charAnim2": "face_shy",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "057",
+    "voice": "produce_events/100100305/1001003050130"
+  },
+  {
+    "id": 1001003050140,
+    "speaker": "真乃",
+    "text": "…………\r\nでも……その……",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050140"
+  },
+  {
+    "id": 1001003050150,
+    "speaker": "真乃",
+    "text": "最近は無理をしているようで心配、前と変わらない\r\nそのままの私でいて欲しい……って、書いてあって……",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……うん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050160,
+    "speaker": "真乃",
+    "text": "前と変わらない……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050160"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00088",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 1001003050170,
+    "speaker": "真乃",
+    "text": "私……変わらなきゃって思って、アイドルになりました\r\nでも、まだひとりじゃなんにもできてなくて",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050170"
+  },
+  {
+    "id": 1001003050180,
+    "speaker": "真乃",
+    "text": "全然変わってないんだって気付いて……\r\n……アイドルとして、このままじゃダメだって",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050180"
+  },
+  {
+    "id": 1001003050190,
+    "speaker": "真乃",
+    "text": "ファンのみなさんに気持ちをお返しするためにも……\r\nもっともっと頑張らないとってやってきたつもりなんです",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050190"
+  },
+  {
+    "id": 1001003050200,
+    "speaker": "真乃",
+    "text": "でも、それが……\r\n応援してくださっている方を心配させてしまって──",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050200"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00017",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……どうしたらいいか\r\nわからなくなってしまった？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "smile2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 1001003050210,
+    "speaker": "真乃",
+    "text": "……でも、それでも……\r\nそれでも、変わらないと私は……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………そうか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃、ひとついいかな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait2",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "select": "変わるばかりが\r\n成長じゃないよ",
+    "nextLabel": "1"
+  },
+  {
+    "select": "できないことが\r\nあってもいいさ",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "ありのままの良さを\r\n見ることも大事だよ",
+    "nextLabel": "3"
+  },
+  {
+    "text": "★選択肢①【変わるばかりが成長じゃないよ】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1001003050220,
+    "label": "1",
+    "speaker": "真乃",
+    "text": "……ほわ\r\n変わるばかりじゃない……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "008",
+    "voice": "produce_events/100100305/1001003050220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん。……もちろん、変わることも大事で\r\nそうしなきゃいけないときもきっとある",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、成長するための道はそれだけじゃなくて、\r\n他にもたくさんあるから……",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃がもっと笑顔で、楽しいって思いながら\r\n成長できるような道を、進んでいくのもいいと思うよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050230,
+    "speaker": "真乃",
+    "text": "──楽しく……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "join",
+    "voice": "produce_events/100100305/1001003050230"
+  },
+  {
+    "text": "★選択肢②【できないことがあってもいいさ】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1001003050240,
+    "label": "2",
+    "speaker": "真乃",
+    "text": "ほわ……で、でも……\r\nできないよりは、できたほうがいい……ですよね……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "008",
+    "voice": "produce_events/100100305/1001003050240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "確かに、できることが多い人は\r\nすごい人だと思う",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、必ずそうならなければいけないわけじゃないんだ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃が、一番真乃らしく進める道を\r\n歩いていってほしいと俺は思ってるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050250,
+    "speaker": "真乃",
+    "text": "私が、私らしく……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "join",
+    "voice": "produce_events/100100305/1001003050250"
+  },
+  {
+    "text": "★選択肢③【ありのままの良さを見ることも大事だよ】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1001003050260,
+    "label": "3",
+    "speaker": "真乃",
+    "text": "ありのままの良さ……ですか……？\r\n……ほわ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "008",
+    "voice": "produce_events/100100305/1001003050260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな……例えば、真乃の優しいところや\r\n成長しようって頑張っているところ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺はすごくいいところだなって思ってるし\r\nとても尊敬しているよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "自分ではなかなか気付かないかもしれないけど\r\n他にもたくさんあるそういう部分も、大事にしてほしい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050270,
+    "speaker": "真乃",
+    "text": "私の……いいところ……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "join",
+    "voice": "produce_events/100100305/1001003050270"
+  },
+  {
+    "label": "join",
+    "speaker": "プロデューサー",
+    "text": "真乃が、どうして変わりたいと思ったのか……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『アイドルとして』成長するために、\r\n本当にそれは必要なのか……",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もう一度自分と向き合って\r\n見つめ直してもいいんじゃないかな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050280,
+    "speaker": "真乃",
+    "text": "変わることが、アイドルとして成長するのに\r\n必要なのか……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……急にすまん\r\nここのところ、真乃はずっと無理をしてるように感じてな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "見当はずれだったら申し訳ないけど……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも俺は、真乃にはもっとキラキラした思いで\r\nアイドルの道を歩いていってほしいと願ってる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……きっと、ファンのみんなも\r\nそんな気持ちなのかもしれないよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003050290,
+    "speaker": "真乃",
+    "text": "プロデューサーさん……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050290"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00088",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3250
+  },
+  {
+    "id": 1001003050300,
+    "speaker": "真乃",
+    "text": "……はい、私──\r\n私、ちゃんと、どうしたいのか考えてみます……っ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100305/1001003050300"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

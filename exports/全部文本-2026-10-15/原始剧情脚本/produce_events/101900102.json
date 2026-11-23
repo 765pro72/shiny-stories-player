@@ -1,0 +1,703 @@
+[
+  {
+    "id": 1019001020010,
+    "speaker": "愛依",
+    "text": "プロデューサー、おっはよ～",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "019",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00001",
+    "bgm": "004",
+    "voice": "produce_events/101900102/1019001020010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう、愛依\r\nさっそく今日の予定を話していいか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020020,
+    "speaker": "愛依",
+    "text": "オッケーオッケー、どんなカンジ～？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "今日は基本的なレッスンをひと通り体験してもらおうと思う",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "スカウトの時、アイドルのこと全然知らなそうだったろ？\r\n手始めにな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020030,
+    "speaker": "愛依",
+    "text": "え～やるじゃんプロデューサー！\r\nうちに合わせてくれたんだ～♪",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、これがプロデューサーの仕事だからな\r\nじゃ、レッスン場に移動しよう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mei",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00014",
+    "waitType": "time",
+    "waitTime": 101
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0121",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1019001020040,
+    "speaker": "愛依",
+    "text": "……っと、どーだった？\r\n言われた通り、いちおーやってみたけど",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101900102/1019001020040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お疲れ様、愛依\r\nひとつ聞きたいんだが、もしかして何か習ってたか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020050,
+    "speaker": "愛依",
+    "text": "あ、わかる？　\r\nうち近所のばーちゃんにシュージ習ってた系～",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いやすまん、そうじゃなくて……\r\n歌とか……ダンスとか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020060,
+    "speaker": "愛依",
+    "text": "あ、そっち系ね！\r\nうーん全然、友達とカラオケ行くくらい？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほどな……",
+    "charAnim2": "blank",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020070,
+    "speaker": "愛依",
+    "text": "え、もしかしてうちってけっこーいいカンジ？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、ダンスも歌も未経験にしてはよくできてるよ\r\n無理をしてる感じもしなかった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020080,
+    "speaker": "愛依",
+    "text": "マジ！？　ヤベーじゃん！",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020080"
+  },
+  {
+    "id": 1019001020090,
+    "speaker": "愛依",
+    "text": "じゃあさじゃあさ、さっそく次んとこ行っちゃう？\r\nホンモノのアイドル、見れんだよね？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile1",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile2",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、そろそろちょうどいい時間だし、移動しよう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "mei",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00008",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "アイドル",
+    "text": "みんな～！　ありがと～！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "はい、オッケーです！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1019001020100,
+    "speaker": "愛依",
+    "text": "……すげー……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101900102/1019001020100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "愛依、どうだった？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020110,
+    "speaker": "愛依",
+    "text": "これマジで練習なん！？\r\nなんかそのまま本番ってカンジでヤバくない！？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020110"
+  },
+  {
+    "id": 1019001020120,
+    "speaker": "愛依",
+    "text": "それに今の人……マジすげー",
+    "charAnim1": "smile3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな\r\n今日はその空気を感じて欲しかったんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "あ、お疲れ様です！\r\nその子が見学の……",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お疲れ様です\r\nええ、これからを期待しているアイドルです",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "ちょうどリハーサルから本番まで時間がありますので\r\nよかったらステージに上がってみますか？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ありがとうございます！　是非よろしくお願いします！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "愛依、せっかくだし、行こうか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020130,
+    "speaker": "愛依",
+    "text": "行く行く～",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101900102/1019001020130"
+  },
+  {
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00012",
+    "bgEffect": "fade",
+    "bgm": "015",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 1019001020140,
+    "speaker": "愛依",
+    "text": "……す、すご……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101900102/1019001020140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ステージの上からの景色は随分違ってみえるだろう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020150,
+    "speaker": "愛依",
+    "text": "あ、そ、そだね……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020150"
+  },
+  {
+    "id": 1019001020160,
+    "speaker": "愛依",
+    "text": "……このカンジ……なんか昔……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……愛依？　大丈夫か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020170,
+    "speaker": "愛依",
+    "text": "え？　あ、ああ……へーき！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020170"
+  },
+  {
+    "select": "大丈夫か？",
+    "nextLabel": "1"
+  },
+  {
+    "select": "初めは誰だって\r\n緊張するよ",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "もしかして、\r\nこういうのは苦手か",
+    "nextLabel": "3"
+  },
+  {
+    "id": 1019001020180,
+    "label": "1",
+    "speaker": "愛依",
+    "text": "よゆーよゆー……、すごすぎて驚いちゃった的な？",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか、それならいいんだけど……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020190,
+    "speaker": "愛依",
+    "text": "にしてもステージの上ってめっちゃ暑くね？\r\nこんな中で踊るとか、そーとー体力いるっしょ？",
+    "charAnim1": "smile3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな、それに本番はお客さんも入るから\r\nさらにすごい熱気になるぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020200,
+    "speaker": "愛依",
+    "text": "まーじー！？　今から体力つけとかないとヤバいじゃん！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな\r\nそれなら体力づくりメインのメニューを組むよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020210,
+    "speaker": "愛依",
+    "text": "サンキュ、プロデューサー、ヨロシクね！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/101900102/1019001020210"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "2",
+    "speaker": "プロデューサー",
+    "text": "ステージに立つ経験なんてなかなかないからな\r\n最初から堂々としていられる子なんてそうそういないぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020220,
+    "speaker": "愛依",
+    "text": "だ、だよね～",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だんだんと慣れていけばいいさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020230,
+    "speaker": "愛依",
+    "text": "サンキュ、うち、頑張っちゃうから",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、頼もしいな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020240,
+    "speaker": "愛依",
+    "text": "すぐに乗り越えちゃうから、見といてよね～！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/101900102/1019001020240"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1019001020250,
+    "label": "3",
+    "speaker": "愛依",
+    "text": "かもしんないわ～",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020250"
+  },
+  {
+    "id": 1019001020260,
+    "speaker": "愛依",
+    "text": "あっ！　なんかさ、パパっとリラックスできちゃう\r\n裏技とかあったりしない？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020260"
+  },
+  {
+    "id": 1019001020270,
+    "speaker": "愛依",
+    "text": "こういう時、使えたりすんじゃん？",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なんだかんだで深呼吸が一番いいと思うぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020280,
+    "speaker": "愛依",
+    "text": "やっぱし～？",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "けど、正しいやり方はあるからな、教えるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001020290,
+    "speaker": "愛依",
+    "text": "マジで～？　ちょー助かる～",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101900102/1019001020290"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

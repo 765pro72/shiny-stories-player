@@ -1,0 +1,165 @@
+[
+  {
+    "id": 1009001000910010,
+    "speaker": "果穂",
+    "text": "プロデューサーさん、相談があるんです",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "009",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/100900100091/1009001000910010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうしたんだ、果穂",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1009001000910020,
+    "speaker": "果穂",
+    "text": "あたし、牛乳がどうしても苦手なんです……\r\n強くなるために、飲まなくちゃって思うんですけど……",
+    "charAnim1": "sad1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100900100091/1009001000910020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか、牛乳が苦手か……",
+    "charLabel": "kaho",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "果物を入れてみよう",
+    "nextLabel": "1009001000911"
+  },
+  {
+    "select": "高級な牛乳を\r\n飲んでみよう",
+    "nextLabel": "1009001000912"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "牛乳の\r\n代わりになるものを\r\n探そう",
+    "nextLabel": "1009001000913"
+  },
+  {
+    "id": 1009001000910030,
+    "label": "1009001000911",
+    "speaker": "果穂",
+    "text": "果物を牛乳に……\r\nわぁっ！　それなら美味しく飲めそうです！",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100900100091/1009001000910030"
+  },
+  {
+    "id": 1009001000910040,
+    "speaker": "果穂",
+    "text": "やっぱりプロデューサーさんはスゴいです！\r\nあたし、いろいろ試してみますっ！",
+    "charAnim1": "wait3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100900100091/1009001000910040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1009001000910050,
+    "label": "1009001000912",
+    "speaker": "果穂",
+    "text": "高級……\r\n高いものだと、やっぱり美味しいんでしょうか？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100900100091/1009001000910050"
+  },
+  {
+    "id": 1009001000910060,
+    "speaker": "果穂",
+    "text": "今度、探して飲んでみますっ",
+    "charAnim1": "anger2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100900100091/1009001000910060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1009001000910070,
+    "label": "1009001000913",
+    "speaker": "果穂",
+    "text": "そっか、栄養が一緒なら大丈夫ですよね！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100900100091/1009001000910070"
+  },
+  {
+    "id": 1009001000910080,
+    "speaker": "果穂",
+    "text": "んー、でも苦手なものは\r\n克服したいなって思います",
+    "charAnim1": "anger2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100900100091/1009001000910080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

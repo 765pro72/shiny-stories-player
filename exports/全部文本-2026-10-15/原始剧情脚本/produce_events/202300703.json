@@ -1,0 +1,960 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00077",
+    "bgm": "0080"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "se": "0653",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……全然進まないけど\r\n渋滞か……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00129",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0050",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "………………\r\nそろそろ撮影、入り時間だよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "1094",
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "speaker": "ラジオ",
+    "text": "『────続いて交通情報です』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "ラジオ",
+    "text": "『────……は\r\n大雨の影響で渋滞となっており──……』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "ラジオ",
+    "text": "『──……線は運転見合わせ\r\n各線にも影響が出ています──……』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "………………\r\n雛菜は──……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "fg": "001921",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0000",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2023007030010,
+    "speaker": "雛菜",
+    "text": "そんなに心配することないのに\r\nプロデューサー",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "023",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/202300703/2023007030010"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hinana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00077",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0080",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……心配ないか、ひとりでも",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgEffectTime": 2500,
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 6500
+  },
+  {
+    "textFrame": "off",
+    "se": "0403",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "textFrame": "off",
+    "se": "0619",
+    "waitType": "time",
+    "waitTime": 1800
+  },
+  {
+    "textFrame": "off",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "bg": "00115",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "bgEffectTime": 300,
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "textFrame": "off",
+    "bg": "00115",
+    "bgEffect": "fade",
+    "bgEffectTime": 600,
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "bgEffectTime": 300,
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "textFrame": "off",
+    "bg": "00115",
+    "bgEffect": "fade",
+    "bgEffectTime": 600,
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "カメラマン",
+    "text": "──いいね！\r\nそこに足乗せたまま、そう！　そのポーズで！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "カメラマン",
+    "text": "ちょっと妖しい感じに笑って────……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2023007030020,
+    "speaker": "雛菜",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202300703/2023007030020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "1040230030",
+    "movie": "1040230030"
+  },
+  {
+    "textFrame": "off",
+    "stillType": "idols",
+    "stillId": "1040230030"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "015",
+    "effectLabel": "white2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "カメラマン",
+    "text": "そうそう！\r\nラスト一枚────……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2023007030030,
+    "speaker": "雛菜",
+    "text": "あ、あは～……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202300703/2023007030030"
+  },
+  {
+    "textFrame": "off",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "カメラマン",
+    "text": "はい、オッケー！\r\nお疲れ様！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "stillCtrl": "off"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00115",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "se": "0478",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2023007030040,
+    "speaker": "雛菜",
+    "text": "はぁ～～～……\r\nこのポーズ腹筋、痛すぎる～……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040230030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/202300703/2023007030040"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLabel": "hinana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "1206",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2023007030050,
+    "speaker": "雛菜",
+    "text": "雛菜、顔大丈夫でした～？\r\n引きつってないですか～……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202300703/2023007030050"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile",
+    "charLabel": "hinana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "カメラマン",
+    "text": "あはは、大丈夫！　すごい決まってたよ！\r\nありがとね、色々応えてもらっちゃって",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "カメラマン",
+    "text": "おかげでかなり良いの撮れたから！\r\n本当はこうしたかったんだよねって感じの──……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2023007030060,
+    "speaker": "雛菜",
+    "text": "あは～\r\nそれならよかった～！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202300703/2023007030060"
+  },
+  {
+    "id": 2023007030070,
+    "speaker": "雛菜",
+    "text": "雛菜もすっごい楽しかったです～\r\n腹筋も鍛えられたし～！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202300703/2023007030070"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hinana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "1206",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………\r\n順調そうだな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2023007030080,
+    "speaker": "雛菜",
+    "text": "────あれ、プロデューサー？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202300703/2023007030080"
+  },
+  {
+    "textFrame": "off",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2023007030090,
+    "speaker": "雛菜",
+    "text": "いつから来てたの～？\r\n撮影、見てた～？",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202300703/2023007030090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おう！　お疲れ様\r\nさっき来たところで……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2023007030100,
+    "speaker": "雛菜",
+    "text": "そっか～\r\n雛菜、どうだった～？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202300703/2023007030100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、最後の方しか見られなかったけど\r\nすごく──……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim4": "eye_left",
+    "charLabel": "hinana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "雑誌編集",
+    "text": "雛菜ちゃん良かったよ～！\r\nハロウィンメイク特集、いい感じになりそう！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2023007030110,
+    "speaker": "雛菜",
+    "text": "わ、お疲れ様です～\r\nほんとですか～？",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202300703/2023007030110"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim4": "blank",
+    "charLabel": "hinana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "雑誌編集",
+    "text": "うん！　今回使ったコスメが付録にも付くから\r\nハロウィンにはみんな真似するんじゃないかな～！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "雑誌編集",
+    "text": "あ、撮ったやつ、プレビューできますから\r\nプロデューサーさんもぜひ見て下さい",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "雑誌編集",
+    "text": "雛菜ちゃん、すごかったんですよ\r\n良いのがたくさん撮れて────……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………はい\r\nありがとうございます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2023007030120,
+    "speaker": "雛菜",
+    "text": "………………",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202300703/2023007030120"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hinana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgEffectTime": 2000,
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 6500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00009",
+    "bgEffect": "fade",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "se": "0117",
+    "waitType": "time",
+    "waitTime": 1400
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "textFrame": "off",
+    "se": "0152",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──お疲れ、雛菜",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "来るのが遅くなっちゃったけど\r\n撮影、順調に進んだみたいでよかったよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "言ってた通り\r\nひとりでも全然平気だったな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2023007030130,
+    "speaker": "雛菜",
+    "text": "あ～……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202300703/2023007030130"
+  },
+  {
+    "id": 2023007030140,
+    "speaker": "雛菜",
+    "text": "うん～\r\nそうだね～",
+    "charAnim1": "smile2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202300703/2023007030140"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "hinana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なんだ、元気ないんじゃないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、それもそうか\r\n撮影、疲れるよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "衣装も重そうだったし……\r\n早く荷物まとめて帰って休もうか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2023007030150,
+    "speaker": "雛菜",
+    "text": "ね、プロデューサー\r\n雛菜、良かった～？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202300703/2023007030150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？　ああ、うん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "雛菜もプレビューで写真、\r\n見せてもらっただろ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "編集さんたちも\r\nすごく満足してたし──……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2023007030160,
+    "speaker": "雛菜",
+    "text": "そっか～……\r\nそれならよかったね～",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202300703/2023007030160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2023007030170,
+    "speaker": "雛菜",
+    "text": "でも、なんか残念\r\n雛菜、すっごい大変なポーズも頑張ったけど",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202300703/2023007030170"
+  },
+  {
+    "id": 2023007030180,
+    "speaker": "雛菜",
+    "text": "プロデューサー、見てなかったよね～……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202300703/2023007030180"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

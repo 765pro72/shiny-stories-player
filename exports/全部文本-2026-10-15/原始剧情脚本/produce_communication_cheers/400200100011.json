@@ -1,0 +1,109 @@
+[
+  {
+    "id": 4002001000110010,
+    "speaker": "灯織",
+    "text": "ふう……もうすぐ始まりますね\r\n結果を出せるように、頑張らないと……",
+    "charCategory": "stand_costume",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00007",
+    "bgm": "019",
+    "voice": "produce_communication_cheers/400200100011/4002001000110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（肩に力が入ってるみたいだな\r\n何か声をかけてやろう……）",
+    "charLabel": "hiori",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "落ち着いていけ",
+    "nextLabel": "4002001000111"
+  },
+  {
+    "select": "１度深呼吸してみよう",
+    "nextLabel": "4002001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "水でも飲もう",
+    "nextLabel": "4002001000113"
+  },
+  {
+    "id": 4002001000110020,
+    "label": "4002001000111",
+    "speaker": "灯織",
+    "text": "……私はずっと落ち着いています",
+    "charAnim1": "wait3",
+    "charAnim2": "yes",
+    "charLipAnim": "lip_wait",
+    "charAnim1Loop": false,
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/400200100011/4002001000110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うーん、確かにいつも通りの灯織だったか……）",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4002001000110030,
+    "label": "4002001000112",
+    "speaker": "灯織",
+    "text": "ふぅ……少しリラックスできたかもしれません\r\n自分でも気づかないうちに、緊張していたのかも……",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/400200100011/4002001000110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、肩の力が抜けたみたいだ！）",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4002001000110040,
+    "label": "4002001000113",
+    "speaker": "灯織",
+    "text": "水なんて持っていませんが……\r\nプロデューサーも持っていませんよね？",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/400200100011/4002001000110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（しまった、用意しておけばよかった……！）",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

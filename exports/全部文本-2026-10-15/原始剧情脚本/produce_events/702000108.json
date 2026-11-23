@@ -1,0 +1,276 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですか……参加はできませんでしたか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001080010,
+    "speaker": "はづき",
+    "text": "……不参加って連絡が来たとき、\r\n聞き間違いかと思いました",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702000108/7901001080010"
+  },
+  {
+    "id": 7901001080020,
+    "speaker": "はづき",
+    "text": "私には、どうして彼女が参加できないのか\r\nちっともわかりません……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702000108/7901001080020"
+  },
+  {
+    "id": 7902001080010,
+    "speaker": "社長",
+    "text": "その気持ちはわかるが……これが結果なんだ\r\n受け入れるより他にあるまい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702000108/7902001080010"
+  },
+  {
+    "id": 7901001080030,
+    "speaker": "はづき",
+    "text": "……私、きっとあの子のファンだったんですね\r\nだからこの結果が、悔しくてたまらないんです……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702000108/7901001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺もです。彼女のプロデューサーである俺自身が、\r\n誰よりも彼女のファンでしたから",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……社長\r\n俺、彼女に会いに行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001080020,
+    "speaker": "社長",
+    "text": "ああ、そうするといい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702000108/7902001080020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00002",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──……通過できなかった\r\n『W.I.N.G.』には、出られない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7020001080010,
+    "speaker": "透",
+    "text": "あ……そっか",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_surp",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/702000108/7020001080010"
+  },
+  {
+    "id": 7020001080020,
+    "speaker": "透",
+    "text": "ごめんね",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702000108/7020001080020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "謝ることじゃないよ\r\nその──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7020001080030,
+    "speaker": "透",
+    "text": "…………",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702000108/7020001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "toru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 7020001080040,
+    "speaker": "透",
+    "text": "──ふふっ\r\n結構ショックかも",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/702000108/7020001080040"
+  },
+  {
+    "id": 7020001080050,
+    "speaker": "透",
+    "text": "ちゃんとのぼるとさ、\r\nけっこう堪えるんだね",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702000108/7020001080050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……透",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7020001080060,
+    "speaker": "透",
+    "text": "てっぺん、まだまだみたい",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close3",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702000108/7020001080060"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

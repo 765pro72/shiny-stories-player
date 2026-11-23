@@ -1,0 +1,72 @@
+[
+  {
+    "name": "主页多人／服装",
+    "term": "mypageComments",
+    "found": true,
+    "offset": 294584,
+    "excerpt": ".json\"),I(t,\"mypage_conversations.json\")]).then(function(e){var t=d(e,2);return{mypageComments:t[0],mypageConversations:t[1]}})},C=function(){try{return new Set(JSON.parse(a.A.getItem(_)||\"[]\"))}catch(e){return new Set}},w=function(e,t){return Object.assign({},e,{isListened:t.has(e.id),isLocalMaster:!0})},E=function(e){return!(!"
+  },
+  {
+    "name": "组合对话",
+    "term": "mypageConversations",
+    "found": true,
+    "offset": 294604,
+    "excerpt": "conversations.json\")]).then(function(e){var t=d(e,2);return{mypageComments:t[0],mypageConversations:t[1]}})},C=function(){try{return new Set(JSON.parse(a.A.getItem(_)||\"[]\"))}catch(e){return new Set}},w=function(e,t){return Object.assign({},e,{isListened:t.has(e.id),isLocalMaster:!0})},E=function(e){return!(!e.idolCostume||!e.id"
+  },
+  {
+    "name": "扮演台本",
+    "term": "castingIdolScript",
+    "found": true,
+    "offset": 1708380,
+    "excerpt": "riesTypeId is not found.\");return s.A.getSeriesType(this.idolSeriesTypeId)},get castingIdolScript(){return this.idolDialogueBook},get hasSupportIdolIllustRelease(){return this.supportIdolIllustReleases&&this.supportIdolIllustReleases.length>0},get hasWhisper(){return this.idolWhisperVoices&&this.idolWhisperVoices.length>0},get e"
+  },
+  {
+    "name": "低语／耳语",
+    "term": "idolWhisperVoices",
+    "found": true,
+    "offset": 1260331,
+    "excerpt": "Releases&&this.supportIdolIllustReleases.length>0},get hasWhisper(){return this.idolWhisperVoices&&this.idolWhisperVoices.length>0},getIconImagePath:function(){return l.A.createImagePath(\"support_idols\",\"icon\",this.id,this.hash)}};var O=n(92996),R=n(51800),x=n(4765),N=n(77528);const L={getCharacterAlbum:function(e){return s.A.po"
+  },
+  {
+    "name": "电话",
+    "term": "getIdolPhones",
+    "found": true,
+    "offset": 384055,
+    "excerpt": "s\").then(function(e){return i.A.processUserItemsResponse(e,o.A.memorialItem)})},getIdolPhones:function(e){return r.A.get(\"userMemorialItems/\".concat(e,\"/idolPhones\")).then(function(e){return i.A.processIdolPhonesResponse(e)})},getFoilGashaMedals:function(){return r.A.get(\"userFoilGashaMedals\").then(function(e){return i.A.process"
+  },
+  {
+    "name": "纪念品／信件",
+    "term": "getMemorialItems",
+    "found": true,
+    "offset": 383915,
+    "excerpt": "angeItemId:e,characterId:t}).then(function(e){return Promise.resolve(e.body)})},getMemorialItems:function(){return r.A.get(\"userMemorialItems\").then(function(e){return i.A.processUserItemsResponse(e,o.A.memorialItem)})},getIdolPhones:function(e){return r.A.get(\"userMemorialItems/\".concat(e,\"/idolPhones\")).then(function(e){return"
+  },
+  {
+    "name": "卡面追加解放",
+    "term": "supportIdolIllustReleases",
+    "found": true,
+    "offset": 542704,
+    "excerpt": " TypeError(\"Cannot call a class as a function\")}(this,t),e.supportIdol){var a=e.supportIdolIllustReleases.map(function(e){return r.A.t(\"supportIdolDetail.illustReleaseOpenConditionDialog.timesFmt\",{num:e.evolutionStage})});n=r.A.t(\"supportIdolDetail.illustReleaseOpenConditionDialog.title\"),i=r.A.t(\"supportIdolDetail.illustReleas"
+  },
+  {
+    "name": "卡片服装解放",
+    "term": "idolEvolutionSkins",
+    "found": true,
+    "offset": 1260799,
+    "excerpt": ".utils.setPrototypeOf(e,m);var t={};return e.idolCostumes.forEach(function(e){e.idolEvolutionSkins=[],N.utils.setPrototypeOf(e,g.A),e.isEvolutionSkin&&(t[e.idolId]||(t[e.idolId]=[]),t[e.idolId].push(e))}),Object.keys(t).forEach(function(n){t[n].forEach(function(e){return e.idolEvolutionSkins=t[n]}),e.idolCostumes.find(function(e"
+  },
+  {
+    "name": "生日语音",
+    "term": "birthday",
+    "found": true,
+    "offset": 497594,
+    "excerpt": "ols:10,surveys:5,special_communication_lists:5,titles:3,unit:3,sub_characters:3,birthday_event_banners:3,game_event_banners:5,fes_tower_items:3,game_event:5,producer_desk:5,character_vote_events:5,pickup_contents:8,special_fes_concert:3,foil_gasha_medals:3,almighty_foils:3,tap_counter_events:5,decoration_events:3,paragraph_event"
+  },
+  {
+    "name": "活动剧情",
+    "term": "gameEventCommunication",
+    "found": true,
+    "offset": 690232,
+    "excerpt": ",voiceKeep:v,lip:b,select:A,nextLabel:I,charStill:S,stillCtrl:C,still:w,movie:E,gameEventCommunicationMovie:P,charSpine:T,charLabel:k,charPosition:O,charScale:R,charAnim1:x,charAnim2:N,charAnim3:L,charAnim4:D,charAnim5:j,charAnim1Loop:B,charAnim2Loop:M,charAnim3Loop:F,charAnim4Loop:U,charAnim5Loop:G,charLipAnim:H,charEffect:V,ef"
+  }
+]

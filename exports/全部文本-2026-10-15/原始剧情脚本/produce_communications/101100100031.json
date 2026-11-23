@@ -1,0 +1,159 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "樹里、足に絆創膏を貼っているが、怪我したのか？",
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "011",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001"
+  },
+  {
+    "id": 1011001000310010,
+    "speaker": "樹里",
+    "text": "ん？　ああ、これか……",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100031/1011001000310010"
+  },
+  {
+    "id": 1011001000310020,
+    "speaker": "樹里",
+    "text": "駅から事務所まで少し走ってきたんだけど、\r\nちょっと壁にこすっちまってな",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100031/1011001000310020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（小さな怪我だけど、心配だな）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "大丈夫か！　\r\n消毒はしたか！？",
+    "nextLabel": "1011001000311"
+  },
+  {
+    "select": "大丈夫か？\r\n痛くないか？",
+    "nextLabel": "1011001000312"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "そそっかしいとこが\r\nあるんだな",
+    "nextLabel": "1011001000313"
+  },
+  {
+    "id": 1011001000310030,
+    "label": "1011001000311",
+    "speaker": "樹里",
+    "text": "消毒って、ただの擦り傷だよ\r\n……ったく大袈裟にしやがって",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100031/1011001000310030"
+  },
+  {
+    "id": 1011001000310040,
+    "speaker": "樹里",
+    "text": "でも、まぁ心配かけて悪かったな……\r\nあー、その、ありがと……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100031/1011001000310040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1011001000310050,
+    "label": "1011001000312",
+    "speaker": "樹里",
+    "text": "こんくらいの怪我、どうってことねぇって\r\nアンタのほうが痛そうな顔してんぞ？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100031/1011001000310050"
+  },
+  {
+    "id": 1011001000310060,
+    "speaker": "樹里",
+    "text": "……悪い、心配かけちまったな\r\nこれからは気ぃ付けるよ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100031/1011001000310060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1011001000310070,
+    "label": "1011001000313",
+    "speaker": "樹里",
+    "text": "うっせぇ！\r\nちょっとミスっただけだっての！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100031/1011001000310070"
+  },
+  {
+    "id": 1011001000310080,
+    "speaker": "樹里",
+    "text": "あ、いや……\r\nアンタが心配してくれてるのはわかってるって",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100031/1011001000310080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

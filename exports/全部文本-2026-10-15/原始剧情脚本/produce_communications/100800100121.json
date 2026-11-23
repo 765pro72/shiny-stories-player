@@ -1,0 +1,166 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charType": "characters",
+    "charId": "008",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "今日はいつもより表情が明るいな\r\n何かいいことでもあったのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1008001001210010,
+    "speaker": "霧子",
+    "text": "あ……え、と……\r\n献血をしてきました……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100121/1008001001210010"
+  },
+  {
+    "id": 1008001001210020,
+    "speaker": "霧子",
+    "text": "少しでも……患者さんたちのお役に立てれば……\r\nうれしいなって……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100121/1008001001210020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（献血か……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "よく行くのか？",
+    "nextLabel": "1008001001211"
+  },
+  {
+    "select": "うれしそうな表情だ",
+    "nextLabel": "1008001001212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "献血後のジュースは\r\n結構美味しいよな",
+    "nextLabel": "1008001001213"
+  },
+  {
+    "id": 1008001001210030,
+    "label": "1008001001211",
+    "speaker": "霧子",
+    "text": "はい……おうちが大学病院の寮で……近くなので……\r\nよく、献血するんです……",
+    "charAnim1": "wait1",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100121/1008001001210030"
+  },
+  {
+    "id": 1008001001210040,
+    "speaker": "霧子",
+    "text": "ちょっと……楽しいかもしれませんよ……",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100121/1008001001210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001001210050,
+    "label": "1008001001212",
+    "speaker": "霧子",
+    "text": "は、はい……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100121/1008001001210050"
+  },
+  {
+    "id": 1008001001210060,
+    "speaker": "霧子",
+    "text": "だって……自分の血で……\r\n誰かの命が、強くなるって思うと……嬉しいです",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100121/1008001001210060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001001210070,
+    "label": "1008001001213",
+    "speaker": "霧子",
+    "text": "たしかに……献血したら……\r\nジュースをもらえるところ、ありますよね……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100121/1008001001210070"
+  },
+  {
+    "id": 1008001001210080,
+    "speaker": "霧子",
+    "text": "でも、献血後は……\r\n鉄分やたんぱく質、とってくださいね……！",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100121/1008001001210080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

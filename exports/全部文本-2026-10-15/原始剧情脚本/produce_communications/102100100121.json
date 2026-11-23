@@ -1,0 +1,181 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "取引先からフルーツゼリーをもらったんだ\r\nパインとチェリー、どっちがいい？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1021001001210010,
+    "speaker": "円香",
+    "text": "どちらでも",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102100100121/1021001001210010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……それなら、じゃんけんで！\r\n円香が勝ったらパイン、負けたらチェリーにするか！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1021001001210020,
+    "speaker": "円香",
+    "text": "は？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100121/1021001001210020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いくぞ、じゃーんけん──",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "ぐー",
+    "nextLabel": "1021001001211"
+  },
+  {
+    "select": "ちょき",
+    "nextLabel": "1021001001212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "ぱー",
+    "nextLabel": "1021001001213"
+  },
+  {
+    "id": 1021001001210030,
+    "label": "1021001001211",
+    "speaker": "円香",
+    "text": "──私の勝ちですね",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100121/1021001001210030"
+  },
+  {
+    "id": 1021001001210040,
+    "speaker": "円香",
+    "text": "……チェリーで",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100121/1021001001210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1021001001210050,
+    "label": "1021001001212",
+    "speaker": "円香",
+    "text": "──で、あいこの場合は？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100121/1021001001210050"
+  },
+  {
+    "id": 1021001001210060,
+    "speaker": "円香",
+    "text": "はぁ、とにかくどうでもいいので、\r\n適当にください",
+    "charAnim1": "shy1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100121/1021001001210060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1021001001210070,
+    "label": "1021001001213",
+    "speaker": "円香",
+    "text": "何、ひとりではしゃいでいるんですか",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100121/1021001001210070"
+  },
+  {
+    "id": 1021001001210080,
+    "speaker": "円香",
+    "text": "付き合いませんよ",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100121/1021001001210080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

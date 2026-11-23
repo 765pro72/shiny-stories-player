@@ -1,0 +1,812 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00018",
+    "bgm": "0091"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "書店店主",
+    "text": "結華ちゃん、自分の買いにきたのかい？\r\nほら、目立つところに置いてあるよ",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "1648"
+  },
+  {
+    "id": 3007019020010,
+    "speaker": "結華",
+    "text": "わーっ、ありがとうございます！\r\nいつもいいところに置いていただいてすみません……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020010"
+  },
+  {
+    "id": 3007019020020,
+    "speaker": "結華",
+    "text": "でも厳密に言うと……\r\n自分のを買いにきたわけではなくて──",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020020"
+  },
+  {
+    "speaker": "書店店主",
+    "text": "おや、そうなの？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3007019020030,
+    "speaker": "結華",
+    "text": "はい……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020030"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00073",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1000
+  },
+  {
+    "id": 3007019020040,
+    "speaker": "結華",
+    "text": "こがたんのを買うかどうか迷ってる、って感じです……！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030070010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300701902/3007019020040"
+  },
+  {
+    "speaker": "書店店主",
+    "text": "あははっ\r\nいやいや、同じ雑誌じゃない",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "0220"
+  },
+  {
+    "id": 3007019020050,
+    "speaker": "結華",
+    "text": "えへへ……！",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020050",
+    "autoWaitTime": 3300
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "stillType": "support_idols",
+    "stillId": "2030070090"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "060",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "書店店主",
+    "text": "いいよねぇ、夏らしくて",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3007019020060,
+    "speaker": "結華",
+    "text": "わかります\r\n色がいっぱいで元気が出る感じ、好きで！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020060"
+  },
+  {
+    "speaker": "書店店主",
+    "text": "恋鐘ちゃんも、お澄まししてる顔が似合ってるしねぇ",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3007019020070,
+    "speaker": "結華",
+    "text": "そう！　そうなんです……！\r\n本当に可愛い顔してて──！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020070"
+  },
+  {
+    "speaker": "書店店主",
+    "text": "『欲しい！』って言ってるように見えるよ、結華ちゃん",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "0328"
+  },
+  {
+    "id": 3007019020080,
+    "speaker": "結華",
+    "text": "そうなんですけど～～……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020080"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "stillCtrl": "off"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00534",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1000
+  },
+  {
+    "id": 3007019020090,
+    "speaker": "結華",
+    "text": "（──欲しい。そりゃあ欲しい……！）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "132",
+    "voice": "produce_events/300701902/3007019020090"
+  },
+  {
+    "id": 3007019020100,
+    "speaker": "結華",
+    "text": "（こんなビジュアル大優勝のこがたん、\r\nちゃんと現物で保存しておきたいに決まってる）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0454",
+    "voice": "produce_events/300701902/3007019020100"
+  },
+  {
+    "id": 3007019020110,
+    "speaker": "結華",
+    "text": "（撮影の日に個人的に撮らせてもらったデータはあるけど、\r\nそれとこれとは話が別だし──！）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020110"
+  },
+  {
+    "id": 3007019020120,
+    "speaker": "結華",
+    "text": "（だってなんかキラキラして見えるもん……！\r\n雑誌の加工とか物理的な話ではなく……！）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020120"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00087",
+    "bgEffect": "fade",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 2100,
+    "bgEffectTime": 1000
+  },
+  {
+    "id": 3007019020130,
+    "speaker": "結華",
+    "text": "（────でも、落ち着いて考えてね三峰結華）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020130"
+  },
+  {
+    "id": 3007019020140,
+    "speaker": "結華",
+    "text": "（なんかこうやってほいほいこがたんのファンしてるの、\r\nどうなんですか自分的に）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020140"
+  },
+  {
+    "id": 3007019020150,
+    "speaker": "結華",
+    "text": "（いやでも今オフじゃん！\r\nオフで何したって自由じゃん！）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0478",
+    "voice": "produce_events/300701902/3007019020150"
+  },
+  {
+    "id": 3007019020160,
+    "speaker": "結華",
+    "text": "（この雑誌を研究するって使い方だって\r\nできるわけだし──）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020160"
+  },
+  {
+    "id": 3007019020170,
+    "speaker": "結華",
+    "text": "（あーっこうやってぐるぐる考えてるのがもう\r\n言い訳並べてる感じでダメだよね～～～～！！）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020170"
+  },
+  {
+    "id": 3007019020180,
+    "speaker": "結華",
+    "text": "（普通にただ欲しいから買おうとしてる人の\r\nムーブじゃーん……！）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020180"
+  },
+  {
+    "id": 3007019020190,
+    "speaker": "結華",
+    "text": "（ほんと絶対ここからまた浸食されていくんだって、\r\n無意識に……！）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020190"
+  },
+  {
+    "id": 3007019020200,
+    "speaker": "結華",
+    "text": "ん～～～～……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020200"
+  },
+  {
+    "textFrame": "off",
+    "se": "1202",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 3007019020210,
+    "speaker": "恋鐘",
+    "text": "結華～？\r\nなんしよっと～？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020210"
+  },
+  {
+    "id": 3007019020220,
+    "speaker": "結華",
+    "text": "！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020220"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00073",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 500
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007019020230,
+    "speaker": "結華",
+    "text": "ここここがたん！？　お疲れ様……！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300701902/3007019020230"
+  },
+  {
+    "id": 3007019020240,
+    "speaker": "恋鐘",
+    "text": "お疲れ様～",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020240"
+  },
+  {
+    "id": 3007019020250,
+    "speaker": "結華",
+    "text": "あ、えっと\r\n今ちょっと本見てて──",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020250"
+  },
+  {
+    "id": 3007019020260,
+    "speaker": "恋鐘",
+    "text": "あーっ！\r\nこの間撮った雑誌～！？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020260"
+  },
+  {
+    "id": 3007019020270,
+    "speaker": "結華",
+    "text": "うん……！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020270"
+  },
+  {
+    "id": 3007019020280,
+    "speaker": "恋鐘",
+    "text": "うちこれ買おうと思っとったとよ～！\r\nうちも結華もば～りばりに可愛く撮れとるけん！",
+    "charAnim1": "smile4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020280"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kogane",
+    "textFrame": "off"
+  },
+  {
+    "id": 3007019020290,
+    "speaker": "結華",
+    "text": "えっ買うの！？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020290"
+  },
+  {
+    "id": 3007019020300,
+    "speaker": "恋鐘",
+    "text": "うん～！\r\nだってキラキラしとるもん～！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020300"
+  },
+  {
+    "id": 3007019020310,
+    "speaker": "結華",
+    "text": "そ、それはわかるけど──",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020310"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_shy",
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "書店店主",
+    "text": "あははははっ\r\nスピード感が違うねぇ結華ちゃん",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "0888"
+  },
+  {
+    "id": 3007019020320,
+    "speaker": "結華",
+    "text": "わーっ、言わないでください！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300701902/3007019020320"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_anger_s2",
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007019020330,
+    "speaker": "恋鐘",
+    "text": "……？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300701902/3007019020330"
+  },
+  {
+    "speaker": "書店店主",
+    "text": "恋鐘ちゃん、お買い上げかな？\r\n他にも見る？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3007019020340,
+    "speaker": "恋鐘",
+    "text": "んふふ、大丈夫です\r\nこい、ください～！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020340"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "1264",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "書店店主",
+    "text": "はーいありがとう\r\nこの結華ちゃん、いきいきしてていいもんねぇ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_anger_s2",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007019020350,
+    "speaker": "恋鐘",
+    "text": "うちもそがん思います！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020350"
+  },
+  {
+    "id": 3007019020360,
+    "speaker": "結華",
+    "text": "……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020360"
+  },
+  {
+    "id": 3007019020370,
+    "speaker": "恋鐘",
+    "text": "そいと、こん雑誌、インタビューも載っとるとです",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020370"
+  },
+  {
+    "id": 3007019020380,
+    "speaker": "結華",
+    "text": "……？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020380"
+  },
+  {
+    "id": 3007019020390,
+    "speaker": "恋鐘",
+    "text": "うち、『月岡さんにとっての三峰さんはどんな人？』って\r\n聞かれて",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020390"
+  },
+  {
+    "id": 3007019020400,
+    "speaker": "恋鐘",
+    "text": "やけん、結華のインタビューば読んだら\r\n逆のわかる～って思って！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020400"
+  },
+  {
+    "id": 3007019020410,
+    "speaker": "結華",
+    "text": "あっ……！",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020410"
+  },
+  {
+    "speaker": "書店店主",
+    "text": "なるほどねぇ\r\nそれは楽しみだ",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3007019020420,
+    "speaker": "恋鐘",
+    "text": "はい～！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020420"
+  },
+  {
+    "id": 3007019020430,
+    "speaker": "結華",
+    "text": "～～～～っ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_close5",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020430"
+  },
+  {
+    "id": 3007019020440,
+    "speaker": "結華",
+    "text": "────三峰も買いまぁす！！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_shy_surp",
+    "charLipAnim": "lip_shy_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300701902/3007019020440"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "1264",
+    "waitType": "time",
+    "waitTime": 3700
+  },
+  {
+    "textFrame": "off",
+    "se": "0692",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

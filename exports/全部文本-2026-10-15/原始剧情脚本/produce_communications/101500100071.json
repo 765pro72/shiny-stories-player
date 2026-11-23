@@ -1,0 +1,161 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "どうした甜花、鏡の前で？",
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "015",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 1015001000710010,
+    "speaker": "甜花",
+    "text": "『甜花ちゃんは、どんな服でも似合うね』って……\r\nなーちゃんに言われて……",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100071/1015001000710010"
+  },
+  {
+    "id": 1015001000710020,
+    "speaker": "甜花",
+    "text": "プロデューサーさんは……\r\n甜花に似合う服……どんなだと思う？",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100071/1015001000710020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだなぁ……\r\n甜花に似合う服は、たぶん……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "落ち着いた服",
+    "nextLabel": "1015001000711"
+  },
+  {
+    "select": "意外と派手な服",
+    "nextLabel": "1015001000712"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "甜花が選ぶ服",
+    "nextLabel": "1015001000713"
+  },
+  {
+    "id": 1015001000710030,
+    "label": "1015001000711",
+    "speaker": "甜花",
+    "text": "う、うん……\r\n甜花も、そういうの好き……にへへ……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100071/1015001000710030"
+  },
+  {
+    "id": 1015001000710040,
+    "speaker": "甜花",
+    "text": "今度、服買うとき……\r\nプロデューサーさんに、選んでもらおうかな……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100071/1015001000710040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1015001000710050,
+    "label": "1015001000712",
+    "speaker": "甜花",
+    "text": "肌、いっぱい見えたり……\r\nきらきらしてる服、とか……？",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100071/1015001000710050"
+  },
+  {
+    "id": 1015001000710060,
+    "speaker": "甜花",
+    "text": "そういうのは、甜花より……\r\nなーちゃんのが、似合う……かな……",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100071/1015001000710060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1015001000710070,
+    "label": "1015001000713",
+    "speaker": "甜花",
+    "text": "でも、甜花が選ぶと……\r\nなんか、違うって……思う……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100071/1015001000710070"
+  },
+  {
+    "id": 1015001000710080,
+    "speaker": "甜花",
+    "text": "なーちゃんは、可愛いって……言ってくれるけど……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100071/1015001000710080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

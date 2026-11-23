@@ -1,0 +1,1 @@
+const fs=require('fs');let s=fs.readFileSync('public/player/scenario-bridge.js','utf8').replace('player?._scenarioPlayer._layoutFont();','player?._scenarioPlayer._layoutFont?.();');fs.writeFileSync('public/player/scenario-bridge.js',s);

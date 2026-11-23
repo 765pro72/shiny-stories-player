@@ -1,0 +1,1278 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00009",
+    "bgm": "041",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "009",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010010,
+    "speaker": "夏葉",
+    "text": "撮影、だいぶ巻きで終わったわね",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/301301001/3013010010010"
+  },
+  {
+    "id": 3013010010020,
+    "speaker": "果穂",
+    "text": "はい、スッゴく楽しかったです！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010020"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "kaho"
+  },
+  {
+    "id": 3013010010030,
+    "speaker": "夏葉",
+    "text": "そうね、果穂\r\n素晴らしかったわ",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010030"
+  },
+  {
+    "id": 3013010010040,
+    "speaker": "果穂",
+    "text": "ありがとうございます！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010040"
+  },
+  {
+    "id": 3013010010050,
+    "speaker": "夏葉",
+    "text": "他のみんなが終わるまで、\r\n控室で待っていましょうか",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010050"
+  },
+  {
+    "id": 3013010010060,
+    "speaker": "果穂",
+    "text": "はいっ！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010060"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3013010010070,
+    "speaker": "果穂",
+    "text": "そうだ！　あたし、\r\n夏葉さんに見てほしいものがあります！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010070"
+  },
+  {
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3013010010080,
+    "speaker": "夏葉",
+    "text": "あら……何かしら",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301301001/3013010010080"
+  },
+  {
+    "id": 3013010010090,
+    "speaker": "果穂",
+    "text": "マメ丸のスッゴくかわいい写真が\r\nとれたんです！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010090"
+  },
+  {
+    "id": 3013010010100,
+    "speaker": "夏葉",
+    "text": "なんですって……！？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010100"
+  },
+  {
+    "id": 3013010010110,
+    "speaker": "果穂",
+    "text": "あたしがマメ丸と遊んでる時に、\r\nお母さんがとってくれて……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010110"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010120,
+    "speaker": "果穂",
+    "text": "夏葉さんに見てほしくて、\r\nお母さんに送ってもらったんですけど……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0461",
+    "voice": "produce_events/301301001/3013010010120"
+  },
+  {
+    "id": 3013010010130,
+    "speaker": "果穂",
+    "text": "えーっと……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0461",
+    "voice": "produce_events/301301001/3013010010130"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3013010010140,
+    "speaker": "果穂",
+    "text": "あっ、ありました！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301301001/3013010010140"
+  },
+  {
+    "id": 3013010010150,
+    "speaker": "果穂",
+    "text": "これです！",
+    "charAnim1": "touch",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010150"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010160,
+    "speaker": "夏葉",
+    "text": "…………！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301301001/3013010010160"
+  },
+  {
+    "id": 3013010010170,
+    "speaker": "夏葉",
+    "text": "これは……！",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010170"
+  },
+  {
+    "id": 3013010010180,
+    "speaker": "夏葉",
+    "text": "もちもちじゃない……！\r\nマメ丸のほっぺが伸びてるわ……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010180"
+  },
+  {
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010190,
+    "speaker": "果穂",
+    "text": "そうなんです……！",
+    "charAnim1": "think",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010190"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010200,
+    "speaker": "果穂",
+    "text": "マメ丸はほっぺが\r\nスッゴくやわらかいんです！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301301001/3013010010200"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010210,
+    "speaker": "夏葉",
+    "text": "可愛いわ……とっても……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301301001/3013010010210"
+  },
+  {
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3013010010220,
+    "speaker": "果穂",
+    "text": "えへへ……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301301001/3013010010220"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010230,
+    "speaker": "果穂",
+    "text": "優しくマッサージするみたいに\r\nもちもちすると、うれしそうなんです！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301301001/3013010010230"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010240,
+    "speaker": "夏葉",
+    "text": "うふふ、そうなのね",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301301001/3013010010240"
+  },
+  {
+    "id": 3013010010250,
+    "speaker": "夏葉",
+    "text": "マメ丸も果穂と遊べるのが\r\nとっても嬉しいみたい",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010250"
+  },
+  {
+    "id": 3013010010260,
+    "speaker": "夏葉",
+    "text": "ふふふっ、すごくいい笑顔だわ……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010260"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010270,
+    "speaker": "果穂",
+    "text": "マメ丸は表情が豊かです！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301301001/3013010010270"
+  },
+  {
+    "id": 3013010010280,
+    "speaker": "果穂",
+    "text": "あたしはマメ丸が大好きで\r\nマメ丸もきっとあたしが大好きなので……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010280"
+  },
+  {
+    "id": 3013010010290,
+    "speaker": "果穂",
+    "text": "だから、『仲良しの笑顔』です！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010290"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010300,
+    "speaker": "夏葉",
+    "text": "そうね……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301301001/3013010010300"
+  },
+  {
+    "id": 3013010010310,
+    "speaker": "夏葉",
+    "text": "マメ丸は果穂の家族だものね──……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010310"
+  },
+  {
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "charAnim4": "blank",
+    "charLabel": "natsuha",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim4": "eye_right",
+    "charLabel": "natsuha",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3013010010320,
+    "speaker": "夏葉",
+    "text": "…………！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_a",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010320"
+  },
+  {
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010330,
+    "speaker": "果穂",
+    "text": "……夏葉さん？",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010330"
+  },
+  {
+    "id": 3013010010340,
+    "speaker": "夏葉",
+    "text": "改めてこうやって見ると……\r\n果穂とマメ丸ってそっくりね……！？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010340"
+  },
+  {
+    "id": 3013010010350,
+    "speaker": "果穂",
+    "text": "えっ、そうですか？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010350"
+  },
+  {
+    "id": 3013010010360,
+    "speaker": "夏葉",
+    "text": "ええ、ちょっと……\r\nマメ丸みたいにしても構わないかしら？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010360"
+  },
+  {
+    "id": 3013010010370,
+    "speaker": "果穂",
+    "text": "えっ……？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010370"
+  },
+  {
+    "id": 3013010010380,
+    "speaker": "夏葉",
+    "text": "失礼するわね──……",
+    "charAnim1": "touch",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010380"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "natsuha",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect",
+    "stillType": "support_idols",
+    "stillId": "2030130030"
+  },
+  {
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 3013010010390,
+    "speaker": "夏葉",
+    "text": "果穂、痛くない？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010390"
+  },
+  {
+    "id": 3013010010400,
+    "speaker": "果穂",
+    "text": "ふぁいっ！　ぜんぜん痛くないでふ！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010400"
+  },
+  {
+    "id": 3013010010410,
+    "speaker": "夏葉",
+    "text": "それならよかったわ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010410"
+  },
+  {
+    "id": 3013010010420,
+    "speaker": "夏葉",
+    "text": "ふふっ、果穂のほっぺももちもちね……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010420"
+  },
+  {
+    "id": 3013010010430,
+    "speaker": "果穂",
+    "text": "本当でふか……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010430"
+  },
+  {
+    "id": 3013010010440,
+    "speaker": "夏葉",
+    "text": "それに、やっぱりマメ丸とそっくりよ……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010440"
+  },
+  {
+    "id": 3013010010450,
+    "speaker": "果穂",
+    "text": "ふへへ……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010450"
+  },
+  {
+    "id": 3013010010460,
+    "speaker": "夏葉",
+    "text": "果穂の見せてくれた写真と同じポーズで\r\n写真を撮って並べたいくらいよ……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010460"
+  },
+  {
+    "id": 3013010010470,
+    "speaker": "果穂",
+    "text": "あたしも見てみたいでふ……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010470"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500,
+    "stillCtrl": "off"
+  },
+  {
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3013010010480,
+    "speaker": "夏葉",
+    "text": "ふふ、おしまい",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010480"
+  },
+  {
+    "id": 3013010010490,
+    "speaker": "夏葉",
+    "text": "果穂、ごめんなさい\r\n本当に大丈夫だった？",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010490"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010500,
+    "speaker": "果穂",
+    "text": "はい、全然平気でした！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301301001/3013010010500"
+  },
+  {
+    "id": 3013010010510,
+    "speaker": "果穂",
+    "text": "夏葉さん、優しくぷにってしてくれたので、\r\nマメ丸もいつもこんな感じなのかな？　って",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010510"
+  },
+  {
+    "id": 3013010010520,
+    "speaker": "果穂",
+    "text": "そう思いました！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010520"
+  },
+  {
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3013010010530,
+    "speaker": "夏葉",
+    "text": "うふふ、それはよかったわ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301301001/3013010010530"
+  },
+  {
+    "id": 3013010010540,
+    "speaker": "果穂",
+    "text": "でも……マメ丸とそっくりなあたし、\r\nマメ丸と、お父さんお母さんにも見せたかったです……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010540"
+  },
+  {
+    "id": 3013010010550,
+    "speaker": "夏葉",
+    "text": "あら、それじゃあやっぱり\r\n写真が撮れたらよかったわね……",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010550"
+  },
+  {
+    "id": 3013010010560,
+    "speaker": "果穂",
+    "text": "はい……！",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010560"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010570,
+    "speaker": "夏葉",
+    "text": "……だけど、あんなところ見たら\r\nご両親はよく思わないんじゃないかしら",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301301001/3013010010570"
+  },
+  {
+    "id": 3013010010580,
+    "speaker": "夏葉",
+    "text": "果穂のほっぺを引っ張って\r\n意地悪してるみたいに思うんじゃ……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010580"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010590,
+    "speaker": "果穂",
+    "text": "そんなことないです！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301301001/3013010010590"
+  },
+  {
+    "id": 3013010010600,
+    "speaker": "果穂",
+    "text": "夏葉さんはスッゴく優しくて、\r\nカッコいいお姉さんだって、いつもおうちでお話してます！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010600"
+  },
+  {
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3013010010610,
+    "speaker": "夏葉",
+    "text": "そうなの？　ふふ、ありがとう",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301301001/3013010010610"
+  },
+  {
+    "id": 3013010010620,
+    "speaker": "果穂",
+    "text": "それに、写真を見ればとっても仲良しだって\r\nすぐにわかります！",
+    "charAnim1": "think",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301301001/3013010010620"
+  },
+  {
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013010010630,
+    "speaker": "果穂",
+    "text": "写真をとる時は『仲良しの笑顔』で写りますから……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301301001/3013010010630"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

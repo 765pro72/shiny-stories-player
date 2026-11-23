@@ -1,0 +1,156 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おーい、美琴ー！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "美琴、聞こえてるかー？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1025001000910010,
+    "speaker": "美琴",
+    "text": "…………！\r\nごめん、音楽聴いてて",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "025",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0327",
+    "voice": "produce_communications/102500100091/1025001000910010"
+  },
+  {
+    "id": 1025001000910020,
+    "speaker": "美琴",
+    "text": "今気付いた、ごめんね\r\n何か用だった？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102500100091/1025001000910020"
+  },
+  {
+    "select": "おはよう！",
+    "nextLabel": "1025001000911"
+  },
+  {
+    "select": "大丈夫かな\r\nと思って",
+    "nextLabel": "1025001000912"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "呼んでみた\r\nだけだ",
+    "nextLabel": "1025001000913"
+  },
+  {
+    "label": "1025001000911",
+    "speaker": "プロデューサー",
+    "text": "って、言ったんだけど\r\n返事が無かったからさ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1025001000910030,
+    "speaker": "美琴",
+    "text": "そうだったの？　ごめんね\r\nおはよう、プロデューサー",
+    "charAnim1": "think1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102500100091/1025001000910030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "1025001000912",
+    "speaker": "プロデューサー",
+    "text": "聞こえてないみたいだから\r\n何か悩んで考え込んでるのかと……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1025001000910040,
+    "speaker": "美琴",
+    "text": "ううん、全然\r\nただ聞こえていなかっただけ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102500100091/1025001000910040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1025001000910050,
+    "label": "1025001000913",
+    "speaker": "美琴",
+    "text": "え……じゃあ\r\n特に用は無いってこと？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102500100091/1025001000910050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、すまん……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

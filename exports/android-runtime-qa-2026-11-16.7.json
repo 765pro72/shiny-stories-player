@@ -1,0 +1,74 @@
+{
+  "at": "2026-11-16T06:24:57.641Z",
+  "version": "2026-11-16.7",
+  "apk": {
+    "bytes": 137507871,
+    "sha256": "8474306687b413d8f4fc1b2fdf3930f51e3c9c5cd67b3c07cda7824870f7677c",
+    "versionCode": 2026111607
+  },
+  "device": {
+    "serial": "emulator-5554",
+    "android": "15 (API 35)",
+    "override": "wm size 1920x864, wm density 480",
+    "letterbox": "content 1536x864 centered, 192px bars each side",
+    "cssViewport": "512x288",
+    "appAbi": "arm64-v8a",
+    "hostAbi": "x86_64 (arm64 translation)"
+  },
+  "install": {
+    "result": "Success",
+    "serial": "emulator-5554"
+  },
+  "launch": {
+    "freshState": true,
+    "homeRendered": true,
+    "screenshot": "exports/android-2026-11-16.7-home-20x9.png"
+  },
+  "header": {
+    "brand": "44x36 pill",
+    "shortcuts": "three 36x36 buttons right of the brand, same baseline",
+    "nav": "36px tall, scrollWidth == clientWidth at 512, right margin 12px",
+    "tools": "vertical 34px column, right edge"
+  },
+  "caption": {
+    "x": 8,
+    "y": 210,
+    "w": 190,
+    "h": 70,
+    "font": 10.5
+  },
+  "assistant": {
+    "collapsed": "44px circular avatar ball",
+    "tap": "expands the chat panel",
+    "anchorAfterCollapse": "returns to the stored bottom-right anchor"
+  },
+  "probes": [
+    {
+      "viewport": "512x288",
+      "navEnd": 500,
+      "navScrollEqualsClient": true,
+      "overlaps": 0
+    },
+    {
+      "viewport": "560x315",
+      "navEnd": 548,
+      "overlaps": 0
+    },
+    {
+      "viewport": "640x360",
+      "navEnd": 628,
+      "overlaps": 0
+    },
+    {
+      "viewport": "700x394",
+      "navEnd": 688,
+      "overlaps": 0
+    },
+    {
+      "viewport": "800x450",
+      "navEnd": 788,
+      "overlaps": 0
+    }
+  ],
+  "ok": true
+}

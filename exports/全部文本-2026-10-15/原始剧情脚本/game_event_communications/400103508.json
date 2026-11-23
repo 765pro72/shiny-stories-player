@@ -1,0 +1,1991 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0000",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00491",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0075",
+    "se": "1007",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "speaker": "アナウンス",
+    "text": "──ご出発のお客様にご案内いたします",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "アナウンス",
+    "text": "機内へのご案内は……時頃を予定しております\r\n当便ご利用のお客様は搭乗口付近にて、今しばらく──",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "se": "0461",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0769",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 4001035080010,
+    "speaker": "めぐる",
+    "text": "──よしっ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080010"
+  },
+  {
+    "textFrame": "off",
+    "se": "0826",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00451",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "id": 4001035080020,
+    "speaker": "めぐる",
+    "text": "プロデューサーに連絡した！\r\n『現地で待ってるから気を付けておいで』だって！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030030040",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080020"
+  },
+  {
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001035080030,
+    "speaker": "真乃",
+    "text": "ありがとう、めぐるちゃん",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030010020",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080030"
+  },
+  {
+    "id": 4001035080040,
+    "speaker": "めぐる",
+    "text": "お弁当は買えたー？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080040"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080050,
+    "speaker": "灯織",
+    "text": "うん。３種類買ったから\r\n後で好きなもの選んで",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040020010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080050"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080060,
+    "speaker": "めぐる",
+    "text": "わ……！\r\nどんなのだろう、楽しみ！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080060"
+  },
+  {
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001035080070,
+    "speaker": "真乃",
+    "text": "観光ガイドブックも買ったんだ\r\n飛行機の中で一緒に見ようねっ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080070"
+  },
+  {
+    "id": 4001035080080,
+    "speaker": "めぐる",
+    "text": "そっか！　作戦会議もしなくちゃだ",
+    "charAnim1": "touch",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080080"
+  },
+  {
+    "id": 4001035080090,
+    "speaker": "めぐる",
+    "text": "フリーの時間ってどれくらいあるんだっけ……？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080090"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080100,
+    "speaker": "灯織",
+    "text": "確か、２日目は夕方からの撮影だから……\r\n昼過ぎまでは、自由にできるんじゃないかな",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080100"
+  },
+  {
+    "charLabel": "hiori",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001035080110,
+    "speaker": "めぐる",
+    "text": "オッケー！\r\n時間内で遊び尽くすぞー！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080110"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "meguru"
+  },
+  {
+    "id": 4001035080120,
+    "speaker": "灯織",
+    "text": "……それはいいんだけど\r\n仕事に遅れないために、余裕をもって戻るからね？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080120"
+  },
+  {
+    "id": 4001035080130,
+    "speaker": "めぐる",
+    "text": "も、もちろん、もちろん……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080130"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080140,
+    "speaker": "真乃",
+    "text": "ふふ……うん……っ\r\nお仕事も遊びも、いっぱい楽しもう……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080140"
+  },
+  {
+    "id": 4001035080150,
+    "speaker": "真乃",
+    "text": "私も……\r\n今日はお母さんにデジカメ借りてきたんだ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080150"
+  },
+  {
+    "charLabel": "mano",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001035080160,
+    "speaker": "灯織",
+    "text": "デジカメ？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080160"
+  },
+  {
+    "id": 4001035080170,
+    "speaker": "真乃",
+    "text": "うん……っ",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080170"
+  },
+  {
+    "id": 4001035080180,
+    "speaker": "真乃",
+    "text": "今度のロケの時、タイムカプセルを準備する様子を\r\n写真に撮って、一緒に入れたいなって……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080180"
+  },
+  {
+    "id": 4001035080190,
+    "speaker": "真乃",
+    "text": "だから、ちょっとずつ撮る練習をしようと思ったの",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080190"
+  },
+  {
+    "id": 4001035080200,
+    "speaker": "灯織",
+    "text": "なるほど……\r\nいいアイディアだね、それ",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080200"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001035080210,
+    "speaker": "灯織",
+    "text": "──そういえば、聞いた？\r\nタイムカプセルは天文台の人が管理してくれるんだって",
+    "charAnim1": "sad3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080210"
+  },
+  {
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001035080220,
+    "speaker": "真乃",
+    "text": "そうなんだ、天文台の人が……",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080220"
+  },
+  {
+    "id": 4001035080230,
+    "speaker": "灯織",
+    "text": "うん\r\nもしよければぜひって、申し出てくれたらしいよ",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080230"
+  },
+  {
+    "id": 4001035080240,
+    "speaker": "灯織",
+    "text": "星の形のタイムカプセルを用意して、\r\nみんなの気持ちを詰めるんだって",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080240"
+  },
+  {
+    "id": 4001035080250,
+    "speaker": "真乃",
+    "text": "お星様の中に……",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080250"
+  },
+  {
+    "id": 4001035080260,
+    "speaker": "真乃",
+    "text": "わぁ……",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080260"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080270,
+    "speaker": "めぐる",
+    "text": "じゃあじゃあ\r\n写真の練習いっぱいしなくちゃだ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080270"
+  },
+  {
+    "id": 4001035080280,
+    "speaker": "めぐる",
+    "text": "わたし、あれやりたい！\r\n顔をはめて写真撮るやつ！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080280"
+  },
+  {
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001035080290,
+    "speaker": "灯織",
+    "text": "え……？",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080290"
+  },
+  {
+    "id": 4001035080300,
+    "speaker": "めぐる",
+    "text": "ほら、観光地にあるあれ！\r\n顔のところだけくりぬいてある看板みたいなの！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080300"
+  },
+  {
+    "id": 4001035080310,
+    "speaker": "灯織",
+    "text": "……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080310"
+  },
+  {
+    "id": 4001035080320,
+    "speaker": "灯織",
+    "text": "よかったね、真乃\r\nめぐるでいっぱい練習できそうだよ",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080320"
+  },
+  {
+    "id": 4001035080330,
+    "speaker": "めぐる",
+    "text": "えー！　灯織も一緒に写ろうよー！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080330"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080340,
+    "speaker": "真乃",
+    "text": "ふふっ……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080340"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0247b",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "1007",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "speaker": "アナウンス",
+    "text": "──ご搭乗のお客様方にご案内です",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "アナウンス",
+    "text": "ただいまから搭乗手続きを承ります\r\nお客様は出発カウンターまで──",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00490",
+    "bgEffect": "fade",
+    "bgm": "0000",
+    "se": "0247b",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0082",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 4001035080350,
+    "speaker": "灯織",
+    "text": "そういえば、今さらなんだけど……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080350"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 4001035080360,
+    "speaker": "灯織",
+    "text": "私の書いた願いごと、話しておくね",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080360"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080361,
+    "speaker": "真乃＆めぐる",
+    "text": "……！",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080361"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080370,
+    "speaker": "灯織",
+    "text": "ごめん\r\n真乃もめぐるも、あえて聞かないでいてくれたんでしょ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080370"
+  },
+  {
+    "id": 4001035080380,
+    "speaker": "灯織",
+    "text": "でも、話を聞いてもらったのに\r\n中途半端なままは嫌だから……ちゃんと話させて",
+    "charAnim1": "smile1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080380"
+  },
+  {
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001035080390,
+    "speaker": "めぐる",
+    "text": "うん",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080390"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0247b",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 4001035080400,
+    "speaker": "灯織",
+    "text": "私は『地域の小学校でライブしたい』って書いたんだ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080400"
+  },
+  {
+    "id": 4001035080410,
+    "speaker": "灯織",
+    "text": "地域の子どもたちに喜んでもらいたいからだったけど\r\nちょっと個人的な気持ちも、あって……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080410"
+  },
+  {
+    "id": 4001035080420,
+    "speaker": "灯織",
+    "text": "それって、『デザートプレートを食べたい』と\r\n一緒なのかもしれないって",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080420"
+  },
+  {
+    "id": 4001035080430,
+    "speaker": "灯織",
+    "text": "……私のエゴに、\r\nふたりを巻き込んだ願いごとかもしれないって",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080430"
+  },
+  {
+    "textFrame": "off",
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4001035080440,
+    "speaker": "灯織",
+    "text": "……そう思うくらい、迫真の演技だったから",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080440"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080450,
+    "speaker": "めぐる",
+    "text": "あ、あ～……\r\n全然そういうつもりじゃなくて……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080450"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080460,
+    "speaker": "灯織",
+    "text": "わかってるよ",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "fade_out",
+    "voice": "game_event_communications/400103508/4001035080460"
+  },
+  {
+    "id": 4001035080470,
+    "speaker": "灯織",
+    "text": "それであの時は悩んでたけど、今はもう大丈夫",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080470"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0000"
+  },
+  {
+    "id": 4001035080480,
+    "speaker": "灯織",
+    "text": "エゴやわがままが悪いわけじゃないんだよね\r\n真乃が言ってくれた通り──",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "062b",
+    "voice": "game_event_communications/400103508/4001035080480"
+  },
+  {
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4001035080490,
+    "speaker": "灯織",
+    "text": "……大事なのはどう伝えるか、なんだ",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080490"
+  },
+  {
+    "id": 4001035080500,
+    "speaker": "真乃",
+    "text": "灯織ちゃん……",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080500"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080510,
+    "speaker": "めぐる",
+    "text": "えへへ……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080510"
+  },
+  {
+    "id": 4001035080520,
+    "speaker": "めぐる",
+    "text": "一緒に、わたしの願いごとも暴露しちゃっていい？",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080520"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080530,
+    "speaker": "灯織",
+    "text": "いいの？　聞きたい",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080530"
+  },
+  {
+    "id": 4001035080540,
+    "speaker": "真乃",
+    "text": "うん、教えて……っ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080540"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080550,
+    "speaker": "めぐる",
+    "text": "えへへ……！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080550"
+  },
+  {
+    "id": 4001035080560,
+    "speaker": "めぐる",
+    "text": "おすすめのお菓子を持ち寄って\r\n『みんなでお菓子パーティーを開きたい！』",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080560"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080570,
+    "speaker": "真乃",
+    "text": "わあ……っ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080570"
+  },
+  {
+    "id": 4001035080580,
+    "speaker": "灯織",
+    "text": "ふ……ふふっ",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080580"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001035080590,
+    "speaker": "灯織",
+    "text": "ごめん、違うの\r\nすごくいい願いごとだと思うんだけど",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400103508/4001035080590"
+  },
+  {
+    "id": 4001035080600,
+    "speaker": "灯織",
+    "text": "デザートプレートの話の後だったから\r\nめぐるがくいしんぼうみたいだなって思っちゃって……",
+    "charAnim1": "sad3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080600"
+  },
+  {
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001035080610,
+    "speaker": "めぐる",
+    "text": "あー！　ほんとだ！\r\nずっと食べ物の話してるもんね！　くいしんぼうだ……！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080610"
+  },
+  {
+    "id": 4001035080611,
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "voice": "game_event_communications/400103508/4001035080611"
+  },
+  {
+    "id": 4001035080611,
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400103508/4001035080611"
+  },
+  {
+    "id": 4001035080611,
+    "speaker": "一同",
+    "text": "ふふっ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "waitType": "time",
+    "waitTime": 2500,
+    "voice": "game_event_communications/400103508/4001035080611"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0247b",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 4001035080620,
+    "speaker": "真乃",
+    "text": "あ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080620"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001035080630,
+    "speaker": "真乃",
+    "text": "灯織ちゃん、めぐるちゃん\r\n見て──",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080630"
+  },
+  {
+    "id": 4001035080640,
+    "speaker": "めぐる",
+    "text": "え？　わぁ──！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080640"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "stillType": "support_idols",
+    "stillId": "2040030070"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 4001035080650,
+    "speaker": "めぐる",
+    "text": "すごい、キラキラ光ってる……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080650"
+  },
+  {
+    "id": 4001035080660,
+    "speaker": "灯織",
+    "text": "……\r\n綺麗……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080660"
+  },
+  {
+    "id": 4001035080670,
+    "speaker": "めぐる",
+    "text": "ね！　なんだか星空みたい……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080670"
+  },
+  {
+    "id": 4001035080680,
+    "speaker": "真乃",
+    "text": "……っ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080680"
+  },
+  {
+    "id": 4001035080690,
+    "speaker": "灯織",
+    "text": "確かに、誘導灯のひとつひとつが星みたい……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080690"
+  },
+  {
+    "id": 4001035080700,
+    "speaker": "真乃",
+    "text": "うん……本当だね\r\nキラキラのお星様……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080700"
+  },
+  {
+    "id": 4001035080710,
+    "speaker": "めぐる",
+    "text": "えへへ……それじゃあわたしたち、\r\nこれから星に導かれて飛ぶんだね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080710"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "stillCtrl": "off"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00490",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "se": "1007",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "speaker": "アナウンス",
+    "text": "──重ねましてご案内です",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "アナウンス",
+    "text": "まもなく致しますと搭乗手続きを締め切らせて頂きます\r\nまだ搭乗手続きをお済ませでないお客様は──",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 4001035080720,
+    "speaker": "灯織",
+    "text": "間に合わなくなっちゃうね\r\nまだ見ていたいけど……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080720"
+  },
+  {
+    "id": 4001035080730,
+    "speaker": "めぐる",
+    "text": "そうだね、急ごう！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080730"
+  },
+  {
+    "id": 4001035080740,
+    "speaker": "真乃",
+    "text": "うん……っ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080740"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00342",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 500
+  },
+  {
+    "id": 4001035080750,
+    "speaker": "真乃",
+    "text": "行こうっ────",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400103508/4001035080750"
+  },
+  {
+    "textFrame": "off",
+    "se": "0247c",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0000"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

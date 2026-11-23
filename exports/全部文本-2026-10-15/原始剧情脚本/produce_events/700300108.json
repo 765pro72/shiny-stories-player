@@ -1,0 +1,252 @@
+[
+  {
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですか……参加はできませんでしたか",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001080010,
+    "speaker": "はづき",
+    "text": "……不参加って連絡が来たとき、\r\n聞き間違いかと思いました",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700300108/7901001080010"
+  },
+  {
+    "id": 7901001080020,
+    "speaker": "はづき",
+    "text": "私には、どうして彼女が参加できないのか\r\nちっともわかりません……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700300108/7901001080020"
+  },
+  {
+    "id": 7902001080010,
+    "speaker": "社長",
+    "text": "その気持ちはわかるが……これが結果なんだ\r\n受け入れるより他にあるまい",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700300108/7902001080010"
+  },
+  {
+    "id": 7901001080030,
+    "speaker": "はづき",
+    "text": "……私、きっとあの子のファンだったんですね\r\nだからこの結果が、悔しくてたまらないんです……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700300108/7901001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺もです。彼女のプロデューサーである俺自身が、\r\n誰よりも彼女のファンでしたから",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……社長\r\n俺、彼女に会いに行ってきます",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001080020,
+    "speaker": "社長",
+    "text": "ああ、そうするといい",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700300108/7902001080020"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "sad2",
+    "charLabel": "meguru",
+    "charType": "characters",
+    "charId": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……『W.I.N.G.』に参加できないことが決まった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7003001080010,
+    "speaker": "めぐる",
+    "text": "プロデューサー、ごめんっ！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700300108/7003001080010"
+  },
+  {
+    "id": 7003001080020,
+    "speaker": "めぐる",
+    "text": "せっかく、プロデューサーが頑張って\r\nわたしをここまで連れてきてくれたのに……",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700300108/7003001080020"
+  },
+  {
+    "id": 7003001080030,
+    "speaker": "めぐる",
+    "text": "わたしがわがままを言ったから……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700300108/7003001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "わがままなんかじゃないぞ\r\n友達を大事にする、めぐるの気持ちは間違ってないよ",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7003001080040,
+    "speaker": "めぐる",
+    "text": "プロデューサー……",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700300108/7003001080040"
+  },
+  {
+    "id": 7003001080050,
+    "speaker": "めぐる",
+    "text": "……プロデューサーが\r\nわたしのプロデューサーで、本当に良かった！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700300108/7003001080050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺もめぐると一緒に頑張れるのはうれしいよ\r\nこれからも、頑張っていこうな！",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7003001080060,
+    "speaker": "めぐる",
+    "text": "うんっ！\r\nこれからもプロデュース、よろしくね！",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700300108/7003001080060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（今度こそ必ず……\r\nめぐるを、最高の舞台に連れて行くぞ！）",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end"
+  }
+]

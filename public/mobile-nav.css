@@ -1,0 +1,513 @@
+/* ═══════════════════════════════════════════════════════════════════
+   ShinyStories Mobile Floating Liquid Glass Navigation Bar
+   Floating island pill bar with liquid glass styling, thumb-friendly
+   ergonomics, custom order preferences, and safe-area support.
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* Never show mobile bottom navigation during scenario playback */
+body.player-page .mobile-bottom-nav,
+body.player-page .mobile-floating-bar,
+body.player-page .mobile-more-menu,
+body.player-page .mobile-more-backdrop,
+body:has(#ShinyColors) .mobile-bottom-nav,
+body:has(#ShinyColors) .mobile-floating-bar {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* ── 1. Floating Liquid Glass Bottom Navigation Bar ─────────── */
+html[data-platform=android] .mobile-bottom-nav,
+.mobile-bottom-nav.is-floating {
+  position: fixed;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 12px);
+  left: 14px;
+  right: 14px;
+  max-width: 480px;
+  margin-inline: auto;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  padding: 4px 6px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.84), rgba(255, 248, 252, 0.70));
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(28px) saturate(170%);
+  -webkit-backdrop-filter: blur(28px) saturate(170%);
+  box-shadow: 
+    0 12px 36px rgba(180, 110, 140, 0.16),
+    0 4px 12px rgba(45, 36, 56, 0.05),
+    inset 0 1px 1.5px rgba(255, 255, 255, 0.95),
+    inset 0 -1px 1px rgba(113, 138, 155, 0.12);
+  touch-action: manipulation;
+  transition: transform 300ms cubic-bezier(.2, 1.4, .4, 1), opacity 250ms ease;
+}
+
+/* ── 1.5 Sliding Active Indicator Pill (Rhine Lab tactile motion style) ── */
+html[data-platform=android] .mobile-bottom-nav .nav-indicator,
+.mobile-bottom-nav.is-floating .nav-indicator {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 0;
+  width: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(255, 242, 248, 0.92));
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 
+    0 4px 14px rgba(208, 104, 136, 0.18),
+    inset 0 1px 1px #fff;
+  pointer-events: none;
+  z-index: 1;
+  transition: transform 280ms cubic-bezier(0.2, 1.25, 0.4, 1), width 240ms ease;
+  will-change: transform, width;
+}
+
+/* ── 2. Tab Items ──────────────────────────────────────────── */
+html[data-platform=android] .mobile-bottom-nav .nav-tab,
+.mobile-bottom-nav.is-floating .nav-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  height: 50px;
+  min-height: 48px;
+  padding: 4px 6px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #7d7282;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 550;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  position: relative;
+  z-index: 2;
+  transition: color 200ms ease;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+html[data-platform=android] .mobile-bottom-nav .nav-tab:active,
+.mobile-bottom-nav.is-floating .nav-tab:active {
+  transform: scale(0.92);
+}
+
+/* 20:9 & 21:9 Narrow Portrait & Ultra-Wide Landscape Nav Refinement */
+@media (max-aspect-ratio: 10/19), (max-width: 390px) {
+  html[data-platform=android] .mobile-bottom-nav,
+  .mobile-bottom-nav.is-floating {
+    left: 10px;
+    right: 10px;
+    height: 58px;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 10px);
+  }
+  html[data-platform=android] .mobile-bottom-nav .nav-tab,
+  .mobile-bottom-nav.is-floating .nav-tab {
+    padding: 4px 2px;
+    font-size: 9.5px;
+  }
+}
+
+@media (min-aspect-ratio: 19/10) and (max-height: 540px) {
+  html[data-platform=android] .mobile-bottom-nav,
+  .mobile-bottom-nav.is-floating {
+    height: 48px;
+    max-width: min(420px, 58vw);
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 6px);
+  }
+  html[data-platform=android] .mobile-bottom-nav .nav-tab,
+  .mobile-bottom-nav.is-floating .nav-tab {
+    height: 40px;
+    min-height: 40px;
+    flex-direction: row;
+    gap: 5px;
+    font-size: 11px;
+  }
+}
+
+@keyframes navTabSpringBounce {
+  0% { transform: scale(0.92) translateY(0); }
+  40% { transform: scale(1.15) translateY(-3px); }
+  70% { transform: scale(0.97) translateY(1px); }
+  100% { transform: scale(1) translateY(0); }
+}
+
+/* Tab icon */
+html[data-platform=android] .mobile-bottom-nav .nav-tab svg,
+.mobile-bottom-nav.is-floating .nav-tab svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  transition: stroke 200ms ease, transform 250ms cubic-bezier(.2, 1.4, .4, 1);
+  flex-shrink: 0;
+}
+
+/* Active tab: highlighted with text color and subtle icon lift */
+html[data-platform=android] .mobile-bottom-nav .nav-tab.is-active,
+.mobile-bottom-nav.is-floating .nav-tab.is-active {
+  color: #c04b78 !important;
+  font-weight: 600 !important;
+}
+
+html[data-platform=android] .mobile-bottom-nav .nav-tab.is-active svg,
+.mobile-bottom-nav.is-floating .nav-tab.is-active svg {
+  transform: scale(1.14) translateY(-1px);
+  stroke: #c04b78;
+  stroke-width: 2.1;
+}
+
+/* Tab label */
+html[data-platform=android] .mobile-bottom-nav .nav-tab span,
+.mobile-bottom-nav.is-floating .nav-tab span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 58px;
+}
+
+/* ── 3. More Menu: Liquid Glass Card ───────────────────────── */
+html[data-platform=android] .mobile-more-menu,
+.mobile-more-menu.is-floating {
+  position: fixed;
+  bottom: calc(60px + env(safe-area-inset-bottom, 0px) + 22px);
+  right: 18px;
+  z-index: 65;
+  min-width: 168px;
+  padding: 8px;
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.90), rgba(255, 248, 252, 0.82));
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(32px) saturate(180%);
+  -webkit-backdrop-filter: blur(32px) saturate(180%);
+  box-shadow: 
+    0 16px 44px rgba(180, 110, 140, 0.20),
+    0 4px 16px rgba(45, 36, 56, 0.08),
+    inset 0 1px 1px rgba(255, 255, 255, 0.95);
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+  transform-origin: bottom right;
+}
+
+html[data-platform=android] .mobile-more-menu.is-open,
+.mobile-more-menu.is-floating.is-open {
+  display: flex;
+  animation: more-menu-in 260ms cubic-bezier(.2, 1.4, .4, 1) both;
+}
+
+@keyframes more-menu-in {
+  from {
+    opacity: 0;
+    transform: scale(0.88) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+html[data-platform=android] .mobile-more-menu a,
+.mobile-more-menu.is-floating a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  color: #3b3240;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 550;
+  border-radius: 14px;
+  transition: background 150ms ease, transform 120ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html[data-platform=android] .mobile-more-menu a:active,
+.mobile-more-menu.is-floating a:active {
+  background: rgba(208, 104, 136, 0.12);
+  transform: scale(0.97);
+}
+
+html[data-platform=android] .mobile-more-menu a svg,
+.mobile-more-menu.is-floating a svg {
+  width: 18px;
+  height: 18px;
+  stroke: #7d7282;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  flex-shrink: 0;
+}
+
+html[data-platform=android] .mobile-more-menu a.is-active,
+.mobile-more-menu.is-floating a.is-active {
+  color: #c04b78;
+  font-weight: 600;
+  background: rgba(208, 104, 136, 0.08);
+}
+
+html[data-platform=android] .mobile-more-menu a.is-active svg,
+.mobile-more-menu.is-floating a.is-active svg {
+  stroke: #c04b78;
+}
+
+/* ── 4. Backdrop ───────────────────────────────────────────── */
+html[data-platform=android] .mobile-more-backdrop,
+.mobile-more-backdrop.is-floating {
+  position: fixed;
+  inset: 0;
+  z-index: 64;
+  background: rgba(45, 36, 56, 0.18);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html[data-platform=android] .mobile-more-backdrop.is-open,
+.mobile-more-backdrop.is-floating.is-open {
+  display: block;
+}
+
+/* ── 5. Page Layout Ergonomics ─────────────────────────────── */
+/* Ensure content stays well above the floating bar */
+html[data-platform=android] body:not(.page-home) {
+  padding-bottom: calc(60px + env(safe-area-inset-bottom, 0px) + 24px) !important;
+}
+
+html[data-platform=android] .page-home .caption {
+  bottom: calc(60px + env(safe-area-inset-bottom, 0px) + 20px) !important;
+}
+
+/* Hide navigation during modal, dialog and clean mode */
+html[data-platform=android] body:has(dialog[open]) .mobile-bottom-nav,
+html[data-platform=android] body:has(dialog[open]) .mobile-more-menu,
+html[data-platform=android] body:has(dialog[open]) .mobile-more-backdrop,
+html[data-platform=android] .page-home.clean ~ .mobile-bottom-nav,
+html[data-platform=android] body.clean .mobile-bottom-nav {
+  display: none !important;
+}
+
+/* ── 6. Landscape Mode ─────────────────────────────────────── */
+@media (max-height: 540px) and (max-width: 1000px) {
+  html[data-platform=android] .mobile-bottom-nav,
+  .mobile-bottom-nav.is-floating {
+    height: 48px;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 8px);
+    max-width: 440px;
+    padding: 2px 4px;
+  }
+
+  html[data-platform=android] .mobile-bottom-nav .nav-tab,
+  .mobile-bottom-nav.is-floating .nav-tab {
+    height: 42px;
+    min-height: 40px;
+    padding: 2px 4px;
+  }
+
+  html[data-platform=android] .mobile-bottom-nav .nav-tab svg,
+  .mobile-bottom-nav.is-floating .nav-tab svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  html[data-platform=android] .mobile-bottom-nav .nav-tab span,
+  .mobile-bottom-nav.is-floating .nav-tab span {
+    font-size: 9px;
+  }
+
+  html[data-platform=android]:not(.in-shell) body:not(.page-home) {
+    padding-bottom: calc(48px + env(safe-area-inset-bottom, 0px) + 16px) !important;
+  }
+
+  html[data-platform=android]:not(.in-shell) .page-home .caption {
+    bottom: calc(48px + env(safe-area-inset-bottom, 0px) + 14px) !important;
+  }
+}
+
+/* ── 7. Settings UI: Mobile Bottom Bar Customization Card ──── */
+.mobile-nav-settings-card {
+  margin: 18px 0;
+  padding: 16px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.92), rgba(255,248,252,0.80));
+  border: 1px solid rgba(255,255,255,0.88);
+  box-shadow: 0 4px 18px rgba(180,110,140,0.08);
+}
+
+.mobile-nav-settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.mobile-nav-settings-header h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3b3240;
+}
+
+.mobile-nav-settings-badge {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(208,104,136,0.12);
+  color: #c04b78;
+  font-weight: 550;
+}
+
+.mobile-nav-settings-hint {
+  font-size: 12px;
+  color: #8c8098;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+.mobile-nav-order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.mobile-nav-order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid rgba(220,210,225,0.5);
+  transition: all 180ms ease;
+}
+
+.mobile-nav-order-item.is-priority {
+  border-color: rgba(208,104,136,0.35);
+  background: linear-gradient(135deg, #ffffff, #fffbfd);
+}
+
+.mobile-nav-order-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-nav-order-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7d7282;
+}
+
+.mobile-nav-order-item.is-priority .mobile-nav-order-icon {
+  color: #c04b78;
+}
+
+.mobile-nav-order-name {
+  font-size: 13px;
+  font-weight: 550;
+  color: #3b3240;
+}
+
+.mobile-nav-order-tag {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.mobile-nav-order-item.is-priority .mobile-nav-order-tag {
+  background: #fbf0f4;
+  color: #c04b78;
+}
+
+.mobile-nav-order-item:not(.is-priority) .mobile-nav-order-tag {
+  background: #f0edf2;
+  color: #8c8098;
+}
+
+.mobile-nav-order-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mobile-nav-order-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #e2d9df;
+  background: #fff;
+  color: #55485c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 120ms ease;
+}
+
+.mobile-nav-order-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.mobile-nav-order-btn:not(:disabled):active {
+  background: #f5edf2;
+  transform: scale(0.92);
+}
+
+.mobile-nav-reset-btn {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #d9d2d8;
+  background: #fff;
+  color: #65586d;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+/* ── 8. Soft Dissolve Cross-Fade & In-Shell Suppression ────────── */
+@keyframes mobileFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Inside unified shell.html, NEVER show legacy mobile header/dock — shell.html owns all navigation */
+html.in-shell .site-header,
+html.in-shell .mobile-bottom-nav,
+html.in-shell .mobile-more-menu,
+html.in-shell .mobile-more-backdrop {
+  display: none !important;
+}
+
+html[data-theme="dark"] .mobile-nav-settings-card {
+  background: rgba(24, 22, 31, 0.92);
+  border-color: rgba(230, 194, 122, 0.28);
+  color: #f5f1e8;
+}
+html[data-theme="dark"] .mobile-nav-settings-card h3 {
+  color: #f5e6c4;
+}
+html[data-theme="dark"] .mobile-nav-reset-btn {
+  background: rgba(34, 31, 42, 0.92);
+  border-color: rgba(230, 194, 122, 0.36);
+  color: #f5e6c4;
+}

@@ -1,0 +1,175 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "id": 1028001000510010,
+    "speaker": "はるき",
+    "text": "プロデューサーさん\r\nわたしって……どれっぽいでしょう～",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "028",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102800100051/1028001000510010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どれっぽいって？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1028001000510020,
+    "speaker": "はるき",
+    "text": "お姉ちゃんっぽいか、妹っぽいか、\r\nひとりっ子っぽいか……！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100051/1028001000510020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほど、それで言うと……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "お姉ちゃんかな",
+    "nextLabel": "1028001000511"
+  },
+  {
+    "select": "ひとりっ子かな",
+    "nextLabel": "1028001000512"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "妹っぽいな",
+    "nextLabel": "1028001000513"
+  },
+  {
+    "id": 1028001000510030,
+    "label": "1028001000511",
+    "speaker": "はるき",
+    "text": "えっ……本当ですか？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100051/1028001000510030"
+  },
+  {
+    "id": 1028001000510040,
+    "speaker": "はるき",
+    "text": "しっかりしてそうってことですかねぇ\r\nえへへ……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100051/1028001000510040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1028001000510050,
+    "label": "1028001000512",
+    "speaker": "はるき",
+    "text": "わぁ……そうですか？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100051/1028001000510050"
+  },
+  {
+    "id": 1028001000510060,
+    "speaker": "はるき",
+    "text": "ひとりっ子ってどんな感じなんでしょうね～",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100051/1028001000510060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1028001000510070,
+    "label": "1028001000513",
+    "speaker": "はるき",
+    "text": "やっぱりそうですかぁ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100051/1028001000510070"
+  },
+  {
+    "id": 1028001000510080,
+    "speaker": "はるき",
+    "text": "もっとハキハキしないとだめですかねぇ……",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100051/1028001000510080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

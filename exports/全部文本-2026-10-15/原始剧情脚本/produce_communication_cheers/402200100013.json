@@ -1,0 +1,138 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "022",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim2": "face_close2",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4022001000130010,
+    "speaker": "小糸",
+    "text": "ま、周りの子たち……\r\nみ、みんなすごそうですね……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402200100013/4022001000130010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（周りに圧倒されてしまっているな……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "練習量なら小糸が一番だ",
+    "nextLabel": "4022001000131"
+  },
+  {
+    "select": "きっとそう見えるだけだ",
+    "nextLabel": "4022001000132"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "小糸が一番すごいだろ",
+    "nextLabel": "4022001000133"
+  },
+  {
+    "id": 4022001000130020,
+    "label": "4022001000131",
+    "speaker": "小糸",
+    "text": "……そ、そうですよね……！\r\nわたしだって、上手にできるはず……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402200100013/4022001000130020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、少し自信を持てたみたいだ！）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4022001000130030,
+    "label": "4022001000132",
+    "speaker": "小糸",
+    "text": "そ、そうですよね……！？\r\n周りの子から見たらわたしも上手そうに見えるはず……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402200100013/4022001000130030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（なんとか持ち直したようだ……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4022001000130040,
+    "label": "4022001000133",
+    "speaker": "小糸",
+    "text": "え……あ……どうでしょう……\r\nそんなこと、ないと思いますけど……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402200100013/4022001000130040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（しまった……余計落ち込ませてしまった……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

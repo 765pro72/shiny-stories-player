@@ -1,0 +1,254 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00023",
+    "bgm": "008",
+    "effectLabel": "fade_in"
+  },
+  {
+    "id": 6902001070010,
+    "speaker": "社長",
+    "text": "お前、担当アイドルのことをどう思っている？",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601300107/6902001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……たしかに負けてしまいましたけど、\r\n彼女こそが最高のアイドルだと思っています",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6902001070020,
+    "speaker": "社長",
+    "text": "……！　そうか……",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601300107/6902001070020"
+  },
+  {
+    "id": 6901001070010,
+    "speaker": "はづき",
+    "text": "ふふ\r\n社長が聞きたかった言葉、そのまま出てきましたね",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/601300107/6901001070010"
+  },
+  {
+    "id": 6901001070020,
+    "speaker": "はづき",
+    "text": "もし違う言葉が出てきたら、\r\n説教してやるって言って聞かなかったのに",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/601300107/6901001070020"
+  },
+  {
+    "id": 6902001070030,
+    "speaker": "社長",
+    "text": "……うるさいぞ。とにかく、\r\nそういうことなら私から言うことはない",
+    "charAnim1": "wait2",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601300107/6902001070030"
+  },
+  {
+    "id": 6902001070040,
+    "speaker": "社長",
+    "text": "さあ、早くその最高のアイドルに\r\n会いに行ってこい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601300107/6902001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "bg": "00002",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "natsuha",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……どうだ、夏葉\r\n少しは心の整理ができたか？",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6013001070010,
+    "speaker": "夏葉",
+    "text": "……ありがとう、プロデューサー\r\nやっぱり、さっきの強がりは見抜かれていたのね",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601300107/6013001070010"
+  },
+  {
+    "id": 6013001070020,
+    "speaker": "夏葉",
+    "text": "……『W.I.N.G.』が終わった後、私\r\nとても大切なことに気づいたの",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601300107/6013001070020"
+  },
+  {
+    "id": 6013001070030,
+    "speaker": "夏葉",
+    "text": "ステージが終わった後にね、ファンの人たちが\r\nいっぱい声をかけてきてくれて……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601300107/6013001070030"
+  },
+  {
+    "id": 6013001070040,
+    "speaker": "夏葉",
+    "text": "私はこんなにも\r\n支えられていたんだって教えられたわ",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601300107/6013001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ……！",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6013001070050,
+    "speaker": "夏葉",
+    "text": "……ファンの存在って偉大よね\r\n負けた私にも、声援を送ってくれる",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601300107/6013001070050"
+  },
+  {
+    "id": 6013001070060,
+    "speaker": "夏葉",
+    "text": "アイドルって人に元気を与える仕事だと思ってたけど、\r\n逆に勇気をもらうことのほうが多いのかもしれないわ",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601300107/6013001070060"
+  },
+  {
+    "id": 6013001070070,
+    "speaker": "夏葉",
+    "text": "だから大丈夫よ、プロデューサー\r\n支えてくれるファンがいる限り、私は絶対に諦めないから",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601300107/6013001070070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、そうだな！　ファンのためにも\r\nもっともっと魅力的なアイドルを目指していこう！",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6013001070080,
+    "speaker": "夏葉",
+    "text": "もちろん、私の一番のファンはプロデューサーでしょう？\r\nこれからもいろいろあると思うけど、よろしく頼むわね",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601300107/6013001070080"
+  },
+  {
+    "label": "end"
+  }
+]

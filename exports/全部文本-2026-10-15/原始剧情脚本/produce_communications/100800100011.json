@@ -1,0 +1,161 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "008",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう、霧子\r\n空を気にしているようだけど、どうかしたのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1008001000110010,
+    "speaker": "霧子",
+    "text": "びょ、病院のシーツ……\r\nたくさん、干してきたんですけど……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100011/1008001000110010"
+  },
+  {
+    "id": 1008001000110020,
+    "speaker": "霧子",
+    "text": "お天気が……心配で……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100011/1008001000110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "(天気、気になるみたいだな……)",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "今日の予報はずっと\r\n晴れるって聞いたよ",
+    "nextLabel": "1008001000111"
+  },
+  {
+    "select": "いつも病院の備品は\r\n霧子が洗濯してるの？",
+    "nextLabel": "1008001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "雨さえ降らないなら\r\nちゃんと乾くさ",
+    "nextLabel": "1008001000113"
+  },
+  {
+    "id": 1008001000110030,
+    "label": "1008001000111",
+    "speaker": "霧子",
+    "text": "ほ、ほんとですか……？\r\n晴れてて……よかったです……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100011/1008001000110030"
+  },
+  {
+    "id": 1008001000110040,
+    "speaker": "霧子",
+    "text": "それなら……\r\nシーツも、お日さまのにおいですね……♪",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100011/1008001000110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001000110050,
+    "label": "1008001000112",
+    "speaker": "霧子",
+    "text": "え、と……洗濯するのは……\r\nお、お手伝いできるときだけ……ですけど……",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100011/1008001000110050"
+  },
+  {
+    "id": 1008001000110060,
+    "speaker": "霧子",
+    "text": "屋上に干すと……みんな風になびいて……\r\nキラキラ白くて……とっても素敵なんです……！",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100011/1008001000110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001000110070,
+    "label": "1008001000113",
+    "speaker": "霧子",
+    "text": "は、はい……\r\nほんとに……降らないといいな……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100011/1008001000110070"
+  },
+  {
+    "id": 1008001000110080,
+    "speaker": "霧子",
+    "text": "ちゃんと……滅菌したシーツで\r\n眠ってもらいたくって……",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100011/1008001000110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

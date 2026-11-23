@@ -1,0 +1,241 @@
+[
+  {
+    "speaker": "はづき",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00023",
+    "bgm": "017",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 7902001060010,
+    "speaker": "社長",
+    "text": "やはりここまで来ると、\r\n乗り越えるべき壁も高かったな……",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701500106/7902001060010"
+  },
+  {
+    "id": 7901001060010,
+    "speaker": "はづき",
+    "text": "結果は残念でしたけど……\r\nおふたりは立派にやってましたよ！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701500106/7901001060010"
+  },
+  {
+    "id": 7901001060020,
+    "speaker": "はづき",
+    "text": "ここまで来れただけでも、\r\n胸を張って誇れることだと私は思います",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701500106/7901001060020"
+  },
+  {
+    "id": 7902001060020,
+    "speaker": "社長",
+    "text": "ああ、良い活躍だった\r\nそれはたしかだ",
+    "charAnim1": "wait1",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701500106/7902001060020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……俺もそう思います\r\n彼女はよくやってくれました",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001060030,
+    "speaker": "はづき",
+    "text": "その言葉を、彼女に直接\r\n言ってあげましょう？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701500106/7901001060030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "off",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "bg": "00002",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charType": "characters",
+    "charId": "015",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "三次審査の結果が出たんだが……\r\n落選だった……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7015001060010,
+    "speaker": "甜花",
+    "text": "プロデューサーさん、ごめんなさい……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701500106/7015001060010"
+  },
+  {
+    "id": 7015001060020,
+    "speaker": "甜花",
+    "text": "甜花……頑張ってみたけど……結果、出せなかった……\r\nプロデューサーさんも応援……してくれたのに……",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701500106/7015001060020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……なあ甜花。確かに今回の結果は残念だったけど、\r\n甜花はしっかり前に進んでる。俺はそう思ってるよ",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7015001060030,
+    "speaker": "甜花",
+    "text": "本当……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701500106/7015001060030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。自分だと気づきにくいだろうけどな\r\nだからもう一度、前を向いてみないか？",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7015001060040,
+    "speaker": "甜花",
+    "text": "……わかった……プロデューサーさんと一緒に……\r\n前に進んでみる……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701500106/7015001060040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "よし！\r\nまた一緒に、頑張っていこうな",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7015001060050,
+    "speaker": "甜花",
+    "text": "うん……\r\nにへへ……ちょっと、元気出た……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701500106/7015001060050"
+  },
+  {
+    "id": 7015001060060,
+    "speaker": "甜花",
+    "text": "ありがとね……",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701500106/7015001060060"
+  },
+  {
+    "label": "end"
+  }
+]

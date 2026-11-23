@@ -1,0 +1,255 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00023",
+    "bgm": "008",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 6902001070010,
+    "speaker": "社長",
+    "text": "お前、担当アイドルのことをどう思っている？",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601400107/6902001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……たしかに負けてしまいましたけど、\r\n彼女こそが最高のアイドルだと思っています",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6902001070020,
+    "speaker": "社長",
+    "text": "……！　そうか……",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601400107/6902001070020"
+  },
+  {
+    "id": 6901001070010,
+    "speaker": "はづき",
+    "text": "ふふ\r\n社長が聞きたかった言葉、そのまま出てきましたね",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/601400107/6901001070010"
+  },
+  {
+    "id": 6901001070020,
+    "speaker": "はづき",
+    "text": "もし違う言葉が出てきたら、\r\n説教してやるって言って聞かなかったのに",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/601400107/6901001070020"
+  },
+  {
+    "id": 6902001070030,
+    "speaker": "社長",
+    "text": "……うるさいぞ。とにかく、\r\nそういうことなら私から言うことはない",
+    "charAnim1": "wait2",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601400107/6902001070030"
+  },
+  {
+    "id": 6902001070040,
+    "speaker": "社長",
+    "text": "さあ、早くその最高のアイドルに\r\n会いに行ってこい",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601400107/6902001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい！",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00021",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0121",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "甘奈『W.I.N.G.』のステージが終わったばかりなんだ\r\n無理しないで、もう練習を終えたらどうだ？",
+    "charAnim1": "wait",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad2_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charCategory": "stand_jersey",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 6014001070010,
+    "speaker": "甘奈",
+    "text": "プロデューサーさん……\r\nううん、今は無理したい気分なんだ",
+    "charAnim1": "sad1",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601400107/6014001070010"
+  },
+  {
+    "id": 6014001070020,
+    "speaker": "甘奈",
+    "text": "甘奈がもっと早くアイドルに本気になってたら……\r\nもっと鏡と向かいあっていれば、もしかしたらって……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601400107/6014001070020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "甘奈……",
+    "charAnim2": "blank",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6014001070030,
+    "speaker": "甘奈",
+    "text": "アイドルとして上を目指そうって気持ち、\r\n持つのが遅すぎたんだよね",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601400107/6014001070030"
+  },
+  {
+    "id": 6014001070040,
+    "speaker": "甘奈",
+    "text": "それが今回の結果につながったんだと思うと、\r\nめっちゃ悔しくて……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601400107/6014001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……遅すぎた、なんてことはないぞ\r\n輝くチャンスなら、これからいくらでもあるんだ",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "甘奈なら、そのチャンスを必ず掴める\r\nアイドルに対して、本気になれたんだから",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6014001070050,
+    "speaker": "甘奈",
+    "text": "プロデューサーさん……\r\nえへ、ありがと……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601400107/6014001070050"
+  },
+  {
+    "id": 6014001070060,
+    "speaker": "甘奈",
+    "text": "……じゃあ、これから甘奈、本気でいくよ！\r\nプロデューサーさん、ビシバシ鍛えてねっ",
+    "charAnim1": "shy1",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601400107/6014001070060"
+  },
+  {
+    "label": "end"
+  }
+]

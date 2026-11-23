@@ -1,0 +1,168 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "id": 1022001001210010,
+    "speaker": "小糸",
+    "text": "あ……！\r\nど、どうしよう……",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "022",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102200100121/1022001001210010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "小糸？\r\nどうかしたか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001001210020,
+    "speaker": "小糸",
+    "text": "あ、いえあの……お弁当、\r\n妹のと間違えて持ってきちゃったみたいで……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100121/1022001001210020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "小糸、そういえば妹がいたんだったな \r\nうーん、弁当か……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "連絡して\r\nみたらどうだ？",
+    "nextLabel": "1022001001211"
+  },
+  {
+    "select": "取りに\r\n戻るか？",
+    "nextLabel": "1022001001212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "中身が一緒なら\r\n大丈夫だろ",
+    "nextLabel": "1022001001213"
+  },
+  {
+    "id": 1022001001210030,
+    "label": "1022001001211",
+    "speaker": "小糸",
+    "text": "あ……そ、そうですよね……！\r\nそうします！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100121/1022001001210030"
+  },
+  {
+    "id": 1022001001210040,
+    "speaker": "小糸",
+    "text": "ちょっと電話してきますね！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100121/1022001001210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1022001001210050,
+    "label": "1022001001212",
+    "speaker": "小糸",
+    "text": "い、いえ……！\r\n大丈夫です……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100121/1022001001210050"
+  },
+  {
+    "id": 1022001001210060,
+    "speaker": "小糸",
+    "text": "あ、ありがとうございます\r\n連絡だけ、してみますね……！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100121/1022001001210060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1022001001210070,
+    "label": "1022001001213",
+    "speaker": "小糸",
+    "text": "あ……そうですよね……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100121/1022001001210070"
+  },
+  {
+    "id": 1022001001210080,
+    "speaker": "小糸",
+    "text": "い、一応、連絡して\r\n聞いてみます……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100121/1022001001210080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

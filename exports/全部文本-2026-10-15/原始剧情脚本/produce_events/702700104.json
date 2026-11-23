@@ -1,0 +1,254 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "id": 7901001040010,
+    "speaker": "はづき",
+    "text": "残念ですね……。一次審査を突破できたんですし、\r\nこの調子で、と思ったんですけど",
+    "charAnim1": "sad1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702700104/7901001040010"
+  },
+  {
+    "id": 7901001040020,
+    "speaker": "はづき",
+    "text": "現実は、なかなか厳しいですね……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702700104/7901001040020"
+  },
+  {
+    "id": 7026001040030,
+    "label": "回想",
+    "speaker": "社長",
+    "text": "………………",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702700104/7026001040030"
+  },
+  {
+    "label": "回想",
+    "speaker": "プロデューサー",
+    "text": "……まだまだ先にも行けたと思うんです\r\n俺にもっと力があれば……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001040020,
+    "speaker": "社長",
+    "text": "評価はしているが、弱音を聞きたいわけではないぞ",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702700104/7902001040020"
+  },
+  {
+    "id": 7902001040030,
+    "speaker": "社長",
+    "text": "力が足りないのなら、彼女とともに\r\nこれから成長していけばいいだけのことだ",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702700104/7902001040030"
+  },
+  {
+    "label": "回想",
+    "speaker": "プロデューサー",
+    "text": "……そうですね\r\n彼女に、会いに行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001040040,
+    "label": "回想",
+    "speaker": "社長",
+    "text": "ああ、行ってこい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702700104/7902001040040"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00002",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "羽那、残念だけど……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "二次審査、通過できなかったそうだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7027001040010,
+    "speaker": "羽那",
+    "text": "そっかー……\r\n何がだめだったんだろうなー",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "027",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/702700104/7027001040010"
+  },
+  {
+    "id": 7027001040020,
+    "speaker": "羽那",
+    "text": "プロデューサー、あたしのこと\r\nすっごく支えてくれてたのに……ごめんね",
+    "charAnim1": "shy2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702700104/7027001040020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……いや\r\n羽那が謝ることなんてないぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7027001040030,
+    "speaker": "羽那",
+    "text": "…………",
+    "charAnim1": "wait5",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702700104/7027001040030"
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──よし！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7027001040040,
+    "speaker": "羽那",
+    "text": "……？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702700104/7027001040040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "今この瞬間に、\r\nふたりで気持ちを切り替えよう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "まだまだ、別のチャンスだって\r\n待ってるはずだからさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7027001040050,
+    "speaker": "羽那",
+    "text": "……──\r\nふふっ、うん──！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702700104/7027001040050"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

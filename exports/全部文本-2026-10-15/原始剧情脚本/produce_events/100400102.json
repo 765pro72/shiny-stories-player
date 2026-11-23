@@ -1,0 +1,710 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "さて、恋鐘\r\n今日はアイドルとして初仕事なわけだけど……",
+    "charAnim1": "wait1",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00010",
+    "bgm": "002"
+  },
+  {
+    "id": 1004001020010,
+    "speaker": "恋鐘",
+    "text": "うん、ついにこの時がきたんやね～\r\nいやー、うち、わくわくするばい！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020010"
+  },
+  {
+    "id": 1004001020020,
+    "speaker": "恋鐘",
+    "text": "近いうちにユニットのアンティーカも本格的に動きだすし\r\nうち、ホントにアイドルになれたっちゃね……",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020020"
+  },
+  {
+    "id": 1004001020030,
+    "speaker": "恋鐘",
+    "text": "よーし！\r\n今日は特に気合いれてくけん、見とってね～！",
+    "charAnim1": "smile4",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おお、その意気だぞ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それじゃあ、最後の確認をしておこう\r\n今回のキャンペーンガールの仕事だけど……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004001020040,
+    "speaker": "恋鐘",
+    "text": "わかっとるよ～、キャンペーンガールって\r\nようは商品をよろしくっていう看板娘のことっちゃろ～？",
+    "charAnim1": "anger2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020040"
+  },
+  {
+    "id": 1004001020050,
+    "speaker": "恋鐘",
+    "text": "うち、実家の定食屋でもよく褒められとったけん\r\n宣伝とかはバッチリたい！",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020050"
+  },
+  {
+    "id": 1004001020060,
+    "speaker": "恋鐘",
+    "text": "看板娘をやらしてうちの右にでるもんはおらんばい！\r\nまかせとって！",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（すごい……初仕事なのにまったく緊張がないな……\r\nこれは期待できる！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "じゃあ、頼んだぞ。恋鐘\r\n頑張ってこい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004001020070,
+    "speaker": "恋鐘",
+    "text": "はーい、いってくるばい！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020070"
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "id": 1004001020080,
+    "speaker": "恋鐘",
+    "text": "みんなちょっと見てって～！\r\n今からばりすごかもん紹介するから見てって～！",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020080"
+  },
+  {
+    "id": 1004001020090,
+    "speaker": "恋鐘",
+    "text": "はーい、みんな足ば止めてくれて、ありがと～\r\n今からトークショー始まるけん待っとってね～",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020090"
+  },
+  {
+    "id": 1004001020100,
+    "speaker": "恋鐘",
+    "text": "……うん！　じゃあ、けっこう人も集まってくれとーけん\r\nさっそく、イベント始めていくばい～！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020100"
+  },
+  {
+    "id": 1004001020110,
+    "speaker": "恋鐘",
+    "text": "今日のキャンペーンイベントで紹介するのはこれ！\r\nこれがまたばりすごくて……え？",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020110"
+  },
+  {
+    "id": 1004001020120,
+    "speaker": "恋鐘",
+    "text": "あ！　そっかまず会社の名前言わんとね！\r\nいや、うっかりしとったよ～！　えーっと……名前名前……",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（あ、あれ……？　恋鐘……？\r\nさっきはあんなに自信満々だったのに……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004001020130,
+    "speaker": "恋鐘",
+    "text": "……それで、お！　次はなんと、この商品の開発者の人が\r\n直接効果の説明ばしてくれるよ～！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020130"
+  },
+  {
+    "id": 1004001020140,
+    "speaker": "恋鐘",
+    "text": "では、開発主任田中さん！　どうぞー！",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020140"
+  },
+  {
+    "id": 1004001020150,
+    "speaker": "恋鐘",
+    "text": "ん？…………え？　名前が違う？　中田さん？\r\nええ～！？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……やる気が空回りしてしまっているみたいだな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0148"
+  },
+  {
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "id": 1004001020160,
+    "speaker": "恋鐘",
+    "text": "はぁー……ちょーっと失敗しちゃった～……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bg": "00009",
+    "voice": "produce_events/100400102/1004001020160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お疲れ、恋鐘\r\n気にすることないさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ちょっとミスはあったけど……そのおかげで\r\nむしろ場は盛り上がってたし……大丈夫だよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004001020170,
+    "speaker": "恋鐘",
+    "text": "プロデューサー……ありがと～！\r\nうちは平気たい！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020170"
+  },
+  {
+    "id": 1004001020180,
+    "speaker": "恋鐘",
+    "text": "まだまだ始まったばっかりやし、これからやもんねー！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020180"
+  },
+  {
+    "id": 1004001020190,
+    "speaker": "恋鐘",
+    "text": "わざわざ心配してくれてありがとーね、プロデューサー！\r\nさっきより断然元気になれたばい～！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よかった、恋鐘は落ち込んではいないみたいだな\r\nしっかり切り替えられてる）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（恋鐘はまだまだやる気だし、ちょっとアドバイスすれば\r\n次はもっといい仕事ができそうだ）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なぁ、恋鐘",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "少し落ち着こう",
+    "nextLabel": "1"
+  },
+  {
+    "select": "一度段取りを\r\n確認しておこう",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "もっと元気よくいこう！",
+    "nextLabel": "3"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "少し落ち着こう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "やる気があるのはすごくいいけど\r\n少し気持ちが前に出すぎてる",
+    "charAnim1": "wait2",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そこからもう少しだけ冷静になれば\r\nうまくいくんじゃないかな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004001020200,
+    "speaker": "恋鐘",
+    "text": "おお……なるほど……！\r\n参考になるばい～！　さすがプロデューサー！",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020200"
+  },
+  {
+    "id": 1004001020210,
+    "speaker": "恋鐘",
+    "text": "じゃあ、落ち着くためには……あ！　深呼吸がよかね！\r\nスー……ハー……スー……ハー……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "少しは落ち着いたか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004001020220,
+    "speaker": "恋鐘",
+    "text": "うん！　なんか頭がすっきりした気がするばい～！\r\nありがと、プロデューサー！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020220"
+  },
+  {
+    "id": 1004001020230,
+    "speaker": "恋鐘",
+    "text": "じゃあ、いってくるったい！",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020230"
+  },
+  {
+    "speaker": "off",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "bg": "00010",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "mask"
+  },
+  {
+    "id": 1004001020240,
+    "speaker": "恋鐘",
+    "text": "――そいけん、本日のイベントはおしまい～！\r\nみんな今日の商品見かけたら、ぜひ買うてね～！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/100400102/1004001020240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うん、頭の整理がしっかりできて\r\n後半はきちんと仕事がこなせたみたいだな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（次の仕事もこの調子でいこう、恋鐘）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "一度段取りを確認しておこう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004001020250,
+    "label": "2",
+    "speaker": "恋鐘",
+    "text": "え？　さっきスタッフさんと一回確認したとよ～？",
+    "charAnim1": "surp1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "念のため、最後の確認だよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004001020260,
+    "speaker": "恋鐘",
+    "text": "んー確かに、足場をしっかり固めておくのは\r\n大事やもんね～！",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020260"
+  },
+  {
+    "id": 1004001020270,
+    "speaker": "恋鐘",
+    "text": "休憩中にもう一回最後の見直しせんばね！\r\nプロデューサー、手伝ってくれんかいな～？",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いいとも\r\nそれじゃあ、後半の頭から確認してみようか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "off",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "bg": "00010",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "mask"
+  },
+  {
+    "id": 1004001020280,
+    "speaker": "恋鐘",
+    "text": "……じゃあ、これで今日のキャンペーンは終わり～！\r\nみんな、ありがとーね！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/100400102/1004001020280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、段取りを再確認したおかげで\r\n後半は一度も失敗せずにやりきれたようだな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よく頑張ったぞ、恋鐘）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もっと元気よくいこう！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "3",
+    "speaker": "プロデューサー",
+    "text": "恋鐘は少しミスもしてるけど、それを気にして\r\n小さくなるのはよくない……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "むしろミスをミスだと感じさせないくらい\r\nもっと元気にやるべきだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004001020290,
+    "speaker": "恋鐘",
+    "text": "おお！　それはうちばり得意ばい～！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020290"
+  },
+  {
+    "id": 1004001020300,
+    "speaker": "恋鐘",
+    "text": "アイドルたるもん\r\nやっぱり元気が一番やもんね～！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020300"
+  },
+  {
+    "id": 1004001020310,
+    "speaker": "恋鐘",
+    "text": "よし！\r\n後半も元気出して、ばり頑張るばい！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020310"
+  },
+  {
+    "id": 1004001020320,
+    "speaker": "恋鐘",
+    "text": "じゃあ\r\nプロデューサー、うち、いってくるけん！",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400102/1004001020320"
+  },
+  {
+    "speaker": "off",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "bg": "00010",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "mask"
+  },
+  {
+    "id": 1004001020330,
+    "speaker": "恋鐘",
+    "text": "……じゃあ、今回はこれでおしまい～！\r\nまた、よろしゅうねー！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/100400102/1004001020330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（ちょっとしたミスはあったが\r\nそれを吹き飛ばすくらい恋鐘の良さが存分に出ていたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（いい笑顔だったぞ、恋鐘）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

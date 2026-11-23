@@ -1,0 +1,167 @@
+[
+  {
+    "charAnim1": "anger2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_a",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "011",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あくびをしているが……寝不足か、樹里？",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1011001000210010,
+    "speaker": "樹里",
+    "text": "あ、見られたか……",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100021/1011001000210010"
+  },
+  {
+    "id": 1011001000210020,
+    "speaker": "樹里",
+    "text": "昔の習慣のせいなのか、\r\n早く目が覚めちまう日があるんだよな",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100021/1011001000210020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（樹里はまだ眠そうだ）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "体調管理には\r\n気を付けろよ？",
+    "nextLabel": "1011001000211"
+  },
+  {
+    "select": "まだ少し寝てていいよ",
+    "nextLabel": "1011001000212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "気合だ！\r\n気合を入れろ！",
+    "nextLabel": "1011001000213"
+  },
+  {
+    "id": 1011001000210030,
+    "label": "1011001000211",
+    "speaker": "樹里",
+    "text": "へへっ、体調管理が大事なことくらいわかってるよ\r\n言われるまでもないって",
+    "charAnim1": "smile2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100021/1011001000210030"
+  },
+  {
+    "id": 1011001000210040,
+    "speaker": "樹里",
+    "text": "でも、心配してくれてありがとな",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100021/1011001000210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1011001000210050,
+    "label": "1011001000212",
+    "speaker": "樹里",
+    "text": "気を遣ってくれてありがとよ\r\nアンタ、意外と優しいよな",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100021/1011001000210050"
+  },
+  {
+    "id": 1011001000210060,
+    "speaker": "樹里",
+    "text": "ま、でも気にしないでくれ\r\nこれくらい気合で何とかするよ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100021/1011001000210060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1011001000210070,
+    "label": "1011001000213",
+    "speaker": "樹里",
+    "text": "あ～、大声だすなよな\r\n気合い入れないといけないことくらい、わかってるよ",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100021/1011001000210070"
+  },
+  {
+    "id": 1011001000210080,
+    "speaker": "樹里",
+    "text": "ったく、アタシの根性、見損なうなよな",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101100100021/1011001000210080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

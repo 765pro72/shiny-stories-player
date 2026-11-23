@@ -1,0 +1,173 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おはようございまーす！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1021001001310010,
+    "speaker": "円香",
+    "text": "おはようございます",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102100100131/1021001001310010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "円香！　すまん、待たせたか……！？\r\n今日の予定だけど──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1021001001310020,
+    "speaker": "円香",
+    "text": "……話の前に、するべきことは？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100131/1021001001310020"
+  },
+  {
+    "select": "……うがい？",
+    "nextLabel": "1021001001311"
+  },
+  {
+    "select": "……手洗い？",
+    "nextLabel": "1021001001312"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "……除菌？",
+    "nextLabel": "1021001001313"
+  },
+  {
+    "id": 1021001001310030,
+    "label": "1021001001311",
+    "speaker": "円香",
+    "text": "そうですね。あなたからもらう風邪とか、\r\n発熱よりも絶望の方で寝込みます",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100131/1021001001310030"
+  },
+  {
+    "id": 1021001001310040,
+    "speaker": "円香",
+    "text": "いますぐ息を止めて、回れ右",
+    "charAnim1": "sad2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100131/1021001001310040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1021001001310050,
+    "label": "1021001001312",
+    "speaker": "円香",
+    "text": "はい、満点の答えです",
+    "charAnim1": "surp2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100131/1021001001310050"
+  },
+  {
+    "id": 1021001001310060,
+    "speaker": "円香",
+    "text": "赤ちゃん基準の採点ですが\r\nさすがでちゅね",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100131/1021001001310060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1021001001310070,
+    "label": "1021001001313",
+    "speaker": "円香",
+    "text": "わかっているなら早くして",
+    "charAnim1": "anger1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100131/1021001001310070"
+  },
+  {
+    "id": 1021001001310080,
+    "speaker": "円香",
+    "text": "ああ、消滅しないように気をつけてくださいね",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100131/1021001001310080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

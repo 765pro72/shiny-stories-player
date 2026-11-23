@@ -1,0 +1,255 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですか……参加はできませんでしたか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001080010,
+    "speaker": "はづき",
+    "text": "……不参加って連絡が来たとき、\r\n聞き間違いかと思いました",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702200108/7901001080010"
+  },
+  {
+    "id": 7901001080020,
+    "speaker": "はづき",
+    "text": "私には、どうして彼女が参加できないのか\r\nちっともわかりません……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702200108/7901001080020"
+  },
+  {
+    "id": 7902001080010,
+    "speaker": "社長",
+    "text": "その気持ちはわかるが……これが結果なんだ\r\n受け入れるより他にあるまい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702200108/7902001080010"
+  },
+  {
+    "id": 7901001080030,
+    "speaker": "はづき",
+    "text": "……私、きっとあの子のファンだったんですね\r\nだからこの結果が、悔しくてたまらないんです……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702200108/7901001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺もです。彼女のプロデューサーである俺自身が、\r\n誰よりも彼女のファンでしたから",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……社長\r\n俺、彼女に会いに行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001080020,
+    "speaker": "社長",
+    "text": "ああ、そうするといい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702200108/7902001080020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00002",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……小糸、残念だけど、\r\n『W.I.N.G.』には出場できない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7022001080010,
+    "speaker": "小糸",
+    "text": "あ……そう、ですか……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_down",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "022",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/702200108/7022001080010"
+  },
+  {
+    "id": 7022001080020,
+    "speaker": "小糸",
+    "text": "で、でも！　ここまでこれたのも十分過ぎるくらい\r\nすごいことですよね……！",
+    "charAnim1": "anger2",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702200108/7022001080020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、そうだな\r\nだけど……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "やっぱり悔しいよ、\r\n小糸が本当に頑張ってきたのを、よく知ってるから",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "textFrame": "off"
+  },
+  {
+    "id": 7022001080030,
+    "speaker": "小糸",
+    "text": "………………\r\nプロデューサーさん、ありがとうございます",
+    "charAnim1": "sad2",
+    "charAnim2": "face_down",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702200108/7022001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7022001080040,
+    "speaker": "小糸",
+    "text": "プロデューサーさんがいなかったら、\r\n……見ててくれなかったら、わたし",
+    "charAnim1": "wait2",
+    "charAnim2": "face_down",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702200108/7022001080040"
+  },
+  {
+    "id": 7022001080050,
+    "speaker": "小糸",
+    "text": "わたしが頑張ったこと、\r\n全部、無かったことにしちゃいそうだから……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702200108/7022001080050"
+  },
+  {
+    "id": 7022001080060,
+    "speaker": "小糸",
+    "text": "だから……側にいてくれて、ありがとうございます\r\nプロデューサーさん",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702200108/7022001080060"
+  },
+  {
+    "label": "end"
+  }
+]

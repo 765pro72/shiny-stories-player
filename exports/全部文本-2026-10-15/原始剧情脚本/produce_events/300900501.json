@@ -1,0 +1,1541 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001",
+    "se": "0170",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "natsuha",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010010,
+    "speaker": "果穂",
+    "text": "えっと、美味しい焼きそばを作るコツは……\r\n確か……",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "009",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010010"
+  },
+  {
+    "id": 3009005010020,
+    "speaker": "夏葉",
+    "text": "ふふ、手早く炒めることよ",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010020"
+  },
+  {
+    "id": 3009005010030,
+    "speaker": "果穂",
+    "text": "あ、そうでした！\r\nありがとうございます、夏葉さん！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010030"
+  },
+  {
+    "id": 3009005010040,
+    "speaker": "果穂",
+    "text": "夏葉さんと凛世さんと力をあわせた焼きそば作り、\r\nスッゴく楽しかったなぁ～……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010040"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bgm": "015",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect",
+    "stillType": "support_idols",
+    "stillId": "2040090020"
+  },
+  {
+    "id": 3009005010050,
+    "speaker": "凛世",
+    "text": "入れましょう……夏葉さん……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010050"
+  },
+  {
+    "id": 3009005010060,
+    "speaker": "夏葉",
+    "text": "話がわかるわね凛世！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010060"
+  },
+  {
+    "id": 3009005010070,
+    "speaker": "果穂",
+    "text": "？　その粉も入れるんですか？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010070"
+  },
+  {
+    "id": 3009005010080,
+    "speaker": "夏葉",
+    "text": "ええ！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010080"
+  },
+  {
+    "id": 3009005010090,
+    "speaker": "智代子",
+    "text": "ちょちょちょ、待って３人とも！\r\n何してるの！？　入れちゃダメだよ！？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010090"
+  },
+  {
+    "id": 3009005010100,
+    "speaker": "智代子",
+    "text": "焼きそばに余計なタンパク質は必要ないから！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010100"
+  },
+  {
+    "id": 3009005010110,
+    "speaker": "智代子",
+    "text": "って、ひゃあ！？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010110"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00065",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect",
+    "stillCtrl": "off"
+  },
+  {
+    "id": 3009005010120,
+    "speaker": "智代子",
+    "text": "焼きそばふたつ、お願いね！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030100020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010120"
+  },
+  {
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "juri",
+    "charType": "idols",
+    "charId": "1040110010",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010130,
+    "speaker": "果穂",
+    "text": "はい！　りょーかいですっ！\r\nそれと、冷やし中華ひとつできましたっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "3000090010",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010130"
+  },
+  {
+    "id": 3009005010140,
+    "speaker": "樹里",
+    "text": "おー、さんきゅー\r\n次のオーダー、お好み焼きひとつ、頼んだぞ！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010140"
+  },
+  {
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3009005010150,
+    "speaker": "夏葉",
+    "text": "お好み焼きね！　わかったわ！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040130010",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010150"
+  },
+  {
+    "id": 3009005010160,
+    "speaker": "果穂",
+    "text": "はいっ、タネの準備はできてます！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010160"
+  },
+  {
+    "id": 3009005010170,
+    "speaker": "夏葉",
+    "text": "果穂が手早く準備したタネを、\r\n私が流れるように……鉄板へ！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010170"
+  },
+  {
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "se": "0139",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3009005010180,
+    "speaker": "果穂",
+    "text": "おお……！\r\n夏葉さん、鮮やかです！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010180"
+  },
+  {
+    "id": 3009005010190,
+    "speaker": "夏葉",
+    "text": "うふふっ、アナタもさすがよ\r\n私たち、なかなか良いバディじゃない？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010190"
+  },
+  {
+    "id": 3009005010200,
+    "speaker": "果穂",
+    "text": "ば、ばでぃー……ですか……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010200"
+  },
+  {
+    "id": 3009005010210,
+    "speaker": "夏葉",
+    "text": "相棒ってことよ！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010210"
+  },
+  {
+    "id": 3009005010220,
+    "speaker": "果穂",
+    "text": "…………！　はいっ、夏葉さんたちのおかげで\r\nちょっとずつ早くできるようになりました！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010220"
+  },
+  {
+    "id": 3009005010230,
+    "speaker": "果穂",
+    "text": "でも……\r\nもっと……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010230"
+  },
+  {
+    "id": 3009005010240,
+    "speaker": "夏葉",
+    "text": "どうしたの？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010240"
+  },
+  {
+    "id": 3009005010250,
+    "speaker": "果穂",
+    "text": "あ、えっと……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010250"
+  },
+  {
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010260,
+    "speaker": "果穂",
+    "text": "……あのっ！　海に来るって、楽しくて、特別で、\r\nほんとにほんとに、ワクワクすることだと思うんです！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300900501/3009005010260"
+  },
+  {
+    "id": 3009005010270,
+    "speaker": "果穂",
+    "text": "あたし、お父さんとお母さんが海に連れてってくれる日は、\r\n楽しみで前の夜、眠れませんでした！",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010270"
+  },
+  {
+    "id": 3009005010280,
+    "speaker": "果穂",
+    "text": "そんな楽しい海に遊びに来たみなさんに……\r\nもーっと、海を楽しんでほしいなって思ってたんです！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010280"
+  },
+  {
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3009005010290,
+    "speaker": "夏葉",
+    "text": "もーっと……！\r\nなるほどね、とってもナイスな考えだわ！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010290"
+  },
+  {
+    "id": 3009005010300,
+    "speaker": "果穂",
+    "text": "えへへ、ありがとうございますっ",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010300"
+  },
+  {
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010310,
+    "speaker": "果穂",
+    "text": "それで、何がいいかなって\r\n色々考えてたんですけど……",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300900501/3009005010310"
+  },
+  {
+    "id": 3009005010320,
+    "speaker": "果穂",
+    "text": "あたしは料理係で……\r\nう～ん。あたしにできること、できること～～……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010320"
+  },
+  {
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010330,
+    "speaker": "智代子",
+    "text": "はい！　カレーライスおひとつですね！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010330"
+  },
+  {
+    "id": 3009005010340,
+    "speaker": "智代子",
+    "text": "果穂、次のオーダーお願い！\r\nカレーライスおひとつでーす！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010340"
+  },
+  {
+    "id": 3009005010350,
+    "speaker": "果穂",
+    "text": "はいっ\r\nカレーライス、ひとつ……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010350"
+  },
+  {
+    "id": 3009005010360,
+    "speaker": "果穂",
+    "text": "……あ、そうだ！\r\nあたしたちだけのカレーライス、なんてどうでしょうか！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010360"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3009005010370,
+    "speaker": "凛世",
+    "text": "ふふ……\r\n何か……妙案が……？",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "3000120010",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010370"
+  },
+  {
+    "id": 3009005010380,
+    "speaker": "果穂",
+    "text": "えへへ、えっとですね、\r\nカレーライスのお皿に……こうやってご飯をよそって……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010380"
+  },
+  {
+    "charLabel": "rinze",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010390,
+    "speaker": "果穂",
+    "text": "……できましたっ！\r\nクマさんカレーです！",
+    "charAnim1": "think",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300900501/3009005010390"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3009005010400,
+    "speaker": "夏葉",
+    "text": "あら、可愛いわ！\r\nカレーの海を、ライスのクマが泳いでるみたい！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010400"
+  },
+  {
+    "id": 3009005010410,
+    "speaker": "果穂",
+    "text": "わかりますか！\r\nえへへ、ありがとうございますっ！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010410"
+  },
+  {
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010420,
+    "speaker": "果穂",
+    "text": "……ちょこ先輩！\r\nお待たせしましたっ。カレーライス、です！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300900501/3009005010420"
+  },
+  {
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3009005010430,
+    "speaker": "智代子",
+    "text": "ありがとう！\r\n……わぁ、ご飯がクマになってる！　可愛い！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010430"
+  },
+  {
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3009005010440,
+    "speaker": "凛世",
+    "text": "かぐわしき大海原をゆく……悠揚たる体……\r\n見事な意匠です……果穂さん……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010440"
+  },
+  {
+    "id": 3009005010450,
+    "speaker": "智代子",
+    "text": "お客さん、きっと喜んでくれるよ！\r\n出してくるねっ",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010450"
+  },
+  {
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010460,
+    "speaker": "樹里",
+    "text": "クマのカレーか……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010460"
+  },
+  {
+    "id": 3009005010470,
+    "speaker": "樹里",
+    "text": "それなら、他の料理でも\r\nそういうアレンジができそうだよな",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010470"
+  },
+  {
+    "id": 3009005010480,
+    "speaker": "果穂",
+    "text": "樹里ちゃんも何かありますか？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010480"
+  },
+  {
+    "id": 3009005010490,
+    "speaker": "樹里",
+    "text": "んー、そうだな……\r\nお好み焼きに、マヨネーズで絵を描くとか？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010490"
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010500,
+    "speaker": "夏葉",
+    "text": "ソースで飾るなんてフレンチみたいね！\r\nどんな絵を描くの？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010500"
+  },
+  {
+    "id": 3009005010510,
+    "speaker": "樹里",
+    "text": "海に合わせてカニとかか……？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010510"
+  },
+  {
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010520,
+    "speaker": "果穂",
+    "text": "あの、あのっ、\r\nあたし、お魚とか描いてみたいです！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010520"
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "rinze",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010530,
+    "speaker": "樹里",
+    "text": "じゃあ全部描いちゃえばいいんじゃねーのか？\r\nオーダーごとに、違う絵を描くんだよ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010530"
+  },
+  {
+    "id": 3009005010540,
+    "speaker": "凛世",
+    "text": "では……\r\n凛世は……プロデューサーさまを……",
+    "charAnim1": "shy3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010540"
+  },
+  {
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "rinze",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010550,
+    "speaker": "果穂",
+    "text": "えへへ、他にも何かできるかもしれませんね！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010550"
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "rinze",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010560,
+    "speaker": "樹里",
+    "text": "あぁ\r\n他にもかき氷とか、冷やし中華とか……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010560"
+  },
+  {
+    "id": 3009005010570,
+    "speaker": "樹里",
+    "text": "料理だけじゃなくて、ホール係のアタシたちにも、\r\nできることがあるかもしれねーな！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010570"
+  },
+  {
+    "id": 3009005010580,
+    "speaker": "夏葉",
+    "text": "うふふっ！　みんな、ノッてきたわね……！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010580"
+  },
+  {
+    "id": 3009005010590,
+    "speaker": "凛世",
+    "text": "お客さまに……もっと喜んでいただく……\r\n必ずや……叶いましょう……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010590"
+  },
+  {
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "rinze",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010600,
+    "speaker": "果穂",
+    "text": "えへへ！\r\nみなさん、手伝ってくださってありがとうございます！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010600"
+  },
+  {
+    "id": 3009005010610,
+    "speaker": "果穂",
+    "text": "あ……！　でも、作るのに時間をかけちゃうと、\r\nお客さんを待たせちゃうかも……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010610"
+  },
+  {
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3009005010620,
+    "speaker": "夏葉",
+    "text": "思い出して、果穂\r\n今日のアナタは私の最高のバディなのよ？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010620"
+  },
+  {
+    "id": 3009005010630,
+    "speaker": "夏葉",
+    "text": "そして、私たちが作った料理を、\r\nお客さんに届けてくれるのは誰だったかしら？",
+    "charAnim1": "think",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010630"
+  },
+  {
+    "id": 3009005010640,
+    "speaker": "果穂",
+    "text": "……はい！\r\nあたし、やってみますっ！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010640"
+  },
+  {
+    "id": 3009005010650,
+    "speaker": "夏葉",
+    "text": "ええ、頑張りましょう！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010650"
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3009005010660,
+    "speaker": "智代子",
+    "text": "みんな……楽しくおしゃべりしてるとこごめんなんだけど、\r\nオーダーお願いできる？　お好み焼きとカレーです！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010660"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3009005010670,
+    "speaker": "果穂",
+    "text": "わかりました！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900501/3009005010670"
+  },
+  {
+    "id": 3009005010680,
+    "speaker": "智代子",
+    "text": "あっ待って果穂！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010680"
+  },
+  {
+    "id": 3009005010690,
+    "speaker": "果穂",
+    "text": "はい、なんでしょうか？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010690"
+  },
+  {
+    "id": 3009005010700,
+    "speaker": "智代子",
+    "text": "さっきのカレー、お客さんすっごく喜んでくれてたよ！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010700"
+  },
+  {
+    "id": 3009005010710,
+    "speaker": "果穂",
+    "text": "わぁ、本当ですか！\r\nえへへ……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010710"
+  },
+  {
+    "id": 3009005010720,
+    "speaker": "果穂",
+    "text": "お客さんにもっと喜んでもらえるように、\r\nあたし、もっともーっと頑張りますっ！",
+    "charAnim1": "think",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900501/3009005010720"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

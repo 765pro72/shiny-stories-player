@@ -1,0 +1,219 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00023",
+    "bgm": "017",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 7902001020010,
+    "speaker": "社長",
+    "text": "結果は聞いた\r\n……ここまでだったようだな",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701200102/7902001020010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい。目標には、届きませんでした",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001020010,
+    "speaker": "はづき",
+    "text": "『W.I.N.G.』はあらゆるアイドルが\r\n憧れるステージですからね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701200102/7901001020010"
+  },
+  {
+    "id": 7901001020020,
+    "speaker": "はづき",
+    "text": "道はとっても険しかった、\r\nということなのでしょう……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701200102/7901001020020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "結果を出せず、申し訳ありませんでした……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001020020,
+    "speaker": "社長",
+    "text": "……私たちに謝っている場合じゃない\r\n彼女が、お前を待っているだろう？",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701200102/7902001020020"
+  },
+  {
+    "id": 7902001020030,
+    "speaker": "社長",
+    "text": "つらいだろうが、これもプロデューサーの仕事だ",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701200102/7902001020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "rinze",
+    "charType": "characters",
+    "charId": "012",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "凛世、残念だけど、\r\n今回はダメだったよ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7012001020010,
+    "speaker": "凛世",
+    "text": "凛世が、至らないばかりに……",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701200102/7012001020010"
+  },
+  {
+    "id": 7012001020020,
+    "speaker": "凛世",
+    "text": "申し訳、ございません……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701200102/7012001020020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、これからだ\r\n一緒にどうすればいいか考えよう",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7012001020030,
+    "speaker": "凛世",
+    "text": "……失敗した、凛世を\r\nお傍に、置いて……いただけるのですか？",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701200102/7012001020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もちろん\r\nまだ、始まったばかりだしな。俺は凛世を応援するよ",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7012001020040,
+    "speaker": "凛世",
+    "text": "プロデューサーさま……\r\nありがとうございます",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701200102/7012001020040"
+  },
+  {
+    "id": 7012001020050,
+    "speaker": "凛世",
+    "text": "ふつつかものですが、\r\nどうぞ凛世を、よろしく、お願い致します",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701200102/7012001020050"
+  },
+  {
+    "label": "end"
+  }
+]

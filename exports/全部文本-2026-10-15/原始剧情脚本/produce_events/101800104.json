@@ -1,0 +1,728 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "008"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（今日は冬優子との打ち合わせ……\r\nだけど、冬優子からはあれ以来連絡がない）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（今まではまめに連絡をくれていたんだが……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……仕方ないか\r\n無理にやらせるくらいなら……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1018001040010,
+    "speaker": "冬優子",
+    "text": "…………\r\n……おはよう、ございます",
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charAnim4": "mask_on",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "018",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101800104/1018001040010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "冬優子！\r\n来てくれたのか……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "mask_take",
+    "charAnim2": "face_serious",
+    "charLabel": "fuyuko",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "id": 1018001040020,
+    "speaker": "冬優子",
+    "text": "仕事なんだから……当たり前でしょ",
+    "charAnim1": "wait2",
+    "charAnim4": "mask_off",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040020"
+  },
+  {
+    "id": 1018001040030,
+    "speaker": "冬優子",
+    "text": "ま、本当はアイドルなんて辞めて、\r\nあんたからも逃げようって思ってたけどさ",
+    "charAnim1": "smile1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "じゃあ……\r\nどうして、来てくれたんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1018001040040,
+    "speaker": "冬優子",
+    "text": "……ほんっとにデリカシーないわね、あんた\r\nまあいいわ、特別に教えてあげる",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040040"
+  },
+  {
+    "id": 1018001040050,
+    "speaker": "冬優子",
+    "text": "……アイドルなんて、ちやほやされるためのもの……\r\nだから、それができないならもう興味ないって思った",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040050"
+  },
+  {
+    "id": 1018001040060,
+    "speaker": "冬優子",
+    "text": "でも、辞めようって考えてから、\r\nなんていうのかな……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040060"
+  },
+  {
+    "id": 1018001040070,
+    "speaker": "冬優子",
+    "text": "胸のあたりに、ぽっかり穴が空いたみたいな気分になったの",
+    "charAnim1": "smile1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040070"
+  },
+  {
+    "id": 1018001040080,
+    "speaker": "冬優子",
+    "text": "それで……\r\nずっと家で、今までやった仕事のこと、思い出してた",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040080"
+  },
+  {
+    "id": 1018001040090,
+    "speaker": "冬優子",
+    "text": "どんな小さな仕事も……\r\n全部、すごく楽しかったなって",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "冬優子……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1018001040100,
+    "speaker": "冬優子",
+    "text": "ふゆは、さ。まぁ、今まで他人からどう見えるかを\r\nずーっと意識してたわけ",
+    "charAnim1": "anger3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040100"
+  },
+  {
+    "id": 1018001040110,
+    "speaker": "冬優子",
+    "text": "どうやったらもっと可愛いって思ってくれるか\r\nもっとふゆをすごいって思ってもらえるかって",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040110"
+  },
+  {
+    "id": 1018001040120,
+    "speaker": "冬優子",
+    "text": "でも、アイドル始めてから……\r\n他人から評価されることより、仕事をするのが楽しかった",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040120"
+  },
+  {
+    "id": 1018001040130,
+    "speaker": "冬優子",
+    "text": "少しずつ仕事が大きくなっていって……\r\nちょっとずつ成長できてるって、実感みたいなのもあって",
+    "charAnim1": "smile1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040130"
+  },
+  {
+    "id": 1018001040140,
+    "speaker": "冬優子",
+    "text": "もしかしたら……\r\nふゆもキラキラできるかもしれないって、期待しちゃった",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040140"
+  },
+  {
+    "id": 1018001040150,
+    "speaker": "冬優子",
+    "text": "でも、本当のふゆは……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "r",
+    "voiceKeep": true,
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040150"
+  },
+  {
+    "text": "…………っ",
+    "charAnim2": "face_cry",
+    "charLabel": "fuyuko"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "冬優子、無理に話す必要はないんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1018001040160,
+    "speaker": "冬優子",
+    "text": "……うっさい\r\nお願いだから……今は黙って聞いて",
+    "charAnim1": "anger1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……わかった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1018001040170,
+    "speaker": "冬優子",
+    "text": "ふゆはね、\r\nほんとはいい子じゃないし……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040170"
+  },
+  {
+    "id": 1018001040180,
+    "speaker": "冬優子",
+    "text": "そんなの、\r\n隠そうとしても隠しきれるもんじゃない",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040180"
+  },
+  {
+    "id": 1018001040190,
+    "speaker": "冬優子",
+    "text": "結局あんたにもバレちゃった訳だし\r\nじゃあいつもみたいに逃げようって",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040190"
+  },
+  {
+    "id": 1018001040200,
+    "speaker": "冬優子",
+    "text": "でも、あんたに言われた言葉を思い出して\r\n……逃げるのはやめた",
+    "charAnim1": "anger1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040200"
+  },
+  {
+    "id": 1018001040210,
+    "speaker": "冬優子",
+    "text": "そんで……考えた\r\nふゆはどんなアイドルになりたいのかって",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そういえば、冬優子に聞いたっきりだったな",
+    "charAnim2": "face_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1018001040220,
+    "speaker": "冬優子",
+    "text": "あの時ちゃんと答えられなかったけど\r\nふゆが本当になりたかったのはね……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040220"
+  },
+  {
+    "id": 1018001040230,
+    "speaker": "冬優子",
+    "text": "『これがふゆ』って、胸を張れるアイドル",
+    "charAnim1": "smile1",
+    "charAnim2": "face_serious",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040230"
+  },
+  {
+    "id": 1018001040240,
+    "speaker": "冬優子",
+    "text": "だから……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1018001040250,
+    "speaker": "冬優子",
+    "text": "あの……さ、プロデューサー",
+    "charAnim1": "anger2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1018001040260,
+    "speaker": "冬優子",
+    "text": "私…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040260"
+  },
+  {
+    "id": 1018001040270,
+    "speaker": "冬優子",
+    "text": "もう一回……アイドル、やりたい……！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_anger",
+    "charLabel": "fuyuko",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040270"
+  },
+  {
+    "select": "おかえり",
+    "nextLabel": "1"
+  },
+  {
+    "select": "頑張ったな",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "これから頑張ろう",
+    "nextLabel": "3"
+  },
+  {
+    "id": 1018001040280,
+    "label": "1",
+    "speaker": "冬優子",
+    "text": "！\r\n……あ……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_tear",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040280"
+  },
+  {
+    "id": 1018001040290,
+    "speaker": "冬優子",
+    "text": "……ぷ、プロデューサー、ごめんなさい……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040290"
+  },
+  {
+    "id": 1018001040300,
+    "speaker": "冬優子",
+    "text": "ごめんなさい、ひどいこと、いっぱい言って……！\r\nぐすっ……",
+    "charAnim1": "sad1",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もう大丈夫だから、そんなに泣かなくても……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1018001040310,
+    "speaker": "冬優子",
+    "text": "ぐすっ……ぐすっ……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（どうすれば泣き止むかな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1018001040320,
+    "speaker": "冬優子",
+    "text": "ふゆのこと、なんも知らないなんて……\r\nそんなこと、そんなことないのに……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_tear",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040320"
+  },
+  {
+    "id": 1018001040330,
+    "speaker": "冬優子",
+    "text": "プロデューサーは……\r\nふゆよりちゃんと、ふゆのこと、見てくれてたのに……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……いや、しばらくは、このまま……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1018001040340,
+    "speaker": "冬優子",
+    "text": "ほんとに、ごめんなさい\r\nそれから……",
+    "charAnim2": "face_tear",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040340"
+  },
+  {
+    "id": 1018001040350,
+    "speaker": "冬優子",
+    "text": "ありがと、プロデューサー……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_tear",
+    "charLipAnim": "lip_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/101800104/1018001040350"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1018001040360,
+    "label": "2",
+    "speaker": "冬優子",
+    "text": "そんなことない！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040360"
+  },
+  {
+    "id": 1018001040370,
+    "speaker": "冬優子",
+    "text": "今まで色んなことから逃げてきて……",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "r",
+    "voiceKeep": true,
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040370"
+  },
+  {
+    "text": "まだ何も頑張れてない……！",
+    "charAnim2": "face_cry",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いいや、そんなことはない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "今だって、冬優子は隠したかった気持ちを伝えてくれた\r\n逃げずに向き合ったじゃないか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それでも冬優子がまだ頑張ってないと思うなら……\r\nこれからもっと、頑張れるってことだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1018001040380,
+    "speaker": "冬優子",
+    "text": "……うん、ふゆ、もっともっと頑張る",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040380"
+  },
+  {
+    "id": 1018001040390,
+    "speaker": "冬優子",
+    "text": "だからプロデューサー……",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "r",
+    "voiceKeep": true,
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040390"
+  },
+  {
+    "text": "これからも、よろしくお願いします",
+    "charAnim2": "face_serious",
+    "charLabel": "fuyuko",
+    "textFrame": "001",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1018001040400,
+    "label": "3",
+    "speaker": "冬優子",
+    "text": "頑張っても……いいの？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040400"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、もちろんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これからもっと頑張って\r\n冬優子が憧れたキラキラを手に入れよう",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1018001040410,
+    "speaker": "冬優子",
+    "text": "っ……が、頑張るのなんて\r\n当然に決まってるでしょ！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040410"
+  },
+  {
+    "id": 1018001040420,
+    "speaker": "冬優子",
+    "text": "トップアイドルへの道は、とっても険しいんだから！",
+    "charAnim1": "anger3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040420"
+  },
+  {
+    "id": 1018001040430,
+    "speaker": "冬優子",
+    "text": "どんな仕事だって全力でこなしてみせるから",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "r",
+    "voiceKeep": true,
+    "textFrame": "001",
+    "voice": "produce_events/101800104/1018001040430"
+  },
+  {
+    "text": "じゃんじゃん持ってきなさい！　プロデューサー！",
+    "charLipAnim": "lip_wait",
+    "charLabel": "fuyuko",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

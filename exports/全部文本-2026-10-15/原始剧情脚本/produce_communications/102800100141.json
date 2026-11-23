@@ -1,0 +1,178 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "id": 1028001001410010,
+    "speaker": "はるき",
+    "text": "……ぐすっ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100141/1028001001410010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はるき……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1028001001410020,
+    "speaker": "はるき",
+    "text": "わっ……えっと、ごめんなさい……\r\n可愛い絵本を買ったんですけど──",
+    "charAnim1": "surp2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "028",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102800100141/1028001001410020"
+  },
+  {
+    "id": 1028001001410030,
+    "speaker": "はるき",
+    "text": "まさか、泣けるようなお話とは思わなくって……！",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100141/1028001001410030"
+  },
+  {
+    "select": "俺も読みたいな",
+    "nextLabel": "1028001001411"
+  },
+  {
+    "select": "ハンカチどうぞ",
+    "nextLabel": "1028001001412"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "読んだことは\r\nあるけど……",
+    "nextLabel": "1028001001413"
+  },
+  {
+    "id": 1028001001410040,
+    "label": "1028001001411",
+    "speaker": "はるき",
+    "text": "読みますか……？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100141/1028001001410040"
+  },
+  {
+    "id": 1028001001410050,
+    "speaker": "はるき",
+    "text": "プロデューサーさんと\r\n感想話せるとうれしいです……！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100141/1028001001410050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1028001001410060,
+    "label": "1028001001412",
+    "speaker": "はるき",
+    "text": "あ、ありがとうございます……！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100141/1028001001410060"
+  },
+  {
+    "id": 1028001001410070,
+    "speaker": "はるき",
+    "text": "でも、びっくりして涙は引っ込んじゃったかも……",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100141/1028001001410070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1028001001410080,
+    "label": "1028001001413",
+    "speaker": "はるき",
+    "text": "──あ\r\nプロデューサーさんはそうでもなかったですか……？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100141/1028001001410080"
+  },
+  {
+    "id": 1028001001410090,
+    "speaker": "はるき",
+    "text": "わたし、泣けるツボがおかしいんですかねぇ……",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100141/1028001001410090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

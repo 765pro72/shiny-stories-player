@@ -1,0 +1,101 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00225",
+    "bgm": "0000"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "true",
+    "command": "conditional_jump",
+    "commandKey": "SELECT-2_read"
+  },
+  {
+    "select": "犯行時刻を絞り込む",
+    "nextLabel": "1"
+  },
+  {
+    "select": "凶器について調べる",
+    "nextLabel": "2"
+  },
+  {
+    "select": "動機について調べる",
+    "nextLabel": "3"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "屋敷の中を見廻る",
+    "nextLabel": "4"
+  },
+  {
+    "label": "1",
+    "textFrame": "off",
+    "nextLabel": "end",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "label": "2",
+    "textFrame": "off",
+    "nextLabel": "end",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "label": "3",
+    "textFrame": "off",
+    "nextLabel": "end",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "label": "4",
+    "textFrame": "off",
+    "nextLabel": "end",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "label": "true",
+    "select": "犯行時刻を絞り込む",
+    "nextLabel": "1"
+  },
+  {
+    "select": "凶器について調べる",
+    "nextLabel": "2"
+  },
+  {
+    "select": "動機について調べる",
+    "nextLabel": "3"
+  },
+  {
+    "select": "屋敷の中を見廻る",
+    "nextLabel": "4"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "もう一度現場を\r\n確認する",
+    "nextLabel": "5"
+  },
+  {
+    "label": "5",
+    "textFrame": "off",
+    "nextLabel": "end",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

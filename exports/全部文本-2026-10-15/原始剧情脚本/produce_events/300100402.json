@@ -1,0 +1,958 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charType": "characters",
+    "charId": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "bg": "00014",
+    "bgm": "003",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "charCategory": "stand_jersey"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "charType": "characters",
+    "charId": "003",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "charCategory": "stand_jersey"
+  },
+  {
+    "id": 3001004020010,
+    "speaker": "真乃",
+    "text": "めぐるちゃん、特訓に付き合ってくれてありがとう",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020010"
+  },
+  {
+    "id": 3001004020020,
+    "speaker": "めぐる",
+    "text": "ううん、こちらこそ！　いっぱい練習しようね",
+    "charAnim1": "smile3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020020"
+  },
+  {
+    "id": 3001004020030,
+    "speaker": "めぐる",
+    "text": "何から始めよっか？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020030"
+  },
+  {
+    "id": 3001004020040,
+    "speaker": "真乃",
+    "text": "えっとね、まだ振りつけに自信がなくて……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020040"
+  },
+  {
+    "id": 3001004020050,
+    "speaker": "真乃",
+    "text": "昨日、ふたりがアドバイスしてくれたところ、\r\nちゃんと踊れるようになりたいって思ってるの",
+    "charAnim1": "think",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020050"
+  },
+  {
+    "id": 3001004020060,
+    "speaker": "めぐる",
+    "text": "オッケー、じゃあまずはダンスからだね！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020060"
+  },
+  {
+    "id": 3001004020070,
+    "speaker": "真乃",
+    "text": "うんっ。私、踊ってみるから、見ててもらってもいい？",
+    "charAnim2": "face_anger",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020070"
+  },
+  {
+    "speaker": "off",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "se": "0123",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3001004020080,
+    "speaker": "真乃",
+    "text": "ワン、ツー、スリー、フォー\r\nワン、ツー、スリー、フォー",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0121",
+    "voice": "produce_events/300100402/3001004020080"
+  },
+  {
+    "id": 3001004020090,
+    "speaker": "真乃",
+    "text": "……はぁ、はぁ……\r\nど、どうだった、かな？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300100402/3001004020090",
+    "charCategory": "stand_jersey"
+  },
+  {
+    "id": 3001004020100,
+    "speaker": "めぐる",
+    "text": "なんか……固い？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020100"
+  },
+  {
+    "id": 3001004020110,
+    "speaker": "めぐる",
+    "text": "間違えちゃった後とか、それに引きずられて、\r\n動きが小さくなってる気がする",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020110"
+  },
+  {
+    "id": 3001004020120,
+    "speaker": "真乃",
+    "text": "そ、そっか……立て直さなきゃって思うと\r\nどんどん焦っちゃうの……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020120"
+  },
+  {
+    "id": 3001004020130,
+    "speaker": "めぐる",
+    "text": "……真乃はさ、\r\n絶対に間違っちゃダメだって思ってるんじゃないかな？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020130"
+  },
+  {
+    "id": 3001004020140,
+    "speaker": "真乃",
+    "text": "えっ、……うん、そうかもしれない\r\n私、ちゃんとできないと、ふたりに迷惑かけちゃうし……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020140"
+  },
+  {
+    "id": 3001004020150,
+    "speaker": "めぐる",
+    "text": "ううん、真乃。そうじゃないよ\r\nそうじゃなくて、今はたくさん失敗しても大丈夫なんだよ",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy2",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020150"
+  },
+  {
+    "id": 3001004020160,
+    "speaker": "真乃",
+    "text": "──！　で、でも……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020160"
+  },
+  {
+    "id": 3001004020170,
+    "speaker": "めぐる",
+    "text": "だって、本番で間違えないように、\r\nもし間違えちゃってもカバーできるように",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020170"
+  },
+  {
+    "id": 3001004020180,
+    "speaker": "めぐる",
+    "text": "そのために練習するんだもん",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020180"
+  },
+  {
+    "id": 3001004020190,
+    "speaker": "真乃",
+    "text": "そう……なの？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020190"
+  },
+  {
+    "id": 3001004020200,
+    "speaker": "めぐる",
+    "text": "そうだよ！　まずはね、失敗と仲良くなるんだ\r\nたくさん失敗して、そこからいつも通りに戻す練習をして",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020200"
+  },
+  {
+    "id": 3001004020210,
+    "speaker": "めぐる",
+    "text": "何があっても自分でカバーできるようになっちゃうの\r\nそうすれば、もう怖くなくなるでしょ？",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020210"
+  },
+  {
+    "id": 3001004020220,
+    "speaker": "めぐる",
+    "text": "怖くなくなったら、焦ったりもしなくなるし、\r\nいつも通りの真乃で頑張れると思うんだ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020220"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "mano"
+  },
+  {
+    "id": 3001004020230,
+    "speaker": "めぐる",
+    "text": "だからね、失敗しちゃダメって思うんじゃなくて",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020230"
+  },
+  {
+    "id": 3001004020240,
+    "speaker": "めぐる",
+    "text": "あれこれ試してみるつもりで\r\nやってみるといいんじゃないかなって！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020240"
+  },
+  {
+    "id": 3001004020250,
+    "speaker": "真乃",
+    "text": "……そっか、そうだよねっ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020250"
+  },
+  {
+    "id": 3001004020260,
+    "speaker": "真乃",
+    "text": "間違いを怖がってるだけだったら、\r\nいつまでも上手くならないよね",
+    "charAnim2": "face_anger",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020260"
+  },
+  {
+    "id": 3001004020270,
+    "speaker": "めぐる",
+    "text": "そうそう！　その調子だよ！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020270"
+  },
+  {
+    "id": 3001004020280,
+    "speaker": "真乃",
+    "text": "……ありがとう、めぐるちゃん\r\nもう一回やってみるから、見ててねっ",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020280"
+  },
+  {
+    "charLabel": "mano",
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano2",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1000,
+    "charCategory": "stand_fix"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "meguru2",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "003",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "charCategory": "stand_fix"
+  },
+  {
+    "bg": "00004",
+    "bgm": "006",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3001004020290,
+    "speaker": "真乃",
+    "text": "今日はありがとう、めぐるちゃん\r\n遅くまで付き合ってくれて",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano2",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020290"
+  },
+  {
+    "id": 3001004020300,
+    "speaker": "めぐる",
+    "text": "ううん、わたしも真乃から\r\nいろんなこと教えてもらえたよ、ありがとう！",
+    "charAnim1": "wait3",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy2",
+    "charLabel": "meguru2",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020300"
+  },
+  {
+    "id": 3001004020310,
+    "speaker": "真乃",
+    "text": "え？　私は何も……",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano2",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020310"
+  },
+  {
+    "id": 3001004020320,
+    "speaker": "めぐる",
+    "text": "今日の練習でね、\r\nわたしも初めて気づいたことがいっぱいあったんだ",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru2",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020320"
+  },
+  {
+    "id": 3001004020330,
+    "speaker": "めぐる",
+    "text": "タイミング違ったな―とか、\r\n歌とのバランス、もっと考えなきゃな―とか",
+    "charAnim2": "face_close",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy2",
+    "charLabel": "meguru2",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020330"
+  },
+  {
+    "id": 3001004020340,
+    "speaker": "真乃",
+    "text": "そうなんだ……めぐるちゃんのダンス、\r\n完璧だと思ってたから、わからなかったよ",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano2",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020340"
+  },
+  {
+    "id": 3001004020350,
+    "speaker": "めぐる",
+    "text": "そんなことないよー！\r\nわたしだってもっともっと練習しなきゃだもん！",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru2",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020350"
+  },
+  {
+    "id": 3001004020360,
+    "speaker": "真乃",
+    "text": "私も、早くふたりに追いつけるように、頑張るねっ",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano2",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020360"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "mano2",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "meguru2",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "bg": "00014",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "bgm": "002",
+    "se": "0121",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0107",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3001004020370,
+    "speaker": "真乃",
+    "text": "あっ……\r\nはぁ、はぁ──っ、ごめんねっ、また私……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300100402/3001004020370",
+    "charCategory": "stand_jersey"
+  },
+  {
+    "id": 3001004020380,
+    "speaker": "めぐる",
+    "text": "大丈夫、大丈夫！　真乃、動きどんどん良くなってるし、\r\n歌と合わせても、しっかり踊れるようになってきてるよ",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "003",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300100402/3001004020380",
+    "charCategory": "stand_jersey"
+  },
+  {
+    "id": 3001004020390,
+    "speaker": "真乃",
+    "text": "ほわぁ……あ、ありがとうっ",
+    "charAnim1": "surp2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020390"
+  },
+  {
+    "id": 3001004020400,
+    "speaker": "真乃",
+    "text": "めぐるちゃんが特訓に付き合ってくれるおかげっ\r\n自分でも最初の頃よりは、できるようになってきたって思う",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020400"
+  },
+  {
+    "id": 3001004020410,
+    "speaker": "真乃",
+    "text": "まだまだ足がもつれちゃうけど、頑張りたいっ\r\n最後のところ、できるまでやってみてもいいかな……？",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020410"
+  },
+  {
+    "id": 3001004020420,
+    "speaker": "めぐる",
+    "text": "ん、わかった！\r\nじゃあもっかい一緒にやろう！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020420"
+  },
+  {
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3001004020421,
+    "voice": "produce_events/300100402/3001004020421"
+  },
+  {
+    "id": 3001004020421,
+    "speaker": "真乃＆めぐる",
+    "text": "ワン、ツー、スリー、フォー\r\nワン、ツー、スリー、フォー",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0122",
+    "voice": "produce_events/300100402/3001004020421"
+  },
+  {
+    "id": 3001004020430,
+    "speaker": "めぐる",
+    "text": "……ワン、ツー、ここでターン！",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300100402/3001004020430",
+    "charCategory": "stand_jersey"
+  },
+  {
+    "id": 3001004020440,
+    "speaker": "真乃",
+    "text": "……はぁ、はぁ……どう、かな？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300100402/3001004020440",
+    "charCategory": "stand_jersey"
+  },
+  {
+    "id": 3001004020450,
+    "speaker": "めぐる",
+    "text": "──うん！　今の、すっごく良かった！\r\n真乃、ちゃんと掴めてきてるよっ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020450"
+  },
+  {
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "se": "0107",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 3001004020460,
+    "speaker": "真乃",
+    "text": "ほわっ、め、めぐるちゃんっ\r\n私、汗かいてるから、くっつかないほうが……！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020460"
+  },
+  {
+    "id": 3001004020470,
+    "speaker": "めぐる",
+    "text": "えへへー！　そんなの気にならないよ！\r\n──特訓の成果、出てきてるね！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020470"
+  },
+  {
+    "id": 3001004020480,
+    "speaker": "真乃",
+    "text": "めぐるちゃんのおかげだよっ",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020480"
+  },
+  {
+    "id": 3001004020490,
+    "speaker": "真乃",
+    "text": "（それに、灯織ちゃんの真剣なアドバイスがあったから\r\n一歩進んでこれた……今度会ったらお礼を言わなくちゃ）",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020490"
+  },
+  {
+    "id": 3001004020500,
+    "speaker": "真乃",
+    "text": "（……これからも、３人で頑張りたいな）",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020500"
+  },
+  {
+    "id": 3001004020510,
+    "speaker": "めぐる",
+    "text": "よーし、じゃあ今日はもうちょっと頑張っちゃおうか！\r\n……でもその前に、一旦休憩にしよう！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020510"
+  },
+  {
+    "id": 3001004020520,
+    "speaker": "真乃",
+    "text": "あ、じゃあ、何か飲み物買ってくるね",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020520"
+  },
+  {
+    "id": 3001004020530,
+    "speaker": "めぐる",
+    "text": "えっ、いいよ！　そんな気を遣わなくても──",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020530"
+  },
+  {
+    "id": 3001004020540,
+    "speaker": "真乃",
+    "text": "お礼、させてほしいんだっ\r\n待ってて、めぐるちゃん",
+    "charAnim1": "anger1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300100402/3001004020540"
+  },
+  {
+    "label": "end"
+  }
+]

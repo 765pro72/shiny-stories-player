@@ -1,0 +1,602 @@
+[
+  {
+    "id": 2002004030010,
+    "speaker": "灯織",
+    "text": "……プロデューサー、こっちです",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040020010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00003",
+    "bgm": "002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200200403/2002004030010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺の方から誘ったのに待たせてごめんな",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030020,
+    "speaker": "灯織",
+    "text": "いえ、私の衣装に合わせる小物を探す以上、\r\nお付き合いするのは当然です",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（本当は、灯織の息抜きが目的なんだけど……\r\nそういうと断られるからな）",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "じゃあ、さっそく出発するか",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030030,
+    "speaker": "灯織",
+    "text": "はい。では、行きましょう",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_wait",
+    "charAnim3Loop": false,
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030030"
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "charAnim1": "wait3",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "bg": "00010",
+    "se": "0120",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2002004030040,
+    "speaker": "灯織",
+    "text": "……ふぅ",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_angry",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうだ？　何件か回ってみたけど\r\n合いそうな物は見つかりそうか？",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030050,
+    "speaker": "灯織",
+    "text": "……いえ、やはりどれも\r\nピンと来なくて……",
+    "charAnim3": "no",
+    "charLipAnim": "lip_angry",
+    "charAnim3Loop": false,
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030050"
+  },
+  {
+    "id": 2002004030060,
+    "speaker": "灯織",
+    "text": "アイドルらしい小物って……\r\nいったいどういうものなんでしょうか？",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_angry",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな……",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺としては、灯織を１番輝かせるのは、\r\n灯織が好きになった物だと思うんだ",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030070,
+    "speaker": "灯織",
+    "text": "私が好きなもの、ですか……\r\nなるほど、そういう考えもあるんですね",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、少し視点を変えて見てみよう",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030080,
+    "speaker": "灯織",
+    "text": "でも……私の好きなものなんて、\r\n見つかるでしょうか……？",
+    "charAnim1": "sad3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そんな顔するな、せっかくだし楽しもう",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、向こうに出ている露店も見てみないか？\r\n今までとは雰囲気の違うものが置いてるかも",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030090,
+    "speaker": "灯織",
+    "text": "はい\r\n私、ちょっと行ってみます",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030090"
+  },
+  {
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "x": 200,
+      "alpha": 0,
+      "time": 450
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうだ？　好きなものは見つかりそうか？",
+    "charAnim1": "wait3",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 2002004030100,
+    "speaker": "灯織",
+    "text": "どれも綺麗ですが、\r\n好きかと言われると……やっぱり、難しいです",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030100"
+  },
+  {
+    "id": 2002004030110,
+    "speaker": "灯織",
+    "text": "……プロデューサーはこの中なら\r\nどれが好きですか？",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだなぁ……このあたりの誕生石を\r\nあしらったやつなんかいいんじゃないか？",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030120,
+    "speaker": "灯織",
+    "text": "誕生石……なるほど\r\n私は3月4日なので……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "この青い石がはめ込まれた髪留めだな",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030130,
+    "speaker": "灯織",
+    "text": "わぁ……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "気にいったか？",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030140,
+    "speaker": "灯織",
+    "text": "……いえ、ちょっと気になっただけです",
+    "charAnim1": "sad1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "気になった物を見つけただけでも、充分じゃないか",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030150,
+    "speaker": "灯織",
+    "text": "それは……はい、たしかに",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "誕生石は、お守りにもなるらしいぞ",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030160,
+    "speaker": "灯織",
+    "text": "……そうなんですね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030160"
+  },
+  {
+    "id": 2002004030170,
+    "speaker": "灯織",
+    "text": "……決めました\r\n私、これにします",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_smile",
+    "charAnim3Loop": false,
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030170"
+  },
+  {
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "id": 2002004030180,
+    "speaker": "灯織",
+    "text": "ありがとうございます、プロデューサー",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（嬉しそうだな……\r\n連れてきて、正解だったみたいだ）",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "良かったら早速、付けて見せてくれるか？",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030190,
+    "speaker": "灯織",
+    "text": "……それじゃあ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030190"
+  },
+  {
+    "id": 2002004030200,
+    "speaker": "灯織",
+    "text": "後ろにつけてみましたが……\r\nどう、ですか？",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030200"
+  },
+  {
+    "select": "よく似合ってるぞ",
+    "nextLabel": "1"
+  },
+  {
+    "select": "灯織らしくて\r\nいいと思うぞ！",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "衣装にも\r\n合わせやすそうだ",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2002004030210,
+    "label": "1",
+    "speaker": "灯織",
+    "text": "……あ、ありがとうございます",
+    "charAnim1": "wait3",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これでステージの上の灯織は、\r\nもっと輝けるな！",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030220,
+    "speaker": "灯織",
+    "text": "はい、大事にします",
+    "charAnim1": "smile1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200200403/2002004030220"
+  },
+  {
+    "id": 2002004030230,
+    "label": "2",
+    "speaker": "灯織",
+    "text": "私らしい……？　そうでしょうか？",
+    "charAnim1": "sad3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。澄んだ青色が綺麗に輝いてて\r\n灯織のイメージにぴったりだ",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030240,
+    "speaker": "灯織",
+    "text": "そ、そうですか……\r\nそう言われると、少し気恥ずかしいですね……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200200403/2002004030240"
+  },
+  {
+    "id": 2002004030250,
+    "label": "3",
+    "speaker": "灯織",
+    "text": "そうですか。じゃあ、これにしてよかったです",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200403/2002004030250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。ふたりで色々見て回った甲斐があったな",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002004030260,
+    "speaker": "灯織",
+    "text": "そ、そうですね……今日はお付き合いいただいて……\r\nその……ありがとうございました",
+    "charAnim1": "smile3",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200200403/2002004030260"
+  },
+  {
+    "label": "end"
+  }
+]

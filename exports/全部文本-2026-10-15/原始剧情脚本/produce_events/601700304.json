@@ -1,0 +1,364 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019"
+  },
+  {
+    "textFrame": "off",
+    "se": "0111",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 6017003040010,
+    "speaker": "あさひ",
+    "text": "なんで観に来るんすかねー",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/601700304/6017003040010"
+  },
+  {
+    "textFrame": "off",
+    "se": "0116",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……え？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 400
+  },
+  {
+    "id": 6017003040020,
+    "speaker": "あさひ",
+    "text": "お客さんっす",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/601700304/6017003040020"
+  },
+  {
+    "id": 6017003040030,
+    "speaker": "あさひ",
+    "text": "ここにいるの、負けた人ばっかりだから上手くないし、\r\n観たって面白くないっすよ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601700304/6017003040030"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0111",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ……\r\n──はは、あさひもおんなじステージに立つんだぞ……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6017003040040,
+    "speaker": "あさひ",
+    "text": "わたしのは面白いっすけどね",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/601700304/6017003040040"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00196",
+    "fg": "001922",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 6017003040050,
+    "label": "回想",
+    "speaker": "あさひ",
+    "text": "ええっ……！\r\nずるいっす！　わたしの方が上手くできるっすよ！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601700304/6017003040050"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "fg": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん……あさひのパフォーマンスは面白い\r\n上手いし、鮮やかだよ。でも────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0116",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ここに来てくれてる人たちは、\r\n一度負けた人を、それでも応援したいっていう人たちなんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "上手いか下手かで考えてたら、\r\nきっと勝てない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6017003040060,
+    "speaker": "あさひ",
+    "text": "……っ",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/601700304/6017003040060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『毎度ありがとうございます』だ、あさひ\r\nちゃんとお客さんを見て、いいステージを届けよう",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0220"
+  },
+  {
+    "id": 6017003040070,
+    "speaker": "あさひ",
+    "text": "……あー\r\nまぁ、わかったっす！",
+    "charAnim1": "think1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601700304/6017003040070"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

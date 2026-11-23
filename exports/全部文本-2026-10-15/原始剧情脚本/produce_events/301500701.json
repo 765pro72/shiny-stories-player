@@ -1,0 +1,906 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "012"
+  },
+  {
+    "id": 3015007010010,
+    "speaker": "甜花",
+    "text": "甜花は、悪い子……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "015",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/301500701/3015007010010"
+  },
+  {
+    "id": 3015007010020,
+    "speaker": "甜花",
+    "text": "甜花は、悪魔……",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010020"
+  },
+  {
+    "id": 3015007010030,
+    "speaker": "甜花",
+    "text": "悪魔……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010030"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "amana",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3015007010040,
+    "speaker": "甘奈",
+    "text": "ショートムービー！？",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "002",
+    "voice": "produce_events/301500701/3015007010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、ウェブ公開の短いものだけどな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3015007010050,
+    "speaker": "甜花",
+    "text": "甜花と……なーちゃんで……\r\n一緒に、出れるの……？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301500701/3015007010050"
+  },
+  {
+    "id": 3015007010060,
+    "speaker": "甘奈",
+    "text": "やったぁ！\r\nめっちゃ頑張ろうね、甜花ちゃんっ！",
+    "charAnim1": "anger3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010060"
+  },
+  {
+    "id": 3015007010070,
+    "speaker": "甜花",
+    "text": "う、うん……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010070"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_left",
+    "charLabel": "amana",
+    "textFrame": "off"
+  },
+  {
+    "charAnim2": "face_surp",
+    "charLabel": "tenka",
+    "textFrame": "off"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "喜んでもらえてよかったよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "じゃあ、詳細を説明するぞ\r\n今回のテーマは、天使と悪魔の物語だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLabel": "amana"
+  },
+  {
+    "id": 3015007010080,
+    "speaker": "甜花",
+    "text": "えっと……\r\n甜花となーちゃんが、天使と悪魔なの……？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010080"
+  },
+  {
+    "id": 3015007010090,
+    "speaker": "甘奈",
+    "text": "じゃあ、甜花ちゃんが天使だよね！\r\nきっと、超かわいーよ☆",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010090"
+  },
+  {
+    "id": 3015007010100,
+    "speaker": "甜花",
+    "text": "そ、そうかな……\r\nに、にへへ……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、配役はそうじゃないんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 3015007010101,
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "voice": "produce_events/301500701/3015007010101"
+  },
+  {
+    "id": 3015007010101,
+    "speaker": "甘奈＆甜花",
+    "text": "え？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010101"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "今回、天使と悪魔の配役は……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    }
+  },
+  {
+    "textFrame": "off",
+    "bgm": "012",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3015007010110,
+    "speaker": "甜花",
+    "text": "悪魔って、どんなことするんだろう……？",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010110"
+  },
+  {
+    "id": 3015007010120,
+    "speaker": "甜花",
+    "text": "わ、悪いこと……\r\n悪いことって……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010120"
+  },
+  {
+    "id": 3015007010130,
+    "speaker": "甜花",
+    "text": "なーちゃんのお菓子、食べちゃったり……？",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010130"
+  },
+  {
+    "id": 3015007010140,
+    "speaker": "甜花",
+    "text": "プリンとか、アイスとか……\r\nあ、あと……おまんじゅうとか……チョコとか……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010140"
+  },
+  {
+    "textFrame": "off",
+    "se": "0130",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 3015007010150,
+    "speaker": "甜花",
+    "text": "…………ぁぅ……",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010150"
+  },
+  {
+    "id": 3015007010160,
+    "speaker": "甜花",
+    "text": "さっき、アイス食べたけど……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010160"
+  },
+  {
+    "id": 3015007010170,
+    "speaker": "甜花",
+    "text": "……甘いもの、食べたくなってきちゃった……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010170"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0146",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLabel": "tenka",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00099",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3015007010180,
+    "speaker": "甜花",
+    "text": "……あ、プリン……",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010180"
+  },
+  {
+    "id": 3015007010190,
+    "speaker": "甜花",
+    "text": "だ、誰のかな……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010190"
+  },
+  {
+    "id": 3015007010200,
+    "speaker": "甜花",
+    "text": "な、名前……\r\n書いてない……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010200"
+  },
+  {
+    "charAnim2": "face_wait2",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim2": "face_wait2",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3015007010210,
+    "speaker": "甜花",
+    "text": "………………",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010210"
+  },
+  {
+    "id": 3015007010211,
+    "speaker": "？？？",
+    "text": "甜花ちゃん、何してるの～？",
+    "textCtrl": "p",
+    "voice": "produce_events/301500701/3015007010211"
+  },
+  {
+    "id": 3015007010220,
+    "speaker": "甜花",
+    "text": "ひぅ……っ！？",
+    "charAnim1": "touch",
+    "charAnim2": "face_serious",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010220"
+  },
+  {
+    "id": 3015007010230,
+    "speaker": "甜花",
+    "text": "な、なーちゃん……！？",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010230"
+  },
+  {
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3015007010240,
+    "speaker": "甘奈",
+    "text": "ごめん！　驚かせちゃった？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301500701/3015007010240"
+  },
+  {
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "charLabel": "tenka",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3015007010250,
+    "speaker": "甘奈",
+    "text": "あれ、それプリン……？\r\nもしかして、プロデューサーさんの？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010250"
+  },
+  {
+    "id": 3015007010260,
+    "speaker": "甜花",
+    "text": "え……\r\nそ、そうなの……？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010260"
+  },
+  {
+    "id": 3015007010270,
+    "speaker": "甘奈",
+    "text": "うん\r\n『もし食べたかったら食べてもいいぞ』って、笑ってたから",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010270"
+  },
+  {
+    "id": 3015007010280,
+    "speaker": "甜花",
+    "text": "食べてもいいぞ……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_anger",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010280"
+  },
+  {
+    "id": 3015007010290,
+    "speaker": "甘奈",
+    "text": "甜花ちゃんも、プロデューサーさんに言われたの？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010290"
+  },
+  {
+    "id": 3015007010300,
+    "speaker": "甜花",
+    "text": "て、甜花……まだ、プロデューサーさんに会ってない……\r\nだ、だからこれ……その……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010300"
+  },
+  {
+    "id": 3015007010310,
+    "speaker": "甜花",
+    "text": "え、えっと……\r\n……あの……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010310"
+  },
+  {
+    "id": 3015007010320,
+    "speaker": "甘奈",
+    "text": "甜花ちゃん……？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010320"
+  },
+  {
+    "id": 3015007010330,
+    "speaker": "甜花",
+    "text": "あ、悪魔……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010330"
+  },
+  {
+    "id": 3015007010340,
+    "speaker": "甘奈",
+    "text": "え？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010340"
+  },
+  {
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3015007010350,
+    "speaker": "甜花",
+    "text": "悪魔の……誘惑……！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301500701/3015007010350"
+  },
+  {
+    "charLabel": "tenka",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3015007010360,
+    "speaker": "甘奈",
+    "text": "甜花ちゃん……\r\nもしかして、お仕事用の役作り？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301500701/3015007010360"
+  },
+  {
+    "id": 3015007010370,
+    "speaker": "甜花",
+    "text": "あ、あうぅ……\r\nそ、それは……",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010370"
+  },
+  {
+    "id": 3015007010380,
+    "speaker": "甘奈",
+    "text": "…………えへへ☆",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010380"
+  },
+  {
+    "id": 3015007010390,
+    "speaker": "甘奈",
+    "text": "甜花ちゃんみたいにかわいー悪魔さんに誘惑されたら、\r\n甘奈逆らえないな～",
+    "charAnim1": "shy1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010390"
+  },
+  {
+    "id": 3015007010400,
+    "speaker": "甜花",
+    "text": "え……？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010400"
+  },
+  {
+    "id": 3015007010410,
+    "speaker": "甘奈",
+    "text": "役作りなら、プロデューサーさんも許してくれるから……\r\nプリン、半分こしよ？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010410"
+  },
+  {
+    "id": 3015007010420,
+    "speaker": "甜花",
+    "text": "なーちゃん……\r\nう、うん……！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010420"
+  },
+  {
+    "id": 3015007010430,
+    "speaker": "甘奈",
+    "text": "じゃあ、せーの……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010430"
+  },
+  {
+    "id": 3015007010431,
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "voice": "produce_events/301500701/3015007010431"
+  },
+  {
+    "id": 3015007010431,
+    "speaker": "甘奈＆甜花",
+    "text": "いただきまーす！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301500701/3015007010431"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

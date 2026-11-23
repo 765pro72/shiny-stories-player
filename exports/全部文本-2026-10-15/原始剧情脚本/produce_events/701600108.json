@@ -1,0 +1,273 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00023",
+    "bgm": "017",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですか……参加はできませんでしたか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001080010,
+    "speaker": "はづき",
+    "text": "……不参加って連絡が来たとき、\r\n聞き間違いかと思いました",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701600108/7901001080010"
+  },
+  {
+    "id": 7901001080020,
+    "speaker": "はづき",
+    "text": "私には、どうして彼女が参加できないのか\r\nちっともわかりません……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701600108/7901001080020"
+  },
+  {
+    "id": 7902001080010,
+    "speaker": "社長",
+    "text": "その気持ちはわかるが……これが結果なんだ\r\n受け入れるより他にあるまい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701600108/7902001080010"
+  },
+  {
+    "id": 7901001080030,
+    "speaker": "はづき",
+    "text": "……私、きっとあの子のファンだったんですね\r\nだからこの結果が、悔しくてたまらないんです……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701600108/7901001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺もです。彼女のプロデューサーである俺自身が、\r\n誰よりも彼女のファンでしたから",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……社長\r\n俺、彼女に会いに行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001080020,
+    "speaker": "社長",
+    "text": "ああ、そうするといい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701600108/7902001080020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "off",
+    "charLabel": "hazuki",
+    "bg": "00002",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyuki",
+    "charType": "characters",
+    "charId": "016",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "すまない、千雪……俺の力不足だ\r\n『W.I.N.G.』には、出られない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7016001080010,
+    "speaker": "千雪",
+    "text": "そうですか……\r\nふふ、そうなんですね",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701600108/7016001080010"
+  },
+  {
+    "id": 7016001080020,
+    "speaker": "千雪",
+    "text": "でも、プロデューサーさんの力不足だなんてお言葉は、\r\n頷けないです",
+    "charAnim1": "shy2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701600108/7016001080020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、千雪にはまったく非がないからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7016001080030,
+    "speaker": "千雪",
+    "text": "いえ……きっと何か、\r\n足りないところがあるんだと思います",
+    "charAnim1": "wait2",
+    "charAnim2": "face_anger",
+    "charAnim3": "no",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701600108/7016001080030",
+    "charAnim3Loop": false
+  },
+  {
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 7016001080040,
+    "speaker": "千雪",
+    "text": "ふぅ～……\r\nでも、不思議です……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701600108/7016001080040"
+  },
+  {
+    "id": 7016001080050,
+    "speaker": "千雪",
+    "text": "私、悔しいって思ってるんだなって",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701600108/7016001080050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "無理をしなくて、いいんだぞ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7016001080060,
+    "speaker": "千雪",
+    "text": "ありがとうございます\r\nでも、大丈夫です",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701600108/7016001080060"
+  },
+  {
+    "id": 7016001080070,
+    "speaker": "千雪",
+    "text": "すっごく悔しいですし\r\nみなさんに、申し訳ないですけど……",
+    "charAnim2": "face_close",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701600108/7016001080070",
+    "charAnim3Loop": false
+  },
+  {
+    "id": 7016001080080,
+    "speaker": "千雪",
+    "text": "笑顔だけは、忘れたくないですから",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701600108/7016001080080"
+  },
+  {
+    "label": "end"
+  }
+]

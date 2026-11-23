@@ -1,0 +1,156 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう、凛世\r\n大切そうに……何を持ってるんだ？",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00001"
+  },
+  {
+    "id": 1012001001210010,
+    "speaker": "凛世",
+    "text": "おはようございます\r\n……はい……",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "012",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_communications/101200100121/1012001001210010"
+  },
+  {
+    "id": 1012001001210020,
+    "speaker": "凛世",
+    "text": "これは……\r\n以前……貴方さまにいただいたものでございます……",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_shy",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100121/1012001001210020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（ああ、初めて会った時の名刺か……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "懐かしいな",
+    "nextLabel": "1012001001211"
+  },
+  {
+    "select": "捨ててもいいぞ？",
+    "nextLabel": "1012001001212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "新しいのをあげようか？",
+    "nextLabel": "1012001001213"
+  },
+  {
+    "id": 1012001001210030,
+    "label": "1012001001211",
+    "speaker": "凛世",
+    "text": "はい……\r\nあれから、少し時間は過ぎましたが……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100121/1012001001210030"
+  },
+  {
+    "id": 1012001001210040,
+    "speaker": "凛世",
+    "text": "凛世には、まるで……\r\n昨日のことのように……思い出されます……",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100121/1012001001210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1012001001210050,
+    "label": "1012001001212",
+    "speaker": "凛世",
+    "text": "いいえ……初めてお会いしたときの……\r\n思い出……ですので……",
+    "charAnim2": "face_smile",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100121/1012001001210050"
+  },
+  {
+    "id": 1012001001210060,
+    "speaker": "凛世",
+    "text": "いただいたこと……\r\nとても、嬉しかったのです……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100121/1012001001210060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1012001001210070,
+    "label": "1012001001213",
+    "speaker": "凛世",
+    "text": "プロデューサーさま……\r\nありがとうございます……",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100121/1012001001210070"
+  },
+  {
+    "id": 1012001001210080,
+    "speaker": "凛世",
+    "text": "ですが……初めていただいたものを……\r\n大切にしたいのです……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100121/1012001001210080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

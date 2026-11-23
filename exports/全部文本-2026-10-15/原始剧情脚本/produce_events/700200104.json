@@ -1,0 +1,241 @@
+[
+  {
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 7901001040010,
+    "speaker": "はづき",
+    "text": "残念ですね……。一次審査を突破できたんですし、\r\nこの調子で、と思ったんですけど",
+    "charAnim1": "sad1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700200104/7901001040010"
+  },
+  {
+    "id": 7901001040020,
+    "speaker": "はづき",
+    "text": "現実は、なかなか厳しいですね……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700200104/7901001040020"
+  },
+  {
+    "id": 7902001040010,
+    "speaker": "社長",
+    "text": "しかし、新人アイドルと新人プロデューサーにしては、\r\n悪くない結果だった",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700200104/7902001040010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、まだまだ先にも行けたと思うんです\r\n俺にもっと力があれば……！",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001040020,
+    "speaker": "社長",
+    "text": "評価はしているが、弱音を聞きたいわけではないぞ",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700200104/7902001040020"
+  },
+  {
+    "id": 7902001040030,
+    "speaker": "社長",
+    "text": "力が足りないのなら、彼女とともに\r\nこれから成長していけばいいだけのことだ",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700200104/7902001040030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうですね\r\n彼女に、会いに行ってきます",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001040040,
+    "speaker": "社長",
+    "text": "ああ、行ってこい",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700200104/7902001040040"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "sad1",
+    "charLabel": "hiori",
+    "charType": "characters",
+    "charId": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hiori",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織……結果、聞いたか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7002001040010,
+    "speaker": "灯織",
+    "text": "はい\r\n……まだ、レッスンが足りなかったようですね",
+    "charAnim1": "yes",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700200104/7002001040010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織、その……\r\n灯織は十分に頑張って……",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7002001040020,
+    "speaker": "灯織",
+    "text": "大丈夫です、そんな言葉は必要ありません",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700200104/7002001040020"
+  },
+  {
+    "id": 7002001040030,
+    "speaker": "灯織",
+    "text": "……今は慰めよりも、\r\n優先すべきことがあります",
+    "charAnim1": "no",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700200104/7002001040030"
+  },
+  {
+    "id": 7002001040040,
+    "speaker": "灯織",
+    "text": "私に何が足りなかったのかを考え、\r\n今後のレッスンに反映すべきです",
+    "charAnim1": "sad3",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700200104/7002001040040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……そうか、灯織はまだ諦めていないんだ\r\n俺もその気持ちに応えないと……！）",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、そうだよな\r\nさっそく、作戦会議しないとな！",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7002001040050,
+    "speaker": "灯織",
+    "text": "はい。よろしくお願いします",
+    "charAnim1": "yes",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700200104/7002001040050"
+  },
+  {
+    "label": "end"
+  }
+]

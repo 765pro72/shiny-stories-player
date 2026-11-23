@@ -1,0 +1,159 @@
+{
+  "at": "2026-11-16T04:58:12.292Z",
+  "version": "2026-11-16.5",
+  "windows": {
+    "at": "2026-11-16T04:56:08.585Z",
+    "archive": "F:\\sc\\dist\\ShinyStories-Lite-win32-x64.7z",
+    "archiveFormat": "7z",
+    "bytes": 175422419,
+    "sha256": "b134269a644def7b26fff46b4dfd6d0a9d1ebe572a39bfe3f2e39cb1c6d0e461",
+    "checked": 14667,
+    "mismatches": [],
+    "iconSizes": [
+      16,
+      24,
+      32,
+      48,
+      64,
+      128,
+      256
+    ],
+    "anime4kDefault": "off",
+    "uiVersion": "2026-11-16.5",
+    "officialPortraits": 33,
+    "independentEnhancementSwitches": true,
+    "draggableOrder": true,
+    "cunnyRemoved": true,
+    "modelWeightsBundled": 0,
+    "modelPreviews": {
+      "bundled": 3210,
+      "bytes": 44548566,
+      "width": 360,
+      "height": 480,
+      "format": "WebP",
+      "lazyOriginalModelFallback": true
+    },
+    "translationFilesVerified": 10802,
+    "releaseGatePassed": true,
+    "packagedScenarioRegressionPassed": false,
+    "note": "Caption and assistant fixes were verified in source with Electron probes; not re-run inside the packaged EXE this round."
+  },
+  "android": {
+    "at": "2026-11-16T04:50:22.711Z",
+    "apk": "F:\\sc\\dist\\ShinyStories-Android.apk",
+    "bytes": 137507871,
+    "sha256": "2fa68a892ebc38875ea827c384c5459165ff702ee7f41dc3173f4b1f8a3cc34c",
+    "debug": false,
+    "abis": [
+      "arm64-v8a"
+    ],
+    "minAndroid": 9,
+    "targetAPI": 35,
+    "bundleFiles": 14441,
+    "bundleSHA256": "c915950b80260f712c54330618782b662dfaf323806ae149d745f9d09547f0ba",
+    "runtime": {
+      "platform": "android",
+      "arch": "arm64",
+      "node": "24.22.1",
+      "version": "2026.11.16.5"
+    },
+    "alignment": "16KB",
+    "signature": "Verifies\r\nVerified using v1 scheme (JAR signing): false\r\nVerified using v2 scheme (APK Signature Scheme v2): false\r\nVerified using v3 scheme (APK Signature Scheme v3): true\r\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\r\nVerified using v4 scheme (APK Signature Scheme v4): false\r\nVerified for SourceStamp: false\r\nNumber of signers: 1\r\nSigner #1 certificate DN: CN=Shiny Stories Unofficial, O=Shiny Stories, C=CN\r\nSigner #1 certificate SHA-256 digest: dc71e8ce147366d77bb07c5f164b508103f4203c910533f85ac6abdd936d2476\r\nSigner #1 certificate SHA-1 digest: 5ffcd42798bdbbdf2248f9fa1ed8f808b49b0f99\r\nSigner #1 certificate MD5 digest: 4ad439f1ebd2a3f5e5f7cc24542d1c6a\r\nSigner #1 key algorithm: RSA\r\nSigner #1 key size (bits): 3072\r\nSigner #1 public key SHA-256 digest: c713e8d23133766afaa2f982ba93492eb1e9bf56289d8fb64c8643f967552670\r\nSigner #1 public key SHA-1 digest: 6053453e10221637037fe4a8db49460fbf539491\r\nSigner #1 public key MD5 digest: 1bab555e5978d8594b3763a5f5c8864b",
+    "installedOrRun": true,
+    "install": {
+      "result": "Success",
+      "serial": "emulator-5554",
+      "command": "adb install -r dist\\ShinyStories-Android.apk",
+      "method": "incremental/streamed"
+    },
+    "testEnvironment": "Android 15 (API 35) emulator, arm64 app on x86_64 host translation, 1920x1080@240; not a physical phone.",
+    "nativeLibrariesELF16KB": true,
+    "releaseDebugging": false,
+    "beta": true,
+    "tests": {
+      "reportedAt": "2026-11-16T05:13:04.132Z",
+      "report": "exports/android-runtime-qa-2026-11-16.5.json",
+      "passed": [
+        "install + cold start",
+        "home renders",
+        "16:9 letterbox at 1920x1200 (60px bars)",
+        "story caption alignment",
+        "story fullscreen",
+        "assistant drag to top",
+        "assistant position survives navigation",
+        "fonts.css and woff2 served with correct MIME from device server",
+        "served source carries this round's fixes"
+      ],
+      "limitations": [
+        "Android 15 emulator with arm64 translation on an x86_64 host; not a physical Snapdragon/Dimensity phone.",
+        "Official fonts verified as served assets with correct MIME and bundled entries; not switched in the on-device settings UI.",
+        "Release APK has WebView debugging disabled, so no CDP-driven checks were possible."
+      ]
+    },
+    "screenshots": [
+      "exports/android-2026-11-16.5-home.png",
+      "exports/android-2026-11-16.5-16x10.png",
+      "exports/android-2026-11-16.5-story.png",
+      "exports/android-2026-11-16.5-fullscreen.png",
+      "exports/android-2026-11-16.5-assistant.png",
+      "exports/android-2026-11-16.5-assistant-drag.png"
+    ]
+  },
+  "changes": {
+    "subtitleCaption": {
+      "rootCause": "play() laid text out for the full line before _switchFrame() repositioned the frame back to y=460, so the lift was lost.",
+      "files": [
+        "public/player/scenario/ScenarioPlayer.js"
+      ],
+      "fix": "_switchFrame() re-runs _layoutFont(); speaker ink target moved from frameTop+14 to +26.",
+      "verifiedStories": [
+        "special_communications/490190033.json (frame 001)",
+        "special_communications/490100101.json (frame 002)"
+      ],
+      "verification": [
+        "exports/caption-fix2.png",
+        "exports/caption-full.png",
+        "exports/caption-frame002.png"
+      ]
+    },
+    "assistantDrag": {
+      "rootCause": "clamp() stopped at 10px, and init() clamped with the expanded 440x610 box before collapse() persisted the collapsed position.",
+      "files": [
+        "public/assistant.js",
+        "public/assistant.css"
+      ],
+      "fix": "top clamp allows 0; collapsed class applied before first clamp; html.ia-dragging disables the window drag handle; endDrag() saves on pointerup/cancel/lostpointercapture.",
+      "verification": "tmp/test-assistant.cjs: drag to top (y=0), drag back, drag elsewhere, reload keeps position."
+    },
+    "officialFonts": {
+      "files": [
+        "public/fonts.css",
+        "public/fonts/*.woff2",
+        "public/interface-font-core.js",
+        "public/interface-font.js",
+        "server.cjs",
+        "scripts/release.cjs"
+      ],
+      "fonts": [
+        "official-humming",
+        "official-kakugo",
+        "official-qingyin"
+      ],
+      "verification": [
+        "exports/font-official-probe.png"
+      ]
+    },
+    "android16by9": {
+      "status": "already implemented since 2026-11-16.4",
+      "files": [
+        "android/java/io/shinystories/player/MainActivity.java",
+        "android/AndroidManifest.xml"
+      ],
+      "note": "fitViewport() centers the WebView and fullscreen view in a 16:9 box; sensorLandscape lock unchanged. Repackaged only."
+    }
+  },
+  "userRequestedStopFurtherTests": true,
+  "newZIP": false,
+  "translationEdits": false,
+  "userProgramRestarted": false
+}

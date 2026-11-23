@@ -1,0 +1,1787 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00074",
+    "bgm": "0000"
+  },
+  {
+    "id": 4001009010010,
+    "text": "ずっと、追いかけてた\r\n追いかけてることにも、気づかないくらい……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400100901/4001009010010"
+  },
+  {
+    "id": 4001009010020,
+    "text": "ヒカリの先……\r\nそれは、まだ見えていなくて──",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400100901/4001009010020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "sad3",
+    "charAnim2": "face_serious",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "3000020050",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00003",
+    "bgm": "002",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001009010030,
+    "speaker": "灯織",
+    "text": "──夜の道は大変暗いですが、\r\n早めのライト点灯が、私たちの安全を支えてくれます",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010030"
+  },
+  {
+    "id": 4001009010040,
+    "speaker": "灯織",
+    "text": "ですから──",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010040"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "charType": "idols",
+    "charId": "1040030010",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charType": "idols",
+    "charId": "1040010010",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001009010050,
+    "speaker": "めぐる",
+    "text": "最初、ちょっと声が震えてたけど……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010050"
+  },
+  {
+    "id": 4001009010060,
+    "speaker": "真乃",
+    "text": "うん\r\n今は、すっごく堂々としてる……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010060"
+  },
+  {
+    "id": 4001009010070,
+    "speaker": "めぐる",
+    "text": "そのまま……！　そのままいってね……！\r\n頑張れ、灯織……！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010070"
+  },
+  {
+    "id": 4001009010080,
+    "speaker": "真乃",
+    "text": "頑張って、灯織ちゃんっ……",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010080"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "hiori",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001009010090,
+    "speaker": "灯織",
+    "text": "──あなたの心と自転車に、\r\n灯りを忘れないようにしてください",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010090"
+  },
+  {
+    "id": 4001009010100,
+    "speaker": "灯織",
+    "text": "ありがとうございました",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010100"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textFrame": "0006"
+  },
+  {
+    "id": 4001009010101,
+    "speaker": "真乃＆めぐる",
+    "text": "！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010101"
+  },
+  {
+    "textFrame": "off",
+    "se": "0209",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4001009010110,
+    "speaker": "真乃",
+    "text": "良かったぁ……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010110"
+  },
+  {
+    "id": 4001009010120,
+    "speaker": "めぐる",
+    "text": "うん、うんっ──！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010120"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "mano"
+  },
+  {
+    "id": 4001009010130,
+    "speaker": "めぐる",
+    "text": "全部終わったら、\r\n灯織に、かっこよかったよって言わなきゃだね！",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010130"
+  },
+  {
+    "id": 4001009010140,
+    "speaker": "真乃",
+    "text": "ふふ、うんっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010140"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "meguru"
+  },
+  {
+    "id": 4001009010150,
+    "speaker": "真乃",
+    "text": "──えっと……挨拶の後は、ボランティアのみなさんと\r\nチラシを配るって言ってたよね",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010150"
+  },
+  {
+    "id": 4001009010160,
+    "speaker": "めぐる",
+    "text": "うん。通った人たちと直接話して、\r\n交通安全を呼びかけるんだって",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010160"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano"
+  },
+  {
+    "id": 4001009010170,
+    "speaker": "めぐる",
+    "text": "……ねぇねぇ真乃、チラシ配りだったら、\r\nわたしたちも手伝っていいかな？",
+    "charAnim1": "think",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010170"
+  },
+  {
+    "id": 4001009010180,
+    "speaker": "真乃",
+    "text": "うん、私もそう言おうと思ってたんだ、めぐるちゃん",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010180"
+  },
+  {
+    "id": 4001009010190,
+    "speaker": "真乃",
+    "text": "今日は灯織ちゃんのお仕事だけど──\r\nボランティアとしてだったら、参加しても大丈夫だよねっ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010190"
+  },
+  {
+    "id": 4001009010200,
+    "speaker": "めぐる",
+    "text": "うんっ！　えへへ……",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010200"
+  },
+  {
+    "id": 4001009010210,
+    "speaker": "めぐる",
+    "text": "──じゃあ、行こっか！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010210"
+  },
+  {
+    "id": 4001009010220,
+    "speaker": "真乃",
+    "text": "うんっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010220"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "sad3",
+    "charAnim2": "face_wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bgm": "012",
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001009010230,
+    "speaker": "灯織",
+    "text": "自転車は、スピードが出ていれば車と同じです\r\nその自覚を持って、安全運転を心がけましょう",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010230"
+  },
+  {
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010240,
+    "speaker": "めぐる",
+    "text": "交通安全キャンペーン中です！\r\nよろしくお願いします！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010240"
+  },
+  {
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010250,
+    "speaker": "真乃",
+    "text": "自転車の事故を減らしましょう──\r\nはい、こちらのチラシをお持ち帰りください、どうぞ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010250"
+  },
+  {
+    "id": 4001009010260,
+    "speaker": "真乃",
+    "text": "ありがとうございますっ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010260"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010270,
+    "speaker": "灯織",
+    "text": "えっ……！？\r\nふたりとも、何やってるの……！？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010270"
+  },
+  {
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "mano",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010280,
+    "speaker": "めぐる",
+    "text": "えっへへー、灯織署長のお手伝いー！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010280"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "meguru"
+  },
+  {
+    "id": 4001009010290,
+    "speaker": "真乃",
+    "text": "私たちも一緒に配らせて、灯織ちゃんっ",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010290"
+  },
+  {
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010300,
+    "speaker": "灯織",
+    "text": "え──そんな",
+    "charAnim1": "anger2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010300"
+  },
+  {
+    "id": 4001009010310,
+    "speaker": "灯織",
+    "text": "ありがとう、ごめん──",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010310"
+  },
+  {
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010320,
+    "speaker": "めぐる",
+    "text": "違うよ灯織ー！\r\nわたしたち、好きでここに来たんだから",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010320"
+  },
+  {
+    "id": 4001009010330,
+    "speaker": "めぐる",
+    "text": "ねー？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010330"
+  },
+  {
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001009010340,
+    "speaker": "真乃",
+    "text": "うんっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010340"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "meguru"
+  },
+  {
+    "id": 4001009010350,
+    "speaker": "真乃",
+    "text": "ふふ……だから、ごめんはいらないよっ",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010350"
+  },
+  {
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010360,
+    "speaker": "灯織",
+    "text": "そっか……！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010360"
+  },
+  {
+    "id": 4001009010370,
+    "speaker": "灯織",
+    "text": "……うん。じゃあ……改めて……\r\nごめんじゃなくて、ありが──",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010370"
+  },
+  {
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "se": "0238",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "se": "0238",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "charLabel": "mano",
+    "se": "0136",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4001009010380,
+    "speaker": "真乃",
+    "text": "あ──",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "waitType": "time",
+    "waitTime": 500,
+    "voice": "game_event_communications/400100901/4001009010380"
+  },
+  {
+    "charAnim4": "blank",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001009010390,
+    "speaker": "めぐる",
+    "text": "わっ、あの自転車──！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000,
+    "voice": "game_event_communications/400100901/4001009010390"
+  },
+  {
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010400,
+    "speaker": "灯織",
+    "text": "！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_a",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 800,
+    "voice": "game_event_communications/400100901/4001009010400"
+  },
+  {
+    "id": 4001009010410,
+    "speaker": "灯織",
+    "text": "そちらの、自転車の方！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "bgm": "pause",
+    "voice": "game_event_communications/400100901/4001009010410"
+  },
+  {
+    "id": 4001009010420,
+    "speaker": "灯織",
+    "text": "……すみません\r\n歩いている方の近くでは、徐行をお願いします",
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010420"
+  },
+  {
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010430,
+    "speaker": "真乃",
+    "text": "ほわ……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "resume",
+    "voice": "game_event_communications/400100901/4001009010430"
+  },
+  {
+    "id": 4001009010440,
+    "speaker": "真乃",
+    "text": "灯織ちゃん、本物のおまわりさんみたい……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010440"
+  },
+  {
+    "charLabel": "mano",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001009010450,
+    "speaker": "めぐる",
+    "text": "ほんとだねー……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010450"
+  },
+  {
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010460,
+    "speaker": "めぐる",
+    "text": "──うんっ！　すっごくかっこよかったよ！\r\nさすが署長さんっ！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400100901/4001009010460"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001009010470,
+    "speaker": "灯織",
+    "text": "別に、そういうんじゃ……！",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010470"
+  },
+  {
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010480,
+    "speaker": "灯織",
+    "text": "……ちゃんとやらないと、意味がないから",
+    "charAnim1": "wait3",
+    "charAnim2": "face_shy",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400100901/4001009010480"
+  },
+  {
+    "id": 4001009010490,
+    "speaker": "灯織",
+    "text": "それだけだよ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_serious",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010490"
+  },
+  {
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010500,
+    "speaker": "真乃",
+    "text": "……！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010500"
+  },
+  {
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano"
+  },
+  {
+    "id": 4001009010510,
+    "speaker": "めぐる",
+    "text": "……えへへー。そういうところが、\r\n灯織のかっこいいところなんだってば",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010510"
+  },
+  {
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010520,
+    "speaker": "めぐる",
+    "text": "──灯織署長！\r\n引き続き、街の保安をお願いします！",
+    "charAnim1": "salute",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010520"
+  },
+  {
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010530,
+    "speaker": "真乃",
+    "text": "！\r\nあ、えっと",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010530"
+  },
+  {
+    "id": 4001009010540,
+    "speaker": "真乃",
+    "text": "お願いしますっ……",
+    "charAnim1": "salute",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010540"
+  },
+  {
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010550,
+    "speaker": "灯織",
+    "text": "！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010550"
+  },
+  {
+    "id": 4001009010560,
+    "speaker": "灯織",
+    "text": "……もう……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_shy",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010560"
+  },
+  {
+    "id": 4001009010570,
+    "speaker": "灯織",
+    "text": "……努力します\r\nよろしくお願いします",
+    "charAnim1": "salute",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010570"
+  },
+  {
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010571,
+    "speaker": "一同",
+    "text": "……",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010571"
+  },
+  {
+    "id": 4001009010580,
+    "speaker": "灯織",
+    "text": "……ふっ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010580"
+  },
+  {
+    "id": 4001009010581,
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "voice": "game_event_communications/400100901/4001009010581"
+  },
+  {
+    "id": 4001009010581,
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "voice": "game_event_communications/400100901/4001009010581"
+  },
+  {
+    "id": 4001009010581,
+    "speaker": "一同",
+    "text": "ふふっ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010581"
+  },
+  {
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010590,
+    "speaker": "めぐる",
+    "text": "──まだまだ頑張ってね、灯織！",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400100901/4001009010590"
+  },
+  {
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001009010600,
+    "speaker": "真乃",
+    "text": "灯織ちゃんの署長さん姿、いっぱい見てるねっ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010600"
+  },
+  {
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010610,
+    "speaker": "灯織",
+    "text": "うん、ありがとう",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010610"
+  },
+  {
+    "id": 4001009010620,
+    "speaker": "灯織",
+    "text": "ふたりも。そっち、よろしくね",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010620"
+  },
+  {
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010630,
+    "speaker": "めぐる",
+    "text": "もっちろん！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100901/4001009010630"
+  },
+  {
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "charLabel": "mano",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009010640,
+    "speaker": "めぐる",
+    "text": "頑張ろうね、真乃！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010640"
+  },
+  {
+    "id": 4001009010650,
+    "speaker": "真乃",
+    "text": "うんっ",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100901/4001009010650"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

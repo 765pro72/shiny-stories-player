@@ -1,0 +1,886 @@
+{
+  "at": "2026-11-16T01:25:31.805Z",
+  "version": "2026-11-16.1",
+  "releaseGatePassed": true,
+  "liteOnly": true,
+  "distribution": {
+    "programFolder": true,
+    "sevenZip": true,
+    "newZIP": false,
+    "assistantBuildsAndRepairs": "7z",
+    "historicalZipUnchanged": true
+  },
+  "sourceFolderArchive": {
+    "at": "2026-11-16T01:25:07.703Z",
+    "archive": "F:\\sc\\dist\\ShinyStories-Lite-win32-x64.7z",
+    "archiveFormat": "7z",
+    "bytes": 172471053,
+    "sha256": "a2280fcdd327d75ae971f9a2b2246341daa10a780ddf78370cc3ac4886eddac5",
+    "checked": 14657,
+    "mismatches": [],
+    "iconSizes": [
+      16,
+      24,
+      32,
+      48,
+      64,
+      128,
+      256
+    ],
+    "anime4kDefault": "off",
+    "uiVersion": "2026-11-16.1",
+    "officialPortraits": 33,
+    "independentEnhancementSwitches": true,
+    "draggableOrder": true,
+    "cunnyRemoved": true,
+    "modelWeightsBundled": 0,
+    "modelPreviews": {
+      "bundled": 3210,
+      "bytes": 44548566,
+      "width": 360,
+      "height": 480,
+      "format": "WebP",
+      "lazyOriginalModelFallback": true
+    },
+    "translationFilesVerified": 10802
+  },
+  "sevenZip": {
+    "file": "F:\\sc\\dist\\ShinyStories-Lite-win32-x64.7z",
+    "bytes": 172471053,
+    "sha256": "a2280fcdd327d75ae971f9a2b2246341daa10a780ddf78370cc3ac4886eddac5",
+    "integrityPassed": true,
+    "files": 14657
+  },
+  "offlineResources": {
+    "catalog": 10906,
+    "scriptFilesPresent": 10906,
+    "assetsNeeded": 297744,
+    "assetsPresent": 297744,
+    "missingScripts": [],
+    "missingAssets": []
+  },
+  "trustedChecks": {
+    "report": "exports/scenario-trusted-offline-verification.json",
+    "networkDisabled": true,
+    "fixtureAssetsOnly": true,
+    "programUnchanged": true,
+    "ok": true,
+    "rows": [
+      {
+        "name": "test-content-update.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-material-index-update.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-assistant-install.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-assistant.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-story-ai.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-story-voice.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-home-voice-policy.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-scenario-updates.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-updater-activation.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-update-download.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-update-check.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-update-background.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-material-models.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-assistant-install-ui.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-assistant-ui.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-story-speaking.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-story-saved-performance.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-story-mouth-cues.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-story-local-audio.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-story-producer-sound.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-story-ai-correction.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-custom-story.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-custom-story-library.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-custom-story-viewer.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-desktop-window.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-scenario-player.cjs",
+        "ok": true,
+        "code": 0
+      },
+      {
+        "name": "test-update-ui.cjs",
+        "ok": true,
+        "code": 0
+      }
+    ]
+  },
+  "additionalChecks": [
+    {
+      "name": "test-home-gasha-mouth.cjs",
+      "ok": true,
+      "code": 0
+    },
+    {
+      "name": "test-home-auto-conversations.cjs",
+      "ok": true,
+      "code": 0
+    },
+    {
+      "name": "test-story-creative-next.cjs",
+      "ok": true,
+      "code": 0
+    },
+    {
+      "name": "test-story-language-workflow.cjs",
+      "ok": true,
+      "code": 0
+    },
+    {
+      "name": "test-story-segmented-speech.cjs",
+      "ok": true,
+      "code": 0
+    },
+    {
+      "name": "test-translation-exchange.cjs",
+      "ok": true,
+      "code": 0
+    },
+    {
+      "name": "test-interface-usability.cjs",
+      "ok": true,
+      "code": 0
+    },
+    {
+      "name": "test-story-text-ui.cjs",
+      "ok": true,
+      "code": 0
+    }
+  ],
+  "programArchiveTest": "test-program-archive passed with synthetic runtime; real 7z compression, file extraction, hash, rejected failed gates",
+  "ordinaryStoryEngine": {
+    "engine": "ShinyScenarioViewer",
+    "upstreamCommit": "66e8d7607eb4380762420bc64a593f7898d586c1",
+    "legacySelectable": true,
+    "sharedSubtitleOverrides": true,
+    "updatedData": true,
+    "sharedOfflineDownloads": true,
+    "nativeDialogueLog": true,
+    "perCharacterMouth": true
+  },
+  "formalStoryVerification": {
+    "report": "exports/scenario-official-verification.json",
+    "compiledScripts": 10906,
+    "compiledTracks": 738237,
+    "fullyReplayedRepresentativeStories": 16,
+    "notEveryStoryFullyReplayed": true
+  },
+  "packagedPlayer": {
+    "at": "2026-11-16T01:23:52.814Z",
+    "programRoot": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\sc-scenario-trusted-WClnLY\\cc39bb3e-8b91-4200-944d-374b7986500c\\source",
+    "networkDisabled": true,
+    "fixtureAssetsOnly": true,
+    "newDefault": true,
+    "legacySelectable": true,
+    "hostMessages": true,
+    "translations": true,
+    "bilingual": true,
+    "localOverrides": true,
+    "volume": true,
+    "effectWaitWithoutValue": true,
+    "middleForeground": true,
+    "gashaMouth": true,
+    "onlySpeakerTalks": true,
+    "producerBubble": true,
+    "autoModeDoesNotCutVoice": true,
+    "choicesAndBranch": true,
+    "textWait": true,
+    "noDuplicateModel": true,
+    "logVoiceReplay": true,
+    "fullscreen": true,
+    "anime4k": true,
+    "artcnn": true,
+    "enhancedScenePixels": true,
+    "updatedCatalogAndTranslation": true,
+    "subtitlePreferencePreserved": true,
+    "cardAssociatedStory": true,
+    "initial": {
+      "engine": {
+        "engine": "ShinyScenarioViewer",
+        "commit": "66e8d76",
+        "key": "produce_events/scenario_bridge_test.json",
+        "language": "zh",
+        "started": true,
+        "ended": false,
+        "volume": 0.4,
+        "current": 5,
+        "state": "PLAYING",
+        "error": null,
+        "characters": 2
+      },
+      "translated": "制作人，辛苦了。",
+      "fg": 16,
+      "characters": 2,
+      "mouth": [
+        "lip_home_compatible",
+        null
+      ],
+      "menu": true,
+      "quality": true,
+      "transcript": "七草日花：制作人，辛苦了。プロデューサーさん、お疲れさまです。制作人：辛苦了。お疲れさま。绯田美琴：愿意听我说吗？話を聞いてくれる？选项：好はい选项：不了いいえ七草日花：谢谢。ありがとう。绯田美琴：【待翻译】またね。またね。"
+    },
+    "producer": {
+      "bubble": true,
+      "closed": true
+    },
+    "ownership": {
+      "a": 0,
+      "b": 1
+    }
+  },
+  "updateInheritance": {
+    "at": "2026-11-16T01:22:23.839Z",
+    "metadataOnlyUpdateTests": "also covered by test-content-update / test-updater-activation / test-update-download",
+    "activeDataPointer": true,
+    "recursiveFutureDependencies": true,
+    "middleForeground": true,
+    "categoryAliases": true,
+    "movieAndSE": true,
+    "commandsNotResources": true,
+    "rawScriptUnchanged": true,
+    "duplicateTranslationIds": true,
+    "cachedRepeatNoNetwork": true,
+    "userStateAndWorksUnchanged": true,
+    "mockedMedia": true,
+    "files": 13
+  },
+  "missingRecheck": {
+    "at": "2026-11-16T00:59:42.929Z",
+    "catalogScripts": 10906,
+    "unavailableCatalogIntersection": [],
+    "noScript": [
+      {
+        "key": "special_communications/10001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "10001",
+          "failureCommunicationId": "halloween2019_0012",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "えっと……その……\nだ、だーれだ……っ",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0011",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/20001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "20001",
+          "failureCommunicationId": "halloween2019_0022",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "わ、私は、\n誰でしょうか……！",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0021",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/30001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "30001",
+          "failureCommunicationId": "halloween2019_0032",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "プロデューサー！\n──だーれだっ！",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0031",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/40001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "40001",
+          "failureCommunicationId": "halloween2019_0042",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "んふふ～、だ～～～れだ！？\nちゃ～んと当てんといけんよ～～～！",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0041",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/50001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "50001",
+          "failureCommunicationId": "halloween2019_0052",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "──だぁれだ\n……ハズレのときは覚悟してくださいねー",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0051",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/60001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "60001",
+          "failureCommunicationId": "halloween2019_0062",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "アナタの後ろにいるのは……\nフフ、『だーれだ』",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0061",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/70001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "70001",
+          "failureCommunicationId": "halloween2019_0072",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "だーれだっ？",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0071",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/80001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "80001",
+          "failureCommunicationId": "halloween2019_0082",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "だーれだ……",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0081",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/90001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "90001",
+          "failureCommunicationId": "halloween2019_0092",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "だーれだっ！！",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0091",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/100001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "100001",
+          "failureCommunicationId": "halloween2019_0102",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "──さて！\n私は誰でしょうか！",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0101",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/110001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "110001",
+          "failureCommunicationId": "halloween2019_0112",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "だ、だーれだ……！\nこんなんすぐわかんだろ……",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0111",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/120001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "120001",
+          "failureCommunicationId": "halloween2019_0122",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "お尋ね申します……\nだーれだ……",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0121",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/130001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "130001",
+          "failureCommunicationId": "halloween2019_0132",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "うふふ、だーれだ！\n当ててごらんなさい！",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0131",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/140001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "140001",
+          "failureCommunicationId": "halloween2019_0142",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "えっへへ～！\nだーれだっ☆",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0141",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/150001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "150001",
+          "failureCommunicationId": "halloween2019_0152",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "え、えへへ……っ\nだーれだ……っ！ ",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0151",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/160001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "160001",
+          "failureCommunicationId": "halloween2019_0162",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "プロデューサーさん\nだーれ────",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0161",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/170001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "170001",
+          "failureCommunicationId": "halloween2019_0172",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "わっ！！！\nだーれだっ！",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0171",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/180001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "180001",
+          "failureCommunicationId": "halloween2019_0182",
+          "isNew": false,
+          "isReleased": true,
+          "questionComment": "プロデューサーさんっ\nだーれだっ",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0181",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/190001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "190001",
+          "failureCommunicationId": "halloween2019_0192",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "だーれだっ♪",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0191",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/200001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "200001",
+          "failureCommunicationId": "halloween2019_0202",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "だーれだ",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0201",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/210001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "210001",
+          "failureCommunicationId": "halloween2019_0212",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "だれ",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0211",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/220001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "220001",
+          "failureCommunicationId": "halloween2019_0222",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "……え、えっと、わたし……\nだ、誰でしょうか…………！",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0221",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/230001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "230001",
+          "failureCommunicationId": "halloween2019_0232",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "あは～\n誰でしょうか～～～？",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0231",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/240001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "240001",
+          "failureCommunicationId": "halloween2019_0242",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "だーれだー……",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0241",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/250001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "250001",
+          "failureCommunicationId": "halloween2019_0252",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "……誰だかわかる？\nプロデューサー",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0251",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      },
+      {
+        "key": "special_communications/260001.json",
+        "title": "トリック・オア・トリート！",
+        "entry": {
+          "albumType": "joke",
+          "canReleaseWithItem": false,
+          "communicationCategory": "seasonal_present_event",
+          "communicationId": "260001",
+          "failureCommunicationId": "halloween2019_0262",
+          "isNew": false,
+          "isReleased": false,
+          "questionComment": "だれだ",
+          "releasedConditionComment": "2019ハロウィンのおかしを\nプロデュースに持ち込むと解放\n\nその後、ホーム画面を何回かタッチする",
+          "successCommunicationId": "halloween2019_0261",
+          "title": "トリック・オア・トリート！"
+        },
+        "successInCatalog": true,
+        "failureInCatalog": true
+      }
+    ],
+    "checkedSampleNotAllUnknownPaths": true,
+    "probes": [
+      {
+        "key": "movies/game_event_communications/400103307.mp4",
+        "ok": false,
+        "error": "资源获取失败 movies/game_event_communications/400103307.mp4；官方：Server returned HTML；镜像：fetch failed"
+      },
+      {
+        "key": "sounds/se/game_event_communications/400103307.m4a",
+        "ok": false,
+        "error": "资源获取失败 sounds/se/game_event_communications/400103307.m4a；官方：Server returned HTML；镜像：fetch failed"
+      },
+      {
+        "key": "json/mypage_communications/10001.json",
+        "ok": false,
+        "error": "资源获取失败 json/mypage_communications/10001.json；官方：Server returned HTML；镜像：fetch failed"
+      },
+      {
+        "key": "json/special_communications/10001.json",
+        "ok": false,
+        "error": "资源获取失败 json/special_communications/10001.json；官方：Server returned HTML；镜像：fetch failed"
+      },
+      {
+        "key": "images/content/support_idols/card/2040210180.jpg",
+        "ok": false,
+        "error": "资源获取失败 images/content/support_idols/card/2040210180.jpg；官方：Server returned HTML；镜像：fetch failed"
+      }
+    ]
+  },
+  "protectedSourceDirectoriesUnchanged": true,
+  "userWorksAndConfigurationUnchanged": true,
+  "userApplicationRestarted": false,
+  "translationsModified": false,
+  "paidAICalls": false,
+  "videosGenerated": false,
+  "notes": [
+    "全部目录脚本存在不代表已收录全游戏。",
+    "The Straylight 第6话结尾影片与独立音效暂未取得；台词脚本在本地。",
+    "26个万圣节根条目的52个成功／失败分支已收录，根条目不等于遗漏整篇剧情。",
+    "原42条耳语voiceHash及卡图资料缺口仍保留；翻译仍有未完成条目。"
+  ]
+}

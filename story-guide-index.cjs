@@ -1,0 +1,29 @@
+const fs=require('node:fs'),path=require('node:path'),L=require('./public/story-character-language.js'),M=require('./story-material-index.cjs');
+const read=(file,fallback)=>{try{return JSON.parse(fs.readFileSync(file,'utf8'))}catch{return fallback}};
+const safeKey=key=>typeof key==='string'&&/^\w+\/[\w.-]+\.json$/.test(key)&&!key.includes('..');
+function person(value){const text=String(value||'').trim();return L.characters.find(c=>c.id===text)||L.find(text)||(()=>{const found=L.characters.filter(c=>text.length>=2&&(c.chinese.includes(text)||c.japanese.includes(text)));return found.length===1?found[0]:null})()}
+function owners(catalog){return new Map(catalog.flatMap(p=>(p.outfits||[]).map(o=>[o.path,String(p.id)])))}
+function analyze(rows,modelOwners){
+ if(!Array.isArray(rows))throw Error('剧情脚本需为数组');const appears=new Set(),mentions=new Set(),evidence={};
+ const note=(id,via,line,speaker)=>{if(!L.characters.some(c=>c.id===id))return;appears.add(id);evidence[id]??={via,line,...(speaker?{speaker}:{})}};
+ rows.forEach((r,i)=>{const speaker=String(r.speaker||'').replace(/[【】]/g,'').trim(),who=L.find(speaker);if(who)note(who.id,'说话人',i+1,speaker);for(const resource of M.references([r])){const owner=modelOwners.get(resource);if(owner)note(owner,'模型出场',i+1)}const text=String(r.text||'');if(text)for(const c of L.characters){const names=[c.chinese,c.japanese,c.short].filter(v=>v.length>=2);if(names.some(name=>text.includes(name)))mentions.add(c.id)}});
+ for(const id of appears)mentions.delete(id);return{appears:[...appears],mentions:[...mentions],evidence};
+}
+function search(catalog,entries,input={}){
+ const who=person(input.character||input.characterId);if(!who)throw Error('请给出明确的偶像名称，例如“斑鸠路加”。');
+ const query=String(input.query||'').trim().toLowerCase(),kind=['own','appears','mentions'].includes(input.kind)?input.kind:'all';
+ const rows=catalog.flatMap(row=>{const entry=entries[row.key],owner=person(row.idol),own=owner?.id===who.id,appears=entry?.appears.includes(who.id),mentions=entry?.mentions.includes(who.id);if(!(kind==='own'?own:kind==='appears'?appears:kind==='mentions'?mentions:own||appears||mentions))return[];if(query&&!JSON.stringify([row.title,row.originalTitle,row.group,row.category]).toLowerCase().includes(query))return[];return[{key:row.key,title:row.title,group:row.group,category:row.category,owner:row.idol,ownedByCharacter:own,kind:appears?'实际出场':own?'本人归属剧情':'仅在台词中提及',...(entry?.evidence[who.id]?{evidence:entry.evidence[who.id]}:{}),indexed:!!entry,url:'guide.html?story='+encodeURIComponent(row.key)}]});
+ const offset=Math.max(0,Number(input.offset)||0),limit=Math.max(1,Math.min(50,Number(input.limit)||20));return{character:who.chinese,total:rows.length,counts:{own:rows.filter(r=>r.ownedByCharacter).length,appears:rows.filter(r=>r.kind==='实际出场').length,mentions:rows.filter(r=>r.kind==='仅在台词中提及').length},coverage:{catalog:catalog.length,indexed:catalog.filter(r=>entries[r.key]).length,pending:catalog.filter(r=>!entries[r.key]).length},offset,hasMore:offset+limit<rows.length,rows:rows.slice(offset,offset+limit)};
+}
+function createGuide({dataRoot=()=>path.join(__dirname,'data'),cacheRoots=[],observedFile}={}){
+ let observed=read(observedFile,{}),cache,revision=0;
+ const stock=()=>{const dir=dataRoot(),version=dir+':'+revision;if(cache?.version===version)return cache;const fallback=path.join(__dirname,'data'),catalog=read(path.join(dir,'catalog.json'),read(path.join(fallback,'catalog.json'),[])),home=read(path.join(dir,'home-catalog.json'),read(path.join(__dirname,'public/home-assets/catalog.json'),[])),entries={...read(path.join(fallback,'assistant-story-index.json'),{}).entries,...read(path.join(dir,'assistant-story-index.json'),{}).entries,...observed};cache={version,catalog,entries,modelOwners:owners(home)};return cache};
+ function observe(key,rows){if(!safeKey(key)||!Array.isArray(rows))return;observed[key]=analyze(rows,stock().modelOwners);revision++;if(observedFile){fs.mkdirSync(path.dirname(observedFile),{recursive:true});fs.writeFileSync(observedFile+'.tmp',JSON.stringify(observed));fs.renameSync(observedFile+'.tmp',observedFile)}}
+ function find(input){const s=stock();return search(s.catalog,s.entries,input)}
+ function list(){return stock().catalog}
+ function readScript(key){if(!safeKey(key))throw Error('剧情编号无效');for(const dir of cacheRoots){const rows=read(path.join(dir,'json',key),null);if(Array.isArray(rows))return rows}return null}
+ return{find,observe,list,readScript};
+}
+function build(catalog,loadScript,home){const modelOwners=owners(home),entries={};for(const row of catalog){if(!safeKey(row.key))continue;let script;try{script=loadScript(row.key)}catch{}if(Array.isArray(script))entries[row.key]=analyze(script,modelOwners)}return{version:1,source:'实际游戏脚本的说话人与模型出场；文本提及单独标注',catalog:catalog.length,indexed:Object.keys(entries).length,pending:catalog.length-Object.keys(entries).length,entries}}
+function sync(previous,next,cacheRoots=[]){const catalog=read(path.join(next,'catalog.json'),[]),home=read(path.join(next,'home-catalog.json'),read(path.join(__dirname,'public/home-assets/catalog.json'),[])),modelOwners=owners(home),old={...read(path.join(__dirname,'data/assistant-story-index.json'),{}).entries,...read(path.join(previous,'assistant-story-index.json'),{}).entries},entries={};for(const row of catalog){if(old[row.key])entries[row.key]=old[row.key];else for(const dir of cacheRoots){const rows=read(path.join(dir,'json',row.key),null);if(Array.isArray(rows)){entries[row.key]=analyze(rows,modelOwners);break}}}const result={version:1,source:'实际脚本索引；新增未取得脚本显示待核对，运行时读取后补充',catalog:catalog.length,indexed:Object.keys(entries).length,pending:catalog.length-Object.keys(entries).length,entries};fs.writeFileSync(path.join(next,'assistant-story-index.json'),JSON.stringify(result));return{indexed:result.indexed,pending:result.pending}}
+module.exports={person,owners,analyze,search,createGuide,build,safeKey,sync};

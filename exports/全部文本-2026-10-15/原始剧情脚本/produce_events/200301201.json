@@ -1,0 +1,866 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00125",
+    "bgm": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0722",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "textFrame": "off",
+    "se": "0757",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（ツイスタ通知？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プッシュ通知",
+    "text": "『八宮めぐるさんが写真を投稿しました』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（お、リアルタイムの更新か）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1040030060",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00529",
+    "fg": "003251",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2003012010010,
+    "speaker": "めぐる",
+    "text": "『みんなおはよう！\r\n今日の朝ご飯はお母さん作で和食でした！』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010010"
+  },
+  {
+    "id": 2003012010020,
+    "speaker": "めぐる",
+    "text": "『#お母さん美味しいご飯ありがとう\r\n#お休みなので納豆食べちゃう』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010020"
+  },
+  {
+    "id": 2003012010030,
+    "speaker": "めぐる",
+    "text": "『#納豆って後タレが美味しいんだって！\r\n#みんな知ってた？』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010030"
+  },
+  {
+    "textFrame": "off",
+    "se": "0280",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "anger3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2003012010040,
+    "speaker": "めぐる",
+    "text": "『#わたしは知らなかったので今日試しました\r\n#美味しかった！！！』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010040"
+  },
+  {
+    "id": 2003012010050,
+    "speaker": "めぐる",
+    "text": "『#衝撃受けると思う！\r\n#みんなも試してみてー！』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010050"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00125",
+    "fg": "fade_out",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "fgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（おお、すごいハッシュタグ付いてるな\r\nなんか……もはや会話になってるけど……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0280",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "ツイスタコメント",
+    "text": "『めぐるちゃんおはよー！』\r\n『和食いいね♡』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "ツイスタコメント",
+    "text": "『納豆美味しいけど食べるタイミング困るのわかる』\r\n『今日お休みなんだ！　私はこれから仕事です！』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "se": "0280",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（ファンのみんなも朝から元気だなぁ\r\nマメにコメントしてくれて、ありがたい話だ）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0757",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "プッシュ通知",
+    "text": "『八宮めぐるさんが投稿しました』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 2003012010060,
+    "speaker": "めぐる",
+    "text": "『みんなコメントありがとー！\r\n時間まで返せるだけコメント返すね！』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（いいね押しておこう）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（休みの日は休んでいいんだからな……！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……って、いいねじゃ伝わらないか）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0722",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "select": "（朝ご飯か）",
+    "nextLabel": "1"
+  },
+  {
+    "select": "（後タレか……）",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "（珍しいな）",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "（そういえば、今日は食べてないな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うん\r\n時間あるし、何か食べようかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0134",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00241",
+    "bgEffect": "fade",
+    "bgEffectTime": 600,
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 2003012010070,
+    "speaker": "めぐる",
+    "text": "『プロデューサーおはよう！』",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200301201/2003012010070"
+  },
+  {
+    "id": 2003012010080,
+    "speaker": "めぐる",
+    "text": "『事務所のアカウントからいいね付いたから\r\nメッセしちゃった！』",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010080"
+  },
+  {
+    "id": 2003012010090,
+    "speaker": "めぐる",
+    "text": "『プロデューサーは朝ご飯何食べた？』",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010090"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おお……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（あいかわらずフリック速いな……！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ええと……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『おはよう』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『めぐるの投稿を見て、\r\n何か食べようと思ってたところだ』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003012010100,
+    "speaker": "めぐる",
+    "text": "『そうなんだ！　じゃあじゃあ、わたしから提案！』",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200301201/2003012010100"
+  },
+  {
+    "id": 2003012010110,
+    "speaker": "めぐる",
+    "text": "『和食どう！？　納豆は後タレで！』",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200301201/2003012010110"
+  },
+  {
+    "label": "2",
+    "speaker": "プロデューサー",
+    "text": "（前か後かでどれくらい違うか、なんて\r\n意識したことなかったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0134",
+    "waitType": "time",
+    "waitTime": 1800
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 800
+  },
+  {
+    "textFrame": "off",
+    "bg": "00241",
+    "bgEffect": "fade",
+    "bgEffectTime": 600,
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2003012010120,
+    "speaker": "めぐる",
+    "text": "『おはよー！　プロデューサー今日お仕事？』",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200301201/2003012010120"
+  },
+  {
+    "id": 2003012010130,
+    "speaker": "めぐる",
+    "text": "『事務所のアカウントからいいね付いたから\r\nメッセしちゃった！』",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010130"
+  },
+  {
+    "id": 2003012010140,
+    "speaker": "めぐる",
+    "text": "『プロデューサーも納豆食べたのー？』",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010140"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0272",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『おはよう』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『今は移動中だよ\r\n朝飯がまだだから、後タレ試そうかと思ってたところだ』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003012010150,
+    "speaker": "めぐる",
+    "text": "『わ！　お疲れさま！\r\n後タレはね、きっとはまっちゃうと思うなー！』",
+    "charAnim1": "touch",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200301201/2003012010150"
+  },
+  {
+    "id": 2003012010160,
+    "speaker": "めぐる",
+    "text": "『びっくりしたもん！\r\nこれ後から入れる方がいいやつなんだ！？　って』",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『入れるタイミングで変わるって不思議だよな』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003012010170,
+    "speaker": "めぐる",
+    "text": "『だよね！？』",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010170"
+  },
+  {
+    "id": 2003012010180,
+    "speaker": "めぐる",
+    "text": "『だからね、プロデューサーも試してみて\r\n感想聞かせてね！』",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010180"
+  },
+  {
+    "id": 2003012010190,
+    "speaker": "めぐる",
+    "text": "『いってらっしゃーい！』",
+    "charAnim1": "hello",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おう……\r\nいってきます……！",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "3",
+    "speaker": "プロデューサー",
+    "text": "（これ、めぐるの家のリビングだよな……？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（結構内装見えちゃってるけど、\r\n大丈夫か……？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00241",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "se": "0272",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『おはよう』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『朝ご飯の投稿見たよ。お母さんのご飯美味しそうだな\r\n俺も食べたくなったよ』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『家の写真上げるのはいいんだけど\r\n外観とか、窓の外とか、写ると場所がわかっちゃうから』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『そういうのだけ気を付けような』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003012010200,
+    "speaker": "めぐる",
+    "text": "『プロデューサーおはよう！\r\nいいねありがとー！』",
+    "charAnim1": "smile3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200301201/2003012010200"
+  },
+  {
+    "id": 2003012010210,
+    "speaker": "めぐる",
+    "text": "『あんまり深く考えずに\r\nご飯おいしー！　って上げちゃったけど』",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010210"
+  },
+  {
+    "id": 2003012010220,
+    "speaker": "めぐる",
+    "text": "『確かにそうだよね！！\r\n気を付ける！』",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010220"
+  },
+  {
+    "id": 2003012010230,
+    "speaker": "めぐる",
+    "text": "『プロデューサー今日はお仕事？　お休み？』",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy2_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010230"
+  },
+  {
+    "id": 2003012010240,
+    "speaker": "めぐる",
+    "text": "『お休みなら事務所のアカウント見てたらダメだよー？』",
+    "charAnim1": "anger3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200301201/2003012010240"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00125",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（はは……\r\nめぐるも、なんだからな……！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

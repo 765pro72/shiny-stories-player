@@ -1,0 +1,618 @@
+[
+  {
+    "textFrame": "off",
+    "bgm": "0000",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2016007010010,
+    "speaker": "千雪",
+    "text": "『叶えては生まれる、新しい夢のなか』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010010"
+  },
+  {
+    "id": 2016007010020,
+    "speaker": "千雪",
+    "text": "『親指姫は気付いていたのかな？』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010020"
+  },
+  {
+    "id": 2016007010030,
+    "speaker": "千雪",
+    "text": "『花の国の王子様が　最後の夢だって──』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010030"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 2016007010040,
+    "speaker": "千雪",
+    "text": "──ど、どうでしょうか……？",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040160020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "002",
+    "voice": "produce_events/201600701/2016007010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……うん、すごくいいよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "きっと、読んでくれた人の記憶に残るんじゃないかな",
+    "charAnim2": "face_surp",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010050,
+    "speaker": "千雪",
+    "text": "あ……\r\nありがとうございます……！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "けど、千雪は\r\n親指姫をこんなふうに読んでたんだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010060,
+    "speaker": "千雪",
+    "text": "……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや……俺なんかは\r\n小さいお姫様の話、くらいにしか思ってなかったから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010070,
+    "speaker": "千雪",
+    "text": "いえ、そんな……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010070"
+  },
+  {
+    "id": 2016007010080,
+    "speaker": "千雪",
+    "text": "受け取り方は人それぞれですし……\r\nそこが物語のいいところですから",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はは\r\nありがとうな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、好きな本のコラムに\r\n親指姫の絵本を選ぶなんてさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "千雪らしいけど……\r\n何か、選んだ理由はあるのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010090,
+    "speaker": "千雪",
+    "text": "……はい\r\n弟が小さなころ、絵本の読み聞かせをしていたので",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010100,
+    "speaker": "千雪",
+    "text": "……でも、それだけじゃなくて",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010100"
+  },
+  {
+    "id": 2016007010110,
+    "speaker": "千雪",
+    "text": "昔から好きなんです\r\n絵本とか……そういった、物語が",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010110"
+  },
+  {
+    "id": 2016007010120,
+    "speaker": "千雪",
+    "text": "物語のヒロインを見ていると……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010120"
+  },
+  {
+    "id": 2016007010130,
+    "speaker": "千雪",
+    "text": "自分もきっと、\r\n何かになれるんじゃないかって思って",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010130"
+  },
+  {
+    "id": 2016007010140,
+    "speaker": "千雪",
+    "text": "ヒロイン──\r\nなんて言わないですけど……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010140"
+  },
+  {
+    "id": 2016007010150,
+    "speaker": "千雪",
+    "text": "…………",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010150"
+  },
+  {
+    "select": "いいじゃないか、\r\nヒロイン",
+    "nextLabel": "1"
+  },
+  {
+    "select": "俺もわかる気がするよ",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "今、千雪が\r\nなりたいものは？",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2016007010160,
+    "label": "1",
+    "speaker": "千雪",
+    "text": "え……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_a",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なれないとか、なっちゃだめ\r\nなんてものはないよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それに、アイドルも似たようなものだと思うぞ\r\nみんなの憧れのヒロインじゃないか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010170,
+    "speaker": "千雪",
+    "text": "……そうでしょうか",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だからさ、千雪はもっと\r\n自分のことだけを考えてくれていいんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それで、ファンや俺にも\r\n千雪の物語を見せてくれると嬉しいな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010180,
+    "speaker": "千雪",
+    "text": "…………",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad2_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──すまん、\r\nなんだか抽象的な話になってしまって……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010190,
+    "speaker": "千雪",
+    "text": "いえ……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010190"
+  },
+  {
+    "id": 2016007010200,
+    "speaker": "千雪",
+    "text": "プロデューサーさんが\r\n優しくて、嬉しいです",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010200"
+  },
+  {
+    "id": 2016007010210,
+    "speaker": "千雪",
+    "text": "……ありがとうございます",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201600701/2016007010210"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "2",
+    "speaker": "プロデューサー",
+    "text": "その物語の疑似体験っていうのかな……",
+    "charAnim2": "face_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "アクション映画を観た後は\r\nなんだか自分も強くなった気がしたりとかな！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010220,
+    "speaker": "千雪",
+    "text": "ふふっ……！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010220"
+  },
+  {
+    "id": 2016007010230,
+    "speaker": "千雪",
+    "text": "……それじゃあ、親指姫の場合は\r\n『自分が小さかったら』の疑似体験でしょうか？",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おお……\r\nそれは…………大変だな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010240,
+    "speaker": "千雪",
+    "text": "ですね～……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そう考えると、やっぱり\r\nどんどん未来に挑んでいった親指姫はすごいよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010250,
+    "speaker": "千雪",
+    "text": "はい……\r\nきっと、大変な時にも",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010250"
+  },
+  {
+    "id": 2016007010260,
+    "speaker": "千雪",
+    "text": "未来にはもっと\r\n素敵な事があるって思ったんだと思います",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか……！\r\nそれは、見習っていきたい考え方だな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010270,
+    "speaker": "千雪",
+    "text": "……ふふ、そうですね……！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201600701/2016007010270"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2016007010280,
+    "label": "3",
+    "speaker": "千雪",
+    "text": "え？　ええと……\r\n……そんな、急には思いつきません……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "すまん、そうだよな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、ゆっくりでいいから\r\n自分の気持ちに向き合ってみてくれないか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010290,
+    "speaker": "千雪",
+    "text": "…………",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad2_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010290"
+  },
+  {
+    "id": 2016007010300,
+    "speaker": "千雪",
+    "text": "私が、今……",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010300"
+  },
+  {
+    "id": 2016007010310,
+    "speaker": "千雪",
+    "text": "……今は──たくさんの人を笑顔にできるような、\r\nそんなアイドル……でしょうか",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうか。わかった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、それが最後の夢って\r\nわけじゃないんだろ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010320,
+    "speaker": "千雪",
+    "text": "……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010320"
+  },
+  {
+    "id": 2016007010330,
+    "speaker": "千雪",
+    "text": "……はい、きっとそうです",
+    "charAnim1": "smile2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺は……\r\n千雪が、これが最後なんだって思える夢まで",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "叶えるための手伝いを\r\nさせてもらえるといいと思ってるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007010340,
+    "speaker": "千雪",
+    "text": "プロデューサーさん……\r\n……ありがとうございます",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600701/2016007010340"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

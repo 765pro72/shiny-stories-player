@@ -1,0 +1,130 @@
+{
+  "at": "2026-11-15T16:03:54.681Z",
+  "networkDisabled": true,
+  "fixtureAssetsOnly": true,
+  "programUnchanged": true,
+  "fingerprint": "dbc9afb4a69fd6ddad2a09f4ae146de448f80d4d05fca662f4cde100a270e98b",
+  "ok": true,
+  "rows": [
+    {
+      "name": "test-content-update.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS all-content updates: cards/images/movies/rarity/models/voices/phones/casting/story linkage, idempotence, partial-failure preservation, metadata only\n"
+    },
+    {
+      "name": "test-material-index-update.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS all new material types, honest pending metadata, exact script references, idempotence, active-update catalogs and incremental runtime references.\n"
+    },
+    {
+      "name": "test-assistant-install.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS repair consent/cancel, atomic apply, health rollback, newly created file removal, version/hash/path/token guards, Chinese and spaced paths.\n"
+    },
+    {
+      "name": "test-assistant.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "{\n  addresses: 640,\n  personaSpecific: true,\n  carePremise: true,\n  patchLayoutAndRollback: true,\n  failedChecksNotDropIn: true,\n  sourceBoundaries: true,\n  storyIndex: { catalog: 10906, indexed: 10906, pending: 0 },\n  lucaMatches: 438\n}\nPASS assistant error responses, same-origin boundary and ordinary chat without tools.\nPASS code-task completion automatically builds and exports, then waits for consent; no automatic application.\n"
+    },
+    {
+      "name": "test-story-ai.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS 4 API protocols, streamed UTF-8, model list, same-origin protection, constrained playable scripts, independent outline/full-text/repair/polish prompts and append preservation.\n"
+    },
+    {
+      "name": "test-story-voice.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS Fish/OpenAI TTS requests, strict Fish model selection, origin protection, binary audio and no key in payload. No paid API calls.\n"
+    },
+    {
+      "name": "test-home-voice-policy.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS same-character fallback, Hazuki own 091 home voices, compatible conversation motion/lip, native motion preserved, relay transitions, no nonexistent animation calls.\n"
+    },
+    {
+      "name": "test-material-models.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS exact new Kaho model original preview, page navigation, real card rarity, independent costumes, sort and narrow layout.\n"
+    },
+    {
+      "name": "test-assistant-install-ui.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS native consent/cancel, checkpoint failure keeps app open, real project/candidate/imported bytes/bilingual text/dirty state/manual script restored.\n[13668:1116/000252.553:ERROR:gpu\\ipc\\client\\command_buffer_proxy_impl.cc:488] GPU state invalid after WaitForGetOffsetInRange.\r\n"
+    },
+    {
+      "name": "test-assistant-ui.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n(electron) 'console-message' arguments are deprecated and will be removed. Please use Event<WebContentsConsoleMessageEventParams> object instead.\n{\n  stylesheetReadyBeforeVisible: true,\n  proseWrappedToolsExecuted: true,\n  clearPersistedAcrossPages: true,\n  noLateMessagesAfterClear: true,\n  avatarDragExpandedAndCollapsed: true,\n  contextMenuClose: true,\n  settingCloseAndReopen: true,\n  visibilityPersistsAcrossPages: true,\n  hiddenStaysHiddenInsideDialogs: true,\n  chatNoTools: true,\n  localGuideAndDownload: true,\n  realPageContext: true,\n  avatarsAndNames: true,\n  keyboardMove: true,\n  modalUsable: true,\n  narrowBounds: true,\n  homepageAndGuide: true,\n  historyAcrossPages: true,\n  noPersistedKey: true,\n  mockAPICalls: 4\n}\n"
+    },
+    {
+      "name": "test-story-speaking.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n{\n  speakerOnly: true,\n  alternatingSpeakers: true,\n  previousSpeakerClosed: true,\n  silenceClosed: true,\n  producerClosed: true,\n  producerCaptionClosed: true,\n  oldMouthCueSuppressed: true,\n  sameModelReused: true,\n  bodyGestureOnce: true,\n  bodyContinuity: true,\n  gaze: {\n    from: 7.720000009536744,\n    start: 7.720000009536744,\n    middle: 7.995000000596047,\n    end: 8.26999999165535\n  },\n  voiceSelectorAligned: true\n}\n"
+    },
+    {
+      "name": "test-story-saved-performance.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n{\n  \"saved\": {\n    \"id\": \"ac4f3bb4-0ecf-47c0-872d-c5656f236fc3\",\n    \"actorId\": \"8dea1395-5410-4022-90bb-9bbb7488ce7c\",\n    \"generatedId\": \"draft-n\"\n  },\n  \"savedAudioPlaying\": true,\n  \"speaking\": true,\n  \"listenerClosed\": true,\n  \"producerClosed\": true,\n  \"nativeReturn\": true,\n  \"arm\": [\n    {\n      \"time\": 0,\n      \"body\": \"arm_down\",\n      \"up\": 1,\n      \"down\": 0\n    },\n    {\n      \"time\": 0.1,\n      \"body\": \"arm_down\",\n      \"up\": 1,\n      \"down\": 0\n    },\n    {\n      \"time\": 0.2,\n      \"body\": \"arm_down\",\n      \"up\": 1,\n      \"down\": 0\n    },\n    {\n      \"time\": 0.35,\n      \"body\": \"arm_down\",\n      \"up\": 1,\n      \"down\": 0\n    },\n    {\n      \"time\": 0.5,\n      \"body\": \"arm_down\",\n      \"up\": 0,\n      \"down\": 1\n    },\n    {\n      \"time\": 0.75,\n      \"body\": \"arm_down\",\n      \"up\": 0,\n      \"down\": 1\n    },\n    {\n      \"time\": 1,\n      \"body\": \"wait1\",\n      \"up\": 0,\n      \"down\": 1\n    },\n    {\n      \"time\": 1.1,\n      \"body\": \"wait1\",\n      \"up\": 0,\n      \"down\": 1\n    }\n  ],\n  \"legacyActorIdRecovered\": true,\n  \"timed\": {\n    \"bindings\": [\n      \"8dea1395-5410-4022-90bb-9bbb7488ce7c\",\n      \"c696f185-7dda-4e87-bc36-87fd0f8ac613\"\n    ],\n    \"currentActors\": [\n      \"8dea1395-5410-4022-90bb-9bbb7488ce7c\",\n      \"c696f185-7dda-4e87-bc36-87fd0f8ac613\"\n    ],\n    \"firstSpeakerMoves\": true,\n    \"firstListenerClosed\": true,\n    \"replySpeakerMoves\": true,\n    \"previousSpeakerClosed\": true,\n    \"producerClosed\": true\n  },\n  \"cueReturns\": [\n    {\n      \"motion\": \"smile1\",\n      \"expected\": \"arm_down\",\n      \"actual\": \"arm_down\",\n      \"progress\": 0.19999999999999996\n    },\n    {\n      \"motion\": \"shy1\",\n      \"expected\": \"arm_down_L\",\n      \"actual\": \"arm_down_L\",\n      \"progress\": 0.19999999999999996\n    },\n    {\n      \"motion\": \"surp1\",\n      \"expected\": \"arm_down_R\",\n      \"actual\": \"arm_down_R\",\n      \"progress\": 0.19999999999999996\n    }\n  ],\n  \"gazeDuringReturn\": {\n    \"actual\": 129.68976453955239,\n    \"expected\": 129.68976453955239,\n    \"difference\": 0\n  },\n  \"continuity\": {\n    \"relayContinues\": true,\n    \"relayOffset\": 0.4,\n    \"settled\": true,\n    \"sameModel\": true\n  },\n  \"gasha\": {\n    \"voicePlaying\": true,\n    \"speakerMoves\": true,\n    \"listenerClosed\": true,\n    \"pausedClosed\": true\n  }\n}\n"
+    },
+    {
+      "name": "test-story-mouth-cues.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n{\n  \"checked\": 10,\n  \"speaking\": 10,\n  \"still\": [],\n  \"listenersClosed\": true,\n  \"disabledClosed\": true,\n  \"pausedClosed\": true,\n  \"unvoicedClosed\": true\n}\n"
+    },
+    {
+      "name": "test-story-local-audio.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n(electron) 'console-message' arguments are deprecated and will be removed. Please use Event<WebContentsConsoleMessageEventParams> object instead.\n{\n  automaticSpeechAndSilence: true,\n  speechCycleVariants: 2,\n  listenerClosed: true,\n  savedReopened: true,\n  aiEntry: true,\n  editorEntry: true,\n  noAPIKey: true,\n  roundedScroll: true,\n  scrolls: true,\n  noMouthWarning: true,\n  timingWarning: true\n}\n"
+    },
+    {
+      "name": "test-story-producer-sound.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n{\n  gapless: true,\n  intervalSetting: true,\n  intervalSaved: true,\n  intervalPlayback: true,\n  noLatePulse: true,\n  defaultPlays: true,\n  defaultState: {\n    backend: 'web-audio',\n    duration: 0.11464583333333334,\n    loop: true,\n    src: '/official-ui-sounds/002.m4a',\n    time: 0.08,\n    paused: false,\n    readyState: 4,\n    error: undefined\n  },\n  idolClosed: true,\n  notVoice: true,\n  stopped: true,\n  disabled: true,\n  changed: true,\n  actualVoiceWins: true,\n  saved: true,\n  settings: true,\n  switchSaved: true,\n  aiEntry: true\n}\n"
+    },
+    {
+      "name": "test-story-ai-correction.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n{\n  at: '2026-11-15T16:03:28.770Z',\n  mockProvider: true,\n  noPaidAPICalls: true,\n  independentOfOutline: true,\n  realMotionCatalog: true,\n  previewBeforeEditor: true,\n  issuesVisible: true,\n  undo: true,\n  dialogueAndVoiceProtected: true,\n  abortPreservesScript: true,\n  offlinePromptAndPaste: true,\n  keyNotPersisted: true\n}\n"
+    },
+    {
+      "name": "test-custom-story.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n(electron) 'console-message' arguments are deprecated and will be removed. Please use Event<WebContentsConsoleMessageEventParams> object instead.\n{\n  modelAnimations: 65,\n  importedAssets: 3,\n  scenes: 2,\n  zipBytes: 259315,\n  saved: '怪文书往返测试',\n  bodyOverflow: false\n}\nBuiltin background + Spine dependencies embedded\n{\n  offlineModel: true,\n  voiceState: 4,\n  subtitleTiming: true,\n  text: '第一句定时字幕'\n}\n{\n  endpointPointerDrag: true,\n  originPreserved: true,\n  otherMovesPreserved: true\n}\n{\n  pointerDrag: true,\n  layouts: [\n    { width: 1280, overflow: false, nav: true },\n    { width: 680, overflow: false, nav: true },\n    { width: 3840, overflow: false, nav: true }\n  ]\n}\nPASS real imported Spine/PNG/audio, scene reorder, saved archive roundtrip, offline playback and SRT timings\n"
+    },
+    {
+      "name": "test-custom-story-library.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS local directory, shared read-only story modal, search retained after close, controls, transcript, quality, isolated import and edit/watch compatibility.\n"
+    },
+    {
+      "name": "test-custom-story-viewer.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS shared story modal, portable audio and mouth animation, Japanese/bilingual captions, volume, favorite, scoped text overlay, next/auto/restart, fullscreen and close.\n"
+    },
+    {
+      "name": "test-desktop-window.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS native maximized client covers the complete work area; no caption strip.\n[24204:1116/000354.654:ERROR:gpu\\ipc\\client\\command_buffer_proxy_impl.cc:488] GPU state invalid after WaitForGetOffsetInRange.\r\n[24204:1116/000354.654:ERROR:gpu\\ipc\\client\\command_buffer_proxy_impl.cc:488] GPU state invalid after WaitForGetOffsetInRange.\r\n"
+    }
+  ]
+}

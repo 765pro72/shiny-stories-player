@@ -1,0 +1,229 @@
+[
+  {
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "speaker": "はづき",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 7902001060010,
+    "speaker": "社長",
+    "text": "やはりここまで来ると、\r\n乗り越えるべき壁も高かったな……",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701900106/7902001060010"
+  },
+  {
+    "id": 7901001060010,
+    "speaker": "はづき",
+    "text": "結果は残念でしたけど……\r\nおふたりは立派にやってましたよ！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701900106/7901001060010"
+  },
+  {
+    "id": 7901001060020,
+    "speaker": "はづき",
+    "text": "ここまで来れただけでも、\r\n胸を張って誇れることだと私は思います",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701900106/7901001060020"
+  },
+  {
+    "id": 7902001060020,
+    "speaker": "社長",
+    "text": "ああ、良い活躍だった\r\nそれはたしかだ",
+    "charAnim1": "wait1",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701900106/7902001060020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……俺もそう思います\r\n彼女はよくやってくれました",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001060030,
+    "speaker": "はづき",
+    "text": "その言葉を、彼女に直接\r\n言ってあげましょう？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701900106/7901001060030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 101
+  },
+  {
+    "bg": "00002",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 7019001060010,
+    "speaker": "愛依",
+    "text": "マジで？　ダメだったの……？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "019",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/701900106/7019001060010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、その……惜しかったよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7019001060020,
+    "speaker": "愛依",
+    "text": "～～……っ！\r\nヤバい悔しいんだけど！",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701900106/7019001060020"
+  },
+  {
+    "id": 7019001060030,
+    "speaker": "愛依",
+    "text": "せっかくプロデューサーと作戦考えたのに！\r\n誰にも見てもらえないとか……！",
+    "charAnim1": "anger2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701900106/7019001060030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……俺も悔しいよ、でもきっとまたチャンスはある\r\nその時に備えて、頑張っていこう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そして、今度こそみんなに\r\n愛依のパフォーマンスを見てもらおう！",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7019001060040,
+    "speaker": "愛依",
+    "text": "……そだね！\r\nそのためにも、今から猛特訓しちゃう？",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701900106/7019001060040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな、早速やろう！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7019001060050,
+    "speaker": "愛依",
+    "text": "ガンガン行くからね？　覚悟してよ、プロデューサー！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701900106/7019001060050"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

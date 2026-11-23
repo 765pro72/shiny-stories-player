@@ -1,0 +1,720 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "えーと、『収納』かなぁ……\r\n──あ、おーい、霧子。そっちは売り場が違うぞー！",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00027",
+    "bgm": "016"
+  },
+  {
+    "id": 2008004030010,
+    "speaker": "霧子",
+    "text": "…………\r\n……ぷ、プロデューサーさん……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2008004030020,
+    "speaker": "霧子",
+    "text": "あ、あの……あっち……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040080010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200800403/2008004030020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030030,
+    "speaker": "霧子",
+    "text": "あっちに……いっぱい……\r\nあの……可愛いお部屋が……あって……！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？　……あぁ\r\nここ、モデルルームがいっぱい展示されてるよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "中身は全部、商品の家具なんだけど……\r\nおもしろいよなぁ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030040,
+    "speaker": "霧子",
+    "text": "そ、そうなんですね……！\r\nお部屋の……町みたいで……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん\r\n……霧子、そっち見たいのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030050,
+    "speaker": "霧子",
+    "text": "あっ、い、いえ……！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、かまわないぞ。俺は備品が買えればいいから\r\n……あとは、帰るだけだしな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030060,
+    "speaker": "霧子",
+    "text": "ぷ、プロデューサーさん……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030060"
+  },
+  {
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "kiriko",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……それにしても、でかい店だよな……\r\nほんとに、『部屋の町』って感じだ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030070,
+    "speaker": "霧子",
+    "text": "はい……\r\n天井も……とっても高くて……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん。これだけ大きいと、\r\nなんだかネズミにでもなったような気持ちになるなぁ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030080,
+    "speaker": "霧子",
+    "text": "えっ……\r\n……ふふっ……！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030090,
+    "speaker": "霧子",
+    "text": "ここは……\r\nネズミさんの……お家なんですね……！",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、いや……ははは\r\n……そうだとしたら、ずいぶん近代的な家だなー",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030100,
+    "speaker": "霧子",
+    "text": "ふふふ……じゃあ……\r\nプロデューサーさんは、ネズミさんのお父さん……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "004",
+    "voice": "produce_events/200800403/2008004030100"
+  },
+  {
+    "id": 2008004030110,
+    "speaker": "霧子",
+    "text": "わたしは……\r\nネズミさんのお母さんを……やります……！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……え？\r\nま、ままごとってことか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "な、なるほど……\r\nよし……じゃあ──",
+    "charAnim2": "face_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "れ、冷蔵庫に\r\n何かあったかな！",
+    "nextLabel": "1"
+  },
+  {
+    "select": "か、可愛い\r\n子ども部屋だな！",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "い、いいダイニング\r\nテーブルだよな！",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "その……\r\n昼飯、俺が作るからさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030120,
+    "speaker": "霧子",
+    "text": "は、はい……\r\nでも……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030120"
+  },
+  {
+    "id": 2008004030130,
+    "speaker": "霧子",
+    "text": "先週……ツナ缶とか、鶏さんのお肉とか……\r\nネコさんに……取られちゃいました……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え、え……っ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（結構……過酷な設定なんだな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そ、そうか……\r\nでも、家にはまだこんなに冷蔵庫があるからな……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030140,
+    "speaker": "霧子",
+    "text": "ぷ、プロデュー……──",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030140"
+  },
+  {
+    "id": 2008004030150,
+    "speaker": "霧子",
+    "text": "お父さんネズミさん……！",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おう……！\r\n今日もたくさん食べ物を持ってくるから、待っててくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030160,
+    "speaker": "霧子",
+    "text": "……はい！\r\nふふっ……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200800403/2008004030160"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2008004030170,
+    "label": "2",
+    "speaker": "霧子",
+    "text": "はい……！\r\nすごく可愛いです……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030170"
+  },
+  {
+    "id": 2008004030180,
+    "speaker": "霧子",
+    "text": "お父さんネズミさん……\r\n子どもたちを……起こしてきてください……！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ？\r\nおっ、おう！　──えっと……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……えっと\r\n起きろ、一郎",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030190,
+    "speaker": "霧子",
+    "text": "ふふっ\r\n……ごはんですよ",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん。ごはんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030200,
+    "speaker": "霧子",
+    "text": "……",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……？\r\nな、なにか変か……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030210,
+    "speaker": "霧子",
+    "text": "い、いえ……あの……\r\nネズミさんの子どもは……たくさんいるんです……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？　あ、そうなのか……\r\nえっと、じゃあ……──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "kiriko",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "八郎、おはよう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030220,
+    "speaker": "霧子",
+    "text": "はい、八郎さん……\r\nごはんですよ……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030220"
+  },
+  {
+    "id": 2008004030230,
+    "speaker": "霧子",
+    "text": "ふふ……おはよう……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あはは……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（霧子が楽しそうなのはいいんだが……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ど、どこまで……続ければいいんだ……？",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2008004030240,
+    "label": "3",
+    "speaker": "霧子",
+    "text": "はい……！\r\n自慢の……テーブルです……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "う、うん。思いきって買い替えてよかったよ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（こんなテーブル……\r\n買ってみたいもんだけど……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………\r\n……俺には、ちょっと持て余すなぁ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030250,
+    "speaker": "霧子",
+    "text": "……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030250"
+  },
+  {
+    "id": 2008004030260,
+    "speaker": "霧子",
+    "text": "お、お父さんネズミさんは……\r\n単身赴任……なんですね……！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030270,
+    "speaker": "霧子",
+    "text": "じゃあ……栄養が偏らないように……\r\nしなきゃです……！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "う、うん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030280,
+    "speaker": "霧子",
+    "text": "フードプロセッサーも……見ましょう……！\r\nこっちです……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そ、それは……実用的だな……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030290,
+    "speaker": "霧子",
+    "text": "それから……\r\nお掃除とか……お洗濯も……",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030290"
+  },
+  {
+    "id": 2008004030300,
+    "speaker": "霧子",
+    "text": "ひとりで……きちんとできるように……\r\nいろいろ買わないと……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？　お、おう……\r\n……ひとりで……きちんとな…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……\r\nうーん……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008004030310,
+    "speaker": "霧子",
+    "text": "お父さんネズミさん……？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800403/2008004030310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや……\r\nなんだか、身につまされるよ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

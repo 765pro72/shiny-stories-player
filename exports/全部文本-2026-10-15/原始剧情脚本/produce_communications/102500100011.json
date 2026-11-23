@@ -1,0 +1,150 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あれ、美琴\r\n来てたのか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1025001000110010,
+    "speaker": "美琴",
+    "text": "……うん、おはよう",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "025",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102500100011/1025001000110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なんだ、朝なのに元気が無いな",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "朝ご飯\r\n食べたか？",
+    "nextLabel": "1025001000111"
+  },
+  {
+    "select": "ちゃんと\r\n寝れたか？",
+    "nextLabel": "1025001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "規則正しい\r\n生活しないとな",
+    "nextLabel": "1025001000113"
+  },
+  {
+    "label": "1025001000111",
+    "speaker": "プロデューサー",
+    "text": "もしまだなら、\r\nこのパン、食べるか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1025001000110020,
+    "speaker": "美琴",
+    "text": "……いいの？\r\nじゃあ、いただこうかな",
+    "charAnim1": "think1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102500100011/1025001000110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1025001000110030,
+    "label": "1025001000112",
+    "speaker": "美琴",
+    "text": "え？\r\nうん、これから帰って寝るよ",
+    "charAnim1": "surp3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102500100011/1025001000110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ、これから……！？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "1025001000113",
+    "speaker": "プロデューサー",
+    "text": "体調管理もしっかりな！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1025001000110040,
+    "speaker": "美琴",
+    "text": "……うん\r\nでも、大丈夫だから",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102500100011/1025001000110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

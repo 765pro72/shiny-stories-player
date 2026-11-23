@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+    padding-left: env(safe-area-inset-left, 0);
+    padding-right: env(safe-area-inset-right, 0);
+    padding-top: env(safe-area-inset-top, 0);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    box-sizing: border-box;
+}
+
+@media (pointer: coarse) {
+    button {
+        min-height: 44px;
+        min-width: 44px;
+        touch-action: manipulation;
+    }
+}
+
+canvas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@font-face {
+    font-family: 'theFont';
+    src: url(./assets/TsunagiGothic.ttf);
+}
+
+/* @font-face {
+    font-family: 'three';
+    src: url(./assets/three.ttf);
+} */
+
+@font-face {
+    font-family: 'AlimamaShuHeiTi';
+    src: url(./assets/AlimamaShuHeiTi.ttf);
+}
+
+.player-exit-btn {
+    display: none !important;
+}
+.player-exit-btn:hover {
+    background: rgba(58, 44, 72, 0.95);
+    border-color: rgba(255, 255, 255, 0.55);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.55);
+}
+.player-exit-btn:active {
+    transform: translateY(1px);
+    background: rgba(20, 15, 26, 0.98);
+}
+body.in-iframe:not(.has-error) .player-exit-btn {
+    display: none !important;
+}
+body.has-error .player-exit-btn {
+    display: inline-flex !important;
+    z-index: 100000 !important;
+}
+

@@ -1,0 +1,1533 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00160",
+    "bgEffect": "white_add",
+    "bgm": "0002",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "bg": "00160",
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3004009010010,
+    "speaker": "恋鐘",
+    "text": "──ふぅ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010010"
+  },
+  {
+    "id": 3004009010020,
+    "speaker": "恋鐘",
+    "text": "夏やね～……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010020"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "charType": "idols",
+    "charId": "1030070010",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "charType": "idols",
+    "charId": "1030080020",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00001",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "se": "0113",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textFrame": "off"
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "kiriko",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010030,
+    "speaker": "恋鐘",
+    "text": "あれ～\r\n結華、霧子～！",
+    "charAnim1": "wait5",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "001",
+    "voice": "produce_events/300400901/3004009010030"
+  },
+  {
+    "charLabel": "kogane",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3004009010040,
+    "speaker": "霧子",
+    "text": "恋鐘ちゃん……！　おはよう……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010040"
+  },
+  {
+    "id": 3004009010050,
+    "speaker": "恋鐘",
+    "text": "おはよ～\r\nふたりともなんばしよったと？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010050"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010060,
+    "speaker": "結華",
+    "text": "三峰、もうすぐ夏休みだからさ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010060"
+  },
+  {
+    "id": 3004009010070,
+    "speaker": "結華",
+    "text": "さっきまで、プロデューサーと\r\n予定の確認してたんだよね",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010070"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010080,
+    "speaker": "恋鐘",
+    "text": "夏休み！　そいはよかね～！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010080"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010090,
+    "speaker": "結華",
+    "text": "きりりんも期末テスト終わったら\r\n夏休みだもんね",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010090"
+  },
+  {
+    "id": 3004009010100,
+    "speaker": "霧子",
+    "text": "ふふっ……うん",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010100"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "kiriko"
+  },
+  {
+    "id": 3004009010110,
+    "speaker": "結華",
+    "text": "でもいいことだけじゃないんだよ……\r\nきりりん、宿題たくさんあったりしない？",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010110"
+  },
+  {
+    "id": 3004009010120,
+    "speaker": "霧子",
+    "text": "あっ……うん……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010120"
+  },
+  {
+    "id": 3004009010130,
+    "speaker": "霧子",
+    "text": "読書感想文とか……数学のプリントとか……\r\nいっぱい出るかも……",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010130"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010140,
+    "speaker": "恋鐘",
+    "text": "宿題……！\r\nそいは大変やね……",
+    "charAnim1": "think",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010140"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010150,
+    "speaker": "結華",
+    "text": "三峰も高校の頃はいっぱい出たなぁ……\r\nベクトルがどうとかグラフがどうとか……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010150"
+  },
+  {
+    "id": 3004009010160,
+    "speaker": "結華",
+    "text": "小学校の頃は、朝顔の観察とか、\r\n絵日記でよかったのにねぇ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010160"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010170,
+    "speaker": "恋鐘",
+    "text": "んふふ～\r\nそがんとやったらまたやってもよかね～",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010170"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "kogane"
+  },
+  {
+    "id": 3004009010180,
+    "speaker": "霧子",
+    "text": "結華ちゃんは……\r\n大学生だから、宿題無いの……？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010180"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010190,
+    "speaker": "結華",
+    "text": "ううん、三峰も課題は出ちゃうかも\r\nまだちゃんと発表されてないんだけどね",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010190"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010200,
+    "speaker": "恋鐘",
+    "text": "ん～……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010200"
+  },
+  {
+    "id": 3004009010210,
+    "speaker": "恋鐘",
+    "text": "『夏休み』ってなんかわくわく～って\r\n感じと思っとったとに……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010210"
+  },
+  {
+    "id": 3004009010220,
+    "speaker": "恋鐘",
+    "text": "ふたりの夏休みが仕事と宿題で\r\n終わってしまうとはさみしかね……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010220"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010230,
+    "speaker": "霧子",
+    "text": "恋鐘ちゃん……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010230"
+  },
+  {
+    "id": 3004009010240,
+    "speaker": "結華",
+    "text": "うんうん\r\nだからさみしく終わらないように──",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close2",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010240"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010250,
+    "speaker": "結華",
+    "text": "この夏は、アイドルと宿題と夏休みの\r\n三足のわらじで頑張らないとなーって！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300400901/3004009010250"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010260,
+    "speaker": "恋鐘",
+    "text": "三足のわらじ……！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010260"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010270,
+    "speaker": "結華",
+    "text": "アイドルも宿題ももちろんやらなきゃだけど\r\n頑張った分だけ夏休みを楽しまなきゃ！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010270"
+  },
+  {
+    "id": 3004009010280,
+    "speaker": "霧子",
+    "text": "うん……\r\nわたしも、そうしたいな……！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010280"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010290,
+    "speaker": "恋鐘",
+    "text": "んん～……！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_anger",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010290"
+  },
+  {
+    "id": 3004009010300,
+    "speaker": "恋鐘",
+    "text": "なんか……\r\n宿題のば～りうらやましくなってきたばい！",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010300"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010310,
+    "speaker": "霧子",
+    "text": "…………！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010310"
+  },
+  {
+    "id": 3004009010320,
+    "speaker": "霧子",
+    "text": "恋鐘ちゃん……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010320"
+  },
+  {
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3004009010330,
+    "speaker": "結華",
+    "text": "ん、どしたのきりりん？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010330"
+  },
+  {
+    "id": 3004009010340,
+    "speaker": "霧子",
+    "text": "ちょっと……待ってね……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010340"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "se": "0329",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3004009010350,
+    "speaker": "恋鐘",
+    "text": "霧子～？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010350"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0329",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 3004009010360,
+    "speaker": "霧子",
+    "text": "あっ……あった……！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010360"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010370,
+    "speaker": "恋鐘",
+    "text": "何があったと～？",
+    "charAnim1": "wait5",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010370"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3004009010380,
+    "speaker": "霧子",
+    "text": "恋鐘ちゃん……これ……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010380"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010390,
+    "speaker": "恋鐘",
+    "text": "……ノート？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010390"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010400,
+    "speaker": "霧子",
+    "text": "これ……まだ使ってないから\r\n恋鐘ちゃんに……",
+    "charAnim1": "think",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010400"
+  },
+  {
+    "id": 3004009010410,
+    "speaker": "霧子",
+    "text": "これで……絵日記\r\n書くのはどうかな……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010410"
+  },
+  {
+    "id": 3004009010420,
+    "speaker": "霧子",
+    "text": "夏休みの、宿題……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010420"
+  },
+  {
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3004009010430,
+    "speaker": "結華",
+    "text": "ああ、なるほど！\r\nこがたんに宿題出してあげるわけか",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010430"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010440,
+    "speaker": "恋鐘",
+    "text": "え～っ、うちがこれ使ってよかと～！？",
+    "charAnim1": "touch",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010440"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010450,
+    "speaker": "霧子",
+    "text": "うん……ふふっ\r\n恋鐘ちゃんも一緒に……三足のわらじ……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010450"
+  },
+  {
+    "id": 3004009010460,
+    "speaker": "結華",
+    "text": "よかったねぇ\r\nおそろいだよこがたーん",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010460"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010470,
+    "speaker": "恋鐘",
+    "text": "うん～\r\nありがと～ね、霧子！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010470"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010480,
+    "speaker": "結華",
+    "text": "──こがたん君\r\nきりりん先生からの宿題、毎日きちんとやるように",
+    "charAnim1": "wink",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010480"
+  },
+  {
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3004009010490,
+    "speaker": "恋鐘",
+    "text": "もっちろん！\r\n早速今日から書き始めるばい！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010490"
+  },
+  {
+    "id": 3004009010500,
+    "speaker": "結華",
+    "text": "あちゃー、\r\nこがたんは今日からもう夏休みになっちゃったかー！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010500"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009010510,
+    "speaker": "霧子",
+    "text": "ふふふっ……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400901/3004009010510"
+  },
+  {
+    "id": 3004009010520,
+    "speaker": "霧子",
+    "text": "ページ……いっぱいあるから……",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010520"
+  },
+  {
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00075",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 3004009010530,
+    "speaker": "霧子",
+    "text": "夏が……足りなくなっちゃうかも……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400901/3004009010530"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

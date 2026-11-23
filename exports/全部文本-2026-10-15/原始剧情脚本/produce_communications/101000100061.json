@@ -1,0 +1,157 @@
+[
+  {
+    "id": 1010001000610010,
+    "speaker": "智代子",
+    "text": "今日はどんなお菓子が出てくるかなー？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "voice": "produce_communications/101000100061/1010001000610010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そんなにカバンをあさって、探し物か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010001000610020,
+    "speaker": "智代子",
+    "text": "違いますよー。中のお菓子を、パッケージを見ないで\r\n選んでるんです！　くじ引きみたいで楽しいんですよ？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100061/1010001000610020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほど……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "どのお菓子が一番？",
+    "nextLabel": "1010001000611"
+  },
+  {
+    "select": "面白そうだな",
+    "nextLabel": "1010001000612"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "引いてみたい",
+    "nextLabel": "1010001000613"
+  },
+  {
+    "id": 1010001000610030,
+    "label": "1010001000611",
+    "speaker": "智代子",
+    "text": "その質問への答えはひとつです！　……もちろんチョコ！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100061/1010001000610030"
+  },
+  {
+    "id": 1010001000610040,
+    "speaker": "智代子",
+    "text": "たまに、ご褒美用の少し高いチョコも入れてるんです\r\n……ここだけの話なんですけどねっ",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100061/1010001000610040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1010001000610050,
+    "label": "1010001000612",
+    "speaker": "智代子",
+    "text": "はい！　学校で友達と一緒にやるのも盛り上がります！\r\nお昼休みの主役になれちゃうんですよ",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100061/1010001000610050"
+  },
+  {
+    "id": 1010001000610060,
+    "speaker": "智代子",
+    "text": "……あ、今度、果穂にも引いてもらおうかな？",
+    "charAnim1": "surp1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100061/1010001000610060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1010001000610070,
+    "label": "1010001000613",
+    "speaker": "智代子",
+    "text": "わわっ！？\r\nプロデューサーさんはダメですっ、待ってください！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100061/1010001000610070"
+  },
+  {
+    "id": 1010001000610080,
+    "speaker": "智代子",
+    "text": "カ、カバンの中を綺麗にしたいので……！",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100061/1010001000610080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

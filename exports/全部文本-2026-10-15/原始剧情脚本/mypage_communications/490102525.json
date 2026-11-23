@@ -1,0 +1,354 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "038"
+  },
+  {
+    "speaker": "off",
+    "text": "ハッピーハロウィンという\r\nメッセージが添えられたお菓子────",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "off",
+    "text": "それは見た目はそっくりだが、\r\nどちらかが『超すっぱい』ふたつのプチケーキだった",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2100
+  },
+  {
+    "id": 4901025250010,
+    "speaker": "美琴",
+    "text": "…………？\r\nどっちも食べて、プロデューサー",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "025",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "mypage_communications/490102525/4901025250010"
+  },
+  {
+    "id": 4901025250020,
+    "speaker": "美琴",
+    "text": "私は要らないから\r\nお腹、空いていないし",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "mypage_communications/490102525/4901025250020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いやいや！\r\nそういうわけにもいかないだろ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "せっかくのハロウィンのお菓子だし\r\n運試しだと思ってさ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901025250030,
+    "speaker": "美琴",
+    "text": "…………そう？\r\nこういうのも事務所の方針ってことなのかな",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "mypage_communications/490102525/4901025250030"
+  },
+  {
+    "select": "左を食べる",
+    "nextLabel": "1"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "右を食べる",
+    "nextLabel": "2"
+  },
+  {
+    "label": "1",
+    "charAnim1": "wait",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──よし\r\nじゃあ、食べようか",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0328"
+  },
+  {
+    "id": 4901025250070,
+    "speaker": "美琴",
+    "text": "…………",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger1_s",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "mypage_communications/490102525/4901025250070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "って、もう美琴食べてるじゃないか……！\r\n全然平気そう……ってことはこっちがすっぱいのか",
+    "charAnim2": "face_wait",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……わかってて食べるのって\r\nちょっと勇気がいるな……っ────！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………あ、あれ？\r\nこっち全然甘いし美味しいけど…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901025250080,
+    "speaker": "美琴",
+    "text": "あ……やっぱりこっちが変な味だった？\r\nそうかなって思ったんだけど",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "mypage_communications/490102525/4901025250080"
+  },
+  {
+    "id": 4901025250090,
+    "speaker": "美琴",
+    "text": "よくわからなくて\r\nこういうの、あまり食べないから",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "mypage_communications/490102525/4901025250090"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "2",
+    "charAnim1": "wait",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──よし \r\nじゃあ、食べようか",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0328"
+  },
+  {
+    "id": 4901025250040,
+    "speaker": "美琴",
+    "text": "………………\r\nうわ……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close3",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "mypage_communications/490102525/4901025250040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "って、もう美琴食べてるじゃないか……！\r\nもしかして当たっちゃったか……？",
+    "charAnim2": "face_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "じゃあ、俺もいただきます\r\n…………────っ！",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0328"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ゴホッ……ゴホッ\r\nおお……こっちだったみたいだな……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901025250050,
+    "speaker": "美琴",
+    "text": "あれ？　そうなの？\r\nやたら甘いからこっちなのかと思ったけど",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "mypage_communications/490102525/4901025250050"
+  },
+  {
+    "id": 4901025250060,
+    "speaker": "美琴",
+    "text": "……これ、普通の味だったんだ",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "mypage_communications/490102525/4901025250060"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

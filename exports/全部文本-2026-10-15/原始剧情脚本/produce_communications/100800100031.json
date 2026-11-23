@@ -1,0 +1,161 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "絆創膏が昨日より増えてるようだけど……\r\nどうかしたのか？",
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "008",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 1008001000310010,
+    "speaker": "霧子",
+    "text": "こ、この絆創膏……ですか……？\r\nちょっと……火傷をしてしまって……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100031/1008001000310010"
+  },
+  {
+    "id": 1008001000310020,
+    "speaker": "霧子",
+    "text": "アイドルが怪我しては……だめ……ですよね……\r\nこ、今度からはもっと……気をつけます……！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100031/1008001000310020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "(火傷か……早く治ればいいけど……)",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "絆創膏が増えていて\r\n少し気になったんだ",
+    "nextLabel": "1008001000311"
+  },
+  {
+    "select": "意外に\r\nうっかりさんだな",
+    "nextLabel": "1008001000312"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "うわー腫れるかもな",
+    "nextLabel": "1008001000313"
+  },
+  {
+    "id": 1008001000310030,
+    "label": "1008001000311",
+    "speaker": "霧子",
+    "text": "……ば、絆創膏の数までわかるなんて……\r\nなんでもお見通し……なんですね……",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100031/1008001000310030"
+  },
+  {
+    "id": 1008001000310040,
+    "speaker": "霧子",
+    "text": "いつもわたしのこと……みててくださって……\r\nプ、プロデューサーさんはすごいです……",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100031/1008001000310040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001000310050,
+    "label": "1008001000312",
+    "speaker": "霧子",
+    "text": "は、はい……\r\nうっかり……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100031/1008001000310050"
+  },
+  {
+    "id": 1008001000310060,
+    "speaker": "霧子",
+    "text": "でも……ほ、包帯とか絆創膏をしているので……\r\nケガをしてても……気づかれなかったりします……",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100031/1008001000310060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001000310070,
+    "label": "1008001000313",
+    "speaker": "霧子",
+    "text": "は、腫れないように……\r\n処置はしてて……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100031/1008001000310070"
+  },
+  {
+    "id": 1008001000310080,
+    "speaker": "霧子",
+    "text": "きちんとできてる……はずなんですけど……",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100031/1008001000310080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "円香、笑って！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1021001001510010,
+    "speaker": "円香",
+    "text": "……",
+    "charAnim1": "wait",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102100100151/1021001001510010"
+  },
+  {
+    "id": 1021001001510020,
+    "speaker": "円香",
+    "text": "……ああ、やっぱり\r\nあなたに撮ってもらうのは無しで",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100151/1021001001510020"
+  },
+  {
+    "id": 1021001001510030,
+    "speaker": "円香",
+    "text": "写真は自撮りにします\r\nサイトにはそれを使ってください",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100151/1021001001510030"
+  },
+  {
+    "select": "円香……笑って！",
+    "nextLabel": "1021001001511"
+  },
+  {
+    "select": "俺の変顔を見よ！",
+    "nextLabel": "1021001001512"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "かわいいよ！",
+    "nextLabel": "1021001001513"
+  },
+  {
+    "id": 1021001001510040,
+    "label": "1021001001511",
+    "speaker": "円香",
+    "text": "……",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100151/1021001001510040"
+  },
+  {
+    "id": 1021001001510050,
+    "speaker": "円香",
+    "text": "ん…………",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100151/1021001001510050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1021001001510060,
+    "label": "1021001001512",
+    "speaker": "円香",
+    "text": "うわ……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100151/1021001001510060"
+  },
+  {
+    "id": 1021001001510070,
+    "speaker": "円香",
+    "text": "動かないでそのまま……\r\n………………ん、撮りますよ",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100151/1021001001510070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1021001001510080,
+    "label": "1021001001513",
+    "speaker": "円香",
+    "text": "……何それ、最低",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100151/1021001001510080"
+  },
+  {
+    "id": 1021001001510090,
+    "speaker": "円香",
+    "text": "そんなので絶対に笑いませんので",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100151/1021001001510090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

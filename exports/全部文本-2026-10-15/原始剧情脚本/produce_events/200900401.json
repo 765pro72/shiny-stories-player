@@ -1,0 +1,595 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "bgm": "0000",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お疲れ、果穂\r\n待たせてごめんな",
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "idols",
+    "charId": "1040090010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bgm": "002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 2009004010010,
+    "speaker": "果穂",
+    "text": "あ、プロデューサーさんっ！\r\nお疲れさまですっ！",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ん？\r\n何してるんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010020,
+    "speaker": "果穂",
+    "text": "宿題、やってましたっ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "宿題、か……\r\nなんだか懐かしい響きだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010030,
+    "speaker": "果穂",
+    "text": "さっき、はづきさんに今日の学校の話をしてて……",
+    "charAnim1": "think",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010030"
+  },
+  {
+    "id": 2009004010040,
+    "speaker": "果穂",
+    "text": "宿題がいっぱい出ちゃったんですって言ったら、\r\nプロデューサーさんが来るまでしててもいいって！",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか、えらいな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010050,
+    "speaker": "果穂",
+    "text": "えへへ……\r\nあ、今からお仕事ですよね",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010050"
+  },
+  {
+    "id": 2009004010060,
+    "speaker": "果穂",
+    "text": "教科書広げちゃってごめんなさいっ\r\nすぐ片づけますっ！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、急がなくていいよ。俺も少し準備があるし、\r\nキリのいいところまでやってみたらどうだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010070,
+    "speaker": "果穂",
+    "text": "本当ですか？　ありがとうございますっ！\r\nじゃあ、あとちょっとだけやっちゃいます！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010070"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2009004010080,
+    "speaker": "果穂",
+    "text": "…………\r\n……うーん……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200900401/2009004010080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうしたんだ？\r\n……あ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（算数の問題でつまずいているのか……）",
+    "charAnim2": "face_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010090,
+    "speaker": "果穂",
+    "text": "……うー\r\nわかりそうで、わかりません……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、それなら……\r\nここに補助線を引くと、どうかな？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010100,
+    "speaker": "果穂",
+    "text": "あ……\r\nそっか、それだとこうなって……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうそう\r\n……ああ、そこはこうして……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010110,
+    "speaker": "果穂",
+    "text": "それで……\r\nこうして……あっ！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010110"
+  },
+  {
+    "id": 2009004010120,
+    "speaker": "果穂",
+    "text": "解けましたー！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おお、やったな！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010130,
+    "speaker": "果穂",
+    "text": "ありがとうございます！\r\nプロデューサーさんのおかげですっ",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010130"
+  },
+  {
+    "id": 2009004010140,
+    "speaker": "果穂",
+    "text": "スゴくわかりやすくって……\r\nプロデューサーさん、なんだか先生みたいでしたっ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、そうか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010150,
+    "speaker": "果穂",
+    "text": "はいっ。お仕事だけじゃなくて\r\n勉強も教えてくれるなんて……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010150"
+  },
+  {
+    "id": 2009004010160,
+    "speaker": "果穂",
+    "text": "プロデューサーさんって、なんでもできるんですねっ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そ、そこまで大したものじゃ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010170,
+    "speaker": "果穂",
+    "text": "プロデューサーさんはやっぱりスゴいですっ……！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile2",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010170"
+  },
+  {
+    "id": 2009004010180,
+    "speaker": "果穂",
+    "text": "良かったら、また今度あたしに勉強教えてください！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010180"
+  },
+  {
+    "textCtrl": "l",
+    "textFrame": "off",
+    "select": "もちろんだ",
+    "nextLabel": "1"
+  },
+  {
+    "select": "わからないところを\r\n教えるよ",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "俺も勉強しておくよ",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2009004010190,
+    "label": "1",
+    "speaker": "果穂",
+    "text": "わあっ……うれしいですっ！\r\nあ！　じゃあまた、事務所で宿題してもいいんでしょうかっ",
+    "charAnim1": "think",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、いつでもいいぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010200,
+    "speaker": "果穂",
+    "text": "やったー！　プロデューサーさんがいてくれたら\r\nどんな宿題でも怖いものなしです！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、そこまで期待されると、\r\n俺も少し気合い入れないとな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "果穂がもっと大きくなって、\r\n俺には解けない問題をどんどん解くかもしれないから",
+    "charAnim2": "face_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010210,
+    "speaker": "果穂",
+    "text": "プロデューサーさんにも解けない問題を……？\r\nなんだか、想像できません……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、果穂にはそんな可能性があるんだからな\r\n勉強もアイドルも、精一杯頑張ろう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010220,
+    "speaker": "果穂",
+    "text": "プロデューサーさん……\r\nはい！　あたし、どっちも頑張ります！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200900401/2009004010220"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "2",
+    "speaker": "プロデューサー",
+    "text": "まずは果穂自身が問題と向き合わないとな\r\nすぐに諦めない気持ちも大切だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010230,
+    "speaker": "果穂",
+    "text": "……そっか！　あたしの宿題ですもんねっ！\r\nヒーローも、すぐには諦めません！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "自分で考えて解くのが、１番身につくからな\r\nテストの時は、ひとりで頑張らないといけないし",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010240,
+    "speaker": "果穂",
+    "text": "はいっ。まずは自分で、頑張ってみます！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "その意気だ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、本当にわからないことがあったら……\r\nすぐ声をかけてくれ。手助けするよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010250,
+    "speaker": "果穂",
+    "text": "はいっ！　……えへへ、うれしいですっ！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200900401/2009004010250"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2009004010260,
+    "label": "3",
+    "speaker": "果穂",
+    "text": "えっ……！？\r\nどうして、プロデューサーさんまで勉強するんですか？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "果穂にわかりやすく教えてあげたいからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010270,
+    "speaker": "果穂",
+    "text": "あたしのためにですか……！？\r\nプロデューサーさん、ありがとうございますっ！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010270"
+  },
+  {
+    "id": 2009004010280,
+    "speaker": "果穂",
+    "text": "大人になっても勉強するなんて……カッコいいです！\r\nあたしも、もっと勉強頑張りますっ！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900401/2009004010280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、一緒に頑張ろうな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009004010290,
+    "speaker": "果穂",
+    "text": "はいっ……！",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200900401/2009004010290"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

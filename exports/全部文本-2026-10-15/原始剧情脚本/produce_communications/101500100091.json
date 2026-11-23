@@ -1,0 +1,162 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "甜花、スケジュール表がどうかしたのか？",
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "015",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 1015001000910010,
+    "speaker": "甜花",
+    "text": "プロデューサーさん……\r\nあの……レッスン、いっぱい入ってるって、思って……",
+    "charAnim1": "think",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100091/1015001000910010"
+  },
+  {
+    "id": 1015001000910020,
+    "speaker": "甜花",
+    "text": "甜花、レッスン苦手だから……\r\nどうしよう……きっと失敗、しちゃう……",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100091/1015001000910020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（レッスンで失敗するかもしれないのが不安なのか……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "また一歩上達できる",
+    "nextLabel": "1015001000911"
+  },
+  {
+    "select": "やるしかないな",
+    "nextLabel": "1015001000912"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "頑張らないとな",
+    "nextLabel": "1015001000913"
+  },
+  {
+    "id": 1015001000910030,
+    "label": "1015001000911",
+    "speaker": "甜花",
+    "text": "そっか……レッスン、たくさんすれば……\r\nいつか、できるように……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100091/1015001000910030"
+  },
+  {
+    "id": 1015001000910040,
+    "speaker": "甜花",
+    "text": "甜花……が、頑張りましゅ！\r\nあ、あう……えっと……頑張る、ね",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100091/1015001000910040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1015001000910050,
+    "label": "1015001000912",
+    "speaker": "甜花",
+    "text": "そ、そうだよね……\r\n練習しないと、できないまま……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100091/1015001000910050"
+  },
+  {
+    "id": 1015001000910060,
+    "speaker": "甜花",
+    "text": "やればできる、かな……\r\nちょっとずつでも、上手くなれたら、いいな……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100091/1015001000910060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1015001000910070,
+    "label": "1015001000913",
+    "speaker": "甜花",
+    "text": "うん……頑張りたい……\r\nでも甜花……レッスン全然ダメだから……",
+    "charAnim2": "face_wait2",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100091/1015001000910070"
+  },
+  {
+    "id": 1015001000910080,
+    "speaker": "甜花",
+    "text": "間違えたら、怒られちゃう……\r\n今度のレッスンも……大丈夫かな……",
+    "charAnim1": "sad1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100091/1015001000910080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

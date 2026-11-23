@@ -1,0 +1,738 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0000",
+    "se": "0259",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "se": "0316",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0316",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00162",
+    "fg": "001923"
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2015009030010,
+    "speaker": "甜花",
+    "text": "『──内側から鍵のかかった密室、\r\nこれはまさに不可能犯罪という他ない』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030010"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00138",
+    "fg": "off"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2015009030020,
+    "speaker": "甜花",
+    "text": "『……しかし、この完全密室\r\nたったひとりだけは破ることが可能です』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030020"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 2015009030030,
+    "speaker": "甜花",
+    "text": "『……つまり、状況からしゅいさつするに……』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（──ん？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "off"
+  },
+  {
+    "id": 2015009030040,
+    "speaker": "甜花",
+    "text": "………………",
+    "charAnim1": "wait4",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "015",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "009",
+    "voice": "produce_events/201500903/2015009030040"
+  },
+  {
+    "id": 2015009030041,
+    "speaker": "甜花",
+    "text": "……あうう……",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030041"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "大丈夫だ甜花！\r\nここまでちゃんと読めてたじゃないか！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "せっかく主演に抜擢されたんだ\r\n探偵役、練習すればばっちりこなせるようになるさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030050,
+    "speaker": "甜花",
+    "text": "そ、そうだよね……！\r\n次は、ちゃんと……！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030050"
+  },
+  {
+    "charAnim1": "decide",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "id": 2015009030060,
+    "speaker": "甜花",
+    "text": "『──状況から推察するに、\r\nはんこ、犯行が可能なのはただひとり……』",
+    "charAnim1": "think",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030060"
+  },
+  {
+    "id": 2015009030070,
+    "speaker": "甜花",
+    "text": "『………………』",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030070"
+  },
+  {
+    "id": 2015009030080,
+    "speaker": "甜花",
+    "text": "……あう……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（甜花、ドツボに嵌ってしまってるな……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "発声練習をしてみよう",
+    "nextLabel": "1"
+  },
+  {
+    "select": "一緒に読んでみよう",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "どんな台本だったっけ？",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "あめんぼあかいなあいうえお\r\n……ほら、甜花も",
+    "charAnim2": "face_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030090,
+    "speaker": "甜花",
+    "text": "え、えと……\r\nあめんぼあかいなあいうえお",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ほら、俺より全然発声がいいじゃないか\r\nさすが甜花だな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030100,
+    "speaker": "甜花",
+    "text": "そ、そうかな……\r\nに、にへへ……",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ……\r\n──そうだ、早口言葉なんかも言えるんじゃないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030110,
+    "speaker": "甜花",
+    "text": "早口言葉……？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、そうだな……\r\n……みぎめみぎみみみみみみみぎめ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……正しくは、右目、右耳、右耳、右目、だ\r\n本当は３回言うんだけどな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030120,
+    "speaker": "甜花",
+    "text": "え、えと……えと……目、耳、耳、目……？",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030120"
+  },
+  {
+    "id": 2015009030130,
+    "speaker": "甜花",
+    "text": "──右目右耳右耳右目、右目右耳右耳右目、\r\n右目右耳右耳右目……！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030130"
+  },
+  {
+    "id": 2015009030140,
+    "speaker": "甜花",
+    "text": "…………っ！\r\n……言え、た……？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、ちゃんと言えたじゃないか！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺も言えない早口言葉だって言えるんだ\r\n台本くらい、簡単に読めるよ、甜花なら",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_front",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030150,
+    "speaker": "甜花",
+    "text": "甜花なら……",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030150"
+  },
+  {
+    "id": 2015009030160,
+    "speaker": "甜花",
+    "text": "て、甜花……\r\nもう一回、やってみる……！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030160"
+  },
+  {
+    "id": 2015009030170,
+    "speaker": "甜花",
+    "text": "だ、だから……\r\nプロデューサーさん、そこで……見てて……！",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201500903/2015009030170"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "2",
+    "speaker": "プロデューサー",
+    "text": "自分のセリフだけを読んでるから、\r\n流れがつかみにくくなってるんじゃないか？",
+    "charAnim2": "face_wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030180,
+    "speaker": "甜花",
+    "text": "いいの……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "チェック用の台本、まだ返してなかったはずだし──\r\nあ、でも、演技力は期待しないでくれよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030190,
+    "speaker": "甜花",
+    "text": "うん、へたっぴでも……大丈夫……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim2": "face_anger",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2015009030200,
+    "speaker": "甜花",
+    "text": "『──内側から鍵のかかった密室、\r\nこれはまさに不可能犯罪という他ない』",
+    "charAnim1": "wait4",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "013",
+    "voice": "produce_events/201500903/2015009030200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『容疑者は全員鍵のかかった部屋にいた！\r\n犯行は不可能だ！』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030210,
+    "speaker": "甜花",
+    "text": "『一見そうでしょう。しかし、このふたつの密室、\r\nたったひとりだけ破ることが可能です』",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『誰だ！？\r\n犯人は──誰だっていうんだ！』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030220,
+    "speaker": "甜花",
+    "text": "『──状況から推察するに、\r\n犯行が可能なのはただひとり……』",
+    "charAnim1": "think",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし……！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──あ、あっと、えっと……\r\n『そ、それはいったい──！？』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030230,
+    "speaker": "甜花",
+    "text": "『……犯人は、あなたです！』",
+    "charAnim1": "wait4",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030230"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "tenka",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 2015009030240,
+    "label": "3",
+    "speaker": "甜花",
+    "text": "え、えと……\r\n洋館……閉じこめられちゃって……事件、起きて……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030240"
+  },
+  {
+    "id": 2015009030250,
+    "speaker": "甜花",
+    "text": "でも……女の子の、探偵が……\r\n色んな謎、解いて……敵、やっつけて……",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030250"
+  },
+  {
+    "id": 2015009030260,
+    "speaker": "甜花",
+    "text": "すごい……かっこいい……！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほど……\r\n──それで、そのかっこいい探偵が甜花なんだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030270,
+    "speaker": "甜花",
+    "text": "え……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030270"
+  },
+  {
+    "id": 2015009030280,
+    "speaker": "甜花",
+    "text": "え、えと、そうだけど……\r\nでも、甜花じゃ……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "甜花は、なってみたくないか？\r\nすごくてかっこいい探偵に",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030290,
+    "speaker": "甜花",
+    "text": "なりたい……でも……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、なんて心配しなくて大丈夫さ\r\n甜花がやりたいなら、みんな全力でサポートする",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030300,
+    "speaker": "甜花",
+    "text": "みんな……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ひとりだと、できないかもって思うこともあるかもしれない\r\nでも、甜花の力になるみんなを信じれば……どうだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015009030310,
+    "speaker": "甜花",
+    "text": "そう、だよね……\r\nみんな、すごくて……すごいから……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500903/2015009030310"
+  },
+  {
+    "id": 2015009030320,
+    "speaker": "甜花",
+    "text": "きっと……\r\n甜花も、どうにかしてくれる……はず……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201500903/2015009030320"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

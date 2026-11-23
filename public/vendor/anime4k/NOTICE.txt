@@ -1,0 +1,22 @@
+Anime4K.js 1.1.9, WebGL port of Anime4K 4.0.1
+https://github.com/monyone/Anime4K.js
+Pinned source: be5ffeae44684d6a52456f8218d0cc04e58639c0
+Copyright (c) 2023 もにょ～ん. MIT; see LICENSE.txt.
+
+Anime4K CNN shader code
+https://github.com/bloc97/Anime4K
+Copyright (c) 2019-2021 bloc97. All rights reserved.
+MIT License (same permission and warranty terms as LICENSE.txt).
+Copyright and permission notices are retained in core.js and vendored sources.
+
+This application bundles ImageUpscaler, CNN x2 S/M/L/UL, Clamp_Highlights
+and Restore_CNN_UL. The highest 2x preset is Clamp + Restore UL + Upscale UL;
+the highest 4x preset appends another Upscale UL pass (a custom game preset).
+No GAN, face
+restoration, offline texture replacement, or external runtime CDN is used.
+Source files are retained in vendor/anime4k/src. Rebuild with:
+node scripts/build-anime4k.cjs
+
+Local modification: Clamp_Highlights preserves input alpha instead of forcing
+alpha=1, to support transparent animated game models. RGB/model weights are
+unchanged. The other upstream shader/upscaler sources are unmodified.

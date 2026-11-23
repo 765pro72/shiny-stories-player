@@ -1,0 +1,985 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00484",
+    "bgm": "0046",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out"
+  },
+  {
+    "speaker": "テレビからの声",
+    "text": "『今日は１日を通して、お出かけ日和になるでしょう。\r\n夜から肌寒くなる予報ですので────』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00824",
+    "bgEffect": "fade",
+    "bgm": "047",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "2091",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 3024011010010,
+    "speaker": "にちか",
+    "text": "今日は４限で早退して……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010010"
+  },
+  {
+    "id": 3024011010020,
+    "speaker": "にちか",
+    "text": "13時にプロデューサーさんが\r\n迎えに来てくれるんだっけ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010020"
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 3024011010030,
+    "speaker": "にちか",
+    "text": "あっ……！\r\n体操着入れてない……",
+    "charAnim1": "surp3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "024",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/302401101/3024011010030"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 997
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "1999",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3024011010040,
+    "speaker": "にちか",
+    "text": "昨日、お姉ちゃん干してたよね……\r\nえーもしかして仕舞っちゃった……？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010040"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3024011010050,
+    "speaker": "にちか",
+    "text": "あっ、あった……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010050"
+  },
+  {
+    "textFrame": "off",
+    "se": "0327",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "id": 3024011010060,
+    "speaker": "にちか",
+    "text": "うわ、時間やば",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/302401101/3024011010060"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "テレビからの声",
+    "text": "『それでは！　本日の星座占い、始まりますよー！』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3024011010070,
+    "speaker": "にちか",
+    "text": "……────",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/302401101/3024011010070"
+  },
+  {
+    "speaker": "テレビからの声",
+    "text": "『まずは２位から11位までの発表でーすっ！』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "テレビからの声",
+    "text": "『11位は乙女座のあなたっ！』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3024011010080,
+    "speaker": "にちか",
+    "text": "あ……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010080"
+  },
+  {
+    "speaker": "テレビからの声",
+    "text": "『ラッキーカラーは緑！\r\nどんなに美味しくても食べ過ぎには注意だぞっ』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3024011010090,
+    "speaker": "にちか",
+    "text": "緑……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010090"
+  },
+  {
+    "speaker": "テレビからの声",
+    "text": "『それでは、本日の12位は……？』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3024011010100,
+    "speaker": "にちか",
+    "text": "…………",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010100"
+  },
+  {
+    "speaker": "テレビからの声",
+    "text": "『ごめんなさーいっ！\r\n今日の12位は獅子座のあなた！』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3024011010110,
+    "speaker": "にちか",
+    "text": "え……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010110"
+  },
+  {
+    "speaker": "テレビからの声",
+    "text": "『先のことを心配しすぎて、\r\n心が後ろ向きになっちゃうかも！』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3024011010120,
+    "speaker": "にちか",
+    "text": "えー……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010120"
+  },
+  {
+    "speaker": "テレビからの声",
+    "text": "『ラッキーカラーは赤！\r\nネガティブになりすぎないよう注意してねっ』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3024011010130,
+    "speaker": "にちか",
+    "text": "いや、そこはもう──\r\n注意してもなー……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010130"
+  },
+  {
+    "id": 3024011010140,
+    "speaker": "にちか",
+    "text": "どうせ、他は全然違う結果なんだろうなー",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010140"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00098",
+    "fg": "004731",
+    "se": "0351",
+    "waitType": "time",
+    "waitTime": 1700,
+    "bgEffectTime": 300,
+    "fgEffectTime": 300
+  },
+  {
+    "textFrame": "off",
+    "bg": "00196",
+    "bgEffect": "fade",
+    "se": "0351",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffectTime": 300
+  },
+  {
+    "id": 3024011010150,
+    "speaker": "にちか",
+    "text": "えー\r\nもうどこもやってない、占い……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010150"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00049",
+    "se": "0351",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 300
+  },
+  {
+    "speaker": "テレビからの声",
+    "text": "『はーい、時刻はまもなく……』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00824",
+    "fg": "fade_out",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 500,
+    "fgEffectTime": 500
+  },
+  {
+    "textFrame": "off",
+    "fg": "off"
+  },
+  {
+    "id": 3024011010160,
+    "speaker": "にちか",
+    "text": "……っ！",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/302401101/3024011010160",
+    "autoWaitTime": 1300
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00432",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 2200
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 3024011010170,
+    "speaker": "にちか",
+    "text": "──いってきます……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010170"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00484",
+    "bgEffect": "fade",
+    "se": "0456",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 700
+  },
+  {
+    "textFrame": "off",
+    "se": "1074",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "fgEffect": "fade_out",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 5500,
+    "bgEffectTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00521",
+    "bgEffect": "fade",
+    "bgm": "068",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1000
+  },
+  {
+    "speaker": "撮影スタッフ",
+    "text": "本日の撮影は、幻想的な雰囲気の画にしたいと考えています",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3024011010171,
+    "speaker": "にちか＆美琴",
+    "text": "はい",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010171"
+  },
+  {
+    "speaker": "撮影スタッフ",
+    "text": "赤と緑を中心とした\r\nステンドグラスを天井部分に設置しました",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "撮影スタッフ",
+    "text": "ステンドグラス越しの光を\r\nクールかつアンニュイな表情で受け止めているような──",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "撮影スタッフ",
+    "text": "そんな画にできればと考えています",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3024011010180,
+    "speaker": "美琴",
+    "text": "わかりました",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010180"
+  },
+  {
+    "id": 3024011010190,
+    "speaker": "にちか",
+    "text": "は、はい……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010190"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00260",
+    "fg": "003981",
+    "bgEffect": "fade",
+    "fgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffectTime": 1000,
+    "fgEffectTime": 1000
+  },
+  {
+    "id": 3024011010200,
+    "speaker": "off",
+    "text": "赤と",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010200",
+    "autoWaitTime": 1400
+  },
+  {
+    "textFrame": "off",
+    "bg": "00563",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffectTime": 1000
+  },
+  {
+    "id": 3024011010210,
+    "speaker": "off",
+    "text": "緑",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010210",
+    "autoWaitTime": 1700
+  },
+  {
+    "textFrame": "off",
+    "bg": "00115",
+    "fg": "fade_out",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1000,
+    "fgEffectTime": 1000
+  },
+  {
+    "id": 3024011010220,
+    "speaker": "にちか",
+    "text": "ラッキーカラーだ……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "1040240020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/302401101/3024011010220"
+  },
+  {
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3024011010230,
+    "speaker": "美琴",
+    "text": "え……？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "1040250020",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/302401101/3024011010230"
+  },
+  {
+    "id": 3024011010240,
+    "speaker": "にちか",
+    "text": "あ、あはは……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010240"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3024011010250,
+    "speaker": "にちか",
+    "text": "えっと……\r\nシーズの色だなって、思って──",
+    "charAnim1": "surp1",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/302401101/3024011010250"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3024011010260,
+    "speaker": "美琴",
+    "text": "そうだね",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/302401101/3024011010260",
+    "autoWaitTime": 1800
+  },
+  {
+    "id": 3024011010270,
+    "speaker": "美琴",
+    "text": "……",
+    "charAnim1": "think2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger1_s",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010270",
+    "autoWaitTime": 1100
+  },
+  {
+    "id": 3024011010280,
+    "speaker": "美琴",
+    "text": "シーズの色が、ラッキーカラーなの？",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010280"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00506",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1000
+  },
+  {
+    "id": 3024011010290,
+    "speaker": "にちか",
+    "text": "あ……\r\nえっと、違います────",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010290"
+  },
+  {
+    "id": 3024011010300,
+    "speaker": "にちか",
+    "text": "私です",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010300"
+  },
+  {
+    "id": 3024011010310,
+    "speaker": "にちか",
+    "text": "ラッキーでここまで来れたので、私は",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010310"
+  },
+  {
+    "id": 3024011010320,
+    "speaker": "美琴",
+    "text": "そうなの？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010320"
+  },
+  {
+    "textFrame": "off",
+    "se": "2314",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "id": 3024011010330,
+    "speaker": "にちか",
+    "text": "……はい\r\nラッキーだけです、私は────",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010330"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00521",
+    "bgEffect": "fade",
+    "se": "1274",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1000
+  },
+  {
+    "speaker": "撮影スタッフ",
+    "text": "────準備整いましたので、\r\n始めていきまーす！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3024011010331,
+    "speaker": "にちか＆美琴",
+    "text": "は、はい……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010331"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "stillType": "support_idols",
+    "stillId": "2030240050"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 3024011010340,
+    "speaker": "off",
+    "text": "ラッキーだけ、だけど\r\nその時間も、もうとっくに終わってる",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010340"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 3024011010350,
+    "speaker": "off",
+    "text": "じゃあ、今は？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010350"
+  },
+  {
+    "textFrame": "off",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3024011010360,
+    "speaker": "off",
+    "text": "今の、私は────",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010360"
+  },
+  {
+    "textFrame": "off",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 3024011010370,
+    "speaker": "off",
+    "text": "どうせ、わからないから",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010370"
+  },
+  {
+    "id": 3024011010380,
+    "speaker": "off",
+    "text": "今はこの色を、光を……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010380"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1100
+  },
+  {
+    "id": 3024011010390,
+    "speaker": "off",
+    "text": "浴びていたい",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302401101/3024011010390",
+    "autoWaitTime": 1300
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "textFrame": "off",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 2800,
+    "stillCtrl": "off"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

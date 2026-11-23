@@ -1,0 +1,895 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00150",
+    "bgm": "0000"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2004011010010,
+    "speaker": "恋鐘",
+    "text": "『──ちゃんぽんの話』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010010"
+  },
+  {
+    "id": 2004011010020,
+    "speaker": "恋鐘",
+    "text": "『大きくて、特別で、\r\nうまか～なその姿に』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010020"
+  },
+  {
+    "id": 2004011010030,
+    "speaker": "恋鐘",
+    "text": "『うちは、ず～っと恋しとると』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010030"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00196",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ここのお店のメニュー、\r\n結構ボリュームがあるみたいだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010040,
+    "speaker": "恋鐘",
+    "text": "……プロデューサー\r\n今、何時～……？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200401101/2004011010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えーと……21時過ぎだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010050,
+    "speaker": "恋鐘",
+    "text": "──よ、よか……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010050"
+  },
+  {
+    "id": 2004011010060,
+    "speaker": "恋鐘",
+    "text": "……こいは、取材やし……！",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010060"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2004011010070,
+    "speaker": "恋鐘",
+    "text": "──エッセイ……？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200401101/2004011010070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、ファッション誌での\r\n短期連載エッセイのオファーだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "仮タイトルは、\r\n『月岡恋鐘の恋日記』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "日記のような感じで、毎月恋鐘の\r\n好きなものやハマってるものを紹介していくって企画だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010080,
+    "speaker": "恋鐘",
+    "text": "そいは、楽しそうやね～！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010080"
+  },
+  {
+    "id": 2004011010090,
+    "speaker": "恋鐘",
+    "text": "……ばってん",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010090"
+  },
+  {
+    "id": 2004011010100,
+    "speaker": "恋鐘",
+    "text": "うち、エッセイなんて書いたことなか……！",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010100"
+  },
+  {
+    "id": 2004011010110,
+    "speaker": "恋鐘",
+    "text": "学生の時も、机よりも台所に向かってる\r\n時間の方が長かったとよ……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは\r\nきっと、そういうところもよかったんだろうな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010120,
+    "speaker": "恋鐘",
+    "text": "……？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……編集部の人たちはさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "恋鐘のパワフルさとか、キュートさに惹かれて\r\nオファーしたって言ってくれたんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010130,
+    "speaker": "恋鐘",
+    "text": "ふぇ……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "きっと、今までにないようなものを\r\n書いてくれるだろうって",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "エッセイだからって、\r\nあえて堅苦しくする必要はないし",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "恋鐘らしいものが読みたいってさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010140,
+    "speaker": "恋鐘",
+    "text": "……！",
+    "charAnim1": "wait5",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それに俺も、きっと恋鐘なら\r\n面白いものが書けると思ってるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……どうだ？\r\n挑戦してみないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010150,
+    "speaker": "恋鐘",
+    "text": "プロデューサー……！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010150"
+  },
+  {
+    "id": 2004011010160,
+    "speaker": "恋鐘",
+    "text": "うん～！\r\nうちにまかせとって！",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010160"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00196",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2004011010170,
+    "speaker": "恋鐘",
+    "text": "──んん～！\r\nうまかぁ～……！",
+    "charAnim1": "smile4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200401101/2004011010170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、ボリューミーだけど、\r\n全然食べられるな……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "けど、はは……",
+    "charAnim2": "face_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "最初のテーマにちゃんぽんを選ぶなんて、\r\n恋鐘の地元愛を感じるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010180,
+    "speaker": "恋鐘",
+    "text": "んふふ～、当ったり前ばい！\r\n記念すべき第一回やもん！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうだな、恋鐘らしいよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0807",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──ふぅ、ごちそうさま",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010190,
+    "speaker": "恋鐘",
+    "text": "ふぇ……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010190"
+  },
+  {
+    "id": 2004011010200,
+    "speaker": "恋鐘",
+    "text": "プロデューサー、\r\nもう食べ終わったと？",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010200"
+  },
+  {
+    "id": 2004011010210,
+    "speaker": "恋鐘",
+    "text": "早かね～……！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010210"
+  },
+  {
+    "select": "恋鐘はゆっくり\r\n味わってくれ！",
+    "nextLabel": "1"
+  },
+  {
+    "select": "あぁ、すまん……！",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "俺のことは気にするな",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2004011010220,
+    "label": "1",
+    "speaker": "恋鐘",
+    "text": "う、うん～\r\nありがと～……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010220"
+  },
+  {
+    "id": 2004011010230,
+    "speaker": "恋鐘",
+    "text": "……おおきか～……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ……\r\nやっぱりちゃんぽんの量、多かったか……？",
+    "charAnim2": "face_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010240,
+    "speaker": "恋鐘",
+    "text": "う、ううん！\r\nそうじゃなか……！",
+    "charAnim1": "wait5",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010240"
+  },
+  {
+    "id": 2004011010250,
+    "speaker": "恋鐘",
+    "text": "取材に付き合ってくれて、\r\nうちのこと待ってくれて……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010250"
+  },
+  {
+    "id": 2004011010260,
+    "speaker": "恋鐘",
+    "text": "…………\r\nプロデューサーは、おおきか～って！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ……！\r\nそうか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2004011010270,
+    "speaker": "恋鐘",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2004011010280,
+    "speaker": "恋鐘",
+    "text": "……ぷ、プロデューサー……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200401101/2004011010280"
+  },
+  {
+    "id": 2004011010290,
+    "speaker": "恋鐘",
+    "text": "そがん見られたら、\r\nた、食べにくかぁ～……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010290"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "2",
+    "speaker": "プロデューサー",
+    "text": "恋鐘は気にしないで、\r\nゆっくり食べてくれ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010300,
+    "speaker": "恋鐘",
+    "text": "あ、ありがと～！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010300"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2004011010310,
+    "speaker": "恋鐘",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010310"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2004011010320,
+    "speaker": "恋鐘",
+    "text": "……プロデューサーは、おおきかね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010320"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2004011010330,
+    "speaker": "恋鐘",
+    "text": "…………\r\nプロデューサー！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200401101/2004011010330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010340,
+    "speaker": "恋鐘",
+    "text": "うち、頑張ってエッセイ書くけん\r\n楽しみにしとってね……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010340"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "3",
+    "speaker": "プロデューサー",
+    "text": "……というかむしろ\r\n早く食べちゃって、すまん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010350,
+    "speaker": "恋鐘",
+    "text": "プロデューサーの謝るとこじゃなかよ！",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010350"
+  },
+  {
+    "id": 2004011010360,
+    "speaker": "恋鐘",
+    "text": "……それよりも、ありがと～",
+    "charAnim1": "wait5",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010360"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ん……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010370,
+    "speaker": "恋鐘",
+    "text": "こうやって取材、付き合ってくれて、\r\nうちのこと待ってくれて……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010370"
+  },
+  {
+    "id": 2004011010380,
+    "speaker": "恋鐘",
+    "text": "プロデューサーは、おおきかね",
+    "charAnim1": "wait1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010380"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いやいや、\r\nそんな大したことじゃないぞ……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004011010390,
+    "speaker": "恋鐘",
+    "text": "ううん……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010390"
+  },
+  {
+    "id": 2004011010400,
+    "speaker": "恋鐘",
+    "text": "……ばってん\r\nあんまり待たせるのも悪かけん",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010400"
+  },
+  {
+    "id": 2004011010410,
+    "speaker": "恋鐘",
+    "text": "うちも、冷めんうちに\r\n急いで食べるけんね！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200401101/2004011010410"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

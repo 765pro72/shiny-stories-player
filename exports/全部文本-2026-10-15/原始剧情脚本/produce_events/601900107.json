@@ -1,0 +1,236 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "008"
+  },
+  {
+    "id": 6902001070010,
+    "speaker": "社長",
+    "text": "お前、担当アイドルのことをどう思っている？",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601900107/6902001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……たしかに負けてしまいましたけど、\r\n彼女こそが最高のアイドルだと思っています",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6902001070020,
+    "speaker": "社長",
+    "text": "……！　そうか……",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601900107/6902001070020"
+  },
+  {
+    "id": 6901001070010,
+    "speaker": "はづき",
+    "text": "ふふ\r\n社長が聞きたかった言葉、そのまま出てきましたね",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/601900107/6901001070010"
+  },
+  {
+    "id": 6901001070020,
+    "speaker": "はづき",
+    "text": "もし違う言葉が出てきたら、\r\n説教してやるって言って聞かなかったのに",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/601900107/6901001070020"
+  },
+  {
+    "id": 6902001070030,
+    "speaker": "社長",
+    "text": "……うるさいぞ。とにかく、\r\nそういうことなら私から言うことはない",
+    "charAnim1": "wait2",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601900107/6902001070030"
+  },
+  {
+    "id": 6902001070040,
+    "speaker": "社長",
+    "text": "さあ、早くその最高のアイドルに\r\n会いに行ってこい",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601900107/6902001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい！",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 101
+  },
+  {
+    "bg": "00002",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（さて、愛依にどう声をかけてやれば……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6019001070010,
+    "speaker": "愛依",
+    "text": "あっ、プロデューサー\r\nこれ飲む？",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "019",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/601900107/6019001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、おう……ありがとう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6019001070020,
+    "speaker": "愛依",
+    "text": "どう？\r\nやっぱ頑張った後は喉乾くっしょ？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601900107/6019001070020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ……\r\nそれより、俺の力不足で……悪かったな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "愛依なら優勝できていたはずだったのに\r\nプロデューサーである俺が不甲斐ないばかりに──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6019001070030,
+    "speaker": "愛依",
+    "text": "ちょ、なに言っちゃってんのプロデューサー！\r\n謝るとか違うし……てかそれ、うちのセリフじゃん",
+    "charAnim1": "anger2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601900107/6019001070030"
+  },
+  {
+    "id": 6019001070040,
+    "speaker": "愛依",
+    "text": "そもそもプロデューサーと出会ってなきゃ\r\nうち、ここにいないし",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601900107/6019001070040"
+  },
+  {
+    "id": 6019001070050,
+    "speaker": "愛依",
+    "text": "だからさ、謝んのとかなしにして\r\n次に進むしかないっしょ、プロデューサー！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601900107/6019001070050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "愛依……そうだな！　これからもよろしく頼む",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

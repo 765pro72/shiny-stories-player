@@ -1,0 +1,1247 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0089"
+  },
+  {
+    "select": "エコバッグです",
+    "nextLabel": "1"
+  },
+  {
+    "select": "死亡推定時刻です",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "靴跡です",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "textFrame": "off",
+    "bgm": "0000",
+    "se": "0914",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00509",
+    "fg": "001921",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "fgEffect": "fade",
+    "fgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "弟子",
+    "text": "今朝方、洗濯直後の状態で見つかった\r\n生成りのエコバッグ",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "095"
+  },
+  {
+    "speaker": "弟子",
+    "text": "エコバッグを洗ったのは犯人です……\r\nしかし──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00388",
+    "fg": "004741",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "fgEffect": "switch_fade",
+    "fgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1040080010",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1040090020",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "弟子",
+    "text": "幽谷さんは小宮さんと一緒にいた\r\nランドリーコーナーに行くことはできません",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "join"
+  },
+  {
+    "id": 4901032410010,
+    "label": "2",
+    "speaker": "霧子",
+    "text": "死亡推定時刻に、わたしのアリバイはありません……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "0000",
+    "voice": "special_communications/490103241/4901032410010"
+  },
+  {
+    "id": 4901032410020,
+    "speaker": "霧子",
+    "text": "キットで鑑定した時刻にも、間違いはないはずです\r\nそれはお弟子さんが証明できるのでは……？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410020"
+  },
+  {
+    "speaker": "弟子",
+    "text": "そうですね、少し考え違いをしていました……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4901032410030,
+    "label": "3",
+    "speaker": "雛菜",
+    "text": "雛菜は靴跡の写真撮ってるけど、\r\nそんな、言いきれるほどじゃなかった気がする～",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "0000",
+    "voice": "special_communications/490103241/4901032410030"
+  },
+  {
+    "speaker": "弟子",
+    "text": "……そうでしたね",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "少し考え違いをしていました……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4901032410040,
+    "label": "join",
+    "speaker": "果穂",
+    "text": "そうです……っ！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410040"
+  },
+  {
+    "speaker": "弟子",
+    "text": "ランドリールームでエコバッグが発見されたのは\r\n今朝７時……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "その時に洗濯が終わったアラームが鳴ったなら、\r\n早朝に一度、小宮さんの部屋を出る必要があります",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "ですが、その時間──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032410050,
+    "speaker": "果穂",
+    "text": "幽谷さんはあたしとずっと一緒でした！\r\n朝ごはんも、有栖川さんたちが持ってきてくれて……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410050"
+  },
+  {
+    "id": 4901032410060,
+    "speaker": "果穂",
+    "text": "証言できますっ！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410060"
+  },
+  {
+    "id": 4901032410070,
+    "speaker": "霧子",
+    "text": "ありがとう……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410070"
+  },
+  {
+    "id": 4901032410080,
+    "speaker": "千雪",
+    "text": "……なるほど\r\n消去法で私、というわけですね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410080"
+  },
+  {
+    "speaker": "弟子",
+    "text": "消去法だけではありません……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00739",
+    "fg": "fade_out",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "fgEffectTime": 1000,
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "弟子",
+    "text": "台所にあったエコバッグにペットボトルを入れ、\r\n『Ａ』を殺害できるのはあなたしかいない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "犯行手段も凶器も全て明らかになっているんです、\r\n解毒剤を出してください……！！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032410090,
+    "speaker": "千雪",
+    "text": "筋は通っているのは認めます\r\nでも、私は自分が犯人ではないと知っているので……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410090"
+  },
+  {
+    "id": 4901032410100,
+    "speaker": "千雪",
+    "text": "困ったなぁ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410100"
+  },
+  {
+    "id": 4901032410110,
+    "speaker": "千雪",
+    "text": "このままでは私も、みんなも……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410110"
+  },
+  {
+    "id": 4901032410120,
+    "speaker": "千雪",
+    "text": "お弟子さんの間違った推理で、\r\n死んでしまうんですよね……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410120"
+  },
+  {
+    "textFrame": "off",
+    "se": "0453",
+    "waitType": "time",
+    "waitTime": 700
+  },
+  {
+    "id": 4901032410130,
+    "speaker": "夏葉",
+    "text": "こちらには20人以上の人間がいるのよ\r\n今のうちに罪を認めて、隠した解毒剤を出しなさい",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410130"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00277",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032410140,
+    "speaker": "千雪",
+    "text": "…………",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger2_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040160020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103241/4901032410140"
+  },
+  {
+    "id": 4901032410150,
+    "speaker": "千雪",
+    "text": "私が犯人だとして──",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "067",
+    "voice": "special_communications/490103241/4901032410150"
+  },
+  {
+    "id": 4901032410160,
+    "speaker": "千雪",
+    "text": "そんなことを言われて、\r\nはいそうですかって出すと思います？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410160"
+  },
+  {
+    "id": 4901032410170,
+    "speaker": "千雪",
+    "text": "いえ、そもそも……",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410170"
+  },
+  {
+    "id": 4901032410180,
+    "speaker": "千雪",
+    "text": "この事態を想定しないで、\r\nなんにも手を打っていない、なぁんて……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410180"
+  },
+  {
+    "id": 4901032410190,
+    "speaker": "千雪",
+    "text": "そんな間抜けなこと、\r\n桑山千雪がすると思います……？",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410190"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "弟子",
+    "text": "桑山さん、それは、もしかして……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032410200,
+    "speaker": "千雪",
+    "text": "はい、起爆スイッチです\r\nこれを押せば、解毒剤に仕込んだ爆弾が、ドカーン",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "special_communications/490103241/4901032410200"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901032410210,
+    "speaker": "透",
+    "text": "おー",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040200010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103241/4901032410210"
+  },
+  {
+    "speaker": "弟子",
+    "text": "……そんなものまで持ち込んでいたんですか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "toru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901032410220,
+    "speaker": "千雪",
+    "text": "いえいえ、『Ａ』が吊り橋に仕掛けた爆薬と\r\nスイッチをお借りしただけです",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "special_communications/490103241/4901032410220"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger2_s",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00432",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032410230,
+    "speaker": "千雪",
+    "text": "安心してください\r\n大量殺人がしたいわけではないので",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410230"
+  },
+  {
+    "id": 4901032410240,
+    "speaker": "千雪",
+    "text": "私がこの館から脱出するまで、\r\nみなさんには大人しくしておいてもらいたいだけ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410240"
+  },
+  {
+    "id": 4901032410250,
+    "speaker": "千雪",
+    "text": "安全な場所についたら、解毒剤の在処をお伝えします",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410250"
+  },
+  {
+    "id": 4901032410251,
+    "speaker": "探偵たち",
+    "text": "くっ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410251"
+  },
+  {
+    "speaker": "弟子",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "fg": "002341"
+  },
+  {
+    "speaker": "弟子",
+    "text": "（吊り橋を落とされた『Ａ』の館から\r\n脱出するのは難しい）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "（彼女の言葉を信じて見送ったとして、\r\n俺達に毒が回って死ぬ方が早いんじゃないか？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "（それに何より……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "（犯人を見つけたのに、おめおめと逃げられました、では……\r\n『Ａ』に申し訳が立たない……！！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "（だが、どうすれば……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00277",
+    "fg": "fade_out",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "fgEffectTime": 1000,
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 4901032410260,
+    "speaker": "めぐる",
+    "text": "ねぇねぇ、桑山さん",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030030040",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103241/4901032410260"
+  },
+  {
+    "id": 4901032410270,
+    "speaker": "めぐる",
+    "text": "解毒剤って、これのこと？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410270"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0155",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 4901032410280,
+    "speaker": "千雪",
+    "text": "…………！？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "035",
+    "voice": "special_communications/490103241/4901032410280"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_anger",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901032410290,
+    "speaker": "めぐる",
+    "text": "あはは、そうだよね！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "special_communications/490103241/4901032410290"
+  },
+  {
+    "id": 4901032410300,
+    "speaker": "めぐる",
+    "text": "アンプルが２本足りないもん\r\n君と……──協力者の和泉さんの分かな？",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410300"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901032410310,
+    "speaker": "千雪",
+    "text": "そんな、どうして……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "special_communications/490103241/4901032410310"
+  },
+  {
+    "id": 4901032410320,
+    "speaker": "千雪",
+    "text": "確かに私の部屋に……！",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410320"
+  },
+  {
+    "id": 4901032410330,
+    "speaker": "千雪",
+    "text": "でも、この屋敷の鍵は……\r\n『怪盗２８３』でもなければ開けられないはず……",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410330"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901032410340,
+    "speaker": "めぐる",
+    "text": "それが答えだよー！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "special_communications/490103241/4901032410340"
+  },
+  {
+    "id": 4901032410350,
+    "speaker": "めぐる",
+    "text": "狙った獲物は逃さない『怪盗２８３』は\r\nわたしのことだからね！",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410350"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0327",
+    "waitType": "time",
+    "waitTime": 700
+  },
+  {
+    "id": 4901032410360,
+    "speaker": "夏葉",
+    "text": "なんですって……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030130020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103241/4901032410360"
+  },
+  {
+    "speaker": "弟子",
+    "text": "あなたが『怪盗２８３』……！？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901032410370,
+    "speaker": "果穂",
+    "text": "スゴいです！\r\nカッコいいですー！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040090020",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103241/4901032410370"
+  },
+  {
+    "id": 4901032410380,
+    "speaker": "めぐる",
+    "text": "えへへ、ありがとう！",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410380"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901032410390,
+    "speaker": "千雪",
+    "text": "そんな……『怪盗２８３』は\r\nあなたみたいな姿ではないはず……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "special_communications/490103241/4901032410390"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00225",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032410400,
+    "speaker": "千雪",
+    "text": "『Ａ』のファイルに書かれてたのは──",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410400"
+  },
+  {
+    "id": 4901032410410,
+    "speaker": "めぐる",
+    "text": "怪盗が安易に素顔を晒すと思う？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410410"
+  },
+  {
+    "id": 4901032410420,
+    "speaker": "千雪",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410420"
+  },
+  {
+    "id": 4901032410430,
+    "speaker": "果穂",
+    "text": "八宮さんは、どうして解毒剤が\r\n桑山さんのお部屋にあるってわかったんですか？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410430"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgEffectTime": 300,
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00388",
+    "fg": "004741",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "fgEffect": "fade",
+    "fgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1030190010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901032410440,
+    "speaker": "めぐる",
+    "text": "本棟のマスターキーを\r\nずっと和泉さんが持ってたからだよ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410440"
+  },
+  {
+    "id": 4901032410450,
+    "speaker": "めぐる",
+    "text": "自分以外の誰かが自由にできる場所に、\r\n手札になる解毒剤を置くわけがない……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410450"
+  },
+  {
+    "id": 4901032410460,
+    "speaker": "めぐる",
+    "text": "マスターキーを持っている和泉さんすら入れない場所\r\nすなわち、自分の部屋に隠すだろうなって",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410460"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "fg": "fade_out",
+    "bgEffect": "fade",
+    "bgEffectTime": 300,
+    "fgEffectTime": 300,
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00277",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901032410470,
+    "speaker": "めぐる",
+    "text": "最初の所持品検査も\r\n『知人ではない』和泉さんと調べ合えば問題ないでしょ？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "special_communications/490103241/4901032410470"
+  },
+  {
+    "id": 4901032410480,
+    "speaker": "果穂",
+    "text": "スゴいですっ！！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410480"
+  },
+  {
+    "id": 4901032410490,
+    "speaker": "めぐる",
+    "text": "とりあえず、みんなにアンプルを配ろっか",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103241/4901032410490"
+  },
+  {
+    "speaker": "弟子",
+    "text": "ええ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgEffectTime": 2000,
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

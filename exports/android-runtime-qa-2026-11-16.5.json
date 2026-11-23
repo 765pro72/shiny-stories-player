@@ -1,0 +1,88 @@
+{
+  "at": "2026-11-16T05:13:04.132Z",
+  "version": "2026-11-16.5",
+  "apk": {
+    "path": "F:\\sc\\dist\\ShinyStories-Android.apk",
+    "bytes": 137507871,
+    "sha256": "2fa68a892ebc38875ea827c384c5459165ff702ee7f41dc3173f4b1f8a3cc34c",
+    "versionCode": 2026111605,
+    "versionName": "2026.11.16.5"
+  },
+  "device": {
+    "serial": "emulator-5554",
+    "android": "15 (API 35)",
+    "appAbi": "arm64-v8a",
+    "hostAbi": "x86_64 (arm64 translation)",
+    "screen": "1920x1080",
+    "density": 240
+  },
+  "install": {
+    "command": "adb install -r dist\\ShinyStories-Android.apk",
+    "result": "Success",
+    "method": "incremental/streamed"
+  },
+  "launch": {
+    "command": "adb shell am start -n io.shinystories.player/.MainActivity",
+    "homeRendered": true,
+    "focus": "io.shinystories.player/.MainActivity",
+    "notes": "Splash ~8s then home with 283 header, 真乃, assistant pill, JP subtitle; no FATAL in logcat.",
+    "screenshot": "exports/android-2026-11-16.5-home.png"
+  },
+  "tests": [
+    {
+      "name": "16:9 letterbox under runtime resize",
+      "detail": "wm size 1920x1200 -> content rows 60..1139, cols 0..1919 (1920x1080 centered, 60px black bars top/bottom); wm size reset restores 1920x1080.",
+      "screenshot": "exports/android-2026-11-16.5-16x10.png",
+      "ok": true
+    },
+    {
+      "name": "story caption alignment",
+      "detail": "283 activity story 终章-REPLY PARTY: speaker name inside left tab, two body lines below the dotted divider; matches the desktop ScenarioPlayer fix.",
+      "screenshot": "exports/android-2026-11-16.5-story.png",
+      "ok": true
+    },
+    {
+      "name": "story fullscreen",
+      "detail": "Fullscreen stage fills 1920x1080 (rows 0..1079, no bars); top controls 下一句/自动播放/退出全屏 work; exit returns to dialog.",
+      "screenshot": "exports/android-2026-11-16.5-fullscreen.png",
+      "ok": true
+    },
+    {
+      "name": "assistant drag to top",
+      "detail": "Dragged with input motionevent to y≈0; the old 10px clamp floor no longer blocks the top edge.",
+      "screenshot": "exports/android-2026-11-16.5-assistant-drag.png",
+      "ok": true
+    },
+    {
+      "name": "assistant position survives navigation",
+      "detail": "After dragging to device ~ (315,264), switching 剧情馆 -> 事务所 keeps the pill there; no auto-reset.",
+      "screenshot": "exports/android-2026-11-16.5-assistant.png",
+      "ok": true
+    },
+    {
+      "name": "official fonts served by device app server",
+      "detail": "/fonts.css 200 text/css 927B; /fonts/yuanti.woff2 200 font/woff2 863116B; /fonts/primula-UDKakugo_SmallPr6-B-1.woff2 200 font/woff2 668844B; /player/main.html 200 2277B.",
+      "ok": true
+    },
+    {
+      "name": "served source carries this round's fixes",
+      "detail": "ScenarioPlayer.js has \"Re-apply the lift\" and \"+26\"; assistant.js has \"ia-dragging\" and pre-clamp collapse; interface-font-core.js has official-humming/official-kakugo/official-qingyin.",
+      "ok": true
+    }
+  ],
+  "backend": {
+    "portFile": "/data/data/io.shinystories.player/files/user/port.txt",
+    "port": 34523,
+    "ready": {
+      "url": "http://127.0.0.1:34523",
+      "pid": 3058,
+      "version": "2026-11-16.5"
+    }
+  },
+  "limitations": [
+    "Android 15 emulator with arm64 translation on an x86_64 host; not a physical Snapdragon/Dimensity phone.",
+    "Official fonts verified as served assets with correct MIME and bundled entries; not switched in the on-device settings UI.",
+    "Release APK has WebView debugging disabled, so no CDP-driven checks were possible."
+  ],
+  "ok": true
+}

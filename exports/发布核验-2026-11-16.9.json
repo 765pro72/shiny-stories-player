@@ -1,0 +1,55 @@
+{
+  "at": "2026-11-16T07:14:06.691Z",
+  "version": "2026-11-16.9",
+  "windows": {
+    "archive": "dist/ShinyStories-Lite-win32-x64.7z",
+    "bytes": 175425719,
+    "sha256": "da4ff1162fa4d824e3f18e0acb6f33ea81d09dbe6450bf1f4bae87f6709edf0b",
+    "checked": 14667,
+    "mismatches": [],
+    "uiVersion": "2026-11-16.9",
+    "translationFilesVerified": 10802,
+    "releaseGatePassed": true
+  },
+  "android": {
+    "apk": "dist/ShinyStories-Android.apk",
+    "bytes": 137507871,
+    "sha256": "b0a73f8ea3cb63efe596f779ee343e0efbfa75dcc23eac5fe1925b16a1d95c60",
+    "versionCode": 2026111609,
+    "versionName": "2026.11.16.9",
+    "abis": [
+      "arm64-v8a"
+    ],
+    "minAndroid": 9,
+    "targetAPI": 35,
+    "alignment": "16KB",
+    "signature": "v3 (CN=Shiny Stories Unofficial, SHA-256 dc71e8ce…2476)",
+    "installedOrRun": true,
+    "install": {
+      "result": "Success",
+      "serial": "emulator-5554"
+    },
+    "testEnvironment": "Android 15 API35 emulator, arm64-on-x86_64, 1920x864@480 (20:9, CSS 640x288)",
+    "tests": [
+      "install: Success",
+      "home header: 283 + shortcuts + pill nav share y=14..128px baseline (same height 42 CSS)",
+      "nav active pill: inset 3px, radius 10px, equal margin to glass frame",
+      "card gallery: hero hidden, stats on one compact row, group list visible on first screen",
+      "wardrobe: hero hidden, stats row, idol picker visible on first screen",
+      "assistant: 44px ball opens chat"
+    ],
+    "limitations": [
+      "emulator is arm64 translation on x86_64, not a physical Dimensity/Snapdragon device",
+      "voice page not re-captured on device after the stats change (Electron probe only)",
+      "release APK keeps WebView debugging disabled"
+    ]
+  },
+  "changes": {
+    "landingPagesUnified": "mobile.css (android only): card/voice/wardrobe landing heroes hidden; #<key>Stats rendered as one compact horizontally scrollable row; title/subtitle/controls/list structure matches the story guide page.",
+    "headerAlignment": "mobile.css: --ph-btn is 42px at 640w; .side now uses top:calc((--header-height - --ph-btn)/2) so 283, the three shortcuts and the pill nav share one baseline.",
+    "navActivePill": "mobile.css: .site-nav a.active::after inset:3px and border-radius:10px, so the white highlight keeps an even gap to the glass pill instead of rendering as a circle."
+  },
+  "newZIP": false,
+  "translationEdits": false,
+  "userProgramRestarted": false
+}

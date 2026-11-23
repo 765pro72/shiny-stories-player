@@ -1,0 +1,180 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうした？\r\nなんだか退屈そうだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1021001000810010,
+    "speaker": "円香",
+    "text": "……スマホの充電が切れたので",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102100100081/1021001000810010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、それならコンセントを使えばいいよ\r\n充電コードは？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1021001000810020,
+    "speaker": "円香",
+    "text": "……あったらとっくにしています",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100081/1021001000810020"
+  },
+  {
+    "select": "貸してあげるよ",
+    "nextLabel": "1021001000811"
+  },
+  {
+    "select": "無くしたのか？",
+    "nextLabel": "1021001000812"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "忘れ物とは珍しいな",
+    "nextLabel": "1021001000813"
+  },
+  {
+    "id": 1021001000810030,
+    "label": "1021001000811",
+    "speaker": "円香",
+    "text": "いえ、あなたに貸しは作りたくないので……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100081/1021001000810030"
+  },
+  {
+    "id": 1021001000810040,
+    "speaker": "円香",
+    "text": "………………少しだけ借ります",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_surp",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100081/1021001000810040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1021001000810050,
+    "label": "1021001000812",
+    "speaker": "円香",
+    "text": "家に忘れただけだと思います",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100081/1021001000810050"
+  },
+  {
+    "id": 1021001000810060,
+    "speaker": "円香",
+    "text": "あ、もしかして透の家……？\r\nそれかレッスン室とか……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_surp",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100081/1021001000810060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1021001000810070,
+    "label": "1021001000813",
+    "speaker": "円香",
+    "text": "別にいいでしょ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger2",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100081/1021001000810070"
+  },
+  {
+    "id": 1021001000810080,
+    "speaker": "円香",
+    "text": "ほっといてください",
+    "charAnim2": "face_close3",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100081/1021001000810080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

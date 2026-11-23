@@ -1,0 +1,479 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1901001010160,
+    "speaker": "はづき",
+    "text": "プロデューサーさん自身の手でスカウトしてきてください\r\n素敵な子、見つけてくださいね？",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/100700002/1901001010160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "わかりました！\r\nじゃあ、行ってきます！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charLabel": "hazuki",
+    "bg": "00024",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（と、勢いよく出てきたまでは良かったけど、\r\nなかなかピンとくる子がいないな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "off"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（雨も降ってきたし……\r\nどこか、雨宿りできるところは……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0125"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    }
+  },
+  {
+    "bgm": "off",
+    "se": "0126",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "bg": "00025",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0140",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、ここなら濡れないか……\r\nずいぶん大降りになってきたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "016"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0141",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1007001010010,
+    "speaker": "？？？",
+    "text": "ひゃーっ、雨とか聞いてないってー！",
+    "charAnim1": "surp1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "007",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "x": 200,
+      "alpha": 0,
+      "time": 700
+    },
+    "voice": "produce_events/100700002/1007001010010"
+  },
+  {
+    "id": 1007001010020,
+    "speaker": "？？？",
+    "text": "グッズ濡れてないよね？　大丈夫だよね？　えっと……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（あの子も雨宿りか……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……ん？　おおっ、すごいなあのカバン\r\n人気アイドルのライブ限定品がぎっしり……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1007001010030,
+    "speaker": "？？？",
+    "text": "こっちは平気だし、これも……！\r\n……ん、全部おっけー！　良かったぁ",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010030"
+  },
+  {
+    "speaker": "off",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1007001010040,
+    "speaker": "？？？",
+    "text": "あ、すみません騒がしくしちゃって！\r\nうるさかったですよね？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？　ああ、いえ。大丈夫ですよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1007001010050,
+    "speaker": "？？？",
+    "text": "それなら良かったです",
+    "charAnim1": "wait1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010050"
+  },
+  {
+    "speaker": "off",
+    "text": "off",
+    "charAnim2": "face_wait",
+    "charLabel": "yuika",
+    "textFrame": "off"
+  },
+  {
+    "id": 1007001010060,
+    "speaker": "？？？",
+    "text": "……これ私の方が濡れちゃってるな……ハンカチは──",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010060"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0135",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……あ。缶バッジ、落としましたよ？",
+    "charAnim2": "face_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1007001010070,
+    "speaker": "？？？",
+    "text": "えっ？　あ、ほんとだ！\r\nすみませんっ、ありがとうございます！",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010070"
+  },
+  {
+    "id": 1007001010080,
+    "speaker": "？？？",
+    "text": "良かったぁ……！\r\nこれ限定のヤツなんです、助かりました！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（──……いい笑顔だなぁ……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……それに、缶バッジでこんなに喜ぶところといい、\r\nあれだけのグッズといい、本当にアイドルが好きなんだ……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……この子なら、きっと……！）"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あの……すみません\r\n急にこんなこと言われて戸惑うかもしれないんですが……",
+    "charAnim2": "face_wait",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "アイドルに、興味はありませんか？"
+  },
+  {
+    "id": 1007001010090,
+    "speaker": "？？？",
+    "text": "……はい？　アイドル？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_anger",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうです\r\nあなたに、アイドルになってもらいたいと思いました",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1007001010100,
+    "speaker": "？？？",
+    "text": "……え、えーと……いきなり何事っていうか……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010100"
+  },
+  {
+    "id": 1007001010110,
+    "speaker": "？？？",
+    "text": "……あっ。お兄さんも実はドルオタなんですか？\r\n話せそうな人見つけちゃって嬉しいなー、みたいな！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010110"
+  },
+  {
+    "id": 1007001010120,
+    "speaker": "？？？",
+    "text": "それとも遠回しなナンパです？\r\n俺だけのアイドルになってくれ、的な",
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうではなくて……自分は、こういう者です",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1007001010130,
+    "speaker": "？？？",
+    "text": "２８３、プロダクション……？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あなたなら、素晴らしいアイドルになれると思ったんです\r\nどうでしょうか？",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1007001010140,
+    "speaker": "？？？",
+    "text": "……あ、あははー……\r\nその冗談、今日イチ面白いです。本当は芸人の方だったり？",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いえ、本気です\r\n本気で……あなたに、アイドルになってもらいたいんです",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1007001010150,
+    "speaker": "？？？",
+    "text": "……私が、アイドル……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010150"
+  },
+  {
+    "id": 1007001010160,
+    "speaker": "？？？",
+    "text": "いや、興味はめっちゃありますけど……\r\n……え？　ほんとに？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "本当です\r\n一緒にアイドル、目指してもらえませんか",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1007001010170,
+    "speaker": "？？？",
+    "text": "……そ、そこまで言ってもらえるなら……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010170"
+  },
+  {
+    "id": 1007001010180,
+    "speaker": "結華",
+    "text": "……三峰、結華です。これから、よろしくお願いします",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100700002/1007001010180"
+  },
+  {
+    "label": "end"
+  }
+]

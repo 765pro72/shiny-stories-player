@@ -1,0 +1,305 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "自分でスカウトして来いか……\r\nはづきさんも社長も、無茶なこと言うなぁ。",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00010",
+    "bgm": "004",
+    "se": "0120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（う～ん。ピンとくる子、なかなか見つからない……\r\n場所を変えてみるか）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0120"
+  },
+  {
+    "textFrame": "off",
+    "bgEffect": "mask",
+    "bg": "00013",
+    "bgm": "008",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1001001010010,
+    "speaker": "？？？",
+    "text": "～～♪",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（綺麗な歌声が聞こえてくる……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（あの子、かな……何か惹きつけられる……\r\n声をかけてみるか）",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "こんにちは、綺麗な歌声だね",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0097"
+  },
+  {
+    "id": 1001001010020,
+    "speaker": "？？？",
+    "text": "ほわっ？　あっ、あの……こんにちは\r\n人がいたなんて……気が付きませんでしたっ",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100002/1001001010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（この子……独特の雰囲気があるな。癒されるというか\r\n……うん、ピンときたぞ！）",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "突然だけど……\r\n君、アイドルになってみる気はない？",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001001010030,
+    "speaker": "？？？",
+    "text": "ほわっ……\r\nえっと……アイドル、ですか？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100002/1001001010030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺はアイドルのプロデューサーで、新人を探してるんだ\r\n君はいつもここで歌を？",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001001010040,
+    "speaker": "？？？",
+    "text": "えと、気持ちのいいお天気なので、つい……\r\n歌ってると、鳩さんがよく集まってきてくれますし",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100002/1001001010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "鳩さん……そうか、もうファンがいるんだね\r\nどうかな、アイドル、やってみないか？",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001001010050,
+    "speaker": "？？？",
+    "text": "ほわ……多分私にはできないと思います\r\n自信ありません……",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100002/1001001010050"
+  },
+  {
+    "id": 1001001010060,
+    "speaker": "？？？",
+    "text": "すみません、せっかく誘ってくれたのに……\r\nじゃあ、これで……",
+    "charAnim1": "hello",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100002/1001001010060"
+  },
+  {
+    "speaker": "off",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "x": -200,
+      "alpha": 0,
+      "time": 450
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "bgEffect": "fade",
+    "bg": "00003",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "bgEffect": "fade",
+    "bg": "00012",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "bgEffect": "fade",
+    "bg": "00018",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "bgEffect": "fade",
+    "bg": "00013",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（何日か探して回ったけど、\r\nピンときたのはこの公園にいた……あっ、あの子だ……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "？？？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 1001001010070,
+    "speaker": "？？？",
+    "text": "アイドル……私がアイドルなんて……",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100002/1001001010070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "やあ、また会えたね\r\nアイドルの話、もう一度考えてみてほしいんだ",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0098"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "君の中には光り輝くものがある\r\nアイドルになって、今までとは違う世界を見てみないか？",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001001010080,
+    "speaker": "？？？",
+    "text": "今までとは違う……",
+    "charAnim1": "think",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100002/1001001010080"
+  },
+  {
+    "id": 1001001010090,
+    "speaker": "？？？",
+    "text": "…………はい",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100002/1001001010090"
+  },
+  {
+    "id": 1001001010100,
+    "speaker": "？？？",
+    "text": "私、アイドルやりますっ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100002/1001001010100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "本当？　よかった！！\r\n君の名前、聞いてもいいかな？",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001001010110,
+    "speaker": "真乃",
+    "text": "櫻木真乃、１6歳です\r\nこれからよろしくお願いしますね",
+    "charAnim1": "hello",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100002/1001001010110"
+  },
+  {
+    "label": "end"
+  }
+]

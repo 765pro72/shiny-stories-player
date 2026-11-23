@@ -1,0 +1,188 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1801001001010010,
+    "speaker": "ルビー",
+    "text": "ねえ、プロデューサー！\r\n冷蔵庫に『おやつあります』って書いてあったの",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "801",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/180100100101/1801001001010010"
+  },
+  {
+    "id": 1801001001010020,
+    "speaker": "ルビー",
+    "text": "私も食べていいのかな……？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100101/1801001001010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、もちろん！\r\nもらっておいで",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1801001001010030,
+    "speaker": "ルビー",
+    "text": "やった！\r\nなんのおやつだろう……！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100101/1801001001010030"
+  },
+  {
+    "textFrame": "off",
+    "select": "お茶も用意するよ",
+    "nextLabel": "1801001001011"
+  },
+  {
+    "textFrame": "off",
+    "select": "今日はケーキだよ",
+    "nextLabel": "1801001001012"
+  },
+  {
+    "textCtrl": "cm",
+    "textFrame": "off",
+    "select": "あ、ひとつだけだぞ",
+    "nextLabel": "1801001001013"
+  },
+  {
+    "id": 1801001001010040,
+    "label": "1801001001011",
+    "speaker": "ルビー",
+    "text": "わ、ありがとう！\r\nもしかしてプロデューサーも休憩するとこ？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100101/1801001001010040"
+  },
+  {
+    "id": 1801001001010050,
+    "speaker": "ルビー",
+    "text": "一緒に食べよー！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100101/1801001001010050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1801001001010060,
+    "label": "1801001001012",
+    "speaker": "ルビー",
+    "text": "ケーキ！？\r\n２８３プロっておやつでケーキが出てくるの！？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100101/1801001001010060"
+  },
+  {
+    "id": 1801001001010070,
+    "speaker": "ルビー",
+    "text": "最高じゃん……\r\n苺プロにもこういうものがあればいいのに",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100101/1801001001010070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1801001001010080,
+    "label": "1801001001013",
+    "speaker": "ルビー",
+    "text": "え、わかってるよ\r\nみんなのおやつでしょ？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100101/1801001001010080"
+  },
+  {
+    "id": 1801001001010090,
+    "speaker": "ルビー",
+    "text": "私、そんなに食い意地張ってるように見えたかな……！？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100101/1801001001010090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,883 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00009",
+    "bgm": "0000"
+  },
+  {
+    "speaker": "ファッション誌スタッフ",
+    "text": "うーーん…………",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どう、ですかね……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "ファッション誌スタッフ",
+    "text": "摩美々さんが持ってきてくれたコーディネート、\r\nコンセプト自体は合ってるし、悪くはないんですけど……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "ファッション誌スタッフ",
+    "text": "想定の範囲内というか、まだ前回の記事を超えられる\r\nイメージがつかないんですよねぇ……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "な、なるほど……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005003040010,
+    "speaker": "摩美々",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "005",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/100500304/1005003040010"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "ファッション誌スタッフ",
+    "text": "我々は、前回とは違ったものを\r\n作りたいと思っていますし",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "ファッション誌スタッフ",
+    "text": "今回の記事が、これからの摩美々さんにとって\r\n何かいいきっかけになることを願っています",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "ファッション誌スタッフ",
+    "text": "……なので",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "ファッション誌スタッフ",
+    "text": "そのあたりを意識したコーディネートの\r\n組み直しをお願いできませんか？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1005003040020,
+    "speaker": "摩美々",
+    "text": "……わかりました",
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100500304/1005003040020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00129",
+    "bgm": "0008",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……摩美々",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ファッション誌の仕事……\r\n忙しい中で頑張ってくれてたのに、すまない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005003040030,
+    "speaker": "摩美々",
+    "text": "あぁ、いえー",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100500304/1005003040030"
+  },
+  {
+    "id": 1005003040040,
+    "speaker": "摩美々",
+    "text": "……別にプロデューサーが謝ることでも",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや…………",
+    "charAnim2": "face_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……雑誌社さん、さ……それくらい\r\nこだわって記事を作ってくれてるんだよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それはすごく有難いことだし……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──先方も言ってたけど、これを乗り越えることが\r\n摩美々にとっていいきっかけになると、俺も思うよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005003040050,
+    "speaker": "摩美々",
+    "text": "…………",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100500304/1005003040050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そういえば\r\n『G.R.A.D.』の件なんだが──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005003040060,
+    "speaker": "摩美々",
+    "text": "……それ、今度にしてもらってもいいですか",
+    "charAnim1": "wait4",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100500304/1005003040060"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1005003040070,
+    "speaker": "摩美々",
+    "text": "……ぁ……\r\n……すみません",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100500304/1005003040070"
+  },
+  {
+    "id": 1005003040080,
+    "speaker": "摩美々",
+    "text": "コーディネート、考え直さなきゃなんで……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………\r\nああ、急ぎってわけじゃないからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……また今度",
+    "charAnim2": "face_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00129",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1005003040090,
+    "speaker": "摩美々",
+    "text": "──あ\r\nこの辺で降ろしてもらえますー？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100500304/1005003040090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……え？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005003040100,
+    "speaker": "摩美々",
+    "text": "……コーディネートの参考に\r\nお店見ていこうかなぁと思ってー",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おお、そうか、わかった\r\n気を付けていって来いよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………摩美々\r\nあんまり無理はしないようにな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005003040110,
+    "speaker": "摩美々",
+    "text": "はぁい",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040110"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "se": "0413",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "se": "0384",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "0000",
+    "se": "0496",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00027",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "062",
+    "se": "0731",
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "speaker": "ショップ店員",
+    "text": "いらっしゃいま──\r\nあ、摩美々ちゃん！　来てくれたんだ、３か月ぶりくらい？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1005003040120,
+    "speaker": "摩美々",
+    "text": "どーもー\r\n新作見せてくれるー？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100500304/1005003040120"
+  },
+  {
+    "speaker": "ショップ店員",
+    "text": "うんうん！\r\n新作なら……このトップスとかどうかな？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "ショップ店員",
+    "text": "摩美々ちゃんのいつもの感じに合うと思うし",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1005003040130,
+    "speaker": "摩美々",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040130"
+  },
+  {
+    "id": 1005003040140,
+    "speaker": "摩美々",
+    "text": "──じゃーいいや\r\nいつもの感じじゃないやつ、ないー？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040140"
+  },
+  {
+    "speaker": "ショップ店員",
+    "text": "えっ！　\r\nないことはない……けど……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "ショップ店員",
+    "text": "どうしたの？\r\n摩美々ちゃん、ずっと系統変わってないのに……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1005003040150,
+    "speaker": "摩美々",
+    "text": "……別に",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040150"
+  },
+  {
+    "id": 1005003040160,
+    "speaker": "摩美々",
+    "text": "たまたま、必要なだけ",
+    "charAnim2": "face_wait2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040160"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00069",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1005003040170,
+    "speaker": "摩美々",
+    "text": "（…………結局、収穫ないし―）",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100500304/1005003040170"
+  },
+  {
+    "id": 1005003040180,
+    "speaker": "摩美々",
+    "text": "…………ふぁ……",
+    "charAnim1": "think",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040180"
+  },
+  {
+    "id": 1005003040190,
+    "speaker": "摩美々",
+    "text": "（なんか、疲れたなぁ……）",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040190"
+  },
+  {
+    "id": 1005003040200,
+    "speaker": "摩美々",
+    "text": "（でも、明日もレッスンはあるし……）",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040200"
+  },
+  {
+    "id": 1005003040210,
+    "speaker": "摩美々",
+    "text": "（せめて『G.R.A.D.』\r\nが終わるまでは頑張──）",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "fade_out",
+    "voice": "produce_events/100500304/1005003040210"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1005003040220,
+    "speaker": "摩美々",
+    "text": "（…………私……なんで頑張ってるんだっけ）",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100500304/1005003040220"
+  },
+  {
+    "id": 1005003040230,
+    "speaker": "摩美々",
+    "text": "（オーディションでいい結果を残すため……\r\n……これからの私のため）",
+    "charAnim1": "play",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040230"
+  },
+  {
+    "id": 1005003040240,
+    "speaker": "摩美々",
+    "text": "（…………『アイドル』\r\n……私にとってそんなに大事なもの？）",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040240"
+  },
+  {
+    "id": 1005003040250,
+    "speaker": "摩美々",
+    "text": "…………",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040250"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 1005003040260,
+    "speaker": "摩美々",
+    "text": "（……あぁ、なんかもう、めんどくさい）",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500304/1005003040260"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

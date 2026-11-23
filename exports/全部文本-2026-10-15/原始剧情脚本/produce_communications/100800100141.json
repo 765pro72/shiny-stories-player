@@ -1,0 +1,164 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "へっくしょん！\r\n……鼻水が止まらないなぁ",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "008",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 1008001001410010,
+    "speaker": "霧子",
+    "text": "プロデューサーさん……つらそうです……\r\n大丈夫……ですか……？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100141/1008001001410010"
+  },
+  {
+    "id": 1008001001410020,
+    "speaker": "霧子",
+    "text": "風邪の……初期症状かもしれません……\r\nは、早いうちに対策……しないと……！",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100141/1008001001410020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うーん、これは風邪なのかなぁ？）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "花粉症かも",
+    "nextLabel": "1008001001411"
+  },
+  {
+    "select": "そういえばちょっと\r\n熱っぽいかな",
+    "nextLabel": "1008001001412"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "うん、風邪かも……\r\nすぐに離れて、霧子",
+    "nextLabel": "1008001001413"
+  },
+  {
+    "id": 1008001001410030,
+    "label": "1008001001411",
+    "speaker": "霧子",
+    "text": "ほ、ほんとに……花粉症でしょうか……？\r\n……念のため、外来の予約を……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100141/1008001001410030"
+  },
+  {
+    "id": 1008001001410040,
+    "speaker": "霧子",
+    "text": "あの……無理はしないで、\r\nなんでも言ってくださいね……！",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100141/1008001001410040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001001410050,
+    "label": "1008001001412",
+    "speaker": "霧子",
+    "text": "熱があったら……\r\n風邪だと思います……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100141/1008001001410050"
+  },
+  {
+    "id": 1008001001410060,
+    "speaker": "霧子",
+    "text": "念のため熱を計ってください……それと、水分を……\r\n飲み物……用意しますね……",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100141/1008001001410060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001001410070,
+    "label": "1008001001413",
+    "speaker": "霧子",
+    "text": "い、いえ……むしろ風邪なら……\r\n1人にはできません……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100141/1008001001410070"
+  },
+  {
+    "id": 1008001001410080,
+    "speaker": "霧子",
+    "text": "わたしが看病……しなきゃです……！\r\n少し、横になっていてください……",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100141/1008001001410080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

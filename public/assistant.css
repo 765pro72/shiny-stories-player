@@ -1,0 +1,245 @@
+#idolAssistant{position:fixed;inset:auto;left:auto;top:auto;margin:0;padding:0;border:1px solid #d7dfe4;border-radius:24px;background:#fcfbf9f5;color:#243c4c;box-shadow:0 14px 56px #26374535;backdrop-filter:blur(22px);font:inherit;z-index:2147482000;overflow:hidden;width:440px;height:610px;max-width:calc(100vw - 20px);max-height:calc(100dvh - 28px);display:grid;grid-template-rows:68px 1fr auto;isolation:isolate;box-sizing:border-box;resize:both;min-width:300px;min-height:340px}#idolAssistant[hidden],#idolAssistant.ia-hidden{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}#idolAssistant *{box-sizing:border-box}#idolAssistant button,#idolAssistant input,#idolAssistant select,#idolAssistant textarea{font:inherit;letter-spacing:normal}#idolAssistant button{position:static;min-width:44px;min-height:44px;padding:8px 12px;border:1px solid #dce3e7;border-radius:14px;background:#fff;color:#304858;cursor:pointer;box-shadow:none;white-space:normal}#idolAssistant button:hover{background:#f4ecf1}#idolAssistant button:disabled{opacity:.5;cursor:default}#idolAssistant button:focus-visible,#idolAssistant textarea:focus-visible,#idolAssistant input:focus-visible,#idolAssistant select:focus-visible{outline:3px solid #b86691;outline-offset:1px}#idolAssistant .ia-head{display:flex;align-items:center;gap:8px;padding:10px 12px;background:linear-gradient(110deg,#f3e7ef,#e8f2f4);cursor:grab;touch-action:none;user-select:none}#idolAssistant .ia-head:active{cursor:grabbing}#idolAssistant .ia-avatar{flex:0 0 40px;width:40px;height:40px;border-radius:50%;object-fit:cover;background:#e7e9ed;border:1px solid #ffffffa0}#idolAssistant .ia-title{flex:1;min-width:0}#idolAssistant .ia-title strong{display:block;font-size:16px}#idolAssistant .ia-title small{font-size:11px;color:#667d89}#idolAssistant .ia-body{min-height:0;overflow:auto;overscroll-behavior:contain;padding:14px;scrollbar-gutter:stable}#idolAssistant .ia-bubble-row{display:flex;gap:8px;align-items:flex-start;margin:0 0 16px}#idolAssistant .ia-bubble-row.user{flex-direction:row-reverse}#idolAssistant .ia-bubble-row .ia-avatar{width:34px;height:34px;flex-basis:34px}#idolAssistant .ia-bubble-row article{min-width:0;max-width:calc(100% - 42px)}#idolAssistant .ia-bubble-row small{display:block;font-size:11px;color:#657883;margin:0 4px 4px}#idolAssistant .ia-bubble{white-space:pre-wrap;overflow-wrap:anywhere;padding:11px 13px;border-radius:4px 16px 16px;background:white;box-shadow:0 1px 4px #283d4e12;font-size:14px;line-height:1.65}#idolAssistant .user .ia-bubble{background:#e7f0f1;border-radius:16px 4px 16px 16px}#idolAssistant .ia-compose{position:static;display:block;padding:10px 12px 12px;border-top:1px solid #e2e7ea;background:#fafafa}#idolAssistant .ia-compose textarea{width:100%;min-height:64px;max-height:140px;resize:vertical;border:1px solid #d7e0e5;border-radius:14px;padding:10px;background:white;color:#243c4c;line-height:1.5}#idolAssistant .ia-actions{display:flex;align-items:center;gap:6px;margin-top:6px}#idolAssistant .ia-actions small{flex:1;font-size:11px;color:#657b87}#idolAssistant .ia-send{background:#a75580;color:white;border-color:#a75580}#idolAssistant .ia-settings{padding:0 0 14px;border-bottom:1px solid #dce4e8;margin-bottom:14px}#idolAssistant .ia-settings label{display:block;font-size:12px;margin:8px 0}#idolAssistant .ia-settings input,#idolAssistant .ia-settings select{display:block;width:100%;padding:9px;border:1px solid #d6e0e5;border-radius:10px;background:white;color:#243c4c;min-height:44px}#idolAssistant details{background:#edf1f4;border-radius:12px;margin:10px 0;padding:10px;font-size:12px}#idolAssistant summary{cursor:pointer;min-height:28px}#idolAssistant pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:200px;overflow:auto;font-size:11px}#idolAssistant a{color:#8e456e;overflow-wrap:anywhere}#idolAssistant .ia-progress{font-size:12px;color:#667d89;margin:10px 0}#idolAssistant .ia-artifacts{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}#idolAssistant .ia-artifacts a{display:inline-block;padding:10px;background:white;border:1px solid #d7e0e5;border-radius:10px}#idolAssistant.ia-collapsed{width:auto!important;height:58px!important;min-width:0;min-height:0;resize:none;border-radius:30px;display:block;max-width:240px}#idolAssistant.ia-collapsed .ia-head{height:56px;padding:7px 12px;cursor:pointer}#idolAssistant.ia-collapsed .ia-body,#idolAssistant.ia-collapsed .ia-compose,#idolAssistant.ia-collapsed .ia-title small,#idolAssistant.ia-collapsed .ia-settings-button,#idolAssistant.ia-collapsed .ia-close{display:none}#idolAssistant .ia-user-icon{display:grid;place-items:center;font-size:13px;background:#e5edf0;color:#314958}#idolAssistant .ia-empty{padding:15px 4px;color:#6a7c87;font-size:13px;line-height:1.7}#idolAssistant .ia-scene-link{display:block;margin:5px 0}#idolAssistant .ia-error{color:#9b3854}#idolAssistant .ia-settings[hidden]{display:none}@media(max-width:550px){#idolAssistant{width:calc(100vw - 20px);height:calc(100dvh - 70px);min-width:280px}#idolAssistant .ia-head{gap:5px}#idolAssistant .ia-title small{font-size:10px}}
+
+#idolAssistant .ia-send:hover,#idolAssistant .ia-send:focus{background:#93466e;color:#fff}
+#idolAssistant .ia-repair{padding:14px;margin:12px 0;border:1px solid #d8becd;border-radius:16px;background:#fcf3f8}#idolAssistant .ia-repair[hidden]{display:none}#idolAssistant .ia-repair p{font-size:13px;line-height:1.65;margin:8px 0 12px}#idolAssistant .ia-repair-actions{display:flex;gap:8px;flex-wrap:wrap}
+
+#idolAssistant .ia-avatar{-webkit-user-drag:none;user-select:none}#idolAssistant .ia-visibility-switch,#wardrobeDialog .ia-visibility-switch{display:flex;align-items:center;gap:12px;min-height:44px;cursor:pointer}#idolAssistant .ia-visibility-switch input[type=checkbox],#wardrobeDialog .ia-visibility-switch input[type=checkbox]{display:inline-block;width:20px;height:20px;min-height:20px;margin:0;flex:0 0 20px}#idolAssistant .ia-visibility-hint{font-size:12px;line-height:1.6;color:#667d89;margin:0 0 12px}#wardrobeDialog .assistant-visibility-setting{padding:12px 0;border-bottom:1px solid #dce4e8;margin-bottom:12px}
+
+.ia-context-menu{position:fixed;inset:auto;margin:0;padding:5px;border:1px solid #d7dfe4;border-radius:14px;background:#fcfbf9;color:#243c4c;box-shadow:0 8px 28px #26374535;z-index:2147482100;font:inherit}.ia-context-menu button{display:block;min-width:150px;min-height:44px;padding:10px 16px;border:0;border-radius:10px;background:transparent;color:#304858;font:inherit;cursor:pointer}.ia-context-menu button:hover,.ia-context-menu button:focus-visible{background:#f4ecf1;outline:2px solid #b86691;outline-offset:-2px}
+#idolAssistant #iaConversation[hidden],#idolAssistant .ia-compose[hidden]{display:none!important}#idolAssistant.ia-settings-open{grid-template-rows:68px 1fr 0}#idolAssistant.ia-settings-open .ia-settings{border:0;margin:0;padding:0}#idolAssistant #iaSettingsStatus:not(:empty){position:sticky;top:0;z-index:1;margin:0 0 12px;padding:10px;border-radius:10px;background:#f3e9f0;color:#754e66;font-size:12px}#idolAssistant .ia-work-report .ia-bubble{border:1px solid #dce2ea;background:#f4f6fa;font-size:13px}#idolAssistant .ia-work-report small{color:#6c7486}
+
+/* While the companion is being dragged, the window-drag strip must not steal the pointer. */
+html.ia-dragging .window-drag-handle,html.ia-dragging .header-drag-space{-webkit-app-region:no-drag}
+
+/* The collapsed pill keeps the companion name on one line and widens just enough to fit it. */
+#idolAssistant.ia-collapsed{width:max-content!important;max-width:min(300px,calc(100vw - 16px))}
+#idolAssistant.ia-collapsed .ia-title strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#idolAssistant.ia-collapsed .ia-head{padding:6px 10px;gap:6px}
+#idolAssistant.ia-collapsed .ia-avatar{flex-basis:34px;width:34px;height:34px}
+#idolAssistant.ia-collapsed .ia-head button{padding:6px 8px;min-height:44px}
+@media(max-height:540px) and (max-width:1000px){
+#idolAssistant.ia-collapsed{max-width:min(320px,calc(100vw - 12px))}
+#idolAssistant.ia-collapsed .ia-title strong{font-size:13px}
+}
+
+/* 手机横屏：收起态是一个圆形头像球，点按展开聊天面板。 */
+@media(max-height:540px) and (max-width:1000px){
+  #idolAssistant.ia-collapsed{width:44px!important;height:44px!important;max-width:44px!important;min-width:0!important;padding:0!important;border-radius:50%!important;overflow:hidden}
+  #idolAssistant.ia-collapsed .ia-head{padding:0!important;gap:0!important;justify-content:center!important;height:100%;cursor:pointer}
+  #idolAssistant.ia-collapsed .ia-avatar{width:44px!important;height:44px!important;flex-basis:44px!important;border-radius:50%!important}
+  #idolAssistant.ia-collapsed .ia-title,#idolAssistant.ia-collapsed .ia-head button{display:none!important}
+}
+
+/* Collapsed assistant is a perfectly centered round floating ball on every platform. */
+#idolAssistant.ia-collapsed{
+  width: 52px !important;
+  height: 52px !important;
+  max-width: 52px !important;
+  max-height: 52px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  resize: none !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.85) !important;
+  background: transparent !important;
+}
+#idolAssistant.ia-collapsed .ia-head{
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: grab !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+#idolAssistant.ia-collapsed #iaHeadAvatar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+#idolAssistant.ia-collapsed .ia-avatar{
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  flex: 1 1 100% !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border: none !important;
+  margin: 0 !important;
+  pointer-events: none !important;
+}
+#idolAssistant.ia-collapsed .ia-title,#idolAssistant.ia-collapsed .ia-head button,#idolAssistant.ia-collapsed .ia-body,#idolAssistant.ia-collapsed .ia-composer{display:none!important}
+/* Phone: expanded panel fills the screen instead of squeezing into 250px. */
+html[data-platform=android] #idolAssistant:not(.ia-collapsed){inset:4px!important;width:auto!important;height:auto!important;max-width:none!important;max-height:none!important;min-width:0!important;min-height:0!important;border-radius:16px!important;grid-template-rows:52px minmax(0,1fr) auto!important;resize:none!important}
+html[data-platform=android] #idolAssistant:not(.ia-collapsed) .ia-head{padding:6px 10px!important;gap:6px!important}
+html[data-platform=android] #idolAssistant:not(.ia-collapsed) .ia-avatar{width:34px!important;height:34px!important;flex-basis:34px!important}
+html[data-platform=android] #idolAssistant:not(.ia-collapsed) .ia-title strong{font-size:14px!important}
+html[data-platform=android] #idolAssistant:not(.ia-collapsed) .ia-head button{padding:4px 8px!important;min-height:32px!important;font-size:12px!important}
+html[data-platform=android] #idolAssistant .ia-log{padding:8px!important;gap:6px!important}
+html[data-platform=android] #idolAssistant .ia-msg{font-size:12px!important;line-height:1.5!important;padding:6px 9px!important;border-radius:10px!important;max-width:92%!important}
+html[data-platform=android] #idolAssistant .ia-composer{padding:6px 8px!important;gap:6px!important}
+html[data-platform=android] #idolAssistant .ia-composer textarea{min-height:44px!important;max-height:22dvh!important;font-size:12px!important}
+html[data-platform=android] #idolAssistant .ia-composer button{min-height:36px!important;padding:6px 12px!important;font-size:12px!important}
+
+/* keep the assistant out of the window drag regions (top strip + header drag space) */
+#idolAssistant,#idolAssistant *{-webkit-app-region:no-drag}
+
+/* ── Dark Mode for Idol Assistant & Context Menu ─────────── */
+html[data-theme="dark"] #idolAssistant {
+  background: rgba(22, 20, 29, 0.94) !important;
+  border: 1px solid rgba(230, 194, 122, 0.28) !important;
+  color: #e2e8f0 !important;
+  box-shadow: 0 16px 56px rgba(0, 0, 0, 0.72), 0 0 0 1px rgba(230, 194, 122, 0.15) !important;
+}
+
+html[data-theme="dark"] #idolAssistant.ia-collapsed {
+  border: 1.5px solid rgba(230, 194, 122, 0.6) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.65), 0 0 12px rgba(230, 194, 122, 0.25) !important;
+  background: rgba(20, 18, 26, 0.9) !important;
+}
+
+html[data-theme="dark"] #idolAssistant .ia-head {
+  background: linear-gradient(135deg, rgba(38, 30, 48, 0.95), rgba(28, 25, 36, 0.95)) !important;
+  border-bottom: 1px solid rgba(230, 194, 122, 0.18) !important;
+}
+
+html[data-theme="dark"] #idolAssistant .ia-title strong {
+  color: #f7e7c4 !important;
+}
+
+html[data-theme="dark"] #idolAssistant .ia-title small {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] #idolAssistant button {
+  background: rgba(35, 30, 46, 0.85) !important;
+  color: #e2e8f0 !important;
+  border-color: rgba(230, 194, 122, 0.25) !important;
+}
+
+html[data-theme="dark"] #idolAssistant button:hover {
+  background: rgba(50, 44, 64, 0.95) !important;
+  color: #fde8b4 !important;
+  border-color: rgba(230, 194, 122, 0.5) !important;
+}
+
+html[data-theme="dark"] #idolAssistant .ia-body {
+  background: rgba(18, 16, 24, 0.6) !important;
+  color: #e2e8f0 !important;
+}
+
+html[data-theme="dark"] #idolAssistant .ia-bubble {
+  background: rgba(35, 30, 46, 0.92) !important;
+  color: #f1f5f9 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+}
+
+html[data-theme="dark"] #idolAssistant .ia-bubble-row.user .ia-bubble {
+  background: rgba(75, 45, 95, 0.8) !important;
+  border: 1px solid rgba(230, 194, 122, 0.3) !important;
+  color: #fff !important;
+}
+
+html[data-theme="dark"] #idolAssistant .ia-bubble-row small {
+  color: #94a3b8 !important;
+}
+
+html[data-theme="dark"] #idolAssistant .ia-compose {
+  background: rgba(24, 21, 32, 0.95) !important;
+  border-top: 1px solid rgba(230, 194, 122, 0.18) !important;
+}
+
+html[data-theme="dark"] #idolAssistant .ia-compose textarea {
+  background: rgba(15, 13, 20, 0.85) !important;
+  color: #f8fafc !important;
+  border-color: rgba(230, 194, 122, 0.22) !important;
+}
+
+html[data-theme="dark"] #idolAssistant .ia-send {
+  background: linear-gradient(135deg, #c59b48, #9a782b) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+html[data-theme="dark"] #idolAssistant .ia-settings {
+  border-bottom: 1px solid rgba(230, 194, 122, 0.2) !important;
+}
+
+html[data-theme="dark"] #idolAssistant .ia-settings input,
+html[data-theme="dark"] #idolAssistant .ia-settings select {
+  background: rgba(15, 13, 20, 0.85) !important;
+  color: #f8fafc !important;
+  border-color: rgba(230, 194, 122, 0.25) !important;
+}
+
+/* Context Menu */
+.ia-context-menu {
+  position: fixed !important;
+  z-index: 2147483647 !important;
+  inset: auto !important;
+  margin: 0 !important;
+  padding: 6px !important;
+  border: 1px solid #d7dfe4 !important;
+  border-radius: 14px !important;
+  background: #fcfbf9 !important;
+  color: #243c4c !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18) !important;
+}
+
+.ia-context-menu button {
+  display: block !important;
+  min-width: 140px !important;
+  min-height: 38px !important;
+  padding: 8px 14px !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  color: #304858 !important;
+  font: inherit !important;
+  font-size: 13px !important;
+  text-align: left !important;
+  cursor: pointer !important;
+}
+
+.ia-context-menu button:hover,
+.ia-context-menu button:focus-visible {
+  background: #f4ecf1 !important;
+  color: #93466e !important;
+}
+
+html[data-theme="dark"] .ia-context-menu {
+  background: rgba(24, 21, 32, 0.96) !important;
+  border: 1px solid rgba(230, 194, 122, 0.38) !important;
+  color: #f1ede6 !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 12px rgba(230, 194, 122, 0.18) !important;
+}
+
+html[data-theme="dark"] .ia-context-menu button {
+  color: #f1ede6 !important;
+}
+
+html[data-theme="dark"] .ia-context-menu button:hover,
+html[data-theme="dark"] .ia-context-menu button:focus-visible {
+  background: rgba(230, 194, 122, 0.18) !important;
+  color: #fde8b4 !important;
+}
+

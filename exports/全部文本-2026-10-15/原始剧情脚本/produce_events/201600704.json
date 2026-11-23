@@ -1,0 +1,821 @@
+[
+  {
+    "textFrame": "off",
+    "bgm": "0000",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00150",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2016007040010,
+    "speaker": "千雪",
+    "text": "『湖に咲いた花が揺れる夜』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040010"
+  },
+  {
+    "id": 2016007040020,
+    "speaker": "千雪",
+    "text": "『心の棘は時を刻む』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040020"
+  },
+  {
+    "id": 2016007040030,
+    "speaker": "千雪",
+    "text": "『神様も知らない　秘密の花園』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040030"
+  },
+  {
+    "id": 2016007040040,
+    "speaker": "千雪",
+    "text": "『夜が明ける前に会いに来て──』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040040"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "charCategory": "stand_costume",
+    "charType": "idols",
+    "charId": "1040160020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00031",
+    "bgm": "005"
+  },
+  {
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2016007040050,
+    "speaker": "千雪",
+    "text": "……ふふっ",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0470",
+    "voice": "produce_events/201600704/2016007040050"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0116",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──おお\r\nお疲れ様、千雪",
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 2016007040060,
+    "speaker": "千雪",
+    "text": "あ、プロデューサーさん！\r\nお疲れ様です～！",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040060"
+  },
+  {
+    "id": 2016007040070,
+    "speaker": "千雪",
+    "text": "見てくださいっ\r\nこれ──",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040070"
+  },
+  {
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "se": "0470",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お……花束か\r\nどうしたんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040080,
+    "speaker": "千雪",
+    "text": "はい……！\r\nさっきスタッフさんが渡してくださったんです",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040080"
+  },
+  {
+    "id": 2016007040090,
+    "speaker": "千雪",
+    "text": "今回のミュージックビデオのテーマが\r\n『シークレットガーデン』だったから、って",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか\r\nよかったな、千雪",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040100,
+    "speaker": "千雪",
+    "text": "はいっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040100"
+  },
+  {
+    "id": 2016007040110,
+    "speaker": "千雪",
+    "text": "…………",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040110"
+  },
+  {
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "？\r\nあれ、着替えに行かないのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040120,
+    "speaker": "千雪",
+    "text": "──あ、ええと……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040120"
+  },
+  {
+    "id": 2016007040130,
+    "speaker": "千雪",
+    "text": "……せっかくなので、このお花と一緒に\r\n記念撮影とか、できればなぁって……",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おお、そうかそうか……！\r\n確か、鞄の中にこないだのデジカメが──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "se": "0329",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……あったあった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それじゃあ撮るぞ、千雪",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040140,
+    "speaker": "千雪",
+    "text": "……はーいっ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040140"
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──うん、\r\n綺麗に撮れたよ",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 2016007040150,
+    "speaker": "千雪",
+    "text": "……ありがとうございます",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040150"
+  },
+  {
+    "select": "……いい撮影だったよな",
+    "nextLabel": "1"
+  },
+  {
+    "select": "なれたんじゃないか？",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "完成が楽しみだな",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2016007040160,
+    "label": "1",
+    "speaker": "千雪",
+    "text": "はい……！\r\nお芝居のパートもあったので、緊張しちゃいましたけど",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040160"
+  },
+  {
+    "id": 2016007040170,
+    "speaker": "千雪",
+    "text": "童話の世界に入れたみたいで\r\n素敵な体験でした……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "設定とか、台詞も\r\n３人で頑張って作ってたもんな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040180,
+    "speaker": "千雪",
+    "text": "そうなんです\r\n監督さん、色々と提案を受け入れてくださったので……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そういえば",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "千雪の言ってた台詞──\r\n『湖に咲いた花が～』ってやつ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あれは、何か意味を込めてたりするのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040190,
+    "speaker": "千雪",
+    "text": "あぁ、それはですね──",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040190"
+  },
+  {
+    "id": 2016007040200,
+    "speaker": "千雪",
+    "text": "それは…………\r\n……秘密です",
+    "charAnim1": "sad1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ええっ\r\n……そうか……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040210,
+    "speaker": "千雪",
+    "text": "や、やっぱり……\r\n恥ずかしいので……",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040210"
+  },
+  {
+    "id": 2016007040220,
+    "speaker": "千雪",
+    "text": "『神様も知らない』ということで……！\r\n……ふふ",
+    "charAnim1": "touch",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201600704/2016007040220"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2016007040230,
+    "label": "2",
+    "speaker": "千雪",
+    "text": "……？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "憧れの、物語のヒロインにさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040240,
+    "speaker": "千雪",
+    "text": "あっ……ええと\r\n──だったら、いいなあ……！",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040240"
+  },
+  {
+    "id": 2016007040250,
+    "speaker": "千雪",
+    "text": "……そうだ\r\n私、着替えてきますね……！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ\r\nお花、預かっとくよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040260,
+    "speaker": "千雪",
+    "text": "はい\r\n…………ありがとうございます",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いやいや、\r\n預かっておくくらいでそんな──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040270,
+    "speaker": "千雪",
+    "text": "……そ、それだけじゃなくて……！",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040270"
+  },
+  {
+    "id": 2016007040280,
+    "speaker": "千雪",
+    "text": "……私は、いつもプロデューサーさんの優しさに\r\n手を引かれている気がします",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040280"
+  },
+  {
+    "id": 2016007040290,
+    "speaker": "千雪",
+    "text": "だから、その…………",
+    "charAnim1": "wait3",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ならよかったよ、俺は、言うなれば──\r\n千雪にとっての魔法使いでいたいからさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──なんて、おこがましいか\r\nすまん、変なこと言っちゃったな！　はは",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040300,
+    "speaker": "千雪",
+    "text": "いえっ、そんなことないですよ……！\r\n…………そんなこと……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040300"
+  },
+  {
+    "id": 2016007040310,
+    "speaker": "千雪",
+    "text": "……あ、私、今度こそ\r\n着替えてきますね……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ\r\nお疲れ様、千雪",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "3",
+    "speaker": "プロデューサー",
+    "text": "ミュージックビデオ、\r\n３人とも頑張っていたからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040320,
+    "speaker": "千雪",
+    "text": "はい……！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040320"
+  },
+  {
+    "id": 2016007040330,
+    "speaker": "千雪",
+    "text": "今回は、甘奈ちゃんと甜花ちゃんと\r\nアイディアを出し合ったので……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040330"
+  },
+  {
+    "id": 2016007040340,
+    "speaker": "千雪",
+    "text": "ふたりの知らなかったことも、\r\nふたりから見た自分のことも知れて、楽しかったです",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040340"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか……\r\nそれはよかった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040350,
+    "speaker": "千雪",
+    "text": "はい♪\r\nまた、こういうことができたらいいなって思います",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040350"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、そうだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040360,
+    "speaker": "千雪",
+    "text": "──あ、今度はお花畑での撮影もしてみたいですっ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040360"
+  },
+  {
+    "id": 2016007040370,
+    "speaker": "千雪",
+    "text": "それから、アルストロメリアで\r\n星降る夜のドライブとか",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040370"
+  },
+  {
+    "id": 2016007040380,
+    "speaker": "千雪",
+    "text": "とびきり大人っぽいショーとか、\r\n今までとは違う方向性も……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040380"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おお……たくさんだな\r\nしっかり覚えておくよ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040390,
+    "speaker": "千雪",
+    "text": "……ふふ\r\nありがとうございます",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040390"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "けど、取り急ぎは──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "完成版が上がってきたらさ\r\n甘奈と甜花と、４人で最初に観ようか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007040400,
+    "speaker": "千雪",
+    "text": "はいっ、\r\nもちろんです……！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600704/2016007040400"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

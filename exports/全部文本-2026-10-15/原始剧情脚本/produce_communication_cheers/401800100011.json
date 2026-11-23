@@ -1,0 +1,119 @@
+[
+  {
+    "id": 4018001000110010,
+    "speaker": "冬優子",
+    "text": "審査員さんって、怖い方なんでしょうか……？\r\nうう、緊張しちゃいます～……",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "018",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00007",
+    "bgm": "019",
+    "voice": "produce_communication_cheers/401800100011/4018001000110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（審査員が気になるみたいだな……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "楽しいことを考えよう",
+    "nextLabel": "4018001000111"
+  },
+  {
+    "select": "深呼吸をしよう",
+    "nextLabel": "4018001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "緊張は見抜かれるぞ",
+    "nextLabel": "4018001000113"
+  },
+  {
+    "id": 4018001000110020,
+    "label": "4018001000111",
+    "speaker": "冬優子",
+    "text": "うーん、楽しいこと、楽しいこと…………\r\nなんだか、ちょっとだけ気持ちが楽になりました……！",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/401800100011/4018001000110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、前向きになれたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 4018001000110030,
+    "label": "4018001000112",
+    "speaker": "冬優子",
+    "text": "すー……はー……\r\nちょ、ちょっとだけ、落ち着けた、気が……します……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/401800100011/4018001000110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まだ震えてるけど、ちょっとはマシになったかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 4018001000110040,
+    "label": "4018001000113",
+    "speaker": "冬優子",
+    "text": "や、やっぱりそうですよね……！？\r\nふゆ、怒られちゃったらどうしましょう……！",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/401800100011/4018001000110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（しまった、余計緊張させちゃったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

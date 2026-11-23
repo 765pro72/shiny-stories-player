@@ -1,0 +1,632 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "（もうすぐ待ち合わせの時間だけど……\r\n咲耶はまだ来ないな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00013",
+    "bgm": "015"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（いつもの咲耶なら、もう着いていてもいい頃のはず……\r\nもしかして、何かあったんじゃ……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0103",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……！　咲耶からだ！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "charType": "idols",
+    "charId": "1040060020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00010"
+  },
+  {
+    "se": "0106",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2006006010010,
+    "speaker": "咲耶",
+    "text": "あ……プロデュ──",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もしもし、咲耶！？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010020,
+    "speaker": "咲耶",
+    "text": "……すまない、その声からして、心配をかけていたようだね\r\n大丈夫、私は無事だよ。ただ……少し道に迷ってしまってね",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010020"
+  },
+  {
+    "id": 2006006010030,
+    "speaker": "咲耶",
+    "text": "今日のロケ地は初めて行く場所だから\r\nスマホの地図を頼りに向かっていたんだけれど……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010030"
+  },
+  {
+    "id": 2006006010040,
+    "speaker": "咲耶",
+    "text": "どうやら、GPSがうまく作動していなかったみたいで、\r\n違う場所に着いてしまったんだ",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだったのか\r\n俺の都合で現地集合にしたばっかりに、悪かったな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "今はどこにいるかわかるか？\r\n何か目印になるものがあったら教えてくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010050,
+    "speaker": "咲耶",
+    "text": "ふむ、目印か……ちょうど目の前に\r\n真っ青で丸い窓が特徴的なビルが見えるけれど──",
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そこなら、もう近くまで来てるぞ\r\n時間も……うん、集合時間には間に合いそうだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "すぐに迎えに行くから、そのまま待っていてくれるか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait5",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2006006010060,
+    "speaker": "咲耶",
+    "text": "……いや、もし迷うような道でないのなら\r\nこのまま道案内を頼みたい",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010060"
+  },
+  {
+    "id": 2006006010070,
+    "speaker": "咲耶",
+    "text": "待っているよりも、自分から向かう方が性に合っている\r\n時間のロスも減らせるし……どうかな？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうだな。でも、焦らなくていいから\r\nくれぐれも注意して来てくれよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010080,
+    "speaker": "咲耶",
+    "text": "ああ。これ以上プロデューサーに\r\n心配をかけるわけにはいかないからね",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010080"
+  },
+  {
+    "id": 2006006010090,
+    "speaker": "咲耶",
+    "text": "それじゃあ、まずはどの方向へ行けばいいのか\r\n教えてくれないかい？",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010090"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00013",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2006006010100,
+    "speaker": "咲耶",
+    "text": "──郵便局が見えてきたよ\r\nさて、次はどちらへ進めばいいんだい？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そのまま進んで、二番目の、信号機がある角を右に曲がってくれ\r\nそれから──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010110,
+    "speaker": "咲耶",
+    "text": "フフッ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……咲耶？　何かあったのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010120,
+    "speaker": "咲耶",
+    "text": "──いや、何もないよ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010120"
+  },
+  {
+    "id": 2006006010130,
+    "speaker": "咲耶",
+    "text": "ただ、真剣に私を導いてくれるアナタの声を聞いて……\r\nアナタは今どんな顔をしているんだろうと想像してね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010130"
+  },
+  {
+    "id": 2006006010140,
+    "speaker": "咲耶",
+    "text": "顔は見えないけれど、きっと声と同じく\r\n真剣な顔をしてくれているのだろうなと思ったんだ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010140"
+  },
+  {
+    "id": 2006006010150,
+    "speaker": "咲耶",
+    "text": "そんなふうにアナタのことを想像したら\r\nなんだか楽しくなってしまってね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そ、そうか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010160,
+    "speaker": "咲耶",
+    "text": "あ、すまない。アナタは真剣に道案内してくれているのに\r\nこんな時に笑ってしまって、不謹慎だったね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、別に謝ることじゃない\r\nしかし、そうか……それなら……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010170,
+    "speaker": "咲耶",
+    "text": "……どうしたんだい、プロデューサー",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、俺も咲耶みたいに想像してみたんだ\r\n今の咲耶はどんな顔をしているのかなって……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010180,
+    "speaker": "咲耶",
+    "text": "……そうだね、どんな顔をしていると思うかな？",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010180"
+  },
+  {
+    "select": "楽しそうな顔",
+    "nextLabel": "1"
+  },
+  {
+    "select": "不安そうな顔",
+    "nextLabel": "2"
+  },
+  {
+    "select": "わからない",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2006006010190,
+    "label": "1",
+    "speaker": "咲耶",
+    "text": "ああ、正解だ\r\nでも、どうしてわかったんだい？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "少しだけだが、声がいつもよりも弾んでいるからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010200,
+    "speaker": "咲耶",
+    "text": "クス。そんな些細なことまで見抜いてしまうとは\r\nさすが私のプロデューサーだね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010200"
+  },
+  {
+    "id": 2006006010210,
+    "speaker": "咲耶",
+    "text": "……こうして道を歩いているだけなのに\r\nプロデューサーとの繋がりを感じられる",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010210"
+  },
+  {
+    "id": 2006006010220,
+    "speaker": "咲耶",
+    "text": "そして今、私が歩くことで、\r\nアナタとの距離が一歩ずつ縮まっている",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010220"
+  },
+  {
+    "id": 2006006010230,
+    "speaker": "咲耶",
+    "text": "それを考えると……\r\n嬉しくて、自然と頬が緩んでしまうんだ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうだったのか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00087",
+    "bgEffect": "fade",
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2006006010240,
+    "speaker": "咲耶",
+    "text": "さて、次は右に曲がればいいのかな？\r\n──おや、公園の入り口が見えてきたということは……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、もうすぐだ\r\nこの調子なら、待ち合わせの時間に十分間に合うな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010250,
+    "speaker": "咲耶",
+    "text": "フフ。少しだけ名残惜しい気もするけれど……\r\nもうすぐアナタに会えると思うと嬉しくもあるね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010250"
+  },
+  {
+    "id": 2006006010260,
+    "speaker": "咲耶",
+    "text": "アナタに会うまでに、\r\nこの緩み切った頬を引き締めないといけないな",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200600601/2006006010260"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2006006010270,
+    "label": "2",
+    "speaker": "咲耶",
+    "text": "おや……\r\n………………その理由を、聞いてもいいかな？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、咲耶は責任感があるから『遅刻したらどうしよう』とか\r\n考えているんじゃないかと思ってな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だから、声はいつも通りだけど\r\n内心は不安に感じているんじゃないかと思ったんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010280,
+    "speaker": "咲耶",
+    "text": "なるほど……プロデューサーは、\r\n本当に私のことをよく知ってくれているね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010280"
+  },
+  {
+    "id": 2006006010290,
+    "speaker": "咲耶",
+    "text": "…………フフッ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ど、どうしたんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010300,
+    "speaker": "咲耶",
+    "text": "いや、もしもこの電話がなかったら、\r\nそんな顔をしてしまっていたかもしれないなと思ったんだ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010300"
+  },
+  {
+    "id": 2006006010310,
+    "speaker": "咲耶",
+    "text": "でも、今はアナタの声を聴いているから……\r\nだから私は、不安を感じないのさ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうなのか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010320,
+    "speaker": "咲耶",
+    "text": "ああ。さて、次はどちらへ進めばいいのかな？\r\nアナタの声で、私を導いてほしいな。プロデューサー",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200600601/2006006010320"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "3",
+    "speaker": "プロデューサー",
+    "text": "色々考えたんだが\r\n声だけだとやっぱり難しいなぁ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010330,
+    "speaker": "咲耶",
+    "text": "クス。確かにそうだね\r\n私もそういった経験はあるよ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010330"
+  },
+  {
+    "id": 2006006010340,
+    "speaker": "咲耶",
+    "text": "やはりお互いに顔を見ながらでないと\r\nわからないことは多いものね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010340"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "咲耶はポーカーフェイスがうまいから、顔を合わせていても\r\n用心してないとわからないこともあるけどな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010350,
+    "speaker": "咲耶",
+    "text": "……フフ。それでも、プロデューサーなら\r\n私の本心を見抜いてくれるんだろう？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010350"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……え？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006006010360,
+    "speaker": "咲耶",
+    "text": "いや、なんでもないよ\r\n早くプロデューサーに会いたいと言っただけさ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010360"
+  },
+  {
+    "id": 2006006010370,
+    "speaker": "咲耶",
+    "text": "電話やメールも便利だけど\r\nやはり、相手の存在を近くに感じられる方が私は好きだな",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010370"
+  },
+  {
+    "id": 2006006010380,
+    "speaker": "咲耶",
+    "text": "だから……すぐに、アナタのもとへ行くよ\r\nそして今の私の顔を、直接確かめてほしいな",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600601/2006006010380"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

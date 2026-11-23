@@ -1,0 +1,165 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "お、なんだか嬉しそうだな\r\nいいことでもあったのか？",
+    "charAnim1": "wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "015",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 1015001000510010,
+    "speaker": "甜花",
+    "text": "今日も……\r\nなーちゃんと、事務所に……来たんだ……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100051/1015001000510010"
+  },
+  {
+    "id": 1015001000510020,
+    "speaker": "甜花",
+    "text": "なーちゃんと一緒だと……甜花、安心する……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100051/1015001000510020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（たしかに今日の甜花は、いい表情をしてるな……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "仕事もなるべく\r\n一緒にしておくよ",
+    "nextLabel": "1015001000511"
+  },
+  {
+    "select": "いつも仲が良いな",
+    "nextLabel": "1015001000512"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "ひとりで来るのも\r\n新鮮だぞ",
+    "nextLabel": "1015001000513"
+  },
+  {
+    "id": 1015001000510030,
+    "label": "1015001000511",
+    "speaker": "甜花",
+    "text": "にへへ……ありがとう……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100051/1015001000510030"
+  },
+  {
+    "id": 1015001000510040,
+    "speaker": "甜花",
+    "text": "きっと、なーちゃんがいれば……\r\nむずかしいお仕事も安心、だよね……",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100051/1015001000510040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1015001000510050,
+    "label": "1015001000512",
+    "speaker": "甜花",
+    "text": "うん……甜花となーちゃん……\r\nいつも一緒だから……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100051/1015001000510050"
+  },
+  {
+    "id": 1015001000510060,
+    "speaker": "甜花",
+    "text": "にへへ……\r\nこれからも、ずっと一緒にいられたらいいな……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100051/1015001000510060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1015001000510070,
+    "label": "1015001000513",
+    "speaker": "甜花",
+    "text": "えっ……で、でも……\r\n甜花だけだと、ちょっとこわいかも……",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100051/1015001000510070"
+  },
+  {
+    "id": 1015001000510080,
+    "speaker": "甜花",
+    "text": "うぅ……やっぱり、ひとりで来られるようになったほうが、\r\nいいのかな……？",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100051/1015001000510080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

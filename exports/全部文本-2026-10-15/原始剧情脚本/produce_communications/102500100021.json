@@ -1,0 +1,169 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "美琴、おはよう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "今日はこれからまた\r\nレッスン室か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1025001000210010,
+    "speaker": "美琴",
+    "text": "うん、そうなの\r\n今日は一日練習",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "025",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102500100021/1025001000210010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "じゃあこれ、\r\n好きなの持っていってくれ",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "ドリンクだ",
+    "nextLabel": "1025001000211"
+  },
+  {
+    "select": "おにぎりだ",
+    "nextLabel": "1025001000212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "ケーキだ",
+    "nextLabel": "1025001000213"
+  },
+  {
+    "id": 1025001000210020,
+    "label": "1025001000211",
+    "speaker": "美琴",
+    "text": "いいの？　ありがとう",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102500100021/1025001000210020"
+  },
+  {
+    "id": 1025001000210030,
+    "speaker": "美琴",
+    "text": "じゃあ、遠慮無く\r\nいただいていくね",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102500100021/1025001000210030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1025001000210040,
+    "label": "1025001000212",
+    "speaker": "美琴",
+    "text": "……ありがとう\r\nプロデューサーの分じゃないの？",
+    "charAnim1": "surp3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102500100021/1025001000210040"
+  },
+  {
+    "id": 1025001000210050,
+    "speaker": "美琴",
+    "text": "でも、せっかくだし\r\nひとつだけ、いただくね",
+    "charAnim1": "think2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102500100021/1025001000210050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1025001000210060,
+    "label": "1025001000213",
+    "speaker": "美琴",
+    "text": "え……ケーキ……？",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102500100021/1025001000210060"
+  },
+  {
+    "id": 1025001000210070,
+    "speaker": "美琴",
+    "text": "プロデューサーが食べたかったんじゃないの？\r\n私は、遠慮しておくね",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102500100021/1025001000210070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

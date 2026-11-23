@@ -1,0 +1,1855 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0000",
+    "se": "0302",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3007006020010,
+    "speaker": "結華",
+    "text": "──あれっ、今……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020010"
+  },
+  {
+    "id": 3007006020020,
+    "speaker": "結華",
+    "text": "鍵、閉められちゃった……！？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00109",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3007006020030,
+    "speaker": "咲耶",
+    "text": "閉じ込められてしまったか……\r\n誰か、携帯は──",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bgm": "015",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020030"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "kiriko",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "008",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020040,
+    "speaker": "結華",
+    "text": "ごめん、三峰は下の部屋に置いてきちゃった",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "007",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020040"
+  },
+  {
+    "id": 3007006020050,
+    "speaker": "霧子",
+    "text": "わたしも……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020050"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3007006020060,
+    "speaker": "咲耶",
+    "text": "そうか……困ったね、私も下に置いたままなんだ\r\n誰かを呼びたいところだったけど……",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020060"
+  },
+  {
+    "id": 3007006020070,
+    "speaker": "結華",
+    "text": "ちょーっと難しそう、かな",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020070"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020080,
+    "speaker": "霧子",
+    "text": "……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020080"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020090,
+    "speaker": "結華",
+    "text": "──と、なれば！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020090"
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_a",
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020091"
+  },
+  {
+    "id": 3007006020091,
+    "speaker": "咲耶＆霧子",
+    "text": "？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020091"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020100,
+    "speaker": "結華",
+    "text": "こほんっ……『ひどい雪……\r\nこれじゃあ、しばらくここから出られそうにないね』",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020100"
+  },
+  {
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3007006020110,
+    "speaker": "霧子",
+    "text": "ゆ、結華ちゃん……？",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020110"
+  },
+  {
+    "id": 3007006020120,
+    "speaker": "結華",
+    "text": "『せっかくのスキーだったのに……\r\n急にこんな天気になるなんて、ツイてなーい……』",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020120"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020130,
+    "speaker": "咲耶",
+    "text": "フフ、結華……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020130"
+  },
+  {
+    "id": 3007006020140,
+    "speaker": "咲耶",
+    "text": "こんな時だからこそ、楽しもうと言うんだね？",
+    "charAnim1": "wait5",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020140"
+  },
+  {
+    "charLabel": "sakuya",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3007006020150,
+    "speaker": "結華",
+    "text": "『さくやんもそう思うでしょ？』",
+    "charAnim1": "wink",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020150"
+  },
+  {
+    "id": 3007006020160,
+    "speaker": "咲耶",
+    "text": "これは私も負けていられないな",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020160"
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020170,
+    "speaker": "霧子",
+    "text": "咲耶さん……？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020170"
+  },
+  {
+    "id": 3007006020180,
+    "speaker": "咲耶",
+    "text": "霧子もやってみようか",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020180"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020190,
+    "speaker": "咲耶",
+    "text": "『──そうだね。けれど、この山小屋にお邪魔できたのは\r\n幸運だったと思うよ』",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300700602/3007006020190"
+  },
+  {
+    "id": 3007006020200,
+    "speaker": "咲耶",
+    "text": "『あのまま外にいたら、私たちは３人とも、\r\n芯から凍えてしまっていただろうから』",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020200"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020210,
+    "speaker": "咲耶",
+    "text": "──ね？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "voice": "produce_events/300700602/3007006020210"
+  },
+  {
+    "id": 3007006020220,
+    "speaker": "霧子",
+    "text": "……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020220"
+  },
+  {
+    "id": 3007006020230,
+    "speaker": "霧子",
+    "text": "えっと……『あったかい……\r\nここなら……安心だね……』……？",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020230"
+  },
+  {
+    "id": 3007006020240,
+    "speaker": "咲耶",
+    "text": "フフ、『その通りだ、霧子』",
+    "charAnim1": "smile2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020240"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020250,
+    "speaker": "結華",
+    "text": "ふたりともいい調子じゃ～ん",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020250"
+  },
+  {
+    "id": 3007006020260,
+    "speaker": "結華",
+    "text": "んーと、続きはー……『そっか、そうだよね\r\n確かに、ラッキーだったことは喜ばなきゃ、だ』",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020260"
+  },
+  {
+    "id": 3007006020270,
+    "speaker": "結華",
+    "text": "『さすがの三峰も、\r\n外で雪だるまになっちゃうのは勘弁だもん』",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020270"
+  },
+  {
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3007006020280,
+    "speaker": "霧子",
+    "text": "ふふ……",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020280"
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020290,
+    "speaker": "咲耶",
+    "text": "『幸いなことに、恋鐘と摩美々と私たちは別行動だった\r\nふたりは恐らく、この吹雪には巻き込まれていない』",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020290"
+  },
+  {
+    "id": 3007006020300,
+    "speaker": "咲耶",
+    "text": "『だとすればきっと、そのうち私たちの不在に気付いて、\r\n迎えに来てくれるはずさ』",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020300"
+  },
+  {
+    "id": 3007006020310,
+    "speaker": "咲耶",
+    "text": "『信じて待っていれば、大丈夫だよ』",
+    "charAnim1": "wait5",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020310"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020320,
+    "speaker": "結華",
+    "text": "『おお～、さくやん名推理～』",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020320"
+  },
+  {
+    "id": 3007006020330,
+    "speaker": "結華",
+    "text": "『こがたんとまみみんのことだもん、\r\nすぐ見付けてくれるよ。安心できるねぇ』",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020330"
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020340,
+    "speaker": "霧子",
+    "text": "『うん……！』",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020340"
+  },
+  {
+    "id": 3007006020350,
+    "speaker": "霧子",
+    "text": "『それじゃ……\r\n待ってる間、体を冷やさないようにしなきゃ……』",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020350"
+  },
+  {
+    "id": 3007006020360,
+    "speaker": "霧子",
+    "text": "『こんなに寒いと……\r\n眠く……なっちゃうから……』",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "off",
+    "voice": "produce_events/300700602/3007006020360"
+  },
+  {
+    "charAnim2": "face_close2",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "kiriko",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim2": "face_close2",
+    "charLabel": "kiriko",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020370,
+    "speaker": "咲耶",
+    "text": "『！？　霧子、いけない！』",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "bgm": "017",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020370"
+  },
+  {
+    "id": 3007006020380,
+    "speaker": "結華",
+    "text": "『ダメだよきりりん！　今寝たら──』",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020380"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020390,
+    "speaker": "霧子",
+    "text": "ふふっ……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020390"
+  },
+  {
+    "id": 3007006020400,
+    "speaker": "霧子",
+    "text": "『……すー……すー……』",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020400"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020410,
+    "speaker": "咲耶",
+    "text": "『霧子！！』",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020410"
+  },
+  {
+    "id": 3007006020420,
+    "speaker": "結華",
+    "text": "『目を開けてきりりん！　きりりーん……！！』",
+    "charAnim1": "sad1",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_shy",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020420"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bgm": "off",
+    "se": "0302",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3007006020430,
+    "speaker": "摩美々",
+    "text": "何やってるのー……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "005",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020430"
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020431"
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020431"
+  },
+  {
+    "id": 3007006020431,
+    "speaker": "咲耶＆結華＆霧子",
+    "text": "遭難した時の山小屋ごっこ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bgm": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020431"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020440,
+    "speaker": "摩美々",
+    "text": "そっかぁ\r\n楽しそうでいいねー",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020440"
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "think",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020441"
+  },
+  {
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020441"
+  },
+  {
+    "id": 3007006020441,
+    "speaker": "咲耶＆結華＆霧子",
+    "text": "ふふっ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020441"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020450,
+    "speaker": "摩美々",
+    "text": "っていうかぁ……中にいたんだったら、\r\n鍵閉めた時に教えてよねー",
+    "charAnim1": "touch",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020450"
+  },
+  {
+    "id": 3007006020460,
+    "speaker": "摩美々",
+    "text": "狙ってないイタズラするのは趣味じゃないんだケド",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020460"
+  },
+  {
+    "charLabel": "mamimi",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3007006020470,
+    "speaker": "咲耶",
+    "text": "おや。それなら、さっきのは摩美々だったんだね？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020470"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020480,
+    "speaker": "結華",
+    "text": "わかったー、まみみんアレでしょ",
+    "charAnim1": "surp3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020480"
+  },
+  {
+    "id": 3007006020490,
+    "speaker": "結華",
+    "text": "上閉めてきてって言われたけど、\r\n面倒だから中確認しなかったんでしょ",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020490"
+  },
+  {
+    "id": 3007006020500,
+    "speaker": "摩美々",
+    "text": "まぁそうだよねー",
+    "charAnim1": "play",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020500"
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020510,
+    "speaker": "摩美々",
+    "text": "でも３人が下にいないからぁ、\r\nあれー……？　って思ってー",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300700602/3007006020510"
+  },
+  {
+    "charLabel": "mamimi",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3007006020520,
+    "speaker": "咲耶",
+    "text": "フフ、そうか\r\n確認しに戻ってきてくれてありがとう、摩美々",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020520"
+  },
+  {
+    "id": 3007006020530,
+    "speaker": "摩美々",
+    "text": "いいえー",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020530"
+  },
+  {
+    "id": 3007006020540,
+    "speaker": "摩美々",
+    "text": "それより、恋鐘が下でおやつ準備してるからぁ、\r\n早くー",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020540"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020550,
+    "speaker": "結華",
+    "text": "おおっ！？　それは行かなきゃ！\r\nまみみん、それで呼びにきてくれたんだね？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020550"
+  },
+  {
+    "id": 3007006020560,
+    "speaker": "摩美々",
+    "text": "そういうことー\r\nだから、お礼はいらないんでー",
+    "charAnim1": "smile2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020560"
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020570,
+    "speaker": "霧子",
+    "text": "あ、あの……\r\nでも……摩美々ちゃん……",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020570"
+  },
+  {
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3007006020580,
+    "speaker": "摩美々",
+    "text": "？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020580"
+  },
+  {
+    "id": 3007006020590,
+    "speaker": "霧子",
+    "text": "山小屋ごっこ……楽しかったから……\r\nふふっ……ありがとう……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020590"
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020600,
+    "speaker": "摩美々",
+    "text": "！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300700602/3007006020600"
+  },
+  {
+    "id": 3007006020610,
+    "speaker": "摩美々",
+    "text": "あ、そー",
+    "charAnim1": "wait4",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020610"
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020620,
+    "speaker": "咲耶",
+    "text": "摩美々もやってみるかい？\r\n霧子の本気は一見の価値ありだよ",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020620"
+  },
+  {
+    "id": 3007006020630,
+    "speaker": "結華",
+    "text": "そうそう！　案外一番ぶっ込んでくるよ～",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020630"
+  },
+  {
+    "id": 3007006020640,
+    "speaker": "霧子",
+    "text": "咲耶さん……結華ちゃん……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020640"
+  },
+  {
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020650,
+    "speaker": "摩美々",
+    "text": "ふふー、そうだなぁ……\r\nまだちょっと保留ってことでー",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300700602/3007006020650"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3007006020660,
+    "speaker": "摩美々",
+    "text": "ついこの間も小芝居したしー？",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "voice": "produce_events/300700602/3007006020660"
+  },
+  {
+    "id": 3007006020670,
+    "speaker": "結華",
+    "text": "それもそうだ！\r\nじゃあまた次の機会によろしく、だね！",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300700602/3007006020670"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

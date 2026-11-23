@@ -1,0 +1,654 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "（恋鐘、昼は事務所で待ってて、って言ってたけど……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00001",
+    "bgm": "004"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "腹、減ったなぁ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2004004020010,
+    "speaker": "恋鐘",
+    "text": "ふっふっふ……\r\n待ったと！？　プロデューサー！",
+    "charAnim1": "anger1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040040010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200400402/2004004020010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、恋鐘\r\n俺は大丈夫だよ。でも……今日は何かあるのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020020,
+    "speaker": "恋鐘",
+    "text": "んふふ～、今日はね～……プロデューサーのために\r\nスペシャルなお弁当用意してきたんよ！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え、弁当……？\r\nもしかして作ってきてくれたのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020030,
+    "speaker": "恋鐘",
+    "text": "うん！　この前、おにぎりくれたお礼たい\r\n気にせんとたっくさん食べて～！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、恋鐘こそ気にしなくてもよかったのに\r\nでも……嬉しいよ。遠慮なくいただこうかな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020040,
+    "speaker": "恋鐘",
+    "text": "んふふー、期待は裏切らんよ～\r\nプロデューサーはエビで鯛を釣ったようなもんたい",
+    "charAnim1": "surp1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020040"
+  },
+  {
+    "id": 2004004020050,
+    "speaker": "恋鐘",
+    "text": "じゃあ、これ……！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、持つよ\r\n──へぇ、結構なボリュームじゃないか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020060,
+    "speaker": "恋鐘",
+    "text": "ふぁっ……！\r\nプ、プロデューサー、待たんね……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……え？\r\nあ、すまん！　手が当たっちゃったな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020070,
+    "speaker": "恋鐘",
+    "text": "わ、わわ……！",
+    "charAnim1": "surp1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020070"
+  },
+  {
+    "id": 2004004020080,
+    "speaker": "恋鐘",
+    "text": "わーっ！",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020080"
+  },
+  {
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "y": 100,
+      "alpha": 0,
+      "time": 450
+    }
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0133",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0174",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……こ、恋鐘、大丈夫か……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020090,
+    "speaker": "恋鐘",
+    "text": "う、うん……うちは大丈夫やけど……\r\nお弁当……落ちてもうたばい～……！",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020090"
+  },
+  {
+    "id": 2004004020100,
+    "speaker": "恋鐘",
+    "text": "ご、ごめん～！！",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、恋鐘が無事ならいいんだ\r\n……ほら、起きれるか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020110,
+    "speaker": "恋鐘",
+    "text": "わ……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020110"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0108",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "y": -100,
+      "alpha": 1,
+      "time": 700
+    }
+  },
+  {
+    "id": 2004004020120,
+    "speaker": "恋鐘",
+    "text": "あ、ありがと……プロデューサー",
+    "charAnim1": "shy2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020120"
+  },
+  {
+    "id": 2004004020130,
+    "speaker": "恋鐘",
+    "text": "でも、お弁当……ダメにしてしまったばい\r\nプロデューサーにも悪いし……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020130"
+  },
+  {
+    "id": 2004004020140,
+    "speaker": "恋鐘",
+    "text": "……うち、気合入れて作ったけん",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "恋鐘……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "大丈夫、中身が\r\n落ちたわけじゃない",
+    "nextLabel": "1"
+  },
+  {
+    "select": "中身は何なんだ？",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "恋鐘、ありがとうな",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2004004020150,
+    "label": "1",
+    "speaker": "恋鐘",
+    "text": "え！　だ、だめだめっ！\r\n絶対、中身ぐちゃぐちゃやし……",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020150"
+  },
+  {
+    "id": 2004004020160,
+    "speaker": "恋鐘",
+    "text": "うち、\r\nプロデューサーにはちゃんとしたの食べてもらいたいんよ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_doya",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "恋鐘……？\r\nそうか……ありがとうな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020170,
+    "speaker": "恋鐘",
+    "text": "うん……\r\nばってんせっかく待ってもらったのに悪かね……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020170"
+  },
+  {
+    "id": 2004004020180,
+    "speaker": "恋鐘",
+    "text": "あ！　じゃあ、今日はうちの分のお弁当食べて！\r\nそっちは大丈夫やけん",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、それだと恋鐘の分がなくなっちゃうだろ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "恋鐘はちゃんと、自分の分を食べてくれ\r\nせっかく作ってくれたんだし、やっぱりいただくよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020190,
+    "speaker": "恋鐘",
+    "text": "ホント？　プロデューサー……\r\n……ありがとう",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020190"
+  },
+  {
+    "id": 2004004020200,
+    "speaker": "恋鐘",
+    "text": "つ、次はもーっとすごいお弁当作って、\r\n100倍にしてお礼するけん！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020200"
+  },
+  {
+    "id": 2004004020210,
+    "speaker": "恋鐘",
+    "text": "楽しみにしとってね～！　プロデューサー！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200400402/2004004020210"
+  },
+  {
+    "id": 2004004020220,
+    "label": "2",
+    "speaker": "恋鐘",
+    "text": "えっと……肉じゃががメインで、\r\n後は卵焼きとか……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、肉じゃがなら混ざっても大丈夫じゃないか？\r\n俺はすき焼き丼とか、大好きだぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "恋鐘がよければ……\r\nそれ、食べてもいいか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020230,
+    "speaker": "恋鐘",
+    "text": "え！　じゃ、じゃあ、せめて丼に移し替えてくる！\r\n待っとってプロデューサー！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020230"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2004004020240,
+    "speaker": "恋鐘",
+    "text": "こ、こんな感じになったばってん……\r\nどうかいな……？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おお！　丼に盛ったら完全にすき焼き丼だな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ありがとう\r\nいただいていいのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020250,
+    "speaker": "恋鐘",
+    "text": "も、もっちろんたい！\r\n……でもどうかいな、変な味になってなか？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、美味いよ\r\nはは、おかわりが欲しいくらいだぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020260,
+    "speaker": "恋鐘",
+    "text": "はぁ……よかった～……\r\nばってん、これがうちのベストじゃないけん！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020260"
+  },
+  {
+    "id": 2004004020270,
+    "speaker": "恋鐘",
+    "text": "次こそは完璧にお礼してみせるばい！\r\n期待しとってね！　プロデューサー",
+    "charAnim1": "smile4",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200400402/2004004020270"
+  },
+  {
+    "id": 2004004020280,
+    "label": "3",
+    "speaker": "恋鐘",
+    "text": "な、なんね～……突然\r\nお礼するんはうちの方やったろ？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020280"
+  },
+  {
+    "id": 2004004020290,
+    "speaker": "恋鐘",
+    "text": "ばってん……うち、お弁当ダメにして……\r\nごめん……プロデューサー",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、作ってきてくれて嬉しいよ\r\nそれに朝とか早かったんじゃないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020300,
+    "speaker": "恋鐘",
+    "text": "そんなこと……全然大したことなかよ！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、大したことだぞ、恋鐘\r\nその弁当……よかったら、食べさせてくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020310,
+    "speaker": "恋鐘",
+    "text": "え！？　だ、ダメダメ！\r\nプロデューサーにはちゃんとしたのを食べて欲しか……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、味は完璧なんだろ？\r\n綺麗に詰められてるとこを想像しながら食べるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020320,
+    "speaker": "恋鐘",
+    "text": "う、うん……じゃあ……\r\n食べてみてくれる……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020320"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。……はは、思ったより崩れてないんじゃないか\r\n俺には、美味そうに見えるな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004004020330,
+    "speaker": "恋鐘",
+    "text": "プ、プロデューサー……！\r\nえへへ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020330"
+  },
+  {
+    "id": 2004004020340,
+    "speaker": "恋鐘",
+    "text": "ありがと～！　ばり嬉しかばい！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400402/2004004020340"
+  },
+  {
+    "id": 2004004020350,
+    "speaker": "恋鐘",
+    "text": "ばってん、今度こそはうちのお弁当の\r\n本当の姿を見せちゃるけんね～！　楽しみにしとってね！",
+    "charAnim2": "face_doya",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200400402/2004004020350"
+  },
+  {
+    "label": "end"
+  }
+]

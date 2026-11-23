@@ -1,0 +1,1 @@
+const {connect}=require('./cdp.cjs');(async()=>{const c=await connect();console.log(await c.js('({inspect:window.ScenarioBridge?.inspect(),text:document.body.innerText.slice(0,500)})'));c.close()})().catch(console.error);

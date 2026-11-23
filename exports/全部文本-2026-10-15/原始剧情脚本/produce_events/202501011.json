@@ -1,0 +1,544 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00032",
+    "bgm": "108"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お疲れ様、美琴。ソロ曲の収録すごくよかったよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "スタッフのみなさんも、美琴のおかげでスムーズに\r\n進められたって言ってた",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1_s",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "025",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "率先してアイディアを出してくれたから\r\nみんながすぐ動けただってさ、流石だな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2025010110010,
+    "speaker": "美琴",
+    "text": "……ううん\r\nそんなふうに言ってもらうことじゃない",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ？",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 500
+  },
+  {
+    "id": 2025010110020,
+    "speaker": "美琴",
+    "text": "あのことがあったから、私は──",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_anger1_s",
+    "charLabel": "mikoto",
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00009",
+    "fg": "001921",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 2025010110030,
+    "speaker": "美琴",
+    "text": "あそこにあるの、メンズ部門の衣装ですよね\r\n昨日使い終わった……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110030"
+  },
+  {
+    "id": 2025010110040,
+    "speaker": "美琴",
+    "text": "私の衣装を彼女が着て、\r\n私はあの中で丈が近いものを着るのはダメでしょうか？",
+    "charAnim1": "think1",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110040"
+  },
+  {
+    "speaker": "スタッフ２",
+    "text": "えっ！\r\nで、でもあれは……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "……私は、服は誰が着てもいいものだと思っています\r\nその点では問題ありません",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "でも、一度発表したものを着ることになると\r\n新鮮味はなくなりますし、悪目立ちするかもしれない",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "あなたはそれでいいんですね？\r\n緋田さん",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2025010110050,
+    "speaker": "美琴",
+    "text": "構いません",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202501011/2025010110050"
+  },
+  {
+    "speaker": "アイドル",
+    "text": "でも、緋田さん……！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2025010110060,
+    "speaker": "美琴",
+    "text": "大丈夫\r\n……一緒に、ランウェイを歩こう",
+    "charAnim1": "think1",
+    "charAnim2": "face_wait",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110060"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger1_s",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "fg": "fade_out",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000,
+    "bgEffectTime": 1000,
+    "fgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "fg": "off"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "fg": "001921",
+    "bgEffect": "fade",
+    "fgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffectTime": 1000,
+    "fgEffectTime": 1000
+  },
+  {
+    "speaker": "アイドル",
+    "text": "緋田さん……\r\n本当に、ごめんなさ──",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2025010110070,
+    "speaker": "美琴",
+    "text": "ううん",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto2",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040250050",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/202501011/2025010110070"
+  },
+  {
+    "id": 2025010110080,
+    "speaker": "美琴",
+    "text": "私は、あなたに助けてもらったから\r\n今度は私がお返しをする番なの",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto2",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110080"
+  },
+  {
+    "id": 2025010110090,
+    "speaker": "美琴",
+    "text": "ショーのテーマは『協力』……でしょ？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto2",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110090"
+  },
+  {
+    "speaker": "アイドル",
+    "text": "……っ！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "アイドル",
+    "text": "…………はい、ありがとうございますっ！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "charAnim1": "shy2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile1_s",
+    "charLabel": "mikoto2",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2800
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger1_s",
+    "charLabel": "mikoto2",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00032",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2025010110100,
+    "speaker": "美琴",
+    "text": "あのことがなかったら",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202501011/2025010110100"
+  },
+  {
+    "id": 2025010110110,
+    "speaker": "美琴",
+    "text": "私は最後まで、協力するということの意味を\r\n学べていなかったかもしれない",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110110"
+  },
+  {
+    "id": 2025010110120,
+    "speaker": "美琴",
+    "text": "やっとお返しができて……\r\n納得のいく『協力』ができたと思ったの",
+    "charAnim1": "think1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110120"
+  },
+  {
+    "id": 2025010110130,
+    "speaker": "美琴",
+    "text": "そうしたら、色々なものに携わっている人のことが\r\nよく見えてきて……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それで、今回のソロ曲か……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2025010110140,
+    "speaker": "美琴",
+    "text": "うん\r\n関わってくれる人たちがやりやすいようにすること",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110140"
+  },
+  {
+    "id": 2025010110150,
+    "speaker": "美琴",
+    "text": "どうしたらいいか、よく見えるようになった……\r\nあの時のおかげ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか……いろんなことが糧になったソロ曲に\r\n仕上がったんだな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、今からリリースが楽しみになってきたよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2025010110160,
+    "speaker": "美琴",
+    "text": "私も",
+    "charAnim1": "think1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110160",
+    "autoWaitTime": 1700
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00160",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1700,
+    "bgEffectTime": 1000
+  },
+  {
+    "id": 2025010110170,
+    "speaker": "美琴",
+    "text": "──みんなに、届くといいな……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202501011/2025010110170"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "white_add",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

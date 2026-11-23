@@ -1,0 +1,659 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "『はい、明日もよろしくお願いします\r\nでは、失礼いたします』",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00028",
+    "bgm": "012"
+  },
+  {
+    "textFrame": "off",
+    "se": "0106",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "よし、これで今日の予定は終わりだ\r\n少し腹も減ったしどこかに寄って……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010001,
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1030170010",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000,
+    "voice": "produce_events/201700301/2017003010001"
+  },
+  {
+    "id": 2017003010002,
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000,
+    "voice": "produce_events/201700301/2017003010002"
+  },
+  {
+    "id": 2017003010003,
+    "charAnim1": "anger2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000,
+    "voice": "produce_events/201700301/2017003010003"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLabel": "asahi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（あさひ……？　何してるんだ……？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（ちょっと行ってみるか）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "think1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2017003010010,
+    "speaker": "あさひ",
+    "text": "あっちかな～？",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "r",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010010",
+    "voiceKeep": true
+  },
+  {
+    "speaker": "あさひ",
+    "text": "それともこっちの方？",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "se": "0116",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あさひ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010020,
+    "speaker": "あさひ",
+    "text": "？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010020"
+  },
+  {
+    "id": 2017003010030,
+    "speaker": "あさひ",
+    "text": "あれ、プロデューサーさんじゃないっすか！\r\nこんなところで何してるんす？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺は仕事の帰りだぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010040,
+    "speaker": "あさひ",
+    "text": "なーんだ、そうだったんすね！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それよりも、あさひが何をしてたか気になるんだが……",
+    "charAnim2": "face_wait",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010050,
+    "speaker": "あさひ",
+    "text": "わたしっすか？\r\nわたしは何か楽しいことがないか探してたんすよ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010050"
+  },
+  {
+    "id": 2017003010060,
+    "speaker": "あさひ",
+    "text": "それで、公園にマジシャンがいるって聞いたんで\r\n行こうと思ってたんす！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それで色々な人に話を聞いたりしてたのか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010070,
+    "speaker": "あさひ",
+    "text": "はいっす！　楽しいこと探しの基本は\r\n情報を集めるところからなんす！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "確かにそれで、楽しいことは見つかるかもしれないが\r\nあまり知らない人に話しかけたらダメだぞ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010080,
+    "speaker": "あさひ",
+    "text": "？　どういうことっすか？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "世の中は良い人ばかりじゃないからな\r\n危ない目に遭わないとも限らないんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010090,
+    "speaker": "あさひ",
+    "text": "あはは、何言ってるんすか、プロデューサーさん\r\n今までそんなことなかったっすよ～？",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それはあさひの運がよかったからだ\r\n何かあってからじゃ、遅いんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010100,
+    "speaker": "あさひ",
+    "text": "うーん……わかったっす～",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "まったく……\r\nそれで、今からマジシャンを探しに行くんだよな？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010110,
+    "speaker": "あさひ",
+    "text": "そうっす！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺もついていこう\r\nあさひひとりじゃちょっと不安だしな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "bg": "00013",
+    "bgm": "fade_out",
+    "se": "0117",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "bgm": "002",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_left",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2017003010120,
+    "speaker": "あさひ",
+    "text": "あれ……？",
+    "charAnim1": "think1",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "特にそれらしい人はいないな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010130,
+    "speaker": "あさひ",
+    "text": "そうっすね……うーん……残念っす",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（少し落ち込んでるみたいだな）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "どんな格好を\r\nしているんだ？",
+    "nextLabel": "1"
+  },
+  {
+    "select": "マジシャン\r\nじゃないけど",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "事務所に\r\n戻ってみるか？",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2017003010140,
+    "label": "1",
+    "speaker": "あさひ",
+    "text": "シルクハットをかぶってるらしいっす",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほど……他にはないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010150,
+    "speaker": "あさひ",
+    "text": "あと、青いスーツを着てるって聞いたっすね",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "かなり目立ちそうだな……それならすぐに見つかりそうだ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "一旦さっきの通りまで戻ろう\r\n人の多いところにいそうだしな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010160,
+    "speaker": "あさひ",
+    "text": "はいっす！\r\nふたりで探せば、きっと見つかるっすよね！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201700301/2017003010160"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "2",
+    "speaker": "プロデューサー",
+    "text": "帰りに人だかりができてたのを見たぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010170,
+    "speaker": "あさひ",
+    "text": "何かあったんすかね？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "海外で大人気のお菓子らしいんだけど\r\n一号店が今日オープンしたらしい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あさひが探してるものじゃないが、行ってみるか？\r\n結構、美味しそうだったぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010180,
+    "speaker": "あさひ",
+    "text": "それも面白そうっすね……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010180"
+  },
+  {
+    "id": 2017003010190,
+    "speaker": "あさひ",
+    "text": "うーん……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010190"
+  },
+  {
+    "id": 2017003010200,
+    "speaker": "あさひ",
+    "text": "やっぱり、わたしはマジシャンを探すっす！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、おぉ……そうか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010210,
+    "speaker": "あさひ",
+    "text": "はいっす！　それじゃ、わたしは行くっすね！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201700301/2017003010210"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2017003010220,
+    "label": "3",
+    "speaker": "あさひ",
+    "text": "？　事務所に何かあるんすか？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いやまぁ、何ってこともないんだがな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯台下暗しって言うし、事務所に戻ったら\r\n偶然、何かが起きるんじゃないかと思ってな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017003010230,
+    "speaker": "あさひ",
+    "text": "うーん……なるほど……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700301/2017003010230"
+  },
+  {
+    "id": 2017003010240,
+    "speaker": "あさひ",
+    "text": "じゃあ、そういうことにしておくっす",
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201700301/2017003010240"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

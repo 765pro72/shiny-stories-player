@@ -1,0 +1,832 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "……あれ？　これ……",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "idols",
+    "charId": "1040120010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00034",
+    "bgm": "029"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お香かな\r\n……凛世が焚いてくれてるのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2012004110010,
+    "speaker": "凛世",
+    "text": "プロデューサーさま……\r\nはい……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110010"
+  },
+  {
+    "id": 2012004110020,
+    "speaker": "凛世",
+    "text": "先日……買って参りました……\r\n疲れに効くと……評判でございましたので……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、すごく落ち着くよ──\r\n……しょ、と",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0152",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "最近、疲れてても眠れなかったりしてさ\r\n俺もお香を焚いてみようかな……",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2012004110030,
+    "speaker": "凛世",
+    "text": "それは……\r\n心配で……ございます……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、いや、そんな深刻なものじゃないんだ\r\nお香があったら、ちょうどいいかもしれない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2012004110040,
+    "speaker": "凛世",
+    "text": "では……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110040"
+  },
+  {
+    "id": 2012004110050,
+    "speaker": "凛世",
+    "text": "凛世が……\r\n昔話など……致しましょう……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え、いや……気を遣ってもらうのは悪いよ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……でも、ちょっと面白そうだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2012004110060,
+    "speaker": "凛世",
+    "text": "ふふ……\r\nそれでは……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110060"
+  },
+  {
+    "id": 2012004110070,
+    "speaker": "凛世",
+    "text": "むかし……むかしの……\r\nことでございます……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "off",
+    "voice": "produce_events/201200411/2012004110070"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "rinze",
+    "se": "0321",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "bg": "00077",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2012004110080,
+    "speaker": "凛世",
+    "text": "あるところに……\r\n想い合った男女がおりました……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "017",
+    "voice": "produce_events/201200411/2012004110080"
+  },
+  {
+    "id": 2012004110090,
+    "speaker": "凛世",
+    "text": "しかし……身分の違うふたりが会えるのは……\r\n１日につき……お線香１本分が燃える時間のみ……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110090"
+  },
+  {
+    "id": 2012004110100,
+    "speaker": "凛世",
+    "text": "大店の若旦那である男は……\r\n毎日……相手のもとへ通いました……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110100"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00034",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "fade"
+  },
+  {
+    "id": 2012004110110,
+    "speaker": "凛世",
+    "text": "しかし、身分違いの相手と交流することを親族は嫌い……\r\n男を……家に閉じ込めてしまいます……",
+    "charAnim1": "shy3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201200411/2012004110110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……む、昔の人は、大変だなぁ……",
+    "charAnim2": "s",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2012004110120,
+    "speaker": "凛世",
+    "text": "ふふ……\r\n今では……考えられません……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん……\r\n……それで？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00088",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "fade"
+  },
+  {
+    "id": 2012004110130,
+    "speaker": "凛世",
+    "text": "はい……女は毎日……\r\n手紙を書くことに致しました……",
+    "charAnim1": "touch",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110130"
+  },
+  {
+    "id": 2012004110140,
+    "speaker": "凛世",
+    "text": "80日間……\r\n手紙は途切れることなく書かれましたが……",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110140"
+  },
+  {
+    "id": 2012004110150,
+    "speaker": "凛世",
+    "text": "親族の手に阻まれ……\r\n１通も……男の許には届けられませんでした……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……なるほどな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2012004110160,
+    "speaker": "凛世",
+    "text": "しかしその後……\r\nぷっつりと……手紙は途切れます……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110160"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00034",
+    "se": "0321",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "fade"
+  },
+  {
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 2012004110170,
+    "speaker": "凛世",
+    "text": "不思議に思った家の者が使いをやると……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110170"
+  },
+  {
+    "id": 2012004110180,
+    "speaker": "凛世",
+    "text": "女は……寂しさのために床についたきり……\r\n他界しておりました……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え……！\r\nそれで……どうなるんだ……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2012004110190,
+    "speaker": "凛世",
+    "text": "はい……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110190"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00087",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "fade"
+  },
+  {
+    "id": 2012004110200,
+    "speaker": "凛世",
+    "text": "そのことを告げられると……\r\n男は女の家へ飛んでいきます……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110200"
+  },
+  {
+    "id": 2012004110210,
+    "speaker": "凛世",
+    "text": "仏壇に向かって涙し……『堪忍してくれ……\r\nこんなことになっているとは……』と……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110210"
+  },
+  {
+    "id": 2012004110220,
+    "speaker": "凛世",
+    "text": "悔やんでも悔やんでも……\r\n悔やみきれない……",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110220"
+  },
+  {
+    "id": 2012004110230,
+    "speaker": "凛世",
+    "text": "男が涙に暮れていると……\r\n突然、女の持っていた三味線が鳴り出します……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……想いが……残ってたんだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2012004110240,
+    "speaker": "凛世",
+    "text": "はい……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110240"
+  },
+  {
+    "id": 2012004110250,
+    "speaker": "凛世",
+    "text": "『これは……俺の好きだった曲……』",
+    "charAnim1": "shy3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110250"
+  },
+  {
+    "id": 2012004110260,
+    "speaker": "凛世",
+    "text": "あの子が弾いてくれているのだと……\r\n男は懸命に耳を澄ませました……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110260"
+  },
+  {
+    "id": 2012004110270,
+    "speaker": "凛世",
+    "text": "しかし……最後まで奏でられることなく……\r\n三味線の音は……途絶えてしまうのです……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ど……どうして……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2012004110280,
+    "speaker": "凛世",
+    "text": "はい……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110280"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00034",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "fade"
+  },
+  {
+    "charLabel": "rinze",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "rinze",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "rinze",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2012004110290,
+    "speaker": "凛世",
+    "text": "お線香が……\r\nたちきれました……",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "charAnim2": "blank",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そんな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0188",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "rinze",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00000",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……あっ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（お香が……燃え尽きて……崩れる──！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "り、凛世……──！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "rinze",
+    "bgm": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "bg": "00001",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2012004110300,
+    "speaker": "凛世",
+    "text": "はい……\r\n凛世は……ここに……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "029",
+    "voice": "produce_events/201200411/2012004110300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……\r\n…………ああ、そうだよな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なんか、凛世の語りが……すごく真に迫ってたから……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2012004110310,
+    "speaker": "凛世",
+    "text": "ふふ……\r\n凛世は……どこにも参りません……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "凛世……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2012004110320,
+    "speaker": "凛世",
+    "text": "……約束を……いたしました",
+    "charAnim1": "sad2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110320"
+  },
+  {
+    "id": 2012004110330,
+    "speaker": "凛世",
+    "text": "プロデューサーさまとともに……\r\n最高の舞台に……──",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、うん……\r\n……うん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……俺も、何があっても\r\n凛世と一緒に、そこに行くよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2012004110340,
+    "speaker": "凛世",
+    "text": "プロデューサーさま……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110340"
+  },
+  {
+    "id": 2012004110350,
+    "speaker": "凛世",
+    "text": "はい……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110350"
+  },
+  {
+    "id": 2012004110360,
+    "speaker": "凛世",
+    "text": "凛世の香は……\r\nいつまでも、いつまでも……",
+    "charAnim1": "shy3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110360"
+  },
+  {
+    "id": 2012004110370,
+    "speaker": "凛世",
+    "text": "たちきれることは、ございません……",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201200411/2012004110370"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

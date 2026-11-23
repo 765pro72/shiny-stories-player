@@ -1,0 +1,318 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1024001001310010,
+    "speaker": "にちか",
+    "text": "あーーーー\r\nじゃーまーでーすーー！！　どいてください！！！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "024",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0327",
+    "voice": "produce_communications/102400100131/1024001001310010"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──えっ\r\n……うわ……よっ、と……！",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0220"
+  },
+  {
+    "textFrame": "off",
+    "se": "0806",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……えっと\r\nすみません……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1024001001310020,
+    "speaker": "にちか",
+    "text": "言われませんか？　お姉ちゃんに\r\nもっとスマートにお願いしますって",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100131/1024001001310020"
+  },
+  {
+    "select": "まぁ、言われても\r\nおかしくないよな",
+    "nextLabel": "1024001001311"
+  },
+  {
+    "select": "気を付けます",
+    "nextLabel": "1024001001312"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "え？　うーん……\r\n特にそんなことは",
+    "nextLabel": "1024001001313"
+  },
+  {
+    "label": "1024001001311",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 450
+  },
+  {
+    "id": 1024001001310030,
+    "speaker": "にちか",
+    "text": "ですねー！\r\nしゃきしゃきしないといつか怒られると思います！",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100131/1024001001310030"
+  },
+  {
+    "charAnim1": "think1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "id": 1024001001310040,
+    "speaker": "にちか",
+    "text": "うちのお兄ちゃんにはなれないなー",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100131/1024001001310040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はは、七草家か\r\n大変そうだなぁ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "1024001001312",
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0806",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1024001001310050,
+    "speaker": "にちか",
+    "text": "はい！\r\nそれがいいと思います！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102400100131/1024001001310050"
+  },
+  {
+    "id": 1024001001310060,
+    "speaker": "にちか",
+    "text": "最悪、静かに嫌われます",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0220",
+    "voice": "produce_communications/102400100131/1024001001310060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ……それは困るというか……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1024001001310070,
+    "label": "1024001001313",
+    "speaker": "にちか",
+    "text": "えー\r\nそれはなんていうか、あれですねー",
+    "charAnim1": "think2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0220",
+    "voice": "produce_communications/102400100131/1024001001310070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……えっ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0806",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1024001001310080,
+    "speaker": "にちか",
+    "text": "諦められてますねー",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102400100131/1024001001310080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

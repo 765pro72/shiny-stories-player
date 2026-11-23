@@ -1,0 +1,121 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019"
+  },
+  {
+    "id": 4023001000210010,
+    "speaker": "雛菜",
+    "text": "ね、プロデューサー\r\nみんな、雛菜のステージ見てしあわせ～ってなるかな～？",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "023",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communication_cheers/402300100021/4023001000210010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……雛菜がこんなふうに言うなんて珍しいな）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "もちろん、なるよ",
+    "nextLabel": "4023001000211"
+  },
+  {
+    "select": "きっと、大丈夫だ",
+    "nextLabel": "4023001000212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "雛菜次第だな",
+    "nextLabel": "4023001000213"
+  },
+  {
+    "id": 4023001000210020,
+    "label": "4023001000211",
+    "speaker": "雛菜",
+    "text": "そっか～、うん\r\nじゃあ雛菜が楽しくしあわせ～にならなきゃね～！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402300100021/4023001000210020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、調子を取り戻したみたいだな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 4023001000210030,
+    "label": "4023001000212",
+    "speaker": "雛菜",
+    "text": "あは～、それってほんとに\r\n大丈夫なやつ～～～？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402300100021/4023001000210030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うん、笑ってリラックスできただろう……！）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 4023001000210040,
+    "label": "4023001000213",
+    "speaker": "雛菜",
+    "text": "ん～、そっか～……\r\nじゃあ雛菜がだめだったらだめだね～",
+    "charAnim1": "anger1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402300100021/4023001000210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（しまった……違う言い方にすべきだった……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

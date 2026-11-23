@@ -1,0 +1,60 @@
+{
+  "at": "2026-11-15T23:56:43.108Z",
+  "scope": "Isolated component reproductions; not a full story-corpus benchmark",
+  "upstreamEventViewer": "ba51fdd6c83d2b0794a393958b1810e546016fbc",
+  "shinyScenarioViewer": "66e8d7607eb4380762420bc64a593f7898d586c1",
+  "fixture": "spine/idols/stand/1040010010/data.json",
+  "usesActualBundledSpineRuntime": true,
+  "noExternalNetwork": true,
+  "lip": "lip_anger",
+  "openAt": 0.16,
+  "oldStop": {
+    "requested": "A",
+    "aTimeScale": 1,
+    "bTimeScale": 0
+  },
+  "newStop": {
+    "requested": "A",
+    "aTimeScale": 0,
+    "bTimeScale": 1,
+    "trackTime": 0,
+    "legacyTimeAlias": 0,
+    "closedSample": [
+      [
+        "mouse",
+        "mouth_close3"
+      ]
+    ],
+    "before": [
+      [
+        "mouse",
+        "mouth_sup"
+      ]
+    ],
+    "after": [
+      [
+        "mouse",
+        "mouth_close3"
+      ]
+    ],
+    "returnsToInitialMouth": true
+  },
+  "loop": {
+    "animation": "anger1",
+    "expected": 3.8333001136779785,
+    "old": {
+      "trackTime": 3.8333001136779785,
+      "legacyTimeAlias": 3.8333001136779785
+    },
+    "new": {
+      "trackTime": 3.8333001136779785
+    }
+  },
+  "gasha": {
+    "fixture": "spine/idols/stand_gasha/1040250080/data.json",
+    "nativeAnimationFound": false,
+    "existingHomeCompatibilityAdded": true,
+    "prepared": "lip_home_compatible",
+    "chosen": "lip_home_compatible"
+  }
+}

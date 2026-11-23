@@ -1,0 +1,845 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00380",
+    "bgm": "0058"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ほんとに打ち上げここでよかったのか？\r\nパスタとかビュッフェとかじゃなくて……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "002"
+  },
+  {
+    "id": 2017008110010,
+    "speaker": "あさひ",
+    "text": "ここの期間限定メニューが食べたかったっすよ！\r\nまだやっててよかったっす",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/201700811/2017008110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "確かに、公演中はそんな余裕なかったよな……\r\nよしっ、いくらでも食べてくれ！",
+    "charAnim2": "face_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110020,
+    "speaker": "あさひ",
+    "text": "やったっす！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700811/2017008110020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1800
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "チケットの売れ行きもよかったし、このウェブ記事でも、\r\n脇役のあさひにこれだけ触れてくれてるぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110030,
+    "speaker": "あさひ",
+    "text": "ふんふん……\r\nすごいっすね",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201700811/2017008110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これを見てまた舞台の話も来るかもしれない\r\nこっちから売り込みしてみてもいいかもしれないな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110040,
+    "speaker": "あさひ",
+    "text": "……？\r\nそこまでしなくていっすよ",
+    "charAnim1": "why",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700811/2017008110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……え？\r\nまだ足が痛むとかか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110050,
+    "speaker": "あさひ",
+    "text": "あ、そーいえば、\r\n最近足痛くないっす",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700811/2017008110050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか、それはよかった\r\nお医者さんの言うとおり、一時的なものだったんだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……えっと、こういうの、もうやりたくないか？\r\n俺は、あさひに合ってると思ったけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110060,
+    "speaker": "あさひ",
+    "text": "？\r\nやってもいいっすけど",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "fade_out",
+    "voice": "produce_events/201700811/2017008110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そこまでじゃない感じか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110070,
+    "speaker": "あさひ",
+    "text": "うーん……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "0058",
+    "voice": "produce_events/201700811/2017008110070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……無理にやってほしいってわけじゃないんだ\r\nでも……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "今回の仕事、あさひも何かつかめた感じがして……\r\n楽しんでくれたのかと思ったからさ",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110080,
+    "speaker": "あさひ",
+    "text": "いやじゃないっす\r\nなんか……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700811/2017008110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん",
+    "charAnim1": "wait",
+    "charAnim4": "blank",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 2017008110090,
+    "speaker": "あさひ",
+    "text": "同じステージでも、ライブとはなんか違ったっす",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201700811/2017008110090"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim4": "eye_right",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "id": 2017008110100,
+    "speaker": "あさひ",
+    "text": "……ポテト、食べるっす",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201700811/2017008110100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな、どんどん食べてくれ\r\nトレイに出したら食べやすいんじゃないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "se": "0540",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "id": 2017008110110,
+    "speaker": "あさひ",
+    "text": "おおー、前回よりさらに山盛りっす！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "002",
+    "voice": "produce_events/201700811/2017008110110"
+  },
+  {
+    "id": 2017008110120,
+    "speaker": "あさひ",
+    "text": "プロデューサーさん、勝負っすよ！\r\nまたポテト崩しするっす",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700811/2017008110120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、いいぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110130,
+    "speaker": "あさひ",
+    "text": "今日の旗はこれっす！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700811/2017008110130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……これキッズセットについてたおもちゃか？\r\n面白い顔してるけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110140,
+    "speaker": "あさひ",
+    "text": "バムバムくんっす！\r\nバムバムくん倒したら負けっすよ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700811/2017008110140"
+  },
+  {
+    "id": 2017008110150,
+    "speaker": "あさひ",
+    "text": "わたしから行くっすよ\r\nこの前でコツはつかんだっす！　んーっと……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700811/2017008110150"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim4": "eye_right",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あのな、あさひ。仕事でなんか消化不良だったってことは\r\nまぁよくある。俺だって失敗とか、反省はたくさんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、やっていくうちに、\r\n何かつかんで楽しくなることもある",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110160,
+    "speaker": "あさひ",
+    "text": "うーん、\r\nプロデューサーさんは、楽しいっすか？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201700811/2017008110160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "今の仕事か？\r\nもちろん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110170,
+    "speaker": "あさひ",
+    "text": "ふーん……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700811/2017008110170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "まぁ、全部が全部楽しいだけじゃない\r\nもやもやすることだってあるけどな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110180,
+    "speaker": "あさひ",
+    "text": "……そっすか\r\n……ん",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700811/2017008110180"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile",
+    "charAnim4": "blank",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0327",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2017008110190,
+    "speaker": "あさひ",
+    "text": "行けたっす！\r\n次はプロデューサーさんっすよ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201700811/2017008110190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……だから、今すぐどうこうって話ではないけど\r\nよいしょっと……",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2017008110200,
+    "speaker": "あさひ",
+    "text": "あっ、バムバムくん\r\n動くっす……",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201700811/2017008110200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "また、こんな仕事があったら、やってみてほしい\r\n新しい気持ちで、何か探す気持ちで",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110210,
+    "speaker": "あさひ",
+    "text": "……その時はその時っす",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700811/2017008110210",
+    "autoWaitTime": 2700
+  },
+  {
+    "id": 2017008110211,
+    "speaker": "あさひ",
+    "text": "プロデューサーさん、危ない！",
+    "charAnim1": "wait",
+    "charAnim2": "face_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/201700811/2017008110211"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あさひの可能性は、すごく広いんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110220,
+    "speaker": "あさひ",
+    "text": "だめっす！\r\n一度触ったポテトは変えちゃだめっす！",
+    "charAnim1": "think1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201700811/2017008110220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "わ、そうだった\r\n行くぞ……あっ",
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2017008110230,
+    "speaker": "あさひ",
+    "text": "あーー！　一回でアウトっすか？\r\n話しながらやるからっすよ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201700811/2017008110230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……\r\nでも、大事な話だったんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "まぁ、負けは負けだ\r\nあとのポテトはあさひが食べていいぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110240,
+    "speaker": "あさひ",
+    "text": "だめっす、もう一回やるっす！\r\nこんなに簡単に終わっちゃつまらないっすよ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700811/2017008110240"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "id": 2017008110250,
+    "speaker": "あさひ",
+    "text": "あ、でもさっきのはわたしが勝ちなんで……\r\nおもちゃはわたしがもらうっす",
+    "charAnim1": "surp3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201700811/2017008110250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それ景品だったのか……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017008110260,
+    "speaker": "あさひ",
+    "text": "さぁ、次いくっすよー",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700811/2017008110260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、次も……",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "fade_out",
+    "autoWaitTime": 3500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "新しい山に挑戦しような",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "0058",
+    "autoWaitTime": 2700
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgEffectTime": 2500,
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

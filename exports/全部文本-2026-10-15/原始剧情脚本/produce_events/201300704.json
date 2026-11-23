@@ -1,0 +1,907 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00087",
+    "bgm": "0027",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "bg": "00131",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "bgm": "0011",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "think",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "natsuha",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "natsuha",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "natsuha",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "face_close",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "natsuha",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "natsuha",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "natsuha",
+    "se": "0160",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2013007040010,
+    "speaker": "夏葉",
+    "text": "もしもし、プロデューサー？\r\n今どの辺りに──……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040010"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "夏葉！　こっちだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040020,
+    "speaker": "夏葉",
+    "text": "プロデューサー！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201300704/2013007040020"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "fade_out"
+  },
+  {
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "講義、お疲れ様",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "002"
+  },
+  {
+    "id": 2013007040030,
+    "speaker": "夏葉",
+    "text": "ありがとう、でも……",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040030"
+  },
+  {
+    "id": 2013007040040,
+    "speaker": "夏葉",
+    "text": "だいぶ待たせてしまったかしら……",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、大丈夫だよ\r\n車も停められたし",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そこの掲示板でチラシを見たりしてたから\r\n退屈しなかったよ",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040050,
+    "speaker": "夏葉",
+    "text": "……チラシ？\r\nああ、サークル勧誘の……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "色々なサークルがあるんだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040060,
+    "speaker": "夏葉",
+    "text": "そうね\r\nそこに貼られているだけでも……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040060"
+  },
+  {
+    "id": 2013007040070,
+    "speaker": "夏葉",
+    "text": "テニス、バスケ、\r\nオールラウンド、旅行……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040080,
+    "speaker": "夏葉",
+    "text": "あっ、見てプロデューサー\r\n『アイドル研究会』ですって！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_surp",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おお、本当だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040090,
+    "speaker": "夏葉",
+    "text": "うふふっ\r\n私も研究してもらえるように頑張らないとね！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……なあ、夏葉",
+    "charAnim2": "face_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040100,
+    "speaker": "夏葉",
+    "text": "どうしたの、プロデューサー？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あのさ……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "大学の勉強はどうだ",
+    "nextLabel": "1"
+  },
+  {
+    "select": "サークル、やりたいか",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "両立は大変だよな",
+    "nextLabel": "3"
+  },
+  {
+    "text": "★選択肢①【大学の勉強はどうだ】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "大学の勉強はどうだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040110,
+    "label": "1",
+    "speaker": "夏葉",
+    "text": "……急に、どうして？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "夏葉はアイドルも\r\n全力で頑張ってくれてるからさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "きっと大学の勉強だって\r\n全力で頑張ってると思う",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040120,
+    "speaker": "夏葉",
+    "text": "ええ、もちろんよ！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……だからこそ\r\n無理しすぎてないか、と思ってな",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "fade_out"
+  },
+  {
+    "id": 2013007040130,
+    "speaker": "夏葉",
+    "text": "…………",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "何かあったら……いや\r\n何もなくても、なんでも言ってくれ",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "005"
+  },
+  {
+    "id": 2013007040140,
+    "speaker": "夏葉",
+    "text": "そうね……ありがとう",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040140"
+  },
+  {
+    "id": 2013007040150,
+    "speaker": "夏葉",
+    "text": "でも、アナタが思っているよりきっと\r\n私は好きなようにやれているつもりよ",
+    "charAnim1": "wink",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか？\r\nそれなら、いいんだが……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040160,
+    "speaker": "夏葉",
+    "text": "……サークルをする大学生もいれば\r\nアルバイトをする人だっているでしょう？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040160"
+  },
+  {
+    "id": 2013007040170,
+    "speaker": "夏葉",
+    "text": "研究に没頭する人だっているし、\r\nそれぞれが選んで、そうなっているのよ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040170"
+  },
+  {
+    "id": 2013007040180,
+    "speaker": "夏葉",
+    "text": "だから特別じゃないわ\r\n私が大学生で、アイドルをしているのは",
+    "charAnim1": "hello",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "特別じゃない、か──……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040190,
+    "speaker": "夏葉",
+    "text": "私、アナタが思ってくれているより普通なの\r\nだから、一生懸命頑張って……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040190"
+  },
+  {
+    "id": 2013007040200,
+    "speaker": "夏葉",
+    "text": "アナタがプロデュースしてくれて\r\nファンが応援してくれて──",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040200"
+  },
+  {
+    "id": 2013007040210,
+    "speaker": "夏葉",
+    "text": "それで初めて、特別になれるのよ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201300704/2013007040210"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "text": "★選択肢②【サークル、やりたいか】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "サークル、やりたいか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040220,
+    "label": "2",
+    "speaker": "夏葉",
+    "text": "……どうして？",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "fade_out",
+    "voice": "produce_events/201300704/2013007040220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "サークルだけじゃなくて\r\nその他のことも、そうなんだけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "自由に遊んだり\r\nやりたいことをやって、好きなだけ休む……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そういう時間を犠牲にしてないかって\r\n思ってさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040230,
+    "speaker": "夏葉",
+    "text": "……プロデューサー",
+    "charAnim1": "shy2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040230"
+  },
+  {
+    "id": 2013007040240,
+    "speaker": "夏葉",
+    "text": "アナタって、私のこと\r\nあまり信用していないのかしら……？",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ええっ！？　いや\r\nそんなつもりは……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040250,
+    "speaker": "夏葉",
+    "text": "──疲れたら疲れたって言えるわ\r\nつらい時つらいって言える、私は……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "005",
+    "voice": "produce_events/201300704/2013007040250"
+  },
+  {
+    "charAnim2": "face_close",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2013007040260,
+    "speaker": "夏葉",
+    "text": "アナタになら、言えるのよ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……夏葉",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040270,
+    "speaker": "夏葉",
+    "text": "もう！　これじゃあ\r\nプロデューサーが『アイドル研究会』に入るべきね",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040270"
+  },
+  {
+    "id": 2013007040280,
+    "speaker": "夏葉",
+    "text": "それでもっと\r\n有栖川夏葉を研究してちょうだい！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201300704/2013007040280"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "text": "★選択肢③【両立は大変だよな】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "両立は大変だよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "3",
+    "speaker": "プロデューサー",
+    "text": "夏葉はアイドルも、勉強も\r\n全力で頑張ってくれてると思うから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040290,
+    "speaker": "夏葉",
+    "text": "……大変なんかじゃないわ",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040290"
+  },
+  {
+    "id": 2013007040300,
+    "speaker": "夏葉",
+    "text": "その両方をやっていくって、\r\n自分で選んで決めたことだもの",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうか……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "fade_out"
+  },
+  {
+    "id": 2013007040310,
+    "speaker": "夏葉",
+    "text": "…………？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "夏葉が頑張ってくれれば\r\n頑張ってくれるほど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "本当はもっと良いやり方があるんじゃないかって\r\n思ったりするんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……夏葉をトップアイドルにするって\r\nその仕事を選んだのは俺なのにな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040320,
+    "speaker": "夏葉",
+    "text": "……プロデューサー！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040320"
+  },
+  {
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "bgm": "005",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "natsuha",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "natsuha",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 2013007040330,
+    "speaker": "夏葉",
+    "text": "ありがとう",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………\r\nお礼を言われるようなことは、何も……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040340,
+    "speaker": "夏葉",
+    "text": "思っていることを、教えてくれてありがとう",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040340"
+  },
+  {
+    "id": 2013007040350,
+    "speaker": "夏葉",
+    "text": "私のことを考えてくれてありがとう",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040350"
+  },
+  {
+    "id": 2013007040360,
+    "speaker": "夏葉",
+    "text": "……それから\r\nいつもそばに居てくれてありがとう",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040360"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "夏葉……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013007040370,
+    "speaker": "夏葉",
+    "text": "ほら、行きましょう！\r\n車は……あっちね",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040370"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 2013007040380,
+    "speaker": "夏葉",
+    "text": "──ああ、まだ終わった訳じゃないわよ？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201300704/2013007040380"
+  },
+  {
+    "id": 2013007040390,
+    "speaker": "夏葉",
+    "text": "仕事の現場に着くまで、嫌になるくらい\r\n『ありがとう』って聞かせてあげるわ！",
+    "charAnim1": "wink",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300704/2013007040390"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

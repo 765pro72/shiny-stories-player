@@ -1,0 +1,663 @@
+[
+  {
+    "id": 6901001090010,
+    "speaker": "はづき",
+    "text": "プロデューサーさん！\r\n『W.I.N.G.』優勝、本当におめでとうございます！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "020",
+    "voice": "produce_events/602600109/6901001090010"
+  },
+  {
+    "id": 6901001090020,
+    "speaker": "はづき",
+    "text": "私も会場で見てたんですけど、\r\n発表の瞬間、思わず大声を出しちゃいましたよ！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/602600109/6901001090020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ありがとうございます、はづきさん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6026001090030,
+    "speaker": "社長",
+    "text": "本当によくやった\r\n……ひとつ、結果を出したな",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602600109/6026001090030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "社長も……ありがとうございます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6026001090040,
+    "speaker": "社長",
+    "text": "優勝はしたが\r\nお前と彼女は、まだまだこれからだ",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602600109/6026001090040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……わかっています\r\nまだ、始まったばかりですから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6026001090050,
+    "speaker": "社長",
+    "text": "……なら、早く行ってこい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602600109/6026001090050"
+  },
+  {
+    "id": 6026001090060,
+    "speaker": "はづき",
+    "text": "彼女のこと\r\nよろしくお願いしますね",
+    "charAnim1": "wait3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/602600109/6026001090060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はい！　もちろんです！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00000",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00698",
+    "bgEffect": "fade",
+    "bgm": "0121",
+    "waitType": "time",
+    "waitTime": 3000,
+    "bgEffectTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 6026001090070,
+    "speaker": "ルカ",
+    "text": "…………ふッ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602600109/6026001090070"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00463",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 6026001090080,
+    "speaker": "ルカ",
+    "text": "ふふ……アハハッ…………！\r\nどうだよ……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "026",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/602600109/6026001090080"
+  },
+  {
+    "id": 6026001090090,
+    "speaker": "ルカ",
+    "text": "優勝したじゃねェか……",
+    "charLipAnim": "lip_smile",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602600109/6026001090090"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile1_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 6026001090100,
+    "speaker": "ルカ",
+    "text": "ひとりでも……\r\n勝てたじゃねェか",
+    "charLipAnim": "lip_smile",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602600109/6026001090100"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_smile1_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6026001090110,
+    "speaker": "ルカ",
+    "text": "アハッ……アハハハハッ！\r\nなんだよその顔……",
+    "charAnim1": "smile3",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/602600109/6026001090110"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00309",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………よくやったよ",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00463",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 6026001090120,
+    "speaker": "ルカ",
+    "text": "あ…………？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/602600109/6026001090120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "完璧以上のパフォーマンスだった\r\n誰よりも……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "よくここまで戦い抜いたと思う",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "anger2",
+    "charLipAnim": "lip_smile1_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 6026001090130,
+    "speaker": "ルカ",
+    "text": "アハッ────\r\n強がってんじゃねェ……",
+    "charLipAnim": "lip_smile",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602600109/6026001090130"
+  },
+  {
+    "id": 6026001090140,
+    "speaker": "ルカ",
+    "text": "ムカついてんだろ……？",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602600109/6026001090140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6026001090150,
+    "speaker": "ルカ",
+    "text": "自分が何もできなかったから\r\nイラついてんだろ……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602600109/6026001090150"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 6026001090160,
+    "speaker": "ルカ",
+    "text": "気に食わねェって思ってんだろ？\r\nふざけんなって思ってんだろ？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602600109/6026001090160"
+  },
+  {
+    "id": 6026001090170,
+    "speaker": "ルカ",
+    "text": "ひとりじゃダメだって思ってんだろ！？",
+    "charAnim1": "anger3",
+    "charLipAnim": "lip_anger",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602600109/6026001090170"
+  },
+  {
+    "id": 6026001090180,
+    "speaker": "ルカ",
+    "text": "なんとか言えよ────────！",
+    "charLipAnim": "lip_anger",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602600109/6026001090180"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうだな",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0220",
+    "autoWaitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "結果は優勝だけど\r\n俺は満足してないよ────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6026001090190,
+    "speaker": "ルカ",
+    "text": "ハッ……\r\nやっぱりそうかよ……",
+    "charAnim1": "smile4",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602600109/6026001090190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ルカが\r\n笑っていないからな────",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "096"
+  },
+  {
+    "id": 6026001090200,
+    "speaker": "ルカ",
+    "text": "あ…………？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602600109/6026001090200"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00093",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffectTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "勝ち負けももちろん大事だけど\r\nそんなことよりも────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もっと大事なものが\r\n一番大事なものが……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なかったんだ────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00463",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffectTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だから俺は\r\nこの先も、ルカと一緒に頑張ろうと思う",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6026001090210,
+    "speaker": "ルカ",
+    "text": "…………",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/602600109/6026001090210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ルカが────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────アイドルをやって良かったって思える日まで",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 6026001090220,
+    "speaker": "ルカ",
+    "text": "………………",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602600109/6026001090220"
+  },
+  {
+    "id": 6026001090230,
+    "speaker": "ルカ",
+    "text": "………………バカじゃねぇの",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602600109/6026001090230"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "1196",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "きっと────",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

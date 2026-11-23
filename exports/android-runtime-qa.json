@@ -1,0 +1,101 @@
+{
+  "at": "2026-11-16T02:41:45.862Z",
+  "checks": [
+    {
+      "name": "backend",
+      "value": {
+        "ok": true,
+        "platform": "android",
+        "arch": "x64",
+        "node": "24.22.1",
+        "version": "2026-11-16.1",
+        "root": "/data/data/io.shinystories.player/files/program-3e4f2b7b6a97d0bb"
+      }
+    },
+    {
+      "name": "update-check",
+      "value": {
+        "sources": [
+          {
+            "source": "official",
+            "ok": true,
+            "changed": false
+          },
+          {
+            "source": "ShinyGroup/SCTranslationData",
+            "ok": true,
+            "changed": false
+          },
+          {
+            "source": "ShinyColorsDB/ShinyColorsDB-Album",
+            "ok": true,
+            "changed": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "official speaker-only mouth",
+      "value": {
+        "inspect": {
+          "engine": "ShinyScenarioViewer",
+          "commit": "66e8d76",
+          "key": "produce_events/android_qa.json",
+          "language": "zh",
+          "started": true,
+          "ended": false,
+          "volume": 1,
+          "current": 2,
+          "state": "PLAYING",
+          "error": null,
+          "characters": 2
+        },
+        "voice": true,
+        "mouth": [
+          {
+            "name": "lip_home_compatible",
+            "timeScale": 1
+          },
+          null
+        ],
+        "gl": true,
+        "sound": "running"
+      }
+    },
+    {
+      "name": "producer listeners closed",
+      "value": {
+        "mouth": [
+          {
+            "name": "lip_home_compatible",
+            "timeScale": 0
+          },
+          null
+        ],
+        "voice": true
+      }
+    },
+    {
+      "name": "second speaker",
+      "value": {
+        "mouth": [
+          {
+            "name": "lip_home_compatible",
+            "timeScale": 0
+          },
+          {
+            "name": "lip_home_compatible",
+            "timeScale": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "choices",
+      "value": {
+        "items": 2
+      }
+    }
+  ],
+  "ok": true
+}

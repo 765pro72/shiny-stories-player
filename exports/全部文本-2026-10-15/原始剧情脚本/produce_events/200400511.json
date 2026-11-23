@@ -1,0 +1,907 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "bgm": "029"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はい……はい、承知いたしました\r\nええ、……ははは、それじゃよろしくお願いします",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0106",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……んーと……\r\n恋鐘は13時入りで大丈夫そうだな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（もう1時か……起きてるかなぁ……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kogane",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00035",
+    "bgm": "005",
+    "se": "0152",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2004005110010,
+    "speaker": "恋鐘",
+    "text": "はぁ～～……\r\n疲れたばい～～……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110010"
+  },
+  {
+    "id": 2004005110020,
+    "speaker": "恋鐘",
+    "text": "…………ふふ～",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110020"
+  },
+  {
+    "id": 2004005110030,
+    "speaker": "恋鐘",
+    "text": "『今日はよくやったぞ、恋鐘』\r\nやってぇ～……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_doya",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110030"
+  },
+  {
+    "id": 2004005110040,
+    "speaker": "恋鐘",
+    "text": "……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110040"
+  },
+  {
+    "id": 2004005110050,
+    "speaker": "恋鐘",
+    "text": "……んふふ～",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110050"
+  },
+  {
+    "id": 2004005110060,
+    "speaker": "恋鐘",
+    "text": "…………\r\n……ふあぁ……もー疲れた。もーダメばい……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110060"
+  },
+  {
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kogane",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 2004005110070,
+    "speaker": "恋鐘",
+    "text": "ん～でも……\r\nシャワーくらいは……行かんば……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110070"
+  },
+  {
+    "id": 2004005110080,
+    "speaker": "恋鐘",
+    "text": "……\r\n…………",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110080"
+  },
+  {
+    "id": 2004005110090,
+    "speaker": "恋鐘",
+    "text": "プロデューサー……なんしよっとかなー……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110090"
+  },
+  {
+    "id": 2004005110100,
+    "speaker": "恋鐘",
+    "text": "もう家……帰ったとかなー……",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110100"
+  },
+  {
+    "textFrame": "off",
+    "se": "0182",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2004005110110,
+    "speaker": "恋鐘",
+    "text": "──わ、わわ……！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110110"
+  },
+  {
+    "id": 2004005110120,
+    "speaker": "恋鐘",
+    "text": "プ、プロデューサーからメールばい……！\r\nえ……と……！",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『恋鐘、遅くに悪いな\r\n今日はよくがんばった。お疲れ様』",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『明日の現場だけど、13時入りに変更になったから\r\n午前はゆっくり休んでくれ』",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110130,
+    "speaker": "恋鐘",
+    "text": "んふふ～！　び～っくりしたば～い！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110130"
+  },
+  {
+    "id": 2004005110140,
+    "speaker": "恋鐘",
+    "text": "13時かぁ～\r\n……きっと気ぃ遣ってくれたとよねー……",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110140"
+  },
+  {
+    "id": 2004005110150,
+    "speaker": "恋鐘",
+    "text": "ふふ……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110150"
+  },
+  {
+    "id": 2004005110160,
+    "speaker": "恋鐘",
+    "text": "…………\r\n…………電話！",
+    "charAnim2": "face_doya",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110160"
+  },
+  {
+    "id": 2004005110170,
+    "speaker": "恋鐘",
+    "text": "……プロデューサーに、お礼言わんば！",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110170"
+  },
+  {
+    "id": 2004005110180,
+    "speaker": "恋鐘",
+    "text": "お礼は大事やけん……！\r\n電話……せんといけんよね～～……うん！！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110180"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "bgm": "029",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ふあぁ……\r\nあー……腹も減ってきたな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0103",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おっと……！\r\nあれ……恋鐘からか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0106",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──はい。俺だけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00035",
+    "bgm": "005",
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2004005110190,
+    "speaker": "恋鐘",
+    "text": "プロデューサー！？　お、お疲れば──ごほごほッ！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ど、どうした、恋鐘！？\r\n大丈夫か！？",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110200,
+    "speaker": "恋鐘",
+    "text": "う、うん。ちょっとむせただけ。ぜんぜん大丈夫！\r\nうちば～い！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おう、わ、わかるぞ……\r\nどうしたんだ？　……明日のこと？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110210,
+    "speaker": "恋鐘",
+    "text": "あ、うん！\r\nプロデューサー、さっきはありがとう～！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110210"
+  },
+  {
+    "id": 2004005110220,
+    "speaker": "恋鐘",
+    "text": "うちに気ぃ遣ってくれたとよね",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや……はは、\r\n今日はよくがんばってたからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110230,
+    "speaker": "恋鐘",
+    "text": "ほ、ホント～！？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ほんとだよ。明日も頼むな\r\nあんまり時間は取れなかったけど、少しでも休んでくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110240,
+    "speaker": "恋鐘",
+    "text": "うん！",
+    "charAnim1": "wait5",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん。じゃあ……\r\n……え、と、なんだっけ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110250,
+    "speaker": "恋鐘",
+    "text": "あ、ううん！　それだけばい！\r\nうち、お礼ば言いたかったけん……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、そうだったのか！\r\n……悪いな、かえって──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110260,
+    "speaker": "恋鐘",
+    "text": "う、ううん！　ううん！\r\nほんとに、嬉しかったとよ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_shy",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか、それならよかった\r\n……じゃあ、恋鐘、またあし──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110270,
+    "speaker": "恋鐘",
+    "text": "あ、プロデューサー！\r\nま、待って！！　え……えっと……",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110270"
+  },
+  {
+    "id": 2004005110280,
+    "speaker": "恋鐘",
+    "text": "……あ、明日晴れるかな──？",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？　……明日か？\r\nそうだな……晴れそうだけど……まぁ、スタジオだしな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110290,
+    "speaker": "恋鐘",
+    "text": "あー……そ、そうばい～！　スタジオやね～……\r\nでも晴れは嬉しかぁ！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな。……もし足元が悪いようなら迎えに回るから\r\nそれじゃ、早く──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110300,
+    "speaker": "恋鐘",
+    "text": "あ、プロデューサー！\r\nま、待って！！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110310,
+    "speaker": "恋鐘",
+    "text": "そ、その……\r\nも、もうちょっと……お話せん……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お話……って──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110320,
+    "speaker": "恋鐘",
+    "text": "な、なんていうか……そうやった、よく眠れんとやった！\r\nだけん、ちょっとだけお話したかとけど……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110320"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、そういうことか\r\nそんなのお安い御用だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110330,
+    "speaker": "恋鐘",
+    "text": "ほ、ホント！？　……あ、ほんとは迷惑……？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そんなことないって。でも、\r\n夜更かしさせるために入りを変えたわけじゃないからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110340,
+    "speaker": "恋鐘",
+    "text": "う、うん！　ありがとー！\r\nあのね～──……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110340"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black4",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "bgm": "029",
+    "effectLabel": "black4",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうか～……\r\nでも、よかったじゃないか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺は……──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110350,
+    "speaker": "恋鐘",
+    "text": "……\r\n…………",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110350"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん、恋鐘……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2004005110360,
+    "speaker": "恋鐘",
+    "text": "……ん……うん…………プロデュ……\r\n…………すぅ……すぅ…………",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110360"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "恋鐘……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black5",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00035",
+    "bgm": "005",
+    "effectLabel": "black5",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2004005110370,
+    "speaker": "恋鐘",
+    "text": "……ふふ～…………",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200400511/2004005110370"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（恋鐘……寝ちゃったんだな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……おやすみ、恋鐘",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "また明日な",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black6",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0106",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "bg": "00000",
+    "effectLabel": "black6",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "label": "end"
+  }
+]

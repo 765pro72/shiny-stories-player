@@ -1,0 +1,159 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう、恋鐘。それは……旅番組か？\r\nこういうのも好きなんだな",
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001"
+  },
+  {
+    "id": 1004001000210010,
+    "speaker": "恋鐘",
+    "text": "うん！　いろんなところを旅するん楽しそうたい！\r\nいつかレポーターの仕事もやってみたか！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100021/1004001000210010"
+  },
+  {
+    "id": 1004001000210020,
+    "speaker": "恋鐘",
+    "text": "プロデューサーはお休み取れたら\r\nどっか行きたいところってあると？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100021/1004001000210020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（休みに行きたいところか……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "やっぱり長崎かな",
+    "nextLabel": "1004001000211"
+  },
+  {
+    "select": "やっぱりハワイかな",
+    "nextLabel": "1004001000212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "長期休暇は\r\n家で寝ていたい",
+    "nextLabel": "1004001000213"
+  },
+  {
+    "id": 1004001000210030,
+    "label": "1004001000211",
+    "speaker": "恋鐘",
+    "text": "ホント！？　プロデューサーも長崎に\r\n興味持ってくれてるんやね！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100021/1004001000210030"
+  },
+  {
+    "id": 1004001000210040,
+    "speaker": "恋鐘",
+    "text": "んふふ～\r\nそれなら、うちが穴場スポットいっぱい教えてあげるたい！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100021/1004001000210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1004001000210050,
+    "label": "1004001000212",
+    "speaker": "恋鐘",
+    "text": "おー、ハワイかー。定番の旅行先やね！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100021/1004001000210050"
+  },
+  {
+    "id": 1004001000210060,
+    "speaker": "恋鐘",
+    "text": "向こうにも長崎弁みたいにハワイ弁とかあるんかな？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100021/1004001000210060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1004001000210070,
+    "label": "1004001000213",
+    "speaker": "恋鐘",
+    "text": "しっかりせんね！　プロデューサー！　\r\nそれは余りにも元気なさ過ぎばい！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100021/1004001000210070"
+  },
+  {
+    "id": 1004001000210080,
+    "speaker": "恋鐘",
+    "text": "そんなんじゃ、うちについて来れんよ！\r\nホントに大丈夫と？",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100021/1004001000210080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

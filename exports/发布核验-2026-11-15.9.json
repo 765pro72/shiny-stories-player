@@ -1,0 +1,121 @@
+{
+  "at": "2026-11-15T08:03:25.242Z",
+  "version": "2026-11-15.9",
+  "mode": "lite",
+  "status": "passed",
+  "releaseGate": "npm run release -- --refresh-ui passed",
+  "sourceFolderZip": {
+    "checked": 8755,
+    "mismatches": []
+  },
+  "zip": {
+    "path": "F:\\sc\\dist\\ShinyStories-Lite-win32-x64.zip",
+    "bytes": 239966003,
+    "sha256": "1f7f4e0db429be39a6045a55d93799c2d46d9c8ae71cfa18155b357683638c7f"
+  },
+  "sevenZip": {
+    "path": "F:\\sc\\dist\\ShinyStories-Lite-win32-x64.7z",
+    "bytes": 171412387,
+    "sha256": "df0567ab534cd0aca73dd4edf5591bf13b6ac17a42e2ff68850850e2105ac2f3",
+    "integrity": "7z t passed",
+    "files": 14567,
+    "uncompressedBytes": 634671807,
+    "inventoryFromVerifiedZip": true
+  },
+  "tutorial": {
+    "path": "F:\\sc\\exports\\怪文书-完整操作教学-2026-11-15.9.mp4",
+    "bytes": 34525989,
+    "sha256": "126a0d28a7f9fc7cfb4844a8015c3c92be5197b3e3e9383fc5a7c7e894ae9933",
+    "seconds": 657.9,
+    "actualUI": true,
+    "noVoiceover": true,
+    "bgm": true,
+    "AIResponsesSimulated": true,
+    "realLocalDiagnosticsAndGuide": true,
+    "realBuildHistory": true
+  },
+  "regression": {
+    "realPackagedRuntime": true,
+    "checks": [
+      {
+        "name": "test-assistant.cjs",
+        "ok": true
+      },
+      {
+        "name": "test-story-ai.cjs",
+        "ok": true
+      },
+      {
+        "name": "test-story-voice.cjs",
+        "ok": true
+      },
+      {
+        "name": "test-home-voice-policy.cjs",
+        "ok": true
+      },
+      {
+        "name": "test-assistant-ui.cjs",
+        "ok": true
+      },
+      {
+        "name": "test-story-speaking.cjs",
+        "ok": true
+      },
+      {
+        "name": "test-story-saved-performance.cjs",
+        "ok": true
+      },
+      {
+        "name": "test-story-ai-correction.cjs",
+        "ok": true
+      },
+      {
+        "name": "test-custom-story.cjs",
+        "ok": true
+      },
+      {
+        "name": "test-desktop-window.cjs",
+        "ok": true
+      }
+    ],
+    "originalProgramUnchanged": true,
+    "patchCoverage": [
+      "root-folder layout",
+      "before/after SHA256",
+      "rollback originals",
+      "generated inventory",
+      "matching base accepted",
+      "changed base rejected",
+      "Windows PowerShell path whitespace/quotes"
+    ],
+    "windowsPathInputs": 3,
+    "updateInheritanceTests": true,
+    "interfaceAndLanguageTests": true
+  },
+  "addresses": {
+    "pairs": 640,
+    "corpusOccurrences": 417,
+    "corpusScope": "该说话人台词出现相应称呼，具体指向须结合上下文",
+    "source": "https://wikiwiki.jp/shinycolors/%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E5%91%BC%E7%A7%B0%E4%B8%80%E8%A6%A7",
+    "unknownsNotInferred": true
+  },
+  "offlineAudit": {
+    "catalog": 10906,
+    "scriptsPresent": 10906,
+    "assetsNeeded": 297742,
+    "assetsPresent": 297742,
+    "liteDoesNotIncludeAllAssets": true
+  },
+  "translations": {
+    "files": 10802,
+    "rows": 355705,
+    "done": 337816,
+    "emptyNeed": 2432,
+    "sameJp": 3,
+    "kanaLeft": 195,
+    "communityTranslationsModified": false
+  },
+  "noPaidAICalls": true,
+  "userFilesExcluded": true,
+  "protectedDirectoriesUnchanged": true
+}

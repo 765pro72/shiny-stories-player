@@ -1,0 +1,164 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう、恋鐘\r\n熱心に何を読んでるんだ？",
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001"
+  },
+  {
+    "id": 1004001000910010,
+    "speaker": "恋鐘",
+    "text": "これは料理のレシピ本ばい\r\nいろいろ載っとっておもしろかよ～",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100091/1004001000910010"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0100",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1004001000910020,
+    "speaker": "恋鐘",
+    "text": "お！　これなんかみんなと作ったら楽しそうたい～\r\nチェックしとこ～",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100091/1004001000910020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（恋鐘はレシピ本に夢中だ）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "恋鐘は料理上手だよな",
+    "nextLabel": "1004001000911"
+  },
+  {
+    "select": "俺も作ってみるかな",
+    "nextLabel": "1004001000912"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "お店の方が\r\n美味しくないか",
+    "nextLabel": "1004001000913"
+  },
+  {
+    "id": 1004001000910030,
+    "label": "1004001000911",
+    "speaker": "恋鐘",
+    "text": "うん！　うちの料理の腕はプロ級やけんねー",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100091/1004001000910030"
+  },
+  {
+    "id": 1004001000910040,
+    "speaker": "恋鐘",
+    "text": "今度プロデューサーにもごちそうしてあげるばい！\r\n楽しみにしとってね！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100091/1004001000910040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1004001000910050,
+    "label": "1004001000912",
+    "speaker": "恋鐘",
+    "text": "お、プロデューサーも料理に興味あるん？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100091/1004001000910050"
+  },
+  {
+    "id": 1004001000910060,
+    "speaker": "恋鐘",
+    "text": "じゃあ、一緒にやるばい！\r\n簡単なん教えてあげる―",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100091/1004001000910060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1004001000910070,
+    "label": "1004001000913",
+    "speaker": "恋鐘",
+    "text": "えー、そんなことなかよ！\r\nうちの料理は天下一ってみんな言うとったし！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100091/1004001000910070"
+  },
+  {
+    "id": 1004001000910080,
+    "speaker": "恋鐘",
+    "text": "それに外食ばっかじゃ栄養も偏るばい！",
+    "charAnim1": "anger1",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100400100091/1004001000910080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

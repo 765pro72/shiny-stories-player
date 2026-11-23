@@ -1,0 +1,170 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001"
+  },
+  {
+    "se": "0100",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charType": "characters",
+    "charId": "008",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それ、花のカタログか？\r\nなんだか珍しいものを読んでるな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1008001001010010,
+    "speaker": "霧子",
+    "text": "その……患者さんで……\r\n退院が決まった方がいて……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100101/1008001001010010"
+  },
+  {
+    "id": 1008001001010020,
+    "speaker": "霧子",
+    "text": "お花さんを贈りたいなって……思って……\r\nプロデューサーさんなら……どれですか……？",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100101/1008001001010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（お見舞いの花か、そうだな……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "明るい色の花かな",
+    "nextLabel": "1008001001011"
+  },
+  {
+    "select": "霧子からのものなら\r\nなんでもうれしいさ",
+    "nextLabel": "1008001001012"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "綺麗な花もいいけど\r\n食べ物とかどうだ？",
+    "nextLabel": "1008001001013"
+  },
+  {
+    "id": 1008001001010030,
+    "label": "1008001001011",
+    "speaker": "霧子",
+    "text": "明るい色……\r\nふふ、そうですね……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100101/1008001001010030"
+  },
+  {
+    "id": 1008001001010040,
+    "speaker": "霧子",
+    "text": "もっと元気に……なってもらえる色……\r\nそんなお花さん……探してみますね……！",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100101/1008001001010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001001010050,
+    "label": "1008001001012",
+    "speaker": "霧子",
+    "text": "は、はい……\r\n受けとってくれた方が……そう言ってくれるなら……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100101/1008001001010050"
+  },
+  {
+    "id": 1008001001010060,
+    "speaker": "霧子",
+    "text": "何をあげるか……より……\r\n心をこめて選ぶのが大事……ですよね……！",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100101/1008001001010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001001010070,
+    "label": "1008001001013",
+    "speaker": "霧子",
+    "text": "え、と……食べ物ですね……\r\nありがとうございます……！",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100101/1008001001010070"
+  },
+  {
+    "id": 1008001001010080,
+    "speaker": "霧子",
+    "text": "あ……でも、お腹の手術をされた方なので……\r\n食べ物は……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100101/1008001001010080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

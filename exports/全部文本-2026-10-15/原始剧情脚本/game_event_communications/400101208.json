@@ -1,0 +1,3418 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00087",
+    "bgm": "0000",
+    "se": "0342b",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "テロップ",
+    "text": "ハッピーを摘み、\r\nハッピーベルを響かせよ！",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "0503",
+    "still": "40010120801"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect",
+    "stillCtrl": "off"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_trouble",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "amana",
+    "charType": "idols",
+    "charId": "1030140020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00098",
+    "fg": "001741",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001012080010,
+    "speaker": "甘奈",
+    "text": "え～っ！　意味わかんないよー！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_trouble",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "bgm": "004",
+    "voice": "game_event_communications/400101208/4001012080010"
+  },
+  {
+    "id": 4001012080020,
+    "speaker": "甘奈",
+    "text": "幸せって摘めるものなのー！？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080020"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "charType": "idols",
+    "charId": "1030160010",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080030,
+    "speaker": "甜花",
+    "text": "この公園に……あるのかな……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charType": "idols",
+    "charId": "1030150040",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080030"
+  },
+  {
+    "id": 4001012080040,
+    "speaker": "千雪",
+    "text": "ふふ、幸せがあったら素敵……！\r\nでも──",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080040"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080050,
+    "speaker": "千雪",
+    "text": "何かヒントはないんですか？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101208/4001012080050"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0503",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "テロップ",
+    "text": "サイコロで名前が出た人には、\r\nこれから聞き込み調査に出かけてもらいます！",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "still": "40010120802"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger2_s",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080060,
+    "speaker": "甜花",
+    "text": "き、聞き込み……！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080060",
+    "stillCtrl": "off"
+  },
+  {
+    "id": 4001012080070,
+    "speaker": "甘奈",
+    "text": "それがヒント！？\r\n聞き込みって、普通のお客さんにだよね……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080070"
+  },
+  {
+    "id": 4001012080080,
+    "speaker": "千雪",
+    "text": "ここ、広いから……\r\n結構たくさんの人に聞かなきゃいけないかも",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080080"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080090,
+    "speaker": "甜花",
+    "text": "たくさんの……知らない人…………──",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101208/4001012080090"
+  },
+  {
+    "charLabel": "tenka",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001012080100,
+    "speaker": "甘奈",
+    "text": "──大丈夫、甜花ちゃん\r\n甘奈が当ててみせるから！",
+    "charAnim1": "anger3",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080100"
+  },
+  {
+    "id": 4001012080110,
+    "speaker": "甜花",
+    "text": "あっ、ううん……！\r\nなーちゃん……あの──",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080110"
+  },
+  {
+    "id": 4001012080120,
+    "speaker": "甘奈",
+    "text": "もし甜花ちゃんが当たっても、\r\nその時は交渉！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080120"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080130,
+    "speaker": "甘奈",
+    "text": "残りの時間は、めーっちゃ楽しくするんだから☆",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101208/4001012080130"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080140,
+    "speaker": "千雪",
+    "text": "甘奈ちゃん……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080140"
+  },
+  {
+    "id": 4001012080150,
+    "speaker": "千雪",
+    "text": "うん。めーっちゃ楽しく、ね",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080150"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080160,
+    "speaker": "甜花",
+    "text": "…………！",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080160"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080170,
+    "speaker": "甘奈",
+    "text": "よ～しっ。じゃあ、サイコロ振るねっ！\r\n──ハッピーリベンジ☆",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080170"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0506",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001012080180,
+    "speaker": "甘奈",
+    "text": "……あっ！　甘奈だ",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080180"
+  },
+  {
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001012080190,
+    "speaker": "甜花",
+    "text": "な……なーちゃん……！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080190"
+  },
+  {
+    "id": 4001012080200,
+    "speaker": "甘奈",
+    "text": "えへへっ、よーし……\r\nあっちの方で聞いてみよっかな",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080200"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080210,
+    "speaker": "甘奈",
+    "text": "甘奈、出動しまーす！",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101208/4001012080210"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080220,
+    "speaker": "甜花",
+    "text": "なーちゃん…………！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080220"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080230,
+    "speaker": "甘奈",
+    "text": "……！\r\n甜花ちゃん……？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080230"
+  },
+  {
+    "charAnim4": "eye_left",
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001012080240,
+    "speaker": "甜花",
+    "text": "あの……待って、なーちゃん……\r\n甜花が、行く……！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "fade_out",
+    "voice": "game_event_communications/400101208/4001012080240"
+  },
+  {
+    "id": 4001012080250,
+    "speaker": "甘奈",
+    "text": "──えっ？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080250"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080260,
+    "speaker": "甜花",
+    "text": "…………\r\nあの………足…………",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101208/4001012080260"
+  },
+  {
+    "id": 4001012080270,
+    "speaker": "甜花",
+    "text": "なーちゃん……足……\r\n痛めてる……",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080270"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080280,
+    "speaker": "甘奈",
+    "text": "…………！",
+    "charAnim1": "touch",
+    "charAnim2": "face_trouble",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080280"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080290,
+    "speaker": "千雪",
+    "text": "えっ……甘奈ちゃん……？",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "008",
+    "voice": "game_event_communications/400101208/4001012080290"
+  },
+  {
+    "id": 4001012080300,
+    "speaker": "甜花",
+    "text": "……バス、降りる時……\r\nそうかもって…………",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080300"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080310,
+    "speaker": "甘奈",
+    "text": "そ、そんなこと……──",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080310"
+  },
+  {
+    "id": 4001012080320,
+    "speaker": "甜花",
+    "text": "たぶん……\r\n痛いの……我慢、してる……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080320"
+  },
+  {
+    "id": 4001012080330,
+    "speaker": "甘奈",
+    "text": "…………甜花ちゃん",
+    "charAnim1": "wait3",
+    "charAnim2": "face_trouble",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080330"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080340,
+    "speaker": "千雪",
+    "text": "…………",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger2_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080340"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080350,
+    "speaker": "甜花",
+    "text": "千雪さん……なーちゃん……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080350"
+  },
+  {
+    "id": 4001012080360,
+    "speaker": "甜花",
+    "text": "にへへ……\r\n甜花……もう一個、『トライ』あった……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080360"
+  },
+  {
+    "id": 4001012080370,
+    "speaker": "甜花",
+    "text": "なーちゃん、あんまり歩かないようにする……",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080370"
+  },
+  {
+    "id": 4001012080380,
+    "speaker": "甜花",
+    "text": "代わるの……ちょっと、ズルだけど……\r\nそしたら……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080380"
+  },
+  {
+    "id": 4001012080390,
+    "speaker": "甜花",
+    "text": "もっと楽しい……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080390"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "shy2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0418",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "tenka",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "tenka",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4001012080400,
+    "speaker": "甜花",
+    "text": "……甜花、出動します……！",
+    "charAnim1": "decide",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080400"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001012080410,
+    "speaker": "千雪",
+    "text": "──あっ、待って！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080410"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0327",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001012080420,
+    "speaker": "千雪",
+    "text": "──甜花ちゃん……\r\nありがとう",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080420"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001012080430,
+    "speaker": "甜花",
+    "text": "……う、ううん……──",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080430"
+  },
+  {
+    "id": 4001012080440,
+    "speaker": "千雪",
+    "text": "私が代わりに……\r\nなんて、言えないよね",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080440"
+  },
+  {
+    "id": 4001012080450,
+    "speaker": "千雪",
+    "text": "だから……\r\nサイコロを振らせて？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080450"
+  },
+  {
+    "id": 4001012080460,
+    "speaker": "甜花",
+    "text": "……っ、千雪さん……？",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080460"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080470,
+    "speaker": "千雪",
+    "text": "……えいっ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101208/4001012080470"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0506",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080480,
+    "speaker": "甘奈",
+    "text": "……──",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080480"
+  },
+  {
+    "id": 4001012080490,
+    "speaker": "千雪",
+    "text": "──……ああっ、私だ……\r\nえいっ……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080490"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0506",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080500,
+    "speaker": "甘奈",
+    "text": "…………甘奈だ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080500"
+  },
+  {
+    "id": 4001012080510,
+    "speaker": "千雪",
+    "text": "うん。もう一回──",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080510"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080520,
+    "speaker": "甘奈",
+    "text": "──……\r\n甜花ちゃん……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101208/4001012080520"
+  },
+  {
+    "id": 4001012080530,
+    "speaker": "甘奈",
+    "text": "怖いの我慢して、甘奈のこと考えてくれてたんだね",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080530"
+  },
+  {
+    "id": 4001012080540,
+    "speaker": "甘奈",
+    "text": "それなのに甘奈……",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080540"
+  },
+  {
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001012080550,
+    "speaker": "甜花",
+    "text": "そんな……う、ううん……──",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080550"
+  },
+  {
+    "id": 4001012080560,
+    "speaker": "甘奈",
+    "text": "……甘奈も、代わりに行くなんて言えない\r\nだから──",
+    "charAnim1": "anger2",
+    "charAnim2": "lip_trouble",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080560"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080570,
+    "speaker": "甘奈",
+    "text": "これ、借りるね……！",
+    "charAnim1": "hello",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080570"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080580,
+    "speaker": "千雪",
+    "text": "甘奈ちゃん──",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080580"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080590,
+    "speaker": "甘奈",
+    "text": "──えいっ",
+    "charAnim1": "anger3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080590"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0506",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001012080600,
+    "speaker": "甜花",
+    "text": "…………甜花だ……！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080600"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080610,
+    "speaker": "千雪",
+    "text": "……ふふふっ、うん\r\n甘奈ちゃん……ありがとう",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080610"
+  },
+  {
+    "id": 4001012080620,
+    "speaker": "千雪",
+    "text": "これで、ズルもなし",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080620"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080630,
+    "speaker": "甘奈",
+    "text": "うん……！\r\n甘奈、もう十分にーっこにこだけど──",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080630"
+  },
+  {
+    "id": 4001012080640,
+    "speaker": "甘奈",
+    "text": "もっともっと、めーっちゃ、楽しくなりそう……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080640"
+  },
+  {
+    "id": 4001012080650,
+    "speaker": "甘奈",
+    "text": "甜花ちゃん、ありがとう\r\n甘奈の代わりに、行ってきてください……！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080650"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080660,
+    "speaker": "甜花",
+    "text": "わ……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080660"
+  },
+  {
+    "id": 4001012080670,
+    "speaker": "甜花",
+    "text": "うんっ……！\r\nいってきます……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "bgm": "fade_out",
+    "voice": "game_event_communications/400101208/4001012080670"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "tenka",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001012080680,
+    "speaker": "甜花",
+    "text": "……え、と……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "bgm": "001",
+    "voice": "game_event_communications/400101208/4001012080680"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 4001012080690,
+    "speaker": "甜花",
+    "text": "広場の方なら……人……\r\n──たくさん……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080690"
+  },
+  {
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka"
+  },
+  {
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka"
+  },
+  {
+    "id": 4001012080700,
+    "speaker": "甜花",
+    "text": "…………",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080700"
+  },
+  {
+    "id": 4001012080710,
+    "speaker": "甜花",
+    "text": "……だ、い、じょ、う、ぶ………",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080710"
+  },
+  {
+    "id": 4001012080720,
+    "speaker": "甜花",
+    "text": "大丈夫……\r\n甜花、甘えない……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080720"
+  },
+  {
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4001012080730,
+    "speaker": "甜花",
+    "text": "…………あ、あの……\r\nすみません……──！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080730"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001012080740,
+    "speaker": "甘奈",
+    "text": "──あっ……\r\n甜花ちゃん、誰かに話しかけてる……！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080740"
+  },
+  {
+    "id": 4001012080750,
+    "speaker": "千雪",
+    "text": "うん……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080750"
+  },
+  {
+    "id": 4001012080760,
+    "speaker": "甘奈",
+    "text": "あっ、また……！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080760"
+  },
+  {
+    "id": 4001012080770,
+    "speaker": "千雪",
+    "text": "……うん",
+    "charAnim1": "smile2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080770"
+  },
+  {
+    "id": 4001012080780,
+    "speaker": "千雪",
+    "text": "…………ふふ、ふたりとも……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080780"
+  },
+  {
+    "id": 4001012080790,
+    "speaker": "甘奈",
+    "text": "──千雪さん……？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080790"
+  },
+  {
+    "id": 4001012080800,
+    "speaker": "千雪",
+    "text": "ううん……\r\nなんだか──",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080800"
+  },
+  {
+    "id": 4001012080810,
+    "speaker": "甘奈",
+    "text": "……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080810"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080820,
+    "speaker": "千雪",
+    "text": "なんだか……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101208/4001012080820"
+  },
+  {
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki"
+  },
+  {
+    "id": 4001012080830,
+    "speaker": "千雪",
+    "text": "ふふ\r\nなんて言おうと思ったんだっけ……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080830"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "fade_out"
+  },
+  {
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "id": 4001012080840,
+    "speaker": "千雪",
+    "text": "言葉がいっぱいで──",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080840"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00138",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "bg": "99999",
+    "bgEffect": "white_add",
+    "se": "0485",
+    "waitType": "time",
+    "waitTime": 5000
+  },
+  {
+    "id": 4001012080841,
+    "speaker": "甘奈＆甜花",
+    "text": "ミッション達成～！",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080841"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger2_s",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bg": "00097",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim2": "face_serious",
+    "charLabel": "chiyuki",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "charAnim2": "face_close2",
+    "charLabel": "chiyuki",
+    "waitType": "time",
+    "waitTime": 300
+  },
+  {
+    "charAnim2": "face_serious",
+    "charLabel": "chiyuki",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger2_s",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 300
+  },
+  {
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "chiyuki",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "charAnim2": "face_close2",
+    "charLabel": "chiyuki",
+    "waitType": "time",
+    "waitTime": 300
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "chiyuki",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "tenka",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080850,
+    "speaker": "甘奈",
+    "text": "『ハッピーベル』の方は、これで完了！\r\n甜花ちゃんの聞き込みのおかげだねっ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "002",
+    "voice": "game_event_communications/400101208/4001012080850"
+  },
+  {
+    "id": 4001012080860,
+    "speaker": "甜花",
+    "text": "う、うん……！\r\nチャペルが……あったんだね……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080860"
+  },
+  {
+    "id": 4001012080870,
+    "speaker": "甜花",
+    "text": "でも、クローバー畑は……\r\nこれから……探さなきゃ……",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080870"
+  },
+  {
+    "id": 4001012080880,
+    "speaker": "甘奈",
+    "text": "そんなの楽勝楽勝～！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080880"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080890,
+    "speaker": "甘奈",
+    "text": "『ハッピーを摘め』がクローバーのことってわかれば、\r\nもうほとんど正解だもん",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101208/4001012080890"
+  },
+  {
+    "id": 4001012080900,
+    "speaker": "甘奈",
+    "text": "ねーっ、千雪さん？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080900"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080910,
+    "speaker": "千雪",
+    "text": "──……えっ？",
+    "charAnim1": "wait",
+    "charAnim2": "face_tear",
+    "charLipAnim": "lip_a",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500,
+    "voice": "game_event_communications/400101208/4001012080910"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp2_s",
+    "charLabel": "tenka",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080920,
+    "speaker": "甘奈",
+    "text": "……ち、千雪さん……！？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080920"
+  },
+  {
+    "id": 4001012080930,
+    "speaker": "甜花",
+    "text": "わ……！　千雪さん……！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080930"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00097",
+    "bgEffect": "blur",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "bg": "99999",
+    "bgEffect": "blur",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4001012080940,
+    "speaker": "千雪",
+    "text": "──あれ……\r\n……な、なんでだろう……！",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080940"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00097",
+    "bgEffect": "blur",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_tear",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001012080950,
+    "speaker": "千雪",
+    "text": "……ごめんなさい",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080950"
+  },
+  {
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001012080960,
+    "speaker": "甘奈",
+    "text": "甘奈、何か変なこと……──",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012080960"
+  },
+  {
+    "id": 4001012080970,
+    "speaker": "千雪",
+    "text": "ううん！\r\n……ううん、違うの……！",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080970"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012080980,
+    "speaker": "千雪",
+    "text": "──なんだか……\r\n『トライ』してるなぁって、思って……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101208/4001012080980"
+  },
+  {
+    "id": 4001012080990,
+    "speaker": "千雪",
+    "text": "……幸せに",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012080990"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "tenka",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012081000,
+    "speaker": "甘奈",
+    "text": "……幸せにトライ……？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012081000"
+  },
+  {
+    "id": 4001012081010,
+    "speaker": "甜花",
+    "text": "で、でも……\r\n涙……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081010"
+  },
+  {
+    "id": 4001012081020,
+    "speaker": "甜花",
+    "text": "……にっこりじゃない……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081020"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012081030,
+    "speaker": "千雪",
+    "text": "……ううん、にっこりなの！\r\n涙は、なんていうか……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012081030"
+  },
+  {
+    "id": 4001012081040,
+    "speaker": "千雪",
+    "text": "にっこりの飾り……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081040"
+  },
+  {
+    "charLabel": "chiyuki",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001012081050,
+    "speaker": "甘奈",
+    "text": "ええっ！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012081050"
+  },
+  {
+    "id": 4001012081060,
+    "speaker": "千雪",
+    "text": "ふふっ……\r\n……うん、にっこりの飾りなの",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081060"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012081070,
+    "speaker": "千雪",
+    "text": "……ねえ\r\nもう一回鳴らしたいな、ハッピーベル──",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101208/4001012081070"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0485",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4001012081080,
+    "speaker": "甜花",
+    "text": "甜花も……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012081080"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0485",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4001012081090,
+    "speaker": "甘奈",
+    "text": "あっ、甘奈も甘奈もー！",
+    "charAnim1": "anger3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012081090"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0485",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "tenka",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012081100,
+    "speaker": "千雪",
+    "text": "……ふふ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012081100"
+  },
+  {
+    "id": 4001012081110,
+    "speaker": "甘奈",
+    "text": "ふふっ……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081110"
+  },
+  {
+    "id": 4001012081120,
+    "speaker": "甜花",
+    "text": "にへへ……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081120"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012081130,
+    "speaker": "千雪",
+    "text": "……それじゃあ、最後のミッションね",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081130"
+  },
+  {
+    "id": 4001012081140,
+    "speaker": "千雪",
+    "text": "ハッピーを摘みにいきましょう",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081140"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "tenka",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001012081150,
+    "speaker": "甘奈",
+    "text": "うんっ！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101208/4001012081150"
+  },
+  {
+    "id": 4001012081160,
+    "speaker": "甜花",
+    "text": "うん……！",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081160"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "white2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000,
+    "stillType": "support_idols",
+    "stillId": "2040140040"
+  },
+  {
+    "effectLabel": "white2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001012081170,
+    "speaker": "甘奈",
+    "text": "これが、『ハッピー』！\r\nいーっぱい摘んじゃおう☆",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "bgm": "005",
+    "voice": "game_event_communications/400101208/4001012081170"
+  },
+  {
+    "id": 4001012081180,
+    "speaker": "千雪",
+    "text": "ふふ、四つ葉のクローバーは、\r\n幸せのお守りっていうものね",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081180"
+  },
+  {
+    "id": 4001012081190,
+    "speaker": "甘奈",
+    "text": "えへへっ、でも３つの葉っぱで超幸せだよねっ！",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081190"
+  },
+  {
+    "id": 4001012081200,
+    "speaker": "千雪",
+    "text": "わぁ……！\r\nじゃあここは、すっごくすっごく幸せな畑なの？",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081200"
+  },
+  {
+    "id": 4001012081210,
+    "speaker": "甘奈",
+    "text": "うん！",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081210"
+  },
+  {
+    "id": 4001012081220,
+    "speaker": "甜花",
+    "text": "にへへ……\r\nほとんど、全部……３つの葉っぱ……！",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081220"
+  },
+  {
+    "textFrame": "off",
+    "se": "0418",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4001012081230,
+    "speaker": "甜花",
+    "text": "はい……！\r\n花冠、できた……！",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081230"
+  },
+  {
+    "id": 4001012081240,
+    "speaker": "甜花",
+    "text": "──あぅ……花じゃない、けど……",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081240"
+  },
+  {
+    "id": 4001012081250,
+    "speaker": "千雪",
+    "text": "ふふ\r\n……花じゃなくって、『ハッピー』ね",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081250"
+  },
+  {
+    "id": 4001012081260,
+    "speaker": "甘奈",
+    "text": "そうそう、超幸せの葉っぱ！",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081260"
+  },
+  {
+    "id": 4001012081270,
+    "speaker": "甜花",
+    "text": "うん……！\r\nそれじゃ、プレゼント……します……！",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081270"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "effectLabel": "white3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect",
+    "stillCtrl": "off"
+  },
+  {
+    "id": 4001012081280,
+    "speaker": "甜花",
+    "text": "幸せにしたい……人たちに──",
+    "textCtrl": "p",
+    "textFrame": "0013",
+    "voice": "game_event_communications/400101208/4001012081280"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,254 @@
+[
+  {
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですか……参加はできませんでしたか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001080010,
+    "speaker": "はづき",
+    "text": "……不参加って連絡が来たとき、\r\n聞き間違いかと思いました",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700100108/7901001080010"
+  },
+  {
+    "id": 7901001080020,
+    "speaker": "はづき",
+    "text": "私には、どうして彼女が参加できないのか\r\nちっともわかりません……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700100108/7901001080020"
+  },
+  {
+    "id": 7902001080010,
+    "speaker": "社長",
+    "text": "その気持ちはわかるが……これが結果なんだ\r\n受け入れるより他にあるまい",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700100108/7902001080010"
+  },
+  {
+    "id": 7901001080030,
+    "speaker": "はづき",
+    "text": "……私、きっとあの子のファンだったんですね\r\nだからこの結果が、悔しくてたまらないんです……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700100108/7901001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺もです。彼女のプロデューサーである俺自身が、\r\n誰よりも彼女のファンでしたから",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……社長\r\n俺、彼女に会いに行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001080020,
+    "speaker": "社長",
+    "text": "ああ、そうするといい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700100108/7902001080020"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "charType": "characters",
+    "charId": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "真乃……最終審査の結果だが、\r\n『W.I.N.G.』の本選には出られなかった……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7001001080010,
+    "speaker": "真乃",
+    "text": "そう、ですか……\r\n私、今すごく悔しいです……",
+    "charAnim1": "shy2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700100108/7001001080010"
+  },
+  {
+    "id": 7001001080020,
+    "speaker": "真乃",
+    "text": "ここまできて……ようやくわかりました\r\n私が、アイドルを続けたいと思う理由……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700100108/7001001080020"
+  },
+  {
+    "id": 7001001080030,
+    "speaker": "真乃",
+    "text": "ファンのみなさんの応援に応えたかったんです……\r\n『W.I.N.G.』に出場して笑顔で恩返ししたかったっ……",
+    "charAnim1": "wait4",
+    "charAnim3Loop": false,
+    "charAnim3": "no2",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700100108/7001001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……すっかりアイドルらしくなったな……真乃）",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7001001080040,
+    "speaker": "真乃",
+    "text": "でも……ちょっと遅かったかもしれないです……\r\nこの気持ちにもっと早く気づいていれば……もしかして……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700100108/7001001080040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いいや、遅いなんてことはないぞ\r\nアイドルとしての真乃はまだこれからなんだからな！",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7001001080050,
+    "speaker": "真乃",
+    "text": "……はいっ！　応援してくれるみなさんの声援に応えるのが\r\nアイドルですもんねっ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700100108/7001001080050"
+  },
+  {
+    "id": 7001001080060,
+    "speaker": "真乃",
+    "text": "プロデューサーさん\r\n私……これからもアイドル、頑張っていきますっ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700100108/7001001080060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、これからも一緒に頑張ろう！",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end"
+  }
+]

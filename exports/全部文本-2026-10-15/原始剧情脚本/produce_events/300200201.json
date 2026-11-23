@@ -1,0 +1,575 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "charType": "characters",
+    "charId": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00003",
+    "bgm": "002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "charCategory": "stand_fix"
+  },
+  {
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "se": "0120",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "mano",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close",
+    "charLabel": "hiori",
+    "charType": "characters",
+    "charId": "002",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "charCategory": "stand_fix"
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hiori"
+  },
+  {
+    "id": 3002002010010,
+    "speaker": "真乃",
+    "text": "あ……灯織ちゃん",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010010"
+  },
+  {
+    "id": 3002002010020,
+    "speaker": "灯織",
+    "text": "……？\r\n真乃？　どうしたの、こんなところで",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010020"
+  },
+  {
+    "id": 3002002010030,
+    "speaker": "真乃",
+    "text": "私は、お散歩してたところだよ\r\n灯織ちゃんは？",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010030"
+  },
+  {
+    "id": 3002002010040,
+    "speaker": "灯織",
+    "text": "ちょっとＣＤショップに行こうとしてただけ",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010040"
+  },
+  {
+    "id": 3002002010050,
+    "speaker": "真乃",
+    "text": "ＣＤショップ……かぁ",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010050"
+  },
+  {
+    "id": 3002002010060,
+    "speaker": "真乃",
+    "text": "あの……私もついて行ってもいいかな？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010060"
+  },
+  {
+    "id": 3002002010070,
+    "speaker": "灯織",
+    "text": "え？　……まぁ、別にいいけど",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_angry",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010070"
+  },
+  {
+    "id": 3002002010080,
+    "speaker": "真乃",
+    "text": "わぁ、ありがとう",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010080"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3002002010090,
+    "speaker": "真乃",
+    "text": "ほわぁ……ＣＤショップ、面白かった～\r\nいろんなＣＤがたくさんあったね",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300200201/3002002010090"
+  },
+  {
+    "id": 3002002010100,
+    "speaker": "灯織",
+    "text": "……ＣＤショップなんだから当たり前でしょ",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010100"
+  },
+  {
+    "id": 3002002010110,
+    "speaker": "真乃",
+    "text": "えへへ……そうだよね",
+    "charAnim1": "wait3",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010110"
+  },
+  {
+    "id": 3002002010120,
+    "speaker": "灯織",
+    "text": "（……誰かとこんな風に休日を過ごすのは\r\nいつぶりだろう）",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010120"
+  },
+  {
+    "id": 3002002010130,
+    "speaker": "灯織",
+    "text": "（いつもみたいにそっけなくしちゃってるけど、\r\n真乃は私といて楽しいのかな……）",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010130"
+  },
+  {
+    "id": 3002002010140,
+    "speaker": "真乃",
+    "text": "ほわ！　ねえ、灯織ちゃん",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010140"
+  },
+  {
+    "id": 3002002010150,
+    "speaker": "灯織",
+    "text": "何？",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010150"
+  },
+  {
+    "id": 3002002010160,
+    "speaker": "真乃",
+    "text": "あそこにいる男の子……迷子じゃないかな\r\nひとりで、泣いてるみたいで……",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010160"
+  },
+  {
+    "id": 3002002010170,
+    "speaker": "灯織",
+    "text": "……早く交番に連れて行こう",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010170"
+  },
+  {
+    "id": 3002002010180,
+    "speaker": "真乃",
+    "text": "そ、そうだよね……！\r\n早く行かなくちゃ……！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010180"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3002002010190,
+    "speaker": "灯織",
+    "text": "ふぅ……あの子の親も交番にいてよかった",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bgm": "005",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300200201/3002002010190"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLabel": "hiori",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3002002010200,
+    "speaker": "真乃",
+    "text": "……ふふっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300200201/3002002010200"
+  },
+  {
+    "id": 3002002010210,
+    "speaker": "灯織",
+    "text": "……急に笑って、何？",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_angry",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010210"
+  },
+  {
+    "id": 3002002010220,
+    "speaker": "真乃",
+    "text": "ううん、灯織ちゃんは優しいなと思って",
+    "charAnim1": "wait",
+    "charAnim2": "face_smile",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010220"
+  },
+  {
+    "id": 3002002010230,
+    "speaker": "灯織",
+    "text": "……別に、優しくなんてないでしょ",
+    "charAnim1": "shy3",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010230"
+  },
+  {
+    "id": 3002002010240,
+    "speaker": "真乃",
+    "text": "ううん、そんなことないよ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010240"
+  },
+  {
+    "id": 3002002010250,
+    "speaker": "真乃",
+    "text": "だって、あの男の子が迷子になって\r\n泣いていたとき……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010250"
+  },
+  {
+    "id": 3002002010260,
+    "speaker": "真乃",
+    "text": "すぐに交番に連れていこうって\r\n言ってくれたのは、灯織ちゃんだよ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010260"
+  },
+  {
+    "id": 3002002010270,
+    "speaker": "灯織",
+    "text": "あれくらい、当然でしょ",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_angry",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010270"
+  },
+  {
+    "id": 3002002010280,
+    "speaker": "灯織",
+    "text": "……まぁ、好きに考えれば",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300200201/3002002010280"
+  },
+  {
+    "label": "end"
+  }
+]

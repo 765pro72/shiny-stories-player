@@ -1,0 +1,889 @@
+[
+  {
+    "textFrame": "off",
+    "bgm": "0000",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim3": "off",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1040170020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "002",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00330",
+    "bgEffect": "fade",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "se": "0343",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ううう……\r\nさすがにそろそろ、どうにかしないとなぁ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0636",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……\r\nなんだこれ、ハンモック吊るしたのか……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2017006110010,
+    "speaker": "あさひ",
+    "text": "そうっす！",
+    "charAnim1": "surp3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201700611/2017006110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──おっと！　来てたのかあさひ……！\r\n基地、充実してるじゃないか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017006110020,
+    "speaker": "あさひ",
+    "text": "はいっす～\r\n色々変えてるんっすけど、今は謎の無人島になってるっす！",
+    "charAnim1": "think1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700611/2017006110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "へぇ、ここ無人島なんだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それじゃあ、朝起きたら魚でも獲って\r\nヤシの実のジュースとか飲んだりする感じかなぁ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017006110030,
+    "speaker": "あさひ",
+    "text": "えっ、缶詰があるから\r\nそんなことしなくても大丈夫っすよ",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700611/2017006110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……っ\r\nそうか……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0220"
+  },
+  {
+    "id": 2017006110040,
+    "speaker": "あさひ",
+    "text": "朝は、まずは望遠鏡で海の監視っすね",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700611/2017006110040"
+  },
+  {
+    "id": 2017006110050,
+    "speaker": "あさひ",
+    "text": "すっごい船が来るかもしれないし、\r\nすっごい魚とか鳥とかが来るかもしれないっす！",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700611/2017006110050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あぁ────",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "fade_out"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00075",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "se": "0275",
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "textFrame": "off",
+    "se": "0745",
+    "waitType": "time",
+    "waitTime": 5000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──そうか、ロマンがあるなぁ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00330",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────\r\n俺も……想像してみていいかな",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "その、すごい船がさ……ある日やってくるとして──\r\n特別なお客さんを乗せてるんだ",
+    "charAnim2": "face_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017006110060,
+    "speaker": "あさひ",
+    "text": "えっ\r\n特別なお客さん？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700611/2017006110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん\r\nその島の持ち主のおじいさんが帰ってくる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "無人島だと思ってたけど、\r\nそこ、実際にはおじいさんの島だったんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017006110070,
+    "speaker": "あさひ",
+    "text": "えーっ、そんな設定はないっす！",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0327",
+    "voice": "produce_events/201700611/2017006110070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……まぁ、俺の想像なんだけどさ\r\nでも、そしたらおじいさん、びっくりすると思わないか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "誰もいないはずの自分の島で、\r\n知らない子が基地を作って暮らしてるんだから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017006110080,
+    "speaker": "あさひ",
+    "text": "そんな設定はないっす！",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700611/2017006110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────ごめんごめん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん。あさひの基地は、あさひだけの……\r\nすっごくかっこいい場所だもんなぁ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017006110090,
+    "speaker": "あさひ",
+    "text": "……",
+    "charAnim2": "face_anger",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700611/2017006110090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それはよくわかったんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim4": "blank",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00298",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "056",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "空があってさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00297",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ハンモックがあって、望遠鏡があって\r\n謎の本があって、缶詰もあって──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00330",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "バットもある",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017006110100,
+    "speaker": "あさひ",
+    "text": "そうっす",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201700611/2017006110100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん\r\nだから──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺が壊したりしたくないし\r\n誰かに壊されたりもしてほしくないんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──もし、この島が\r\n別の誰かのものだったとしてもさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017006110110,
+    "speaker": "あさひ",
+    "text": "……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700611/2017006110110"
+  },
+  {
+    "id": 2017006110120,
+    "speaker": "あさひ",
+    "text": "ここで基地作ってるの、\r\nダメって言いたいんすか？",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700611/2017006110120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ダメじゃないよ\r\nあさひが本当によく考えて、それでいいなら",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017006110130,
+    "speaker": "あさひ",
+    "text": "……────",
+    "charAnim1": "wait2",
+    "charAnim2": "face_down",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700611/2017006110130"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0114",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00320",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00018",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "se": "0116",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00329",
+    "bgEffect": "fade",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──あれ\r\n基地……なくなってる……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あさひ、片付けたのか……\r\n────なんだこれ、『家賃』……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "小魚とアーモンド──給食じゃないか\r\nこんなの置いて────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2017006110140,
+    "speaker": "あさひ",
+    "text": "あっ、プロデューサーさん",
+    "charAnim1": "surp3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201700611/2017006110140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あさひ……！\r\nその────",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0327"
+  },
+  {
+    "id": 2017006110150,
+    "speaker": "あさひ",
+    "text": "基地、解散することにしたっすよ！\r\nわたしの島が見つかるまで",
+    "charAnim1": "think1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700611/2017006110150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……っ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2017006110160,
+    "speaker": "あさひ",
+    "text": "どこにあるっすかねー\r\n誰のものでもない場所",
+    "charAnim1": "smile2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201700611/2017006110160"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2017006110170,
+    "speaker": "あさひ",
+    "text": "じゃ、探してくるっす────",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201700611/2017006110170"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、おい……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0114",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00330",
+    "fg": "001922",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────\r\nあさひ…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "fg": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00329",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "se": "0741",
+    "waitType": "time",
+    "waitTime": 5500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ははっ……\r\nバット、忘れてるなぁ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

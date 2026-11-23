@@ -1,0 +1,829 @@
+[
+  {
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "charType": "characters",
+    "charId": "011",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charCategory": "stand_fix"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "rinze",
+    "charType": "characters",
+    "charId": "012",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charCategory": "stand_fix"
+  },
+  {
+    "id": null,
+    "speaker": "凛世",
+    "text": "樹里さん、お茶……\r\nお飲みになりますか……？",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010010"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "あ～……うん。頼む",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010020"
+  },
+  {
+    "id": null,
+    "speaker": "凛世",
+    "text": "はい……\r\n少々、お待ちください",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010030"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "rinze",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "はっ……！　やっ、とぉっ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "009",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bgm": "010",
+    "voice": "produce_events/300900401/3009004010040",
+    "charCategory": "stand_fix"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "変身！　ジャスティスレッド！",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010050"
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "……果穂、さっきから何やってんだ？",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900401/3009004010060"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "えへへ！　これは新しく始まった、\r\n特撮ヒーローの変身ポーズなんですっ！",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900401/3009004010070"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "へー\r\nほんとおまえ、ヒーローのこと好きだよな",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010080"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "はい！　ヒーローってスッゴくカッコいいんです！\r\nほら、こんな感じで……！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010090"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "「うけてみろ！　ジャスティーンソード！」\r\n……とか！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010100"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "「今だ！　ジャスティーン・ロボ！　ゴー・オン！」\r\n……とか！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010110"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "あ～、そういえばアタシも子どもの頃、\r\n兄貴と一緒に見てたなぁ……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010120"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "たしか、こう……人さし指を上に向けるヤツ……\r\n名前……なんつったっけなぁ……",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010130"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "そのポーズっ！\r\n『空手パイロットアルファ』ですか！？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010140"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "……おお！　それそれ！\r\nアタシが子供の頃にやってた番組なのに、よくわかるなー",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010150"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "はいっ！　あたし、ヒーロー大好きですから！\r\n昔のヒーローもいっぱい知ってますよ！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010160"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "このヒーローはですね。自分が一番強いと信じていて、\r\nゆいがたくさん……じゃなくって……ゆいがどくさん？",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010170"
+  },
+  {
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": null,
+    "speaker": "凛世",
+    "text": "唯我独尊、でしょうか……",
+    "charAnim1": "smile3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900401/3009004010180"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "rinze",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "juri",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "凛世さん、それですっ！",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300900401/3009004010190"
+  },
+  {
+    "id": null,
+    "speaker": "凛世",
+    "text": "お役に立てて、何よりです……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_shy",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010200"
+  },
+  {
+    "id": null,
+    "speaker": "凛世",
+    "text": "お茶を、どうぞ……\r\n果穂さんの分も、ございます",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010210"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "お。ありがとうな、凛世",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010220"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "ありがとうございます、凛世さん！\r\n……それでアルファは、そのユイガドクソンなんです！",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010230"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "あはは、唯我独尊ってまるで夏葉みてーだな",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010240"
+  },
+  {
+    "charAnim1": "smile3",
+    "charLabel": "rinze"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "そうです！\r\n本当はやさしいところも夏葉さんそっくりです！",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010250"
+  },
+  {
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "rinze"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "それにアルファは、変身した後のアクションも、\r\nスッゴくカッコいいんですよ！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010260"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "こう、すっと来て、バッとなって、\r\nえいっ、って敵をやっつけちゃうんです！",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010270"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "ああ、そんなカンジだったな\r\nカッコいいよなー！",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010280"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "ですよねっ！　昔、友達とやった\r\nヒーローごっこ、楽しかったなぁ……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010290"
+  },
+  {
+    "charAnim1": "smile2",
+    "charLabel": "rinze"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "それだけ好きなら、ヒーローになりきるっつーのも\r\n楽しそうだよなー",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010300"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "はいっ！　近所の公園とかで、\r\nもうずーっと遊んでたんですよ！",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010310"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "へぇ。そのときはやっぱり、果穂がヒーロー役なのか？",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010320"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "いえっ。お友達みんなでジャンケンです！\r\nヒーロー役はとっても人気ですから",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010330"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "でもでも、悪役になったとしても楽しいんです\r\nみんなで作り上げるステージみたいでしたから！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010340"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "そう言われると、何だか面白そうだな！",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010350"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "はい！　樹里ちゃんは、スゴく強そうだから、\r\n悪の帝王役とかが似合うと思います！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010360"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "えぇ……アタシ、敵なのかよ",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010370"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "それと、凛世さんは冷静ちんちゃく？　な感じが、\r\n悪の組織の大幹部にピッタリです！",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010380"
+  },
+  {
+    "id": null,
+    "speaker": "凛世",
+    "text": "大、幹部……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010390"
+  },
+  {
+    "id": null,
+    "speaker": "凛世",
+    "text": "樹里さん、それはどういうものなのでしょう？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010400"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "まぁ、参謀みたいなもんかな\r\n大物で、いつも落ち着いてて……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010410"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "凛世が大幹部っつーのはわかる気がするよ",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010420"
+  },
+  {
+    "id": null,
+    "speaker": "凛世",
+    "text": "よく、わかりませんが……\r\nお二人がそう仰るなら……",
+    "charAnim1": "smile3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_shy",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010430"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "あっ！　もう、こんな時間だ！\r\n『ジャスティスＶ』が始まっちゃう！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010440"
+  },
+  {
+    "id": null,
+    "speaker": "凛世",
+    "text": "『ジャスティスＶ』……？",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010450"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "果穂のことだから、特撮番組のことじゃないか？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010460"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "テレビ点けますねっ！\r\nあっ、ちょうど始まりました！",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010470"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "……おおっ、今のヒーロー番組って\r\nこんなカンジなのか……！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010480"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "えへへ！\r\nこの『ジャスティスＶ』はですねっ……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010490"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "ふんふん……",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010500"
+  },
+  {
+    "id": null,
+    "speaker": "凛世",
+    "text": "ふふ……",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010510"
+  },
+  {
+    "id": null,
+    "speaker": "凛世",
+    "text": "お二人とも、まるで姉妹のよう……",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010520"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "ねえねえ、凛世さんも一緒に見ましょうよ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010530"
+  },
+  {
+    "id": null,
+    "speaker": "樹里",
+    "text": "そうだ、ホラ、座ろうぜ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010540"
+  },
+  {
+    "id": null,
+    "speaker": "凛世",
+    "text": "……それでは、お言葉に甘えて……\r\nご一緒させて、いただきます",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300900401/3009004010550"
+  },
+  {
+    "label": "end"
+  }
+]

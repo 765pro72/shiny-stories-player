@@ -1,0 +1,174 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "羽那、プロフィールの特技欄に\r\n『美味しそうに食べること』って書いてたけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "羽那は、食べることが好きなのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1027001000810010,
+    "speaker": "羽那",
+    "text": "あはっ、別に普通かな？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "027",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102700100081/1027001000810010"
+  },
+  {
+    "id": 1027001000810020,
+    "speaker": "羽那",
+    "text": "特技が思いつかなくって\r\n前に友達にそう言われたから書いたの",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hana",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102700100081/1027001000810020"
+  },
+  {
+    "select": "その特技、見せて\r\nもらわないとな",
+    "nextLabel": "1027001000811"
+  },
+  {
+    "select": "そうか……",
+    "nextLabel": "1027001000812"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "それは……\r\n特技なのか？",
+    "nextLabel": "1027001000813"
+  },
+  {
+    "id": 1027001000810030,
+    "label": "1027001000811",
+    "speaker": "羽那",
+    "text": "あはっ、うん\r\nいいよ",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102700100081/1027001000810030"
+  },
+  {
+    "id": 1027001000810040,
+    "speaker": "羽那",
+    "text": "あたしが美味しそうに食べるところ、\r\n見ててね？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102700100081/1027001000810040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "1027001000812",
+    "speaker": "プロデューサー",
+    "text": "他にも特技、見つかるといいな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1027001000810050,
+    "speaker": "羽那",
+    "text": "うーん、そっかー\r\n何かないか、探してみるね",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102700100081/1027001000810050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1027001000810060,
+    "label": "1027001000813",
+    "speaker": "羽那",
+    "text": "えっ、だめかな？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102700100081/1027001000810060"
+  },
+  {
+    "id": 1027001000810070,
+    "speaker": "羽那",
+    "text": "いいと思ったんだけどなー",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102700100081/1027001000810070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end"
+  }
+]

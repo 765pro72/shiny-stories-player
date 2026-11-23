@@ -1,0 +1,671 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00110",
+    "fg": "002922",
+    "bgm": "0053"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "off",
+    "text": "身体中の血が入れ替わっても",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "autoWaitTime": 2000
+  },
+  {
+    "speaker": "off",
+    "text": "私は、美しくは、なれない",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "autoWaitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "fg": "off",
+    "bgm": "0000",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2021013040010,
+    "speaker": "メイド長",
+    "text": "……旦那様",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040010"
+  },
+  {
+    "id": 2021013040020,
+    "speaker": "メイド長",
+    "text": "あなたは、美しい",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040020"
+  },
+  {
+    "id": 2021013040030,
+    "speaker": "メイド長",
+    "text": "逸る、心臓の音が",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040030"
+  },
+  {
+    "id": 2021013040040,
+    "speaker": "メイド長",
+    "text": "私への恋情だと気付かない",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040040"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 2021013040050,
+    "speaker": "メイド長",
+    "text": "……憐れなひと",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040050"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "1040210080",
+    "movie": "1040210080"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bg": "01046",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffectTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "やっぱり、心配いらなかったな\r\nすごく良かったよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もしかしたらこれを機に\r\n芝居のオファーが増えるかもな",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "idols",
+    "charId": "1040210080",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 2021013040060,
+    "speaker": "円香",
+    "text": "さあ、どうだか",
+    "charAnim1": "sigh",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040060"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "madoka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "映画監督",
+    "text": "それは、私の作品次第ではありますが\r\nそうなったら私も嬉しいですね",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "監督……\r\n良いご縁をいただいて、ありがとうございました",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "宣伝や舞台挨拶の打ち合わせなど……諸々\r\n引き続き精一杯やらせていただきます！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "madoka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "映画監督",
+    "text": "こちらこそ、よろしくお願いします\r\n作品が盛り上がるに越したことはないので……ははっ",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "映画監督",
+    "text": "樋口さんは本当に魅力的な世界観をお持ちですから\r\nまた機会があればご一緒させてください",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2021013040070,
+    "speaker": "円香",
+    "text": "こちらこそ\r\n私でよければ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202101304/2021013040070"
+  },
+  {
+    "speaker": "映画監督",
+    "text": "……表現はどこまでも追求できる",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "映画監督",
+    "text": "君の内にある美しさに手を伸ばしたいと思った時は、\r\nいつでも力を貸しますよ",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2021013040080,
+    "speaker": "円香",
+    "text": "……ありがとうございます",
+    "charAnim1": "smile2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040080",
+    "autoWaitTime": 2600
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "madoka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00130",
+    "bgEffect": "fade",
+    "bgm": "0008",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……屋敷の主人は最後まで気付かなかったんだな",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 2021013040090,
+    "speaker": "円香",
+    "text": "彼が人間だったこと？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ああ。人の食べ物は身体が受け付けず\r\n吸血衝動ばかりが膨れて……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "メイド長に差し出されたチョコレートを\r\n吸血鬼には毒だと知りながら食べて",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "飢餓に苦しんで命を落とした",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "本当の吸血鬼みたいに",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2021013040100,
+    "speaker": "円香",
+    "text": "そうですね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040100"
+  },
+  {
+    "id": 2021013040110,
+    "speaker": "円香",
+    "text": "メイド長が吸血鬼だったことにも\r\n気付かないまま",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040110"
+  },
+  {
+    "id": 2021013040120,
+    "speaker": "円香",
+    "text": "……チョコレートに何が入っているかも\r\n知らないで",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040120"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "madoka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00889",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうしても正解を探したくなって\r\nさっきからずっと考えてるんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "彼が人間だと気付かせてやって\r\n人間として治療をしていれば……とか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "メイド長はそうしなかった\r\n見殺しにしたんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真綿で首を締めるように",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00130",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1000
+  },
+  {
+    "id": 2021013040130,
+    "speaker": "円香",
+    "text": "……咎めているんですか？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202101304/2021013040130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、非道徳的だとは思うけど\r\nそれがメイド長なりの、主人への愛だった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そういう解釈だよな？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2021013040140,
+    "speaker": "円香",
+    "text": "そうですね",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040140"
+  },
+  {
+    "id": 2021013040150,
+    "speaker": "円香",
+    "text": "受け取る側がそう感じたなら\r\nそれがあなたにとっての解釈ってことで",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "人でありながら、人を捨ててしまった\r\n絶望を知るくらいならって",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もしかしたら\r\nそう望んだかもしれないな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2021013040160,
+    "speaker": "円香",
+    "text": "さあ、理解出来ますか？\r\nあなたに",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな\r\n俺だったら……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 2500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "madoka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0000",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "オフ",
+    "textFrame": "off"
+  },
+  {
+    "id": 2021013040170,
+    "speaker": "off",
+    "text": "あなたは、絶望ごと抱きしめようとするでしょ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040170"
+  },
+  {
+    "id": 2021013040180,
+    "speaker": "off",
+    "text": "そのまま一緒に",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040180"
+  },
+  {
+    "id": 2021013040190,
+    "speaker": "off",
+    "text": "沈もうなんて思わない",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040190"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2021013040200,
+    "speaker": "円香",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040200"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "textFrame": "off",
+    "bg": "00828",
+    "bgm": "0008",
+    "se": "2091",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "se": "1769",
+    "waitType": "time",
+    "waitTime": 2100
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……どうした？\r\n円香……──んぐ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2021013040210,
+    "speaker": "円香",
+    "text": "チョコレート、あまりをいただいたので\r\nおすそ分けです",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040210"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0000",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2021013040220,
+    "speaker": "円香",
+    "text": "……その味を覚えておいてください",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040220"
+  },
+  {
+    "id": 2021013040230,
+    "speaker": "円香",
+    "text": "いつか私がそう望んだ時のためにでも",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202101304/2021013040230"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

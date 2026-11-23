@@ -1,0 +1,230 @@
+[
+  {
+    "bgm": "017",
+    "bg": "00023"
+  },
+  {
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "speaker": "はづき",
+    "charLabel": "hazuki",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 7902001060010,
+    "textFrame": "004",
+    "speaker": "社長",
+    "text": "やはりここまで来ると、\r\n乗り越えるべき壁も高かったな……",
+    "textCtrl": "p",
+    "voice": "produce_events/700100106/7902001060010"
+  },
+  {
+    "id": 7901001060010,
+    "textFrame": "003",
+    "speaker": "はづき",
+    "text": "結果は残念でしたけど……\r\nおふたりは立派にやってましたよ！",
+    "textCtrl": "p",
+    "charLabel": "hazuki",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "voice": "produce_events/700100106/7901001060010"
+  },
+  {
+    "id": 7901001060020,
+    "textFrame": "003",
+    "speaker": "はづき",
+    "text": "ここまで来れただけでも、\r\n胸を張って誇れることだと私は思います",
+    "textCtrl": "p",
+    "charLabel": "hazuki",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "voice": "produce_events/700100106/7901001060020"
+  },
+  {
+    "id": 7902001060020,
+    "textFrame": "004",
+    "speaker": "社長",
+    "text": "ああ、良い活躍だった\r\nそれはたしかだ",
+    "textCtrl": "p",
+    "charAnim1": "wait1",
+    "voice": "produce_events/700100106/7902001060020"
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "……俺もそう思います\r\n彼女はよくやってくれました",
+    "textCtrl": "p"
+  },
+  {
+    "id": 7901001060030,
+    "textFrame": "003",
+    "speaker": "はづき",
+    "text": "その言葉を、彼女に直接\r\n言ってあげましょう？",
+    "textCtrl": "p",
+    "charLabel": "hazuki",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "voice": "produce_events/700100106/7901001060030"
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "……はい",
+    "textCtrl": "p"
+  },
+  {
+    "textFrame": "off",
+    "speaker": "off"
+  },
+  {
+    "waitType": "effect",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charType": "characters",
+    "charId": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charLabel": "mano",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s2",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "effect",
+    "bg": "00002",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "id": 7001001060010,
+    "textFrame": "001",
+    "speaker": "真乃",
+    "text": "あ、あの、プロデューサーさん……\r\n……結果は、どうでしたか？",
+    "textCtrl": "p",
+    "charLabel": "mano",
+    "charLipAnim": "lip_sad",
+    "voice": "produce_events/700100106/7001001060010"
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "真乃……残念だけど……\r\n三次審査には合格できなかった……",
+    "textCtrl": "p"
+  },
+  {
+    "id": 7001001060020,
+    "textFrame": "001",
+    "speaker": "真乃",
+    "text": "ほわ……\r\nそう、ですか……だめだったんですね……",
+    "textCtrl": "p",
+    "charLabel": "mano",
+    "charAnim1": "surp2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "voice": "produce_events/700100106/7001001060020"
+  },
+  {
+    "id": 7001001060030,
+    "textFrame": "001",
+    "speaker": "真乃",
+    "text": "せっかく……プロデューサーさんや\r\nいろいろな人が応援してくれたのに……悔しいです",
+    "textCtrl": "p",
+    "charLabel": "mano",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "voice": "produce_events/700100106/7001001060030"
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "……真乃が悔しがるなんて\r\nそれほど強い想いがあったんだな？",
+    "textCtrl": "p",
+    "charAnim2": "blank"
+  },
+  {
+    "id": 7001001060040,
+    "textFrame": "001",
+    "speaker": "真乃",
+    "text": "はい……私、もっともっと先へ行って……\r\nそこにあるものを見てみたいです",
+    "textCtrl": "p",
+    "charLabel": "mano",
+    "charAnim1": "hello",
+    "charLipAnim": "lip_sad",
+    "voice": "produce_events/700100106/7001001060040"
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "うん、頼もしい言葉だ\r\n真乃は立派に成長してるな",
+    "textCtrl": "p"
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "ここで終わらせはしないぞ\r\nファンのみんなも真乃を待ってるからな！",
+    "textCtrl": "p"
+  },
+  {
+    "id": 7001001060050,
+    "textFrame": "001",
+    "speaker": "真乃",
+    "text": "はいっ、これからも私を支えてくださいね\r\nプロデューサーさんっ",
+    "textCtrl": "p",
+    "charLabel": "mano",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "voice": "produce_events/700100106/7001001060050"
+  },
+  {
+    "label": "end"
+  }
+]

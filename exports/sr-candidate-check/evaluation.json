@@ -1,0 +1,59 @@
+{
+  "at": "2026-11-13T13:02:17.765Z",
+  "source": "Existing original-render comparison frame, 1136x640; game source texture unchanged",
+  "crop": {
+    "x": 435,
+    "y": 105,
+    "width": 260,
+    "height": 290
+  },
+  "results": [
+    {
+      "model": "AnimeSharpV4",
+      "sha256": "75af72e9a5bcb3bd948f5f41b177998a65309f4cb10ff3eb6e5b917de1f25f47",
+      "provider": "DirectML",
+      "input": [
+        260,
+        290
+      ],
+      "output": [
+        520,
+        580
+      ],
+      "inferMs": 213.5007999999998,
+      "samplesMs": [
+        207.27850000000035,
+        220.78569999999945,
+        212.1979999999994,
+        206.70110000000022,
+        220.54069999999956
+      ],
+      "loadAndRunMs": 3750.5687
+    },
+    {
+      "model": "AnimeSharpV4-Fast",
+      "sha256": "cfdf4a3e1200d7c13669fa4df301e7ce06bdb2a3cdbb4bda5858cd4bbe995056",
+      "provider": "DirectML",
+      "input": [
+        260,
+        290
+      ],
+      "output": [
+        520,
+        580
+      ],
+      "inferMs": 89.74496000000036,
+      "samplesMs": [
+        89.35959999999977,
+        92.01600000000144,
+        88.872800000001,
+        88.76349999999911,
+        89.71290000000045
+      ],
+      "loadAndRunMs": 4535.1395
+    }
+  ],
+  "alphaAndSpineSeamsValidated": false,
+  "realtimeValidated": false,
+  "integratedIntoApp": false
+}

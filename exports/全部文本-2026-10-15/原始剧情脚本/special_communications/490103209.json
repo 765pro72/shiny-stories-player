@@ -1,0 +1,274 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0089"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00690",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 4901032090010,
+    "speaker": "霧子",
+    "text": "現場の調査は、こんなところでしょうか……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103209/4901032090010"
+  },
+  {
+    "id": 4901032090020,
+    "speaker": "咲耶",
+    "text": "そうだね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103209/4901032090020"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00432",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032090030,
+    "speaker": "咲耶",
+    "text": "この部屋からも遺体からも\r\n『アレ』が見つからないのが気になるし……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103209/4901032090030"
+  },
+  {
+    "id": 4901032090040,
+    "speaker": "摩美々",
+    "text": "『アレ』ねー",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103209/4901032090040"
+  },
+  {
+    "speaker": "弟子",
+    "text": "アレって……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "ファイルのことですか？",
+    "nextLabel": "1"
+  },
+  {
+    "select": "凶器のことですか？",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "鍵のことですか？",
+    "nextLabel": "3"
+  },
+  {
+    "id": 4901032090050,
+    "label": "1",
+    "speaker": "恋鐘",
+    "text": "うん～、そいも気になるけど、\r\nうちらが気になっとるのは『鍵』ばい",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "join",
+    "voice": "special_communications/490103209/4901032090050"
+  },
+  {
+    "id": 4901032090060,
+    "label": "2",
+    "speaker": "咲耶",
+    "text": "確かに凶器が見つかれば\r\n犯人に近付けるかもしれない",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103209/4901032090060"
+  },
+  {
+    "id": 4901032090070,
+    "speaker": "咲耶",
+    "text": "でも、私たちが気になっているのは『鍵』だ\r\nそうだよね、みんな？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "join",
+    "voice": "special_communications/490103209/4901032090070"
+  },
+  {
+    "label": "3",
+    "textFrame": "off",
+    "se": "0914",
+    "waitType": "time",
+    "waitTime": 1600
+  },
+  {
+    "id": 4901032090080,
+    "speaker": "摩美々",
+    "text": "ご名答ー",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103209/4901032090080"
+  },
+  {
+    "id": 4901032090090,
+    "speaker": "咲耶",
+    "text": "さすがだね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "join",
+    "voice": "special_communications/490103209/4901032090090"
+  },
+  {
+    "label": "join",
+    "textFrame": "off",
+    "bg": "00690",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032090100,
+    "speaker": "結華",
+    "text": "さっき、この部屋を開ける前にさ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103209/4901032090100"
+  },
+  {
+    "id": 4901032090110,
+    "speaker": "結華",
+    "text": "『Ａ』は本棟のマスターキーを持っている、って\r\nお弟子さん、言ってたよね？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103209/4901032090110"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00732"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4901032090120,
+    "speaker": "咲耶",
+    "text": "昨日の放送で、『Ａ』は\r\n自分の胸ポケットに金庫の鍵がある……とも言っていた",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103209/4901032090120"
+  },
+  {
+    "id": 4901032090130,
+    "speaker": "恋鐘",
+    "text": "そん鍵がなか",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103209/4901032090130"
+  },
+  {
+    "id": 4901032090140,
+    "speaker": "恋鐘",
+    "text": "……ってことは、\r\n犯人が持っていった、っていうことやけん……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103209/4901032090140"
+  },
+  {
+    "id": 4901032090150,
+    "speaker": "摩美々",
+    "text": "……ピンチじゃーん",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103209/4901032090150"
+  },
+  {
+    "id": 4901032090160,
+    "speaker": "霧子",
+    "text": "うん……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103209/4901032090160"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00690"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "弟子",
+    "text": "……ロビーに戻りましょう\r\nそろそろ向こうでも、聞き取りが終わっていそうです",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

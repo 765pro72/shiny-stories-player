@@ -1,0 +1,521 @@
+[
+  {
+    "id": 3013002020010,
+    "speaker": "夏葉",
+    "text": "おはよう",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "bgm": "001",
+    "voice": "produce_events/301300202/3013002020010",
+    "charCategory": "stand_fix"
+  },
+  {
+    "id": 3013002020020,
+    "speaker": "樹里",
+    "text": "おぉー、噂をすれば……っとと",
+    "charAnim1": "wait2",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_smile",
+    "charAnim3Loop": false,
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "011",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "voice": "produce_events/301300202/3013002020020",
+    "charCategory": "stand_fix"
+  },
+  {
+    "id": 3013002020030,
+    "speaker": "凛世",
+    "text": "夏葉さん……\r\nおはようございます……",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "012",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "voice": "produce_events/301300202/3013002020030",
+    "charCategory": "stand_fix"
+  },
+  {
+    "id": 3013002020040,
+    "speaker": "夏葉",
+    "text": "どうしたの？\r\nふたりとも、私の足なんて見つめて",
+    "charAnim1": "think",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020040"
+  },
+  {
+    "id": 3013002020050,
+    "speaker": "樹里",
+    "text": "別になんでもねぇよ",
+    "charAnim1": "shy2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020050"
+  },
+  {
+    "id": 3013002020060,
+    "speaker": "凛世",
+    "text": "はい……\r\nハイヒールとは……どのような心地のするものかと……",
+    "charAnim1": "wait2",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_wait",
+    "charAnim3Loop": false,
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020060"
+  },
+  {
+    "id": 3013002020070,
+    "speaker": "凛世",
+    "text": "そうしたお話を……しておりました……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020070"
+  },
+  {
+    "id": 3013002020080,
+    "speaker": "夏葉",
+    "text": "だったら、挑戦してみましょうか\r\n今度、ふたりに合いそうなものを持ってくるわ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020080"
+  },
+  {
+    "id": 3013002020090,
+    "speaker": "樹里",
+    "text": "いや、わりーしいいよ！\r\n別に履きたいわけじゃねぇし",
+    "charAnim1": "shy1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020090"
+  },
+  {
+    "id": 3013002020100,
+    "speaker": "夏葉",
+    "text": "いえ、履けるようになっておくべきよ\r\nきっと衣装で必要になるもの！　任せてちょうだい！",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020100"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3013002020110,
+    "speaker": "夏葉",
+    "text": "はい、これ",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "009",
+    "voice": "produce_events/301300202/3013002020110"
+  },
+  {
+    "id": 3013002020120,
+    "speaker": "樹里",
+    "text": "ん？　でかい箱だな",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020120"
+  },
+  {
+    "id": 3013002020130,
+    "speaker": "凛世",
+    "text": "それは……\r\nハイヒール……でしょうか……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020130"
+  },
+  {
+    "id": 3013002020140,
+    "speaker": "夏葉",
+    "text": "そうよ、ごめんなさいね。いいものを探していたら\r\n思ったより時間がかかってしまって",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020140"
+  },
+  {
+    "id": 3013002020150,
+    "speaker": "樹里",
+    "text": "な、なんか悪いな\r\n……それじゃあ、開けるぞ",
+    "charAnim1": "shy2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020150"
+  },
+  {
+    "id": 3013002020160,
+    "speaker": "夏葉",
+    "text": "ふふっ、気に入ると思うわ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020160"
+  },
+  {
+    "id": 3013002020170,
+    "speaker": "樹里",
+    "text": "……って、オイ！？\r\nふざけてんのか！",
+    "charAnim1": "surp1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020170"
+  },
+  {
+    "id": 3013002020180,
+    "speaker": "樹里",
+    "text": "こんなかかとの高いヒール、見たことねーよ！",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020180"
+  },
+  {
+    "id": 3013002020190,
+    "speaker": "夏葉",
+    "text": "それはそうよ！　\r\n私が知る限りこれより高いヒールは存在しないもの！",
+    "charAnim1": "think",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020190"
+  },
+  {
+    "id": 3013002020200,
+    "speaker": "樹里",
+    "text": "知るか！　ていうか、初めてなんだぞ！？\r\nもっと履きやすいのにしてくれよ！",
+    "charAnim1": "anger2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020200"
+  },
+  {
+    "id": 3013002020210,
+    "speaker": "夏葉",
+    "text": "……それは違うわ。最初だからこそ\r\nチャレンジする価値があるの",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020210"
+  },
+  {
+    "id": 3013002020220,
+    "speaker": "夏葉",
+    "text": "さぁ、履いてみましょう！\r\nこれに慣れれば、どんなヒールでも履きこなせるわよ！",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020220"
+  },
+  {
+    "id": 3013002020230,
+    "speaker": "樹里",
+    "text": "その前に挫折するだろうが！",
+    "charAnim1": "anger3",
+    "charLipAnim": "lip_anger",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020230"
+  },
+  {
+    "id": 3013002020240,
+    "speaker": "夏葉",
+    "text": "樹里……アイドルとして\r\n高いステージに立ちたくはないの？",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020240"
+  },
+  {
+    "id": 3013002020250,
+    "speaker": "夏葉",
+    "text": "とにかく、１度履いてみなさい？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020250"
+  },
+  {
+    "id": 3013002020260,
+    "speaker": "樹里",
+    "text": "ワケが分かんねぇけど……あぁーもう！　仕方ねぇ！",
+    "charAnim1": "anger1",
+    "charLipAnim": "lip_anger",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020260"
+  },
+  {
+    "id": 3013002020270,
+    "speaker": "夏葉",
+    "text": "……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020270"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 3013002020280,
+    "speaker": "樹里",
+    "text": "……って、やっぱり履けねぇよ！\r\nなぁ、凛世も何か言ってやれよ",
+    "charAnim1": "shy1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020280"
+  },
+  {
+    "id": 3013002020290,
+    "speaker": "凛世",
+    "text": "そうですね……\r\n背筋が……伸びるようです……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020290"
+  },
+  {
+    "id": 3013002020300,
+    "speaker": "夏葉",
+    "text": "おぉ……\r\nやるわね……歩くことはできるの？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020300"
+  },
+  {
+    "id": 3013002020310,
+    "speaker": "凛世",
+    "text": "はい……\r\n快適で……ございます……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020310"
+  },
+  {
+    "id": 3013002020320,
+    "speaker": "夏葉",
+    "text": "うーん、何かコツとかあるのかしら……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020320"
+  },
+  {
+    "id": 3013002020330,
+    "speaker": "樹里",
+    "text": "……凛世には言葉もねぇが。夏葉……\r\nもしかして……履けねぇんじゃねぇのか？",
+    "charAnim1": "anger2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020330"
+  },
+  {
+    "id": 3013002020340,
+    "speaker": "夏葉",
+    "text": "そんなことないわ\r\nただ……歩きづらいのよね",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020340"
+  },
+  {
+    "id": 3013002020350,
+    "speaker": "樹里",
+    "text": "そんなの勧めんなよ！",
+    "charAnim1": "anger3",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020350"
+  },
+  {
+    "id": 3013002020360,
+    "speaker": "夏葉",
+    "text": "だからこそ、この機会にマスターして\r\n高みから見える素晴らしい景色を……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020360"
+  },
+  {
+    "id": 3013002020370,
+    "speaker": "樹里",
+    "text": "はぁ……勝手にやってろ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020370"
+  },
+  {
+    "id": 3013002020380,
+    "speaker": "凛世",
+    "text": "高みから見える……\r\n素晴らしい景色……",
+    "charAnim1": "smile3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020380"
+  },
+  {
+    "id": 3013002020390,
+    "speaker": "凛世",
+    "text": "ふふ……凛世には……\r\nいつもの景色のように……感じられます……",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300202/3013002020390"
+  },
+  {
+    "label": "end"
+  }
+]

@@ -1,0 +1,269 @@
+[
+  {
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですか……参加はできませんでしたか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001080010,
+    "speaker": "はづき",
+    "text": "……不参加って連絡が来たとき、\r\n聞き間違いかと思いました",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700600108/7901001080010"
+  },
+  {
+    "id": 7901001080020,
+    "speaker": "はづき",
+    "text": "私には、どうして彼女が参加できないのか\r\nちっともわかりません……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700600108/7901001080020"
+  },
+  {
+    "id": 7902001080010,
+    "speaker": "社長",
+    "text": "その気持ちはわかるが……これが結果なんだ\r\n受け入れるより他にあるまい",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700600108/7902001080010"
+  },
+  {
+    "id": 7901001080030,
+    "speaker": "はづき",
+    "text": "……私、きっとあの子のファンだったんですね\r\nだからこの結果が、悔しくてたまらないんです……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700600108/7901001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺もです。彼女のプロデューサーである俺自身が、\r\n誰よりも彼女のファンでしたから",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……社長\r\n俺、彼女に会いに行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001080020,
+    "speaker": "社長",
+    "text": "ああ、そうするといい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700600108/7902001080020"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "charType": "characters",
+    "charId": "006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 7006001080010,
+    "speaker": "咲耶",
+    "text": "プロデューサー。どうだったんだい？\r\n最終審査の結果は……",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700600108/7006001080010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "最終審査には……残念ながら通過できなかった",
+    "charAnim1": "surp2",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7006001080020,
+    "speaker": "咲耶",
+    "text": "そうか……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700600108/7006001080020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "咲耶はここまでよくがんばった\r\nこれは……俺の力不足だ",
+    "charAnim2": "face_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7006001080030,
+    "speaker": "咲耶",
+    "text": "プロデューサーのせいじゃないさ\r\nそんなに自分を責めないでほしい",
+    "charAnim1": "wait5",
+    "charAnim3": "no",
+    "charLipAnim": "lip_smile",
+    "charAnim3Loop": false,
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700600108/7006001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "咲耶……",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7006001080040,
+    "speaker": "咲耶",
+    "text": "『W.I.N.G.』の舞台に立てなかったことは、すごく悔しい\r\nでも……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700600108/7006001080040"
+  },
+  {
+    "id": 7006001080050,
+    "speaker": "咲耶",
+    "text": "もう少しで手が届くところまで連れてきてくれた\r\nプロデューサーには感謝してるんだ",
+    "charAnim1": "wait5",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700600108/7006001080050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺も、咲耶と一緒にここまで来られたこと\r\n誇りに思っている……",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『W.I.N.G.』には出場できなかったが\r\n咲耶は十分、魅力的なアイドルだよ",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7006001080060,
+    "speaker": "咲耶",
+    "text": "フフ、ありがとう。プロデューサー\r\nこれからも、よろしく頼むよ！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700600108/7006001080060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ\r\nこれからも一緒に、頑張っていこうな！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end"
+  }
+]

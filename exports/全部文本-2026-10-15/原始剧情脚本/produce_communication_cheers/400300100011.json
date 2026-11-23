@@ -1,0 +1,118 @@
+[
+  {
+    "charType": "characters",
+    "charId": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charLabel": "meguru",
+    "charCategory": "stand_costume"
+  },
+  {
+    "charLabel": "meguru",
+    "bgm": "019",
+    "bg": "00007"
+  },
+  {
+    "id": 4003001000110010,
+    "textFrame": "001",
+    "speaker": "めぐる",
+    "text": "そ、そろそろ時間だねっ！\r\nよーしっ、い、行ってくるよー！",
+    "textCtrl": "p",
+    "charLabel": "meguru",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "voice": "produce_communication_cheers/400300100011/4003001000110010"
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "（明るく振る舞っているが、\r\n少し緊張してるみたいだな……）",
+    "textCtrl": "l",
+    "charLabel": "meguru"
+  },
+  {
+    "select": "考えすぎるな",
+    "nextLabel": "4003001000111"
+  },
+  {
+    "select": "落ち着いていこう",
+    "nextLabel": "4003001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "charLabel": "meguru",
+    "select": "楽しんでこい！",
+    "nextLabel": "4003001000113"
+  },
+  {
+    "id": 4003001000110020,
+    "label": "4003001000111",
+    "textFrame": "001",
+    "speaker": "めぐる",
+    "text": "……それでいいのかな？\r\nでも、プロデューサーが言うなら、そうしてみるね！",
+    "textCtrl": "p",
+    "charLabel": "meguru",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "voice": "produce_communication_cheers/400300100011/4003001000110020"
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "（戸惑ってはいるけど、\r\n少しは緊張がほぐれたみたいだ）",
+    "textCtrl": "p",
+    "charLabel": "meguru",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4003001000110030,
+    "label": "4003001000112",
+    "textFrame": "001",
+    "speaker": "めぐる",
+    "text": "そ、そうだね！　落ち着いて……\r\nあれ？　どうすれば落ち着けるのかな……",
+    "textCtrl": "p",
+    "charLabel": "meguru",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "voice": "produce_communication_cheers/400300100011/4003001000110030"
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "（そわそわしている……\r\nうまく励ませなかったようだ）",
+    "textCtrl": "p",
+    "charLabel": "meguru",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4003001000110040,
+    "label": "4003001000113",
+    "textFrame": "001",
+    "speaker": "めぐる",
+    "text": "……そっか！　そうだよね！\r\n楽しまないと損だよね！　よーしっ！",
+    "textCtrl": "p",
+    "charLabel": "meguru",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "voice": "produce_communication_cheers/400300100011/4003001000110040"
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "（いつもの調子を取り戻したみたいだ）",
+    "textCtrl": "p",
+    "charLabel": "meguru",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

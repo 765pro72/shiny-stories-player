@@ -1,0 +1,252 @@
+[
+  {
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "speaker": "はづき",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 7901001040010,
+    "speaker": "はづき",
+    "text": "残念ですね……。一次審査を突破できたんですし、\r\nこの調子で、と思ったんですけど",
+    "charAnim1": "sad1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700600104/7901001040010"
+  },
+  {
+    "id": 7901001040020,
+    "speaker": "はづき",
+    "text": "現実は、なかなか厳しいですね……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700600104/7901001040020"
+  },
+  {
+    "id": 7902001040010,
+    "speaker": "社長",
+    "text": "しかし、新人アイドルと新人プロデューサーにしては、\r\n悪くない結果だった",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700600104/7902001040010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、まだまだ先にも行けたと思うんです\r\n俺にもっと力があれば……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001040020,
+    "speaker": "社長",
+    "text": "評価はしているが、弱音を聞きたいわけではないぞ",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700600104/7902001040020"
+  },
+  {
+    "id": 7902001040030,
+    "speaker": "社長",
+    "text": "力が足りないのなら、彼女とともに\r\nこれから成長していけばいいだけのことだ",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700600104/7902001040030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうですね\r\n彼女に、会いに行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001040040,
+    "speaker": "社長",
+    "text": "ああ、行ってこい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700600104/7902001040040"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "charType": "characters",
+    "charId": "006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 7006001040010,
+    "speaker": "咲耶",
+    "text": "プロデューサー\r\n第２審査の結果、もう出たのかい？",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700600104/7006001040010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ……\r\n残念だが、今回は駄目だったよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7006001040020,
+    "speaker": "咲耶",
+    "text": "そうか……\r\n第１審査を通過して、少し油断していたのかもしれないな",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700600104/7006001040020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、咲耶はよくがんばってくれたよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "この間の撮影の仕事でも、感じていたんだ\r\n咲耶は、アイドルとして着実に成長しているぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7006001040030,
+    "speaker": "咲耶",
+    "text": "クス。ありがとう、プロデューサー",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700600104/7006001040030"
+  },
+  {
+    "id": 7006001040040,
+    "speaker": "咲耶",
+    "text": "私を応援してくれるファンのためにも\r\nこんなところで落ち込んでいられないね",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700600104/7006001040040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな\r\n咲耶はまだまだこれからだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7006001040050,
+    "speaker": "咲耶",
+    "text": "ああ、私もそのつもりだよ",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700600104/7006001040050"
+  },
+  {
+    "id": 7006001040060,
+    "speaker": "咲耶",
+    "text": "ファンのみんなを笑顔にできるように\r\nレッスンも仕事も、今まで以上にがんばろう！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700600104/7006001040060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あぁ、それでこそ咲耶だ！\r\n一緒にがんばっていこうな！",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end"
+  }
+]

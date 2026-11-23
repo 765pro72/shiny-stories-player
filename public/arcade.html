@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <link rel="stylesheet" href="/fonts.css">
+  <script src="/interface-font-core.js"></script>
+  <script src="/interface-font.js"></script>
+  <meta charset="utf-8">
+  <link rel="icon" href="/app-icon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>283 游乐厅 · 闪耀色彩</title>
+  <link rel="stylesheet" href="interface.css">
+  <link rel="stylesheet" href="navigation.css">
+  <link rel="stylesheet" href="liquid-glass.css">
+  <link rel="stylesheet" href="layout-refinements.css">
+  <link rel="stylesheet" href="arcade.css">
+  <link rel="stylesheet" href="/ui-upgrade.css">
+  <script src="navigation.js"></script>
+  <script src="interface.js" defer></script>
+  <script src="arcade-ai-nn.js" defer></script>
+  <script src="arcade.js" defer></script>
+</head>
+<body class="page-arcade">
+  <div class="window-drag-handle" aria-hidden="true"></div>
+  <header class="site-header">
+    <a href="index.html" class="site-brand"><b>283</b><span>闪耀色彩<small>STORIES &amp; MEMORIES</small></span></a>
+    <div class="header-drag-space" aria-hidden="true"></div>
+    <nav class="site-nav" aria-label="模块导航">
+      <a href="index.html">事务所</a>
+      <a href="guide.html">剧情馆</a>
+      <a href="card-gallery.html">卡片相册</a>
+      <a href="voice-gallery.html">语音馆</a>
+      <a href="model-picker.html">衣装室</a>
+      <a href="music.html">音乐馆</a>
+      <a href="arcade.html" class="active" aria-current="page">游乐厅</a>
+      <a href="custom-story.html">怪文书</a>
+    </nav>
+  </header>
+
+  <main class="arcade-shell">
+    <!-- Top Lounge Switcher & Global Controls -->
+    <header class="lounge-bar">
+      <div class="lounge-brand">
+        <span class="lounge-badge">283 VIP LOUNGE</span>
+        <h1>283 游乐厅</h1>
+      </div>
+
+      <nav class="lounge-tabs" role="tablist" aria-label="小游戏切换">
+        <button type="button" class="lounge-tab active" data-game="ddz" role="tab">🃏 斗地主</button>
+        <button type="button" class="lounge-tab" data-game="guandan" role="tab">🀄 掼蛋 2v2</button>
+        <button type="button" class="lounge-tab" data-game="daifugo" role="tab">👑 大富豪</button>
+        <button type="button" class="lounge-tab" data-game="voicequiz" role="tab">🎙 听音辨人</button>
+        <button type="button" class="lounge-tab" data-game="memory" role="tab">✨ 卡面翻牌</button>
+      </nav>
+
+      <div class="lounge-global-ctrls">
+        <label class="lounge-diff-wrap" title="AI 思考深度与配合策略">
+          <span>难度</span>
+          <select id="arcDifficulty" class="lounge-select">
+            <option value="casual">🌱 休闲</option>
+            <option value="pro" selected>🔥 进阶</option>
+            <option value="master">💎 大师</option>
+          </select>
+        </label>
+        <label class="lounge-voice-wrap" title="播放小偶像官方原声语音">
+          <input type="checkbox" id="arcVoiceEnabled" checked>
+          <span>语音</span>
+          <input type="range" id="arcVoiceVolume" class="lounge-vol-slider" min="0" max="100" value="78" title="打牌语音音量" aria-label="打牌语音音量">
+        </label>
+        <button type="button" class="hud-btn lounge-fs-btn" id="btnArcadeFullscreen" title="全屏 / 退出全屏">⛶ 全屏</button>
+      </div>
+    </header>
+
+    <!-- ═══ UNIFIED LUXURY CARD TABLE (斗地主 / 掼蛋 / 大富豪) ═══ -->
+    <section class="arcade-panel active" id="panel-cardtable">
+      <div class="casino-table" id="casinoTable" data-mode="ddz">
+        <!-- Table Inner Rail -->
+        <div class="table-felt-rail" aria-hidden="true"></div>
+
+        <!-- Top HUD Bar inside table -->
+        <div class="table-hud">
+          <div class="hud-left">
+            <span class="hud-chip mode-chip" id="ctModeChip">283 斗地主</span>
+            <span class="hud-chip" id="ctStatusChip">准备发牌…</span>
+            <span class="hud-chip accent" id="ctSpecialChip" hidden></span>
+            <span class="hud-chip gold" id="ctScoreChip">胜场 0</span>
+          </div>
+          <div class="hud-right">
+            <div class="ddz-kitty-box" id="ctKittyBox" hidden>
+              <span class="kitty-label">底牌</span>
+              <div class="kitty-cards" id="ctKittyCards"></div>
+            </div>
+            <button type="button" class="hud-btn" id="btnCtTracker" title="开启或关闭记牌器">🧮 记牌器</button>
+            <button type="button" class="hud-btn" id="btnCtSwap">换对手</button>
+            <button type="button" class="hud-btn" id="btnCtFullscreen" title="全屏 / 退出全屏">⛶ 全屏</button>
+            <button type="button" class="hud-btn primary" id="btnCtRestart">新开一局</button>
+          </div>
+        </div>
+
+        <!-- Pro Card Counter / Tracker Strip (记牌器，可一键关掉) -->
+        <div class="ct-tracker-bar" id="ctTrackerBar" hidden></div>
+
+        <!-- Spatial Arena: Top / Left / Center / Right -->
+        <div class="table-arena">
+          <!-- Top Seat (Partner in Guandan / Seat 2 in Daifugo / Hidden in 3P DDZ) -->
+          <div class="seat-slot seat-top" id="seatTop"></div>
+
+          <!-- Left Seat -->
+          <div class="seat-slot seat-left" id="seatLeft"></div>
+
+          <!-- Center Stage (Last Play + Bidding Controls + FX Callout) -->
+          <div class="table-center">
+            <div class="center-meta" id="ctCenterMeta">点击「新开一局」开始对战</div>
+            <div class="center-cards" id="ctCenterCards"></div>
+
+            <!-- Bidding Overlay for Dou Dizhu -->
+            <div class="bid-bar" id="ctBidBar" hidden>
+              <button type="button" class="act-btn ghost" id="btnBidPass">不叫</button>
+              <button type="button" class="act-btn gold" id="btnBidCall">叫地主 (×2)</button>
+            </div>
+
+            <!-- Guandan Tribute / Return-Tribute Overlay (进贡 / 还贡) -->
+            <div class="bid-bar tribute-bar" id="ctTributeBar" hidden>
+              <button type="button" class="act-btn gold" id="btnTributeConfirm">🎁 确认还贡</button>
+              <button type="button" class="act-btn ghost" id="btnTributeAuto">⚡ 智能选一张还贡</button>
+            </div>
+
+            <!-- Next Round / Level-Up Action Bar (Guandan & Post-Round) -->
+            <div class="bid-bar" id="ctNextRoundBar" hidden>
+              <button type="button" class="act-btn gold" id="btnCtNextRound">▶ 继续下一局</button>
+            </div>
+
+            <!-- Big Dramatic FX Banner -->
+            <div class="table-fx-banner" id="ctFxBanner" hidden></div>
+          </div>
+
+          <!-- Right Seat -->
+          <div class="seat-slot seat-right" id="seatRight"></div>
+        </div>
+
+        <!-- Bottom Player Zone -->
+        <div class="player-dock">
+          <div class="player-bar">
+            <div class="player-id">
+              <span class="player-role-badge" id="ctMyRole">制作人</span>
+              <span class="player-count">剩余 <b id="ctMyCount">0</b> 张</span>
+              <span class="player-sel-hint" id="ctSelHint"></span>
+            </div>
+            <div class="player-actions">
+              <div class="stamp-bar" aria-label="发送表情">
+                <button type="button" class="stamp-btn" data-stamp="😄 哈哈好牌！" title="开心">😄</button>
+                <button type="button" class="stamp-btn" data-stamp="🔥 放马过来！" title="挑衅">🔥</button>
+                <button type="button" class="stamp-btn" data-stamp="💦 留条活路…" title="求饶">💦</button>
+                <button type="button" class="stamp-btn" data-stamp="👍 打得漂亮！" title="点赞">👍</button>
+              </div>
+              <button type="button" class="act-btn sf-btn" id="btnCtPinSf" hidden title="把选中的同花顺（或自动识别手牌里的同花顺）放进旁边备选区，避免误拆">🌈 挑出同花顺</button>
+              <button type="button" class="act-btn bomb-btn" id="btnCtPinBomb" hidden title="把选中的炸弹（或自动识别手牌里的四炸及以上/天王炸）放进备选区，可单独挑牌退回手牌">💣 挑出炸弹</button>
+              <button type="button" class="act-btn ghost" id="btnCtClearSel">重选</button>
+              <button type="button" class="act-btn ghost" id="btnCtHint">💡 提示</button>
+              <button type="button" class="act-btn ghost" id="btnCtPass">不出</button>
+              <button type="button" class="act-btn primary" id="btnCtPlay">出牌</button>
+            </div>
+          </div>
+          <!-- Guandan Straight Flush Reserve Tray (同花顺备选区) -->
+          <div class="sf-reserve-tray" id="ctSfReserve" hidden></div>
+          <div class="card-fan" id="ctMyHand"></div>
+        </div>
+      </div>
+      <p class="table-rules-line" id="ctRulesLine"></p>
+    </section>
+
+    <!-- ═══ GAME 4: VOICE QUIZ (听音辨偶像) ═══ -->
+    <section class="arcade-panel" id="panel-voicequiz">
+      <div class="vq-card-shell">
+        <div class="vq-stats">
+          <span class="hud-chip">连击 <b id="vqStreak">0</b></span>
+          <span class="hud-chip gold">最高 <b id="vqBest">0</b></span>
+          <span class="hud-chip">战绩 <b id="vqRatio">0 / 0</b></span>
+        </div>
+        <div class="vq-stage">
+          <button type="button" class="vq-disc" id="btnVqReplay" aria-label="重播语音">
+            <span class="vq-disc-ic">▶</span>
+            <span class="vq-disc-txt" id="vqPlayLabel">聆听语音</span>
+          </button>
+          <p class="vq-quote" id="vqQuote">聆听这段 283 事务所原声，猜猜是谁的声音？</p>
+        </div>
+        <div class="vq-options" id="vqOptions"></div>
+        <div class="vq-foot">
+          <button type="button" class="act-btn primary" id="btnVqNext" hidden>下一题 →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ GAME 5: CARD MEMORY MATCH (闪耀卡面翻牌) ═══ -->
+    <section class="arcade-panel" id="panel-memory">
+      <div class="mm-bar">
+        <div class="vq-stats">
+          <span class="hud-chip">步数 <b id="mmMoves">0</b></span>
+          <span class="hud-chip">配对 <b id="mmPairs">0 / 6</b></span>
+          <span class="hud-chip gold">用时 <b id="mmTime">00:00</b></span>
+        </div>
+        <div class="hud-right">
+          <select id="mmDiff" class="lounge-select" aria-label="翻牌难度">
+            <option value="6" selected>4×3 轻松（6对）</option>
+            <option value="8">4×4 标准（8对）</option>
+            <option value="12">6×4 专家（12对）</option>
+          </select>
+          <button type="button" class="hud-btn primary" id="btnMmRestart">重新洗牌</button>
+        </div>
+      </div>
+      <div class="mm-grid" id="mmGrid"></div>
+    </section>
+  </main>
+</body>
+</html>

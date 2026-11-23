@@ -1,0 +1,86 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001"
+  },
+  {
+    "id": 202500100310010,
+    "speaker": "美琴",
+    "text": "今やってる曲、\r\nもっと完璧に歌いたいの",
+    "charAnim1": "think2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "025",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications_promises/20250010031/202500100310010"
+  },
+  {
+    "id": 202500100310020,
+    "speaker": "美琴",
+    "text": "二週間後、ボーカルレッスン入れてもいいかな？",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications_promises/20250010031/202500100310020"
+  },
+  {
+    "select": "いいよ",
+    "nextLabel": "agree"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "ごめん",
+    "nextLabel": "disagree"
+  },
+  {
+    "id": 202500100990010,
+    "label": "agree",
+    "speaker": "美琴",
+    "text": "そう、ありがとう",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_communications_promises/20250010031/202500100990010"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 202500100990020,
+    "label": "disagree",
+    "speaker": "美琴",
+    "text": "そっか、わかった",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_communications_promises/20250010031/202500100990020"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

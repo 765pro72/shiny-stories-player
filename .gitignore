@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Android build outputs and SDK/NDK toolchain
+android-toolchain/
+android/build/
+
+# Runtime and offline mirror cache (hundreds of thousands of files)
+cache/
+cache-4k/
+cache-sr/
+upscale-work/
+upscale-pilot/
+tools/upscaler/
+下载资源/
+
+# Build folders and releases
+dist/
+dist-smoke/
+
+# Temporary test profiles and scratch files
+tmp/
+.workbuddy/
+scratch/
+scratch_tmp.wav
+*.png
+*.log
+release-test-profile/
+release-home-test-profile/
+update-test/
+work/
+reader-state.json
+
+tools/whisper/*.bin
+research/client-evidence.json
+translation-work/qwen/source.json

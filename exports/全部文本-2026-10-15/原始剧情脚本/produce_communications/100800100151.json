@@ -1,0 +1,163 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "（あ……霧子、朝から勉強なんて偉いな\r\nそれに、なんだかうれしそうだ）",
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "008",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 1008001001510010,
+    "speaker": "霧子",
+    "text": "あ、プロデューサーさん……\r\n新しい文房具を……買ったんです……！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100151/1008001001510010"
+  },
+  {
+    "id": 1008001001510020,
+    "speaker": "霧子",
+    "text": "そしたら……\r\nちょっとお勉強が、楽しくて……！",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100151/1008001001510020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（新しい文房具で勉強か……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "霧子はすごく\r\n勉強が得意そうだ",
+    "nextLabel": "1008001001511"
+  },
+  {
+    "select": "文房具が増えてくと\r\nワクワクするよな",
+    "nextLabel": "1008001001512"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "新品の文房具使うの\r\n躊躇っちゃうよな",
+    "nextLabel": "1008001001513"
+  },
+  {
+    "id": 1008001001510030,
+    "label": "1008001001511",
+    "speaker": "霧子",
+    "text": "と、得意ってほどじゃ……ないんですけど……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100151/1008001001510030"
+  },
+  {
+    "id": 1008001001510040,
+    "speaker": "霧子",
+    "text": "病院の中庭でお勉強をするのは……\r\n風が気持ちよくって……好きです……",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100151/1008001001510040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001001510050,
+    "label": "1008001001512",
+    "speaker": "霧子",
+    "text": "プ、プロデューサーさんも……\r\nワクワク……するんですね……",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100151/1008001001510050"
+  },
+  {
+    "id": 1008001001510060,
+    "speaker": "霧子",
+    "text": "……わ、わかります……！",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100151/1008001001510060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001001510070,
+    "label": "1008001001513",
+    "speaker": "霧子",
+    "text": "はい……新品の消しゴムさんとかは……\r\n勇気がいります……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100151/1008001001510070"
+  },
+  {
+    "id": 1008001001510080,
+    "speaker": "霧子",
+    "text": "そ、そういうときは……\r\nつい……目を……瞑っちゃいます……",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100151/1008001001510080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

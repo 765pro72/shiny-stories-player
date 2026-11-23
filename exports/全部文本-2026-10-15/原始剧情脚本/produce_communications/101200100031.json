@@ -1,0 +1,157 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "rinze",
+    "charType": "characters",
+    "charId": "012",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "凛世は、着物が多いよな\r\nよく似合ってるよ",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1012001000310010,
+    "speaker": "凛世",
+    "text": "……ありがとうございます\r\n着なれて……おりますので……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100031/1012001000310010"
+  },
+  {
+    "id": 1012001000310020,
+    "speaker": "凛世",
+    "text": "プロデューサーさま……\r\n洋服のほうが……よいでしょうか……？",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100031/1012001000310020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うーん、そうだな……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "洋服も似合うと思う",
+    "nextLabel": "1012001000311"
+  },
+  {
+    "select": "着物が一番だ",
+    "nextLabel": "1012001000312"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "凛世なら、\r\n何を着ても大丈夫",
+    "nextLabel": "1012001000313"
+  },
+  {
+    "id": 1012001000310030,
+    "label": "1012001000311",
+    "speaker": "凛世",
+    "text": "ふふ……",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_shy",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100031/1012001000310030"
+  },
+  {
+    "id": 1012001000310040,
+    "speaker": "凛世",
+    "text": "プロデューサーさまが……おっしゃるのでしたら……\r\nもう少し……調えてみます……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100031/1012001000310040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1012001000310050,
+    "label": "1012001000312",
+    "speaker": "凛世",
+    "text": "ありがとうございます\r\nプロデューサーさま……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_shy",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100031/1012001000310050"
+  },
+  {
+    "id": 1012001000310060,
+    "speaker": "凛世",
+    "text": "凛世にも……\r\nこれが一番でございます……",
+    "charLipAnim": "lip_shy",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100031/1012001000310060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1012001000310070,
+    "label": "1012001000313",
+    "speaker": "凛世",
+    "text": "プロデューサーさま……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100031/1012001000310070"
+  },
+  {
+    "id": 1012001000310080,
+    "speaker": "凛世",
+    "text": "プロデューサーさまの\r\nお好きな服を……着てみたいのですが……",
+    "charLipAnim": "lip_sad",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100031/1012001000310080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

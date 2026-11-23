@@ -1,0 +1,884 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00087",
+    "bgm": "0046",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0134",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1015004040010,
+    "speaker": "甜花",
+    "text": "『今日\r\nレッスン行くことにしました』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040010"
+  },
+  {
+    "id": 1015004040020,
+    "speaker": "甜花",
+    "text": "『今から２時間くらい』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040020"
+  },
+  {
+    "textFrame": "off",
+    "se": "0134",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1015004040030,
+    "speaker": "甜花",
+    "text": "『プロデューサーさんは？』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040030"
+  },
+  {
+    "textFrame": "off",
+    "se": "0134",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1015004040040,
+    "speaker": "甜花",
+    "text": "『来る？』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040040"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00018",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『すまん！　行けなさそうだ\r\n今日は仕事が立て込んでて』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0134",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1015004040050,
+    "speaker": "甜花",
+    "text": "『了解』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040050"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 1600
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（──自主レッスンか……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（甜花、頑張ってるな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0461",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『ワンマンライブに向けて\r\nあと少し』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『がんば』──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……──",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "0000"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00014",
+    "fg": "004521",
+    "bgEffect": "fade",
+    "fgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 800,
+    "bgEffectTime": 800,
+    "fgEffectTime": 800
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 700
+  },
+  {
+    "id": 1015004040060,
+    "label": "回想",
+    "speaker": "甜花",
+    "text": "……甜花……\r\nもう、頑張ってる……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040060"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 300
+  },
+  {
+    "textFrame": "off",
+    "bg": "00032",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "015",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1015004040070,
+    "label": "回想",
+    "speaker": "甜花",
+    "text": "……だから",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040070"
+  },
+  {
+    "id": 1015004040080,
+    "label": "回想",
+    "speaker": "甜花",
+    "text": "甜花は、\r\nこれ以上『頑張れ』って、言えない……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040080"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "fg": "fade_out",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000,
+    "fgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "fg": "off",
+    "bgm": "0082",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……甜花が頑張ってることは、わかってるんだ）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……わかってるからこそ\r\n頑張る甜花を心から応援したいと思ってるのに）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──頑張れ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（これじゃあ\r\n甜花には、伝わらないのか……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 1600
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00014",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1600
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0000",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "070",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1015004040090,
+    "speaker": "甜花",
+    "text": "──……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040090"
+  },
+  {
+    "id": 1015004040100,
+    "speaker": "甜花",
+    "text": "そっか……\r\n今日は……プロデューサーさん、来ないんだ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101500404/1015004040100"
+  },
+  {
+    "id": 1015004040110,
+    "speaker": "甜花",
+    "text": "…………",
+    "charAnim2": "face_close",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040110"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1015004040120,
+    "speaker": "甜花",
+    "text": "（──そうだ……）",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101500404/1015004040120"
+  },
+  {
+    "id": 1015004040130,
+    "speaker": "甜花",
+    "text": "（なーちゃんと、千雪さんに……\r\n連絡でも、しよ……）",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040130"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0461",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1015004040140,
+    "speaker": "甜花",
+    "text": "……──",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040140"
+  },
+  {
+    "textFrame": "off",
+    "se": "0461",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1015004040150,
+    "speaker": "甜花",
+    "text": "（──送信）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040150"
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1015004040160,
+    "speaker": "甜花",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101500404/1015004040160"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0461",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1015004040170,
+    "speaker": "甜花",
+    "text": "（『#グッドネムレナイト』……）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040170"
+  },
+  {
+    "id": 1015004040180,
+    "speaker": "甜花",
+    "text": "（──検索）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040180"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00152",
+    "bgEffect": "fade",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "off",
+    "text": "『甜花ちゃんの声、癒された～～』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1015004040190,
+    "speaker": "甜花",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040190"
+  },
+  {
+    "textFrame": "off",
+    "se": "0280",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "off",
+    "text": "『どのお手紙にも真剣に答える甜花ちゃんは\r\nやさしいしかわいい』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "off",
+    "text": "『再復活希望！！！！』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1015004040200,
+    "speaker": "甜花",
+    "text": "……にへへ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040200"
+  },
+  {
+    "textFrame": "off",
+    "se": "0280",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "off",
+    "text": "『グッド・ネムレナイトのせいで\r\nワンマンライブまで眠れん』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00014",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1015004040210,
+    "speaker": "甜花",
+    "text": "……ワンマン、ライブ……──",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101500404/1015004040210"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0134",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1015004040220,
+    "speaker": "甜花",
+    "text": "──！\r\n……あ、なーちゃんから……！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101500404/1015004040220"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1015004040230,
+    "speaker": "甜花",
+    "text": "えと……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040230"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1015004040240,
+    "speaker": "甜花",
+    "text": "（ひとりレッスン、さみしくない、よ──）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0377",
+    "voice": "produce_events/101500404/1015004040240"
+  },
+  {
+    "textFrame": "off",
+    "se": "0134",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1015004040250,
+    "speaker": "甜花",
+    "text": "わ……\r\n千雪さんも……！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101500404/1015004040250"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1015004040260,
+    "speaker": "甜花",
+    "text": "（甜花も、\r\n３人で、あわせるの、楽しみ──）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0377",
+    "voice": "produce_events/101500404/1015004040260"
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1015004040270,
+    "speaker": "甜花",
+    "text": "──……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040270"
+  },
+  {
+    "charAnim1": "smile2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1015004040280,
+    "speaker": "甜花",
+    "text": "……着替えよう、かな……！",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040280"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1015004040290,
+    "speaker": "甜花",
+    "text": "（──それで\r\n新曲の振り……）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040290"
+  },
+  {
+    "id": 1015004040300,
+    "speaker": "甜花",
+    "text": "（おさらいから……\r\nはじめよ……！）",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101500404/1015004040300"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

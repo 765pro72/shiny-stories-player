@@ -1,0 +1,162 @@
+[
+  {
+    "charAnim1": "smile3",
+    "charAnim2": "face_anger",
+    "charLabel": "rinze",
+    "charType": "characters",
+    "charId": "012",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "凛世、なんだか嬉しそうだな\r\nいいことでも、あったのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1012001001110010,
+    "speaker": "凛世",
+    "text": "はい……\r\n里の友人より、お手紙をいただきました……",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100111/1012001001110010"
+  },
+  {
+    "id": 1012001001110020,
+    "speaker": "凛世",
+    "text": "文字から気持ちが、伝わるようで……\r\n……ふふ",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100111/1012001001110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（凛世が珍しい表情をしているな）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "いい返事を書こう",
+    "nextLabel": "1012001001111"
+  },
+  {
+    "select": "文字って不思議だ",
+    "nextLabel": "1012001001112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "メールより\r\n手紙がいいよな",
+    "nextLabel": "1012001001113"
+  },
+  {
+    "id": 1012001001110030,
+    "label": "1012001001111",
+    "speaker": "凛世",
+    "text": "はい……\r\n帰りに……新しい便箋を買います……",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100111/1012001001110030"
+  },
+  {
+    "id": 1012001001110040,
+    "speaker": "凛世",
+    "text": "凛世の気持ちも……\r\n届きますよう……",
+    "charAnim1": "smile3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100111/1012001001110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1012001001110050,
+    "label": "1012001001112",
+    "speaker": "凛世",
+    "text": "はい……\r\n書いた人の、想いまで滲むようで……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100111/1012001001110050"
+  },
+  {
+    "id": 1012001001110060,
+    "speaker": "凛世",
+    "text": "不思議なもので……ございます……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100111/1012001001110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1012001001110070,
+    "label": "1012001001113",
+    "speaker": "凛世",
+    "text": "そう……でしょうか……？",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100111/1012001001110070"
+  },
+  {
+    "id": 1012001001110080,
+    "speaker": "凛世",
+    "text": "メールも……手紙も……\r\n凛世には、どちらも……大事なものでございます",
+    "charAnim1": "smile3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101200100111/1012001001110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

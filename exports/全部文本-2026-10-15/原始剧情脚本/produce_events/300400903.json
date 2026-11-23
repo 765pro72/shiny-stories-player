@@ -1,0 +1,1343 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00160",
+    "bgm": "0002",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0426",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00160",
+    "bgEffect": "white_add",
+    "se": "0236",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 3004009030010,
+    "speaker": "恋鐘",
+    "text": "『絵日記　月岡恋鐘』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030010"
+  },
+  {
+    "id": 3004009030020,
+    "speaker": "恋鐘",
+    "text": "『お天気：今日も晴れ』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030020"
+  },
+  {
+    "id": 3004009030030,
+    "speaker": "恋鐘",
+    "text": "『今日もアンティーカのみんなと\r\nうちの部屋で素麺パーティーやけん』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030030"
+  },
+  {
+    "id": 3004009030040,
+    "speaker": "恋鐘",
+    "text": "『日記の続きはまた』──……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "waitType": "time",
+    "waitTime": 3000,
+    "voice": "produce_events/300400903/3004009030040"
+  },
+  {
+    "textFrame": "off",
+    "se": "0439",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 3004009030050,
+    "speaker": "恋鐘",
+    "text": "は～い！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030050"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kogane",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00035",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "se": "0113",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3004009030060,
+    "speaker": "恋鐘",
+    "text": "いらっしゃ～い\r\n暑かったやろ～？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "001",
+    "voice": "produce_events/300400903/3004009030060"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "charType": "idols",
+    "charId": "1030080020",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030070,
+    "speaker": "結華",
+    "text": "もう汗だくだよー",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "r",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030070010",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030070",
+    "voiceKeep": true
+  },
+  {
+    "speaker": "結華",
+    "text": "お邪魔しまーす",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "id": 3004009030080,
+    "speaker": "霧子",
+    "text": "ふふっ、お邪魔します……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030080"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "charType": "idols",
+    "charId": "1030060010",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030090,
+    "speaker": "摩美々",
+    "text": "恋鐘、これー",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030050010",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030090"
+  },
+  {
+    "id": 3004009030100,
+    "speaker": "咲耶",
+    "text": "私たちからのお土産だよ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030100"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0289",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3004009030110,
+    "speaker": "恋鐘",
+    "text": "ありがと～！\r\nあっ、スイカ～！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030110"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030120,
+    "speaker": "霧子",
+    "text": "冷蔵庫……入るかな……",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030120"
+  },
+  {
+    "id": 3004009030130,
+    "speaker": "咲耶",
+    "text": "桶に水を張って、\r\n氷を入れて冷やすのはどうだい",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030130"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030140,
+    "speaker": "恋鐘",
+    "text": "うん～、そうやね！\r\n冷えたら切って食べよ～！",
+    "charAnim1": "smile4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030140"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "kogane"
+  },
+  {
+    "id": 3004009030150,
+    "speaker": "結華",
+    "text": "ふふ\r\n昔ながらの夏って感じ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030150"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030160,
+    "speaker": "恋鐘",
+    "text": "んふふ～、今麦茶ば入れるけん",
+    "charAnim1": "wait5",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "r",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030160",
+    "voiceKeep": true
+  },
+  {
+    "speaker": "恋鐘",
+    "text": "座ってちょっと待っとって！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "charLabel": "kogane",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3004009030170,
+    "speaker": "霧子",
+    "text": "あ……恋鐘ちゃん……\r\nわたしも……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030170"
+  },
+  {
+    "id": 3004009030180,
+    "speaker": "恋鐘",
+    "text": "ありがと～霧子\r\n素麺も出来とるけん、すぐに準備するばい！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030180"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00035"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3004009030190,
+    "speaker": "恋鐘",
+    "text": "ずるる……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030190"
+  },
+  {
+    "id": 3004009030200,
+    "speaker": "霧子",
+    "text": "ずっ……ずっ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030200"
+  },
+  {
+    "id": 3004009030210,
+    "speaker": "摩美々",
+    "text": "…………うま",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030210"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030220,
+    "speaker": "恋鐘",
+    "text": "んふふ～、うま～！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030220"
+  },
+  {
+    "id": 3004009030230,
+    "speaker": "霧子",
+    "text": "ふふっ……うま……",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030230"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030240,
+    "speaker": "摩美々",
+    "text": "……ちょっと\r\n真似しないでくれるー？",
+    "charAnim1": "touch",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030240"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030250,
+    "speaker": "咲耶",
+    "text": "クス……でも、本当に美味しいよ、恋鐘\r\n茗荷が口の中にまで夏を感じさせてくれる",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030250"
+  },
+  {
+    "id": 3004009030260,
+    "speaker": "結華",
+    "text": "三峰的には紅葉おろしも推したい……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "r",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030260",
+    "voiceKeep": true
+  },
+  {
+    "speaker": "結華",
+    "text": "あーでもオクラも入れたい！",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030270,
+    "speaker": "摩美々",
+    "text": "いやぁ、揚げナスでしょー",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030270"
+  },
+  {
+    "id": 3004009030280,
+    "speaker": "霧子",
+    "text": "氷……\r\nおいしい……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030280"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030290,
+    "speaker": "恋鐘",
+    "text": "麺も薬味もい～っぱい用意したけん\r\n全部試してみんね！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030290"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030300,
+    "speaker": "霧子",
+    "text": "うん……ふふっ",
+    "charAnim1": "think",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030300"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030310,
+    "speaker": "結華",
+    "text": "ずるっ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030310"
+  },
+  {
+    "id": 3004009030320,
+    "speaker": "咲耶",
+    "text": "ずっ……ずるっ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030320"
+  },
+  {
+    "id": 3004009030330,
+    "speaker": "摩美々",
+    "text": "…………ずるっ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030330"
+  },
+  {
+    "id": 3004009030340,
+    "speaker": "恋鐘",
+    "text": "んふふ～、うまかやろ～？",
+    "charAnim1": "smile3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030340"
+  },
+  {
+    "id": 3004009030350,
+    "speaker": "恋鐘",
+    "text": "あっ、麦茶のおかわりば持ってくるばい！\r\n食べよって～",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030350"
+  },
+  {
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3004009030360,
+    "speaker": "霧子",
+    "text": "あ……\r\nありがとう……恋鐘ちゃん……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030360"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "fade_out"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 3004009030370,
+    "speaker": "結華",
+    "text": "……ふふっ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030370"
+  },
+  {
+    "charLabel": "yuika",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3004009030380,
+    "speaker": "霧子",
+    "text": "結華ちゃん……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030380"
+  },
+  {
+    "id": 3004009030390,
+    "speaker": "結華",
+    "text": "──なんかさ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "005",
+    "voice": "produce_events/300400903/3004009030390"
+  },
+  {
+    "id": 3004009030400,
+    "speaker": "結華",
+    "text": "夏休みのなんにもない日って\r\nこんな感じだなって……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030400"
+  },
+  {
+    "id": 3004009030410,
+    "speaker": "霧子",
+    "text": "えっ……？",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030410"
+  },
+  {
+    "id": 3004009030420,
+    "speaker": "結華",
+    "text": "ううん",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030420"
+  },
+  {
+    "id": 3004009030430,
+    "speaker": "結華",
+    "text": "海とかプールもいいけど\r\nこういうのも最高だねって話",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030430"
+  },
+  {
+    "id": 3004009030440,
+    "speaker": "霧子",
+    "text": "うん……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030440"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mamimi",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030450,
+    "speaker": "咲耶",
+    "text": "……恋鐘の夏の記録にも\r\nまた新たな思い出の１ページが刻まれそうだね",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030450"
+  },
+  {
+    "id": 3004009030460,
+    "speaker": "摩美々",
+    "text": "なんか、思い出地味じゃないー？",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030460"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3004009030470,
+    "speaker": "結華",
+    "text": "それでいいんだよ\r\nね、こがたん",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300400903/3004009030470"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00075",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3004009030480,
+    "speaker": "恋鐘",
+    "text": "え～、なんか言った～？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300400903/3004009030480"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "se": "0237",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end"
+  }
+]

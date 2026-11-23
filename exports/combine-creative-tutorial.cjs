@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),cp=require('child_process'),root=path.resolve(__dirname,'..');
+const clips=['怪文书-全功能教学.mp4','怪文书-拖动与缩放实操.mp4','怪文书-素材导演音声与BGM实操.mp4'];
+const list=path.join(__dirname,'完整教学-片段.txt'),output=path.join(__dirname,'怪文书-完整操作教学-2026-11-15.2.mp4');
+fs.writeFileSync(list,clips.map(f=>"file '"+path.join(__dirname,f).replace(/\\/g,'/')+"'").join('\n'));
+const bin=path.join(root,'tools/upscaler/ffmpeg/ffmpeg-9.0.2-essentials_build/bin');
+cp.execFileSync(path.join(bin,'ffmpeg.exe'),['-v','error','-y','-f','concat','-safe','0','-i',list,'-c','copy','-movflags','+faststart',output],{stdio:'inherit',windowsHide:true});
+const metadata=JSON.parse(cp.execFileSync(path.join(bin,'ffprobe.exe'),['-v','error','-show_entries','format=duration','-of','json',output],{encoding:'utf8',windowsHide:true}));
+cp.execFileSync(path.join(bin,'ffmpeg.exe'),['-v','error','-i',output,'-map','0:v','-map','0:a','-f','null','NUL'],{stdio:'inherit',windowsHide:true});
+fs.writeFileSync(path.join(__dirname,'完整操作教学-2026-11-15.2.json'),JSON.stringify({output,seconds:Number(metadata.format.duration),bytes:fs.statSync(output).size,decodedWithoutErrors:true,voiceover:false,bgm:true,chapters:[{at:0,title:'手工编辑全部操作'},{at:130.4,title:'直接拖动移动终点与人物缩放'},{at:165.633,title:'完整素材库、AI编排、导演模式、选句配音、默认BGM及起播位置'}]},null,2));
+console.log(output,metadata.format.duration);

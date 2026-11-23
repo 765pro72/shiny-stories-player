@@ -1,0 +1,339 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "008"
+  },
+  {
+    "id": 6902001070010,
+    "speaker": "社長",
+    "text": "お前、担当アイドルのことをどう思っている？",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602100107/6902001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……たしかに負けてしまいましたけど、\r\n彼女こそが最高のアイドルだと思っています",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6902001070020,
+    "speaker": "社長",
+    "text": "……！　そうか……",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602100107/6902001070020"
+  },
+  {
+    "id": 6901001070010,
+    "speaker": "はづき",
+    "text": "ふふ\r\n社長が聞きたかった言葉、そのまま出てきましたね",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/602100107/6901001070010"
+  },
+  {
+    "id": 6901001070020,
+    "speaker": "はづき",
+    "text": "もし違う言葉が出てきたら、\r\n説教してやるって言って聞かなかったのに",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/602100107/6901001070020"
+  },
+  {
+    "id": 6902001070030,
+    "speaker": "社長",
+    "text": "……うるさいぞ。とにかく、\r\nそういうことなら私から言うことはない",
+    "charAnim1": "wait2",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602100107/6902001070030"
+  },
+  {
+    "id": 6902001070040,
+    "speaker": "社長",
+    "text": "さあ、早くその最高のアイドルに\r\n会いに行ってこい",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602100107/6902001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい！",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00002",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……大丈夫か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6021001070010,
+    "speaker": "円香",
+    "text": "大丈夫じゃない……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/602100107/6021001070010"
+  },
+  {
+    "id": 6021001070020,
+    "speaker": "円香",
+    "text": "なんて言うと思います？　学ばない人ですね",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602100107/6021001070020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6021001070030,
+    "speaker": "円香",
+    "text": "……冷静に考えてみると",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602100107/6021001070030"
+  },
+  {
+    "id": 6021001070040,
+    "speaker": "円香",
+    "text": "私がアイドルって本当に意味不明",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602100107/6021001070040"
+  },
+  {
+    "id": 6021001070050,
+    "speaker": "円香",
+    "text": "熱意があればいいわけでも、\r\n技術があればいいわけでもない",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602100107/6021001070050"
+  },
+  {
+    "id": 6021001070060,
+    "speaker": "円香",
+    "text": "勝ち上がったところで\r\n将来の保証があるわけでもない",
+    "charAnim2": "face_serious",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602100107/6021001070060"
+  },
+  {
+    "id": 6021001070070,
+    "speaker": "円香",
+    "text": "なんでそんなものに挑んでいたんだか",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602100107/6021001070070"
+  },
+  {
+    "id": 6021001070080,
+    "speaker": "円香",
+    "text": "ふふっ……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602100107/6021001070080"
+  },
+  {
+    "id": 6021001070090,
+    "speaker": "円香",
+    "text": "でも、冷静になるまで気付かなかったってことは",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602100107/6021001070090"
+  },
+  {
+    "id": 6021001070100,
+    "speaker": "円香",
+    "text": "つまり……ねえ、どういうことだと思います？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602100107/6021001070100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "再出発だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6021001070110,
+    "speaker": "円香",
+    "text": "……本当に学ばない人ですね",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602100107/6021001070110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "円香！　……もう一度、俺と一緒に",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6021001070120,
+    "speaker": "円香",
+    "text": "……………………",
+    "charAnim1": "smile2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602100107/6021001070120"
+  },
+  {
+    "id": 6021001070130,
+    "speaker": "円香",
+    "text": "はい",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602100107/6021001070130"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

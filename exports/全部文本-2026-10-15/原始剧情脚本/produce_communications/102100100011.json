@@ -1,0 +1,177 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "円香、おはよう\r\n今日はいい天気だなあ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1021001000110010,
+    "speaker": "円香",
+    "text": "はい",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102100100011/1021001000110010"
+  },
+  {
+    "id": 1021001000110020,
+    "speaker": "円香",
+    "text": "…………",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100011/1021001000110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（か、会話が続かない……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "午後は雨らしいけど",
+    "nextLabel": "1021001000111"
+  },
+  {
+    "select": "朝食は食べた？",
+    "nextLabel": "1021001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "今日は何時に起きた？",
+    "nextLabel": "1021001000113"
+  },
+  {
+    "id": 1021001000110030,
+    "label": "1021001000111",
+    "speaker": "円香",
+    "text": "はい",
+    "charAnim1": "shy1",
+    "charAnim2": "face_close",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100011/1021001000110030"
+  },
+  {
+    "id": 1021001000110040,
+    "speaker": "円香",
+    "text": "知っています",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100011/1021001000110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1021001000110050,
+    "label": "1021001000112",
+    "speaker": "円香",
+    "text": "……つまらない質問",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100011/1021001000110050"
+  },
+  {
+    "id": 1021001000110060,
+    "speaker": "円香",
+    "text": "そこからどうやって会話を広げるのか、\r\n逆に見ものですね",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100011/1021001000110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1021001000110070,
+    "label": "1021001000113",
+    "speaker": "円香",
+    "text": "話しかけないでください",
+    "charAnim1": "anger1",
+    "charAnim2": "face_serious",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100011/1021001000110070"
+  },
+  {
+    "id": 1021001000110080,
+    "speaker": "円香",
+    "text": "無駄な会話にエネルギーを使いたくないので",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100011/1021001000110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

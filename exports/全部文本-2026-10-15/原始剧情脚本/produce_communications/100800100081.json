@@ -1,0 +1,169 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "008",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0100",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "何の本を読んでいるんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1008001000810010,
+    "speaker": "霧子",
+    "text": "お料理の本を……\r\nりんごって、いろんな食べ方があって……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100081/1008001000810010"
+  },
+  {
+    "id": 1008001000810020,
+    "speaker": "霧子",
+    "text": "プロデューサーさんは……\r\nどんなふうに食べるのが……お好きですか……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100081/1008001000810020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（りんごの食べ方か……うーん、そうだな）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "そのままかじるのが\r\nまぁ、多いかな",
+    "nextLabel": "1008001000811"
+  },
+  {
+    "select": "リンゴジュースかな",
+    "nextLabel": "1008001000812"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "アップルパイかな",
+    "nextLabel": "1008001000813"
+  },
+  {
+    "id": 1008001000810030,
+    "label": "1008001000811",
+    "speaker": "霧子",
+    "text": "皮もむかず……そのまま……？\r\n今度……わたしがむきますね……",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100081/1008001000810030"
+  },
+  {
+    "id": 1008001000810040,
+    "speaker": "霧子",
+    "text": "こういうの……得意なんです……！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100081/1008001000810040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001000810050,
+    "label": "1008001000812",
+    "speaker": "霧子",
+    "text": "ジュースも……美味しいですね……！",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100081/1008001000810050"
+  },
+  {
+    "id": 1008001000810060,
+    "speaker": "霧子",
+    "text": "すりおろしたものは……\r\n風邪の時にも……効きます……",
+    "charAnim1": "shy1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100081/1008001000810060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001000810070,
+    "label": "1008001000813",
+    "speaker": "霧子",
+    "text": "わぁ……アップルパイですか……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100081/1008001000810070"
+  },
+  {
+    "id": 1008001000810080,
+    "speaker": "霧子",
+    "text": "作るのは……難しそうですけど……\r\n美味しいですよね……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100081/1008001000810080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

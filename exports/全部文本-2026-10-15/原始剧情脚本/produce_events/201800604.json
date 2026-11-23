@@ -1,0 +1,792 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00130",
+    "bgm": "0000"
+  },
+  {
+    "id": 2018006040010,
+    "speaker": "冬優子",
+    "text": "あいつ……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "018",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/201800604/2018006040010"
+  },
+  {
+    "id": 2018006040020,
+    "speaker": "冬優子",
+    "text": "ふゆのこと待たせてまで何やってんのよ……！\r\nっていうか、いつまで待たせるつもりなの……！？",
+    "charAnim2": "face_anger",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040020"
+  },
+  {
+    "id": 2018006040030,
+    "speaker": "冬優子",
+    "text": "早く帰りたいっつってんのに、もう……！",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040030"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "fuyuko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00130",
+    "fg": "001923",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0152",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2018006040040,
+    "speaker": "冬優子",
+    "text": "あ～～～～……つっかれた……",
+    "charAnim1": "wait5",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201800604/2018006040040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "今日のロケ、長かったもんな\r\nお疲れ様、冬優子",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040050,
+    "speaker": "冬優子",
+    "text": "これから家に着くまでまだまだかかるかと思うと\r\nげんなりするわ……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……\r\nなるべく急いで運転するよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "fuyuko",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2018006040060,
+    "speaker": "冬優子",
+    "text": "……いい\r\n安全運転の方が大事でしょ",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040060"
+  },
+  {
+    "id": 2018006040070,
+    "speaker": "冬優子",
+    "text": "……よろしく頼むわよ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "冬優子──",
+    "charAnim2": "face_wait",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040080,
+    "speaker": "冬優子",
+    "text": "はーあ！　それにしてもお腹空いたわね、\r\nなんか持ってきとけばよかった──……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……\r\nお腹……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──ああ！　そうだ冬優子！\r\nちょっと待っててくれないか、すぐ戻るから！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040090,
+    "speaker": "冬優子",
+    "text": "え？\r\nええ、いいけど──",
+    "charAnim1": "surp3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "悪い！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "fuyuko",
+    "textFrame": "off",
+    "se": "0384",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0837",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2018006040100,
+    "speaker": "冬優子",
+    "text": "……どうしたってのよあいつ…………",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040100"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "fuyuko",
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00130",
+    "fg": "off",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2018006040110,
+    "speaker": "冬優子",
+    "text": "～～～～っ……！　こっの……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040110"
+  },
+  {
+    "textFrame": "off",
+    "se": "0838",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2018006040120,
+    "speaker": "冬優子",
+    "text": "！",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040120"
+  },
+  {
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "fuyuko",
+    "textFrame": "off",
+    "se": "0496",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お待たせ冬優子！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040130,
+    "speaker": "冬優子",
+    "text": "まったくよ\r\nあんた何して──",
+    "charAnim1": "anger3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040130"
+  },
+  {
+    "id": 2018006040140,
+    "speaker": "冬優子",
+    "text": "……お好み焼き？",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "056",
+    "voice": "produce_events/201800604/2018006040140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "正解！\r\n近くの神社で夏祭りしてるの思い出してさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お祭りの食べ物って、わくわくするだろ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "冬優子お腹空いたって言ってたし、\r\n今日のロケも頑張ってくれてたし、食べてほしくて！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040150,
+    "speaker": "冬優子",
+    "text": "…………",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……あ、あれ\r\nもしかして、屋台メシとかそんなに好きじゃないか……！？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040160,
+    "speaker": "冬優子",
+    "text": "……ううん\r\n別にそういうわけじゃないけど",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040160"
+  },
+  {
+    "id": 2018006040170,
+    "speaker": "冬優子",
+    "text": "普通、先に確認するべきなんじゃないの、とか",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040170"
+  },
+  {
+    "id": 2018006040180,
+    "speaker": "冬優子",
+    "text": "そんなにお祭りが好きなら、『冬優子も行かないか？』\r\nって誘うのが筋なんじゃないの、とか",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040180"
+  },
+  {
+    "id": 2018006040190,
+    "speaker": "冬優子",
+    "text": "そういうことを思ってるだけ",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "！！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040200,
+    "speaker": "冬優子",
+    "text": "ほんっと、かっこつかないわねぇ",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "fuyuko",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040200"
+  },
+  {
+    "select": "よかったら、\r\n今からでも──",
+    "nextLabel": "1"
+  },
+  {
+    "select": "完璧だと\r\n思ったんだが……！",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "はは……！",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2018006040210,
+    "label": "1",
+    "speaker": "冬優子",
+    "text": "一緒に行こうって？\r\nいいわけないでしょ",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040210"
+  },
+  {
+    "id": 2018006040220,
+    "speaker": "冬優子",
+    "text": "ふゆは疲れてんの\r\n人が大勢いそうなところなんて勘弁",
+    "charAnim1": "anger1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そ、そうか……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040230,
+    "speaker": "冬優子",
+    "text": "それより、さっさとお好み焼き寄越しなさいよ",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040230"
+  },
+  {
+    "id": 2018006040240,
+    "speaker": "冬優子",
+    "text": "そんな美味しそうなにおいさせておいて、\r\nおあずけなんてひどいんじゃない？",
+    "charAnim1": "anger3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あっ、す、すまん……！\r\n熱いから気を付けてな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040250,
+    "speaker": "冬優子",
+    "text": "ん",
+    "charAnim2": "face_close",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040250"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "fuyuko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2018006040260,
+    "speaker": "冬優子",
+    "text": "……まぁ、ありがと。プロデューサー",
+    "charAnim1": "wait5",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201800604/2018006040260"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2018006040270,
+    "label": "2",
+    "speaker": "冬優子",
+    "text": "残念でした、想定が甘いのよ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040270"
+  },
+  {
+    "id": 2018006040280,
+    "speaker": "冬優子",
+    "text": "っていうか、お好み焼きだけ？\r\nふゆ、たこ焼きも食べたいんだけど",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "！　よかった、そこはカバーできてた……！\r\n一応たこ焼きも買っておいたんだ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040290,
+    "speaker": "冬優子",
+    "text": "あら珍しい\r\n気が利くじゃない",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………珍しい…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040300,
+    "speaker": "冬優子",
+    "text": "半分ずつね\r\n先あんたがたこ焼き食べていいわよ",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040300"
+  },
+  {
+    "id": 2018006040310,
+    "speaker": "冬優子",
+    "text": "いい働きした分、ご褒美",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040310"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "3",
+    "speaker": "プロデューサー",
+    "text": "上手くいかないもんだなぁ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040320,
+    "speaker": "冬優子",
+    "text": "……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040320"
+  },
+  {
+    "id": 2018006040330,
+    "speaker": "冬優子",
+    "text": "ふゆとあんたで上手くいったことなんてないでしょ",
+    "charLipAnim": "lip_smile",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ……！？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040340,
+    "speaker": "冬優子",
+    "text": "だーかーらぁ、これまでだって、どっかのお話みたいに\r\n綺麗なまとまり方なんてしてきてないでしょ、って",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040340"
+  },
+  {
+    "id": 2018006040350,
+    "speaker": "冬優子",
+    "text": "それがふゆたちなんだから\r\n……らしいってことなんじゃないの",
+    "charAnim1": "anger3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040350"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──……冬優子……っ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2018006040360,
+    "speaker": "冬優子",
+    "text": "あーうっさい、顔がうっさい\r\nわかったらとっととお好み焼き置いて車出しなさいよね",
+    "charAnim1": "wait4",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040360"
+  },
+  {
+    "id": 2018006040370,
+    "speaker": "冬優子",
+    "text": "ふゆ、お腹空いたし疲れてんのよ\r\n一刻も早くご飯食べたいし、家に帰りたいの！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "fuyuko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201800604/2018006040370"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

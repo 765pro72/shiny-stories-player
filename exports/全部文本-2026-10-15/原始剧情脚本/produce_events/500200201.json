@@ -1,0 +1,830 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00018",
+    "bgm": "041",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 5002002010010,
+    "speaker": "恋鐘",
+    "text": "──台本よ～し！　ペンよ～し！　ハンカチよ～し！\r\nそいで、大事なお弁当も──",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "恋鐘ー！　先に行ってるぞー！\r\n車を回してくるから、準備ができたら下で待っていてくれ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 5002002010020,
+    "speaker": "恋鐘",
+    "text": "あっ、うん～！\r\nうちもすぐ行くけん～",
+    "charAnim1": "wait5",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0456",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00103",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おっ、咲耶！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 5002002010030,
+    "speaker": "咲耶",
+    "text": "お出かけのようだねプロデューサー\r\nすれ違いとは残念だ",
+    "charAnim1": "wait5",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あっ、悪いがはづきさんが出社したら\r\n今日も直帰の予定だと伝えてくれないか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 5002002010040,
+    "speaker": "咲耶",
+    "text": "ああ……今日も忙しそうだね\r\nわかったよ、いってらっしゃい",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "バタバタしていてすまん！\r\nいってきます──！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 5002002010050,
+    "speaker": "咲耶",
+    "text": "階段、足元に気をつけて……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 2500,
+    "voice": "produce_events/500200201/5002002010050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──おわっ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 5002002010060,
+    "speaker": "咲耶",
+    "text": "……忠告が少しばかり遅かったかな",
+    "charAnim1": "sad1",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010060"
+  },
+  {
+    "textFrame": "off",
+    "se": "0456",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "sakuya",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 5002002010070,
+    "speaker": "恋鐘",
+    "text": "いってきま──……あっ、あー！　咲耶──！",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/500200201/5002002010070"
+  },
+  {
+    "id": 5002002010080,
+    "speaker": "咲耶",
+    "text": "やあ、恋鐘もお出かけかい？\r\nプロデューサーと一緒かな",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010080"
+  },
+  {
+    "id": 5002002010090,
+    "speaker": "恋鐘",
+    "text": "うん！　ばってんえっとえっと～……\r\n咲耶に聞きたかことのあったとよ！",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010090"
+  },
+  {
+    "id": 5002002010100,
+    "speaker": "恋鐘",
+    "text": "咲耶！　咲耶はどがんステージがよかと～？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010100"
+  },
+  {
+    "id": 5002002010110,
+    "speaker": "咲耶",
+    "text": "ステージ？　…………もしかして感謝祭の話かな？",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010110"
+  },
+  {
+    "id": 5002002010120,
+    "speaker": "恋鐘",
+    "text": "うん～！　最近みんな忙しかけん、集まれんやろ～？\r\nなんかよか考えはなかかな～って思って、そいで──",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "恋鐘ー！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 5002002010130,
+    "speaker": "咲耶",
+    "text": "……プロデューサーがお呼びのようだね\r\n今日のところは時間切れかな",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010130"
+  },
+  {
+    "id": 5002002010140,
+    "speaker": "恋鐘",
+    "text": "ああ～～！　しょんなか！\r\n咲耶、今度また話そ～！",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010140"
+  },
+  {
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 5002002010150,
+    "speaker": "咲耶",
+    "text": "ああ、次はちゃんと話そう\r\nいってらっしゃい……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/500200201/5002002010150"
+  },
+  {
+    "id": 5002002010160,
+    "speaker": "咲耶",
+    "text": "……",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010160"
+  },
+  {
+    "id": 5002002010170,
+    "speaker": "咲耶",
+    "text": "忙しいのは良いことだ……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010170"
+  },
+  {
+    "textFrame": "off",
+    "se": "0460",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0456",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 5002002010180,
+    "speaker": "結華",
+    "text": "こがたん待って──あっ、さくやん！\r\nこがたん、もう行っちゃった？！",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "007",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/500200201/5002002010180"
+  },
+  {
+    "id": 5002002010190,
+    "speaker": "咲耶",
+    "text": "ああ──ちょうど今ね。走っていったよ",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010190"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "sakuya"
+  },
+  {
+    "id": 5002002010200,
+    "speaker": "結華",
+    "text": "ええっ！？　ああ……お弁当……\r\nソファーに置きっぱなしだったよ、こがたーん……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010200"
+  },
+  {
+    "id": 5002002010210,
+    "speaker": "結華",
+    "text": "『今日のはば～りばりにすごか！』って言ってたのに……\r\n……間に合わないかもだけど連絡しとくかー……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010210"
+  },
+  {
+    "id": 5002002010220,
+    "speaker": "咲耶",
+    "text": "……良かったら恋鐘には私から連絡しておこうか\r\n結華もこれから出かけるんだろう？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010220"
+  },
+  {
+    "id": 5002002010230,
+    "speaker": "結華",
+    "text": "ああーっ、もうそんな時間！？\r\nごめんさくやん、お願いしちゃっていいかな？",
+    "charAnim1": "surp3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010230"
+  },
+  {
+    "id": 5002002010240,
+    "speaker": "咲耶",
+    "text": "仲間だからね、忙しい時はお互い様さ\r\n私への『お願い』はとっておきの時に、ね",
+    "charAnim1": "wait5",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010240"
+  },
+  {
+    "id": 5002002010250,
+    "speaker": "結華",
+    "text": "──これはありがとうって言わせないハラだな……？\r\n忙しいのはさくやんだって同じなのにさぁ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010250"
+  },
+  {
+    "id": 5002002010260,
+    "speaker": "咲耶",
+    "text": "今はキミを送り出すのが私の仕事だよ\r\nほらほら時間は大丈夫かい？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010260"
+  },
+  {
+    "id": 5002002010270,
+    "speaker": "結華",
+    "text": "──あ～っもう！\r\nバタバタでごめんね！　いってきます！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010270"
+  },
+  {
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 5002002010280,
+    "speaker": "咲耶",
+    "text": "フフ、いってらっしゃい",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/500200201/5002002010280"
+  },
+  {
+    "id": 5002002010290,
+    "speaker": "咲耶",
+    "text": "…………",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010290"
+  },
+  {
+    "id": 5002002010300,
+    "speaker": "咲耶",
+    "text": "ふう…………",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010300"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kogane",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00129",
+    "bgm": "0008",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "木曜日の午後は……ダメだな\r\n摩美々と霧子に予定が入ってる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 5002002010310,
+    "speaker": "恋鐘",
+    "text": "そいやったら、金曜日の朝にするとがよか！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そこも……全員揃うのは難しそうだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 5002002010320,
+    "speaker": "恋鐘",
+    "text": "土日はうちがパンパンやし……\r\nん～～～！！",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010320"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "すまん……予定が合わなくて困るよな\r\nみんなで感謝祭の話を進めなくちゃいけないのに",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 5002002010330,
+    "speaker": "恋鐘",
+    "text": "あっ、ううん！　忙しかとはよかことやけん！\r\n今は頑張らんといかん時やねって結華とも話し……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010330"
+  },
+  {
+    "textFrame": "off",
+    "se": "0134",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 5002002010340,
+    "speaker": "恋鐘",
+    "text": "あああああっ──！！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010340"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうした！？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 5002002010350,
+    "speaker": "恋鐘",
+    "text": "うちのとっておきのお弁当～……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010350"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "kogane",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "0009",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0134",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 5002002010360,
+    "speaker": "恋鐘",
+    "text": "『ありがと～～！！ 　そい　ば～りすごかお弁当\r\nさっきゆびさし確認したとに……』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010360"
+  },
+  {
+    "id": 5002002010370,
+    "speaker": "恋鐘",
+    "text": "『だれか食べてくれる人～～～\r\nおらんかなぁ？？？？？　ふぇ～～』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010370"
+  },
+  {
+    "id": 5002002010380,
+    "speaker": "咲耶",
+    "text": "ああ、恋鐘……\r\n忙しい時は仕方ないさ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010380"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0272",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 5002002010390,
+    "speaker": "咲耶",
+    "text": "『ありがとう。それならお言葉に甘えさせてもらおう\r\n恋鐘の手作り、大切にいただくよ』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010390"
+  },
+  {
+    "id": 5002002010400,
+    "speaker": "咲耶",
+    "text": "けれど、ひとりで食べるのは……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010400"
+  },
+  {
+    "id": 5002002010410,
+    "speaker": "咲耶",
+    "text": "少しだけ…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/500200201/5002002010410"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black4",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "label": "end"
+  }
+]

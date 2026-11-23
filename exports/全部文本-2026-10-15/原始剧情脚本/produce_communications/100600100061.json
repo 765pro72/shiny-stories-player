@@ -1,0 +1,162 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "どうした、咲耶\r\nなにか悩みごとか？",
+    "charAnim1": "anger1",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 1006001000610010,
+    "speaker": "咲耶",
+    "text": "ねえ、プロデューサー\r\n私は、みんなにどんな印象を与えていると思う？",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100061/1006001000610010"
+  },
+  {
+    "id": 1006001000610020,
+    "speaker": "咲耶",
+    "text": "自分の中のイメージと外からのイメージは一致しているのか\r\nアナタの意見も聞いてみたくてね",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100061/1006001000610020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（咲耶の印象か……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "可愛いお姫様",
+    "nextLabel": "1006001000611"
+  },
+  {
+    "select": "かっこいい王子様",
+    "nextLabel": "1006001000612"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "謎の美女",
+    "nextLabel": "1006001000613"
+  },
+  {
+    "id": 1006001000610030,
+    "label": "1006001000611",
+    "speaker": "咲耶",
+    "text": "フフ、\r\nまさかそういう返しが出るとは思っていなかったよ",
+    "charAnim1": "shy1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100061/1006001000610030"
+  },
+  {
+    "id": 1006001000610040,
+    "speaker": "咲耶",
+    "text": "可愛いなんて、言われたこともなかったな……\r\nクス、でも、案外悪くないね",
+    "charAnim1": "shy2",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100061/1006001000610040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1006001000610050,
+    "label": "1006001000612",
+    "speaker": "咲耶",
+    "text": "フフ、やはりそう思うかい？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100061/1006001000610050"
+  },
+  {
+    "id": 1006001000610060,
+    "speaker": "咲耶",
+    "text": "アナタがきちんと私のことを見ていてくれて、嬉しいよ",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100061/1006001000610060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1006001000610070,
+    "label": "1006001000613",
+    "speaker": "咲耶",
+    "text": "フフ。謎の美女か……\r\n言葉の響きは、悪くないね",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100061/1006001000610070"
+  },
+  {
+    "id": 1006001000610080,
+    "speaker": "咲耶",
+    "text": "私の持っていたイメージとは、随分違ったけれど……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100061/1006001000610080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

@@ -1,0 +1,23 @@
+<dialog id="storyVoiceDialog" class="story-ai-dialog story-voice-dialog">
+ <header class="dialog-heading"><div><h2>AI 配音</h2><p>给写好的台词一个声音，再带回你的故事。</p></div><button id="ttsClose" type="button">收起配音</button></header>
+ <p class="hint">使用你配置的语音服务生成 AI 合成配音，生成后可随工程保存并离线观看。</p>
+ <details id="ttsConnection"><summary>配音服务与音色库 <span id="ttsConnectionName"></span></summary><div class="ai-connection-grid">
+  <label>接口<select id="ttsProvider"><option value="fish">Fish Audio · 角色音色</option><option value="openai">OpenAI 兼容 TTS／本机服务</option></select></label>
+  <label>服务地址<input id="ttsBaseURL" type="url" value="https://api.fish.audio/v1" autocomplete="off"></label>
+  <label>API Key（仅本次会话）<input id="ttsAPIKey" type="password" autocomplete="off" spellcheck="false"></label>
+  <label>合成模型<input id="ttsModel" list="ttsModels" value="s2.1-pro-free" spellcheck="false"><datalist id="ttsModels"><option value="s2.1-pro-free"><option value="s2.1-pro"><option value="drama-3"><option value="s2-pro"><option value="s1"></datalist></label>
+ </div><button id="ttsRemember" type="button">记住配置（不保存密钥）</button><button id="ttsImportVoices" type="button">刷新公开音色列表（可选）</button><p class="hint">角色音色 ID 来自上游公开配置，已预置随包，显示角色名与对应 ID；可选择刷新；不保证第三方音色一直公开可用。也可以直接填写自己的音色 ID。Fish 默认使用 s2.1-pro-free；其他模型的额度与费用以服务商为准。</p></details>
+ <label>默认朗读来源<select id="ttsLanguage"><option value="ja">日语台词</option><option value="zh">中文字幕 · 中文配音</option></select></label><p class="hint">每句都能切换来源或手动修改为任意语言。合成只读取朗读框，画面字幕单独保留；没有日语时不会自动改读中文。</p>
+ <p id="ttsStatus" role="status" aria-live="polite">选择音色，输入这句台词，生成后试听。</p>
+ <div class="tts-tabs" role="group" aria-label="配音方式"><button id="ttsSingleTab" aria-pressed="true">当前分镜</button><button id="ttsBatchTab" aria-pressed="false">批量配音</button></div>
+ <section id="ttsSingle"><div class="field-pair"><label>角色音色<select id="ttsVoiceProfile"><option value="">自定义音色</option></select></label><label>音色 ID<input id="ttsVoiceID" spellcheck="false" placeholder="Fish reference_id 或兼容服务的 voice"></label></div>
+  <label>本句朗读来源<select id="ttsSingleLanguage"><option value="ja">日语台词</option><option value="zh">中文字幕 · 中文配音</option><option value="custom">自定义朗读 · 任意语言</option><option value="segments">日语段＋中文段 · 整句合成</option></select></label><label>朗读台词 · 可直接修改<textarea id="ttsText" rows="5" maxlength="10000"></textarea></label><p class="hint">此框决定朗读内容；中日混读可展开下方“日语段＋中文段 · 整句合成”。画面字幕保持原样；缺少日语时可用创作台的“补全缺少的日语台词”。</p>
+  <div id="ttsSingleSegments"></div>
+  <details class="tts-advanced"><summary>语速与嘴型设置</summary><div class="field-pair"><label>语速<input id="ttsSpeed" type="number" min="0.5" max="2" step="0.05" value="1"></label><label>带动嘴型的角色<select id="ttsActor"><option value="">不修改嘴型</option></select></label></div></details>
+  <div class="ai-toolbar"><button id="ttsGenerate" class="primary">生成并试听</button><button id="ttsUseText">重新取当前台词</button></div>
+  <audio id="ttsAudio" controls preload="metadata" hidden></audio><div class="ai-toolbar"><button id="ttsApply" disabled>加入当前分镜</button><button id="ttsDownload" disabled>下载配音 MP3</button></div>
+ </section>
+ <section id="ttsBatch" hidden><p>勾选需要 AI 音声的台词。默认台词和镜头内的定时字幕均可单独配音，已有配音自动跳过；不会自动全部生成。</p><label class="check"><input id="ttsIncludeExisting" type="checkbox">显示已有配音，便于修改与重新生成</label><button id="ttsPrepare">读取待配音分镜</button><div class="ai-toolbar"><button id="ttsSelectAll">全选待配音台词</button><button id="ttsSelectNone">全部取消</button><button id="ttsDeselectProducer" type="button">取消勾选制作人台词</button></div><div id="ttsQueue"></div><div class="ai-toolbar"><button id="ttsStartBatch" disabled class="primary">开始队列</button><button id="ttsBatchDownload" type="button" disabled>下载批量配音 (ZIP)</button><progress id="ttsProgress" max="1" value="0" hidden></progress><output id="ttsProgressText"></output></div><p class="hint">逐句请求服务、逐句加入工程。停止或网络失败会保留已完成配音；再次读取队列会跳过已完成的镜头。定时字幕按自身起始时间播放配音；请预览，避免不同台词的音频时段互相覆盖。</p></section>
+ <label class="check"><input id="ttsFitDuration" type="checkbox" checked>根据音频时长延长分镜，并只在配音时段带动所选角色嘴型</label><button id="ttsCancel" type="button" disabled>停止生成</button>
+ <p class="hint">朗读台词、音色 ID 会发送到你选择的语音服务；不发送整个工程。密钥不写入作品、浏览器存储或日志。生成音频可先试听；已有配音在加入新音频前会保留。</p>
+</dialog>

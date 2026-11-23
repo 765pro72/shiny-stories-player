@@ -1,0 +1,618 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00090",
+    "bgm": "005"
+  },
+  {
+    "id": 2003008040010,
+    "speaker": "めぐる",
+    "text": "えっ！　縁日！？",
+    "charAnim1": "touch",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040030030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0220",
+    "voice": "produce_events/200300804/2003008040010"
+  },
+  {
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2003008040020,
+    "speaker": "めぐる",
+    "text": "──ですか？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040020"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "ええ。今日、近くの神社でやってるんですよ\r\n地元では有名なんだそうです",
+    "charAnim2": "face_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "八宮さんもよかったら覗いてみてください\r\nせっかくの浴衣ですしね",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2003008040030,
+    "speaker": "めぐる",
+    "text": "──……",
+    "charAnim1": "think",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040030"
+  },
+  {
+    "id": 2003008040040,
+    "speaker": "めぐる",
+    "text": "はい、ありがとうございますっ\r\nプロデューサーと相談してみます！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040040"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00093",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2003008040050,
+    "speaker": "めぐる",
+    "text": "ね、プロデューサー！\r\n見て見てーっ！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040050"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bg": "00050",
+    "se": "1040030030",
+    "movie": "1040030030"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "bgm": "0001"
+  },
+  {
+    "id": 2003008040060,
+    "speaker": "めぐる",
+    "text": "美味しそうなものも楽しそうなものも\r\nいっぱいだよ！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、本当だなぁ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003008040070,
+    "speaker": "めぐる",
+    "text": "どうしよう！\r\nどのお店から寄ったらいいかなぁ……！？",
+    "charAnim1": "touch",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どれも悩ましいから──大きい項目から決めようか\r\nまず、遊ぶか食べるか、どっちだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003008040080,
+    "speaker": "めぐる",
+    "text": "お腹が空いてるから食べたい！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "r",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040080",
+    "voiceKeep": true
+  },
+  {
+    "speaker": "めぐる",
+    "text": "──んだけど……！",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "id": 2003008040090,
+    "speaker": "めぐる",
+    "text": "どこもいい匂いばっかりで……！",
+    "charAnim1": "think",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そこかしこからしてくるよな\r\n焼きそばとじゃがバターと……これはイカ焼きか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003008040100,
+    "speaker": "めぐる",
+    "text": "あーん！\r\nソースとバターとタレだ～……っ！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040100"
+  },
+  {
+    "id": 2003008040110,
+    "speaker": "めぐる",
+    "text": "せっかくだから全部食べたいよー……！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "全部か……\r\nそれはなかなか手強そうだ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003008040120,
+    "speaker": "めぐる",
+    "text": "……お好み焼きでしょ、たこ焼きでしょ、\r\nあとポテトとか唐揚げとかも絶対美味しい！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040120"
+  },
+  {
+    "id": 2003008040130,
+    "speaker": "めぐる",
+    "text": "全部一口サイズで売ってくれたら、\r\nいろんなものが食べられるのに～っ……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040130"
+  },
+  {
+    "id": 2003008040140,
+    "speaker": "めぐる",
+    "text": "どれにしよう……！",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_sad",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040140"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（──真剣だな……\r\n俺も子どもの頃、よく悩んだっけ……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（──……よし）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "めぐる、ここで取引なんてどうだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003008040150,
+    "speaker": "めぐる",
+    "text": "取引……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200300804/2003008040150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ\r\nめぐるに、美味しそうな屋台の案内をしてもらいたいんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺も何か食べたいんだけど、決めきれなくてさ\r\n代わりにめぐるに決めてほしい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003008040160,
+    "speaker": "めぐる",
+    "text": "え。うん、それはいいけど……\r\nでも──",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もちろん、対価は払うから安心してくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "案内してもらったお礼に、\r\nめぐるが食べきれないと思ったものは、俺が引き受けよう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003008040170,
+    "speaker": "めぐる",
+    "text": "！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040170"
+  },
+  {
+    "id": 2003008040180,
+    "speaker": "めぐる",
+    "text": "プロデューサー、それって……！\r\nはんぶんこしてくれるってこと……！？",
+    "charAnim1": "touch",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これなら、ふたりとも美味しいものを少しずつ、\r\n色々食べられるだろ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "まぁ、わけやすいものに限られちゃうけどさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──さて、どうだろう\r\n取引は成立か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003008040190,
+    "speaker": "めぐる",
+    "text": "もちろんだよっ！\r\nわーいっ、ありがとうプロデューサー！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040190"
+  },
+  {
+    "id": 2003008040200,
+    "speaker": "めぐる",
+    "text": "やったやったぁ……！\r\nまずはどれにしようかなーっ",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040200"
+  },
+  {
+    "id": 2003008040210,
+    "speaker": "めぐる",
+    "text": "プロデューサーは、唐揚げとたこ焼きとポテトだったら\r\nどれがいい？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、だから言ってるだろ？　決めきれないんだって\r\nどれも美味しそうだし、なんでも食べられるしな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "取引は有効に使ってくれ、めぐる\r\n──全部いかなくていいのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003008040220,
+    "speaker": "めぐる",
+    "text": "！　全部……！\r\nそれが許されちゃうなんて……！",
+    "charAnim1": "touch",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040220"
+  },
+  {
+    "id": 2003008040230,
+    "speaker": "めぐる",
+    "text": "さっきのお願いが叶っちゃうよ……！\r\nすっごく魅力的……！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうする？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003008040240,
+    "speaker": "めぐる",
+    "text": "──じゃあじゃあ、改めて質問っ",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003008040250,
+    "speaker": "めぐる",
+    "text": "唐揚げとたこ焼きとポテトだったら、\r\nどれからにしたい！？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、そうだな──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003008040260,
+    "speaker": "めぐる",
+    "text": "実を言うとね、甘いものの候補もあるから──\r\nそれも踏まえて考えてもらえたら嬉しいな",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、いいぞ\r\nちなみにそっちの候補は？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003008040270,
+    "speaker": "めぐる",
+    "text": "うんっ\r\nえっとね──",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040270"
+  },
+  {
+    "id": 2003008040280,
+    "speaker": "めぐる",
+    "text": "かき氷と人形焼きと、わたあめだよ！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300804/2003008040280"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

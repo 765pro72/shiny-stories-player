@@ -1,0 +1,502 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お疲れ様です",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2007004030010,
+    "speaker": "結華",
+    "text": "おっ、プロデューサー！　いいところに！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040070010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200700403/2007004030010"
+  },
+  {
+    "id": 2007004030020,
+    "speaker": "結華",
+    "text": "ちょっと聞きたいことがあるんだけどさぁ、\r\nとりあえずこっち来てもらってもいい？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、おう……？",
+    "charAnim2": "face_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（なんだろう……プレイヤーを持ってるってことは、\r\nボイスレッスン関連のこととか……？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2007004030030,
+    "speaker": "結華",
+    "text": "ほらほら、おいで～？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030030"
+  },
+  {
+    "charLabel": "yuika",
+    "bgm": "pause",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "se": "1040070010",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "movie": "1040070010"
+  },
+  {
+    "id": 2007004030040,
+    "speaker": "結華",
+    "text": "イヤホン取れちゃったらやだから……",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030040",
+    "stillType": "idols",
+    "stillId": "1040070010"
+  },
+  {
+    "id": 2007004030050,
+    "speaker": "結華",
+    "text": "──ね、もっと近くに行ってもいい？",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030050"
+  },
+  {
+    "id": 2007004030060,
+    "speaker": "結華",
+    "text": "ダメ、かな……？",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "！？",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0220"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect",
+    "stillCtrl": "off"
+  },
+  {
+    "id": 2007004030070,
+    "speaker": "結華",
+    "text": "……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "resume",
+    "voice": "produce_events/200700403/2007004030070"
+  },
+  {
+    "id": 2007004030080,
+    "speaker": "結華",
+    "text": "──あはは、なーんちゃって！\r\nＰたんすっごくビックリしてる～！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030080"
+  },
+  {
+    "id": 2007004030090,
+    "speaker": "結華",
+    "text": "どう？\r\nちょっとはときめきましたー？",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "と、ときめくってどういう……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2007004030100,
+    "speaker": "結華",
+    "text": "いやぁほら、こういうのってさ、巷じゃ\r\n憧れのシチュエーション、なんて呼ばれたりするじゃん？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030100"
+  },
+  {
+    "id": 2007004030110,
+    "speaker": "結華",
+    "text": "三峰的にどんな感じか、そしてされた側はどう思うのか、\r\n体験してみたくって",
+    "charAnim2": "face_close",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030110"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLabel": "yuika",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0124",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2007004030120,
+    "speaker": "結華",
+    "text": "この間もらった取材用のアンケートにね、\r\nおんなじような質問があったんだよ",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030120"
+  },
+  {
+    "id": 2007004030130,
+    "speaker": "結華",
+    "text": "三峰そういうの馴染みないし、でも嘘答えるのは嫌だし、\r\nだったら試しちゃえーって！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030130"
+  },
+  {
+    "id": 2007004030140,
+    "speaker": "結華",
+    "text": "ということで、\r\nＰたんには実験台になっていただきましたー！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そ、そういうことだったのか……\r\nすまん、またお得意のからかいかと……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2007004030150,
+    "speaker": "結華",
+    "text": "ああうん、それはもちろんそう\r\n半分ぐらいはそう",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "っ、結華～……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2007004030160,
+    "speaker": "結華",
+    "text": "ごめんって、怒らないでよプロデューサー！\r\n実践してみたかったっていうのも本当なんだから！",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "油断も隙もない……\r\n……ああほら、イヤホン返すな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2007004030170,
+    "speaker": "結華",
+    "text": "ん、ありがと",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "探求心があるのはいいけど、こういうのはただの悪戯とも\r\n取られかねないんだから、相手には気をつけること",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そもそも俺なんかで試すんじゃない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2007004030180,
+    "speaker": "結華",
+    "text": "……もしかして、嫌だった？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうじゃなくて、こういうのはからかい半分で\r\nやるもんじゃないぞってこと",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "わかったか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2007004030190,
+    "speaker": "結華",
+    "text": "……はーい",
+    "charAnim1": "surp2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030190"
+  },
+  {
+    "id": 2007004030200,
+    "speaker": "結華",
+    "text": "でもね、プロデューサー",
+    "charAnim1": "wait4",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "off",
+    "voice": "produce_events/200700403/2007004030200"
+  },
+  {
+    "id": 2007004030210,
+    "speaker": "結華",
+    "text": "三峰、プロデューサーが相手だからやったんだよ？",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030210"
+  },
+  {
+    "id": 2007004030220,
+    "speaker": "結華",
+    "text": "信頼するプロデューサーが相手じゃなかったら、\r\nこんなこと試したりしてないんだよ？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "結華……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "反省してないだろ……！？",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "014"
+  },
+  {
+    "id": 2007004030230,
+    "speaker": "結華",
+    "text": "……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030230"
+  },
+  {
+    "id": 2007004030240,
+    "speaker": "結華",
+    "text": "あはっ、だ～いせ～いか～い♪",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030240"
+  },
+  {
+    "id": 2007004030250,
+    "speaker": "結華",
+    "text": "ご忠告はありがたーく頂戴しますが、\r\n実際に改善するかは検討させていただきますってね！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030250"
+  },
+  {
+    "id": 2007004030260,
+    "speaker": "結華",
+    "text": "そんなわけだから、\r\n今後も三峰からの奇襲には要注意だよ？　プロデューサー！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200700403/2007004030260"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

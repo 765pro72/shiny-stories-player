@@ -1,0 +1,170 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "008",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0100",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "霧子、何読んでるんだ？\r\nあれ……その本、この間も読んでいなかったか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1008001001110010,
+    "speaker": "霧子",
+    "text": "何か読みたくて……\r\nでもほかにいい本が……思いつかなくて……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100111/1008001001110010"
+  },
+  {
+    "id": 1008001001110020,
+    "speaker": "霧子",
+    "text": "おすすめの本はありませんか……？",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100111/1008001001110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（おすすめの本か、そうだな）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "このミステリーとか\r\nおすすめだな！",
+    "nextLabel": "1008001001111"
+  },
+  {
+    "select": "アイドルの自伝は？",
+    "nextLabel": "1008001001112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "植物図鑑もいいかも",
+    "nextLabel": "1008001001113"
+  },
+  {
+    "id": 1008001001110030,
+    "label": "1008001001111",
+    "speaker": "霧子",
+    "text": "わぁ……\r\nか、貸してくださるんですか……！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100111/1008001001110030"
+  },
+  {
+    "id": 1008001001110040,
+    "speaker": "霧子",
+    "text": "ポ、ポケットに入ってたんですね……\r\nまだ……あったかいです……",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100111/1008001001110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001001110050,
+    "label": "1008001001112",
+    "speaker": "霧子",
+    "text": "じ、自伝……ですか……\r\nアイドルの勉強に……なりますね……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100111/1008001001110050"
+  },
+  {
+    "id": 1008001001110060,
+    "speaker": "霧子",
+    "text": "最近の人のだけ……じゃなくて……\r\n昔の人のも……読んでみたいです……",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100111/1008001001110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001001110070,
+    "label": "1008001001113",
+    "speaker": "霧子",
+    "text": "わ、わたしも……\r\n植物図鑑は……いくつか持ってます……！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100111/1008001001110070"
+  },
+  {
+    "id": 1008001001110080,
+    "speaker": "霧子",
+    "text": "本当のお花さんたちのほうが……\r\n綺麗……ですけど………",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100111/1008001001110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end"
+  }
+]

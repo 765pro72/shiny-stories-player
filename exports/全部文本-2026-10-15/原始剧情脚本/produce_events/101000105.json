@@ -1,0 +1,812 @@
+[
+  {
+    "id": 1010001050010,
+    "speaker": "智代子",
+    "text": "はぁ……はぁ……！",
+    "charCategory": "stand_jersey",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00014",
+    "bgm": "001",
+    "voice": "produce_events/101000105/1010001050010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お疲れ様、智代子\r\n張りきってるみたいだな",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010001050020,
+    "speaker": "智代子",
+    "text": "はい！\r\nせっかく大きなイベントに呼んでいただいたので！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050020"
+  },
+  {
+    "id": 1010001050030,
+    "speaker": "智代子",
+    "text": "ユニットのみんなで出れるのも嬉しいし、\r\nソロパートもあるなんて……どきどきですっ",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか\r\nファンのみんなも期待しているから、頑張ろうな",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010001050040,
+    "speaker": "智代子",
+    "text": "はい！　\r\n今の私ができる、最高のステージにしてみせます！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、頑張ろう！",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（智代子は気合充分みたいだな\r\n本番を見るのが楽しみだ！）",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "智代子、調子はどうだ？",
+    "charCategory": "stand_costume",
+    "charAnim1": "wait1",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00007",
+    "se": "0111"
+  },
+  {
+    "id": 1010001050050,
+    "speaker": "智代子",
+    "text": "絶好調ですっ\r\nいつでも行けちゃいますよ～！",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0111",
+    "voice": "produce_events/101000105/1010001050050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ははは、出番はもうすぐだから\r\nもう少しだけ待っててくれよ",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0111"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（緊張もしてないみたいだし\r\n本当に今までで１番のステージを見せてくれそうだ）",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0111"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………\r\nそろそろのはずだけどな……",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0111"
+  },
+  {
+    "id": 1010001050060,
+    "speaker": "智代子",
+    "text": "曲、流れませんね……",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0111",
+    "voice": "produce_events/101000105/1010001050060"
+  },
+  {
+    "id": 1010001050070,
+    "speaker": "智代子",
+    "text": "……あの、プロデューサーさん\r\nなんだか、スタッフさんたちの様子が……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0111",
+    "voice": "produce_events/101000105/1010001050070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ああ。ちょっと聞いてくる",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0111"
+  },
+  {
+    "id": 1010001050080,
+    "speaker": "智代子",
+    "text": "はい！　お願いします……！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0111",
+    "voice": "produce_events/101000105/1010001050080"
+  },
+  {
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あの、何が……えっ？\r\nはい、はい……わかりました",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "機材トラブルだそうだ\r\nしばらく待機することになるかもしれない",
+    "charCategory": "stand_costume",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    }
+  },
+  {
+    "id": 1010001050090,
+    "speaker": "智代子",
+    "text": "えっ！",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "やっぱりどうしても音楽が流れないらしい\r\n今調整してるとは言っていたが……",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010001050100,
+    "speaker": "智代子",
+    "text": "そうなんですね……",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まずいかもしれない……\r\nあんなに盛り上がっていた観客の熱も徐々に……）",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010001050110,
+    "speaker": "智代子",
+    "text": "みんな、さっきまであんなに楽しそうだったのに\r\n暗い顔してる……このままじゃ……",
+    "charAnim1": "wait3",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050110"
+  },
+  {
+    "id": 1010001050120,
+    "speaker": "智代子",
+    "text": "…………っ",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050120"
+  },
+  {
+    "id": 1010001050130,
+    "speaker": "智代子",
+    "text": "――プロデューサーさん、私、ステージに行きます！",
+    "charAnim1": "anger1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050130"
+  },
+  {
+    "id": 1010001050140,
+    "speaker": "智代子",
+    "text": "来てくれてるお客さんが楽しめてないのに、\r\n何もしないでいるなんて嫌だから",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050140"
+  },
+  {
+    "id": 1010001050150,
+    "speaker": "智代子",
+    "text": "私にも、できることがあると思うんです！\r\nだからっ、その…………ダメ、ですか……？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……いや、智代子ならきっと大丈夫だ\r\n行ってこい！",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010001050160,
+    "speaker": "智代子",
+    "text": "！！",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050160"
+  },
+  {
+    "id": 1010001050170,
+    "speaker": "智代子",
+    "text": "はい！　ありがとうございます！\r\n――行ってきます！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050170"
+  },
+  {
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait2",
+    "bg": "00015",
+    "bgEffect": "fade",
+    "waitType": "effect"
+  },
+  {
+    "id": 1010001050180,
+    "speaker": "智代子",
+    "text": "みなさん！　お待たせしちゃってごめんなさい！",
+    "charCategory": "stand_costume",
+    "charAnim1": "smile3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101000105/1010001050180"
+  },
+  {
+    "id": 1010001050190,
+    "speaker": "智代子",
+    "text": "実は、チョコっと機材のトラブルがありまして……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050190"
+  },
+  {
+    "id": 1010001050200,
+    "speaker": "智代子",
+    "text": "待っている間、私のとっておきの\r\nチョコレート情報、お届けしちゃいますね！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050200"
+  },
+  {
+    "id": 1010001050210,
+    "speaker": "智代子",
+    "text": "まずは最近見つけた\r\nとっても美味しいチョコの食べ方なんですけど……",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（会場が、いい感じに盛り上がり始めてる……\r\n頑張れ！　智代子！）",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0110"
+  },
+  {
+    "effectLabel": "black4",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black4",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1010001050220,
+    "speaker": "智代子",
+    "text": "――それでは、園田智代子でした！\r\nありがとうございました！",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bg": "00007",
+    "se": "0111",
+    "voice": "produce_events/101000105/1010001050220"
+  },
+  {
+    "textFrame": "off",
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "智代子！　お疲れ様！\r\nすごくよかったぞ！",
+    "charCategory": "stand_costume",
+    "charAnim1": "wait1",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "se": "0111",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 1010001050230,
+    "speaker": "智代子",
+    "text": "さ、さすがにどうなるかと思いましたぁ……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050230"
+  },
+  {
+    "id": 1010001050240,
+    "speaker": "智代子",
+    "text": "でも、喜んでもらえたみたいで\r\n本当に良かった……！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "智代子……",
+    "charLabel": "chiyoko",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "立派なアイドル\r\nになったな",
+    "nextLabel": "1"
+  },
+  {
+    "select": "楽しそうだったな",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "智代子は最高の\r\nアイドルだよ！",
+    "nextLabel": "3"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "立派なアイドルに\r\nなったな",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010001050250,
+    "label": "1",
+    "speaker": "智代子",
+    "text": "えっ\r\nそ、そうですか？",
+    "charAnim1": "surp1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、さっきのステージを見て思ったよ",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010001050260,
+    "speaker": "智代子",
+    "text": "そう、なんですね……！\r\nえへへ……",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050260"
+  },
+  {
+    "id": 1010001050270,
+    "speaker": "智代子",
+    "text": "……今日みたいに大変なこともあるけど\r\nやっぱり、アイドルって素敵ですっ",
+    "charAnim1": "wait3",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050270"
+  },
+  {
+    "id": 1010001050280,
+    "speaker": "智代子",
+    "text": "私、もっとアイドルやりたいなって、思っちゃいました！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/101000105/1010001050280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "楽しそうだったな",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010001050290,
+    "label": "2",
+    "speaker": "智代子",
+    "text": "はいっ！　なんかもう、吹っ切れちゃって……\r\nでも、お客さんも優しかったし、ぜーんぶ楽しかったです！",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか\r\nもっと楽しいステージ、どんどんやっていこうな！",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010001050300,
+    "speaker": "智代子",
+    "text": "はい！\r\nこれからも、よろしくお願いします！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/101000105/1010001050300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "智代子は最高の\r\nアイドルだよ！",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010001050310,
+    "label": "3",
+    "speaker": "智代子",
+    "text": "ほ、本当ですか！？　嬉しいですー！",
+    "charAnim1": "surp1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050310"
+  },
+  {
+    "id": 1010001050320,
+    "speaker": "智代子",
+    "text": "……でも、まだまだですっ\r\n今も心臓バクバクして手が震えちゃってますし……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050320"
+  },
+  {
+    "id": 1010001050330,
+    "speaker": "智代子",
+    "text": "もっといろんな経験をして\r\n本当に最高のアイドルになりたいです！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000105/1010001050330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ！　智代子ならなれるさ\r\n一緒に頑張っていこう！",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010001050340,
+    "speaker": "智代子",
+    "text": "はい！　プロデューサーさん！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/101000105/1010001050340"
+  },
+  {
+    "label": "end"
+  }
+]

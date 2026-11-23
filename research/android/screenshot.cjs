@@ -1,0 +1,1 @@
+const cp=require('child_process'),fs=require('fs');fs.writeFileSync('exports/android-device.png',cp.execFileSync('android-toolchain/sdk/platform-tools/adb.exe',['-s','emulator-5554','exec-out','screencap','-p'],{maxBuffer:10*1024*1024,windowsHide:true}));

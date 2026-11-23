@@ -1,0 +1,607 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00526",
+    "bgm": "0011",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "クラスメイト",
+    "text": "今日放課後ちょっと時間ある～？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2014008020010,
+    "speaker": "甘奈",
+    "text": "放課後？　うん、大丈夫だよ～！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020010"
+  },
+  {
+    "speaker": "クラスメイト",
+    "text": "サンキュー！　ちょっと相談あってさぁ",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_sad2_s",
+    "charLabel": "amana",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "fade_out",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "bg": "00001",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2014008020020,
+    "speaker": "甘奈",
+    "text": "……",
+    "charLipAnim": "lip_sad2_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "002",
+    "voice": "produce_events/201400802/2014008020020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "甘奈、ちょっと話が──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014008020030,
+    "speaker": "甘奈",
+    "text": "──う～ん……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_sad2_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "甘奈……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014008020040,
+    "speaker": "甘奈",
+    "text": "えっ！？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020040"
+  },
+  {
+    "id": 2014008020050,
+    "speaker": "甘奈",
+    "text": "あっ！　プロデューサーさん！\r\nごめん、どうしたの？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_trouble",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "次の仕事について話そうと思ったんだけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……何か考え事か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014008020060,
+    "speaker": "甘奈",
+    "text": "あ！　大丈夫！　なんでもないから！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それにしてはだいぶ悩んでる感じに見えたけど……",
+    "charAnim2": "face_wait",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……甘奈さえよければ、話聞くぞ",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "少し気持ちが軽くなるかもしれないし",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014008020070,
+    "speaker": "甘奈",
+    "text": "ありがと、じゃあ、ちょっとだけ\r\n聞いてもらうね",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020070"
+  },
+  {
+    "id": 2014008020080,
+    "speaker": "甘奈",
+    "text": "友達が、クラスの男の子と付き合うことになって\r\n今度デートするんだって",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020080"
+  },
+  {
+    "id": 2014008020090,
+    "speaker": "甘奈",
+    "text": "けど、そういうの初めてだから\r\nどうしたらいいかなって相談されて",
+    "charAnim1": "shy1",
+    "charAnim2": "face_trouble",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020090"
+  },
+  {
+    "id": 2014008020100,
+    "speaker": "甘奈",
+    "text": "色々とお話、聞いたの",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020100"
+  },
+  {
+    "id": 2014008020110,
+    "speaker": "甘奈",
+    "text": "甘奈、自分なりに考えて答えてはいたんだけど",
+    "charAnim1": "sad2",
+    "charAnim2": "face_trouble",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020110"
+  },
+  {
+    "id": 2014008020120,
+    "speaker": "甘奈",
+    "text": "想像でしか話せてないから……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020120"
+  },
+  {
+    "id": 2014008020130,
+    "speaker": "甘奈",
+    "text": "本当に力になれたかがちょっとだけ不安で",
+    "charAnim1": "sad1",
+    "charAnim2": "face_trouble",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そういうことか……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "聞いてあげただけで\r\n力になれてると思う",
+    "nextLabel": "1"
+  },
+  {
+    "select": "ご両親の話を聞いて\r\n参考にするとか",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "何事もそうなんだけど",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "甘奈がそれだけ考えて\r\n聞いてあげたんだし、大丈夫じゃないかな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014008020140,
+    "speaker": "甘奈",
+    "text": "うーん……そうかなぁ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "その子のことを真剣に考えてなかったら\r\n今みたいに心配することもないと思うよ",
+    "charAnim2": "face_sad",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だから、悩むってことは\r\n真面目に聞いてあげてた証拠だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014008020150,
+    "speaker": "甘奈",
+    "text": "そっか……そういう考え方もあるね……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020150"
+  },
+  {
+    "id": 2014008020160,
+    "speaker": "甘奈",
+    "text": "それに、甘奈が悩んでたら\r\n友達まで不安になっちゃうかも……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020160"
+  },
+  {
+    "id": 2014008020170,
+    "speaker": "甘奈",
+    "text": "うん……！　考えすぎるのはよくないねっ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201400802/2014008020170"
+  },
+  {
+    "id": 2014008020180,
+    "label": "2",
+    "speaker": "甘奈",
+    "text": "えっ！？　お父さんたちの？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、さっきの甘奈の口ぶりだと\r\n具体的な話ができないことを気にしてるようだったから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ご両親の付き合い始めの頃の話を\r\n聞いてみたらいいんじゃないかと思って",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014008020190,
+    "speaker": "甘奈",
+    "text": "たまに聞いてたけど\r\nあまり詳しくは知らないかも……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020190"
+  },
+  {
+    "id": 2014008020200,
+    "speaker": "甘奈",
+    "text": "……うん！　すっごく良さそう！\r\n帰ったらさっそく聞いてみるねっ！",
+    "charAnim1": "anger3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020200"
+  },
+  {
+    "id": 2014008020210,
+    "speaker": "甘奈",
+    "text": "ふたりとも仲良しだから\r\n色々素敵なお話聞けそうだな～、えへへっ",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "解決できそうだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014008020220,
+    "speaker": "甘奈",
+    "text": "うん！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020220"
+  },
+  {
+    "charAnim2": "face_trouble",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2014008020230,
+    "speaker": "甘奈",
+    "text": "……ちなみに\r\n……プロデューサーさんは──",
+    "charAnim1": "shy2",
+    "charAnim2": "face_trouble",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020230"
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad2_s",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "se": "0103",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──すまん。ちょっと電話だ",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad2_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0106",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いつもお世話になっております──",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_shy2_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_shy2_s",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014008020240,
+    "speaker": "甘奈",
+    "text": "……後でまた聞いてみよっと",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close2",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201400802/2014008020240"
+  },
+  {
+    "label": "3",
+    "speaker": "プロデューサー",
+    "text": "悩みすぎない方がいいと思うぞ",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だから、下手に考えすぎずに\r\n出たとこ勝負をした方がいいんじゃないかな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014008020250,
+    "speaker": "甘奈",
+    "text": "出たとこ勝負……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、自分でどうすることもできないなら\r\n流れに任せてしまうのもありだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "その方が、気楽に楽しめて\r\n結果的にいい思い出になるかもしれないし",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014008020260,
+    "speaker": "甘奈",
+    "text": "なるほど……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020260"
+  },
+  {
+    "id": 2014008020270,
+    "speaker": "甘奈",
+    "text": "初めてどこかに出かけたり、何かを食べたりする時って\r\nワクワクするもんね！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400802/2014008020270"
+  },
+  {
+    "id": 2014008020280,
+    "speaker": "甘奈",
+    "text": "プロデューサーさん、ありがと！\r\n明日、友達にそのお話してみるねっ！",
+    "charAnim1": "hello",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201400802/2014008020280"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

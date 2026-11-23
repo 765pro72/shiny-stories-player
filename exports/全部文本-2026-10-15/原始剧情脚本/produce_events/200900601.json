@@ -1,0 +1,601 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00034",
+    "bgm": "009"
+  },
+  {
+    "id": 2009006010010,
+    "speaker": "果穂",
+    "text": "――あっ！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040090020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200900601/2009006010010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？\r\n果穂、どうしたんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010020,
+    "speaker": "果穂",
+    "text": "プロデューサーさん！\r\nこれ、見てください！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これって……\r\n……ああ、温湿度計か",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010030,
+    "speaker": "果穂",
+    "text": "今の湿度、60パーセント、なんです！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "確かに、そうみたいだけど……\r\nそれがどうかしたのか？",
+    "charAnim2": "face_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010040,
+    "speaker": "果穂",
+    "text": "学校の先生が、『湿度は空気の中に水がどれくらいあるか』\r\nだって言ってました",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010040"
+  },
+  {
+    "id": 2009006010050,
+    "speaker": "果穂",
+    "text": "このまま湿度が上がって100パーセントになったら……\r\n事務所が水の中になるってことですよね！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ええ……！？",
+    "charAnim2": "face_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010060,
+    "speaker": "果穂",
+    "text": "そうなったら、\r\n事務所でお魚も泳げちゃいます！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010060"
+  },
+  {
+    "id": 2009006010070,
+    "speaker": "果穂",
+    "text": "いろんなお魚を飼って水族館みたいにしたり……\r\n色んなことができそうです！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010070"
+  },
+  {
+    "id": 2009006010080,
+    "speaker": "果穂",
+    "text": "スッゴく楽しそうですっ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほどな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（面白い発想だけど……\r\n果穂はちょっと勘違いをしているようだ）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "そんなに\r\n水があったら……",
+    "nextLabel": "1"
+  },
+  {
+    "select": "果穂は\r\nいいところに気付くな",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "泳げるように\r\nなるかもしれないな！",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "事務所が水浸しになって、\r\nパソコンや書類も使えなくなっちゃうな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010090,
+    "speaker": "果穂",
+    "text": "えぇ！？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010090"
+  },
+  {
+    "id": 2009006010100,
+    "speaker": "果穂",
+    "text": "そ、それは大変ですっ！\r\nみんなお仕事ができなくなっちゃいます！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010100"
+  },
+  {
+    "id": 2009006010110,
+    "speaker": "果穂",
+    "text": "なんとかしないと……！\r\nえっと、シートをかけたりしたら大丈夫でしょうか！？",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010110"
+  },
+  {
+    "id": 2009006010120,
+    "speaker": "果穂",
+    "text": "後は、えっと、えーっと……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "か、果穂、すまん！\r\n今のは冗談だっ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010130,
+    "speaker": "果穂",
+    "text": "えっ？\r\nそ、そうなんですか？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、湿度がどれだけ高くなっても\r\n実際に水の中になったりしないんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010140,
+    "speaker": "果穂",
+    "text": "じゃあ、水びたしにならないってことですか……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、そういうことだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010150,
+    "speaker": "果穂",
+    "text": "よ、よかった～……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "怖がらせて悪かったな",
+    "charAnim2": "face_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010160,
+    "speaker": "果穂",
+    "text": "えへへ、ちょっとびっくりしちゃっただけです！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010160"
+  },
+  {
+    "id": 2009006010170,
+    "speaker": "果穂",
+    "text": "でも……！　\r\nもし本当に事務所が大ピンチになったら……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010170"
+  },
+  {
+    "id": 2009006010180,
+    "speaker": "果穂",
+    "text": "あたしが、ヒーローみたいに救ってみせます！",
+    "charAnim1": "hero",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200900601/2009006010180"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2009006010190,
+    "label": "2",
+    "speaker": "果穂",
+    "text": "……？\r\nどういうことですか？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "事務所の中が水中になったら……なんて、\r\n俺にはなかなか浮かばないからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "柔軟な発想で、すごいな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010200,
+    "speaker": "果穂",
+    "text": "じゅーなんな、はっそう……！\r\nえへへ、ありがとうございます！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん\r\nただ、湿度についてちょっと勘違いをしてるみたいだ",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010210,
+    "speaker": "果穂",
+    "text": "そうなんですか？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、湿度っていうのは……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kaho",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──だから、湿度が100パーセントになっても\r\n事務所が水の中になるわけじゃないんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010220,
+    "speaker": "果穂",
+    "text": "なるほど……！\r\nそうだったんですねっ！",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "本当はもう少し大きくなってから勉強することだけど\r\n果穂は一足先に学んじゃったな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010230,
+    "speaker": "果穂",
+    "text": "はい！　プロデューサーさんのおかげで\r\nあたし、またひとつ成長できました！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010230"
+  },
+  {
+    "id": 2009006010240,
+    "speaker": "果穂",
+    "text": "プロデューサーさんはやっぱりスゴいです！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200900601/2009006010240"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2009006010250,
+    "label": "3",
+    "speaker": "果穂",
+    "text": "事務所がプールに……！\r\nスゴいですっ！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010250"
+  },
+  {
+    "id": 2009006010260,
+    "speaker": "果穂",
+    "text": "水着を持ってこなくちゃですね！！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな\r\n……だけど、不思議なことがないか？",
+    "charAnim2": "face_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010270,
+    "speaker": "果穂",
+    "text": "不思議なこと……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010270"
+  },
+  {
+    "id": 2009006010280,
+    "speaker": "果穂",
+    "text": "……あっ！\r\n今も60パーセントなのに、水がどこにもありません！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "その謎の答えは……\r\n図書館にあるかもしれないな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010290,
+    "speaker": "果穂",
+    "text": "！\r\n図書館にはいっぱい本がありますもんね！",
+    "charAnim1": "think",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そういうことだ\r\n……さて、今日の仕事はこれで終わりだ",
+    "charAnim2": "face_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だから、果穂の疑問の答えを探しに、\r\n一緒に図書館探検に行かないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010300,
+    "speaker": "果穂",
+    "text": "わぁっ……！\r\nいいんですか！？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900601/2009006010300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、もちろんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2009006010310,
+    "speaker": "果穂",
+    "text": "わーいっ！\r\nプロデューサーさんと一緒に図書館探検、楽しみですっ！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200900601/2009006010310"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

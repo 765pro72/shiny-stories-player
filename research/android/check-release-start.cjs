@@ -1,0 +1,1 @@
+(async()=>{for(let i=0;i<80;i++){try{const r=await fetch('http://127.0.0.1:9345/api/mobile/health',{signal:AbortSignal.timeout(1500)});if(r.ok){console.log(await r.json());return}}catch{}await new Promise(r=>setTimeout(r,500))}throw Error('ARM64 APK startup timeout')})().catch(e=>{console.error(e);process.exitCode=1});

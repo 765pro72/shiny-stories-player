@@ -1,0 +1,114 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019"
+  },
+  {
+    "id": 4022001000110010,
+    "speaker": "小糸",
+    "text": "ぴゃ……！？\r\nぷ、プロデューサーさん……！！！",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "022",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communication_cheers/402200100011/4022001000110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（ガチガチに緊張してるな……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "頑張ろうな！",
+    "nextLabel": "4022001000111"
+  },
+  {
+    "select": "大丈夫だ！",
+    "nextLabel": "4022001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "無理しなくていい",
+    "nextLabel": "4022001000113"
+  },
+  {
+    "id": 4022001000110020,
+    "label": "4022001000111",
+    "speaker": "小糸",
+    "text": "あ……え、えっと、はい……！\r\nが、頑張ります……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402200100011/4022001000110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、気合が入ったみたいだ……！）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4022001000110030,
+    "label": "4022001000112",
+    "speaker": "小糸",
+    "text": "あ……え、えへ……\r\nそ、そうですかね……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402200100011/4022001000110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（少しは緊張が解けたらいいけど……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4022001000110040,
+    "label": "4022001000113",
+    "speaker": "小糸",
+    "text": "え……あ……\r\nそ、そう、なんですかね……？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402200100011/4022001000110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……しまった、困惑させてしまった……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

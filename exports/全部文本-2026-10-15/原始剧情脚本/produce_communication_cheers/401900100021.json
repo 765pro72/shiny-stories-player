@@ -1,0 +1,119 @@
+[
+  {
+    "id": 4019001000210010,
+    "speaker": "愛依",
+    "text": "今日のオーディションっていつもより長いんだよね？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "019",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00007",
+    "bgm": "019",
+    "voice": "produce_communication_cheers/401900100021/4019001000210010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（何か気になることがあるみたいだ）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "今のうちに\r\nリラックスしとこう",
+    "nextLabel": "4019001000211"
+  },
+  {
+    "select": "確か今日、\r\n用事があるんだよな",
+    "nextLabel": "4019001000212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "きつそうか",
+    "nextLabel": "4019001000213"
+  },
+  {
+    "id": 4019001000210020,
+    "label": "4019001000211",
+    "speaker": "愛依",
+    "text": "そだね！　ちょっと深呼吸とかしとく～",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/401900100021/4019001000210020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（しっかり肩の力を抜いてくれるといいな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 4019001000210030,
+    "label": "4019001000212",
+    "speaker": "愛依",
+    "text": "まぁ、そこまでの用じゃないからこっちのが大事だけどさ\r\n一応の確認ってカンジ～",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/401900100021/4019001000210030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（これで、より集中してくれそうだ）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 4019001000210040,
+    "label": "4019001000213",
+    "speaker": "愛依",
+    "text": "いやいやここまで来てさ\r\nさすがにそんなこと言わないって～",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/401900100021/4019001000210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（逆効果だったみたいだ）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

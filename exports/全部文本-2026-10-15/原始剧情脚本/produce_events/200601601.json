@@ -1,0 +1,803 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00018",
+    "bgm": "0000",
+    "se": "1378",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "bgm": "099",
+    "waitType": "time",
+    "waitTime": 1400,
+    "bgEffectTime": 1400
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1040060100",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 3100
+  },
+  {
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "1887",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "咲耶、お疲れ様\r\nすまん、待たせたな",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 2006016010010,
+    "speaker": "咲耶",
+    "text": "プロデューサー、お疲れ様\r\n私が早めに着いてしまっただけだよ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010010"
+  },
+  {
+    "id": 2006016010020,
+    "speaker": "咲耶",
+    "text": "ソロ曲のデモを聴いていたのだけれど\r\nすごく素敵な曲だね",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010020"
+  },
+  {
+    "id": 2006016010030,
+    "speaker": "咲耶",
+    "text": "何度も繰り返してしまった",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "気に入ってもらえてよかったよ\r\nすごくかっこいい曲だよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006016010040,
+    "speaker": "咲耶",
+    "text": "うん\r\n曲調はかっこいいけれど────",
+    "charAnim2": "face_close",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010040"
+  },
+  {
+    "id": 2006016010050,
+    "speaker": "咲耶",
+    "text": "私は、とてもあたたかい曲だと思った",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010050"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_shy3",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00413",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "へぇ、あたたかい曲か……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006016010060,
+    "speaker": "咲耶",
+    "text": "うん……ふと立ち止まってしまったり\r\n寂しさを抱えたりしている人に、そっと寄り添って",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010060"
+  },
+  {
+    "id": 2006016010070,
+    "speaker": "咲耶",
+    "text": "手を取り、未来へ導いてくれるような……\r\nそんな歌だと思ってね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほど……\r\nだとしたら──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "その歌を必要としている人が\r\nきっとたくさんいると思うよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006016010080,
+    "speaker": "咲耶",
+    "text": "ああ、そうだね……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_shy3",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601601/2006016010080"
+  },
+  {
+    "id": 2006016010090,
+    "speaker": "咲耶",
+    "text": "精一杯歌わせてもらうよ\r\nみんなに届くように",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、頑張ろう！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 3200
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 1200,
+    "bgEffectTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0000",
+    "waitType": "time",
+    "waitTime": 100
+  },
+  {
+    "textFrame": "off",
+    "bg": "00757",
+    "bgEffect": "fade",
+    "bgm": "0097",
+    "waitType": "time",
+    "waitTime": 1200,
+    "bgEffectTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "白瀬さん、これにて終了です！\r\nお疲れ様でした！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2006016010100,
+    "speaker": "咲耶",
+    "text": "お疲れ様でした",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010100"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "se": "1196",
+    "waitType": "time",
+    "waitTime": 4200,
+    "bgEffectTime": 2200
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 300
+  },
+  {
+    "textFrame": "off",
+    "bg": "00009",
+    "bgEffect": "fade",
+    "bgm": "0082",
+    "waitType": "time",
+    "waitTime": 1200,
+    "bgEffectTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2006016010110,
+    "speaker": "咲耶",
+    "text": "…………",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601601/2006016010110"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0539",
+    "waitType": "time",
+    "waitTime": 1400
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "咲耶、お疲れ様\r\n下に車出しとくから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006016010120,
+    "speaker": "咲耶",
+    "text": "────ああ、プロデューサー\r\nすぐ行くよ",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601601/2006016010120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……何かあったか？\r\nなんか上の空っていうか──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006016010130,
+    "speaker": "咲耶",
+    "text": "いや、大したことじゃないんだ\r\n少し考え事をしていて……",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010130"
+  },
+  {
+    "id": 2006016010140,
+    "speaker": "咲耶",
+    "text": "──その……ソロ曲のことで、\r\n歌い方に迷っているところがあって……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010140"
+  },
+  {
+    "id": 2006016010150,
+    "speaker": "咲耶",
+    "text": "明日はもうレコーディングだし──\r\n相談してもいいかな……？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、もちろん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00520",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1200,
+    "bgEffectTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "se": "1254",
+    "waitType": "time",
+    "waitTime": 2200
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "1940",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2006016010160,
+    "speaker": "咲耶",
+    "text": "ここの、台詞調のところ────",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 400
+  },
+  {
+    "id": 2006016010170,
+    "speaker": "咲耶",
+    "text": "やはりここは、かっこよく決めた方がいいかな？\r\nそれとも逆に、優しく囁いた方がいい？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな……\r\n俺としては────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00009",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どちらでもいい、かな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006016010180,
+    "speaker": "咲耶",
+    "text": "……どちらでも？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601601/2006016010180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、咲耶の思うように歌っていいんだよ\r\nだってこれは、咲耶の歌なんだから",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006016010190,
+    "speaker": "咲耶",
+    "text": "────私の思うように、か……",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "fade_out",
+    "voice": "produce_events/200601601/2006016010190"
+  },
+  {
+    "id": 2006016010200,
+    "speaker": "咲耶",
+    "text": "…………",
+    "charAnim2": "face_close",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010200",
+    "autoWaitTime": 1700
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、すまん\r\n余計に悩ませちゃったかな",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "0000"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00224",
+    "bgEffect": "fade",
+    "bgm": "127",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、今この段階で答えをひとつに絞らなくても\r\nいいんじゃないかと思うんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "レコーディングは、正解を披露する場所じゃなくて\r\n正解を探す場所と思ってくれていい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いろんなやり方を試してみたらどうだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00009",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "咲耶が歌えば、それが咲耶の歌になるはずだよ",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 2006016010210,
+    "speaker": "咲耶",
+    "text": "────私が歌えば、私の歌に……\r\n……うん、そうだね",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010210"
+  },
+  {
+    "id": 2006016010220,
+    "speaker": "咲耶",
+    "text": "アナタの言うとおりかもしれない\r\n────ありがとう、プロデューサー",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010220"
+  },
+  {
+    "charAnim1": "wait5",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 2006016010230,
+    "speaker": "咲耶",
+    "text": "明日が楽しみだ",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601601/2006016010230"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2800
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1400,
+    "bgEffectTime": 1400
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

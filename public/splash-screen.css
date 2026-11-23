@@ -1,0 +1,301 @@
+/* ═══════════════════════════════════════════════════════════════════
+   ShinyStories — Startup Splash & Loading Choreography
+   Silky smooth launch, live update check & idol birthday preloader.
+   ═══════════════════════════════════════════════════════════════════ */
+.app-splash {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 40%, #ffffff, #f7f6f2 70%, #edebe4 100%);
+  color: #2b3947;
+  font-family: var(--font-base, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif);
+  user-select: none;
+  cursor: default;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.app-splash.splash-dismissed {
+  opacity: 0 !important;
+  transform: scale(1.025);
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.splash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 90vw;
+  padding: 24px;
+}
+
+/* 283 Sacred-Geometry Prism Emblem (Zero Clipping) */
+.splash-emblem {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-geo-svg {
+  width: 96px;
+  height: 96px;
+  overflow: visible;
+  filter: drop-shadow(0 8px 20px rgba(129, 140, 248, 0.24));
+}
+
+.sp-geo-outer {
+  transform-origin: 60px 60px;
+  animation: splash-spin 16s linear infinite;
+}
+
+.sp-geo-star {
+  transform-origin: 60px 60px;
+  animation: splash-spin-rev 11s linear infinite;
+}
+
+.sp-geo-core {
+  transform-origin: 60px 60px;
+  animation: splash-breathe 2.6s ease-in-out infinite;
+}
+
+@keyframes splash-spin-rev {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes splash-breathe {
+  0%, 100% { transform: scale(1); opacity: 0.92; }
+  50% { transform: scale(1.07); opacity: 1; }
+}
+
+.splash-title {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #243a4e;
+  margin: 0 0 6px;
+}
+
+.splash-sub {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #92a4b5;
+  text-transform: uppercase;
+  margin: 0 0 24px;
+}
+
+/* Progress bar */
+.splash-progress-track {
+  width: 220px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(146, 164, 181, 0.2);
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.splash-progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #89c5db, #f38ea8 60%, #f7d58b);
+  transform-origin: 0% 50%;
+  animation: splash-indeterminate 1.8s ease-in-out infinite;
+  will-change: transform;
+}
+
+.splash-status {
+  font-size: 13px;
+  color: #63778a;
+  min-height: 20px;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.splash-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  background: rgba(243, 142, 168, 0.12);
+  color: #bd4b73;
+  border: 1px solid rgba(243, 142, 168, 0.28);
+  animation: splash-pop 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes splash-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes splash-indeterminate {
+  0% { transform: translateX(-100%) scaleX(0.25); }
+  50% { transform: translateX(25%) scaleX(0.55); }
+  100% { transform: translateX(100%) scaleX(0.25); }
+}
+
+@keyframes splash-pop {
+  0% { opacity: 0; transform: scale(0.92) translateY(4px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Producer Birthday Celebration Card on Home */
+.birthday-celebration-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 30, 42, 0.45);
+  backdrop-filter: blur(10px);
+  animation: bday-fade 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.birthday-card {
+  width: min(90vw, 420px);
+  background: linear-gradient(135deg, #ffffff, #fff9f6);
+  border-radius: 20px;
+  padding: 32px 28px 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18), 0 0 0 1px #ffffff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: bday-zoom 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.birthday-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #f38ea8, #f7d58b, #89c5db);
+}
+
+.birthday-icon {
+  font-size: 46px;
+  margin-bottom: 12px;
+  display: inline-block;
+  animation: bday-bounce 1s ease infinite alternate;
+}
+
+.birthday-card h3 {
+  font-size: 21px;
+  color: #9b4767;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.birthday-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4a5c6e;
+  margin: 0 0 22px;
+}
+
+.birthday-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.birthday-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.9);
+  color: #7b8895;
+  font-size: 15px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  z-index: 2;
+}
+
+.birthday-modal-close:hover {
+  background: #f0f4f8;
+  color: #2c3e50;
+  transform: scale(1.08);
+}
+
+.birthday-actions button {
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.birthday-primary {
+  background: linear-gradient(135deg, #e8638b, #d94875);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 14px rgba(217, 72, 117, 0.35);
+}
+
+.birthday-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(217, 72, 117, 0.45);
+}
+
+.birthday-secondary {
+  background: #ffffff;
+  color: #5c6f80;
+  border: 1px solid #d3e0eb;
+}
+
+.birthday-secondary:hover {
+  background: #f7f9fb;
+}
+
+.producer-birthday-pill {
+  user-select: none;
+  -webkit-user-select: none;
+}
+.producer-birthday-pill:active {
+  transform: scale(0.97) !important;
+}
+
+@keyframes floatRibbon {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes bday-fade { 0% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes bday-zoom { 0% { opacity: 0; transform: scale(0.92) translateY(12px); } 100% { opacity: 1; transform: scale(1) translateY(0); } }
+@keyframes bday-bounce { 0% { transform: translateY(0); } 100% { transform: translateY(-6px); } }

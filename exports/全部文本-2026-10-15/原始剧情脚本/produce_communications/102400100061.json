@@ -1,0 +1,252 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "id": 1024001000610010,
+    "speaker": "にちか",
+    "text": "えーと、納品数が10。認印こちらでかまいませんかー？\r\n──はーい、ありがとうございましたー！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100061/1024001000610010"
+  },
+  {
+    "textFrame": "off",
+    "se": "0680",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ありがとな、さすがの接客だ\r\n手が放せなくて……助かったよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0114",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1024001000610020,
+    "speaker": "にちか",
+    "text": "えっへへー\r\nそのへんはめちゃくちゃプライドあるのでー！",
+    "charAnim1": "surp3",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "024",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102400100061/1024001000610020"
+  },
+  {
+    "charAnim1": "think2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 450
+  },
+  {
+    "id": 1024001000610030,
+    "speaker": "にちか",
+    "text": "てか、伝説になりますかねーーー？\r\n七草にちか、レコード店員時代……！",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100061/1024001000610030"
+  },
+  {
+    "select": "にちかの\r\n頑張り次第だな",
+    "nextLabel": "1024001000611"
+  },
+  {
+    "select": "もちろん\r\n伝説のフロアになる",
+    "nextLabel": "1024001000612"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "うん\r\nなったらいいよな",
+    "nextLabel": "1024001000613"
+  },
+  {
+    "id": 1024001000610040,
+    "label": "1024001000611",
+    "speaker": "にちか",
+    "text": "あははっ！　そうなったら、\r\n私のレコメンコーナー作ってもらおー！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0220",
+    "voice": "produce_communications/102400100061/1024001000610040"
+  },
+  {
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1024001000610050,
+    "speaker": "にちか",
+    "text": "毎回、１階フロア分だけでも\r\n5000枚はオーダーしてもらわないとなー！",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100061/1024001000610050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ははっ\r\nマネージャーさんによろしく言っておかなきゃなぁ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1024001000610060,
+    "label": "1024001000612",
+    "speaker": "にちか",
+    "text": "……！　や、やばーい……\r\nあっ、じつは棚の裏にサインの落書きあるんですけど……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0220",
+    "voice": "produce_communications/102400100061/1024001000610060"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ははっ、それはフロアマネージャーさんに\r\n密告しないといけない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1024001000610070,
+    "speaker": "にちか",
+    "text": "え、えーっ！　みんなで書いたやつなんで……！\r\nていうか、それ密告になってないですから！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0152",
+    "voice": "produce_communications/102400100061/1024001000610070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "1024001000613",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "id": 1024001000610080,
+    "speaker": "にちか",
+    "text": "……わー、なんか\r\nならないって思ってそうー……",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100061/1024001000610080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ……\r\nいや、なったらいいなってほんとに────！",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0327"
+  },
+  {
+    "id": 1024001000610090,
+    "speaker": "にちか",
+    "text": "ふぇぇ……\r\nいいですいいですー。なんとなくわかりましたぁー……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0152",
+    "voice": "produce_communications/102400100061/1024001000610090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

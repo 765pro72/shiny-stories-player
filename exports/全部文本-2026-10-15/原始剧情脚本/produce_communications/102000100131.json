@@ -1,0 +1,280 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0158",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、いいもの飲んでるな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1020001001310010,
+    "speaker": "透",
+    "text": "え？　うん",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102000100131/1020001001310010"
+  },
+  {
+    "id": 1020001001310020,
+    "speaker": "透",
+    "text": "飲む？",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100131/1020001001310020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──こら",
+    "textCtrl": "l",
+    "textFrame": "002",
+    "se": "0220"
+  },
+  {
+    "select": "からかうんじゃない",
+    "nextLabel": "1020001001311"
+  },
+  {
+    "select": "飲まない",
+    "nextLabel": "1020001001312"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "透が飲んでくれ",
+    "nextLabel": "1020001001313"
+  },
+  {
+    "text": "★選択肢①【からかうんじゃない】PERFECT",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1020001001310030,
+    "label": "1020001001311",
+    "speaker": "透",
+    "text": "あははっ、ごめん",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100131/1020001001310030"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "toru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1020001001310040,
+    "speaker": "透",
+    "text": "炭酸平気なら\r\nもう１本あるよ",
+    "charAnim1": "sad1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102000100131/1020001001310040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "text": "★選択肢②【飲まない】GOOD",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1020001001310050,
+    "label": "1020001001312",
+    "speaker": "透",
+    "text": "えー",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100131/1020001001310050"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "toru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1020001001310060,
+    "speaker": "透",
+    "text": "まぁ、もう空だけどね",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102000100131/1020001001310060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "text": "★選択肢③【透が飲んでくれ】NORMAL",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1020001001310070,
+    "label": "1020001001313",
+    "speaker": "透",
+    "text": "……あ、うん",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100131/1020001001310070"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "toru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1020001001310080,
+    "speaker": "透",
+    "text": "飲んでるけど……",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102000100131/1020001001310080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,438 @@
+/* One continuous shell; full motion is intentional, as requested.
+   OneTake & Distinctive AI Design principles: continuous shared elements,
+   unbroken navigation plane, and tactile spring motion. */
+html {
+  scrollbar-gutter: stable;
+}
+
+:root{
+  --motion-ease:cubic-bezier(.16,1,.3,1);
+  --ease-spring:cubic-bezier(0.34,1.35,0.64,1);
+  --motion-shift:26vw;
+  background:#f6f5f1;
+}
+html[data-motion-direction=back]{
+  --motion-shift:-26vw;
+}
+
+/* Pinned continuous persistent header badge across navigation */
+.site-header {
+  view-transition-name: shared-site-header !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 999 !important;
+  height: 60px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: rgba(255, 255, 255, 0.78) !important;
+  backdrop-filter: blur(30px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(30px) saturate(190%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03), inset 0 -1px 0 rgba(0, 0, 0, 0.03) !important;
+  pointer-events: auto !important;
+}
+
+::view-transition-group(shared-site-header) {
+  animation: none !important;
+  z-index: 1000 !important;
+}
+::view-transition-old(shared-site-header),
+::view-transition-new(shared-site-header) {
+  animation: none !important;
+  mix-blend-mode: normal !important;
+}
+
+.site-brand {
+  view-transition-name: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  height: 44px !important;
+  padding: 0 12px 0 6px !important;
+  border-radius: 999px !important;
+  color: #171b22 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  background: rgba(255, 255, 255, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03), inset 0 1px 0 #fff !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.site-brand:hover {
+  background: rgba(255, 255, 255, 0.85) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06), inset 0 1px 0 #fff !important;
+}
+
+.site-brand:active {
+  transform: scale(0.97) !important;
+}
+
+.site-brand,
+.site-brand * {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* 283 Brand Live Studio Status Pulse */
+.live-studio-pulse {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+}
+.live-dot-core {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+}
+.live-dot-ping {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #10b981;
+  opacity: 0.75;
+  animation: appleLivePing 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes appleLivePing {
+  0% { transform: scale(1); opacity: 0.8; }
+  75%, 100% { transform: scale(2.4); opacity: 0; }
+}
+
+.site-brand b {
+  font-size: 30px !important;
+  line-height: 1 !important;
+  font-style: italic !important;
+  letter-spacing: -2px !important;
+  font-weight: 900 !important;
+  display: inline-block !important;
+  width: 58px !important;
+  text-align: center !important;
+  background: linear-gradient(135deg, #1e293b 0%, #475569 50%, #b85c82 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.site-brand span {
+  border-left: 1px solid rgba(0, 0, 0, 0.1) !important;
+  padding-left: 10px !important;
+  font-size: 12px !important;
+  font-weight: 750 !important;
+  letter-spacing: 0.06em !important;
+  color: #334155 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  line-height: 1.2 !important;
+}
+
+.site-brand small {
+  font-size: 8.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.16em !important;
+  color: #8c9ba5 !important;
+  margin-top: 2px !important;
+}
+
+/* ── Apple Segmented Glass Navigation Control ── */
+.site-nav {
+  view-transition-name: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 3px !important;
+  gap: 3px !important;
+  background: rgba(0, 0, 0, 0.045) !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.04), 0 2px 10px rgba(0, 0, 0, 0.02) !important;
+}
+
+.site-nav a {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 6px 14px !important;
+  border-radius: 999px !important;
+  border: none !important;
+  border-bottom: none !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #4b5866 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  background: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer !important;
+  user-select: none !important;
+}
+
+.site-nav a .apple-nav-icon {
+  width: 15px !important;
+  height: 15px !important;
+  stroke: currentColor !important;
+  fill: none !important;
+  stroke-width: 1.8 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+  flex-shrink: 0 !important;
+  opacity: 0.85 !important;
+  transition: transform 0.2s ease, opacity 0.2s ease !important;
+}
+
+.site-nav a:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.65) !important;
+  color: #171b22 !important;
+  transform: translateY(-0.5px) !important;
+}
+
+.site-nav a:hover .apple-nav-icon {
+  transform: scale(1.1) !important;
+  opacity: 1 !important;
+}
+
+.site-nav a:active {
+  transform: scale(0.96) !important;
+  transition: transform 0.08s ease !important;
+}
+
+/* Active Segmented Item: Pure White Glass Inset Pill */
+.site-nav a.active {
+  background: #ffffff !important;
+  color: #171b22 !important;
+  font-weight: 750 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08), 0 0.5px 2px rgba(0, 0, 0, 0.04) !important;
+  transform: none !important;
+}
+
+.site-nav a.active .apple-nav-icon {
+  color: #d06888 !important;
+  stroke: #d06888 !important;
+  opacity: 1 !important;
+}
+
+.site-nav a.active::after {
+  display: none !important;
+}
+
+/* Mobile floating dock stays persistent without disappearing */
+.mobile-floating-bar,
+.mobile-bottom-nav.is-floating,
+html[data-platform=android] .mobile-bottom-nav{
+  view-transition-name: shared-mobile-dock;
+}
+
+::view-transition,::view-transition-group(*),::view-transition-image-pair(*),::view-transition-old(*),::view-transition-new(*){pointer-events:none}
+
+/* Pinned continuous mobile dock stays in-place */
+::view-transition-group(shared-mobile-dock),
+::view-transition-group(shared-bottom-dock){
+  animation: none !important;
+  z-index: 80 !important;
+}
+::view-transition-old(shared-mobile-dock),
+::view-transition-old(shared-bottom-dock){
+  display: none !important;
+}
+::view-transition-new(shared-mobile-dock),
+::view-transition-new(shared-bottom-dock){
+  animation: none !important;
+  mix-blend-mode: normal !important;
+  height: 100%;
+}
+
+/* Disable cross-page card morphing to eliminate ghosting (重影) */
+.story-overview,
+.card-archive .archive-banner,
+.voice-overview,
+.studio-overview,
+.writer-overview,
+.collection-overview,
+.collection-stats,
+.writer-stats,
+.collection-page-head,
+.guide-head {
+  view-transition-name: none !important;
+}
+
+/* While View Transition is actively transitioning, prevent duplicate internal element jumping */
+html[data-cross-motion=active] .card,
+html[data-cross-motion=active] .model-card,
+html[data-cross-motion=active] .voice,
+html[data-cross-motion=active] .gallery-item {
+  animation: none !important;
+}
+
+/* ── Apple Spatial Continuity Dissolve: zero ghosting, pure 60fps ── */
+::view-transition-group(root) {
+  animation: none !important;
+  transform: none !important;
+  z-index: 1;
+}
+
+html::view-transition-old(root) {
+  animation: apple-cross-fade-out 120ms cubic-bezier(0.4, 0, 1, 1) both !important;
+  mix-blend-mode: normal;
+}
+html::view-transition-new(root) {
+  animation: apple-cross-fade-in 220ms cubic-bezier(0.16, 1, 0.3, 1) both !important;
+  mix-blend-mode: normal;
+}
+
+@keyframes apple-cross-fade-out {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.996); }
+}
+
+@keyframes apple-cross-fade-in {
+  0% { opacity: 0; transform: translateY(6px) scale(0.998); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ── 3D Flip & Spring Bounce Kinetic Typography (翻转跳动依次就位) ── */
+.pv-kinetic-container {
+  perspective: 900px;
+  -webkit-perspective: 900px;
+  contain: layout style;
+}
+
+.pv-word-chip {
+  display: inline-flex;
+  align-items: baseline;
+  vertical-align: baseline;
+  position: relative;
+  margin: 0 1px;
+  cursor: default;
+  contain: layout style;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: transform 0.24s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.pv-word-chip:hover {
+  transform: scale(1.06) translateY(-2px);
+}
+
+.pv-flip-char,
+.organic-char,
+.pv-stamp-char {
+  display: inline-block;
+  opacity: 0;
+  contain: layout style;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-origin: 50% 75%;
+  transform: perspective(800px) rotateX(-50deg) translateY(-8px) scale(0.95);
+  animation: pvFlipBounce 0.38s cubic-bezier(0.34, 1.35, 0.64, 1) forwards;
+  animation-delay: var(--delay, calc(30ms + var(--order, 0) * 20ms));
+  will-change: transform, opacity;
+}
+
+html[data-platform=android] .pv-flip-char,
+html[data-platform=android] .organic-char,
+html[data-platform=android] .pv-stamp-char {
+  animation-duration: 0.32s;
+  animation-delay: var(--delay, calc(20ms + var(--order, 0) * 16ms));
+}
+
+@keyframes pvFlipBounce {
+  0% {
+    opacity: 0;
+    transform: perspective(800px) rotateX(-50deg) translateY(-8px) scale(0.95);
+  }
+  65% {
+    opacity: 1;
+    transform: perspective(800px) rotateX(8deg) translateY(1px) scale(1.02);
+  }
+  85% {
+    transform: perspective(800px) rotateX(-2deg) translateY(-0.5px) scale(0.995);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(800px) rotateX(0deg) translateY(0) scale(1);
+  }
+}
+
+/* Prismatic Sparkle Stars (✦ ✧) */
+.pv-sparkle-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 8px;
+  vertical-align: middle;
+  opacity: 0;
+  animation: pvSparkleFadeIn 0.4s ease 360ms forwards;
+}
+.pv-sparkle-star {
+  display: inline-block;
+  font-size: 0.9em;
+  line-height: 1;
+}
+.pv-star-primary {
+  color: #ff85b3;
+  animation: pvStarTwinkle 2.4s ease-in-out infinite alternate;
+}
+.pv-star-secondary {
+  color: #89c5db;
+  font-size: 0.75em;
+  animation: pvStarTwinkle 2.4s ease-in-out 1.2s infinite alternate;
+}
+@keyframes pvSparkleFadeIn {
+  0% { opacity: 0; transform: scale(0.6); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes pvStarTwinkle {
+  0% { transform: scale(0.9) rotate(-10deg); opacity: 0.8; }
+  100% { transform: scale(1.2) rotate(15deg); opacity: 1; }
+}
+
+/* Little creative touch: Sparkling Star Tag (小巧思) */
+.pv-sparkle-tag {
+  display: inline-block;
+  opacity: 0;
+  margin-left: 8px;
+  color: #ff94bf;
+  font-size: 0.9em;
+  vertical-align: middle;
+  contain: layout style;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  animation: pvSparkleTwinkle 0.48s cubic-bezier(0.34, 1.56, 0.64, 1) 400ms forwards,
+             pvSparkleFloat 3s ease-in-out 900ms infinite alternate;
+}
+
+@keyframes pvSparkleTwinkle {
+  0% { opacity: 0; transform: scale(0) rotate(-45deg); }
+  60% { opacity: 1; transform: scale(1.25) rotate(12deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+@keyframes pvSparkleFloat {
+  0% { transform: translate3d(0, 0, 0) rotate(0deg) scale(1); }
+  100% { transform: translate3d(0, -4px, 0) rotate(15deg) scale(1.15); color: #ff65a3; }
+}
+
+/* Content arrives cleanly as part of the page transition without double-jumping */
+
+/* Art travels between thumbnail and viewer; the surrounding page stays still. */
+html[data-local-motion] .site-header,html[data-local-motion] .site-nav,html[data-local-motion] .site-brand,html[data-local-motion] .logo,html[data-local-motion] .site-nav a.active::after{view-transition-name:none}
+html[data-local-motion]::view-transition-old(root),html[data-local-motion]::view-transition-new(root){animation:none;mix-blend-mode:plus-lighter}
+::view-transition-group(selected-art){z-index:50;animation-duration:360ms;overflow:clip;border-radius:10px}
+::view-transition-old(selected-art),::view-transition-new(selected-art){width:100%;height:100%;object-fit:contain;animation-duration:180ms}
+html[data-local-motion] #cardDetail[open]{animation:none}
+.page-home .screen{background-color:#dfe9e4}
+.page-memorial main{max-width:150rem;margin:auto;padding:30px 3vw}
+.page-wardrobe .intro>#back{display:inline-block;margin-bottom:16px;font-size:13px}
+@supports not (view-transition-name:root){body:not(.page-home)>main{animation:onetake-arrive .34s var(--motion-ease) both}}

@@ -1,0 +1,176 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1801001000310010,
+    "speaker": "ルビー",
+    "text": "ごほっ、ごほっ！\r\nう～、喉が……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "801",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/180100100031/1801001000310010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうした、風邪か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1801001000310020,
+    "speaker": "ルビー",
+    "text": "ちょっとカラオケで自主練してたら……\r\nなんか喉を治すいい方法ない？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100031/1801001000310020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "体調管理も仕事のうちだぞ\r\nそうだな、喉を治す方法か……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "select": "病院に行こう",
+    "nextLabel": "1801001000311"
+  },
+  {
+    "textFrame": "off",
+    "select": "はちみつ喉飴なら\r\nあるけど……",
+    "nextLabel": "1801001000312"
+  },
+  {
+    "textCtrl": "cm",
+    "textFrame": "off",
+    "select": "ネギならあるけど……",
+    "nextLabel": "1801001000313"
+  },
+  {
+    "id": 1801001000310030,
+    "label": "1801001000311",
+    "speaker": "ルビー",
+    "text": "うーん……\r\nまだ病院に行くほどじゃないかなあ……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100031/1801001000310030"
+  },
+  {
+    "id": 1801001000310040,
+    "speaker": "ルビー",
+    "text": "もうちょっとだけ様子見てみるね！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100031/1801001000310040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1801001000310050,
+    "label": "1801001000312",
+    "speaker": "ルビー",
+    "text": "あ、なんか喉に良さそう！\r\nいただきまーす！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100031/1801001000310050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "噛み砕かないで、舐めて溶かさなきゃ駄目だぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1801001000310060,
+    "label": "1801001000313",
+    "speaker": "ルビー",
+    "text": "なんでネギ持ってんの！？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100031/1801001000310060"
+  },
+  {
+    "id": 1801001000310070,
+    "speaker": "ルビー",
+    "text": "しかもネギを首に巻くのは風邪でしょ？\r\n古いなー",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad3",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100031/1801001000310070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,909 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00088",
+    "bgm": "029"
+  },
+  {
+    "se": "0134",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『すまん！　急な仕事が入っちゃって\r\n30分くらい、遅れそうなんだが大丈夫か？』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110010,
+    "speaker": "千雪",
+    "text": "『はい、大丈夫です　待ってます～！\r\nどこかで時間を潰してますね』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110010"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "bg": "00077",
+    "bgEffect": "fade",
+    "se": "0125",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "se": "0134",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『本当に申し訳ない！！\r\nさっきの仕事が長引いてて、終わりがわからないんだ』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『やっぱり、打ち合わせは別の日に──』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "chiyuki",
+    "charType": "idols",
+    "charId": "1040160020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00022",
+    "fg": "000221",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2016007110020,
+    "speaker": "千雪",
+    "text": "（『──雨、だいぶひどくなってるみたいだから\r\n千雪も気を付けて帰るんだぞ』）",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110020"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2016007110030,
+    "speaker": "千雪",
+    "text": "……残念",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "fade_out",
+    "voice": "produce_events/201600711/2016007110030"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00143",
+    "fg": "off",
+    "se": "0125",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "bgm": "0003",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2016007110040,
+    "speaker": "千雪",
+    "text": "（……雨、ひどいなぁ……）",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110040"
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2016007110050,
+    "speaker": "千雪",
+    "text": "（あれ……\r\n──プロデューサーさん……？）",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110050"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──っくしゅ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（ここまで濡れるといっそ……清々しいな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0470",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……けど、花束だけはどうにか濡れないように）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……この場所からなら事務所の方が近いか……\r\n確か、着替えも置いてあるから一旦寄って──あれ）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（あの人、こっちに走って来る──）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110060,
+    "speaker": "千雪",
+    "text": "──プロデューサーさんっ……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……千雪！？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（！　そんなに急いだら、濡れてしまう──）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0471",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "se": "0140",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "千雪……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 2016007110070,
+    "speaker": "千雪",
+    "text": "プロデューサーさんっ……これ、傘っ\r\n入ってください……！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110070"
+  },
+  {
+    "id": 2016007110080,
+    "speaker": "千雪",
+    "text": "……あのっ……ずぶぬれの、プロデューサーさんが、\r\nいらっしゃった……ので……っ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "す、すまん\r\nでもこの通り、既にもうびしょぬれで……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110090,
+    "speaker": "千雪",
+    "text": "それと、さっき何か、落とされて──",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0474",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………あ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "bg": "00002",
+    "bgEffect": "fade",
+    "bgm": "008",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "se": "0166",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……お茶、ありがとうな。千雪",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 2016007110100,
+    "speaker": "千雪",
+    "text": "……いえ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110100"
+  },
+  {
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2016007110110,
+    "speaker": "千雪",
+    "text": "…………あ、あの\r\nこの花束、大事なものだったんじゃ……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ……いや──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110120,
+    "speaker": "千雪",
+    "text": "…………",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……お返しにと、思ってたんだ\r\n今日はさ、ホワイトデーだから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110130,
+    "speaker": "千雪",
+    "text": "……！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "甘奈と甜花にも、それぞれの\r\n好きそうなものを買ったからさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "千雪には何がいいかなって考えてみたら\r\n一番喜んでもらえるのは、シンプルだけど花束かなって",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、シンプルどころか\r\nトラックに轢かれてぺしゃんこなんだけど……はは",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110140,
+    "speaker": "千雪",
+    "text": "──あ、あの…………\r\n綺麗で……すっごく、嬉しいです……！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad2_s",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "se": "0470",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2016007110150,
+    "speaker": "千雪",
+    "text": "プロデューサーさん\r\nこれ、ありがとうございますっ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、こんなになったものを渡すわけには……\r\n改めて、ちゃんとしたやつを──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110160,
+    "speaker": "千雪",
+    "text": "い、いえ……！！\r\n私、あの……とっても嬉しくて……！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110160"
+  },
+  {
+    "id": 2016007110170,
+    "speaker": "千雪",
+    "text": "それに、ホワイトデーのお返しなんですよね……？\r\n……でしたら、今日……これをいただきたいです",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そ、そうか\r\n千雪がそう言うなら……",
+    "charAnim2": "face_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110180,
+    "speaker": "千雪",
+    "text": "…………はい",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110180"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00087",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0094",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……結局\r\n昨日と同じ花を買ってきてしまった……でも）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（事務所のみんなには、ちゃんとしたものを渡して\r\nおきながら……千雪にだけ潰れた花束っていうのもなぁ）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2016007110190,
+    "speaker": "千雪",
+    "text": "おはようございます、プロデューサーさん\r\n──あれ、その花束……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201600711/2016007110190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう千雪……これは──\r\nやっぱり、昨日の花束じゃちょっとと思ってな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だけど、改めて渡しなおすのもどうかなって……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110200,
+    "speaker": "千雪",
+    "text": "ええ……！\r\nそ、そんな……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "昨日のものと全く同じ花なんだけど……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "確か──\r\n菜の花に、ミモザと……ラナ……なんだっけ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110210,
+    "speaker": "千雪",
+    "text": "……ふふっ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "006",
+    "voice": "produce_events/201600711/2016007110210"
+  },
+  {
+    "id": 2016007110220,
+    "speaker": "千雪",
+    "text": "でしたら……このお花は、\r\n事務所に飾ってもよいでしょうか……？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ……ああ、もちろん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110230,
+    "speaker": "千雪",
+    "text": "……ありがとうございます",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110230"
+  },
+  {
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "se": "0470",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 2016007110240,
+    "speaker": "千雪",
+    "text": "……プロデューサーさん\r\nこのお花……ラナンキュラスですよ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おお、そんな名前だったか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110250,
+    "speaker": "千雪",
+    "text": "菜の花に、ミモザに、ラナンキュラス──\r\n……幸せの花です",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "幸せ……っていうと、花言葉とかか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110260,
+    "speaker": "千雪",
+    "text": "あ、いえ……この色は、違うかも\r\nでも、幸せの花なんです",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……？\r\nそうか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2016007110270,
+    "speaker": "千雪",
+    "text": "……はい、ふふっ\r\n幸せの花……──",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201600711/2016007110270"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

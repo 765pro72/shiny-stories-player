@@ -1,0 +1,3197 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   283 PRISM GLASS — Persistent Apple-Grade Unified App Shell
+   Zero-ghosting · 120fps Spring Physics · Dynamic Island · Spotlight
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --sh-bg: #f5f6fa;
+  --sh-ink: #141821;
+  --sh-ink-2: #525d6f;
+  --sh-ink-muted: #8a95a8;
+  --sh-glass: rgba(255, 255, 255, 0.72);
+  --sh-glass-strong: rgba(255, 255, 255, 0.88);
+  --sh-glass-hover: rgba(255, 255, 255, 0.92);
+  --sh-glass-pill: rgba(255, 255, 255, 0.96);
+  --sh-rim: rgba(255, 255, 255, 0.92);
+  --sh-border: rgba(15, 23, 42, 0.07);
+  --sh-shadow: 0 10px 32px rgba(15, 23, 42, 0.08), 0 2px 8px rgba(15, 23, 42, 0.04);
+  --sh-shadow-lg: 0 24px 64px rgba(15, 23, 42, 0.16), 0 4px 16px rgba(15, 23, 42, 0.07);
+  --sh-accent: #0ea5e9;
+  --sh-rose: #f43f7f;
+  --sh-amber: #f59e0b;
+  --sh-prism: linear-gradient(135deg, #38bdf8 0%, #818cf8 48%, #f472b6 100%);
+  --sh-island-bg: rgba(17, 20, 27, 0.86);
+  --sh-island-border: rgba(255, 255, 255, 0.14);
+  --sh-island-ink: #f8fafc;
+  --sh-tip-bg: rgba(17, 20, 27, 0.9);
+  --sh-tip-ink: #f8fafc;
+  --sh-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --sh-spring: cubic-bezier(0.32, 1.24, 0.52, 1);
+  --sh-header-h: 62px;
+  --sh-font: var(--interface-font-family, -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Segoe UI", "Microsoft YaHei", sans-serif);
+}
+
+html[data-theme="dark"] {
+  --sh-bg: #09090d;
+  --sh-ink: #f5f1e8;
+  --sh-ink-2: #c9bfa9;
+  --sh-ink-muted: #938874;
+  --sh-glass: rgba(18, 17, 22, 0.84);
+  --sh-glass-strong: rgba(20, 18, 25, 0.95);
+  --sh-glass-hover: rgba(34, 30, 38, 0.96);
+  --sh-glass-pill: linear-gradient(135deg, rgba(235, 198, 124, 0.28), rgba(184, 138, 62, 0.16));
+  --sh-rim: rgba(230, 194, 122, 0.50);
+  --sh-border: rgba(230, 194, 122, 0.30);
+  --sh-accent: #e6c27a;
+  --sh-rose: #e6c27a;
+  --sh-prism: linear-gradient(135deg, #fff1c9 0%, #e6c27a 46%, #b3802c 100%);
+  --sh-shadow: 0 14px 40px rgba(0, 0, 0, 0.58), 0 0 18px rgba(212, 175, 55, 0.12);
+  --sh-shadow-lg: 0 28px 76px rgba(0, 0, 0, 0.74), 0 0 0 1px rgba(230, 194, 122, 0.32), 0 0 28px rgba(212, 175, 55, 0.14);
+  --sh-island-bg: rgba(14, 13, 18, 0.94);
+  --sh-island-border: rgba(235, 200, 128, 0.54);
+  --sh-tip-bg: rgba(26, 23, 30, 0.96);
+  --sh-tip-ink: #f7e6bf;
+  --boot-g1: #fff1c9;
+  --boot-g2: #e6c27a;
+  --boot-g3: #b3802c;
+  --boot-core-fill: rgba(24, 21, 30, 0.82);
+}
+
+/* Instant zero-lag theme toggle: freeze transitions for 2 frames while switching Day <-> Night */
+html.is-theme-switching,
+html.is-theme-switching *,
+html.is-theme-switching *::before,
+html.is-theme-switching *::after {
+  transition: none !important;
+}
+
+/* Circular Ripple Theme Expansion via View Transitions API */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--sh-bg);
+  color: var(--sh-ink);
+  font-family: var(--sh-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  transition: background-color 0.35s var(--sh-ease);
+}
+
+button, a, input {
+  font: inherit;
+  color: inherit;
+}
+
+/* ── Subtle Prism Ambient Backdrop ── */
+.shell-aurora {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0.72;
+  transition: opacity 0.4s ease;
+}
+
+html[data-theme="dark"] .shell-aurora {
+  opacity: 0.42;
+}
+
+.shell-aurora .orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(88px);
+  transform: translateZ(0);
+}
+
+.shell-aurora .orb-1 {
+  width: 48vw;
+  height: 48vw;
+  top: -22vw;
+  left: -10vw;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.26), transparent 70%);
+}
+
+.shell-aurora .orb-2 {
+  width: 46vw;
+  height: 46vw;
+  top: -16vw;
+  right: -8vw;
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.22), transparent 70%);
+}
+
+.shell-aurora .orb-3 {
+  width: 44vw;
+  height: 44vw;
+  bottom: -24vw;
+  left: 28vw;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.16), transparent 70%);
+}
+
+/* ── Cold Boot Apple Prism Awakening ── */
+.shell-boot {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(56, 189, 248, 0.18), transparent 46%),
+    radial-gradient(circle at 72% 72%, rgba(244, 114, 182, 0.18), transparent 48%),
+    var(--sh-bg);
+  transition: opacity 0.46s var(--sh-ease), transform 0.52s var(--sh-ease), visibility 0.52s;
+}
+
+.shell-boot.is-done {
+  opacity: 0;
+  transform: scale(1.03);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.boot-core {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 36px 44px;
+  border-radius: 32px;
+  background: var(--sh-glass-strong);
+  backdrop-filter: blur(36px) saturate(180%);
+  -webkit-backdrop-filter: blur(36px) saturate(180%);
+  border: 1px solid var(--sh-rim);
+  box-shadow: var(--sh-shadow-lg);
+  min-width: min(340px, 86vw);
+}
+
+.boot-geo {
+  position: relative;
+  width: 112px;
+  height: 112px;
+  display: grid;
+  place-items: center;
+  overflow: visible;
+}
+
+.boot-geo-svg {
+  width: 108px;
+  height: 108px;
+  overflow: visible;
+  filter: drop-shadow(0 8px 24px rgba(129, 140, 248, 0.28));
+}
+
+html[data-theme="dark"] .boot-geo-svg {
+  filter: drop-shadow(0 8px 28px rgba(230, 194, 122, 0.34));
+}
+
+.geo-orbit-outer {
+  transform-origin: 60px 60px;
+  animation: geoSpinCw 18s linear infinite;
+}
+
+.geo-star-ccw {
+  transform-origin: 60px 60px;
+  animation: geoSpinCcw 12s linear infinite;
+}
+
+.geo-crystal-core {
+  transform-origin: 60px 60px;
+  animation: geoCrystalPulse 2.6s var(--sh-ease) infinite;
+}
+
+@keyframes geoSpinCw {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes geoSpinCcw {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes geoCrystalPulse {
+  0%, 100% { transform: scale(1); opacity: 0.92; }
+  50% { transform: scale(1.07); opacity: 1; }
+}
+
+.boot-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.boot-heading strong {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-indent: 0.16em;
+  color: var(--sh-ink);
+}
+
+.boot-title {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  color: var(--sh-ink-muted);
+  text-indent: 0.28em;
+}
+
+.boot-progress-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.boot-bar {
+  width: 100%;
+  height: 5px;
+  border-radius: 99px;
+  background: var(--sh-border);
+  overflow: hidden;
+}
+
+.boot-bar i {
+  display: block;
+  width: 12%;
+  height: 100%;
+  border-radius: 99px;
+  background: var(--sh-prism);
+  transition: width 0.38s var(--sh-ease);
+}
+
+.boot-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--sh-ink-2);
+}
+
+.boot-percent {
+  font-variant-numeric: tabular-nums;
+  color: var(--sh-accent);
+  font-weight: 750;
+}
+
+/* ── Transparent Click-Away Backdrop (closes Music Capsule & Weather popovers over iframes) ── */
+.shell-pop-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  background: transparent;
+  pointer-events: auto;
+}
+
+.shell-pop-backdrop[hidden] {
+  display: none !important;
+}
+
+/* ── Electron Window Drag Strip ── */
+.shell-drag-strip {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 142px;
+  height: 10px;
+  z-index: 1200;
+  -webkit-app-region: drag;
+}
+
+html[data-desktop-chrome="overlay"] .shell-drag-strip {
+  display: block;
+}
+
+/* ── Persistent Floating Apple Liquid Glass Header (True Geometric Center Dock) ── */
+.shell-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--sh-header-h);
+  z-index: 1000;
+  padding: 10px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  pointer-events: none;
+  transition: transform 0.36s var(--sh-ease), opacity 0.3s ease;
+}
+
+html[data-desktop-chrome="overlay"] .shell-header {
+  padding-right: 152px;
+  -webkit-app-region: drag;
+}
+
+.shell-header .prism-dock {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, calc(-50% + 5px));
+  z-index: 2;
+}
+
+@media (max-width: 1240px), (max-height: 540px) {
+  .shell-header {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: 6px !important;
+  }
+  .shell-left {
+    justify-self: start !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  .shell-right {
+    justify-self: end !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    justify-content: flex-end !important;
+  }
+  .shell-header .prism-dock {
+    justify-self: center !important;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .shell-header .prism-dock::-webkit-scrollbar {
+    display: none;
+  }
+  .shell-header #islandAnchor {
+    min-width: 0 !important;
+    flex: 0 1 auto !important;
+    max-width: 100% !important;
+  }
+  .shell-header .dynamic-island {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+.shell-header.is-hidden {
+  transform: translateY(-76px);
+  opacity: 0;
+}
+
+.shell-left,
+.prism-dock,
+.shell-right {
+  pointer-events: auto;
+  -webkit-app-region: no-drag;
+}
+
+.shell-left {
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shell-right {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Classic 283 | 闪耀色彩 STORIES & MEMORIES Brand Pill (Fixed Geometry) ── */
+.prism-brand {
+  height: 44px;
+  padding: 0 15px 0 11px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+  background: var(--sh-glass);
+  backdrop-filter: blur(32px) saturate(200%);
+  -webkit-backdrop-filter: blur(32px) saturate(200%);
+  border: 1px solid var(--sh-rim);
+  box-shadow: var(--sh-shadow), inset 0 1px 0 var(--sh-rim);
+  transition: transform 0.2s var(--sh-spring), background 0.2s ease, box-shadow 0.24s ease;
+  white-space: nowrap;
+}
+
+.prism-brand:hover {
+  background: var(--sh-glass-hover);
+  box-shadow: 0 12px 32px rgba(208, 104, 136, 0.16), 0 2px 8px rgba(15, 23, 42, 0.06), inset 0 1px 0 var(--sh-rim);
+}
+
+.prism-brand:active {
+  transform: scale(0.95);
+  transition-duration: 75ms;
+}
+
+.live-studio-pulse {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.live-dot-core {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.65);
+}
+
+.live-dot-ping {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #10b981;
+  opacity: 0.72;
+  animation: shellLivePing 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes shellLivePing {
+  0% { transform: scale(1); opacity: 0.78; }
+  75%, 100% { transform: scale(2.5); opacity: 0; }
+}
+
+.prism-num {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  font-size: 27px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -1.8px;
+  line-height: 1;
+  width: 60px;
+  padding-right: 4px;
+  text-align: center;
+  display: inline-block;
+  background: linear-gradient(135deg, #1e293b 0%, #475569 48%, #b85c82 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html[data-theme="dark"] .prism-num {
+  background: linear-gradient(135deg, #fff5dc 10%, #e6c27a 52%, #b58332 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html[data-theme="dark"] .shell-aurora .orb-1 {
+  background: radial-gradient(circle, rgba(230, 194, 122, 0.18), transparent 70%);
+}
+html[data-theme="dark"] .shell-aurora .orb-2 {
+  background: radial-gradient(circle, rgba(196, 134, 62, 0.14), transparent 70%);
+}
+html[data-theme="dark"] .shell-aurora .orb-3 {
+  background: radial-gradient(circle, rgba(212, 164, 78, 0.12), transparent 70%);
+}
+
+html[data-theme="dark"] .dock-pill {
+  background: linear-gradient(135deg, rgba(230, 194, 122, 0.22), rgba(168, 120, 40, 0.12));
+  border: 1px solid rgba(230, 194, 122, 0.34);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.48), inset 0 1px 0 rgba(255, 240, 200, 0.28);
+}
+
+html[data-theme="dark"] .dock-item.is-active svg {
+  stroke: #e6c27a;
+}
+
+html[data-theme="dark"] .dock-item.is-active .dock-label {
+  color: #f7e7c2;
+}
+
+.prism-brand-text {
+  border-left: 1px solid var(--sh-border);
+  padding-left: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.15;
+}
+
+.prism-brand-text em {
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  color: var(--sh-ink);
+}
+
+.prism-brand-text small {
+  font-size: 8px;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+  color: var(--sh-ink-muted);
+  margin-top: 2px;
+}
+
+/* ── Apple VisionOS Fluid Glass Pill Dock ── */
+.prism-dock {
+  position: relative;
+  height: 44px;
+  padding: 4px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--sh-glass);
+  backdrop-filter: blur(36px) saturate(210%);
+  -webkit-backdrop-filter: blur(36px) saturate(210%);
+  border: 1px solid var(--sh-rim);
+  box-shadow: var(--sh-shadow), inset 0 1px 0 var(--sh-rim), inset 0 -1px 0 var(--sh-border);
+  overflow: hidden;
+}
+
+.prism-dock::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(120px circle at var(--dock-mx, 50%) var(--dock-my, 50%), rgba(56, 189, 248, 0.16), rgba(244, 114, 182, 0.08) 45%, transparent 72%);
+  opacity: var(--dock-glow, 0);
+  pointer-events: none;
+  transition: opacity 0.28s ease;
+}
+
+.dock-pill {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 0;
+  z-index: 1;
+  height: auto;
+  border-radius: 999px;
+  background: var(--sh-glass-pill);
+  box-shadow:
+    0 3px 12px rgba(15, 23, 42, 0.09),
+    0 1px 2px rgba(15, 23, 42, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  pointer-events: none;
+  opacity: 0;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+html[data-theme="dark"] .dock-pill {
+  background: linear-gradient(135deg, rgba(235, 198, 124, 0.26), rgba(168, 120, 40, 0.14));
+  border: 1px solid rgba(235, 200, 128, 0.56);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.45),
+    0 0 12px rgba(212, 175, 55, 0.18),
+    inset 0 1px 0 rgba(255, 240, 196, 0.34);
+}
+
+.dock-item {
+  position: relative;
+  z-index: 2;
+  height: 36px;
+  min-width: 38px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--sh-ink-2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  transition: color 0.2s ease, padding 0.32s var(--sh-ease), gap 0.32s var(--sh-ease), transform 0.12s var(--sh-ease);
+}
+
+.dock-item svg {
+  width: 17px;
+  height: 17px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.85;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+  transition: transform 0.24s var(--sh-spring), stroke 0.2s ease;
+}
+
+.dock-item .dock-label {
+  display: inline-block;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: max-width 0.34s var(--sh-ease), opacity 0.22s ease;
+}
+
+.dock-item:hover:not(.is-active) {
+  color: var(--sh-ink);
+}
+
+.dock-item:hover:not(.is-active) svg {
+  transform: scale(1.1);
+}
+
+.dock-item:active {
+  transform: scale(0.92);
+}
+
+.dock-item.is-active {
+  padding: 0 14px 0 12px;
+  gap: 6px;
+  color: var(--sh-ink);
+}
+
+.dock-item.is-active svg {
+  stroke: var(--item-accent, #0ea5e9);
+  transform: scale(1.04);
+}
+
+.dock-item.is-active .dock-label {
+  max-width: 64px;
+  opacity: 1;
+}
+
+.dock-item:focus-visible,
+.util-btn:focus-visible,
+.prism-brand:focus-visible {
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.38);
+}
+
+/* ── Right Utility Buttons (Icon-Only Glass Circles) ── */
+.shell-utils {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.util-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--sh-rim);
+  background: var(--sh-glass);
+  backdrop-filter: blur(30px) saturate(190%);
+  -webkit-backdrop-filter: blur(30px) saturate(190%);
+  box-shadow: var(--sh-shadow), inset 0 1px 0 var(--sh-rim);
+  color: var(--sh-ink-2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  transition: transform 0.16s var(--sh-spring), color 0.18s ease, background 0.18s ease, box-shadow 0.22s ease;
+}
+
+.util-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.util-btn:hover {
+  background: var(--sh-glass-hover);
+  color: var(--sh-ink);
+  transform: translateY(-1px);
+}
+
+.util-btn:active {
+  transform: scale(0.9);
+  transition-duration: 70ms;
+}
+
+.util-btn.util-continue svg {
+  fill: currentColor;
+  stroke: none;
+  width: 14px;
+  height: 14px;
+  transform: translateX(1px);
+}
+
+.util-btn.util-continue {
+  color: var(--sh-rose);
+}
+
+html[data-theme="light"] .util-btn .ic-sun { display: none; }
+html[data-theme="dark"] .util-btn .ic-moon { display: none; }
+
+/* ── Apple Dynamic Island (顶部灵动岛音乐胶囊) ── */
+.island-anchor {
+  position: relative;
+}
+
+.island-anchor[hidden] {
+  display: none;
+}
+
+.dynamic-island {
+  height: 38px;
+  padding: 3px 6px 3px 4px;
+  border-radius: 999px;
+  background: var(--sh-island-bg);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid var(--sh-island-border);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  color: var(--sh-island-ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: clamp(134px, calc(50vw - 385px), 214px);
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  transition: transform 0.24s var(--sh-spring), box-shadow 0.24s ease, border-color 0.24s ease, max-width 0.24s ease;
+}
+
+.dynamic-island:hover {
+  transform: scale(1.02);
+  border-color: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.28), 0 0 0 1px rgba(244, 114, 182, 0.28);
+}
+
+.island-cover-btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+}
+
+.island-progress-svg {
+  position: absolute;
+  inset: -2px;
+  width: 34px;
+  height: 34px;
+  transform: rotate(-90deg);
+  pointer-events: none;
+}
+
+.island-progress-svg circle {
+  fill: none;
+  stroke-width: 2;
+}
+
+.island-progress-svg .track {
+  stroke: rgba(255, 255, 255, 0.14);
+}
+
+.island-progress-svg .fill {
+  stroke: var(--island-accent, #f472b6);
+  stroke-linecap: round;
+  stroke-dasharray: 100.53;
+  stroke-dashoffset: 100.53;
+  transition: stroke-dashoffset 0.25s linear;
+}
+
+.island-cover-btn img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: islandSpin 14s linear infinite;
+  animation-play-state: paused;
+  pointer-events: none !important;
+  -webkit-user-drag: none !important;
+  user-select: none !important;
+}
+
+.dynamic-island.is-playing .island-cover-btn img {
+  animation-play-state: running;
+}
+
+@keyframes islandSpin {
+  to { transform: rotate(360deg); }
+}
+
+.island-info-btn {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.island-title {
+  display: block;
+  min-width: 0;
+  flex: 1 1 auto;
+  font-size: 12px;
+  font-weight: 650;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+
+.island-title-track {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.island-title.is-marquee {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 88%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 88%, transparent 100%);
+}
+
+.island-title.is-marquee .island-title-track {
+  padding-right: 10px;
+  animation: islandTitleMarquee var(--it-dur, 6.5s) ease-in-out infinite;
+}
+
+@keyframes islandTitleMarquee {
+  0%, 16%   { transform: translate3d(0, 0, 0); }
+  48%, 64%  { transform: translate3d(var(--it-shift, -40px), 0, 0); }
+  92%, 100% { transform: translate3d(0, 0, 0); }
+}
+
+.island-eq {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 12px;
+  width: 14px;
+  flex-shrink: 0;
+}
+
+.island-eq i {
+  display: block;
+  width: 2px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--island-accent, #f472b6);
+  opacity: 0.45;
+  transition: opacity 0.2s ease, height 0.2s ease;
+}
+
+.dynamic-island.is-playing .island-eq i {
+  opacity: 1;
+  animation: eqPulse 0.85s ease-in-out infinite alternate;
+}
+
+.dynamic-island.is-playing .island-eq i:nth-child(2) { animation-delay: 0.16s; animation-duration: 0.68s; }
+.dynamic-island.is-playing .island-eq i:nth-child(3) { animation-delay: 0.32s; animation-duration: 0.92s; }
+.dynamic-island.is-playing .island-eq i:nth-child(4) { animation-delay: 0.1s; animation-duration: 0.74s; }
+
+@keyframes eqPulse {
+  0% { height: 3px; }
+  100% { height: 12px; }
+}
+
+.island-mini-mode,
+.island-mini-play {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.14s var(--sh-spring), background 0.18s ease, color 0.18s ease;
+}
+
+.island-mini-mode {
+  width: 24px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.island-mini-mode.is-accent {
+  background: rgba(244, 114, 182, 0.24);
+  color: var(--island-accent, #f472b6);
+}
+
+.island-mini-mode svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+}
+
+.island-mini-mode:hover,
+.island-mini-play:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.island-mini-mode:active,
+.island-mini-play:active {
+  transform: scale(0.88);
+}
+
+.island-mini-play svg,
+.ip-ctrl svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+}
+
+.dynamic-island:not(.is-playing) .ic-pause,
+.dynamic-island.is-playing .ic-play,
+.island-popover:not(.is-playing) .ic-pause,
+.island-popover.is-playing .ic-play {
+  display: none;
+}
+
+/* ── Expanded Dynamic Island Glass Popover ── */
+.island-popover {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 316px;
+  padding: 16px;
+  border-radius: 24px;
+  background: rgba(18, 21, 29, 0.88);
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  color: #f8fafc;
+  opacity: 0;
+  transform: translateY(-10px) scale(0.94);
+  transform-origin: top right;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.24s var(--sh-ease), transform 0.34s var(--sh-spring), visibility 0.28s;
+}
+
+.island-popover.is-open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.ip-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ip-art {
+  width: 50px;
+  height: 50px;
+  border-radius: 13px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  flex-shrink: 0;
+}
+
+.ip-meta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ip-meta strong {
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ip-meta span {
+  font-size: 11.5px;
+  color: rgba(248, 250, 252, 0.65);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ip-icon-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.14s var(--sh-spring), background 0.18s ease, color 0.18s ease;
+}
+
+.ip-icon-btn svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ip-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.ip-icon-btn:active {
+  transform: scale(0.88);
+}
+
+.ip-icon-btn.is-fav {
+  color: #ff3b6b;
+  background: rgba(255, 59, 107, 0.18);
+}
+
+.ip-icon-btn.is-fav svg {
+  fill: #ff3b6b;
+  stroke: #ff3b6b;
+}
+
+.ip-lyric {
+  margin-top: 12px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  min-height: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2px;
+}
+
+.ip-lyric:empty,
+.ip-lyric.is-empty {
+  display: none;
+}
+
+.ip-lyric-jp {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.35;
+}
+
+.ip-lyric-zh {
+  margin: 0;
+  font-size: 11px;
+  color: rgba(248, 250, 252, 0.65);
+  line-height: 1.35;
+}
+
+.ip-scrub {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10.5px;
+  font-variant-numeric: tabular-nums;
+  color: rgba(248, 250, 252, 0.58);
+}
+
+.ip-scrub input[type="range"] {
+  flex: 1;
+  height: 4px;
+  accent-color: var(--island-accent, #f472b6);
+  cursor: pointer;
+}
+
+.ip-controls {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.ip-ctrl-mode.is-accent {
+  color: var(--island-accent, #f472b6);
+  background: rgba(244, 114, 182, 0.16);
+}
+
+.ip-mode-tag {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: rgba(248, 250, 252, 0.68);
+  min-width: 28px;
+  text-align: center;
+  user-select: none;
+}
+
+.ip-volume {
+  margin-top: 10px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ip-vol-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.85);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.ip-vol-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.ip-vol-btn svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.ip-vol-btn:not(.is-muted) .ic-vol-off,
+.ip-vol-btn.is-muted .ic-vol-on {
+  display: none;
+}
+
+.ip-volume input[type="range"] {
+  flex: 1;
+  height: 4px;
+  accent-color: var(--island-accent, #f472b6);
+  cursor: pointer;
+}
+
+.ip-vol-val {
+  font-size: 10.5px;
+  font-variant-numeric: tabular-nums;
+  color: rgba(248, 250, 252, 0.62);
+  min-width: 30px;
+  text-align: right;
+}
+
+.ip-ctrl {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.14s var(--sh-spring), background 0.18s ease, color 0.18s ease;
+}
+
+.ip-ctrl svg {
+  width: 18px;
+  height: 18px;
+}
+
+.ip-ctrl:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.ip-ctrl:active {
+  transform: scale(0.88);
+}
+
+.ip-ctrl-play {
+  width: 42px;
+  height: 42px;
+  background: #fff;
+  color: #11151d;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.ip-ctrl-play:hover {
+  background: #fff;
+  color: #11151d;
+  transform: scale(1.06);
+}
+
+/* ── Persistent Spatial Stage (Keep-Alive Frame Pool) ── */
+.shell-stage {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.stage-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  /* Opaque theme-matched backing so shell-aurora can NEVER flash white through an iframe */
+  background: var(--sh-bg);
+  /* Pure atomic 1-frame swap: ZERO opacity animation, ZERO 0.001 stacked layers, ZERO contain:strict! */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 0;
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Desktop: keep pre-warmed inactive iframes at opacity: 0 (exact pre-regression behavior — NEVER 0.001, NEVER 1!) */
+html:not([data-android="1"]):not([data-joytrans="1"]) .stage-frame:not(.is-active) {
+  visibility: visible;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.stage-frame.is-active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+/* Boot-time pre-rasterization behind the opaque splash screen */
+.stage-frame.is-preraster {
+  visibility: visible !important;
+  opacity: 0.002 !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+/* ── Apple macOS Spotlight Command Palette ── */
+.spotlight-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 5000;
+  background: rgba(12, 15, 24, 0.36);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: min(14vh, 116px);
+  animation: spFade 0.2s var(--sh-ease);
+}
+
+.spotlight-backdrop[hidden] {
+  display: none;
+}
+
+@keyframes spFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.spotlight-modal {
+  width: min(580px, calc(100vw - 32px));
+  max-height: min(68vh, 520px);
+  border-radius: 24px;
+  background: var(--sh-glass-strong);
+  backdrop-filter: blur(44px) saturate(210%);
+  -webkit-backdrop-filter: blur(44px) saturate(210%);
+  border: 1px solid var(--sh-rim);
+  box-shadow: var(--sh-shadow-lg), inset 0 1px 0 var(--sh-rim);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: spPop 0.28s var(--sh-spring);
+}
+
+@keyframes spPop {
+  from { opacity: 0; transform: translateY(-12px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.spotlight-input-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 18px;
+  border-bottom: 1px solid var(--sh-border);
+}
+
+.sp-search-ic {
+  width: 20px;
+  height: 20px;
+  stroke: var(--sh-ink-muted);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  flex-shrink: 0;
+}
+
+#spotlightInput {
+  flex: 1;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--sh-ink);
+}
+
+#spotlightInput::placeholder {
+  color: var(--sh-ink-muted);
+}
+
+.sp-kbd,
+.spotlight-foot kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: var(--sh-border);
+  color: var(--sh-ink-2);
+}
+
+.spotlight-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px;
+  scrollbar-width: thin;
+}
+
+.sp-group-title {
+  padding: 8px 12px 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sh-ink-muted);
+}
+
+.sp-item {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  border-radius: 14px;
+  padding: 9px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  cursor: pointer;
+  color: var(--sh-ink);
+  transition: background 0.14s ease, transform 0.1s ease;
+}
+
+.sp-item:hover,
+.sp-item.is-selected {
+  background: rgba(14, 165, 233, 0.12);
+}
+
+html[data-theme="dark"] .sp-item:hover,
+html[data-theme="dark"] .sp-item.is-selected {
+  background: rgba(56, 189, 248, 0.16);
+}
+
+.sp-item:active {
+  transform: scale(0.99);
+}
+
+.sp-thumb {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--sh-border);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.sp-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sp-thumb svg {
+  width: 17px;
+  height: 17px;
+  stroke: var(--sh-accent);
+  fill: none;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sp-item-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.sp-item-text strong {
+  font-size: 13.5px;
+  font-weight: 650;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sp-item-text small {
+  font-size: 11.5px;
+  color: var(--sh-ink-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sp-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--sh-border);
+  color: var(--sh-ink-2);
+  flex-shrink: 0;
+}
+
+.sp-empty {
+  padding: 32px 16px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--sh-ink-muted);
+}
+
+.spotlight-foot {
+  padding: 9px 16px;
+  border-top: 1px solid var(--sh-border);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 11px;
+  color: var(--sh-ink-muted);
+}
+
+.spotlight-foot span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ── Floating Apple Tooltip ── */
+.shell-tip {
+  position: fixed;
+  z-index: 6000;
+  pointer-events: none;
+  padding: 5px 10px;
+  border-radius: 9px;
+  background: var(--sh-tip-bg);
+  color: var(--sh-tip-ink);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translate(-50%, -4px) scale(0.94);
+  transition: opacity 0.16s ease, transform 0.2s var(--sh-spring);
+}
+
+.shell-tip.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0) scale(1);
+}
+
+/* ── Responsive Compact Mode ── */
+@media (max-width: 1080px) {
+  .shell-header {
+    grid-template-columns: auto 1fr auto;
+    padding: 8px 14px 0;
+  }
+  html[data-desktop-chrome="overlay"] .shell-header {
+    padding-right: 146px;
+  }
+  .prism-dock {
+    justify-self: center;
+  }
+  .island-title {
+    max-width: 72px;
+  }
+}
+
+/* ── Weather · Location · Clock · Calendar Capsule (Right of 283, Left of Dock) ── */
+.env-anchor {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.env-capsule {
+  height: 44px;
+  padding: 4px 12px;
+  border-radius: 16px;
+  border: 1px solid var(--sh-rim);
+  background: var(--sh-glass);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  box-shadow: var(--sh-shadow), inset 0 1px 0 var(--sh-rim);
+  color: var(--sh-ink);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2px;
+  font-size: 11px;
+  line-height: 1.15;
+  font-weight: 650;
+  cursor: pointer;
+  white-space: nowrap;
+  max-width: 148px;
+  transition: transform 0.18s var(--sh-spring), background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.env-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 100%;
+}
+
+.env-capsule:hover {
+  background: var(--sh-glass-hover);
+}
+
+.env-capsule:active {
+  transform: scale(0.96);
+}
+
+.env-city {
+  max-width: 66px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--sh-ink-2);
+  font-size: 10.5px;
+}
+
+.env-clock {
+  font-variant-numeric: tabular-nums;
+  font-weight: 750;
+  font-size: 11.5px;
+  color: var(--sh-ink);
+}
+
+.env-date {
+  font-size: 10px;
+  color: var(--sh-ink-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.env-popover {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 312px;
+  padding: 15px 16px 14px;
+  border-radius: 22px;
+  background: var(--sh-glass-strong);
+  backdrop-filter: blur(36px) saturate(190%);
+  -webkit-backdrop-filter: blur(36px) saturate(190%);
+  border: 1px solid var(--sh-rim);
+  box-shadow: var(--sh-shadow-lg);
+  color: var(--sh-ink);
+  z-index: 2500;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.env-popover[hidden] {
+  display: none !important;
+}
+
+.env-pop-info,
+.env-pop-calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+/* Mobile Touch Left/Right Swipe Edge Pill Indicator (Zero blur, pure GPU transform/opacity) */
+.swipe-page-hint {
+  position: fixed;
+  top: 50%;
+  z-index: 2600;
+  pointer-events: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 750;
+  letter-spacing: 0.02em;
+  color: #f8fafc;
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.32);
+  opacity: 0;
+  transform: translate3d(0, -50%, 0) scale(0.9);
+  transition: opacity 0.14s ease, transform 0.14s ease;
+  white-space: nowrap;
+}
+html[data-theme="dark"] .swipe-page-hint {
+  background: rgba(20, 18, 26, 0.94);
+  border-color: rgba(235, 200, 128, 0.52);
+  color: #f7e6bf;
+}
+.swipe-page-hint.from-left { left: max(12px, env(safe-area-inset-left)); right: auto; }
+.swipe-page-hint.from-right { right: max(12px, env(safe-area-inset-right)); left: auto; }
+.swipe-page-hint.is-visible {
+  opacity: 1;
+  transform: translate3d(0, -50%, 0) scale(1);
+}
+
+.env-pop-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.env-pop-head strong {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 750;
+}
+
+.env-pop-head span {
+  display: block;
+  font-size: 11px;
+  color: var(--sh-ink-muted);
+  margin-top: 2px;
+}
+
+.env-pop-clock-big {
+  font-size: 15px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--sh-accent);
+  flex-shrink: 0;
+}
+
+.env-atmo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.env-city-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.env-city-input-row {
+  display: flex;
+  gap: 5px;
+}
+
+.env-city-input-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 5px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--sh-border);
+  background: rgba(128, 128, 128, 0.08);
+  color: var(--sh-ink);
+  font-size: 11.5px;
+  outline: none;
+}
+
+.env-city-btn {
+  border: 1px solid var(--sh-border);
+  background: rgba(128, 128, 128, 0.1);
+  color: var(--sh-ink);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.env-city-btn.primary {
+  background: var(--sh-prism);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+html[data-theme="dark"] .env-city-btn.primary {
+  color: #14120d;
+}
+
+.env-city-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.env-chip {
+  border: 1px solid var(--sh-border);
+  background: transparent;
+  color: var(--sh-ink-2);
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.env-chip:hover {
+  border-color: var(--sh-accent);
+  color: var(--sh-accent);
+}
+
+.env-proxy-hint {
+  margin: 0;
+  font-size: 10.5px;
+  color: #f59e0b;
+  line-height: 1.4;
+}
+
+.env-proxy-hint[hidden] {
+  display: none !important;
+}
+
+.env-atmo-btn {
+  border: 1px solid var(--sh-border);
+  background: rgba(128, 128, 128, 0.08);
+  color: var(--sh-ink-2);
+  font-size: 11px;
+  font-weight: 650;
+  padding: 4px 9px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.env-atmo-btn.active {
+  background: var(--sh-prism);
+  color: #ffffff;
+  border-color: transparent;
+}
+
+html[data-theme="dark"] .env-atmo-btn.active {
+  color: #14120d;
+}
+
+.env-cal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4px;
+  border-top: 1px solid var(--sh-border);
+}
+
+.env-cal-head strong {
+  font-size: 12.5px;
+  font-weight: 750;
+}
+
+.env-cal-nav {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--sh-border);
+  background: transparent;
+  color: var(--sh-ink);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.env-cal-weekdays,
+.env-cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+  text-align: center;
+}
+
+.env-cal-weekdays span {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--sh-ink-muted);
+  padding: 2px 0;
+}
+
+.env-cal-day {
+  position: relative;
+  height: 28px;
+  border-radius: 8px;
+  font-size: 11.5px;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+  color: var(--sh-ink);
+}
+
+.env-cal-day.is-muted {
+  opacity: 0.25;
+}
+
+.env-cal-day.is-today {
+  background: var(--sh-prism);
+  color: #ffffff;
+  font-weight: 800;
+}
+
+html[data-theme="dark"] .env-cal-day.is-today {
+  color: #14120d;
+}
+
+.env-cal-day.has-bday::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #f43f5e;
+}
+
+.env-cal-bday-note {
+  margin: 0;
+  font-size: 11px;
+  color: var(--sh-ink-2);
+  line-height: 1.45;
+  border-top: 1px solid var(--sh-border);
+  padding-top: 7px;
+}
+
+/* ── Day / Light Theme Music Capsule (matches 283 Brand, Weather & Nav Dock Frosted Pearl Glass!) ── */
+html:not([data-theme="dark"]) .dynamic-island {
+  height: 44px;
+  padding: 4px 8px 4px 6px;
+  background: var(--sh-glass);
+  border: 1px solid var(--sh-rim);
+  box-shadow: var(--sh-shadow), inset 0 1px 0 var(--sh-rim);
+  color: var(--sh-ink);
+}
+
+html:not([data-theme="dark"]) .dynamic-island:hover {
+  background: var(--sh-glass-hover);
+  border-color: var(--sh-rim);
+  box-shadow: 0 12px 32px rgba(208, 104, 136, 0.14), 0 2px 8px rgba(15, 23, 42, 0.06), inset 0 1px 0 var(--sh-rim);
+}
+
+html:not([data-theme="dark"]) .island-progress-svg .track {
+  stroke: rgba(15, 23, 42, 0.12);
+}
+
+html:not([data-theme="dark"]) .island-mini-play {
+  background: rgba(15, 23, 42, 0.08);
+  color: var(--sh-ink);
+}
+
+html:not([data-theme="dark"]) .island-mini-play:hover {
+  background: rgba(15, 23, 42, 0.14);
+}
+
+html:not([data-theme="dark"]) .island-mini-mode {
+  background: rgba(15, 23, 42, 0.05);
+  color: var(--sh-ink-2);
+}
+
+html:not([data-theme="dark"]) .island-mini-mode:hover {
+  background: rgba(15, 23, 42, 0.11);
+}
+
+html:not([data-theme="dark"]) .island-mini-mode.is-accent {
+  background: rgba(208, 104, 136, 0.15);
+  color: var(--sh-accent);
+}
+
+html:not([data-theme="dark"]) .island-popover {
+  background: var(--sh-glass-strong);
+  border: 1px solid var(--sh-rim);
+  box-shadow: var(--sh-shadow-lg), inset 0 1px 0 var(--sh-rim);
+  color: var(--sh-ink);
+}
+
+html:not([data-theme="dark"]) .ip-meta span,
+html:not([data-theme="dark"]) .ip-scrub,
+html:not([data-theme="dark"]) .ip-mode-tag,
+html:not([data-theme="dark"]) .ip-vol-val {
+  color: var(--sh-ink-muted);
+}
+
+html:not([data-theme="dark"]) .ip-lyric-jp {
+  color: var(--sh-ink);
+}
+
+html:not([data-theme="dark"]) .ip-lyric-zh {
+  color: var(--sh-ink-2);
+}
+
+html:not([data-theme="dark"]) .ip-icon-btn,
+html:not([data-theme="dark"]) .ip-vol-btn {
+  background: rgba(15, 23, 42, 0.06);
+  color: var(--sh-ink-2);
+}
+
+html:not([data-theme="dark"]) .ip-icon-btn:hover,
+html:not([data-theme="dark"]) .ip-vol-btn:hover {
+  background: rgba(15, 23, 42, 0.12);
+  color: var(--sh-ink);
+}
+
+html:not([data-theme="dark"]) .ip-ctrl {
+  color: var(--sh-ink);
+}
+
+html:not([data-theme="dark"]) .ip-ctrl:hover {
+  background: rgba(15, 23, 42, 0.08);
+  color: var(--sh-ink);
+}
+
+html:not([data-theme="dark"]) .ip-ctrl-play {
+  background: var(--sh-ink);
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.18);
+}
+
+html:not([data-theme="dark"]) .ip-ctrl-play:hover {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+html:not([data-theme="dark"]) .ip-volume {
+  border-top-color: var(--sh-border);
+}
+
+/* ── Dynamic Adaptive Width (Stays Inline in Top Bar on Desktop; Only Centers Below on Very Narrow Screens) ── */
+.shell-header .dynamic-island {
+  max-width: var(--island-max-w, 220px);
+}
+
+.shell-header .dynamic-island.is-compact .island-eq {
+  display: none;
+}
+
+.shell-header.island-below #islandAnchor {
+  position: fixed;
+  top: 60px;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  z-index: 1050;
+}
+
+.shell-header.island-below .dynamic-island {
+  max-width: min(280px, calc(100vw - 160px));
+}
+
+.shell-header.island-below .island-popover {
+  top: calc(100% + 8px);
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, -10px) scale(0.94);
+  transform-origin: top center;
+  width: min(320px, calc(100vw - 24px));
+}
+
+.shell-header.island-below .island-popover.is-open {
+  transform: translate(-50%, 0) scale(1);
+}
+
+@media (max-width: 1220px) {
+  .env-date, .env-city { display: none; }
+}
+
+@media (max-width: 1060px) {
+  .env-anchor { display: none; }
+}
+
+/* ── Full Portrait Mobile & Narrow Tablet Adaptation (竖屏手机适配 — 不影响 20:9 / 21:9 横屏) ── */
+@media (max-width: 820px) and (orientation: portrait) {
+  :root {
+    --sh-header-h: 56px;
+  }
+  .shell-header {
+    padding: 8px 10px 0 !important;
+    gap: 6px;
+  }
+  .prism-brand {
+    height: 38px;
+    padding: 0 11px 0 8px;
+    gap: 6px;
+  }
+  .prism-brand-text {
+    display: none;
+  }
+  .prism-num {
+    font-size: 22px;
+    width: 48px;
+  }
+  .env-anchor {
+    display: inline-flex !important;
+  }
+  .env-capsule {
+    height: 38px;
+    padding: 3px 9px;
+    border-radius: 13px;
+    max-width: 112px;
+  }
+  .env-date {
+    display: none;
+  }
+  .env-city {
+    display: inline;
+    max-width: 44px;
+  }
+  .env-popover {
+    position: fixed;
+    top: 56px;
+    left: 10px;
+    right: 10px;
+    width: auto;
+    max-width: 356px;
+  }
+  /* Move Main Navigation Dock to sleek Apple Bottom Safe-Area Floating Tab Bar */
+  .shell-header .prism-dock {
+    position: fixed !important;
+    left: 50% !important;
+    top: auto !important;
+    bottom: max(10px, env(safe-area-inset-bottom)) !important;
+    transform: translateX(-50%) !important;
+    z-index: 1060;
+    height: 46px;
+    max-width: calc(100vw - 14px);
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 4px;
+  }
+  .shell-header .prism-dock::-webkit-scrollbar {
+    display: none;
+  }
+  .dock-item {
+    min-width: 36px;
+    padding: 0 8px;
+    flex-shrink: 0;
+  }
+  .dock-item.is-active .dock-label {
+    font-size: 11px;
+  }
+  /* Music Capsule sits cleanly below top-right header with generous title width */
+  .shell-header #islandAnchor {
+    position: fixed;
+    top: 54px;
+    right: 10px;
+    left: auto;
+    z-index: 1050;
+  }
+  .shell-header .dynamic-island {
+    height: 36px;
+    max-width: min(268px, calc(100vw - 20px));
+  }
+  .shell-header .island-popover {
+    position: fixed;
+    top: 96px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    max-width: 360px;
+    margin-left: auto;
+  }
+  .shell-utils {
+    padding: 3px;
+    gap: 2px;
+  }
+  .util-btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   283PRISM LIVE STAGE — Shell Concert Deck, Holographic Prism Rims &
+   Cinema Light-Beam Curtain Wipe Transitions
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+@keyframes stageWipeNext {
+  0% {
+    opacity: 0;
+    transform: translateX(-115%) skewX(-20deg);
+  }
+  26% {
+    opacity: 0.95;
+  }
+  70% {
+    opacity: 0.72;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(125%) skewX(-20deg);
+  }
+}
+
+@keyframes stageWipePrev {
+  0% {
+    opacity: 0;
+    transform: translateX(115%) skewX(20deg);
+  }
+  26% {
+    opacity: 0.95;
+  }
+  70% {
+    opacity: 0.72;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-125%) skewX(20deg);
+  }
+}
+
+/* Full-Stage Diagonal Holographic Light Curtain Wipe (Pure GPU Compositor — Zero blur/mix-blend-mode readback!) */
+.stage-prism-wipe {
+  display: none !important;
+  pointer-events: none;
+}
+
+/* Night Mode: Obsidian Black & Champagne Gold Light-Sweep Wave (Zero bright-white glare at night!) */
+html[data-theme="dark"] .stage-prism-wipe {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(10, 10, 16, 0.36) 24%,
+    rgba(16, 15, 22, 0.62) 42%,
+    rgba(230, 194, 122, 0.34) 50%,
+    rgba(16, 15, 22, 0.62) 58%,
+    rgba(10, 10, 16, 0.36) 76%,
+    transparent 100%
+  );
+}
+
+.stage-prism-wipe.sweep-next {
+  animation: stageWipeNext 0.34s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.stage-prism-wipe.sweep-prev {
+  animation: stageWipePrev 0.34s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Pure Zero-Tear Opacity Crossfade handled by .stage-frame / .is-underlay / .is-active above
+   (NEVER toggle contain:strict or transform/scale3d on live <iframe>s — doing so tears down
+   Chromium's Viz SurfaceLayer and causes a 200-300ms full-screen blank white flash!) */
+
+/* Subtle Rotating Prism Hairline Accent on Original Light/Dark Glass Chrome */
+.prism-dock,
+.prism-brand,
+.dynamic-island {
+  position: relative;
+}
+
+.prism-dock::before,
+.prism-brand::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: var(--ls-prism-conic, conic-gradient(from var(--prism-angle), #22d3ee, #818cf8, #f472b6, #fbbf24, #22d3ee));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.24;
+  pointer-events: none;
+  animation: prismRotate 8s linear infinite;
+  transition: opacity 0.28s ease;
+}
+
+.prism-dock:hover::before,
+.prism-brand:hover::before {
+  opacity: 0.72;
+}
+
+html[data-theme="dark"] .prism-dock::before,
+html[data-theme="dark"] .prism-brand::before {
+  background: conic-gradient(from var(--prism-angle), #d4a44e, #fff2c6, #a87628, #f2d590, #d4a44e);
+  opacity: 0.72;
+}
+
+/* Obsidian & Champagne-Gold Frames across ALL Shell Chrome in Night Mode */
+html[data-theme="dark"] .prism-brand,
+html[data-theme="dark"] .env-capsule,
+html[data-theme="dark"] .prism-dock,
+html[data-theme="dark"] .dynamic-island,
+html[data-theme="dark"] .util-btn,
+html[data-theme="dark"] .env-popover,
+html[data-theme="dark"] .island-popover,
+html[data-theme="dark"] .spotlight-modal,
+html[data-theme="dark"] .boot-core {
+  overflow: hidden;
+  background-color: #14131b !important;
+  background: linear-gradient(135deg, #1d1b26 0%, #121118 100%) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  color: #f5f1e8 !important;
+  border-color: rgba(230, 194, 122, 0.58) !important;
+  box-shadow:
+    0 12px 34px rgba(0, 0, 0, 0.58),
+    0 0 0 0.5px rgba(245, 215, 142, 0.25),
+    inset 0 1px 0 rgba(255, 238, 190, 0.24) !important;
+}
+
+html[data-theme="dark"] .prism-brand-text em,
+html[data-theme="dark"] .env-capsule,
+html[data-theme="dark"] .env-city,
+html[data-theme="dark"] .util-btn {
+  color: #f5e6c4 !important;
+}
+
+html[data-theme="dark"] .prism-brand-text small,
+html[data-theme="dark"] .env-date {
+  color: #c9bfa9 !important;
+}
+
+html[data-theme="dark"] .env-capsule:hover,
+html[data-theme="dark"] .util-btn:hover,
+html[data-theme="dark"] .dynamic-island:hover,
+html[data-theme="dark"] .prism-brand:hover {
+  border-color: rgba(245, 215, 142, 0.78) !important;
+  box-shadow:
+    0 14px 36px rgba(0, 0, 0, 0.62),
+    0 0 18px rgba(212, 175, 55, 0.22),
+    inset 0 1px 0 rgba(255, 240, 198, 0.34) !important;
+}
+
+/* Stage FX Sparkle Toggle Pill */
+.util-stage-fx svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  transition: transform 0.35s cubic-bezier(0.22, 1.35, 0.36, 1), color 0.2s ease, fill 0.2s ease;
+}
+
+.util-stage-fx.is-on {
+  color: #ec4899 !important;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.12), rgba(244, 114, 182, 0.14)) !important;
+}
+
+.util-stage-fx.is-on svg {
+  fill: currentColor;
+  transform: rotate(12deg) scale(1.04);
+}
+
+html[data-theme="dark"] .util-stage-fx.is-on {
+  color: #f5dca4 !important;
+  background: linear-gradient(135deg, rgba(230, 194, 122, 0.24), rgba(168, 120, 40, 0.18)) !important;
+}
+
+/* Refined Prism Glow on Boot Progress Bar */
+.shell-boot .boot-bar i {
+  background: linear-gradient(90deg, #22d3ee, #818cf8, #f472b6, #fbbf24) !important;
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.42);
+}
+
+html[data-theme="dark"] .shell-boot .boot-bar i {
+  background: linear-gradient(90deg, #b3802c, #e6c27a, #fff1c9, #d4a44e) !important;
+  box-shadow: 0 0 14px rgba(230, 194, 122, 0.48);
+}
+
+/* ── Music Capsule Quality & Sound FX Controls (.ip-audio-tuning) ── */
+.ip-audio-tuning[hidden] {
+  display: none !important;
+}
+
+.ip-audio-tuning {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  box-sizing: border-box;
+  animation: ipTuneIn 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes ipTuneIn {
+  from { opacity: 0; transform: translate3d(0, -6px, 0) scale(0.97); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+html:not([data-theme="dark"]) .ip-audio-tuning {
+  background: rgba(15, 23, 42, 0.04);
+  border-color: rgba(15, 23, 42, 0.11);
+}
+
+#ipTuneToggleBtn.is-active {
+  background: rgba(243, 210, 133, 0.18) !important;
+  border-color: rgba(243, 210, 133, 0.56) !important;
+  color: #f3d285 !important;
+}
+
+html:not([data-theme="dark"]) #ipTuneToggleBtn.is-active {
+  background: rgba(180, 123, 28, 0.14) !important;
+  border-color: rgba(180, 123, 28, 0.45) !important;
+  color: #9a6700 !important;
+}
+
+.ip-tune-field {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.ip-tune-field span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  opacity: 0.72;
+}
+
+.ip-tune-field select {
+  width: 100%;
+  min-width: 0;
+  padding: 5px 8px;
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 650;
+  outline: none;
+  cursor: pointer;
+}
+
+.ip-tune-field select option {
+  background: #14131a;
+  color: #f5f1e8;
+}
+
+html:not([data-theme="dark"]) .ip-tune-field select {
+  background: rgba(15, 23, 42, 0.06);
+  border-color: rgba(15, 23, 42, 0.14);
+  color: var(--sh-ink);
+}
+
+html:not([data-theme="dark"]) .ip-tune-field select option {
+  background: #ffffff;
+  color: #141821;
+}
+
+/* ── High-Contrast Illuminated Volume & Seek Sliders in Capsule ── */
+#ipVolume,
+#ipSeek {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px !important;
+  border-radius: 999px !important;
+  background: rgba(255, 244, 214, 0.26) !important;
+  background-origin: border-box !important;
+  background-repeat: no-repeat !important;
+  border: 1px solid rgba(230, 194, 122, 0.35);
+  outline: none;
+  cursor: pointer;
+}
+
+html:not([data-theme="dark"]) #ipVolume,
+html:not([data-theme="dark"]) #ipSeek {
+  background: rgba(15, 23, 42, 0.16) !important;
+  border-color: rgba(15, 23, 42, 0.1);
+}
+
+#ipVolume::-webkit-slider-thumb,
+#ipSeek::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fff8e6, #e6c27a);
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px rgba(230, 194, 122, 0.65);
+  cursor: pointer;
+}
+
+/* ── Zero-Lag 60fps Day/Night Ripple Freeze ── */
+html.is-theme-switching,
+html.is-theme-switching *,
+html.is-theme-switching *::before,
+html.is-theme-switching *::after {
+  transition: none !important;
+  animation-play-state: paused !important;
+}
+
+/* ── Music Capsule Upcoming Queue List ── */
+.ip-queue-section {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(128, 128, 128, 0.22);
+}
+.ip-queue-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  opacity: 0.85;
+}
+.ip-queue-toggle {
+  border: 0;
+  background: rgba(128, 128, 128, 0.16);
+  color: inherit;
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.ip-queue-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 158px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.ip-queue-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 5px 7px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: rgba(128, 128, 128, 0.08);
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.ip-queue-row:hover {
+  background: rgba(128, 128, 128, 0.16);
+}
+.ip-queue-row.is-current {
+  background: rgba(230, 194, 122, 0.18);
+  border-color: rgba(230, 194, 122, 0.45);
+}
+.ip-queue-row img {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex: none;
+}
+.ip-queue-text {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.ip-queue-text strong {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ip-queue-text small {
+  font-size: 10.5px;
+  opacity: 0.68;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Clickable song title / cover in Music Capsule */
+#ipTitle,
+#ipArtist,
+#ipArt {
+  cursor: pointer;
+}
+#ipTitle,
+#ipArtist {
+  transition: color 0.18s ease, text-shadow 0.18s ease;
+}
+#ipTitle:hover {
+  text-decoration: none !important;
+  color: #f3d285;
+  text-shadow: 0 0 12px rgba(243, 210, 133, 0.36);
+}
+#ipArtist:hover {
+  text-decoration: none !important;
+  color: rgba(243, 210, 133, 0.92);
+}
+html:not([data-theme="dark"]) #ipTitle:hover {
+  color: #9a6700;
+  text-shadow: none;
+}
+html:not([data-theme="dark"]) #ipArtist:hover {
+  color: #b47b1c;
+}
+
+/* Vertically center Music Capsule volume row (mute button + slider + %) with breathing room above divider */
+.ip-volume {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 6px 0 8px !important;
+  margin: 2px 0 !important;
+}
+.ip-vol-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: none !important;
+  margin: 0 !important;
+}
+#ipVolume {
+  margin: 0 !important;
+  align-self: center !important;
+}
+.ip-vol-val {
+  display: inline-flex !important;
+  align-items: center !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+.ip-icon-btn.is-active {
+  background: rgba(230, 194, 122, 0.24) !important;
+  color: #fde68a !important;
+}
+
+/* Pure-GPU Music Dock <-> Music Capsule Flying Morph Ghost */
+.music-morph-ghost {
+  position: fixed;
+  z-index: 1200;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(15, 23, 42, 0.14);
+  box-shadow: 0 14px 38px rgba(15, 23, 42, 0.22);
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 700;
+  will-change: transform, opacity;
+  overflow: hidden;
+}
+html[data-theme="dark"] .music-morph-ghost {
+  background: rgba(20, 19, 28, 0.92);
+  border-color: rgba(230, 194, 122, 0.45);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.55);
+  color: #f5e6c4;
+}
+.music-morph-ghost img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex: none;
+}
+.music-morph-ghost span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.music-morph-ghost.is-fullscreen-morph {
+  padding: 0;
+  justify-content: center;
+  background: rgba(16, 18, 28, 0.86) !important;
+  border: 1px solid rgba(255, 255, 255, 0.24) !important;
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.56), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+}
+.music-morph-ghost .mmg-bg {
+  position: absolute;
+  inset: -40px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(44px) saturate(160%) brightness(0.55);
+  opacity: 0.82;
+  pointer-events: none;
+}
+.music-morph-ghost .mmg-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.music-morph-ghost .mmg-cover-lg {
+  width: min(260px, 34vh) !important;
+  height: min(260px, 34vh) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.52);
+}
+.music-morph-ghost .mmg-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.music-morph-ghost .mmg-meta strong {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+}
+.music-morph-ghost .mmg-meta small {
+  font-size: 14px;
+  color: rgba(248, 250, 252, 0.78);
+}
+
+/* ── Home-Only Translucent Twilight Glass Top Bar in Dark Mode (Smooth 380ms Morph to/from Obsidian-Gold!) ── */
+.prism-brand,
+.env-capsule,
+.prism-dock,
+.dynamic-island,
+.util-btn {
+  transition: background 420ms cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 420ms cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 420ms cubic-bezier(0.22, 1, 0.36, 1),
+              transform 220ms cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+html[data-theme="dark"][data-active-page="index.html"] .prism-brand,
+html[data-theme="dark"][data-active-page="index.html"] .env-capsule,
+html[data-theme="dark"][data-active-page="index.html"] .prism-dock,
+html[data-theme="dark"][data-active-page="index.html"] .dynamic-island,
+html[data-theme="dark"][data-active-page="index.html"] .util-btn {
+  background: rgba(28, 38, 62, 0.42) !important;
+  backdrop-filter: blur(18px) saturate(145%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(145%) !important;
+  border-color: rgba(220, 232, 255, 0.24) !important;
+  box-shadow: 0 8px 24px rgba(10, 16, 32, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.18) !important;
+}
+html[data-theme="dark"][data-active-page="index.html"] .prism-brand:hover,
+html[data-theme="dark"][data-active-page="index.html"] .env-capsule:hover,
+html[data-theme="dark"][data-active-page="index.html"] .dynamic-island:hover,
+html[data-theme="dark"][data-active-page="index.html"] .util-btn:hover {
+  background: rgba(38, 52, 82, 0.56) !important;
+  border-color: rgba(232, 240, 255, 0.38) !important;
+  box-shadow: 0 10px 28px rgba(10, 16, 32, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.26) !important;
+}
+html[data-theme="dark"][data-active-page="index.html"] .prism-dock::before,
+html[data-theme="dark"][data-active-page="index.html"] .prism-brand::before {
+  opacity: 0 !important;
+}
+html[data-theme="dark"][data-active-page="index.html"] .dock-pill {
+  background: rgba(255, 255, 255, 0.16) !important;
+  border-color: rgba(220, 232, 255, 0.34) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.26), 0 4px 14px rgba(10, 16, 32, 0.24) !important;
+}
+
+/* ── Upgraded Liquid Glass Spring Top Dock Animations (Pure GPU 144/240fps!) ── */
+.dock-hover-pill {
+  display: none !important;
+}
+.dock-item {
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1), color 180ms ease !important;
+}
+.dock-item.is-popping svg {
+  animation: dockIconPop 420ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.dock-item.is-active .dock-label {
+  animation: dockLabelReveal 300ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.dock-pill.is-gliding {
+  box-shadow:
+    0 0 22px rgba(56, 189, 248, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92) !important;
+}
+html[data-theme="dark"] .dock-pill.is-gliding {
+  box-shadow:
+    0 0 24px rgba(230, 194, 122, 0.45),
+    inset 0 1px 0 rgba(255, 238, 196, 0.55) !important;
+}
+@keyframes dockIconPop {
+  0%   { transform: scale(1); }
+  28%  { transform: scale(0.8) rotate(-6deg); }
+  66%  { transform: scale(1.22) rotate(4deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+@keyframes dockLabelReveal {
+  0%   { opacity: 0; transform: translate3d(-6px, 0, 0); }
+  100% { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   APPLE DYNAMIC ISLAND — TRUE SPRING PHYSICS, OPTICAL BLUR STAGGER & HERO MORPH
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root {
+  /* True damped harmonic spring curve (stiffness ~380, damping ~25, subtle organic overshoot) */
+  --di-spring: linear(
+    0, 0.009, 0.035 2.1%, 0.141, 0.281 6.7%, 0.723 12.9%, 0.938 16.7%,
+    1.017, 1.053 23.2%, 1.062 26.2%, 1.056 29.6%, 1.016 39.2%, 0.996 47.4%,
+    0.993 53.5%, 1.001 68.5%, 1.001 82.5%, 1
+  );
+  --di-spring-snappy: cubic-bezier(0.22, 1.24, 0.36, 1);
+  --di-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* 1. Gentle Slow Crossfade for Home Light <-> Dark Theme Switch */
+html.is-theme-gentle .prism-brand,
+html.is-theme-gentle .env-capsule,
+html.is-theme-gentle .prism-dock,
+html.is-theme-gentle .dynamic-island,
+html.is-theme-gentle .shell-utils,
+html.is-theme-gentle .util-btn,
+html.is-theme-gentle .dock-item,
+html.is-theme-gentle .dock-pill {
+  transition:
+    background 1.25s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 1.25s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 1.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 1.25s cubic-bezier(0.22, 1, 0.36, 1),
+    color 1.25s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+/* 2. Dynamic Island Pill Micro-Physics & Liquid Specular Sheen */
+.dynamic-island {
+  position: relative;
+  transform-origin: center right;
+  transition:
+    transform 0.52s var(--di-spring),
+    box-shadow 0.36s var(--di-ease-out),
+    border-color 0.32s ease,
+    max-width 0.48s var(--di-spring) !important;
+  will-change: transform;
+}
+.dynamic-island::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(110deg, transparent 22%, rgba(255, 255, 255, 0.24) 48%, transparent 74%);
+  transform: translate3d(-125%, 0, 0);
+  pointer-events: none;
+  opacity: 0;
+}
+.dynamic-island:hover {
+  transform: scale(1.032) translateY(-1px) !important;
+}
+.dynamic-island:active {
+  transform: scale(0.95) !important;
+  transition-duration: 0.14s !important;
+}
+.dynamic-island.is-expanded-parent {
+  transform: scale(0.96) !important;
+  opacity: 0.92;
+}
+.dynamic-island.di-track-pulse {
+  animation: diTrackMorph 580ms var(--di-spring);
+}
+.dynamic-island.di-track-pulse::after {
+  animation: diSpecularSweep 720ms var(--di-ease-out);
+}
+.dynamic-island.di-swallow-bounce {
+  animation: diSwallowBounce 540ms var(--di-spring);
+}
+.dynamic-island.is-absorbing {
+  animation: diLiquidAbsorb 440ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+.dynamic-island.is-absorbing::after {
+  animation: diSpecularSweep 560ms var(--di-ease-out);
+}
+
+@keyframes diTrackMorph {
+  0%   { transform: scale3d(1, 1, 1); }
+  30%  { transform: scale3d(1.05, 0.96, 1); }
+  65%  { transform: scale3d(0.99, 1.015, 1); }
+  100% { transform: scale3d(1, 1, 1); }
+}
+@keyframes diSwallowBounce {
+  0%   { transform: scale3d(0.97, 1.03, 1); }
+  42%  { transform: scale3d(1.045, 0.96, 1); }
+  74%  { transform: scale3d(0.992, 1.01, 1); }
+  100% { transform: scale3d(1, 1, 1); }
+}
+@keyframes diLiquidAbsorb {
+  0%   { transform: scale3d(1, 1, 1); }
+  28%  { transform: scale3d(1.07, 0.94, 1); }
+  62%  { transform: scale3d(0.985, 1.02, 1); }
+  84%  { transform: scale3d(1.008, 0.995, 1); }
+  100% { transform: scale3d(1, 1, 1); }
+}
+@keyframes diSpecularSweep {
+  0%   { opacity: 0; transform: translate3d(-120%, 0, 0); }
+  25%  { opacity: 1; }
+  100% { opacity: 0; transform: translate3d(135%, 0, 0); }
+}
+
+/* 3. Expanded Dynamic Island Sheet — Spring Unfold + Optical Blur-Veil Staggered Cascade */
+.island-popover {
+  transform-origin: top right !important;
+  border-radius: 36px !important;
+  opacity: 0 !important;
+  transform: translate3d(0, -14px, 0) scale(0.76, 0.54) !important;
+  filter: blur(8px);
+  pointer-events: none !important;
+  visibility: hidden !important;
+  will-change: transform, opacity, border-radius, filter;
+  transition:
+    transform 0.62s var(--di-spring),
+    border-radius 0.52s var(--di-ease-out),
+    opacity 0.24s ease,
+    filter 0.34s var(--di-ease-out),
+    visibility 0.32s !important;
+}
+.island-popover.is-closing {
+  transition:
+    transform 0.24s cubic-bezier(0.32, 0.72, 0, 1),
+    border-radius 0.22s ease,
+    opacity 0.18s ease,
+    filter 0.18s ease,
+    visibility 0.24s !important;
+}
+.island-popover.is-open {
+  opacity: 1 !important;
+  border-radius: 26px !important;
+  transform: translate3d(0, 0, 0) scale(1, 1) !important;
+  filter: blur(0px);
+  pointer-events: auto !important;
+  visibility: visible !important;
+  z-index: 1060 !important;
+}
+
+/* Staggered child rows with Apple optical blur-in cascade */
+.island-popover > .ip-top,
+.island-popover > .ip-lyric,
+.island-popover > .ip-scrub,
+.island-popover > .ip-controls,
+.island-popover > .ip-volume,
+.island-popover > .ip-queue-section {
+  opacity: 0;
+  transform: translate3d(0, -10px, 0) scale(0.95);
+  filter: blur(6px);
+  transition:
+    opacity 0.28s var(--di-ease-out),
+    transform 0.48s var(--di-spring),
+    filter 0.32s var(--di-ease-out);
+}
+.island-popover.is-open > .ip-top           { opacity: 1; transform: none; filter: blur(0); transition-delay: 0.04s; }
+.island-popover.is-open > .ip-lyric         { opacity: 1; transform: none; filter: blur(0); transition-delay: 0.08s; }
+.island-popover.is-open > .ip-scrub         { opacity: 1; transform: none; filter: blur(0); transition-delay: 0.11s; }
+.island-popover.is-open > .ip-controls      { opacity: 1; transform: none; filter: blur(0); transition-delay: 0.14s; }
+.island-popover.is-open > .ip-volume        { opacity: 1; transform: none; filter: blur(0); transition-delay: 0.17s; }
+.island-popover.is-open > .ip-queue-section { opacity: 1; transform: none; filter: blur(0); transition-delay: 0.20s; }
+
+/* 4. Pill-to-Pill Glide Morph Ghost (Music Capsule <-> Bottom .player-dock Bar) — Pure GPU Compositor Thread, ZERO iframe touch! */
+.music-morph-ghost {
+  position: fixed;
+  top: 0;
+  left: 0;
+  inset: auto;
+  z-index: 9998;
+  pointer-events: none;
+  overflow: hidden;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  will-change: transform, opacity;
+  border-radius: 999px;
+  padding: 0;
+  background:
+    linear-gradient(125deg, rgba(255, 255, 255, 0.94), color-mix(in srgb, var(--morph-accent, #f472b6) 14%, rgba(248, 250, 252, 0.92)));
+  border: 1px solid rgba(15, 23, 42, 0.14);
+  box-shadow:
+    0 18px 46px rgba(15, 23, 42, 0.22),
+    0 0 0 1px rgba(255, 255, 255, 0.72) inset !important;
+}
+html[data-theme="dark"] .music-morph-ghost {
+  background:
+    linear-gradient(125deg, rgba(22, 20, 30, 0.96), color-mix(in srgb, var(--morph-accent, #e6c27a) 18%, rgba(14, 13, 20, 0.96)));
+  border: 1px solid rgba(235, 200, 128, 0.45);
+  box-shadow:
+    0 20px 52px rgba(0, 0, 0, 0.56),
+    0 0 0 1px rgba(235, 200, 128, 0.28) inset !important;
+}
+.mmg-sheen {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(125deg, rgba(255, 255, 255, 0.28) 0%, transparent 45%, rgba(255, 255, 255, 0.12) 100%);
+  pointer-events: none;
+}
+.music-morph-art-ghost {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: 50%;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.38), 0 0 0 1.5px rgba(255, 255, 255, 0.42);
+  will-change: transform, opacity;
+}
+
+/* 5. Fix Queue List Expand / Collapse Bug (display:flex previously overrode [hidden]!) */
+.ip-queue-section[hidden],
+.ip-queue-list[hidden],
+.ip-icon-btn[hidden] {
+  display: none !important;
+}
+.ip-queue-list {
+  transition:
+    max-height 0.42s var(--di-spring),
+    opacity 0.26s ease,
+    margin-top 0.3s ease !important;
+  overflow-y: auto;
+}
+.ip-queue-section.is-collapsed .ip-queue-list {
+  max-height: 0 !important;
+  opacity: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+.ip-queue-toggle {
+  transition: background 0.18s ease, transform 0.2s var(--di-spring-snappy);
+}
+.ip-queue-toggle:hover {
+  background: rgba(128, 128, 128, 0.28);
+  transform: scale(1.05);
+}
+.ip-queue-toggle:active {
+  transform: scale(0.94);
+}
+
+/* JoyTrans / HarmonyOS container performance guard: skip filter:blur on children while keeping spring motion */
+html[data-joytrans="1"] .island-popover,
+html[data-joytrans="1"] .island-popover > * {
+  filter: none !important;
+}
+
+/* 6. Auto-Marquee Select Pills (smooth ping-pong scroll when text overflows box) */
+.mq-select-shell {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box !important;
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 32px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: #f8fafc !important;
+  opacity: 1 !important;
+  padding: 0 24px 0 11px;
+  overflow: hidden;
+  transition: background 0.18s ease, border-color 0.18s ease;
+}
+html:not([data-theme="dark"]) .island-popover .mq-select-shell {
+  background: rgba(15, 23, 42, 0.06);
+  border-color: rgba(15, 23, 42, 0.18);
+  color: #0f172a !important;
+}
+.mq-select-shell:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(243, 210, 133, 0.55);
+}
+.mq-select-shell > select {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 0 !important;
+  cursor: pointer !important;
+  z-index: 2 !important;
+  margin: 0 !important;
+}
+.mq-select-view {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  pointer-events: none;
+}
+.mq-viewport {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  mask-image: linear-gradient(90deg, #000 0%, #000 86%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 86%, transparent 100%);
+}
+.mq-text {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: inherit;
+  white-space: nowrap;
+  will-change: transform;
+}
+.mq-select-shell.is-marquee .mq-text {
+  animation: mqPingPong var(--mq-dur, 6s) ease-in-out infinite;
+}
+.mq-caret {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.72;
+  pointer-events: none;
+}
+@keyframes mqPingPong {
+  0%, 16%   { transform: translate3d(0, 0, 0); }
+  46%, 62%  { transform: translate3d(var(--mq-shift, -40px), 0, 0); }
+  92%, 100% { transform: translate3d(0, 0, 0); }
+}
+
+/* 7. Inline Compact Mini Volume Pill inside .ip-controls (Single Row, Zero Extra Line!) */
+.island-popover .ip-controls {
+  margin-top: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: nowrap !important;
+  gap: 8px !important;
+}
+.island-popover .ip-transport {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.island-popover .ip-controls .ip-ctrl {
+  width: 30px;
+  height: 30px;
+}
+.island-popover .ip-controls .ip-ctrl svg {
+  width: 16px;
+  height: 16px;
+}
+.island-popover .ip-controls .ip-ctrl-play {
+  width: 38px;
+  height: 38px;
+}
+.island-popover .ip-controls .ip-ctrl-play svg {
+  width: 17px;
+  height: 17px;
+}
+.island-popover .ip-mode-tag[hidden] {
+  display: none !important;
+}
+.island-popover .ip-volume {
+  display: inline-flex !important;
+  align-items: center !important;
+  flex: 1 1 108px !important;
+  min-width: 88px !important;
+  max-width: 128px !important;
+  width: auto !important;
+  height: 24px !important;
+  gap: 5px !important;
+  padding: 0 7px !important;
+  margin: 0 !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+html:not([data-theme="dark"]) .island-popover .ip-volume {
+  background: rgba(15, 23, 42, 0.05);
+  border-color: rgba(15, 23, 42, 0.13);
+}
+.island-popover .ip-vol-btn {
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  background: transparent !important;
+  padding: 0 !important;
+  flex-shrink: 0 !important;
+}
+.island-popover .ip-vol-btn svg {
+  width: 12px !important;
+  height: 12px !important;
+}
+.island-popover #ipVolume {
+  flex: 1 1 0 !important;
+  min-width: 36px !important;
+  width: 100% !important;
+  height: 3px !important;
+  margin: 0 !important;
+  border-radius: 999px !important;
+}
+.island-popover #ipVolume::-webkit-slider-runnable-track {
+  height: 3px !important;
+  border-radius: 999px !important;
+}
+.island-popover #ipVolume::-webkit-slider-thumb {
+  width: 9px !important;
+  height: 9px !important;
+  margin-top: -3px !important;
+  border-width: 1.5px !important;
+  box-shadow: 0 0 6px rgba(243, 210, 133, 0.68) !important;
+}
+.island-popover .ip-vol-val {
+  font-size: 9.5px !important;
+  line-height: 1 !important;
+  min-width: 24px !important;
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+  text-align: right !important;
+  opacity: 0.84;
+}

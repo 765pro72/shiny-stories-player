@@ -1,0 +1,245 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────あれ、えーっと……\r\n……すまん、にちか。ペン貸してくれないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1024001000110010,
+    "speaker": "にちか",
+    "text": "えーっ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "024",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102400100011/1024001000110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……っ",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0220"
+  },
+  {
+    "id": 1024001000110020,
+    "speaker": "にちか",
+    "text": "いいですけど、\r\n手とかベタベタしてませんかねー？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "se": "0152",
+    "voice": "produce_communications/102400100011/1024001000110020"
+  },
+  {
+    "select": "……ちょっと、\r\n洗ってこようかな",
+    "nextLabel": "1024001000111"
+  },
+  {
+    "select": "……そんなふうに\r\n見えるか、俺",
+    "nextLabel": "1024001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "いや、ベタベタは\r\nしてないと思うよ",
+    "nextLabel": "1024001000113"
+  },
+  {
+    "id": 1024001000110030,
+    "label": "1024001000111",
+    "speaker": "にちか",
+    "text": "はい\r\nお願いしまーす！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100011/1024001000110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、おう……\r\nいってきます",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0220"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 450
+  },
+  {
+    "id": 1024001000110040,
+    "speaker": "にちか",
+    "text": "──あはっ\r\nプロデューサーさん、素直でいいですねー！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100011/1024001000110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "1024001000112",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "id": 1024001000110050,
+    "speaker": "にちか",
+    "text": "えっ\r\nだって、アイドルからペン借りるんですよー？",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100011/1024001000110050"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 450
+  },
+  {
+    "id": 1024001000110060,
+    "speaker": "にちか",
+    "text": "もうちょっと緊張感持ってもらわないと\r\n困るじゃないですかー",
+    "charAnim1": "think2",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102400100011/1024001000110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1024001000110070,
+    "label": "1024001000113",
+    "speaker": "にちか",
+    "text": "えー！　超うそです！！\r\nだってさっきなんか食べてたじゃないですかー！！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0327",
+    "voice": "produce_communications/102400100011/1024001000110070"
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1024001000110080,
+    "speaker": "にちか",
+    "text": "そういうのほんと無理なので……！\r\nはい、洗ってきてくださいお願いしまーす！！",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100011/1024001000110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

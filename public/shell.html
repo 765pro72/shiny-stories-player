@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <link rel="icon" href="/app-icon.png">
+  <title>闪耀色彩 · 283 Production</title>
+  <link rel="stylesheet" href="/fonts.css">
+  <script src="/interface-font-core.js"></script>
+  <script src="/interface-font.js"></script>
+  <link rel="stylesheet" href="/shell.css">
+  <link rel="stylesheet" href="/live-stage.css">
+  <link rel="stylesheet" href="/mobile-ultrawide.css">
+  <script>
+    (() => {
+      const r = document.documentElement;
+      if (window.desktop?.windowControlsOverlay) r.dataset.desktopChrome = 'overlay';
+      // Stamp mobile / Android / Huawei HarmonyOS / Kirin / JoyTrans flags SYNCHRONOUSLY before first paint!
+      try {
+        const ua = navigator.userAgent || '';
+        const isAnd = /ShinyStoriesAndroid|Android/i.test(ua) || typeof window.ShinyAndroid !== 'undefined';
+        const isJt = /JoyTrans|Droitong|HarmonyOS|HUAWEI|HONOR/i.test(ua);
+        const isHm = /HarmonyOS|OHOS/i.test(ua);
+        const isKr = /KirinSoC|Kirin|HiSilicon|Maleoon/i.test(ua);
+        const isMob = isAnd || isJt || isHm || isKr || /iPhone|iPad|iPod|Mobile/i.test(ua);
+        if (isMob) r.dataset.mobile = '1';
+        if (isAnd) r.dataset.android = '1';
+        if (isJt) r.dataset.joytrans = '1';
+        if (isHm) r.dataset.harmony = '1';
+        if (isKr) r.dataset.kirin = '1';
+      } catch {}
+      // Hydrate & continuously mirror all `shiny.*` localStorage preferences into native persistent state
+      // (survives app restarts & port changes on both Windows Electron and Android/HarmonyOS!)
+      try {
+        const readNative = () => {
+          if (window.desktop?.getState) return window.desktop.getState() || {};
+          if (window.ShinyAndroid?.getState) return JSON.parse(window.ShinyAndroid.getState() || '{}');
+          return null;
+        };
+        const writeNative = (patch) => {
+          if (!patch || !Object.keys(patch).length) return;
+          if (window.desktop?.saveState) { window.desktop.saveState(patch); return; }
+          if (window.ShinyAndroid?.saveState) { window.ShinyAndroid.saveState(JSON.stringify(patch)); }
+        };
+        const savedNative = readNative();
+        if (savedNative && typeof savedNative === 'object') {
+          for (const [k, v] of Object.entries(savedNative)) {
+            if (k.startsWith('shiny.') && typeof v === 'string' && localStorage.getItem(k) === null) {
+              localStorage.setItem(k, v);
+            }
+          }
+        }
+        if (!window.__shinyPrefsBridgeInstalled && (window.desktop?.saveState || window.ShinyAndroid?.saveState)) {
+          window.__shinyPrefsBridgeInstalled = true;
+          let pending = {};
+          let flushTimer = 0;
+          const flush = () => {
+            clearTimeout(flushTimer);
+            flushTimer = 0;
+            const out = pending;
+            pending = {};
+            try { writeNative(out); } catch {}
+          };
+          const queueMirror = (k, v) => {
+            if (typeof k !== 'string' || !k.startsWith('shiny.')) return;
+            if (typeof v === 'string' && v.length > 500000) return;
+            pending[k] = v;
+            clearTimeout(flushTimer);
+            flushTimer = setTimeout(flush, 120);
+          };
+          const origSet = Storage.prototype.setItem;
+          const origRem = Storage.prototype.removeItem;
+          Storage.prototype.setItem = function (k, v) {
+            const res = origSet.call(this, k, v);
+            if (this === window.localStorage) queueMirror(String(k), String(v));
+            return res;
+          };
+          Storage.prototype.removeItem = function (k) {
+            const res = origRem.call(this, k);
+            if (this === window.localStorage) queueMirror(String(k), null);
+            return res;
+          };
+          window.addEventListener('pagehide', flush);
+          window.addEventListener('beforeunload', flush);
+          window.__shinyFlushPrefs = flush;
+          window.__shinyMirrorPref = queueMirror;
+        }
+      } catch {}
+      try {
+        const autoSun = localStorage.getItem('shiny.autoTheme') !== '0';
+        const t = localStorage.getItem('shiny.theme');
+        if (autoSun) {
+          const now = new Date();
+          const doy = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
+          const tz = -now.getTimezoneOffset() / 60;
+          const lat = 35.0, lon = tz * 15 - 4, rad = Math.PI / 180;
+          const g = (2 * Math.PI / 365) * (doy - 1);
+          const eq = 229.18 * (0.000075 + 0.001868 * Math.cos(g) - 0.032077 * Math.sin(g) - 0.014615 * Math.cos(2 * g) - 0.040849 * Math.sin(2 * g));
+          const dec = 0.006918 - 0.399912 * Math.cos(g) + 0.070257 * Math.sin(g) - 0.006758 * Math.cos(2 * g) + 0.000907 * Math.sin(2 * g) - 0.002697 * Math.cos(3 * g) + 0.00148 * Math.sin(3 * g);
+          const ha = Math.acos(Math.max(-1, Math.min(1, (Math.cos(90.833 * rad) / (Math.cos(lat * rad) * Math.cos(dec))) - Math.tan(lat * rad) * Math.tan(dec)))) / rad;
+          const sr = Math.round(720 - 4 * (lon + ha) - eq + tz * 60);
+          const ss = Math.round(720 - 4 * (lon - ha) - eq + tz * 60);
+          const nm = now.getHours() * 60 + now.getMinutes();
+          const isDay = nm >= sr && nm < ss;
+          const slot = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}:${isDay ? 'day' : 'night'}`;
+          if (localStorage.getItem('shiny.themeManualSlot') === slot && (t === 'dark' || t === 'light')) r.dataset.theme = t;
+          else r.dataset.theme = isDay ? 'light' : 'dark';
+        } else if (t === 'dark' || t === 'light') {
+          r.dataset.theme = t;
+        }
+        const fx = localStorage.getItem('shiny.stageFxMode');
+        r.dataset.stageFx = fx === 'soft' ? 'soft' : 'full';
+      } catch {}
+    })();
+  </script>
+  <script src="/shell.js" defer></script>
+  <script src="/live-stage.js" defer></script>
+  <script src="/assistant.js?v=2026-11-20.apple" data-idol-assistant defer></script>
+</head>
+<body class="shell-host">
+  <!-- Subtle Prism Ambient Canvas -->
+  <div class="shell-aurora" aria-hidden="true">
+    <i class="orb orb-1"></i>
+    <i class="orb orb-2"></i>
+    <i class="orb orb-3"></i>
+  </div>
+
+  <!-- Cold-Boot 283 Geometric Prism Awakening (preloads stage + all dynamic video cards) -->
+  <div class="shell-boot" id="shellBoot" aria-hidden="true">
+    <div class="boot-core">
+      <div class="boot-geo" aria-hidden="true">
+        <svg class="boot-geo-svg" viewBox="0 0 120 120" width="108" height="108" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bootPrismStroke" x1="12" y1="12" x2="108" y2="108" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="var(--boot-g1, #38bdf8)"/>
+              <stop offset="50%" stop-color="var(--boot-g2, #818cf8)"/>
+              <stop offset="100%" stop-color="var(--boot-g3, #f472b6)"/>
+            </linearGradient>
+            <linearGradient id="bootPrismFill" x1="28" y1="20" x2="92" y2="100" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="var(--boot-g1, #38bdf8)" stop-opacity="0.24"/>
+              <stop offset="52%" stop-color="var(--boot-g2, #818cf8)" stop-opacity="0.14"/>
+              <stop offset="100%" stop-color="var(--boot-g3, #f472b6)" stop-opacity="0.28"/>
+            </linearGradient>
+          </defs>
+          <!-- Outer precision geometric orbit -->
+          <g class="geo-orbit-outer">
+            <circle cx="60" cy="60" r="52" stroke="url(#bootPrismStroke)" stroke-width="1.2" stroke-dasharray="6 6" opacity="0.58"/>
+            <polygon points="60,6 107,33 107,87 60,114 13,87 13,33" stroke="url(#bootPrismStroke)" stroke-width="1.15" opacity="0.34"/>
+            <circle cx="60" cy="8" r="2.3" fill="var(--boot-g1, #38bdf8)"/>
+            <circle cx="112" cy="60" r="2.3" fill="var(--boot-g2, #818cf8)"/>
+            <circle cx="60" cy="112" r="2.3" fill="var(--boot-g3, #f472b6)"/>
+            <circle cx="8" cy="60" r="2.3" fill="var(--boot-g2, #818cf8)"/>
+          </g>
+          <!-- Interlocking 8-point sacred prism octagram -->
+          <g class="geo-star-ccw">
+            <rect x="29" y="29" width="62" height="62" rx="4" stroke="url(#bootPrismStroke)" stroke-width="1.65" fill="url(#bootPrismFill)"/>
+            <rect x="29" y="29" width="62" height="62" rx="4" transform="rotate(45 60 60)" stroke="url(#bootPrismStroke)" stroke-width="1.65" fill="url(#bootPrismFill)"/>
+          </g>
+          <!-- Inner faceted crystal diamond -->
+          <g class="geo-crystal-core">
+            <polygon points="60,26 88,60 60,94 32,60" stroke="url(#bootPrismStroke)" stroke-width="1.8" fill="var(--boot-core-fill, rgba(255,255,255,0.68))"/>
+            <line x1="60" y1="26" x2="60" y2="94" stroke="url(#bootPrismStroke)" stroke-width="1" opacity="0.55"/>
+            <line x1="32" y1="60" x2="88" y2="60" stroke="url(#bootPrismStroke)" stroke-width="1" opacity="0.55"/>
+            <polygon points="60,41 73,60 60,79 47,60" fill="url(#bootPrismStroke)" opacity="0.9"/>
+            <polygon points="60,49 67,60 60,71 53,60" fill="#ffffff" opacity="0.92"/>
+          </g>
+        </svg>
+      </div>
+      <div class="boot-heading">
+        <strong>闪耀色彩</strong>
+        <span class="boot-title">283 PRODUCTION · SHINY COLORS</span>
+      </div>
+      <div class="boot-progress-wrap">
+        <div class="boot-bar"><i id="bootBarFill"></i></div>
+        <div class="boot-meta">
+          <span class="boot-stage" id="bootStageText">正在唤醒 283 事务所…</span>
+          <span class="boot-percent" id="bootPercent">12%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Transparent click-away layer over stage iframes so clicking anywhere outside closes popovers -->
+  <div class="shell-pop-backdrop" id="shellPopBackdrop" hidden aria-hidden="true"></div>
+
+  <!-- Top Drag Strip for Electron Titlebar -->
+  <div class="shell-drag-strip" aria-hidden="true"></div>
+
+  <!-- Persistent Apple Liquid Glass Floating Navigation Chrome -->
+  <header class="shell-header" id="shellHeader">
+    <!-- Left: Classic 283 Brand Pill + Weather / Location / Clock / Calendar Capsule -->
+    <div class="shell-left">
+      <a class="prism-brand" id="prismBrand" href="index.html" data-page="index.html" data-tip="返回事务所" aria-label="闪耀色彩 · 事务所">
+        <span class="live-studio-pulse" aria-hidden="true">
+          <span class="live-dot-ping"></span>
+          <span class="live-dot-core"></span>
+        </span>
+        <b class="prism-num">283</b>
+        <span class="prism-brand-text">
+          <em>闪耀色彩</em>
+          <small>STORIES &amp; MEMORIES</small>
+        </span>
+      </a>
+
+      <!-- Standalone 2-Row Compact Weather · Location · Clock · Calendar Capsule -->
+      <div class="env-anchor" id="envAnchor">
+        <button type="button" class="env-capsule" id="shellEnvCapsule" aria-expanded="false" aria-label="天气、时间与283日历">
+          <span class="env-row env-row-top">
+            <span class="env-weather" id="envWeatherText">☀ --°</span>
+            <span class="env-city" id="envCityText">定位中</span>
+          </span>
+          <span class="env-row env-row-bot">
+            <span class="env-clock" id="envClockText">00:00</span>
+            <span class="env-date" id="envDateText">--/--</span>
+          </span>
+        </button>
+
+        <div class="env-popover" id="envPopover" hidden>
+          <div class="env-pop-info">
+            <div class="env-pop-head">
+              <div>
+                <strong id="envPopCity">283 事务所 · 实时天气</strong>
+                <span id="envPopWeatherSub">正在获取当地天气与日落信息…</span>
+              </div>
+              <div class="env-pop-clock-big" id="envPopClockBig">00:00:00</div>
+            </div>
+            <div class="env-city-picker">
+              <div class="env-city-input-row">
+                <input type="text" id="envCityInput" placeholder="输入城市（如 上海）" aria-label="更改所在城市">
+                <button type="button" class="env-city-btn primary" id="btnEnvCitySet">确定</button>
+                <button type="button" class="env-city-btn" id="btnEnvCityAuto" title="恢复国内直连自动定位">自动</button>
+              </div>
+              <div class="env-city-chips">
+                <button type="button" class="env-chip" data-city="北京">北京</button>
+                <button type="button" class="env-chip" data-city="上海">上海</button>
+                <button type="button" class="env-chip" data-city="广州">广州</button>
+                <button type="button" class="env-chip" data-city="深圳">深圳</button>
+                <button type="button" class="env-chip" data-city="成都">成都</button>
+                <button type="button" class="env-chip" data-city="杭州">杭州</button>
+                <button type="button" class="env-chip" data-city="武汉">武汉</button>
+                <button type="button" class="env-chip" data-city="南京">南京</button>
+              </div>
+              <p class="env-proxy-hint" id="envProxyHint" hidden></p>
+            </div>
+            <div class="env-atmo-row" id="envAtmoRow" aria-label="事务所窗外氛围">
+              <button type="button" class="env-atmo-btn active" data-atmo="auto">自动</button>
+              <button type="button" class="env-atmo-btn" data-atmo="day">☀ 白天</button>
+              <button type="button" class="env-atmo-btn" data-atmo="evening">🌇 傍晚</button>
+              <button type="button" class="env-atmo-btn" data-atmo="night">🌙 夜晚</button>
+              <button type="button" class="env-atmo-btn" data-atmo="rain">🌧 雨天</button>
+            </div>
+          </div>
+          <div class="env-pop-calendar">
+            <div class="env-cal-head">
+              <button type="button" class="env-cal-nav" id="envCalPrev" aria-label="上个月">‹</button>
+              <strong id="envCalMonth">2026年 11月</strong>
+              <button type="button" class="env-cal-nav" id="envCalNext" aria-label="下个月">›</button>
+            </div>
+            <div class="env-cal-weekdays"><span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span></div>
+            <div class="env-cal-grid" id="envCalGrid"></div>
+            <p class="env-cal-bday-note" id="envCalBdayNote"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Center: Fluid Apple VisionOS Pill Dock -->
+    <nav class="prism-dock" id="prismDock" aria-label="主导航">
+      <span class="dock-pill" id="dockPill" aria-hidden="true"></span>
+      <!-- Rendered & managed by shell.js -->
+    </nav>
+
+    <!-- Right: Dynamic Island + Icon-Only Ergonomic Utilities -->
+    <div class="shell-right">
+      <!-- Apple Dynamic Island Music Capsule -->
+      <div class="island-anchor" id="islandAnchor" hidden>
+        <div class="dynamic-island" id="dynamicIsland" role="region" aria-label="正在播放">
+          <button class="island-cover-btn" id="islandCoverBtn" type="button" aria-label="展开音乐控制">
+            <svg class="island-progress-svg" viewBox="0 0 36 36" aria-hidden="true">
+              <circle class="track" cx="18" cy="18" r="16"></circle>
+              <circle class="fill" id="islandProgressCircle" cx="18" cy="18" r="16"></circle>
+            </svg>
+            <img id="islandCover" src="/app-icon.png" alt="" referrerpolicy="no-referrer">
+          </button>
+          <button class="island-info-btn" id="islandInfoBtn" type="button" aria-label="查看音乐详情">
+            <span class="island-title" id="islandTitle"><span class="island-title-track" id="islandTitleTrack">Spread the Wings!!</span></span>
+            <span class="island-eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          </button>
+          <button class="island-mini-mode" id="islandMiniNext" type="button" data-tip="下一首 · 切歌" aria-label="切换下一首歌曲">
+            <svg viewBox="0 0 24 24"><path d="M16 6.5h2.2v11H16zM5.8 6.5l8.4 5.5-8.4 5.5z"/></svg>
+          </button>
+          <button class="island-mini-play" id="islandMiniPlay" type="button" aria-label="播放或暂停">
+            <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg>
+            <svg class="ic-pause" viewBox="0 0 24 24"><rect x="6.5" y="5" width="3.8" height="14" rx="1.4"/><rect x="13.7" y="5" width="3.8" height="14" rx="1.4"/></svg>
+          </button>
+        </div>
+
+        <!-- Expanded Dynamic Island Glass Sheet -->
+        <div class="island-popover" id="islandPopover" aria-hidden="true">
+          <div class="ip-top">
+            <img class="ip-art" id="ipArt" src="/app-icon.png" alt="" referrerpolicy="no-referrer">
+            <div class="ip-meta">
+              <strong id="ipTitle">Spread the Wings!!</strong>
+              <span id="ipArtist">283 Production</span>
+            </div>
+            <button class="ip-icon-btn" id="ipFavBtn" type="button" data-tip="收藏" aria-label="收藏歌曲">
+              <svg viewBox="0 0 24 24"><path d="M12 20.6l-1.4-1.3C5.6 14.8 2.5 12 2.5 8.5 2.5 5.6 4.7 3.5 7.5 3.5c1.6 0 3.2.8 4.5 2.1 1.3-1.3 2.9-2.1 4.5-2.1 2.8 0 5 2.1 5 5 0 3.5-3.1 6.3-8.1 10.8L12 20.6z"/></svg>
+            </button>
+            <button class="ip-icon-btn" id="ipTuneToggleBtn" type="button" data-tip="音质与音效调节" aria-label="展开或收起音质与音效调节">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+            </button>
+            <button class="ip-icon-btn" id="ipQueueTopBtn" type="button" data-tip="展开待播列表" aria-label="展开或收起待播列表" aria-expanded="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h10M4 18h8"/><path d="M16.5 13.5v6l4.5-3z" fill="currentColor" stroke="none"/></svg>
+            </button>
+          </div>
+          <div class="ip-lyric" id="ipLyric">
+            <p class="ip-lyric-jp" id="ipLyricJp"></p>
+            <p class="ip-lyric-zh" id="ipLyricZh"></p>
+          </div>
+          <div class="ip-scrub">
+            <span id="ipCurTime">0:00</span>
+            <input type="range" id="ipSeek" min="0" max="100" step="0.2" value="0" aria-label="播放进度">
+            <span id="ipDurTime">0:00</span>
+          </div>
+          <div class="ip-controls">
+            <div class="ip-transport">
+              <button class="ip-ctrl ip-ctrl-mode" id="ipModeBtn" type="button" data-tip="播放顺序：列表循环" aria-label="切换播放顺序">
+                <svg viewBox="0 0 24 24"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/></svg>
+              </button>
+              <button class="ip-ctrl" id="ipPrevBtn" type="button" aria-label="上一首">
+                <svg viewBox="0 0 24 24"><path d="M6 6.5h2v11H6zM9.8 12 18 6.5v11z"/></svg>
+              </button>
+              <button class="ip-ctrl ip-ctrl-play" id="ipPlayBtn" type="button" aria-label="播放或暂停">
+                <svg class="ic-play" viewBox="0 0 24 24"><path d="M8.5 5.5v13l10.5-6.5z"/></svg>
+                <svg class="ic-pause" viewBox="0 0 24 24"><rect x="6.5" y="5" width="3.8" height="14" rx="1.4"/><rect x="13.7" y="5" width="3.8" height="14" rx="1.4"/></svg>
+              </button>
+              <button class="ip-ctrl" id="ipNextBtn" type="button" aria-label="下一首">
+                <svg viewBox="0 0 24 24"><path d="M16 6.5h2v11h-2zM6 6.5l8.2 5.5L6 17.5z"/></svg>
+              </button>
+              <span class="ip-mode-tag" id="ipModeTag" hidden>顺序</span>
+            </div>
+            <div class="ip-volume">
+              <button class="ip-vol-btn" id="ipMuteBtn" type="button" data-tip="静音 / 取消静音" aria-label="静音切换">
+                <svg class="ic-vol-on" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                <svg class="ic-vol-off" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+              </button>
+              <input type="range" id="ipVolume" min="0" max="100" step="1" value="50" aria-label="音乐胶囊音量">
+              <span class="ip-vol-val" id="ipVolText">50%</span>
+            </div>
+          </div>
+          <div class="ip-audio-tuning" id="ipAudioTuning" hidden aria-label="音质与音效调节">
+            <label class="ip-tune-field">
+              <span>音质</span>
+              <select id="ipQualitySelect" aria-label="切换音质">
+                <option value="jymaster">超清母带 (母带)</option>
+                <option value="sky">沉浸环绕声 (环绕声)</option>
+                <option value="jyeffect">臻音全景声 (全景声)</option>
+                <option value="hires">高清臻音 (臻音)</option>
+                <option value="flac">无损 SQ</option>
+                <option value="320">极高 HQ</option>
+                <option value="128">标准</option>
+              </select>
+            </label>
+            <label class="ip-tune-field">
+              <span>音效</span>
+              <select id="ipFxSelect" aria-label="切换音效">
+                <option value="off">原声直出 (关闭音效)</option>
+                <option value="ai_master">✨ AI调音大师</option>
+                <option value="surround_51">沉浸环绕 5.1</option>
+                <option value="surround_8d">8D 环绕</option>
+                <option value="surround_360">360° 环绕</option>
+                <option value="vocal_clear">清澈人声</option>
+                <option value="megabass">超重低音</option>
+                <option value="live283">283 Live 现场</option>
+              </select>
+            </label>
+          </div>
+          <div class="ip-queue-section" id="ipQueueSection" hidden>
+            <div class="ip-queue-head">
+              <span id="ipQueueTitle">待播列表</span>
+              <button type="button" class="ip-queue-toggle" id="ipQueueToggle">收起</button>
+            </div>
+            <div class="ip-queue-list" id="ipQueueList"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Icon-Only Glass Utility Cluster -->
+      <div class="shell-utils">
+        <button class="util-btn util-stage-fx is-on" id="btnStageFx" type="button" data-tip="舞台灯光秀：全力拉满（点击切换柔光）" aria-label="切换舞台灯光秀强度">
+          <svg viewBox="0 0 24 24"><path d="M12 2.2l2.1 6.2 6.2 2.1-6.2 2.1-2.1 6.2-2.1-6.2-6.2-2.1 6.2-2.1z"/></svg>
+        </button>
+        <button class="util-btn" id="btnSpotlight" type="button" data-tip="全局检索  Ctrl+K" aria-label="全局检索">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg>
+        </button>
+        <button class="util-btn" id="btnTheme" type="button" data-tip="切换明暗氛围" aria-label="切换明暗氛围">
+          <svg class="ic-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></svg>
+          <svg class="ic-moon" viewBox="0 0 24 24"><path d="M20.4 14.6A8.5 8.5 0 0 1 9.4 3.6a8.5 8.5 0 1 0 11 11z"/></svg>
+        </button>
+        <button class="util-btn util-continue" id="btnContinue" type="button" data-tip="继续阅读" aria-label="继续阅读">
+          <svg viewBox="0 0 24 24"><path d="M8.5 6.2v11.6a.9.9 0 0 0 1.38.76l9.1-5.8a.9.9 0 0 0 0-1.52l-9.1-5.8A.9.9 0 0 0 8.5 6.2z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cinema Prism Concert Light-Sweep Curtain Wipe Between Stage Modules -->
+  <div class="stage-prism-wipe" id="stagePrismWipe" aria-hidden="true"></div>
+
+  <!-- Persistent Spatial Stage (Keep-Alive Module Frame Pool) -->
+  <main class="shell-stage" id="shellStage"></main>
+
+  <!-- Apple macOS Spotlight Command Palette (Ctrl+K) -->
+  <div class="spotlight-backdrop" id="spotlightBackdrop" hidden>
+    <div class="spotlight-modal" id="spotlightModal" role="dialog" aria-modal="true" aria-label="全局快速检索">
+      <div class="spotlight-input-row">
+        <svg class="sp-search-ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.8"/><path d="M20.5 20.5l-4.4-4.4"/></svg>
+        <input type="text" id="spotlightInput" placeholder="搜索偶像、曲目、模块或操作…" autocomplete="off" spellcheck="false">
+        <kbd class="sp-kbd">ESC</kbd>
+      </div>
+      <div class="spotlight-body" id="spotlightResults"></div>
+      <div class="spotlight-foot">
+        <span><kbd>↑</kbd><kbd>↓</kbd> 选择</span>
+        <span><kbd>↵</kbd> 直达</span>
+        <span><kbd>Alt</kbd>+<kbd>1–7</kbd> 切换模块</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Crisp Apple Floating Tooltip -->
+  <div class="shell-tip" id="shellTip" role="tooltip"></div>
+</body>
+</html>

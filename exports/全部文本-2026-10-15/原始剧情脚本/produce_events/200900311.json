@@ -1,0 +1,509 @@
+[
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "プロデューサーさん！",
+    "charCategory": "stand_costume",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030090010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00012",
+    "bgm": "001",
+    "voice": "produce_events/200900311/2009003110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "果穂\r\n準備はばっちりか？",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "はいっ！　もちろんです！\r\n憧れのヒーロー役……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110020"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "しかもレッドだなんて！　えへへっ、プロデューサーさんが\r\nあたしにいろんなこと、教えてくれたおかげです！",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そんなことないさ。果穂が誰よりもヒーローが好きで……\r\nその努力の結果、レッドを任せてもらえたんだよ",
+    "charAnim2": "face_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "プロデューサーさん……ありがとうございますっ！\r\nそれじゃあ、行ってきます！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110040"
+  },
+  {
+    "speaker": "off",
+    "charAnim1": "smile1",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "se": "0118",
+    "charEffect": {
+      "type": "to",
+      "x": 200,
+      "alpha": 0,
+      "time": 450
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "――みんな、もう怖がらなくていい！\r\n私たちが、絶対に守るから！",
+    "charCategory": "stand_costume",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030090010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bgm": "010",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200900311/2009003110050"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "――くらえっ正義の鉄拳！！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0110",
+    "voice": "produce_events/200900311/2009003110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（セリフ回しもばっちりだし、お客さんのことも\r\nよく見てるな……さすがだ）",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0110"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "――困ったことがあったら、また呼んでくれ\r\n私たちはいつだって君たちの味方だ！",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0110",
+    "voice": "produce_events/200900311/2009003110070"
+  },
+  {
+    "speaker": "off",
+    "charAnim1": "surp1",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "off",
+    "se": "0110",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "speaker": "off",
+    "charCategory": "stand_costume",
+    "charAnim1": "wait2",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1030090010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bgm": "005",
+    "se": "0118",
+    "charEffect": {
+      "type": "from",
+      "x": 200,
+      "alpha": 0,
+      "time": 700
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お疲れ様。よく頑張ったぞ！\r\nお客さんも大盛り上がりだったな",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "プロデューサーさん！　\r\nどうでしたか、あたしのレッドはっ！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "最高だったよ。お客さんもスタッフも、\r\n大人も子供もみんな、果穂のステージに夢中になってた",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ヒーローに憧れてた果穂だからこそ、\r\nできるステージだったよ",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "本当ですか？　あたし……\r\nちゃんと、レッドになれてましたかっ？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。果穂は誰から見ても、立派なレッドだったよ",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "プロデューサーさんがそう言ってくれるなら……\r\nえへへっ、ありがとうございますっ！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110100"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "あたし、ずっとずっと大好きで、\r\n憧れてたヒーローに自分がなれるなんて……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110110"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "あたし、まだ夢の中にいるみたいです……",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "夢じゃないさ\r\n果穂は現実の世界で、ヒーローになったんだ",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "プロデューサーさん……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110130"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "最初は、あたしにあのレッドができるのかなって、\r\n不安でいっぱいでした",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110140"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "だけど『ジャスティスＶ』でも、「正義のヒーローに\r\n必要なのは、体の強さじゃなく、心の強さだ」って……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（『ジャスティスV』……果穂の好きな作品だったな）",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "だからあたしも、頑張ってステージに立たなきゃって、\r\nそう思ったんです",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "たしかにその通りだな。果穂のレッドを務めるっていう、\r\n強い気持ちがステージを成功させたんだ",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "はいっ！　強い気持ちを持つことは、\r\n本っ当に大事なことなんですねっ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。果穂も『ジャスティスV』もすごいな",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "あ、でも。あたしがレッドになれたのは……\r\nやっぱりプロデューサーさんのおかげですっ！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺は、果穂がまっすぐ努力してたのをほんのちょっと\r\nあと押ししただけさ",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "えへへっ、それって、あたしひとりじゃできないことも……",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110190"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "プロデューサーさんと一緒ならできるってことですよね\r\n……スゴいです！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110200"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "あたしにとって一番、大好きなヒーローは――\r\nプロデューサーさんですっ！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "果穂……",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ありがとう\r\nこれからも、一緒に頑張っていこうな！",
+    "charAnim1": "wait4",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "はいっ！　あたし、みんなをもっともっと笑顔にできる、\r\n最強のヒーローアイドルになりたいですっ！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110220"
+  },
+  {
+    "id": null,
+    "speaker": "果穂",
+    "text": "プロデューサーさんと一緒なら、\r\nきっとなれますよねっ！",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200900311/2009003110230"
+  },
+  {
+    "label": "end"
+  }
+]

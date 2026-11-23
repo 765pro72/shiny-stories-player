@@ -1,0 +1,181 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "008",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（霧子が真剣な顔で雑誌を読んでいる……\r\n面白い記事でもあったのだろうか？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0100",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0100",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1008001000510010,
+    "speaker": "霧子",
+    "text": "あ、今日の星座占い……",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100051/1008001000510010"
+  },
+  {
+    "id": 1008001000510020,
+    "speaker": "霧子",
+    "text": "……！\r\nど、どうしよう……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100051/1008001000510020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "(きっと悪い結果だったんだな……)",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "ラッキーアイテムは\r\n何なんだ？",
+    "nextLabel": "1008001000511"
+  },
+  {
+    "select": "悪い結果だとしても\r\n気にするな",
+    "nextLabel": "1008001000512"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "霧子は何座なんだ？",
+    "nextLabel": "1008001000513"
+  },
+  {
+    "id": 1008001000510030,
+    "label": "1008001000511",
+    "speaker": "霧子",
+    "text": "え、と……今日のラッキーアイテムは……\r\n「白のアクセサリー」でした……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100051/1008001000510030"
+  },
+  {
+    "id": 1008001000510040,
+    "speaker": "霧子",
+    "text": "あ……！\r\nもしかして……包帯のことかも……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100051/1008001000510040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001000510050,
+    "label": "1008001000512",
+    "speaker": "霧子",
+    "text": "い、いえ……\r\n悪い結果というより……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_serious",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100051/1008001000510050"
+  },
+  {
+    "id": 1008001000510060,
+    "speaker": "霧子",
+    "text": "い、1位だったんですけど……\r\nどっちにしても……お、落ち着かないです……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100051/1008001000510060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001000510070,
+    "label": "1008001000513",
+    "speaker": "霧子",
+    "text": "て、てんびん座です……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100051/1008001000510070"
+  },
+  {
+    "id": 1008001000510080,
+    "speaker": "霧子",
+    "text": "1位……だったので……\r\nちゃんと1位らしく頑張れるかなって……不安です……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100051/1008001000510080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

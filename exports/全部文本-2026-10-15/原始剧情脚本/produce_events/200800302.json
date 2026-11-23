@@ -1,0 +1,729 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "（はーっ……さすがに休みがないとつらいな……\r\n身体が思ったように動いてくれないぞ……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00001",
+    "bgm": "002"
+  },
+  {
+    "id": 2008003020010,
+    "speaker": "霧子",
+    "text": "……プロデューサーさん？\r\nおはようございます……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030080010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200800302/2008003020010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、おはよう、霧子\r\n調子はどうだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020020,
+    "speaker": "霧子",
+    "text": "……はい\r\n問題ないです……！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "よかった\r\nちょっとしたことでも、何かあったら言ってくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020030,
+    "speaker": "霧子",
+    "text": "はい……ありがとうございます\r\n……えっと……そ、それじゃ……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうした、さっそく何かあったか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "霧子",
+    "text": "……",
+    "charAnim2": "face_sad",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ん？　どうしたんだ、霧子？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020050,
+    "speaker": "霧子",
+    "text": "あの……プロデューサーさん……\r\n少しお疲れじゃないですか……？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020050"
+  },
+  {
+    "id": 2008003020060,
+    "speaker": "霧子",
+    "text": "わ、わたしの考えすぎだったら……\r\nごめんなさい……",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……うーん、さすが霧子だな\r\n隠してたつもりなんだけど……ちょっとな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020070,
+    "speaker": "霧子",
+    "text": "やっぱり……そうだったんですね……\r\nいつもより、顔色が……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020070"
+  },
+  {
+    "id": 2008003020080,
+    "speaker": "霧子",
+    "text": "あ、あのっ、あのですね……！\r\n今日は、もうお休みにしたほうがいいと思うんです……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020080"
+  },
+  {
+    "select": "栄養ドリンク、\r\n買ってくるよ",
+    "nextLabel": "1"
+  },
+  {
+    "select": "息抜きに散歩でもするよ",
+    "nextLabel": "2"
+  },
+  {
+    "select": "ちょっと休憩しようかな",
+    "nextLabel": "3"
+  },
+  {
+    "textCtrl": "cm"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "……心配してもらっちゃって、悪いな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020090,
+    "speaker": "霧子",
+    "text": "そ、それなら、\r\nわたしも……一緒に行きます……！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020090"
+  },
+  {
+    "id": 2008003020100,
+    "speaker": "霧子",
+    "text": "栄養ドリンクだけじゃ……心配です……\r\nちゃんとした栄養食品も、買っておかないと……！",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020100"
+  },
+  {
+    "id": 2008003020110,
+    "speaker": "霧子",
+    "text": "よかったら……わたしにも選ばせてください……！",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな……まあ、息抜きにもなるし……\r\n一緒に行ってくれるか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "bg": "00010",
+    "se": "0120",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "fade"
+  },
+  {
+    "id": 2008003020120,
+    "speaker": "霧子",
+    "text": "思ったより、お客さんが多いですね……\r\nあっ、そっち……！　ぶつかっちゃいますっ……！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ははっ、そんなに引っ張らなくても……\r\n大丈夫、見えてるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020130,
+    "speaker": "霧子",
+    "text": "で、でも……\r\n人がいっぱいで、まっすぐ歩けませんね……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そこまで気を回すと、むしろぶつかっちゃうぞ\r\n……ほら前、気を付けて",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020140,
+    "speaker": "霧子",
+    "text": "あっ……！\r\nあうぅ、す、すみません……",
+    "charAnim1": "shy1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020140"
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "id": 2008003020150,
+    "speaker": "霧子",
+    "text": "やっと……薬局です……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。霧子がいてくれて助かったよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "さあ、買い物、終わらせちゃおう\r\nアドバイスよろしくな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020160,
+    "speaker": "霧子",
+    "text": "は、はい……\r\nま……まかせてください！",
+    "charAnim2": "yes",
+    "charAnim3": "face_smile",
+    "charAnim2Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200800302/2008003020160"
+  },
+  {
+    "id": 2008003020170,
+    "label": "2",
+    "speaker": "霧子",
+    "text": "あの、じゃあ……わたしも行きます……\r\nプロデューサーさんに何かあったら、困ります……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは。何かあって心配なのは霧子のほうなんだけど……\r\nそうだな、せっかくだし一緒に行こうか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ありがとな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "bg": "00013",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "fade"
+  },
+  {
+    "id": 2008003020180,
+    "speaker": "霧子",
+    "text": "空気がおいしくて、気持ちいいですね……♪",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。出てきてよかった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……あ、大っきい犬が繋がれてるな……\r\nな、なんか紐が外れそうじゃないか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020190,
+    "speaker": "霧子",
+    "text": "あ……危ないです！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020190"
+  },
+  {
+    "id": 2008003020200,
+    "speaker": "霧子",
+    "text": "う、うう……っ\r\nプロデューサーさん、逃げてください……！",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "き、霧子……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020210,
+    "speaker": "霧子",
+    "text": "わ、わたしがこうして見てますから……\r\nプロデューサーさんは、お散歩を続けてください……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、プロデューサーが\r\nアイドルに守られるわけにはいかないなぁ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020220,
+    "speaker": "霧子",
+    "text": "プロデューサーさん……！\r\n近づいたら、あ、危ないです……！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "大丈夫みたいだよ\r\nほら、頭を撫でると、気持ちよさそうだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020230,
+    "speaker": "霧子",
+    "text": "す、すごいです……プロデューサーさん……\r\n全然、噛んだりしない……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020230"
+  },
+  {
+    "id": 2008003020240,
+    "speaker": "霧子",
+    "text": "ふふ……可愛いですね……\r\n尻尾を振って……気持ち良さそうです……♪",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020240"
+  },
+  {
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "霧子、ありがとうな\r\nいい息抜きになったよ",
+    "charAnim1": "wait1",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020250,
+    "speaker": "霧子",
+    "text": "ほ、本当ですか……？\r\nお役に……立てましたか……？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もちろんだ\r\nとっても、心強かったよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020260,
+    "speaker": "霧子",
+    "text": "じゃ、じゃあ……引き続き、\r\n今日一日、プロデューサーさんのこと……お世話します！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200800302/2008003020260"
+  },
+  {
+    "id": 2008003020270,
+    "label": "3",
+    "speaker": "霧子",
+    "text": "はい……\r\nプロデューサーさん……！",
+    "charAnim1": "wait1",
+    "charAnim2": "lip_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "とりあえず仮眠でも取るか……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020280,
+    "speaker": "霧子",
+    "text": "そ、それなら……ブランケットと、クッションと……\r\nそれと、おでこに貼る冷却シートもあります……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020280"
+  },
+  {
+    "id": 2008003020290,
+    "speaker": "霧子",
+    "text": "ちゃんと横になって、お休みしてください……！",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020290"
+  },
+  {
+    "id": 2008003020300,
+    "speaker": "霧子",
+    "text": "えーと……こっちのソファなら、\r\nもう少しゆっくり休めるかも……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（本当に、霧子はよく気のつく子だなぁ……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "霧子、ありがとう\r\nでも、ここまでしてもらうわけにはいかないよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020310,
+    "speaker": "霧子",
+    "text": "いえ……ご用事のときは、起こしますから……\r\n安心して……休んでください……！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うーん。でも、霧子もそんなに頑張らないでくれ\r\n座って、ゆっくり休憩するといい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020320,
+    "speaker": "霧子",
+    "text": "わ、わかりました……",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020320"
+  },
+  {
+    "id": 2008003020330,
+    "speaker": "霧子",
+    "text": "あ……す、すみません……！\r\nつい……隣に座ってしまって……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、いいよ\r\n気にしないで休んでくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008003020340,
+    "speaker": "霧子",
+    "text": "そ、そうですか……\r\nじゃあ……",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020340"
+  },
+  {
+    "id": 2008003020350,
+    "speaker": "霧子",
+    "text": "じゃあ、ブランケットを一緒に……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020350"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ……すまん、寝てしまいそうだ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charLabel": "kiriko",
+    "bg": "00000",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2008003020360,
+    "speaker": "霧子",
+    "text": "今日は……一日、お隣にいますから……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800302/2008003020360"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（ん……霧子が横にいると、温かいな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end"
+  }
+]

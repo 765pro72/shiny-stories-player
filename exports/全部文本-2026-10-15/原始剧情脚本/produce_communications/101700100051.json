@@ -1,0 +1,175 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001"
+  },
+  {
+    "id": 1017001000510010,
+    "speaker": "あさひ",
+    "text": "あれ！　プロデューサーさん、何でここに？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/101700100051/1017001000510010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、ずっとここにいるけどな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001000510020,
+    "speaker": "あさひ",
+    "text": "あれ、じゃあさっき道で見かけたのって",
+    "charAnim1": "sad1",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100051/1017001000510020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（似た人でも見たのか……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "実は分身できるんだ",
+    "nextLabel": "1017001000511"
+  },
+  {
+    "select": "似てる人だろう",
+    "nextLabel": "1017001000512"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "実は兄弟だ",
+    "nextLabel": "1017001000513"
+  },
+  {
+    "id": 1017001000510030,
+    "label": "1017001000511",
+    "speaker": "あさひ",
+    "text": "え！　ホントっすか！\r\nプロデューサーさん、忍者だったんすか？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_surp",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100051/1017001000510030"
+  },
+  {
+    "id": 1017001000510040,
+    "speaker": "あさひ",
+    "text": "今度見せてほしいっす！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100051/1017001000510040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1017001000510050,
+    "label": "1017001000512",
+    "speaker": "あさひ",
+    "text": "うーん……似てる人っすか……",
+    "charAnim1": "think1",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100051/1017001000510050"
+  },
+  {
+    "id": 1017001000510060,
+    "speaker": "あさひ",
+    "text": "まぁ、そう言われればそうっすね",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100051/1017001000510060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1017001000510070,
+    "label": "1017001000513",
+    "speaker": "あさひ",
+    "text": "兄弟いるんすね！　プロデューサーさん！",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100051/1017001000510070"
+  },
+  {
+    "id": 1017001000510080,
+    "speaker": "あさひ",
+    "text": "何人兄弟なんすか？　年はどれくらい離れてるんすか？\r\nさっき会った人はお兄さんっすか？　弟っすか？",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100051/1017001000510080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

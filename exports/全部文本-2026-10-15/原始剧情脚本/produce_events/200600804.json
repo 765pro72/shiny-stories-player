@@ -1,0 +1,759 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00004",
+    "bgm": "0000",
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "すまん、咲耶\r\n待たせちゃったな",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "idols",
+    "charId": "1040060030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "029"
+  },
+  {
+    "id": 2006008040010,
+    "speaker": "咲耶",
+    "text": "いや、こちらこそすまないね\r\n急に誘ってしまって……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、俺は大丈夫だ\r\n──お、その浴衣、撮影の時に買い取ったやつか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006008040020,
+    "speaker": "咲耶",
+    "text": "フフ、やはりすぐ気付いてくれたね",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040020"
+  },
+  {
+    "id": 2006008040030,
+    "speaker": "咲耶",
+    "text": "着付け方は自分で調べた簡単なものなのだけど……\r\nどうかな？　おかしいところはないだろうか？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、ちゃんと着こなせていると思うぞ\r\nさすが咲耶だな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006008040040,
+    "speaker": "咲耶",
+    "text": "フフ……よかった\r\nアナタの御墨付きなら安心だ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040040"
+  },
+  {
+    "id": 2006008040050,
+    "speaker": "咲耶",
+    "text": "さあ、早速会場へ向かおうか\r\nそろそろ行かないと、間に合わなくなってしまうからね",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040050"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "bg": "00050",
+    "se": "0367",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "咲耶、歩きにくくないか？",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "0001"
+  },
+  {
+    "id": 2006008040060,
+    "speaker": "咲耶",
+    "text": "ああ、大丈夫だよ。前の撮影の時、\r\nスタイリストさんに楽な歩き方を教わっていてね",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040060"
+  },
+  {
+    "id": 2006008040070,
+    "speaker": "咲耶",
+    "text": "けど、この調子では──……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040070"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0431",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2006008040080,
+    "speaker": "咲耶",
+    "text": "おっと……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_a",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200600804/2006008040080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "大丈夫か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006008040090,
+    "speaker": "咲耶",
+    "text": "ああ、ぶつかってないよ\r\nフフ、あんなに走って……子どもは元気だね",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040090"
+  },
+  {
+    "id": 2006008040100,
+    "speaker": "咲耶",
+    "text": "まるで羽が生えているみたいに軽やかで\r\nどこへでも駆けていけそうだ",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "fade_out",
+    "voice": "produce_events/200600804/2006008040100"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00093",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、花火もそろそろ始まるからだろうな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "しかしあの子、\r\n急ぎ過ぎて、転んで怪我でもしなきゃいいけど……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006008040110,
+    "speaker": "咲耶",
+    "text": "クス。アナタが心配してくれるなら、きっと大丈夫だよ\r\nそれに── ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040110"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "1040060030",
+    "movie": "1040060030"
+  },
+  {
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0215",
+    "waitType": "time",
+    "waitTime": 5000
+  },
+  {
+    "id": 2006008040130,
+    "speaker": "咲耶",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "006",
+    "voice": "produce_events/200600804/2006008040130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はは、始まっちゃったな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00066",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 2006008040140,
+    "speaker": "咲耶",
+    "text": "あ、と……\r\nすまない、私の歩きに合わせてもらっていたから……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200600804/2006008040140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そんなことないさ\r\nここから見る花火も、風情があると思わないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ここから見られたのは、咲耶のおかげだ",
+    "charAnim2": "face_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006008040150,
+    "speaker": "咲耶",
+    "text": "アナタは……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040150"
+  },
+  {
+    "id": 2006008040160,
+    "speaker": "咲耶",
+    "text": "……ああ、そうだね",
+    "charAnim1": "wait3",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040160"
+  },
+  {
+    "id": 2006008040170,
+    "speaker": "咲耶",
+    "text": "…………",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040170"
+  },
+  {
+    "id": 2006008040180,
+    "speaker": "咲耶",
+    "text": "……こうやって歩いてみてわかったのだけれど\r\nやはり、浴衣は歩きにくいもので──",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040180"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0367",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2006008040190,
+    "speaker": "咲耶",
+    "text": "ああ、そうか……",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200600804/2006008040190"
+  },
+  {
+    "id": 2006008040200,
+    "speaker": "咲耶",
+    "text": "だから、だったんだね……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうした？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006008040210,
+    "speaker": "咲耶",
+    "text": "さっきの子、甚平を着ていただろう",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "r",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040210",
+    "voiceKeep": true
+  },
+  {
+    "speaker": "咲耶",
+    "text": "それを見て、ふと思いついたことがあってね",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "id": 2006008040230,
+    "speaker": "咲耶",
+    "text": "子どもの頃の私は活発で……\r\nそれこそさっきの子のように、どこでも駆け回っていた",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040230"
+  },
+  {
+    "id": 2006008040240,
+    "speaker": "咲耶",
+    "text": "そんな私がのびのびと遊べるように\r\n浴衣ではなく、甚平を買ってきたのではないか……と",
+    "charAnim1": "wait5",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……いいお父さんだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006008040250,
+    "speaker": "咲耶",
+    "text": "うん……",
+    "charAnim2": "face_close",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040250"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2006008040260,
+    "speaker": "咲耶",
+    "text": "あの頃の私は……父の想いを理解することが\r\n出来なかったけれど……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……間に合わなかった……\r\n……なんてことはないさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006008040270,
+    "speaker": "咲耶",
+    "text": "…………\r\nああ……そうだと思いたい、ね",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040270"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0215",
+    "waitType": "time",
+    "waitTime": 5000
+  },
+  {
+    "id": 2006008040280,
+    "speaker": "咲耶",
+    "text": "……今からでも……きっと……",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200600804/2006008040280"
+  },
+  {
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2006008040290,
+    "speaker": "咲耶",
+    "text": "……プロデューサー\r\nせっかくここまで来たんだ、会場まで行こう",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺は構わないが……咲耶は大丈夫か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006008040300,
+    "speaker": "咲耶",
+    "text": "ああ。今の私の歩みでも、終わるまでには着くだろう\r\n間に合わないなんてことはないさ",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうか\r\nでも、急いだり、無理はしないでくれよ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "足でも痛めたら大変だからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006008040310,
+    "speaker": "咲耶",
+    "text": "おや、その時はプロデューサーが、\r\n私をお姫様抱っこでもしてくれるんだろう？",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "い、いや、それは……\r\n肩を貸すくらいなら……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006008040320,
+    "speaker": "咲耶",
+    "text": "……クス。冗談だよ、そんなに慌てないでほしい",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040320"
+  },
+  {
+    "id": 2006008040330,
+    "speaker": "咲耶",
+    "text": "アナタがゆっくり歩いてくれているからね\r\nまだまだ、私も行けそうだよ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040330"
+  },
+  {
+    "id": 2006008040340,
+    "speaker": "咲耶",
+    "text": "こうやって歩幅の狭い私を気遣い、\r\nアナタが合わせてくれる……",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040340"
+  },
+  {
+    "id": 2006008040350,
+    "speaker": "咲耶",
+    "text": "こんな日も……たまには悪くないからね",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040350"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00093",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0215",
+    "waitType": "time",
+    "waitTime": 5000
+  },
+  {
+    "id": 2006008040360,
+    "speaker": "咲耶",
+    "text": "だから、もう少しだけ……\r\nこの夜空に、静寂が帰ってくるまでは、ね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200600804/2006008040360"
+  },
+  {
+    "textFrame": "off",
+    "se": "0543",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end"
+  }
+]

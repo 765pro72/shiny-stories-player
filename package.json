@@ -1,0 +1,26 @@
+{
+  "name": "shiny-story-library",
+  "version": "0.1.0",
+  "private": true,
+  "description": "闪耀色彩中文剧情馆",
+  "main": "desktop.cjs",
+  "scripts": {
+    "start": "electron .",
+    "serve": "node server.cjs",
+    "catalog": "node scripts/catalog.cjs",
+    "pack": "electron-packager . ShinyStories --platform=win32 --arch=x64 --out=dist --overwrite --ignore=^/research --ignore=^/dist --ignore=^/tests --ignore=^/translation-work --ignore=^/update-test --ignore=^/exports --ignore=^/tools --ignore=^/upscale-pilot --ignore=^/upscale-work --ignore=^/.*preview\\.png$ --ignore=^/dist-smoke --ignore=^/android",
+    "cache-all": "node scripts/cache-all.cjs && node scripts/cache-all.cjs --assets",
+    "release": "node scripts/release.cjs"
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.3.6",
+    "electron": "^42.0.0",
+    "playwright-core": "^1.65.1"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3",
+    "papaparse": "^5.7.0",
+    "pinyin-pro": "3.29.5",
+    "pngjs": "^7.0.0"
+  }
+}

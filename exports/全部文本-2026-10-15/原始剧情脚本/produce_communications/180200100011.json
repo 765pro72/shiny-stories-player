@@ -1,0 +1,182 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "仕出し弁当を手配するときの確認なんだが\r\n食べられない物とかあるか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1802001000110010,
+    "speaker": "かな",
+    "text": "見るだけで蕁麻疹が出るくらい嫌いな食べ物ならあるわ",
+    "charAnim1": "surp1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "802",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/180200100011/1802001000110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "見るだけで蕁麻疹か、それは大変だな\r\nその嫌いな食べ物って、何なんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1802001000110020,
+    "speaker": "かな",
+    "text": "……他の人には内緒よ？\r\n実は私……ピーマンが苦手なの",
+    "charAnim1": "smile2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kana",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100011/1802001000110020"
+  },
+  {
+    "select": "意外だな",
+    "nextLabel": "1802001000111"
+  },
+  {
+    "select": "知らなかった",
+    "nextLabel": "1802001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "ピーマン体操を\r\n歌ってたのに？",
+    "nextLabel": "1802001000113"
+  },
+  {
+    "id": 1802001000110030,
+    "label": "1802001000111",
+    "speaker": "かな",
+    "text": "ピーマン体操のときは笑顔で食べてたから\r\nそんなふうには見えなかったでしょ？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100011/1802001000110030"
+  },
+  {
+    "id": 1802001000110040,
+    "speaker": "かな",
+    "text": "私の演技にすっかり騙されてたのね\r\n黒歴史だけど、頑張ったかいがあったわ",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100011/1802001000110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1802001000110050,
+    "label": "1802001000112",
+    "speaker": "かな",
+    "text": "公言したことはないから\r\n知らなくて当然よ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100011/1802001000110050"
+  },
+  {
+    "id": 1802001000110060,
+    "speaker": "かな",
+    "text": "私のイメージがあるんだから\r\n絶対に秘密にしててよ？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100011/1802001000110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1802001000110070,
+    "label": "1802001000113",
+    "speaker": "かな",
+    "text": "人の黒歴史を掘り返さないでよ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100011/1802001000110070"
+  },
+  {
+    "id": 1802001000110080,
+    "speaker": "かな",
+    "text": "うう。あの味を思い出しただけで\r\n気持ちが悪くなるわ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100011/1802001000110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

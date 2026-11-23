@@ -1,0 +1,173 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001"
+  },
+  {
+    "id": 1017001000610010,
+    "speaker": "あさひ",
+    "text": "プロデューサーさん！　何飲んでるんすか、それ",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/101700100061/1017001000610010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、これか、栄養ドリンクだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001000610020,
+    "speaker": "あさひ",
+    "text": "どんな味がするんすか？　わたしも飲んでみたいっす！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100061/1017001000610020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "大人にしか\r\nわからない味だ",
+    "nextLabel": "1017001000611"
+  },
+  {
+    "select": "飲んでみるか",
+    "nextLabel": "1017001000612"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "あさひにはまだ早い",
+    "nextLabel": "1017001000613"
+  },
+  {
+    "id": 1017001000610030,
+    "label": "1017001000611",
+    "speaker": "あさひ",
+    "text": "子どもじゃわからないんすね！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100061/1017001000610030"
+  },
+  {
+    "id": 1017001000610040,
+    "speaker": "あさひ",
+    "text": "あはは、じゃあ待つっす！　\r\n大人になってから飲んでみるっすよー！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100061/1017001000610040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1017001000610050,
+    "label": "1017001000612",
+    "speaker": "あさひ",
+    "text": "ありがとっす！　プロデューサーさん！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100061/1017001000610050"
+  },
+  {
+    "id": 1017001000610060,
+    "speaker": "あさひ",
+    "text": "……\r\n思ったより変な味じゃないっすね",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100061/1017001000610060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1017001000610070,
+    "label": "1017001000613",
+    "speaker": "あさひ",
+    "text": "え～！　そんなこと言われたら気になるじゃないっすかー！",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100061/1017001000610070"
+  },
+  {
+    "id": 1017001000610080,
+    "speaker": "あさひ",
+    "text": "飲みたいっす飲みたいっすー！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101700100061/1017001000610080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

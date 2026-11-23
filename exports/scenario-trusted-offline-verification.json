@@ -1,0 +1,173 @@
+{
+  "at": "2026-11-16T01:23:57.493Z",
+  "networkDisabled": true,
+  "fixtureAssetsOnly": true,
+  "programUnchanged": true,
+  "workRoot": "C:\\Users\\Administrator\\AppData\\Local\\Temp\\sc-scenario-trusted-WClnLY",
+  "fingerprint": "a90dffca6788fc236dc634fe477d5dfd3398272eab1bc400f568e59939144870",
+  "ok": true,
+  "rows": [
+    {
+      "name": "test-content-update.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS all-content updates: cards/images/movies/rarity/models/voices/phones/casting/story linkage, idempotence, partial-failure preservation, metadata only\n"
+    },
+    {
+      "name": "test-material-index-update.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS all new material types, honest pending metadata, exact script references, idempotence, active-update catalogs and incremental runtime references.\n"
+    },
+    {
+      "name": "test-assistant-install.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS repair consent/cancel, atomic apply, health rollback, newly created file removal, version/hash/path/token guards, Chinese and spaced paths.\n"
+    },
+    {
+      "name": "test-assistant.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "{\n  addresses: 640,\n  personaSpecific: true,\n  carePremise: true,\n  patchLayoutAndRollback: true,\n  failedChecksNotDropIn: true,\n  sourceBoundaries: true,\n  storyIndex: { catalog: 10906, indexed: 10906, pending: 0 },\n  lucaMatches: 438\n}\nPASS assistant error responses, same-origin boundary and ordinary chat without tools.\nPASS code-task completion automatically builds and exports, then waits for consent; no automatic application.\n"
+    },
+    {
+      "name": "test-story-ai.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS 4 API protocols, streamed UTF-8, model list, same-origin protection, constrained playable scripts, independent outline/full-text/repair/polish prompts and append preservation.\n"
+    },
+    {
+      "name": "test-story-voice.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS Fish/OpenAI TTS requests, strict Fish model selection, origin protection, binary audio and no key in payload. No paid API calls.\n"
+    },
+    {
+      "name": "test-home-voice-policy.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS same-character fallback, Hazuki own 091 home voices, compatible conversation motion/lip, native motion preserved, relay transitions, no nonexistent animation calls.\n"
+    },
+    {
+      "name": "test-scenario-updates.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS scenario update inheritance and recursive download {\"at\":\"2026-11-16T01:22:23.839Z\",\"metadataOnlyUpdateTests\":\"also covered by test-content-update / test-updater-activation / test-update-download\",\"activeDataPointer\":true,\"recursiveFutureDependencies\":true,\"middleForeground\":true,\"categoryAliases\":true,\"movieAndSE\":true,\"commandsNotResources\":true,\"rawScriptUnchanged\":true,\"duplicateTranslationIds\":true,\"cachedRepeatNoNetwork\":true,\"userStateAndWorksUnchanged\":true,\"mockedMedia\":true,\"files\":13}\n"
+    },
+    {
+      "name": "test-updater-activation.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS updater activation, new indexes, AI preservation, no media saving, failed update retains active version\n"
+    },
+    {
+      "name": "test-update-download.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS active-data recursive download, disconnected reuse, local AI translation preservation, changed source protection and credits\n"
+    },
+    {
+      "name": "test-update-check.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "PASS startup revision diff, new story/voice detection, failure preservation, offline makes no requests\n"
+    },
+    {
+      "name": "test-update-background.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "(node:19844) V8: evalmachine.<anonymous>:1 Linking failure in asm.js: Unexpected stdlib member\n(Use `ShinyStories-Lite --trace-warnings ...` to show where the warning was created)\ncatalog: 缺少 tmp/joke-mapping.json，joke 系列会退回相册原始路径（special_communications）\n{\n  catalog: 100,\n  translationFiles: 100,\n  untranslatedEntries: 0,\n  missingLines: 0,\n  invalid: [],\n  scope: '公开翻译仓库与偶像相册快照的并集，不保证包含游戏全部已发行剧情。未获取脚本的条目不能统计缺译句数。',\n  builtAt: '2026-11-16T01:22:25.724Z'\n}\ncatalog: 缺少 tmp/joke-mapping.json，joke 系列会退回相册原始路径（special_communications）\n{\n  catalog: 100,\n  translationFiles: 100,\n  untranslatedEntries: 0,\n  missingLines: 0,\n  invalid: [],\n  scope: '公开翻译仓库与偶像相册快照的并集，不保证包含游戏全部已发行剧情。未获取脚本的条目不能统计缺译句数。',\n  builtAt: '2026-11-16T01:22:26.185Z'\n}\n(node:19844) V8: evalmachine.<anonymous>:1 Linking failure in asm.js: Unexpected stdlib member\n(Use `ShinyStories-Lite --trace-warnings ...` to show where the warning was created)\nPASS background worker, streaming bridge, source-labelled timeout/retry, archive reuse, nonblocking main loop, status recovery and atomic activation\n"
+    },
+    {
+      "name": "test-material-models.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS exact new Kaho model original preview, page navigation, real card rarity, independent costumes, sort and narrow layout.\n"
+    },
+    {
+      "name": "test-assistant-install-ui.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS native consent/cancel, checkpoint failure keeps app open, real project/candidate/imported bytes/bilingual text/dirty state/manual script restored.\n[21020:1116/092236.291:ERROR:gpu\\ipc\\client\\command_buffer_proxy_impl.cc:488] GPU state invalid after WaitForGetOffsetInRange.\r\n"
+    },
+    {
+      "name": "test-assistant-ui.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n(electron) 'console-message' arguments are deprecated and will be removed. Please use Event<WebContentsConsoleMessageEventParams> object instead.\n{\n  stylesheetReadyBeforeVisible: true,\n  proseWrappedToolsExecuted: true,\n  clearPersistedAcrossPages: true,\n  noLateMessagesAfterClear: true,\n  avatarDragExpandedAndCollapsed: true,\n  contextMenuClose: true,\n  settingCloseAndReopen: true,\n  visibilityPersistsAcrossPages: true,\n  hiddenStaysHiddenInsideDialogs: true,\n  chatNoTools: true,\n  localGuideAndDownload: true,\n  realPageContext: true,\n  avatarsAndNames: true,\n  keyboardMove: true,\n  modalUsable: true,\n  narrowBounds: true,\n  homepageAndGuide: true,\n  historyAcrossPages: true,\n  noPersistedKey: true,\n  mockAPICalls: 4\n}\n"
+    },
+    {
+      "name": "test-story-speaking.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n{\n  speakerOnly: true,\n  alternatingSpeakers: true,\n  previousSpeakerClosed: true,\n  silenceClosed: true,\n  producerClosed: true,\n  producerCaptionClosed: true,\n  oldMouthCueSuppressed: true,\n  sameModelReused: true,\n  bodyGestureOnce: true,\n  bodyContinuity: true,\n  gaze: {\n    from: 7.720000009536744,\n    start: 7.720000009536744,\n    middle: 7.995000000596047,\n    end: 8.26999999165535\n  },\n  voiceSelectorAligned: true\n}\n"
+    },
+    {
+      "name": "test-story-saved-performance.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n{\n  \"saved\": {\n    \"id\": \"3f94004c-e1e5-4445-b345-fd7d4c411df3\",\n    \"actorId\": \"843f23b3-8140-405b-8756-c8df55445dad\",\n    \"generatedId\": \"draft-n\"\n  },\n  \"savedAudioPlaying\": true,\n  \"speaking\": true,\n  \"listenerClosed\": true,\n  \"producerClosed\": true,\n  \"nativeReturn\": true,\n  \"arm\": [\n    {\n      \"time\": 0,\n      \"body\": \"arm_down\",\n      \"up\": 1,\n      \"down\": 0\n    },\n    {\n      \"time\": 0.1,\n      \"body\": \"arm_down\",\n      \"up\": 1,\n      \"down\": 0\n    },\n    {\n      \"time\": 0.2,\n      \"body\": \"arm_down\",\n      \"up\": 1,\n      \"down\": 0\n    },\n    {\n      \"time\": 0.35,\n      \"body\": \"arm_down\",\n      \"up\": 1,\n      \"down\": 0\n    },\n    {\n      \"time\": 0.5,\n      \"body\": \"arm_down\",\n      \"up\": 0,\n      \"down\": 1\n    },\n    {\n      \"time\": 0.75,\n      \"body\": \"arm_down\",\n      \"up\": 0,\n      \"down\": 1\n    },\n    {\n      \"time\": 1,\n      \"body\": \"wait1\",\n      \"up\": 0,\n      \"down\": 1\n    },\n    {\n      \"time\": 1.1,\n      \"body\": \"wait1\",\n      \"up\": 0,\n      \"down\": 1\n    }\n  ],\n  \"legacyActorIdRecovered\": true,\n  \"timed\": {\n    \"bindings\": [\n      \"843f23b3-8140-405b-8756-c8df55445dad\",\n      \"3705ca5e-3540-48e2-bd7d-246e262ac648\"\n    ],\n    \"currentActors\": [\n      \"843f23b3-8140-405b-8756-c8df55445dad\",\n      \"3705ca5e-3540-48e2-bd7d-246e262ac648\"\n    ],\n    \"firstSpeakerMoves\": true,\n    \"firstListenerClosed\": true,\n    \"replySpeakerMoves\": true,\n    \"previousSpeakerClosed\": true,\n    \"producerClosed\": true\n  },\n  \"cueReturns\": [\n    {\n      \"motion\": \"smile1\",\n      \"expected\": \"arm_down\",\n      \"actual\": \"arm_down\",\n      \"progress\": 0.19999999999999996\n    },\n    {\n      \"motion\": \"shy1\",\n      \"expected\": \"arm_down_L\",\n      \"actual\": \"arm_down_L\",\n      \"progress\": 0.19999999999999996\n    },\n    {\n      \"motion\": \"surp1\",\n      \"expected\": \"arm_down_R\",\n      \"actual\": \"arm_down_R\",\n      \"progress\": 0.19999999999999996\n    }\n  ],\n  \"gazeDuringReturn\": {\n    \"actual\": 129.68976453955239,\n    \"expected\": 129.68976453955239,\n    \"difference\": 0\n  },\n  \"continuity\": {\n    \"relayContinues\": true,\n    \"relayOffset\": 0.4,\n    \"settled\": true,\n    \"sameModel\": true\n  },\n  \"gasha\": {\n    \"voicePlaying\": true,\n    \"speakerMoves\": true,\n    \"listenerClosed\": true,\n    \"pausedClosed\": true\n  }\n}\n"
+    },
+    {
+      "name": "test-story-mouth-cues.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n{\n  \"checked\": 10,\n  \"speaking\": 10,\n  \"still\": [],\n  \"listenersClosed\": true,\n  \"disabledClosed\": true,\n  \"pausedClosed\": true,\n  \"unvoicedClosed\": true\n}\n"
+    },
+    {
+      "name": "test-story-local-audio.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n(electron) 'console-message' arguments are deprecated and will be removed. Please use Event<WebContentsConsoleMessageEventParams> object instead.\n{\n  automaticSpeechAndSilence: true,\n  speechCycleVariants: 2,\n  listenerClosed: true,\n  savedReopened: true,\n  aiEntry: true,\n  editorEntry: true,\n  noAPIKey: true,\n  roundedScroll: true,\n  scrolls: true,\n  noMouthWarning: true,\n  timingWarning: true\n}\n"
+    },
+    {
+      "name": "test-story-producer-sound.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n{\n  gapless: true,\n  intervalSetting: true,\n  intervalSaved: true,\n  intervalPlayback: true,\n  noLatePulse: true,\n  defaultPlays: true,\n  defaultState: {\n    backend: 'web-audio',\n    duration: 0.11464583333333334,\n    loop: true,\n    src: '/official-ui-sounds/002.m4a',\n    time: 0.072,\n    paused: false,\n    readyState: 4,\n    error: undefined\n  },\n  idolClosed: true,\n  notVoice: true,\n  stopped: true,\n  disabled: true,\n  changed: true,\n  actualVoiceWins: true,\n  saved: true,\n  settings: true,\n  switchSaved: true,\n  aiEntry: true\n}\n"
+    },
+    {
+      "name": "test-story-ai-correction.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n{\n  at: '2026-11-16T01:23:13.343Z',\n  mockProvider: true,\n  noPaidAPICalls: true,\n  independentOfOutline: true,\n  realMotionCatalog: true,\n  previewBeforeEditor: true,\n  issuesVisible: true,\n  undo: true,\n  dialogueAndVoiceProtected: true,\n  abortPreservesScript: true,\n  offlinePromptAndPaste: true,\n  keyNotPersisted: true\n}\n"
+    },
+    {
+      "name": "test-custom-story.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n(electron) 'console-message' arguments are deprecated and will be removed. Please use Event<WebContentsConsoleMessageEventParams> object instead.\n{\n  modelAnimations: 65,\n  importedAssets: 3,\n  scenes: 2,\n  zipBytes: 259319,\n  saved: '怪文书往返测试',\n  bodyOverflow: false\n}\nBuiltin background + Spine dependencies embedded\n{\n  offlineModel: true,\n  voiceState: 4,\n  subtitleTiming: true,\n  text: '第一句定时字幕'\n}\n{\n  endpointPointerDrag: true,\n  originPreserved: true,\n  otherMovesPreserved: true\n}\n{\n  pointerDrag: true,\n  layouts: [\n    { width: 1280, overflow: false, nav: true },\n    { width: 680, overflow: false, nav: true },\n    { width: 3840, overflow: false, nav: true }\n  ]\n}\nPASS real imported Spine/PNG/audio, scene reorder, saved archive roundtrip, offline playback and SRT timings\n"
+    },
+    {
+      "name": "test-custom-story-library.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS local directory, shared read-only story modal, search retained after close, controls, transcript, quality, isolated import and edit/watch compatibility.\n"
+    },
+    {
+      "name": "test-custom-story-viewer.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS shared story modal, portable audio and mouth animation, Japanese/bilingual captions, volume, favorite, scoped text overlay, next/auto/restart, fullscreen and close.\n"
+    },
+    {
+      "name": "test-desktop-window.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS native maximized client covers the complete work area; no caption strip.\n[23300:1116/092340.128:ERROR:gpu\\ipc\\client\\command_buffer_proxy_impl.cc:488] GPU state invalid after WaitForGetOffsetInRange.\r\n[23300:1116/092340.128:ERROR:gpu\\ipc\\client\\command_buffer_proxy_impl.cc:488] GPU state invalid after WaitForGetOffsetInRange.\r\n"
+    },
+    {
+      "name": "test-scenario-player.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n(electron) 'console-message' arguments are deprecated and will be removed. Please use Event<WebContentsConsoleMessageEventParams> object instead.\nPASS new scenario engine / existing host / offline / updated data {\"at\":\"2026-11-16T01:23:52.814Z\",\"programRoot\":\"C:\\\\Users\\\\Administrator\\\\AppData\\\\Local\\\\Temp\\\\sc-scenario-trusted-WClnLY\\\\cc39bb3e-8b91-4200-944d-374b7986500c\\\\source\",\"networkDisabled\":true,\"fixtureAssetsOnly\":true,\"newDefault\":true,\"legacySelectable\":true,\"hostMessages\":true,\"translations\":true,\"bilingual\":true,\"localOverrides\":true,\"volume\":true,\"effectWaitWithoutValue\":true,\"middleForeground\":true,\"gashaMouth\":true,\"onlySpeakerTalks\":true,\"producerBubble\":true,\"autoModeDoesNotCutVoice\":true,\"choicesAndBranch\":true,\"textWait\":true,\"noDuplicateModel\":true,\"logVoiceReplay\":true,\"fullscreen\":true,\"anime4k\":true,\"artcnn\":true,\"enhancedScenePixels\":true,\"updatedCatalogAndTranslation\":true,\"subtitlePreferencePreserved\":true,\"cardAssociatedStory\":true,\"initial\":{\"engine\":{\"engine\":\"ShinyScenarioViewer\",\"commit\":\"66e8d76\",\"key\":\"produce_events/scenario_bridge_test.json\",\"language\":\"zh\",\"started\":true,\"ended\":false,\"volume\":0.4,\"current\":5,\"state\":\"PLAYING\",\"error\":null,\"characters\":2},\"translated\":\"制作人，辛苦了。\",\"fg\":16,\"characters\":2,\"mouth\":[\"lip_home_compatible\",null],\"menu\":true,\"quality\":true,\"transcript\":\"七草日花：制作人，辛苦了。プロデューサーさん、お疲れさまです。制作人：辛苦了。お疲れさま。绯田美琴：愿意听我说吗？話を聞いてくれる？选项：好はい选项：不了いいえ七草日花：谢谢。ありがとう。绯田美琴：【待翻译】またね。またね。\"},\"producer\":{\"bubble\":true,\"closed\":true},\"ownership\":{\"a\":0,\"b\":1}}\n"
+    },
+    {
+      "name": "test-update-ui.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS background UI survives close/navigation, source errors/retry, phone directory at 1280/3840/627 and left-aligned music volume in original settings\n"
+    }
+  ]
+}

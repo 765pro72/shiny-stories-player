@@ -1,0 +1,160 @@
+[
+  {
+    "id": 1006001001110010,
+    "speaker": "咲耶",
+    "text": "ねえ、プロデューサー\r\nアナタは黒と言えば、何を連想する？",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/100600100111/1006001001110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いきなりどうしたんだ？\r\n次の衣装の話か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006001001110020,
+    "speaker": "咲耶",
+    "text": "フフ。ちょっとした占いだよ。今読んでいた雑誌に、\r\n色でみる性格診断というコーナーがあってね",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100111/1006001001110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そういうことか……\r\nうーん。黒で連想するものと言えば……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "いろいろなもの",
+    "nextLabel": "1006001001111"
+  },
+  {
+    "select": "かっこよさ",
+    "nextLabel": "1006001001112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "孤高",
+    "nextLabel": "1006001001113"
+  },
+  {
+    "id": 1006001001110030,
+    "label": "1006001001111",
+    "speaker": "咲耶",
+    "text": "そのイメージは、ある意味で正しいのかもしれないね……\r\nカラスのように、様々な色が混ざった末に生まれる色……",
+    "charAnim1": "anger1",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_smile",
+    "charAnim3Loop": false,
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100111/1006001001110030"
+  },
+  {
+    "id": 1006001001110040,
+    "speaker": "咲耶",
+    "text": "雑誌に載っていない解答とは斬新だね\r\nフフ、やはりアナタは面白い",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100111/1006001001110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1006001001110050,
+    "label": "1006001001112",
+    "speaker": "咲耶",
+    "text": "確かに黒はかっこよさの表現に使われるね\r\n特に、ファッションではそうだな",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100111/1006001001110050"
+  },
+  {
+    "id": 1006001001110060,
+    "speaker": "咲耶",
+    "text": "そういえば、私の私服も黒が多いような気がするね\r\nアナタにとって私は、かっこいい存在だということかな",
+    "charAnim1": "wait5",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100111/1006001001110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1006001001110070,
+    "label": "1006001001113",
+    "speaker": "咲耶",
+    "text": "なるほど、孤高か……結果は、\r\n『クールに見せかけて、内面に寂しさを抱えている』らしい",
+    "charAnim1": "shy2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100111/1006001001110070"
+  },
+  {
+    "id": 1006001001110080,
+    "speaker": "咲耶",
+    "text": "……もしかして、プロデューサーは寂しいのかい？",
+    "charAnim1": "wait5",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100111/1006001001110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

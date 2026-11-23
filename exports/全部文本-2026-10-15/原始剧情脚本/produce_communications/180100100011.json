@@ -1,0 +1,182 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1801001000110010,
+    "speaker": "ルビー",
+    "text": "うー、今日は朝から最悪……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "801",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/180100100011/1801001000110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうした？\r\n何かあったのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1801001000110020,
+    "speaker": "ルビー",
+    "text": "ちょっと夢見が悪くてさ、\r\n入院してる夢見ちゃった",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100011/1801001000110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なんだ、夢の話か\r\nしかし入院か……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "select": "入院中って暇だよな",
+    "nextLabel": "1801001000111"
+  },
+  {
+    "textFrame": "off",
+    "select": "病院食って苦手だな",
+    "nextLabel": "1801001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "textFrame": "off",
+    "select": "入院中は休めていいよな",
+    "nextLabel": "1801001000113"
+  },
+  {
+    "id": 1801001000110030,
+    "label": "1801001000111",
+    "speaker": "ルビー",
+    "text": "そうなんだよね、何もできないし！\r\n何もできる元気もないし。入院してるから当然だけど",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100011/1801001000110030"
+  },
+  {
+    "id": 1801001000110040,
+    "speaker": "ルビー",
+    "text": "テレビ見たりとかゲームしたりだとか、\r\nそれくらいしかできないもん、健康で良かったー",
+    "charAnim1": "surp2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100011/1801001000110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1801001000110050,
+    "label": "1801001000112",
+    "speaker": "ルビー",
+    "text": "そう？　私は意外といけたけど……\r\nあー、でも味付けが薄くて量も少ないもんね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100011/1801001000110050"
+  },
+  {
+    "id": 1801001000110060,
+    "speaker": "ルビー",
+    "text": "健康的なのは間違いないし、\r\n自然と痩せられるかもよ？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100011/1801001000110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1801001000110070,
+    "label": "1801001000113",
+    "speaker": "ルビー",
+    "text": "まあ、そうだね。退院の目途があるなら、\r\nちょっとした休みかもしれないけど",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100011/1801001000110070"
+  },
+  {
+    "id": 1801001000110080,
+    "speaker": "ルビー",
+    "text": "退院したくてもできない子も世の中に沢山いるんだよね",
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100011/1801001000110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

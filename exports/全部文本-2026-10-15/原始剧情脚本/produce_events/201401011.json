@@ -1,0 +1,952 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00018",
+    "bgEffect": "fade",
+    "bgm": "008",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00087",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2014010110010,
+    "speaker": "甘奈",
+    "text": "はぁ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030140040",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/201401011/2014010110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうした？　ため息なんかついて",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "悩み事なら相談乗るぞ？",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_sad2_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014010110020,
+    "speaker": "甘奈",
+    "text": "あ、ううん。そうじゃないの",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110020"
+  },
+  {
+    "id": 2014010110030,
+    "speaker": "甘奈",
+    "text": "あの子……元気にしてるかなぁって……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "甘奈によく懐いてたもんな\r\nそりゃ寂しいだろう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014010110040,
+    "speaker": "甘奈",
+    "text": "うん……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110040"
+  },
+  {
+    "id": 2014010110050,
+    "speaker": "甘奈",
+    "text": "少しだけ……ね……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_trouble",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110050"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00055",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0775",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014010110060,
+    "speaker": "甘奈",
+    "text": "うんうん、今日もよく食べたね～",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "002",
+    "voice": "produce_events/201401011/2014010110060"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0779",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2014010110070,
+    "speaker": "甘奈",
+    "text": "うん？　どうしたの？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201401011/2014010110070"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0776",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014010110080,
+    "speaker": "甘奈",
+    "text": "身体がかゆいの……？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201401011/2014010110080"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0775",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014010110090,
+    "speaker": "甘奈",
+    "text": "うん、わかった。待ってて\r\n今、ブラッシングしてあげるからね～",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201401011/2014010110090"
+  },
+  {
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "",
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014010110100,
+    "speaker": "甘奈",
+    "text": "終わったら、一緒にお休みしようね～",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110100"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00054",
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0459",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014010110110,
+    "speaker": "甘奈",
+    "text": "ただいま～",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110110"
+  },
+  {
+    "textFrame": "off",
+    "se": "0775",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0512",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014010110120,
+    "speaker": "甘奈",
+    "text": "えへへ、ただいま～\r\n帰ってくる時間、覚えてくれてるんだね～",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201401011/2014010110120"
+  },
+  {
+    "id": 2014010110130,
+    "speaker": "甘奈",
+    "text": "よしよし……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110130"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out"
+  },
+  {
+    "textFrame": "off",
+    "se": "0103",
+    "waitType": "time",
+    "waitTime": 1750
+  },
+  {
+    "charAnim1": "sad2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp2_s",
+    "charLabel": "amana",
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014010110140,
+    "speaker": "甘奈",
+    "text": "？　知らない番号だ……誰かな……？",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110140"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0106",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2014010110150,
+    "speaker": "甘奈",
+    "text": "はい、\r\nどちら様でしょうか……？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201401011/2014010110150"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp2_s",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014010110160,
+    "speaker": "甘奈",
+    "text": "……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp2_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110160"
+  },
+  {
+    "id": 2014010110170,
+    "speaker": "甘奈",
+    "text": "はい、そうです\r\nあの子の里親探しをしている者で……",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110170"
+  },
+  {
+    "id": 2014010110180,
+    "speaker": "甘奈",
+    "text": "……",
+    "charAnim1": "wait3",
+    "charLipAnim": "lip_surp2_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110180"
+  },
+  {
+    "id": 2014010110190,
+    "speaker": "甘奈",
+    "text": "はい、はい──",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110190"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp2_s",
+    "charLabel": "amana",
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00054",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2014010110200,
+    "speaker": "甘奈",
+    "text": "──では、失礼します\r\nこちらこそよろしくお願いします……",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110200"
+  },
+  {
+    "textFrame": "off",
+    "se": "0106",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2014010110210,
+    "speaker": "甘奈",
+    "text": "……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110210"
+  },
+  {
+    "textFrame": "off",
+    "se": "0775",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014010110220,
+    "speaker": "甘奈",
+    "text": "飼い主さん、見つかったよ\r\nよかったね……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "017",
+    "voice": "produce_events/201401011/2014010110220"
+  },
+  {
+    "textFrame": "off",
+    "se": "0776",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014010110230,
+    "speaker": "甘奈",
+    "text": "大丈夫、優しそうな人だったから\r\n安心して……ね",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110230"
+  },
+  {
+    "textFrame": "off",
+    "se": "0777",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014010110240,
+    "speaker": "甘奈",
+    "text": "そんな寂しそうな声……\r\n出しちゃ……だめだよ……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110240"
+  },
+  {
+    "id": 2014010110250,
+    "speaker": "甘奈",
+    "text": "……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy2_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110250"
+  },
+  {
+    "id": 2014010110260,
+    "speaker": "甘奈",
+    "text": "甘奈まで……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110260"
+  },
+  {
+    "textFrame": "off",
+    "se": "0777",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014010110270,
+    "speaker": "甘奈",
+    "text": "うん……今日はずっと一緒にいようね……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110270"
+  },
+  {
+    "id": 2014010110280,
+    "speaker": "甘奈",
+    "text": "あと少ししか……いられないもんね……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110280"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "amana",
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "effectLabel": "white2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2014010110290,
+    "speaker": "甘奈",
+    "text": "……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110290"
+  },
+  {
+    "id": 2014010110300,
+    "speaker": "甘奈",
+    "text": "ねぇ、プロデューサーさん",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014010110310,
+    "speaker": "甘奈",
+    "text": "いつか来るってわかってても\r\nお別れって寂しいよね……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110310"
+  },
+  {
+    "id": 2014010110320,
+    "speaker": "甘奈",
+    "text": "もっと強くなれたら\r\n耐えられるようになるのかな……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110320"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうかもしれない……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……だけど、寂しい時にちゃんと寂しいと思える人だって、\r\n俺は強いと思うな",
+    "charAnim2": "face_sad",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "自分の感情を素直に受け止めることも大事だよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014010110330,
+    "speaker": "甘奈",
+    "text": "プロデューサーさん……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110330"
+  },
+  {
+    "id": 2014010110340,
+    "speaker": "甘奈",
+    "text": "そうだね……ありがと……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110340"
+  },
+  {
+    "id": 2014010110350,
+    "speaker": "甘奈",
+    "text": "お話してたら、思い出しちゃったから……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110350"
+  },
+  {
+    "id": 2014010110360,
+    "speaker": "甘奈",
+    "text": "少しだけ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110360"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2014010110370,
+    "speaker": "甘奈",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201401011/2014010110370"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

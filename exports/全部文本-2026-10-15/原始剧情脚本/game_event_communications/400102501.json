@@ -1,0 +1,991 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00224",
+    "bgm": "0000",
+    "se": "0129",
+    "waitType": "time",
+    "waitTime": 5500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00034",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0440",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あれ、雨だ……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "0050"
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001025010010,
+    "speaker": "灯織",
+    "text": "お疲れ様です、プロデューサー",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102501/4001025010010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織！　お疲れ様",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001025010020,
+    "speaker": "灯織",
+    "text": "レッスン終わりましたので、\r\n鍵を返却します",
+    "charAnim1": "sad3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、戸締まりは大丈夫か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001025010030,
+    "speaker": "灯織",
+    "text": "はい。窓の鍵、各種電源、照明、エアコン、\r\n全て問題ありません",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "さすがだな、ありがとう\r\n今日のレッスンはどうだった？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001025010040,
+    "speaker": "灯織",
+    "text": "はい。新しい曲の振り付けを習いました\r\n今日は頭から１サビまで",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010040"
+  },
+  {
+    "id": 4001025010050,
+    "speaker": "灯織",
+    "text": "難しい部分もありましたので\r\n完璧ではありませんが……今のところ順調です",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010050"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00014",
+    "fg": "001921",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 4001025010060,
+    "speaker": "灯織",
+    "text": "八宮さんは動きのキレを\r\nトレーナーに褒められていました",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "3000030030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102501/4001025010060"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001025010070,
+    "speaker": "灯織",
+    "text": "櫻木さんは曲に合わせると遅れてしまいます\r\nかなり焦っているようでした",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "3000010030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102501/4001025010070"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00034",
+    "fg": "off",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001025010080,
+    "speaker": "灯織",
+    "text": "でも、振り自体は覚えているようなので、\r\n３人でひとつひとつ確認しながら進めていけば大丈夫かと",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……うん、助かるよ\r\nふたりのこともしっかり見てくれているんだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これからもふたりを支えてあげてくれ\r\nただし、灯織自身も無理はしないように",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001025010090,
+    "speaker": "灯織",
+    "text": "はい……もうレッスンを休みたくはありませんから",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010090"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0447",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001025010100,
+    "speaker": "めぐる",
+    "text": "灯織ー！　灯織、いるー！？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん、めぐるも一緒だったのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001025010110,
+    "speaker": "灯織",
+    "text": "いえ、櫻木さんと先に帰ったはずなんですが……\r\nすみません、ちょっと失礼します",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102501/4001025010110"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0114",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 4001025010120,
+    "speaker": "めぐる",
+    "text": "灯織！　たい焼きパフェ、一緒に食べようー！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010120"
+  },
+  {
+    "id": 4001025010130,
+    "speaker": "灯織",
+    "text": "え……ふたりともどうしたの？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010130"
+  },
+  {
+    "id": 4001025010140,
+    "speaker": "真乃",
+    "text": "……あのね、駅前に新しいお店があったの\r\n灯織ちゃんと一緒に食べたいねって話して、それで……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010140"
+  },
+  {
+    "id": 4001025010150,
+    "speaker": "灯織",
+    "text": "違う、そうじゃなくてふたりともすごく濡れてる",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010150"
+  },
+  {
+    "id": 4001025010160,
+    "speaker": "めぐる",
+    "text": "大丈夫だよ、スポーツタオルを傘の代わりにしたから！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010160"
+  },
+  {
+    "id": 4001025010170,
+    "speaker": "灯織",
+    "text": "それも傘の役目を果たさないくらい濡れてるでしょ\r\n……新しいものを借りてくるから待ってて",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010170"
+  },
+  {
+    "id": 4001025010180,
+    "speaker": "灯織",
+    "text": "だから雨が強くなる前に\r\n駅に行った方がいいって言ったのに",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010180"
+  },
+  {
+    "id": 4001025010190,
+    "speaker": "めぐる",
+    "text": "駅には行ったんだけどねー！\r\nそこで見つけちゃって……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010190"
+  },
+  {
+    "id": 4001025010200,
+    "speaker": "灯織",
+    "text": "めぐる、話は後で聞くから",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……ん？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001025010210,
+    "speaker": "真乃",
+    "text": "あの……\r\n灯織ちゃんもたい焼きが嫌いじゃなかったら……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010210"
+  },
+  {
+    "id": 4001025010220,
+    "speaker": "灯織",
+    "text": "わかったから待って\r\n真乃も、今は大丈夫でも服に染みて寒くなるよ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（…………）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4001025010230,
+    "speaker": "灯織",
+    "text": "プロデューサー、すみません",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102501/4001025010230"
+  },
+  {
+    "id": 4001025010240,
+    "speaker": "灯織",
+    "text": "櫻木さんと八宮さんが雨で濡れて、\r\n何かお借りできる……",
+    "charAnim1": "sad3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、タオルだな！\r\nそこの引き出しに洗濯したやつがあるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "textFrame": "off",
+    "bg": "00133",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4001025010250,
+    "speaker": "灯織",
+    "text": "引き出し……えっと……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "タオルはここの三段目だ、覚えておいてくれ\r\nもしずぶ濡れならジャージに着替えても……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001025010260,
+    "speaker": "めぐる",
+    "text": "そこまでじゃないから大丈夫ー！\r\nありがとー、プロデューサー！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010260"
+  },
+  {
+    "id": 4001025010270,
+    "speaker": "灯織",
+    "text": "……だそうです",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……あ、でも濡れているってことは、\r\n真乃もめぐるも傘が無いのか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それなら事務所の置き傘が……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 8000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00329",
+    "bgEffect": "fade",
+    "bgm": "0000",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "se": "0124",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0124",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1800
+  },
+  {
+    "textFrame": "off",
+    "se": "0124",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0539",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001025010280,
+    "speaker": "めぐる",
+    "text": "……プロデューサー？　いるー？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ん？　ああ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001025010290,
+    "speaker": "めぐる",
+    "text": "プロデューサー！　よかったー！\r\nちょっと探しちゃったよー",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030030040",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102501/4001025010290"
+  },
+  {
+    "id": 4001025010300,
+    "speaker": "めぐる",
+    "text": "そろそろレッスンの時間だからわたしたち出るけど、\r\n鍵、閉めていった方がいい？",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010300"
+  },
+  {
+    "id": 4001025010310,
+    "speaker": "めぐる",
+    "text": "今、はづきさんも出かけてて、\r\n事務所に誰もいなくなっちゃうから……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あれ、もうそんな時間か……\r\n悪い悪い、もう戻るよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001025010320,
+    "speaker": "めぐる",
+    "text": "じゃあ待ってるね！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010320"
+  },
+  {
+    "id": 4001025010330,
+    "speaker": "めぐる",
+    "text": "あっ、あと事務所のタオルを借りてもいいかな\r\nレッスン用の忘れちゃって……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、場所はわかるか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001025010340,
+    "speaker": "めぐる",
+    "text": "いつもの引き出しでしょー！\r\nちゃんと洗って返すから",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400102501/4001025010340"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0114",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0460",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いかん、片付けに来たのに……\r\nつい読みふけって",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "オフ",
+    "textFrame": "off"
+  },
+  {
+    "speaker": "off",
+    "text": "『今日から新しい曲の振り付け』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──確か、この頃だったよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0124",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "オフ",
+    "textFrame": "off"
+  },
+  {
+    "speaker": "off",
+    "text": "『～１サビまで、順調』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織がふたりを名前で呼ぶようになったのは……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？　この音は……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0440",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00133",
+    "bgEffect": "fade",
+    "bgm": "0050",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あれ、雨だ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

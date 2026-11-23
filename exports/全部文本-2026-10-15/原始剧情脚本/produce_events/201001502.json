@@ -1,0 +1,727 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00028",
+    "bgm": "0011",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "1274",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よーし……！\r\nこの通りのお店でラストだな……！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（しっかり挨拶して────……って、あれ？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "se": "1040100090",
+    "movie": "1040100090"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0000",
+    "stillType": "idols",
+    "stillId": "1040100090"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "101",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "やっぱり\r\nこんにちは、智代子",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2010015020010,
+    "speaker": "智代子",
+    "text": "！？！？？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020010"
+  },
+  {
+    "id": 2010015020020,
+    "speaker": "智代子",
+    "text": "えっ、わ、プロデューサーさん……！？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おう……！\r\nすまん！　驚かせちゃったな……！？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "stillCtrl": "off"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00028",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2010015020030,
+    "speaker": "智代子",
+    "text": "あ、いえっ！",
+    "charAnim1": "wait",
+    "charAnim2": "face_shy2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040100090",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/201001502/2010015020030"
+  },
+  {
+    "id": 2010015020040,
+    "speaker": "智代子",
+    "text": "プロデューサーさんは全然悪くないです、\r\nこちらこそすみません……！",
+    "charAnim1": "wait5",
+    "charAnim2": "face_sad",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020040"
+  },
+  {
+    "id": 2010015020050,
+    "speaker": "智代子",
+    "text": "よくわかりましたね……！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……？\r\nそりゃあわかる……と思うんだが……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2010015020060,
+    "speaker": "智代子",
+    "text": "あれ、そうですか……！？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020060"
+  },
+  {
+    "id": 2010015020070,
+    "speaker": "智代子",
+    "text": "自分のCDを買いに来たので、\r\n気持ち隠密行動のつもりだったんですが……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020070"
+  },
+  {
+    "id": 2010015020080,
+    "speaker": "智代子",
+    "text": "これは失敗ですね……！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、なるほど！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "確かに髪型とかいつもと違うもんな……！\r\nメガネも似合ってる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2010015020090,
+    "speaker": "智代子",
+    "text": "あはは、ありがとうございます！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "CD──は、買えたみたいだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2010015020100,
+    "speaker": "智代子",
+    "text": "はい！\r\n発売日投稿、バッチリできる予定です",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "了解だ、ありがとう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2010015020110,
+    "speaker": "智代子",
+    "text": "これから現場とかですか？",
+    "charAnim1": "wait5",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああいや、ここのお店に挨拶しようと思ってて──\r\nいつも２８３のコーナーを立派に作ってくださってるんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2010015020120,
+    "speaker": "智代子",
+    "text": "！　見ました！\r\nポップとかもすごく丁寧で可愛くて、嬉しいなって──！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうなんだよ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2010015020130,
+    "speaker": "智代子",
+    "text": "よろしければ私からの感謝もぜひ……！\r\nお伝えください……！",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もちろん\r\n──時間が大丈夫だったら、一緒に行くか？　挨拶",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2010015020140,
+    "speaker": "智代子",
+    "text": "！\r\nいいんですか？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2010015020150,
+    "speaker": "智代子",
+    "text": "ではお言葉に甘えて、よろしくお願いします……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020150"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffectTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0000",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00475",
+    "bgEffect": "fade",
+    "bgm": "029",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いつもお世話になっております",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "店長",
+    "text": "いや～ありがとうございます！\r\nわざわざすみません……！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "店長",
+    "text": "それに偶然チョコちゃんも来てくれてたとか\r\nラッキーすぎますね……！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2010015020160,
+    "speaker": "智代子",
+    "text": "とんでもないです……！",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201001502/2010015020160"
+  },
+  {
+    "speaker": "店長",
+    "text": "よかったらパネルにサインとかお願いしても……？",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2010015020170,
+    "speaker": "智代子",
+    "text": "ぜひ！\r\n書かせてください！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020170"
+  },
+  {
+    "id": 2010015020180,
+    "speaker": "智代子",
+    "text": "２８３のコーナー、すっごく素敵に作っていただいてて\r\n感動しました……！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020180"
+  },
+  {
+    "speaker": "店長",
+    "text": "やだ～～こちらこそ感動です！\r\n担当した子も喜ぶと思います",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "店長",
+    "text": "──あ、じゃあこのペンで書いてもらっていいです？",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "0220"
+  },
+  {
+    "id": 2010015020190,
+    "speaker": "智代子",
+    "text": "はーい！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020190"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "textFrame": "off",
+    "se": "0490",
+    "waitType": "time",
+    "waitTime": 300
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 300
+  },
+  {
+    "textFrame": "off",
+    "se": "0491",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ちなみにこちらのコーナーの写真を撮らせていただいて\r\nSNSにアップすることって──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "店長",
+    "text": "もう全然全然！\r\n逆にじゃんじゃんやってもらいたいくらいです",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ありがとうございます\r\nいつもあたたかく応援していただいて",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これからもよろしくお願いいたします",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "店長",
+    "text": "そんなそんな！\r\nそれはこちらこそですから……！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "se": "1002",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2010015020200,
+    "speaker": "智代子",
+    "text": "あの、私からも改めていいでしょうか……？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201001502/2010015020200"
+  },
+  {
+    "id": 2010015020210,
+    "speaker": "智代子",
+    "text": "いつもありがとうございます！",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020210"
+  },
+  {
+    "id": 2010015020220,
+    "speaker": "智代子",
+    "text": "放課後クライマックスガールズとチョコアイドルを\r\n引き続きよろしくお願いいたします！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020220"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffectTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2600
+  },
+  {
+    "textFrame": "off",
+    "bg": "00475",
+    "fg": "003252",
+    "se": "1021",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2010015020230,
+    "speaker": "智代子",
+    "text": "『CD、発売日ゲットしてきました！』",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020230"
+  },
+  {
+    "id": 2010015020240,
+    "speaker": "智代子",
+    "text": "『お店のご厚意で、パネルにちょこっと\r\nサインを書かせていただいています……！』",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020240"
+  },
+  {
+    "id": 2010015020250,
+    "speaker": "智代子",
+    "text": "『お近くの方、ご都合が合う方はぜひご覧ください！』",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020250"
+  },
+  {
+    "id": 2010015020260,
+    "speaker": "智代子",
+    "text": "『そして、曲の方も\r\nたくさん聴いていただけたら嬉しいです！』",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201001502/2010015020260"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

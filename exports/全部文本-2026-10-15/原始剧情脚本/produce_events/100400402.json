@@ -1,0 +1,746 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00014",
+    "fg": "001741",
+    "bgm": "015"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 400
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "004",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0239",
+    "waitType": "time",
+    "waitTime": 400
+  },
+  {
+    "textFrame": "off",
+    "se": "0239",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 400
+  },
+  {
+    "speaker": "演技講師",
+    "text": "全然できてない！\r\n話、聞いてた？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "演技講師",
+    "text": "もっと想像力働かせて！\r\n生い立ち、立場、欲望……全部絡み合ってセリフがあるのよ",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "はいっ",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "autoWaitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 1004004020010,
+    "speaker": "恋鐘",
+    "text": "お疲れ様～！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100400402/1004004020010"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "あっ、ありがとうございます！\r\nお恥ずかしいところ、お見せしまして",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1004004020020,
+    "speaker": "恋鐘",
+    "text": "そがんことなかよ！\r\n一生懸命で……胸のぎゅ～ってなったと",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020020"
+  },
+  {
+    "speaker": "番組ディレクター",
+    "text": "ガールのこの後の予定は？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "えっと、14時からモダンバレエ、\r\n18時から飲食店のバイトですね",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1004004020030,
+    "speaker": "恋鐘",
+    "text": "え～！　レッスンの後に？\r\nバイトって立ち仕事やろ？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020030"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "そうなんです。でも、お店のまかないで\r\n唐揚げが食べられるんで……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1004004020040,
+    "speaker": "恋鐘",
+    "text": "んふふ～！\r\nそいはよか～！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020040"
+  },
+  {
+    "id": 1004004020050,
+    "speaker": "恋鐘",
+    "text": "ばってん、オーディション前に\r\nバテてしまわんか心配やね～",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020050"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "そうですね、レッスンもたくさん入れてしまって……\r\nでも、バイト減らしたら生活費なくなっちゃうし",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "実は、親に反対されてて\r\n学校やめてから仕送りももらってないんです",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1004004020060,
+    "speaker": "恋鐘",
+    "text": "そうやったと……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020060"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "絶対オーディションに受かりたいです\r\n劇団に所属して……早く舞台に立ちたいです",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1004004020070,
+    "speaker": "恋鐘",
+    "text": "うん……！　絶対大丈夫ばい！\r\nうちも、応援しとるけん！",
+    "charAnim1": "smile4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020070"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "fg": "off",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 4500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "はい、撮影は終了です\r\n月岡さん、ありがとうございました",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "bgm": "002"
+  },
+  {
+    "id": 1004004020080,
+    "speaker": "恋鐘",
+    "text": "ありがとうございました～",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100400402/1004004020080"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0701",
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "恋鐘、お疲れ。迎えにきたぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "あっ、恋鐘さん、次もお仕事なんですか……？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1004004020090,
+    "speaker": "恋鐘",
+    "text": "うん、雑誌の撮影があるとよ\r\n夜はライブの打ち合わせ～！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100400402/1004004020090"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "雑誌撮影にライブの準備……！\r\n恋鐘さんも忙しそう……！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1004004020100,
+    "speaker": "恋鐘",
+    "text": "んふふ～、ばってん楽しかよ！\r\nライブの準備もわくわくするばい！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、そうだ恋鐘。ディレクターさんのところに寄るから\r\nちょっと待っててもらっていいか？",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "例の件で、スケジュールの相談があるからさ\r\nこっちにも影響ないようにしたいし",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004004020110,
+    "speaker": "恋鐘",
+    "text": "大丈夫～、ここで話しとくけん",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020110"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "なにかあったんですか？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1004004020120,
+    "speaker": "恋鐘",
+    "text": "うち、舞台の仕事決まったとよ～",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020120"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "……えっ！",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "autoWaitTime": 1500
+  },
+  {
+    "id": 1004004020130,
+    "speaker": "恋鐘",
+    "text": "急やったけん、プロデューサーが\r\nスケジュールを確認しとるとこで……",
+    "charAnim1": "wait5",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020130"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "わぁ、恋鐘さん、ますます忙しくなるんですね……！\r\nなのに私のところに何度も来ていただいて……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1004004020140,
+    "speaker": "恋鐘",
+    "text": "サポーターやもん、当然やろ～？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020140"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "ありがとうございます……\r\n恋鐘さんに来ていただけるだけで力もらえます！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "舞台出演おめでとうございます……！\r\n頑張ってください……！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "……なんて、まだ何もできてない私に\r\n言われてもって感じですけど……！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1004004020150,
+    "speaker": "恋鐘",
+    "text": "ううん、嬉しかよ！　うち、頑張るけん\r\n絶対舞台観にきてほしか！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100400402/1004004020150"
+  },
+  {
+    "speaker": "夢追いガール",
+    "text": "はい、是非……！\r\n観に行きたいです！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgEffectTime": 2000,
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 6500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00129",
+    "bgEffect": "fade",
+    "bgm": "0008",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "また仕事詰め込んじゃってごめんな、恋鐘",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004004020160,
+    "speaker": "恋鐘",
+    "text": "なして謝るとね～？",
+    "charAnim1": "wait5",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100400402/1004004020160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、舞台があるかもっていうのは前からわかってたんだし\r\n他をセーブすべきだったかなって……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004004020170,
+    "speaker": "恋鐘",
+    "text": "舞台は入らんかもしれんかったやろ？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020170"
+  },
+  {
+    "id": 1004004020180,
+    "speaker": "恋鐘",
+    "text": "それなら、仕方なか！\r\nうちはどの仕事もできて嬉しかけん",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020180"
+  },
+  {
+    "id": 1004004020190,
+    "speaker": "恋鐘",
+    "text": "それに、あの子見とったら、\r\nまだまだ頑張らんば～って思うとよ",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、夢追いガールの子か？\r\n確かに、バイトにレッスンに、よくやってるよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004004020200,
+    "speaker": "恋鐘",
+    "text": "……これまでにも、オーディションいっぱい受けて\r\n落ち続けとるとって",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020200"
+  },
+  {
+    "id": 1004004020210,
+    "speaker": "恋鐘",
+    "text": "──なんか、前のうちに似とるな～って",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほどな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004004020220,
+    "speaker": "恋鐘",
+    "text": "やけん、あの子のお手本っていうか……\r\nよか先輩になりたか～って思うばい！",
+    "charAnim1": "smile4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、きっとなれるよ、恋鐘なら",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……この番組も、恋鐘の負担になってないか\r\n心配してたけど、いい刺激になってるんだな",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1004004020230,
+    "speaker": "恋鐘",
+    "text": "んふふ～\r\nそうやね～！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100400402/1004004020230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "頑張ろうな、恋鐘",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 2000
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgEffectTime": 2500,
+    "bgm": "fade_out",
+    "se": "0385",
+    "waitType": "time",
+    "waitTime": 7000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

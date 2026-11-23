@@ -1,0 +1,170 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ルカ、レッスン室使ったか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1026001001310010,
+    "speaker": "ルカ",
+    "text": "レッスン室……？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "026",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102600100131/1026001001310010"
+  },
+  {
+    "id": 1026001001310020,
+    "speaker": "ルカ",
+    "text": "だったらどうなんだよ",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100131/1026001001310020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "鍵がないんだが……",
+    "nextLabel": "1026001001311"
+  },
+  {
+    "select": "使う時は\r\nひと声かけてほしい",
+    "nextLabel": "1026001001312"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "問題はないが……",
+    "nextLabel": "1026001001313"
+  },
+  {
+    "id": 1026001001310030,
+    "label": "1026001001311",
+    "speaker": "ルカ",
+    "text": "鍵？　んなもん……\r\nあ…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100131/1026001001310030"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1026001001310040,
+    "speaker": "ルカ",
+    "text": "なんだよその目……\r\n今返すんだから問題ねぇだろ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100131/1026001001310040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1026001001310050,
+    "label": "1026001001312",
+    "speaker": "ルカ",
+    "text": "……わかってるよ",
+    "charAnim1": "surp2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100131/1026001001310050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、空いてる時はいつでも使っていいからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "1026001001313",
+    "speaker": "プロデューサー",
+    "text": "使う時は\r\nいつも戸締りを忘れないようにな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1026001001310060,
+    "speaker": "ルカ",
+    "text": "うるせェな\r\nちゃんとかけただろ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100131/1026001001310060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

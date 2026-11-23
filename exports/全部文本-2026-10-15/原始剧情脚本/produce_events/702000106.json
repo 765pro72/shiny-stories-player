@@ -1,0 +1,312 @@
+[
+  {
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "speaker": "はづき",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 7902001060010,
+    "speaker": "社長",
+    "text": "やはりここまで来ると、\r\n乗り越えるべき壁も高かったな……",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702000106/7902001060010"
+  },
+  {
+    "id": 7901001060010,
+    "speaker": "はづき",
+    "text": "結果は残念でしたけど……\r\nおふたりは立派にやってましたよ！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702000106/7901001060010"
+  },
+  {
+    "id": 7901001060020,
+    "speaker": "はづき",
+    "text": "ここまで来れただけでも、\r\n胸を張って誇れることだと私は思います",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702000106/7901001060020"
+  },
+  {
+    "id": 7902001060020,
+    "speaker": "社長",
+    "text": "ああ、良い活躍だった\r\nそれはたしかだ",
+    "charAnim1": "wait1",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702000106/7902001060020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……俺もそう思います\r\n彼女はよくやってくれました",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001060030,
+    "speaker": "はづき",
+    "text": "その言葉を、彼女に直接\r\n言ってあげましょう？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702000106/7901001060030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00002",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "三次審査、残念だった──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7020001060010,
+    "speaker": "透",
+    "text": "あー……そっか",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/702000106/7020001060010"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "toru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 7020001060020,
+    "speaker": "透",
+    "text": "──なんか、何があるんだっけ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/702000106/7020001060020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……え？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7020001060030,
+    "speaker": "透",
+    "text": "通過したらさ、\r\n何が……あるのかなって",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702000106/7020001060030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、そりゃ……最後の審査が……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ってことじゃなくて──？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7020001060040,
+    "speaker": "透",
+    "text": "──……なんだろう\r\nわかってたつもりだったんだけど……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702000106/7020001060040"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim4": "blank",
+    "charLabel": "toru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00315",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 7020001060050,
+    "speaker": "透",
+    "text": "わかんなくなったっていうか",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/702000106/7020001060050"
+  },
+  {
+    "id": 7020001060060,
+    "speaker": "透",
+    "text": "……ごめん\r\n何言ってんだろ私",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702000106/7020001060060"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

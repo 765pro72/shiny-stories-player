@@ -1,0 +1,240 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "008"
+  },
+  {
+    "id": 6902001070010,
+    "speaker": "社長",
+    "text": "お前、担当アイドルのことをどう思っている？",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602300107/6902001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……たしかに負けてしまいましたけど、\r\n彼女こそが最高のアイドルだと思っています",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6902001070020,
+    "speaker": "社長",
+    "text": "……！　そうか……",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602300107/6902001070020"
+  },
+  {
+    "id": 6901001070010,
+    "speaker": "はづき",
+    "text": "ふふ\r\n社長が聞きたかった言葉、そのまま出てきましたね",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/602300107/6901001070010"
+  },
+  {
+    "id": 6901001070020,
+    "speaker": "はづき",
+    "text": "もし違う言葉が出てきたら、\r\n説教してやるって言って聞かなかったのに",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/602300107/6901001070020"
+  },
+  {
+    "id": 6902001070030,
+    "speaker": "社長",
+    "text": "……うるさいぞ。とにかく、\r\nそういうことなら私から言うことはない",
+    "charAnim1": "wait2",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602300107/6902001070030"
+  },
+  {
+    "id": 6902001070040,
+    "speaker": "社長",
+    "text": "さあ、早くその最高のアイドルに\r\n会いに行ってこい",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602300107/6902001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい！",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00002",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 6023001070010,
+    "speaker": "雛菜",
+    "text": "あは～\r\nプロデューサー！　雛菜、だめだった～～～",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "023",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/602300107/6023001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、見てたよ\r\n……お疲れ様、雛菜",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6023001070020,
+    "speaker": "雛菜",
+    "text": "……じゃあ、\r\nは～い♡　お願いします～！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602300107/6023001070020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……え？　なんだ……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6023001070030,
+    "speaker": "雛菜",
+    "text": "え～～～……\r\nプロデューサー、忘れちゃったの～？",
+    "charAnim1": "anger1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602300107/6023001070030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、だから何を──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6023001070040,
+    "speaker": "雛菜",
+    "text": "頑張ったら、雛菜のこといちばん褒めて、\r\n撫でてくれるって言った～～～！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602300107/6023001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それは雛菜が──……\r\nいや……ううん、そうだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……雛菜、よく頑張ったよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6023001070050,
+    "speaker": "雛菜",
+    "text": "うん……だから\r\nぎゅ～って、してくれる約束でしょ？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602300107/6023001070050"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

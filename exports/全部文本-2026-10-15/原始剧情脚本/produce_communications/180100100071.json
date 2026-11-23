@@ -1,0 +1,178 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1801001000710010,
+    "speaker": "ルビー",
+    "text": "ふんふふ～ん♪\r\nあー、ほんとマジで嬉しいわ……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "801",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/180100100071/1801001000710010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それは……ああ、前に渡したファンレターか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1801001000710020,
+    "speaker": "ルビー",
+    "text": "うん。落ち込んだ時に読み返すんだ\r\nそうするとね、元気がもらえるんだよ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile1",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile1",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100071/1801001000710020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ファンからのエールは力になるもんな……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "select": "……今\r\n落ち込んでるのか？",
+    "nextLabel": "1801001000711"
+  },
+  {
+    "textFrame": "off",
+    "select": "じゃあ俺も書こうかな",
+    "nextLabel": "1801001000712"
+  },
+  {
+    "textCtrl": "cm",
+    "textFrame": "off",
+    "select": "返事は書いてるのか？",
+    "nextLabel": "1801001000713"
+  },
+  {
+    "id": 1801001000710030,
+    "label": "1801001000711",
+    "speaker": "ルビー",
+    "text": "あ、しまった。バレちゃった\r\n鋭いねプロデューサー",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100071/1801001000710030"
+  },
+  {
+    "id": 1801001000710040,
+    "speaker": "ルビー",
+    "text": "せっかくだから聞いてもらおうかな？\r\n実はね、さっき……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100071/1801001000710040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1801001000710050,
+    "label": "1801001000712",
+    "speaker": "ルビー",
+    "text": "それじゃファンレターじゃなくて\r\nプロデューサーレターになっちゃうよ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100071/1801001000710050"
+  },
+  {
+    "id": 1801001000710060,
+    "speaker": "ルビー",
+    "text": "プロデューサーは近くにいるんだから、\r\n言葉で直接伝えてほしいな。ねっ？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100071/1801001000710060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1801001000710070,
+    "label": "1801001000713",
+    "speaker": "ルビー",
+    "text": "うっ……そ、それは……あーあ、\r\nせっかく書こうと思ってたのにやる気なくしちゃったなー！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad2",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100071/1801001000710070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "宿題をやらないこどもみたいな言い訳を……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0000"
+  },
+  {
+    "nextLabel": "true",
+    "command": "conditional_jump",
+    "commandKey": "A-2_read"
+  },
+  {
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "nextLabel": "end"
+  },
+  {
+    "label": "true",
+    "textFrame": "off",
+    "select": "甜花さんと\r\n話してみたいな",
+    "nextLabel": "1"
+  },
+  {
+    "textCtrl": "cm",
+    "textFrame": "off",
+    "select": "懺悔室を調べてみるよ",
+    "nextLabel": "2"
+  },
+  {
+    "text": "★選択肢①【甜花さんと話してみたいな】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "label": "1",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "text": "★選択肢②【懺悔室を調べてみるよ】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "label": "2",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

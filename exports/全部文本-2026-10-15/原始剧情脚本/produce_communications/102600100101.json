@@ -1,0 +1,172 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ルカ、ちょっといいか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1026001001010010,
+    "speaker": "ルカ",
+    "text": "あ……？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "026",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102600100101/1026001001010010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ファンのSNSに\r\nルカの写真がアップされてるみたいなんだが……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1026001001010020,
+    "speaker": "ルカ",
+    "text": "どれだよ……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_serious",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100101/1026001001010020"
+  },
+  {
+    "select": "ファンと一緒に\r\n撮ったのか？",
+    "nextLabel": "1026001001011"
+  },
+  {
+    "select": "これは、街だな……",
+    "nextLabel": "1026001001012"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "なかなか\r\nいいじゃないか",
+    "nextLabel": "1026001001013"
+  },
+  {
+    "id": 1026001001010030,
+    "label": "1026001001011",
+    "speaker": "ルカ",
+    "text": "…………\r\n問題あんのかよ……？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_serious",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100101/1026001001010030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、\r\nサービス精神があっていいと思ってな……ははは",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_close3",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1026001001010040,
+    "label": "1026001001012",
+    "speaker": "ルカ",
+    "text": "誰かが勝手に撮ったんだろ……？\r\nほっとけよ、こんなもん",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100101/1026001001010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな\r\n問題はなさそうだ……うん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1026001001010050,
+    "label": "1026001001013",
+    "speaker": "ルカ",
+    "text": "なんだよ……\r\nそんなことでいちいち呼ぶんじゃねぇよ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger2",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100101/1026001001010050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、ああ……すまん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

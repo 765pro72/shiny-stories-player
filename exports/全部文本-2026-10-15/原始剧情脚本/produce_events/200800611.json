@@ -1,0 +1,820 @@
+[
+  {
+    "textFrame": "off",
+    "bgm": "0000"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2008006110010,
+    "speaker": "霧子",
+    "text": "『白くて、綺麗で』\r\n『でも、それで当然だって思われていて』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110010"
+  },
+  {
+    "id": 2008006110020,
+    "speaker": "霧子",
+    "text": "『きっと、とっても緊張して降ってくると思います』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110020"
+  },
+  {
+    "id": 2008006110030,
+    "speaker": "霧子",
+    "text": "『雪はとっても偉いです』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110030"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00034",
+    "bgEffect": "fade"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0100",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──かぁ\r\nうん、霧子らしいインタビュー記事だよな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00024",
+    "waitType": "time",
+    "waitTime": 3000,
+    "bgEffect": "white_add"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "霧子……？\r\nどうしたんだ、上向いて……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "006"
+  },
+  {
+    "id": 2008006110040,
+    "speaker": "霧子",
+    "text": "……あ、プロデューサーさん",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030080030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200800611/2008006110040"
+  },
+  {
+    "id": 2008006110041,
+    "text": "……ふふ",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "voice": "produce_events/200800611/2008006110041"
+  },
+  {
+    "id": 2008006110050,
+    "speaker": "霧子",
+    "text": "今日は……\r\n雪が……降るみたいです……！",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああー、そういえば予報で言ってたな\r\n……めちゃくちゃ冷え込んでるもんなぁ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110060,
+    "speaker": "霧子",
+    "text": "はい……\r\n空が……ざわざわ……って……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ざわざわ、かぁ\r\n……そうやって言われると、そんな感じもするなぁ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110070,
+    "speaker": "霧子",
+    "text": "……ふふ\r\nはい……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110070"
+  },
+  {
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00133",
+    "waitType": "time",
+    "waitTime": 3000,
+    "bgEffect": "fade"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "bg": "00024",
+    "waitType": "time",
+    "waitTime": 3000,
+    "bgEffect": "fade"
+  },
+  {
+    "id": 2008006110080,
+    "speaker": "霧子",
+    "text": "ひとつめに落ちてくる……\r\n雪が……見たくって……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200800611/2008006110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……え？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110090,
+    "speaker": "霧子",
+    "text": "……あ……す、すみません……\r\nゆ、雪が……見たくて……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか。今日はスタジオ収録だけど……\r\nきっと待ち時間も長いから、ちょっとなら抜け出せるぞ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110100,
+    "speaker": "霧子",
+    "text": "わぁ……！\r\nは、はい……ありがとうございます……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110100"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "waitType": "time",
+    "waitTime": 3000,
+    "bgEffect": "fade"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00031",
+    "waitType": "time",
+    "waitTime": 3000,
+    "bgEffect": "fade"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00032",
+    "waitType": "time",
+    "waitTime": 3000,
+    "bgEffect": "fade"
+  },
+  {
+    "id": 2008006110110,
+    "speaker": "霧子",
+    "text": "ぷ、プロデューサーさん、\r\n少し……屋上に行ってきてもいいですか……？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200800611/2008006110110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？　……あ、そうか、雪だったな\r\nでも、まだ降ってないんじゃないか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110120,
+    "speaker": "霧子",
+    "text": "は、はい……！\r\nでも……匂いがするんです……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ははっ、わかったぞ\r\n15分くらいなら平気だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110130,
+    "speaker": "霧子",
+    "text": "はい……！\r\nありがとうございます……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_shy",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110130"
+  },
+  {
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "se": "0247",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、ちょ、ちょっと待ってくれ！\r\nそんな恰好じゃ風邪を引くぞ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110140,
+    "speaker": "霧子",
+    "text": "い、いえ……早く……行きたくて……\r\n寒いのは……な、慣れてます……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200800611/2008006110140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ダメだ──っても聞かなさそうだな\r\nこれ……俺のコートでよければ、こっちにあるから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2008006110150,
+    "speaker": "霧子",
+    "text": "ぷ、プロデューサーさん……\r\n……ありがとうございます……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。マフラーも持ってってくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110160,
+    "speaker": "霧子",
+    "text": "はい……！\r\nふふ……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110160"
+  },
+  {
+    "id": 2008006110170,
+    "speaker": "霧子",
+    "text": "行ってきます……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110170"
+  },
+  {
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "se": "0247",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……\r\n言い出したら、意外に聞かないんだよな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………\r\n…………──あ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0182",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2008006110180,
+    "speaker": "霧子",
+    "text": "『雪\r\nプロデューサーさんも　よかったら』",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "霧子……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "waitType": "effect",
+    "bgEffect": "fade"
+  },
+  {
+    "bgm": "0010",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『白くて、綺麗で』\r\n『でも、みんなにそれで当然だって思われていて』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『きっと、とっても緊張して降ってくると思います』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "雪か……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0334",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "008",
+    "effectLabel": "white2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect",
+    "stillType": "idols",
+    "stillId": "1030080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110190,
+    "speaker": "霧子",
+    "text": "『雪はとっても偉いです』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……なんか）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110200,
+    "speaker": "霧子",
+    "text": "──プロデューサーさん……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（なんか、こんなこと──\r\n前にも……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110210,
+    "speaker": "霧子",
+    "text": "ふふ……\r\n雪です──",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ほんとに降ってきたな\r\nわぁ……はは、綺麗だ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110220,
+    "speaker": "霧子",
+    "text": "はい……\r\n綺麗です……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110220"
+  },
+  {
+    "id": 2008006110230,
+    "speaker": "霧子",
+    "text": "空で生まれて……\r\n地面に着くまで……とっても、とっても長いのに……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……うん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110240,
+    "speaker": "霧子",
+    "text": "ずっと真っ白で……綺麗なまま……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "霧子……\r\n……雪が偉いって、言ってたな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110250,
+    "speaker": "霧子",
+    "text": "はい……\r\nわたし……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110250"
+  },
+  {
+    "id": 2008006110260,
+    "speaker": "霧子",
+    "text": "一番最初に……降りてくる雪に……\r\n頑張ったねって……伝えたくて……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110260"
+  },
+  {
+    "id": 2008006110270,
+    "speaker": "霧子",
+    "text": "他のみんなも……\r\nきっと励まされたんだよって……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "霧子……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（あぁ、そうだ──）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……霧子もそうだよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（初めて見かけた時も……\r\nこんな感じだった）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110280,
+    "speaker": "霧子",
+    "text": "……え？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "霧子も頑張ってる\r\nみんな励まされてるんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──俺だってな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110290,
+    "speaker": "霧子",
+    "text": "……プ、プロデューサーさん……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110290"
+  },
+  {
+    "id": 2008006110300,
+    "speaker": "霧子",
+    "text": "あ、あの……わたし……\r\nわたし……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110300"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00133",
+    "effectLabel": "white3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect",
+    "stillCtrl": "off"
+  },
+  {
+    "id": 2008006110310,
+    "speaker": "霧子",
+    "text": "……プロデューサーさんがいたら\r\n怖くないです……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "霧子……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……うん\r\n俺がいるから、怖がらないでくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2008006110320,
+    "speaker": "霧子",
+    "text": "プロデューサーさん……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110320"
+  },
+  {
+    "id": 2008006110330,
+    "speaker": "霧子",
+    "text": "はい……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200800611/2008006110330"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "waitType": "time",
+    "waitTime": 3000,
+    "bgEffect": "fade"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

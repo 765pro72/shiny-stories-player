@@ -1,0 +1,809 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgm": "0000",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00087",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "99999",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00087",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "99999",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00087",
+    "bgEffect": "fade",
+    "se": "0094",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3022002010010,
+    "speaker": "小糸",
+    "text": "ん……あれ……\r\n寝ちゃってた……？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010010"
+  },
+  {
+    "id": 3022002010020,
+    "speaker": "小糸",
+    "text": "あさ…………？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010020"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "se": "0107",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3022002010030,
+    "speaker": "小糸",
+    "text": "…………朝！？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010030"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "bg": "00056",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "bgm": "047",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 3022002010040,
+    "speaker": "小糸",
+    "text": "うわー！\r\nどどどどうしよう……！",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "022",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/302200201/3022002010040"
+  },
+  {
+    "id": 3022002010050,
+    "speaker": "小糸",
+    "text": "遅刻なんてしたことないのに……！\r\nは、走って間に合うかな…………",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010050"
+  },
+  {
+    "id": 3022002010060,
+    "speaker": "小糸",
+    "text": "って、あれ……！\r\nひ、雛菜ちゃん……！？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010060"
+  },
+  {
+    "charLabel": "koito",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 3022002010070,
+    "speaker": "雛菜",
+    "text": "ん～～～？\r\nあ～、小糸ちゃん～～～！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "023",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/302200201/3022002010070"
+  },
+  {
+    "id": 3022002010080,
+    "speaker": "雛菜",
+    "text": "おはよ～～～！",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010080"
+  },
+  {
+    "charLabel": "hinana",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3022002010090,
+    "speaker": "小糸",
+    "text": "お、おはよ……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/302200201/3022002010090"
+  },
+  {
+    "id": 3022002010100,
+    "speaker": "小糸",
+    "text": "そんなゆっくりだと、\r\n遅刻しちゃうよ……！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010100"
+  },
+  {
+    "id": 3022002010110,
+    "speaker": "雛菜",
+    "text": "え～～～？\r\n雛菜、いつもこの時間だけど何も言われないよ～？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010110"
+  },
+  {
+    "id": 3022002010120,
+    "speaker": "小糸",
+    "text": "えっ、それ……！\r\nもう諦められちゃってるんだよ……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010120"
+  },
+  {
+    "id": 3022002010130,
+    "speaker": "雛菜",
+    "text": "ん～、そう～？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010130"
+  },
+  {
+    "id": 3022002010140,
+    "speaker": "雛菜",
+    "text": "でも雛菜も１限のこと諦めがちだから\r\n気持ちわかるかも～",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010140"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "hinana"
+  },
+  {
+    "id": 3022002010150,
+    "speaker": "小糸",
+    "text": "雛菜ちゃんは諦めちゃだめなんだよ！\r\nもう……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010150"
+  },
+  {
+    "id": 3022002010160,
+    "speaker": "雛菜",
+    "text": "あは～、小糸ちゃんは朝から元気だね",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010160"
+  },
+  {
+    "id": 3022002010170,
+    "speaker": "小糸",
+    "text": "ぜ、全然元気じゃないよ！\r\n遅刻しそうで焦ってる……！",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010170"
+  },
+  {
+    "id": 3022002010180,
+    "speaker": "雛菜",
+    "text": "あ～、うん\r\nそっか～～～？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010180"
+  },
+  {
+    "id": 3022002010190,
+    "speaker": "雛菜",
+    "text": "小糸ちゃんは珍しいよね～？\r\nいつも遅刻してないでしょ～～～",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010190"
+  },
+  {
+    "id": 3022002010200,
+    "speaker": "小糸",
+    "text": "うん、昨日は\r\n机に向かったまま寝ちゃ…………",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010200"
+  },
+  {
+    "id": 3022002010210,
+    "speaker": "小糸",
+    "text": "う、ううん……！\r\nそんな事はいいから、急ごう！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010210"
+  },
+  {
+    "id": 3022002010220,
+    "speaker": "雛菜",
+    "text": "え～、小糸ちゃん先行っていいよ～？\r\nばいばい～？",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010220"
+  },
+  {
+    "id": 3022002010230,
+    "speaker": "小糸",
+    "text": "ば、ばいばいしないよ！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010230"
+  },
+  {
+    "id": 3022002010240,
+    "speaker": "雛菜",
+    "text": "え～でも雛菜、コンビニで\r\nおやつ買ってから行かないとだし～……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_serious",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010240"
+  },
+  {
+    "id": 3022002010250,
+    "speaker": "雛菜",
+    "text": "小糸ちゃんもなんかいる～～～？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010250"
+  },
+  {
+    "id": 3022002010260,
+    "speaker": "小糸",
+    "text": "お、おやつはいらないよ！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010260"
+  },
+  {
+    "id": 3022002010270,
+    "speaker": "雛菜",
+    "text": "わかった、\r\nじゃあ飲み物だね～",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010270"
+  },
+  {
+    "id": 3022002010280,
+    "speaker": "小糸",
+    "text": "そ、それもいらない！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010280"
+  },
+  {
+    "id": 3022002010290,
+    "speaker": "雛菜",
+    "text": "え～～～\r\nじゃあ何もいらないの～？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010290"
+  },
+  {
+    "id": 3022002010300,
+    "speaker": "小糸",
+    "text": "今は何より、雛菜ちゃんに\r\n学校に向かって急いでほしいよ……！",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010300"
+  },
+  {
+    "id": 3022002010310,
+    "speaker": "雛菜",
+    "text": "あは～\r\nそういう感じ～……？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010310"
+  },
+  {
+    "id": 3022002010320,
+    "speaker": "小糸",
+    "text": "そういう感じだよ！\r\nほら、急いで！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010320"
+  },
+  {
+    "id": 3022002010330,
+    "speaker": "雛菜",
+    "text": "も～、仕方ないな～",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010330"
+  },
+  {
+    "id": 3022002010340,
+    "speaker": "小糸",
+    "text": "それはこっちのセリフだよ！",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010340"
+  },
+  {
+    "id": 3022002010350,
+    "speaker": "雛菜",
+    "text": "小糸ちゃんに貸し、ひとつね～？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010350"
+  },
+  {
+    "id": 3022002010360,
+    "speaker": "小糸",
+    "text": "なんで！？\r\n逆だよ……！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010360"
+  },
+  {
+    "id": 3022002010370,
+    "speaker": "雛菜",
+    "text": "ん～、そうかな～",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010370"
+  },
+  {
+    "id": 3022002010380,
+    "speaker": "小糸",
+    "text": "ちゃんと学校行かないと\r\n高校生は留年しちゃうんだよ！？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010380"
+  },
+  {
+    "id": 3022002010390,
+    "speaker": "小糸",
+    "text": "雛菜ちゃん、わたしのこと\r\n『小糸先輩』って呼ぶことになってもいいの！？",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010390"
+  },
+  {
+    "id": 3022002010400,
+    "speaker": "雛菜",
+    "text": "やは～、『小糸せんぱ～い』！",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010400"
+  },
+  {
+    "id": 3022002010410,
+    "speaker": "小糸",
+    "text": "も、もう！　早速呼ばないで……！\r\n諦めちゃだめだよ！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010410"
+  },
+  {
+    "charLabel": "hinana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "koito",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "fade_out",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3022002010420,
+    "speaker": "小糸",
+    "text": "ほ、ほら、行こう……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010420"
+  },
+  {
+    "charLabel": "koito",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3022002010430,
+    "speaker": "雛菜",
+    "text": "──小糸ちゃん、\r\n小学生の時と全然変わらないね～",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/302200201/3022002010430"
+  },
+  {
+    "id": 3022002010440,
+    "speaker": "小糸",
+    "text": "え……！？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010440"
+  },
+  {
+    "id": 3022002010450,
+    "speaker": "雛菜",
+    "text": "こうやって、遅刻しそうって\r\n手引っぱってってくれるの～",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "041",
+    "voice": "produce_events/302200201/3022002010450"
+  },
+  {
+    "id": 3022002010460,
+    "speaker": "小糸",
+    "text": "だったら雛菜ちゃんも変わってない……！",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010460"
+  },
+  {
+    "id": 3022002010470,
+    "speaker": "雛菜",
+    "text": "あは～\r\n雛菜、小糸ちゃんがいてよかったかも～",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010470"
+  },
+  {
+    "charLabel": "hinana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3022002010480,
+    "speaker": "小糸",
+    "text": "…………！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/302200201/3022002010480"
+  },
+  {
+    "id": 3022002010490,
+    "speaker": "小糸",
+    "text": "も、もう！　ほんとだよ！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010490"
+  },
+  {
+    "id": 3022002010500,
+    "speaker": "小糸",
+    "text": "わたしがいないと、だめだめなんだから！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_anger",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/302200201/3022002010500"
+  },
+  {
+    "charLabel": "koito",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "label": "end"
+  }
+]

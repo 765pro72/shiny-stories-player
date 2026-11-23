@@ -1,0 +1,135 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 4802001000130010,
+    "speaker": "かな",
+    "text": "私の髪、乱れてないかな？　大丈夫？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "802",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communication_cheers/480200100013/4802001000130010"
+  },
+  {
+    "id": 4802001000130020,
+    "speaker": "かな",
+    "text": "控室で確認したんだけど\r\nそのあとちょっと髪を触っちゃったから、気になっちゃって",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kana",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480200100013/4802001000130020"
+  },
+  {
+    "select": "いつもどおり、\r\nいい感じだ",
+    "nextLabel": "4802001000131"
+  },
+  {
+    "select": "手鏡で確認するか？",
+    "nextLabel": "4802001000132"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "特に違和感は\r\nないと思うぞ",
+    "nextLabel": "4802001000133"
+  },
+  {
+    "id": 4802001000130030,
+    "label": "4802001000131",
+    "speaker": "かな",
+    "text": "本当？　よかった\r\nこれで安心してステージに立てるわ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480200100013/4802001000130030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（かなは普段から髪に気を遣ってるからな\r\n安心できたようでよかった）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4802001000130040,
+    "label": "4802001000132",
+    "speaker": "かな",
+    "text": "じゃあ、ちょっと借りるわね\r\n……うん、よかった。大丈夫そう",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480200100013/4802001000130040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（自分の目で確認して、納得できたみたいだな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4802001000130050,
+    "label": "4802001000133",
+    "speaker": "かな",
+    "text": "微妙な反応ね。他の人に聞いたほうがよかったかも\r\nでも、もう時間がないし……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480200100013/4802001000130050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（余計にそわそわさせてしまった\r\n俺の言い方が悪かったのか……？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "id": 4901006020010,
+    "speaker": "社長",
+    "text": "なんだその曖昧な返事は……？\r\nまさかアイドルにもそんな態度ではないだろうな？",
+    "charLabel": "ceo",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "charType": "sub_characters",
+    "charId": "ceo",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00006",
+    "bgm": "001",
+    "voice": "special_communications/490100621/4901006020010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "い、いえ、そんなことはありません……！\r\nうまくやれているのか、自信が無くてつい……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901006020020,
+    "speaker": "社長",
+    "text": "フン、そういうことか……\r\nいいか、よく聞けプロデューサー",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "voice": "special_communications/490100621/4901006020020"
+  },
+  {
+    "id": 4901006020030,
+    "speaker": "社長",
+    "text": "お前が迷えばアイドルが迷う\r\n現場のスタッフや関係者もそれは同じだ",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "voice": "special_communications/490100621/4901006020030"
+  },
+  {
+    "id": 4901006020040,
+    "speaker": "社長",
+    "text": "自信が無くとも胸を張れ\r\nその時々で全力を尽くせば、そう間違いは起こらない",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "voice": "special_communications/490100621/4901006020040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "は……はい！\r\nありがとうございます、天井社長！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901006020050,
+    "speaker": "社長",
+    "text": "……それでは次の質問だ\r\nアイドルを導く上で、気を付けていることはなんだ？",
+    "textCtrl": "l",
+    "textFrame": "015",
+    "voice": "special_communications/490100621/4901006020050"
+  },
+  {
+    "select": "身だしなみや\r\n清潔感です",
+    "nextLabel": "1"
+  },
+  {
+    "select": "誠実さです",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "アイドルの\r\n売り出し方です",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "2",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "3",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

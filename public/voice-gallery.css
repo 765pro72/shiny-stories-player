@@ -1,0 +1,103 @@
+:root{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;color:#33465a;background:#f3f6fa}*{box-sizing:border-box}body{margin:0}header:not(.site-header):not(.collection-page-head){display:flex;justify-content:space-between;padding:1.2rem 4vw;background:white}a{color:#557fa7;text-decoration:none}main{max-width:94rem;margin:auto;padding:2rem 4vw}h1{margin-bottom:.4rem}.filters{display:flex;gap:.7rem;flex-wrap:wrap;margin:1.5rem 0}button,input,select{font:inherit;border:1px solid #cbd9e7;border-radius:.6rem;padding:.65rem;background:#fff;color:inherit}button{cursor:pointer}input{flex:1;min-width:14rem}#list{display:grid;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr));gap:1rem}.voice{border:0;border-radius:1rem;background:white;padding:1.1rem;text-align:left;box-shadow:0 3px 16px #324c6710;transition:transform .18s,box-shadow .18s}.voice:hover{transform:translateY(-3px);box-shadow:0 6px 20px #324c6720}.voice strong{display:block;overflow-wrap:anywhere}.voice small{display:block;margin-top:.6rem;color:#6b8197}nav{display:flex;justify-content:center;gap:1rem;align-items:center;margin:2rem}dialog{border:0;border-radius:1.4rem;padding:2rem;width:min(35rem,94vw);max-height:90vh;text-align:center;background:#f8fafc}dialog::backdrop{background:#12273e99;backdrop-filter:blur(5px)}#close{float:right}#portrait{display:block;max-height:15rem;max-width:100%;margin:1rem auto;border-radius:1rem}audio{width:100%}#subtitle{white-space:pre-wrap;line-height:1.8}#title{overflow-wrap:anywhere}body:has(dialog[open]){overflow:hidden}
+:root{--phone-sprite:url('/asset/images/ui/phone/parts.png')}
+#phone.phone-call{--u:min(calc(100vw / 1136),calc((100dvh - 64px) / 604)) !important;position:fixed;inset:0;margin:0;width:100vw;height:100dvh;max-width:none;max-height:none;border-radius:0;padding:0;overflow:hidden;background:#222b36;color:#333}
+#phone.phone-call::before{content:'';position:absolute;inset:-6px;background:url('home-assets/office.jpg') center/cover;filter:blur(3px)}
+.phone-device{position:absolute;width:calc(589 * var(--u));height:calc(604 * var(--u));left:50%;bottom:0 !important;top:auto !important;transform:translateX(-50%)}
+.phone-frame{position:absolute;inset:0;background:var(--phone-sprite) calc(-1 * var(--u)) calc(-1 * var(--u))/calc(729 * var(--u)) calc(729 * var(--u));pointer-events:none;z-index:2}
+#phoneBackground{position:absolute;left:calc(24 * var(--u));right:calc(23 * var(--u));top:calc(20 * var(--u));bottom:0;background-size:100% 100%;border-radius:calc(42 * var(--u)) calc(42 * var(--u)) 0 0}
+.phone-call #portrait{position:absolute;left:calc(175 * var(--u));top:calc(78 * var(--u));width:calc(240 * var(--u));height:calc(240 * var(--u));max-width:none;max-height:none;margin:0;border-radius:50%;background:white;object-fit:contain}
+#callState{position:absolute;left:0;right:0;top:calc(330 * var(--u));font-size:calc(40 * var(--u));margin:0;line-height:1.3}
+#callTime{position:absolute;left:0;right:0;top:calc(383 * var(--u));font-size:calc(36 * var(--u));font-variant-numeric:tabular-nums;font-weight:700}
+#callAction{position:absolute;left:calc(228 * var(--u));top:calc(442 * var(--u));width:calc(134 * var(--u));height:calc(134 * var(--u));border:0;border-radius:50%;padding:0;background:var(--phone-sprite) calc(-594 * var(--u)) calc(-139 * var(--u))/calc(729 * var(--u)) calc(729 * var(--u));z-index:3}
+#callAction.replay{background-position:calc(-594 * var(--u)) calc(-1 * var(--u))}
+.call-heading{display:none !important}.phone-call .call-heading{display:none !important}
+.phone-call #close{position:absolute;left:calc(20 * var(--u));bottom:calc(20 * var(--u));z-index:5;font-size:max(16px,calc(22 * var(--u)))}
+.phone-call .call-details{position:absolute;right:1.5vw;bottom:2vh;width:min(21vw,24rem);padding:1rem;background:#ffffffd9;border-radius:1rem;font-size:clamp(12px,.9vw,22px);z-index:5}.phone-call .call-details p{margin:.4rem 0}.phone-call #subtitle{max-height:20vh;overflow:auto}.phone-call audio{height:2.6rem}
+@media(max-aspect-ratio:1/1){.phone-call .call-details{width:94vw;left:3vw;bottom:1vh}.phone-call #close{top:1vh;bottom:auto;left:auto;right:2vw}.phone-call .call-heading{max-width:65vw}.phone-call #subtitle{max-height:8vh}}
+#phone:not(.phone-call) .phone-device{position:static;transform:none;width:auto;height:auto}#phone:not(.phone-call) .phone-frame,#phone:not(.phone-call) #phoneBackground,#phone:not(.phone-call) #callAction,#phone:not(.phone-call) #callTime,#phone:not(.phone-call) #callState{display:none}
+.voice-layout{display:grid;grid-template-columns:minmax(18rem,28%) 1fr;gap:1.5rem;align-items:start}#voicePreview{position:sticky;top:1rem;background:linear-gradient(145deg,#fff,#eee9fa);border-radius:1rem;padding:1rem;text-align:center}#previewModel{height:min(58vh,38rem);width:100%;overflow:hidden}#previewName{margin:.3rem}#previewOutfit{width:100%;font-size:.8rem}#previewSubtitle{white-space:pre-wrap;font-size:.9rem}#previewStatus{font-size:.75rem;color:#6f7b91}body.phone-filter #voicePreview{display:none}@media(max-width:800px){.voice-layout{grid-template-columns:1fr}#voicePreview{position:static}#previewModel{height:35vh}}
+.preview-actions{display:flex;gap:.35rem;flex-wrap:wrap;margin:.6rem 0}.preview-actions select{min-width:0;flex:1;font-size:.75rem;padding:.5rem}.preview-actions button{font-size:.75rem;padding:.5rem}
+
+/* Post-processed canvas shares the original model box. */
+#previewModel{position:relative}
+
+/* Character stage and a separate, scrolling voice library. */
+main{max-width:124rem;padding-top:1.2rem}main>h1{margin:.2rem 0;font-size:1.8rem}main>p{color:#7c8fa2;margin:.4rem 0}.filters{margin:1rem 0}
+.voice-layout{grid-template-columns:minmax(0,1.25fr) minmax(22rem,1fr);gap:1.5rem;align-items:start}
+#voicePreview{height:calc(100dvh - 18rem);min-height:36rem;position:sticky;top:1rem;border-radius:1.5rem;padding:0;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,#fff 5%,#eef2fb 55%,#e8e2f3);box-shadow:0 10px 40px #47607a12;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto auto auto auto auto}
+#previewName{z-index:1;font-size:1.6rem;margin:.8rem 1rem .1rem}#voiceWardrobe{display:block;font-size:.85rem;margin:.2rem auto;color:#7483a8}
+#previewModel{min-height:18rem;height:100%;width:100%;isolation:isolate}#previewModel canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.preview-actions{position:relative;z-index:1;margin:.4rem 1rem;align-items:center}.preview-actions select{background:#ffffffd9}.preview-actions .anime4k-control{font-size:.7rem;max-width:100%;flex-wrap:wrap}.preview-actions .anime4k-control select{max-width:13rem}.preview-actions .anime4k-actual{font-size:.85em}
+#previewStatus{margin:.2rem 1rem;font-size:.7rem}#previewSubtitle{margin:.3rem 1rem;min-height:1.5rem;max-height:5rem;overflow:auto;font-size:.95rem;line-height:1.6}#previewAudio{padding:0 1rem}#previewAudio audio{height:2.6rem}#previewDownload{padding:.5rem 1rem .8rem}#previewDownload:empty{padding:0}
+#list{grid-template-columns:repeat(2,minmax(0,1fr));max-height:calc(100dvh - 18rem);min-height:36rem;overflow:auto;align-content:start;padding:3px 8px 12px 3px;scrollbar-width:thin}.voice{min-height:6rem;border:2px solid transparent;padding:.9rem;box-shadow:0 3px 16px #324c6709}.voice.active{border-color:#b396d1;background:#faf6ff}.voice strong{font-size:.85rem}.voice small{font-size:.72rem}
+body.phone-filter #list{max-height:none;min-height:0;grid-template-columns:repeat(auto-fill,minmax(19rem,1fr))}
+@media(min-width:1600px){#voicePreview{min-height:38rem}#list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:950px){.voice-layout{grid-template-columns:1fr}#voicePreview{position:relative;top:auto;height:75dvh;min-height:34rem}#list{max-height:none;min-height:0;grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Keep the character visible; optional controls fold away from the stage. */
+#voicePreview{height:calc(100dvh - 7rem);min-height:46rem;grid-template-rows:auto auto minmax(22rem,1fr) auto auto auto auto auto auto}#previewModel{position:relative;overflow:hidden;min-height:22rem}#voicePreviewSettings{margin:.4rem 1rem;border:1px solid #dce3eb;border-radius:16px;background:#ffffff8c;max-height:30vh;overflow:auto}#voicePreviewSettings summary{cursor:pointer;padding:.65rem 1rem;color:#60798d;font-size:.85rem}#voicePreviewSettings .preview-actions{margin:.6rem;display:flex;flex-wrap:wrap;gap:.5rem}#voicePreviewSettings .preview-actions>select{flex:1;min-width:8rem}.preview-zoom{display:flex;align-items:center;gap:.6rem;padding:0 1rem;font-size:.85rem}.preview-zoom input{min-width:0;flex:1}#previewExpand{justify-self:end;margin:0 1rem;font-size:.75rem;padding:.3rem .7rem}#voicePreview:fullscreen{width:100vw;height:100dvh;min-height:0;border-radius:0;grid-template-rows:auto auto minmax(0,1fr) auto auto auto auto auto auto}#voicePreview:fullscreen #previewModel{min-height:0}@media(max-width:950px){#voicePreview{height:90dvh;min-height:46rem}}
+
+/* ── Single-Row Header & Compact Alignment (一行紧凑对齐) ── */
+.voice-browser .collection-heading {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  flex-wrap: nowrap !important;
+  margin-bottom: 8px !important;
+  min-height: 42px;
+}
+
+.voice-browser .collection-heading > div:first-child {
+  flex-shrink: 0;
+}
+
+.voice-browser .collection-heading > div:first-child .eyebrow {
+  margin: 0 !important;
+  font-size: 11px !important;
+}
+
+.voice-browser .collection-heading > div:first-child h2 {
+  margin: 0 !important;
+  font-size: 20px !important;
+  white-space: nowrap;
+}
+
+.voice-browser #storyTextToolbar,
+.voice-browser .voice-text-toolbar {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex-wrap: nowrap !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex: 0 1 auto;
+}
+
+.voice-browser .voice-text-toolbar button {
+  white-space: nowrap !important;
+  padding: 5px 12px !important;
+  font-size: 12px !important;
+  border-radius: 999px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.voice-browser .voice-text-toolbar button:hover {
+  background: #fff !important;
+  color: #8b3f68 !important;
+  border-color: #8b3f68 !important;
+}
+
+.voice-browser .listening-mark {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.voice-browser .filters {
+  margin: 8px 0 14px !important;
+  gap: 10px !important;
+}
+

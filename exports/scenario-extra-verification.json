@@ -1,0 +1,54 @@
+{
+  "at": "2026-11-16T01:02:49.764Z",
+  "ok": true,
+  "rows": [
+    {
+      "name": "test-home-gasha-mouth.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n[\n  {\n    name: '绯田美琴',\n    path: 'spine/idols/stand_gasha/1040250080/data.json',\n    variants: [ 'mouth_close1', 'mouth_open', 'mouth_open2' ],\n    closed: [ 'mouth_close1' ]\n  },\n  {\n    name: '七草日花',\n    path: 'spine/idols/stand_gasha/1040240080/data.json',\n    variants: [ 'mouth_close1', 'mouth_open1', 'mouth_open2' ],\n    closed: [ 'mouth_close1' ]\n  },\n  {\n    name: '樱木真乃',\n    path: 'spine/idols/stand_gasha/1030010010/data.json',\n    variants: [ 'mouth_close3', 'mouth_open', 'mouth_open2' ],\n    closed: [ 'mouth_close3' ]\n  },\n  {\n    name: '月冈恋钟',\n    path: 'spine/idols/stand_gasha/1030040010/data.json',\n    variants: [ 'mouth_close', 'mouth_open2' ],\n    closed: [ 'mouth_close' ]\n  },\n  {\n    name: '杜野凛世',\n    path: 'spine/idols/stand_gasha/1030120030/data.json',\n    variants: [ 'mouth_close1', 'mouth_open2' ],\n    closed: [ 'mouth_close1' ]\n  },\n  {\n    name: '郁田春希',\n    path: 'spine/idols/stand_gasha/1030280010/data.json',\n    variants: [ 'mouth_close1', 'mouth_open1', 'mouth_open2' ],\n    closed: [ 'mouth_close1' ]\n  }\n]\n"
+    },
+    {
+      "name": "test-home-auto-conversations.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n{\n  at: '2026-11-16T01:02:21.916Z',\n  ordinaryGroups: 785,\n  oldActivatedUpdateMerged: true,\n  automaticFirstConversation: true,\n  alternatingSpeakers: [ '1', '2' ],\n  noImmediateRepeat: true,\n  touchCancelsPendingReply: true,\n  singleMemberIneligible: true\n}\n"
+    },
+    {
+      "name": "test-story-creative-next.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n{\n  defaultAcrossLegacyEmpty: true,\n  actualAudioMiddleStart: true,\n  sameAudioObjectAcrossScenes: true,\n  explicitSameTrackRestart: true,\n  stopAndGlobal: true,\n  seekbarAndArchive: true\n}\n{\n  fullCatalog: true,\n  memberFilter: true,\n  pagination: true,\n  aiSelectionIsolated: true\n}\n{\n  selectedOnly: true,\n  editorUnchanged: true,\n  undo: true,\n  scopeRejection: true\n}\n{\n  bundled29Profiles: true,\n  labeledIDs: true,\n  selectedLinesOnly: true,\n  timedCaptionVoice: true,\n  draftIsolated: true,\n  voiceArchive: true,\n  noSavedKey: true\n}\nPASS real music continuity/offsets, full material directory, director isolation/undo and opt-in staged voices.\n"
+    },
+    {
+      "name": "test-story-language-workflow.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS canonical names/address rules, Japanese/Chinese/custom speech, editable timed lines, stale-voice detection, bilingual archive, independent translation, direct director application, Ctrl+Z, notes/favorites and no saved API key.\n"
+    },
+    {
+      "name": "test-story-segmented-speech.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS explicit mixed-language selection, phonemes, kana, single/queue, archives, stale audio, provider rejection, emotion prompts, full-width/sticky preview and compact UI. No paid API calls.\n"
+    },
+    {
+      "name": "test-translation-exchange.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\n{\n  topLevelImport: true,\n  instructions: true,\n  preview: true,\n  userOverrideApplied: true,\n  emptySkipped: true,\n  conflictRejected: true,\n  undo: true\n}\n"
+    },
+    {
+      "name": "test-interface-usability.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS font settings entry, visible home actions, narrow dialog/reset, global font across modules, stationary stage/summary and wardrobe wheel.\n"
+    },
+    {
+      "name": "test-story-text-ui.cjs",
+      "ok": true,
+      "code": 0,
+      "output": "\r\nPASS per-story export/import UI, scope/source-ID rejection, Japanese subtitle preference across home/guide/card gallery. {\n  perStoryActions: true,\n  crossStoryRejected: true,\n  lineIdVerified: true,\n  originalVerified: true\n}\n"
+    }
+  ]
+}

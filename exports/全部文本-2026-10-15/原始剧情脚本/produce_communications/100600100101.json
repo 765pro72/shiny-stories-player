@@ -1,0 +1,159 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "咲耶、何を読んでるんだ？",
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001"
+  },
+  {
+    "id": 1006001001010010,
+    "speaker": "咲耶",
+    "text": "旅行雑誌だよ\r\n見知らぬ土地での新しい出会いもいいものだと思ってね",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100101/1006001001010010"
+  },
+  {
+    "id": 1006001001010020,
+    "speaker": "咲耶",
+    "text": "プロデューサー、\r\nアナタはどこか行きたい場所はあるかな？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100101/1006001001010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "行きたい場所か……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "海が見たい",
+    "nextLabel": "1006001001011"
+  },
+  {
+    "select": "大いなる山の頂",
+    "nextLabel": "1006001001012"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "にぎやかな観光地",
+    "nextLabel": "1006001001013"
+  },
+  {
+    "id": 1006001001010030,
+    "label": "1006001001011",
+    "speaker": "咲耶",
+    "text": "いいね、揺らめく波、照りつける太陽は人を開放的にする\r\n新しい出会いを求める場所としてはうってつけだ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100101/1006001001010030"
+  },
+  {
+    "id": 1006001001010040,
+    "speaker": "咲耶",
+    "text": "フフ……それに、私も海を見るのは好きなんだ\r\n今度、一緒に見に行かないかい？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100101/1006001001010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1006001001010050,
+    "label": "1006001001012",
+    "speaker": "咲耶",
+    "text": "大いなる山の頂……？\r\n今に満足せず、さらに高みを求める……ということかな",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100101/1006001001010050"
+  },
+  {
+    "id": 1006001001010060,
+    "speaker": "咲耶",
+    "text": "フフ、アナタらしい答え方だ",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100101/1006001001010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1006001001010070,
+    "label": "1006001001013",
+    "speaker": "咲耶",
+    "text": "なるほど、人がたくさんいるというのは良いね\r\nそれだけで、旅というものが楽しくなる気がするよ",
+    "charAnim1": "wait4",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_wait",
+    "charAnim3Loop": false,
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100101/1006001001010070"
+  },
+  {
+    "id": 1006001001010080,
+    "speaker": "咲耶",
+    "text": "けど、たまには普段と違うような\r\n非日常的な場所も悪くはないと思ったんだ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100101/1006001001010080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

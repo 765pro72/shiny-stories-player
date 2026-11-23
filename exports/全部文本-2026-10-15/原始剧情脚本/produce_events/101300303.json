@@ -1,0 +1,651 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00093",
+    "fg": "002341",
+    "bgm": "0000"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "off",
+    "text": "──某日\r\n２８３プロダクションレッスン室",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00021",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "060",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "──えーっと、\r\n今日は練習風景を撮影させてもらいますので",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "カメラのことは気にせず、\r\nいつも通り練習してくださって構いません",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1013003030010,
+    "speaker": "夏葉",
+    "text": "……ええ\r\nわかりました",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "3000130030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101300303/1013003030010"
+  },
+  {
+    "id": 1013003030020,
+    "speaker": "夏葉",
+    "text": "こんな遅い時間にスタッフさんを\r\n付き合わせてしまってごめんなさい",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030020"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "いやいや、有栖川さんも\r\n無理しないでくださいね",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1013003030030,
+    "speaker": "夏葉",
+    "text": "はい！\r\n……ありがとうございます",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030030"
+  },
+  {
+    "id": 1013003030040,
+    "speaker": "夏葉",
+    "text": "それじゃあ、練習始めます\r\n……よろしくお願いします！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030040"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0358",
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00088",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "ナレーション",
+    "text": "──この日のレッスンは\r\n深夜から始まり、明け方にまで及んだ",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "fg": "off",
+    "bgm": "fade_out"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0399",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──これがこの間撮影した\r\n夏葉の練習風景の動画",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "つい１時間前くらいに公開されたよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013003030050,
+    "speaker": "夏葉",
+    "text": "……ツイスタに心配のメッセージが\r\nたくさん来ていたのは、これのせいね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101300303/1013003030050"
+  },
+  {
+    "id": 1013003030060,
+    "speaker": "夏葉",
+    "text": "『一生懸命な姿を応援したくなった』って\r\n言ってくれていた人もいたけれど……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030060"
+  },
+  {
+    "id": 1013003030070,
+    "speaker": "夏葉",
+    "text": "ナレーションと編集の仕方で\r\nなんだかすごく辛そうに見えるじゃない？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030070"
+  },
+  {
+    "id": 1013003030080,
+    "speaker": "夏葉",
+    "text": "……私は全然、そんなことないのに",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "夏葉自身はそう思っているんだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013003030090,
+    "speaker": "夏葉",
+    "text": "え……？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ひとりで練習してる夏葉、一生懸命だけど……\r\n一生懸命だからこそ、必死で辛そうに見えるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013003030100,
+    "speaker": "夏葉",
+    "text": "……さっきの動画みたいに？",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、\r\n練習動画、もう一回見直すか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013003030110,
+    "speaker": "夏葉",
+    "text": "──ええ、お願い",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030110"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "se": "0399",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "se": "0399",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "008",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1013003030120,
+    "speaker": "夏葉",
+    "text": "…………確かに\r\nアナタの言うとおりかもしれないわ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101300303/1013003030120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013003030130,
+    "speaker": "夏葉",
+    "text": "いつもユニットでダンスレッスンしている動画だと\r\nなんていうか……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030130"
+  },
+  {
+    "id": 1013003030140,
+    "speaker": "夏葉",
+    "text": "……もっと楽しそうに見えるのに",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、そうなんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013003030150,
+    "speaker": "夏葉",
+    "text": "どうして…………",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "自分でも意識しないうちに、\r\n肩に力が入ってるのかもな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……夏葉にとってそういう力を抜いてくれるのが、\r\n『放課後クライマックスガールズ』なのかもしれない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013003030160,
+    "speaker": "夏葉",
+    "text": "…………！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030160"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "この間夏葉が言っていたとおりでさ\r\n『放課後クライマックスガールズ』は……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "２８３プロに所属することになった、\r\nそれまで面識のない５人──……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それも、年齢も性格も\r\nバラバラの５人が集まったユニットだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも偶然っていうにはできすぎなくらい\r\n色んなことがぴったりハマった５人だと思う",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013003030170,
+    "speaker": "夏葉",
+    "text": "ええ、そうね\r\n……私もそう思うわ",
+    "charAnim1": "touch",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101300303/1013003030170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お互いに補い合って、学びあって\r\nここまできたけどさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ユニットを離れている今だからこそ\r\n気が付くこともあるよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013003030180,
+    "speaker": "夏葉",
+    "text": "……ユニットとソロじゃ、\r\nダンスも歌も全然やり方が違うわ",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030180"
+  },
+  {
+    "id": 1013003030190,
+    "speaker": "夏葉",
+    "text": "どっちがいい、なんてことは無いし\r\n私はどっちも完璧にこなしたいけれど……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030190"
+  },
+  {
+    "id": 1013003030200,
+    "speaker": "夏葉",
+    "text": "ひとりのステージは\r\n驚くくらい広いし、少し寂しいわね",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013003030210,
+    "speaker": "夏葉",
+    "text": "でも、ひとつだけ\r\n絶対変わらないものもあるの",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013003030220,
+    "speaker": "夏葉",
+    "text": "──ソロだろうとユニットだろうと、\r\n私がトップを目指すことには変わりない",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030220"
+  },
+  {
+    "id": 1013003030230,
+    "speaker": "夏葉",
+    "text": "……いい報告をしなくちゃね",
+    "charAnim2": "face_close",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013003030240,
+    "speaker": "夏葉",
+    "text": "ねえ、プロデューサー\r\nこの後、自主レッスンに付き合ってちょうだい！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030240"
+  },
+  {
+    "id": 1013003030250,
+    "speaker": "夏葉",
+    "text": "気が付いたことがあったら、なんでも教えてほしいの\r\n……全部完璧にしたいから！",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300303/1013003030250"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

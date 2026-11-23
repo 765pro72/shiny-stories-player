@@ -1,0 +1,7 @@
+// Prioritize card covers so the album is usable while the full offline mirror runs.
+const fs=require('fs'),path=require('path');
+const root=path.resolve(__dirname,'..'),art=require('../data/card-art.json');
+const files=[...new Set(Object.values(art).map(a=>`images/content/${a.type}/card/${a.id}.jpg`))];
+const failures=[];let next=0,done=0;
+async function worker(){while(next<files.length){const p=files[next++],target=path.join(root,'cache',p);if(fs.existsSync(target)&&fs.statSync(target).size>0){done++;continue}let error;for(let attempt=0;attempt<3;attempt++)try{const res=await fetch('https://viewer.shinycolors.moe/'+p,{signal:AbortSignal.timeout(30000)});if(!res.ok)throw Error(String(res.status));const bytes=Buffer.from(await res.arrayBuffer());if(!bytes.length)throw Error('empty response');fs.mkdirSync(path.dirname(target),{recursive:true});const temp=target+'.'+process.pid+'.part';fs.writeFileSync(temp,bytes);fs.renameSync(temp,target);error=null;break}catch(e){error=String(e)}if(error)failures.push({path:p,error});if(++done%100===0)console.log(`card art: ${done}/${files.length}, failures ${failures.length}`)}}
+Promise.all(Array.from({length:16},worker)).then(()=>{fs.mkdirSync(path.join(root,'exports'),{recursive:true});fs.writeFileSync(path.join(root,'exports','card-art-download-failures.json'),JSON.stringify(failures,null,2));console.log(`card art complete: ${done}/${files.length}, failures ${failures.length}`)})

@@ -1,0 +1,603 @@
+[
+  {
+    "id": 4901002030010,
+    "speaker": "はづき",
+    "text": "あ～……\r\nお気遣いありがとうございます～……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "0010",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00073",
+    "bgm": "001",
+    "voice": "special_communications/490100203/4901002030010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いえいえ\r\nそれじゃあ、ちょっと待っていてください",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black11",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00195",
+    "se": "0116",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black11",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "う～ん……薬局にも人がいないなんて……\r\nやっぱり、何かおかしいような……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もしかして、みんな無人島にでも行ってしまったんじゃ──",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん！？　向こうから人の声が……！\r\nはづきさん以外にも人がいたのか……？",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "とにかく行ってみよう！",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "textFrame": "off",
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4901002030020,
+    "speaker": "果穂",
+    "text": "～♪",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "009",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490100203/4901002030020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あれ？\r\n向こうにいるのは果穂か……？",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おーい、果穂ー！",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002030030,
+    "speaker": "果穂",
+    "text": "あっ、プロデューサーさんっ\r\nえへへ、こんなところで会うなんて──",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100203/4901002030030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "か、果穂！\r\n危ない！！",
+    "textCtrl": "p",
+    "textFrame": "0011",
+    "bgm": "off"
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "se": "0385",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "果穂ー！！",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "y": 100,
+      "alpha": 0,
+      "time": 450
+    },
+    "se": "0133",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "se": "0345",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4901002030040,
+    "speaker": "果穂",
+    "text": "いたた……っ\r\nお尻、打っちゃいました……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "009",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "y": 100,
+      "alpha": 0,
+      "time": 700
+    },
+    "voice": "special_communications/490100203/4901002030040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "か、果穂……？\r\nその……平気、なのか……？",
+    "textCtrl": "p",
+    "textFrame": "0011",
+    "bgm": "013"
+  },
+  {
+    "id": 4901002030050,
+    "speaker": "果穂",
+    "text": "あ！　しまった……！\r\nこれは……その……！",
+    "charAnim1": "touch",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100203/4901002030050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ぶつかってきた車はへこんでるし……\r\n一体何がどうなって……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002030060,
+    "speaker": "果穂",
+    "text": "えっとですね……あの、その……",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100203/4901002030060"
+  },
+  {
+    "id": 4901002030070,
+    "speaker": "果穂",
+    "text": "──プロデューサーさん、ごめんなさいっ",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100203/4901002030070"
+  },
+  {
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "果穂！？　待ってくれ！",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "くっ……！\r\n早く追いかけないと……！",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002030080,
+    "speaker": "摩美々",
+    "text": "…………",
+    "charAnim1": "touch",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "005",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490100203/4901002030080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "わっ！？\r\nま、摩美々か……？",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002030090,
+    "speaker": "摩美々",
+    "text": "……ふふー、プロデューサー\r\nこれ、あげまぁす",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100203/4901002030090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？　手紙……？\r\nこれは一体……？",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002030100,
+    "speaker": "摩美々",
+    "text": "ふふー……\r\nついてきたら、教えてあげますよー",
+    "charAnim1": "play",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100203/4901002030100"
+  },
+  {
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、おい……！\r\n行ってしまった……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "う～ん……摩美々のことも気になるけど\r\n果穂のことも心配だ……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ここは……",
+    "textCtrl": "l",
+    "textFrame": "0011"
+  },
+  {
+    "select": "電話をかけてみるか",
+    "nextLabel": "3"
+  },
+  {
+    "select": "果穂を追いかけよう",
+    "nextLabel": "1"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "摩美々に真意を尋ねよう",
+    "nextLabel": "2"
+  },
+  {
+    "label": "1",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "2",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "3",
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4901002030110,
+    "speaker": "社長",
+    "text": "私だ",
+    "textCtrl": "p",
+    "textFrame": "0012",
+    "voice": "special_communications/490100203/4901002030110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え！？\r\n社長、ですか……？",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002030120,
+    "speaker": "社長",
+    "text": "何か用か？",
+    "textCtrl": "p",
+    "textFrame": "0012",
+    "voice": "special_communications/490100203/4901002030120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、いえ……！\r\nアイドルの携帯にかけたつもりだったのですが……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002030130,
+    "speaker": "社長",
+    "text": "まぁいい。ちょうど話したいことがあったからな\r\n少し時間いいか？",
+    "textCtrl": "p",
+    "textFrame": "0012",
+    "voice": "special_communications/490100203/4901002030130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あっ、はい\r\nわかりました",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black12",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black12",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ふぅ……少し長くなってしまったな\r\n果穂と摩美々は……さすがにもういないよな……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "一旦事務所に戻ろう……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black13",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00073",
+    "se": "0116",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black13",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あれ、はづきさん……？\r\nいないのか……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おーい……誰か、いたら返事してくれ～……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "誰か～……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "effectLabel": "black14",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "still": "49010020301"
+  },
+  {
+    "effectLabel": "black14",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "text": "『古びたメモを発見した』",
+    "textCtrl": "p",
+    "textFrame": "0010"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "end"
+  }
+]

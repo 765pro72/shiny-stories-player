@@ -1,0 +1,168 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────あれ？　おかしいな……\r\nテーブルに置いておいたはずなのに……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ルカ……\r\nすまん、ここにあった資料だけど────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1026001001410010,
+    "speaker": "ルカ",
+    "text": "うるせェな\r\nあっちのデスクの上にあんだろ……！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "026",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102600100141/1026001001410010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、本当だ……\r\nもしかして、ルカが片付けておいてくれたのか？",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "ありがとう\r\nこの資料だけど……",
+    "nextLabel": "1026001001411"
+  },
+  {
+    "select": "ありがとう\r\n助かるよ",
+    "nextLabel": "1026001001412"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "綺麗にしてくれて\r\nありがとう",
+    "nextLabel": "1026001001413"
+  },
+  {
+    "id": 1026001001410020,
+    "label": "1026001001411",
+    "speaker": "ルカ",
+    "text": "もう見た……\r\n仕事のオファーだろ？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100141/1026001001410020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、そうなんだ\r\nちょっと、これから話せるか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1026001001410030,
+    "label": "1026001001412",
+    "speaker": "ルカ",
+    "text": "勘違いすんなよ\r\n私がするわけねェだろ……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100141/1026001001410030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そ、そうか……\r\nでも、教えてくれてありがとう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1026001001410040,
+    "label": "1026001001413",
+    "speaker": "ルカ",
+    "text": "オメェが汚すぎんだよ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100141/1026001001410040"
+  },
+  {
+    "id": 1026001001410050,
+    "speaker": "ルカ",
+    "text": "めんどくせぇ……",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100141/1026001001410050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

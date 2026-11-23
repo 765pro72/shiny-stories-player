@@ -1,0 +1,245 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "008"
+  },
+  {
+    "id": 6902001070010,
+    "speaker": "社長",
+    "text": "お前、担当アイドルのことをどう思っている？",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602500107/6902001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……たしかに負けてしまいましたけど、\r\n彼女こそが最高のアイドルだと思っています",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6902001070020,
+    "speaker": "社長",
+    "text": "……！　そうか……",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602500107/6902001070020"
+  },
+  {
+    "id": 6901001070010,
+    "speaker": "はづき",
+    "text": "ふふ\r\n社長が聞きたかった言葉、そのまま出てきましたね",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/602500107/6901001070010"
+  },
+  {
+    "id": 6901001070020,
+    "speaker": "はづき",
+    "text": "もし違う言葉が出てきたら、\r\n説教してやるって言って聞かなかったのに",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/602500107/6901001070020"
+  },
+  {
+    "id": 6902001070030,
+    "speaker": "社長",
+    "text": "……うるさいぞ。とにかく、\r\nそういうことなら私から言うことはない",
+    "charAnim1": "wait2",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602500107/6902001070030"
+  },
+  {
+    "id": 6902001070040,
+    "speaker": "社長",
+    "text": "さあ、早くその最高のアイドルに\r\n会いに行ってこい",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/602500107/6902001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい！",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00021",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……美琴……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6025001070010,
+    "speaker": "美琴",
+    "text": "そんな顔しないの、プロデューサー",
+    "charAnim1": "think1",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "025",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/602500107/6025001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だって……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6025001070020,
+    "speaker": "美琴",
+    "text": "結果を聞いた時、応援してくれてた人たちとか\r\n……プロデューサーの顔が思い浮かんだの",
+    "charAnim1": "wait4",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602500107/6025001070020"
+  },
+  {
+    "id": 6025001070030,
+    "speaker": "美琴",
+    "text": "もっと頑張っていればって、\r\nみんなに、申し訳なくて……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close3",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602500107/6025001070030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "………………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6025001070040,
+    "speaker": "美琴",
+    "text": "だけど、みんなが私と同じような気持ちに\r\nなっていないといいなって思うの",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602500107/6025001070040"
+  },
+  {
+    "id": 6025001070050,
+    "speaker": "美琴",
+    "text": "たくさん練習して、たくさんサポートしてもらって\r\n……たくさん、応援してもらった",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602500107/6025001070050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……うん、そうだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6025001070060,
+    "speaker": "美琴",
+    "text": "私たちみんな、よくやったと思う\r\nだから……ありがとう",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/602500107/6025001070060"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

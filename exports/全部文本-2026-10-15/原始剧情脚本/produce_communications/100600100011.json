@@ -1,0 +1,157 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう、咲耶",
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001"
+  },
+  {
+    "id": 1006001000110010,
+    "speaker": "咲耶",
+    "text": "ああ、おはよう。プロデューサー",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100011/1006001000110010"
+  },
+  {
+    "id": 1006001000110020,
+    "speaker": "咲耶",
+    "text": "今日もいい天気だね\r\nなにかいいことがありそうだ",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100011/1006001000110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（朝から爽やかだな）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "気持ちいい朝だよな",
+    "nextLabel": "1006001000111"
+  },
+  {
+    "select": "精一杯サポートする",
+    "nextLabel": "1006001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "何か素敵な出会いが\r\nあればいいな",
+    "nextLabel": "1006001000113"
+  },
+  {
+    "id": 1006001000110030,
+    "label": "1006001000111",
+    "speaker": "咲耶",
+    "text": "ああ、こんな日はいい出会いがありそうだね",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_smile",
+    "charAnim3Loop": false,
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100011/1006001000110030"
+  },
+  {
+    "id": 1006001000110040,
+    "speaker": "咲耶",
+    "text": "フフ。新たな出会いを求め、早速出かけようじゃないか\r\n準備はいいかい、プロデューサー？",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100011/1006001000110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1006001000110050,
+    "label": "1006001000112",
+    "speaker": "咲耶",
+    "text": "ありがとう。頼りにしているよ、プロデューサー",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100011/1006001000110050"
+  },
+  {
+    "id": 1006001000110060,
+    "speaker": "咲耶",
+    "text": "でも、すぐに仕事の話とはアナタらしい\r\nアナタとは仕事だけの関係に留まらず、仲良くなりたいな",
+    "charAnim1": "shy1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100011/1006001000110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1006001000110070,
+    "label": "1006001000113",
+    "speaker": "咲耶",
+    "text": "ああ、そうだね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100011/1006001000110070"
+  },
+  {
+    "id": 1006001000110080,
+    "speaker": "咲耶",
+    "text": "さあ、もう出発の時間だ\r\n行こうか、プロデューサー",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100011/1006001000110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

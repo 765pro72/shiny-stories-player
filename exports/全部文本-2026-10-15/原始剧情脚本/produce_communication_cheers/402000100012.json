@@ -1,0 +1,115 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019"
+  },
+  {
+    "id": 4020001000120010,
+    "speaker": "透",
+    "text": "──え、なんかみんな\r\nマネージャーとかと手握ってる",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communication_cheers/402000100012/4020001000120010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……ああ、まぁ\r\n本番前は緊張もマックスだろうからな──）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "透も握るか？",
+    "nextLabel": "4020001000121"
+  },
+  {
+    "select": "透は大丈夫か？",
+    "nextLabel": "4020001000122"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "気にしなくていい",
+    "nextLabel": "4020001000123"
+  },
+  {
+    "id": 4020001000120020,
+    "label": "4020001000121",
+    "speaker": "透",
+    "text": "え、いいよ\r\nプロデューサーでしょ、緊張してるの",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402000100012/4020001000120020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（通常運転だ、透）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4020001000120030,
+    "label": "4020001000122",
+    "speaker": "透",
+    "text": "うん\r\n……え、握手しとく？",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402000100012/4020001000120030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（はは、大丈夫そうだ）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4020001000120040,
+    "label": "4020001000123",
+    "speaker": "透",
+    "text": "えー\r\nなんか、そう言われると",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402000100012/4020001000120040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（す、すまん……ちゃんと気持ちを上げてあげないと）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

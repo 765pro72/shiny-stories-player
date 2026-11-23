@@ -1,0 +1,1 @@
+const fs=require('fs'),s=fs.readFileSync('public/player/lib/pixi.js','utf8');for(const term of ['prototype.toFontString','measureFont =','measureFont=function','measureFont = function','BASELINE_SYMBOL']){const i=s.indexOf(term);console.log(term,i,i>=0?s.slice(Math.max(0,i-120),i+2300):'')}

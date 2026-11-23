@@ -1,0 +1,752 @@
+[
+  {
+    "textFrame": "off",
+    "bgm": "0000"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00034",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1001003030010,
+    "speaker": "真乃",
+    "text": "……おはようございます",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう──\r\n……あれ、真乃？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……確か今日は、\r\n学校のグループ課題をやる日だったよな……？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ずいぶん早い時間に、どうしたんだ？\r\nオフの予定だったはずだけど……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003030020,
+    "speaker": "真乃",
+    "text": "……あ……え、えっと……\r\nその…………",
+    "charAnim1": "sad1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……まぁ、立ち話もなんだしソファーに──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00224",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 1001003030030,
+    "speaker": "真乃",
+    "text": "──ぷ、プロデューサーさん、あの……っ\r\n今から、レッスン場をお借りすることはできませんかっ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え……？　それはかまわないと思うが……\r\nでも、今日は──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "textFrame": "off",
+    "bg": "00034",
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、わかった、\r\n少し確認するから──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃も、そんな入り口に立ったままじゃなくて\r\nソファーで座って待っててくれ、な？",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003030040,
+    "speaker": "真乃",
+    "text": "あ……\r\nは、はい……っ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030040"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──真乃お待たせ\r\nレッスン場、おさえたよ",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "056"
+  },
+  {
+    "id": 1001003030050,
+    "speaker": "真乃",
+    "text": "あ……\r\nありがとうございます……っ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ただ、すぐの時間は空いてなくてな、\r\nもう少し待ってもらうことになるんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お茶淹れたからさ、\r\n時間までゆっくりしてくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0166",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1001003030060,
+    "speaker": "真乃",
+    "text": "ほわ……飲み物まで……\r\nす、すみません、プロデューサーさん……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、いいんだ、気にしないでくれ\r\n俺もちょうど休憩しようと思ってたタイミングだったし",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "温かいうちにどうぞだ",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003030070,
+    "speaker": "真乃",
+    "text": "……ありがとうございます、いただきます",
+    "charAnim1": "sad1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030070"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 1001003030080,
+    "speaker": "真乃",
+    "text": "──……美味しいです",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030080"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "よかった……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……あのさ、真乃……\r\n話したくなかったら無理には聞かないけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……今日、何かあったのか？\r\n本当は、クラスのみんなと課題やるんだったよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003030090,
+    "speaker": "真乃",
+    "text": "──……っ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "0000",
+    "voice": "produce_events/100100303/1001003030090"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1001003030100,
+    "speaker": "真乃",
+    "text": "何かあったわけではないんです……\r\nでも……その……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030100"
+  },
+  {
+    "charAnim1": "think",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1001003030110,
+    "speaker": "真乃",
+    "text": "……今日の課題、\r\nクラスのお友達が他のみんなとやっておくからって……",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "057",
+    "voice": "produce_events/100100303/1001003030110"
+  },
+  {
+    "id": 1001003030120,
+    "speaker": "真乃",
+    "text": "私は、レッスンとかお仕事で忙しいだろうからって……\r\n気を遣って言ってくれたんです……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030120"
+  },
+  {
+    "id": 1001003030130,
+    "speaker": "真乃",
+    "text": "でも、私……この日のために予定を空けたこと\r\n言わなきゃいけなかったのに、伝えられなくて……",
+    "charAnim1": "wait_return_L",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030130"
+  },
+  {
+    "id": 1001003030140,
+    "speaker": "真乃",
+    "text": "何度も何度も、伝えなきゃって思ったのに……",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030140"
+  },
+  {
+    "id": 1001003030150,
+    "speaker": "真乃",
+    "text": "灯織ちゃんやめぐるちゃんにお話するみたいには\r\n……できなくて……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030150"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1750
+  },
+  {
+    "id": 1001003030160,
+    "speaker": "真乃",
+    "text": "……私、ひとりじゃ……\r\nなんにもできてないんだって……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003030170,
+    "speaker": "真乃",
+    "text": "……この先、『G.R.A.D.』の予選も控えているのに\r\n今のままじゃダメだって",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030170"
+  },
+  {
+    "id": 1001003030180,
+    "speaker": "真乃",
+    "text": "もっともっと頑張らなきゃって思って……っ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030180"
+  },
+  {
+    "id": 1001003030190,
+    "speaker": "真乃",
+    "text": "何か、なんでもいいから何かやらなくちゃって\r\nだから──",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……だから\r\n予選に向けてレッスンをしておこうって思ったんだな",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003030200,
+    "speaker": "真乃",
+    "text": "は、はい……\r\n……あの……その、す、すみません……っ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030200"
+  },
+  {
+    "id": 1001003030210,
+    "speaker": "真乃",
+    "text": "わ、私のわがままで今日の予定を空けていただいたのに……\r\nちゃんとお話しないまま、レッスンを入れて欲しいなんて",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、それはいいんだよ\r\n誰だって急に予定が変わることもあるんだからさ",
+    "charAnim2": "face_close2",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃の予定が空いて、\r\nレッスンできるのはいいことだと思うし──",
+    "charAnim2": "face_shy",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ただ、今日の真乃は少しだけ元気がないような気がしてな\r\n無理してないかだけ心配だったんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003030220,
+    "speaker": "真乃",
+    "text": "──無理はしていないです……っ\r\nその、本当に私のわがままで……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……前にも言ったけど、わがままなんかじゃないよ\r\nだからそんなに申し訳なく思わなくていいんだ",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃が無理してないならさ\r\n俺もどんなことでもサポートしていくから……！",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003030230,
+    "speaker": "真乃",
+    "text": "──っ\r\nあ、ありがとうございます……っ",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……こちらこそ話聞かせてくれてありがとう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──お、そろそろ時間になるか……\r\nレッスン、真乃の思うように頑張っておいで",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1001003030240,
+    "speaker": "真乃",
+    "text": "はいっ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030240"
+  },
+  {
+    "id": 1001003030250,
+    "speaker": "真乃",
+    "text": "あの、本当にありがとうございます、プロデューサーさんっ\r\nそれじゃあ私、いってきますね……っ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100100303/1001003030250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、いってらっしゃい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "hello",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2750
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 700
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0114",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

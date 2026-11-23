@@ -1,0 +1,221 @@
+[
+  {
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 7902001020010,
+    "speaker": "社長",
+    "text": "結果は聞いた\r\n……ここまでだったようだな",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700700102/7902001020010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい。目標には、届きませんでした",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001020010,
+    "speaker": "はづき",
+    "text": "『W.I.N.G.』はあらゆるアイドルが\r\n憧れるステージですからね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700700102/7901001020010"
+  },
+  {
+    "id": 7901001020020,
+    "speaker": "はづき",
+    "text": "道はとっても険しかった、\r\nということなのでしょう……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/700700102/7901001020020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "結果を出せず、申し訳ありませんでした……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001020020,
+    "speaker": "社長",
+    "text": "……私たちに謝っている場合じゃない\r\n彼女が、お前を待っているだろう？",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700700102/7902001020020"
+  },
+  {
+    "id": 7902001020030,
+    "speaker": "社長",
+    "text": "つらいだろうが、これもプロデューサーの仕事だ",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/700700102/7902001020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLabel": "yuika",
+    "charType": "characters",
+    "charId": "007",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "結華、一次審査の結果だけど……通過、できなかった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7007001020010,
+    "speaker": "結華",
+    "text": "やっぱりダメかー。ミラクルが起きて受かっちゃったり？\r\nとか思ったんだけどなー",
+    "charAnim1": "shy2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700700102/7007001020010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……結果はダメだったかもしれないけど、\r\n結華が頑張っていたことは知ってる。だから……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7007001020020,
+    "speaker": "結華",
+    "text": "あはは、ありがとプロデューサー！\r\nでも三峰、まだまだやる気いっぱいだから大丈夫！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700700102/7007001020020"
+  },
+  {
+    "id": 7007001020030,
+    "speaker": "結華",
+    "text": "っていうか、落ち込んでるのは\r\nプロデューサーの方なんじゃない？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700700102/7007001020030"
+  },
+  {
+    "id": 7007001020040,
+    "speaker": "結華",
+    "text": "元気出してよ、三峰もまた次のチャンスに向けて\r\n頑張るんだからさ！　ね？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700700102/7007001020040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな、すまない……！\r\nまだ、終わったわけじゃないもんな！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7007001020050,
+    "speaker": "結華",
+    "text": "そうそう、その意気その意気！\r\nその感じで、今後とも三峰のこと、よろしく頼むからね！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "yuika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/700700102/7007001020050"
+  },
+  {
+    "label": "end"
+  }
+]

@@ -1,0 +1,1654 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0008",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4001009060010,
+    "text": "ヒカリの……その先には、何があるのかな",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400100906/4001009060010"
+  },
+  {
+    "id": 4001009060020,
+    "text": "キラキラした、そのしっぽだけでも",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400100906/4001009060020"
+  },
+  {
+    "id": 4001009060030,
+    "text": "捕まえられたらいいのに",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "game_event_communications/400100906/4001009060030"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00127",
+    "bgm": "0000",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0342",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001009060040,
+    "speaker": "めぐる",
+    "text": "じゃあね、真乃！\r\nプロデューサー、ありがとう！",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charType": "idols",
+    "charId": "1040030010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100906/4001009060040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おう。親御さんによろしくな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0342b",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black5",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLabel": "mano",
+    "charType": "idols",
+    "charId": "1040010010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 101
+  },
+  {
+    "bg": "00048",
+    "fg": "000481",
+    "effectLabel": "black5",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001009060050,
+    "speaker": "真乃",
+    "text": "めぐるちゃん、バイバイっ……",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060050"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim4": "eye_right",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "se": "0345",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4001009060060,
+    "speaker": "真乃",
+    "text": "…………",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060060"
+  },
+  {
+    "charLabel": "mano",
+    "textFrame": "off",
+    "se": "0335",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……えーっと、真乃の家は……\r\n大通りに出た方が早いか……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060070,
+    "speaker": "真乃",
+    "text": "あの、すみません……\r\nおうちまで送っていただいて……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060070"
+  },
+  {
+    "id": 4001009060080,
+    "speaker": "真乃",
+    "text": "……プロデューサーさんも\r\nすごく遅くなっちゃって……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "何言ってるんだ。これも俺の仕事なんだから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それに、連絡をくれたのは良い判断だったって思う\r\n……ありがとな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060090,
+    "speaker": "真乃",
+    "text": "そ、それは、私が決めたわけじゃなくて……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060090"
+  },
+  {
+    "id": 4001009060100,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060100"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "mano"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はは。今日はみんな、よく頑張ったよ\r\n真乃も、着くまで眠ってていいからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060110,
+    "speaker": "真乃",
+    "text": "は、はい……\r\nあの……ありがとうございます……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どういたしましてだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "fg": "off"
+  },
+  {
+    "bg": "00093",
+    "bgEffect": "blur",
+    "se": "0335",
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "id": 4001009060120,
+    "speaker": "真乃",
+    "text": "……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060120"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0182",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001009060130,
+    "speaker": "真乃",
+    "text": "わ、めぐるちゃん……っ",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bg": "00048",
+    "fg": "000481",
+    "voice": "game_event_communications/400100906/4001009060130"
+  },
+  {
+    "id": 4001009060140,
+    "speaker": "真乃",
+    "text": "──写真……いっぱい",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060140"
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001009060150,
+    "speaker": "めぐる",
+    "text": "『あーん！』",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060150"
+  },
+  {
+    "id": 4001009060160,
+    "speaker": "めぐる",
+    "text": "『餃子　また食べたいねっ』",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060160"
+  },
+  {
+    "id": 4001009060170,
+    "speaker": "真乃",
+    "text": "ふふ",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060170"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001009060180,
+    "speaker": "めぐる",
+    "text": "『きらきらカッコイイ警察署長さん！』",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060180"
+  },
+  {
+    "id": 4001009060190,
+    "speaker": "真乃",
+    "text": "ふふふ……\r\n灯織ちゃん、真ん中だ……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060190"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4001009060200,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060200"
+  },
+  {
+    "id": 4001009060210,
+    "speaker": "真乃",
+    "text": "灯織ちゃん……",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060210"
+  },
+  {
+    "id": 4001009060220,
+    "speaker": "真乃",
+    "text": "めぐるちゃん……",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060220"
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "blank",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00000",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bgm": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001009060230,
+    "speaker": "真乃",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060230"
+  },
+  {
+    "id": 4001009060240,
+    "speaker": "真乃",
+    "text": "真ん中……",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060240"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bg": "00048",
+    "fg": "000481",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ん？　どうした、真乃\r\n眠ってるんじゃないのか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060250,
+    "speaker": "真乃",
+    "text": "あ、プロデューサーさん……\r\nいえっ……",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060250"
+  },
+  {
+    "id": 4001009060260,
+    "speaker": "真乃",
+    "text": "写真を見てて……\r\n……今日、いっぱい撮ったんですっ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、さっき言ってた餃子とか？\r\n今日はほんとに、いろいろあったもんな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お土産までもらっちゃって\r\n帰ったら、早速頂くよ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060270,
+    "speaker": "真乃",
+    "text": "は、はいっ……\r\n…………",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060270"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "se": "0385",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "id": 4001009060280,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060280"
+  },
+  {
+    "id": 4001009060290,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……真乃？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060300,
+    "speaker": "真乃",
+    "text": "あ、はいっ……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうかしたか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060310,
+    "speaker": "真乃",
+    "text": "い、いえ…………",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060310"
+  },
+  {
+    "id": 4001009060320,
+    "speaker": "真乃",
+    "text": "…………\r\n…………あの、プロデューサーさん",
+    "charAnim1": "shy1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060320"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060330,
+    "speaker": "真乃",
+    "text": "あの…………\r\nどうして私が、センターなんですか？",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060340,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060340"
+  },
+  {
+    "id": 4001009060350,
+    "speaker": "真乃",
+    "text": "…………そ、その、みんなの前で乾杯って言ったり……\r\n真ん中に立って歌ったり、写真を撮ったり──",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060350"
+  },
+  {
+    "id": 4001009060360,
+    "speaker": "真乃",
+    "text": "灯織ちゃん、今日もとってもかっこよくて、\r\nきらきらしてて……",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060360"
+  },
+  {
+    "id": 4001009060370,
+    "speaker": "真乃",
+    "text": "めぐるちゃんも、知らない駅に急に来ちゃったのに、\r\n落ち着いてて、みんなを引っ張ってくれて……",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060370"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060380,
+    "speaker": "真乃",
+    "text": "私は……──",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060380"
+  },
+  {
+    "id": 4001009060390,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060390"
+  },
+  {
+    "id": 4001009060400,
+    "speaker": "真乃",
+    "text": "そ、その…………\r\n…………急に、ごめんなさい……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060400"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………真乃、いいんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060410,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060410"
+  },
+  {
+    "id": 4001009060420,
+    "speaker": "真乃",
+    "text": "あの、私……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060420"
+  },
+  {
+    "id": 4001009060430,
+    "speaker": "真乃",
+    "text": "灯織ちゃんとか、めぐるちゃんみたいに……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060430"
+  },
+  {
+    "id": 4001009060440,
+    "speaker": "真乃",
+    "text": "…………すごくないなって",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060440"
+  },
+  {
+    "id": 4001009060450,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060450"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060460,
+    "speaker": "真乃",
+    "text": "……\r\nだから……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060460"
+  },
+  {
+    "id": 4001009060470,
+    "speaker": "真乃",
+    "text": "真ん中に立ってて……\r\nいいのかなって…………",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060470"
+  },
+  {
+    "id": 4001009060480,
+    "speaker": "真乃",
+    "text": "──すみません…………",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060480"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうか",
+    "charAnim4": "blank",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ありがとな、真乃",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それで……ごめんな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060490,
+    "speaker": "真乃",
+    "text": "…………プロデューサーさん……？",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060490"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃、俺に任されたことだからって\r\n悩んでること、黙ってたんだよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "頑張って教えてくれて、ありがとう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060500,
+    "speaker": "真乃",
+    "text": "あ、あの……いえ……──",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060500"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……真乃、聞いてくれるか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺の中には、真乃に真ん中に立っていてもらいたい理由が\r\nはっきりあるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060510,
+    "speaker": "真乃",
+    "text": "…………プロデューサーさん……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060510"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、できたらそれは、俺が口で言うよりも",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃にも自分で考えてもらいたいし、\r\n自分で自分の場所を見つけていってもらいたいんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060520,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060520"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "悪い……なんか、説教みたいだよな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060530,
+    "speaker": "真乃",
+    "text": "ち、違うんですっ。あの……──",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060530"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ごめんな\r\nただ、これは真乃だけが抱えてる悩みじゃない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "みんな……自分はどこに立って、\r\nどんな風に仲間の役に立てるんだろうかって考えてる",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……俺にはそう見えるし、\r\nそうやって考えてくれたら嬉しいって思うよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060540,
+    "speaker": "真乃",
+    "text": "…………みんなも……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060540"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "fg": "off"
+  },
+  {
+    "bg": "00093",
+    "bgEffect": "fade",
+    "se": "0385",
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "blur",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black6",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bg": "00048",
+    "fg": "000481",
+    "effectLabel": "black6",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これは、ヒントっていうかさ──\r\n『真ん中』って、他の誰かより優秀ってことじゃないんだ",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060550,
+    "speaker": "真乃",
+    "text": "……？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060550"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃も灯織もめぐるも、他のユニットのみんなも\r\n全員特別だし、俺は尊敬してる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060560,
+    "speaker": "真乃",
+    "text": "は、はいっ……\r\nそれは、私もですっ……",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060560"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん。ははっ、そうだよな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃が真ん中に立っててくれると、\r\n俺、そのことを思い出せるんだよ",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "みんな特別だし、\r\nみんな普通の女の子だ",
+    "nextLabel": "1"
+  },
+  {
+    "id": 4001009060570,
+    "label": "1",
+    "speaker": "真乃",
+    "text": "……\r\nプロデューサーさん……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060570"
+  },
+  {
+    "id": 4001009060580,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060580"
+  },
+  {
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……なんか、ふわっとした話で申し訳ないな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いっぱい考えてくれてありがとう、真乃",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060590,
+    "speaker": "真乃",
+    "text": "は、はい…………\r\n…………",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060590"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00127",
+    "fg": "off",
+    "bgm": "0008",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0342",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0342b",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "じゃあ、おやすみ、真乃\r\nよーく休んでくれよ！",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001009060600,
+    "speaker": "真乃",
+    "text": "はい……っ\r\nあの……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060600"
+  },
+  {
+    "id": 4001009060610,
+    "speaker": "真乃",
+    "text": "送ってくださって、ありがとうございましたっ\r\nそれから──……",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060610"
+  },
+  {
+    "id": 4001009060620,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060620"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃、リスペクトだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "みんなもすごいし、真乃もすごい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060630,
+    "speaker": "真乃",
+    "text": "…………！",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060630"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、えっと……\r\nはは、じゃあな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001009060640,
+    "speaker": "真乃",
+    "text": "プロデューサーさん……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060640"
+  },
+  {
+    "textFrame": "off",
+    "se": "0345",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "id": 4001009060650,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100906/4001009060650"
+  },
+  {
+    "id": 4001009060660,
+    "speaker": "真乃",
+    "text": "…………",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060660"
+  },
+  {
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "se": "0313",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "id": 4001009060670,
+    "speaker": "真乃",
+    "text": "あ……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400100906/4001009060670"
+  },
+  {
+    "id": 4001009060680,
+    "speaker": "真乃",
+    "text": "雨…………",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060680"
+  },
+  {
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00077",
+    "bgEffect": "fade"
+  },
+  {
+    "se": "0126",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black4",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00000",
+    "bgm": "0003",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black4",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4001009060690,
+    "speaker": "真乃",
+    "text": "ピーちゃん、ただいま",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060690"
+  },
+  {
+    "textFrame": "off",
+    "se": "0114",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4001009060700,
+    "speaker": "真乃",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060700"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『真乃にも自分で考えてもらいたいし、\r\n自分で自分の場所を見つけていってもらいたいんだ』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『みんな特別だし、みんな普通の女の子だ』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001009060710,
+    "speaker": "真乃",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060710"
+  },
+  {
+    "id": 4001009060720,
+    "speaker": "真乃",
+    "text": "でも…………",
+    "textCtrl": "p",
+    "textFrame": "0006",
+    "voice": "game_event_communications/400100906/4001009060720"
+  },
+  {
+    "label": "end",
+    "textFrame": "off",
+    "bgm": "off",
+    "se": "0126",
+    "waitType": "time",
+    "waitTime": 3000
+  }
+]

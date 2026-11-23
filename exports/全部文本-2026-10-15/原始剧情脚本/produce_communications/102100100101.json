@@ -1,0 +1,176 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "円香って、休みの日は何しているんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1021001001010010,
+    "speaker": "円香",
+    "text": "答えません",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102100100101/1021001001010010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、冷たいなあ\r\nじゃあヒントだけでも",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1021001001010020,
+    "speaker": "円香",
+    "text": "……プライベートです",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100101/1021001001010020"
+  },
+  {
+    "select": "惰眠とか？",
+    "nextLabel": "1021001001011"
+  },
+  {
+    "select": "勉強とか？",
+    "nextLabel": "1021001001012"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "家事とか？",
+    "nextLabel": "1021001001013"
+  },
+  {
+    "id": 1021001001010030,
+    "label": "1021001001011",
+    "speaker": "円香",
+    "text": "あなたと一緒にしないでください",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100101/1021001001010030"
+  },
+  {
+    "id": 1021001001010040,
+    "speaker": "円香",
+    "text": "知らないけど",
+    "charAnim2": "face_close",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100101/1021001001010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1021001001010050,
+    "label": "1021001001012",
+    "speaker": "円香",
+    "text": "必要な時にはやりますが、\r\nでも、それくらいは普通でしょ？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100101/1021001001010050"
+  },
+  {
+    "id": 1021001001010060,
+    "speaker": "円香",
+    "text": "机にかじりつくような優等生にでも見えましたか",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100101/1021001001010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1021001001010070,
+    "label": "1021001001013",
+    "speaker": "円香",
+    "text": "……その聞き方から察するに",
+    "charAnim1": "anger1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100101/1021001001010070"
+  },
+  {
+    "id": 1021001001010080,
+    "speaker": "円香",
+    "text": "あなたは休みの日以外、家事をしないみたいですね",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102100100101/1021001001010080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

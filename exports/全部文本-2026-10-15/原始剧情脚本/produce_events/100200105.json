@@ -1,0 +1,615 @@
+[
+  {
+    "id": 1002001050010,
+    "speaker": "灯織",
+    "text": "ふぅ……もうちょっとリズムを意識して……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charCategory": "stand_jersey",
+    "bg": "00014",
+    "bgm": "016",
+    "voice": "produce_events/100200105/1002001050010"
+  },
+  {
+    "id": 1002001050020,
+    "speaker": "灯織",
+    "text": "あ……\r\nプロデューサー、いつから見てたんですか？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_angry",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ついさっきからだよ\r\n仕事がひと段落したから見に来たんだが……",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "朝からずっとレッスンしてるじゃないか\r\n大丈夫か？",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002001050030,
+    "speaker": "灯織",
+    "text": "はい。まだまだやるつもりです\r\nイベント、必ず成功させたいので",
+    "charAnim1": "wait3",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050030"
+  },
+  {
+    "id": 1002001050040,
+    "speaker": "灯織",
+    "text": "プロデューサーが企画してくれた、\r\n初めてのファンイベントですから……",
+    "charAnim1": "sad3",
+    "charAnim2": "face_close",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ユニットとしても知名度が上がってきているから\r\nそろそろいいタイミングだと思ってな",
+    "charAnim1": "wait3",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺も全力で準備頑張ってるから\r\n当日、楽しみにしててくれ！",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002001050050,
+    "speaker": "灯織",
+    "text": "はい、私も全力でレッスンしておきます\r\nよろしくお願いします",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050050"
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "id": 1002001050060,
+    "speaker": "灯織",
+    "text": "……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charCategory": "stand_costume",
+    "bg": "00008",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/100200105/1002001050060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織、準備は出来てるみたいだな……\r\nってぼんやりしてどうしたんだ？",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002001050070,
+    "speaker": "灯織",
+    "text": "あ……いえ、すみません\r\nちょっと、客席のほうを見てたんですが……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ！　すごい人数が集まってるだろう？",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "本当に灯織は、すごいアイドルになったよな",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002001050080,
+    "speaker": "灯織",
+    "text": "そう……ですか？\r\nそうなんでしょうか？",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……何か納得できないことでもあるのか？",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002001050090,
+    "speaker": "灯織",
+    "text": "……その\r\n想像以上にたくさんの人が集まっているので……",
+    "charAnim1": "anger1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050090"
+  },
+  {
+    "id": 1002001050100,
+    "speaker": "灯織",
+    "text": "本当に、ここにいる全員が私のファンだなんて\r\nとても信じられなくて……",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織……ファンを疑うな",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002001050110,
+    "speaker": "灯織",
+    "text": "そうですよね……でも、私のためにこんな……",
+    "charAnim1": "sad3",
+    "charLipAnim": "lip_angry",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……灯織は、自分のことが大嫌いだって言ってたな",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "今日のイベントで、自分がどんな人間なのか\r\nファンの声を聞いて確かめてこい",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002001050120,
+    "speaker": "灯織",
+    "text": "……！\r\nわかりました。行ってきます……！",
+    "charAnim1": "surp2",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050120"
+  },
+  {
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charLabel": "hiori",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "id": 1002001050130,
+    "speaker": "灯織",
+    "text": "――集まってくれた皆さん",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bg": "00012",
+    "voice": "produce_events/100200105/1002001050130"
+  },
+  {
+    "id": 1002001050140,
+    "speaker": "灯織",
+    "text": "本当に……ありがとうございました！",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050140"
+  },
+  {
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お疲れ、灯織！\r\n良いステージだったぞ！",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00008"
+  },
+  {
+    "id": 1002001050150,
+    "speaker": "灯織",
+    "text": "プロデューサー\r\nふぅ……あの……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charCategory": "stand_costume",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/100200105/1002001050150"
+  },
+  {
+    "id": 1002001050160,
+    "speaker": "灯織",
+    "text": "……すごかった、です",
+    "charAnim1": "sad3",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050160"
+  },
+  {
+    "id": 1002001050170,
+    "speaker": "灯織",
+    "text": "こんな私を……\r\n好きって言ってくれる人がたくさんいて……",
+    "charAnim2": "face_close",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（すごく感動してるみたいだな……）",
+    "charLabel": "hiori",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "『こんな私』\r\nじゃないだろ",
+    "nextLabel": "1"
+  },
+  {
+    "select": "最高のファンだな",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "忘れられない\r\n思い出になるな",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "灯織がここまで積み上げてきたすべてがつながって\r\nこんなにたくさんのファンができたんだ",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charAnim3": "blank",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そろそろ、今までの自分の頑張りと\r\n実績を認めてやったらどうだ？",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002001050180,
+    "speaker": "灯織",
+    "text": "……はい、そうですね",
+    "charAnim1": "smile2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050180"
+  },
+  {
+    "id": 1002001050190,
+    "speaker": "灯織",
+    "text": "認めないと、ファンの方々にも失礼ですよね",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（本当に、今日のイベントを企画して良かったな）",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1002001050200,
+    "label": "2",
+    "speaker": "灯織",
+    "text": "はい\r\n本当に……私にはもったいないぐらいです",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いいや、灯織にぴったりのファンだよ",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002001050210,
+    "speaker": "灯織",
+    "text": "ありがとうございます",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050210"
+  },
+  {
+    "id": 1002001050220,
+    "speaker": "灯織",
+    "text": "……だとしたら、『私には』なんて言ってたら\r\nだめですよね",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050220"
+  },
+  {
+    "id": 1002001050230,
+    "speaker": "灯織",
+    "text": "もう……自分のことをちゃんと認めようと思います",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（本当に、最高のイベントになったな）",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "text": "忘れられない思い出になるな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002001050240,
+    "label": "3",
+    "speaker": "灯織",
+    "text": "はい。『W.I.N.G.』のステージに立っても\r\nもっとたくさんのファンに囲まれても――",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050240"
+  },
+  {
+    "id": 1002001050250,
+    "speaker": "灯織",
+    "text": "今日のことは、きっとずっと\r\n私の記憶に残ると思います",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050250"
+  },
+  {
+    "id": 1002001050260,
+    "speaker": "灯織",
+    "text": "今日のことを心に刻んで\r\nよりアイドル活動に励んでいきたいと思います",
+    "charAnim1": "sad3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200105/1002001050260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（俺も、今日を忘れずにプロデュースを頑張ろう！）",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end"
+  }
+]

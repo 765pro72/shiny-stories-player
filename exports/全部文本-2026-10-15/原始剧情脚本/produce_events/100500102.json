@@ -1,0 +1,778 @@
+[
+  {
+    "id": 1005001020010,
+    "speaker": "摩美々",
+    "text": "ふわぁ～。おはよーございまぁす\r\nまだ眠いですよー",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "005",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "bgm": "002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/100500102/1005001020010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう、摩美々\r\nファッション雑誌のフォトスナップの依頼がきてるぞ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020020,
+    "speaker": "摩美々",
+    "text": "……へぇー、\r\nそうなんですかぁ",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "他の女の子のファッションもたくさん見られて\r\n楽しいだろうから、引き受けてみないか？",
+    "charAnim2": "blank",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020030,
+    "speaker": "摩美々",
+    "text": "どうせ暇ですからねー\r\nやってみてもいいですよー",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "撮影日は次の週末、朝からで\r\n現場のショッピングモールに現地集合だからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020040,
+    "speaker": "摩美々",
+    "text": "……ふわぁ～\r\nはーい",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020040"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（摩美々が全然来ないぞ……！？\r\nもう撮影開始時間の10分前だというのに……！）",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00010",
+    "bgm": "010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（携帯も繋がらないし……、どうしたんだ\r\n大丈夫だろうか？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020050,
+    "speaker": "摩美々",
+    "text": "おはよーございまぁす",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "005",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/100500102/1005001020050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう摩美々！\r\nよかった、携帯も繋がらないし、心配したぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020060,
+    "speaker": "摩美々",
+    "text": "あー、すみません電源切れてたみたいですー\r\n気づきませんでしたぁ",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……何かあったわけじゃないのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020070,
+    "speaker": "摩美々",
+    "text": "何か、ですかぁ？\r\nぼんやりしてたくらいですよー",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ぼんやりって……今日はひとりの仕事だから、\r\nそう言ってられるけどな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これがもしユニットでの仕事だったら、\r\nみんなを心配させて、待たせてしまってたんだぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020080,
+    "speaker": "摩美々",
+    "text": "……私、時間に間に合ってるのに、\r\nプロデューサーは、どうしてそんなに焦ってるんですかぁ",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "撮影準備だってあるんだから、\r\nギリギリに来ていいわけじゃないのは、わかるだろ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "スタッフさんたちは１時間も前から準備してたんだから\r\nあとで一言謝っておくんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020090,
+    "speaker": "摩美々",
+    "text": "……そこまで言うならぁ、考えておきますねー\r\nそれより、準備しなくていいんですかぁ？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、そうだな\r\nよし、じゃあまずはメイクさんのところへ行こう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020100,
+    "speaker": "摩美々",
+    "text": "はぁい",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020100"
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（最初はどうなることか不安だったが……\r\n順調すぎて驚くな。カメラマンさんの受けもよさそうだ）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "カメラマン",
+    "text": "摩美々ちゃん、いい感じだよー\r\nじゃあ、次はカッコいいポーズお願いっ！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charType": "characters",
+    "charId": "005",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 1005001020110,
+    "speaker": "摩美々",
+    "text": "はぁい",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（摩美々、返事はだるそうでも、ポーズの指示には\r\n的確に応えている……やれば出来る子なんだけどな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1005001020120,
+    "speaker": "摩美々",
+    "text": "終わりましたぁ、もうクタクタですー\r\nプロデューサー、私頑張りましたよー？  見てましたかぁ？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "005",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/100500102/1005001020120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、見てたよ、お疲れさま\r\nとても良かったぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020130,
+    "speaker": "摩美々",
+    "text": "ですよねー、完璧でしたよねー",
+    "charAnim1": "sad1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020130"
+  },
+  {
+    "id": 1005001020140,
+    "speaker": "摩美々",
+    "text": "……あれ？　何か言いたげな顔してますねー\r\n遠慮せずに言ってくれていいんですよー？",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうだな。良かったのは確かなんだけど、\r\n摩美々には、欠けているものがあると思うんだ",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "謙虚さが欠けてる",
+    "nextLabel": "1"
+  },
+  {
+    "select": "一生懸命さが足りない",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "可愛げがない",
+    "nextLabel": "3"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "謙虚さが欠けている",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020150,
+    "label": "1",
+    "speaker": "摩美々",
+    "text": "それ、必要ですー？\r\nお仕事が上手にできれば、別にいいじゃないですかぁ？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "目の前の仕事だけこなせばいい、というわけじゃない\r\n新人は誰よりも早く来て、準備しててもおかしくないんだ",
+    "charAnim2": "face_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "例え仕事ができても、人間性で評価が下がると、\r\n正当な判断をしてもらえない。気を付けるんだぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020160,
+    "speaker": "摩美々",
+    "text": "ふふー\r\n私、そんなこと言われたの初めてですー",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020160"
+  },
+  {
+    "id": 1005001020170,
+    "speaker": "摩美々",
+    "text": "アイドルの世界っていろいろと、大変ですねー\r\nみんな、そんなこと気にしてるんですかぁ？",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おいおい、他人事じゃないんだぞ？\r\n摩美々も、駆け出しとはいえアイドルなんだからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020180,
+    "speaker": "摩美々",
+    "text": "わかってますよー",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……とにかく、これからは真面目に、\r\n謙虚な態度で仕事に挑んでくれるか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020190,
+    "speaker": "摩美々",
+    "text": "んー、私のキャラじゃないと思いますけどー、\r\n考えておきますねー",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020190"
+  },
+  {
+    "id": 1005001020200,
+    "speaker": "摩美々",
+    "text": "あー、今の私\r\nちょっと、謙虚っぽくなかったですかぁ？　ふふー",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/100500102/1005001020200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "一生懸命さが足りない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020210,
+    "label": "2",
+    "speaker": "摩美々",
+    "text": "問題なくないですかぁ？\r\n普通にやってれば、周りの子と同じくらいできますしー",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "できるできないじゃなくて、意識の問題なんだ\r\n仕事に気持ちが入ってるかどうかは、見てわかるものだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020220,
+    "speaker": "摩美々",
+    "text": "へぇー、プロデューサーって\r\n夢見がちな人なんですねー？",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "資料として先月号の雑誌をもらっているから\r\n他の子たちがどう写っているかを、今見てみるんだ",
+    "charAnim2": "blank",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "この写真はいい表情をしているし、\r\nこっちは全身使って雰囲気を作り出している",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020230,
+    "speaker": "摩美々",
+    "text": "これが、意識ってやつですかぁ？\r\n写真用に表情作ってるだけじゃないですかぁ？",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "本当にそう見えるか？\r\n摩美々にだってわかるはずだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020240,
+    "speaker": "摩美々",
+    "text": "……さぁ、どうですかねー",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "来月には、この雑誌に\r\n今日撮影した摩美々の写真が載るんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "載った後に後悔しても遅いから、次からは\r\n誰かに見られることを意識して一生懸命やるんだぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020250,
+    "speaker": "摩美々",
+    "text": "……どうせなら可愛く写りたいですからぁ、\r\n次はもうちょっとだけ、マジメにやることにしますねー",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/100500102/1005001020250"
+  },
+  {
+    "text": "★選択肢③【可愛げがない】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "可愛げがない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020260,
+    "label": "3",
+    "speaker": "摩美々",
+    "text": "えー、ひどくないですかぁ？\r\n私、見た目にはちょーっと自信あったんですけどねー",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、外見のことを言ってるんじゃない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "例え、見た目でファンになってくれても、アイドルの\r\nやる気のない姿を見た瞬間に冷める人だっているんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020270,
+    "speaker": "摩美々",
+    "text": "……めんどくさい人がいるんですねー",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "大勢いるアイドルの中で、誰よりも輝くには、\r\nみんなが応援したくなるような可愛らしさも必要だからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020280,
+    "speaker": "摩美々",
+    "text": "えー、でも私、ファッションとかは\r\n個性があると思いますけどー？　目立ちませんかぁ？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それでも、似たような方向性のアイドルは\r\nたくさんいるんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020290,
+    "speaker": "摩美々",
+    "text": "へぇー、そうなんですかぁ。似たようなアイドルに\r\n負けるのは……少し、傷つくかもしれませんねー",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうだ？\r\nやる気が出てきたか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001020300,
+    "speaker": "摩美々",
+    "text": "私の中からやる気が出たというよりもー\r\nプロデューサーにやる気、うつされたかもしれませんー",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100500102/1005001020300"
+  },
+  {
+    "id": 1005001020310,
+    "speaker": "摩美々",
+    "text": "プロデューサーがもっともっとやる気を出したら\r\n私にも可愛げが、芽生えるかもしれませんねー",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/100500102/1005001020310"
+  },
+  {
+    "label": "end"
+  }
+]

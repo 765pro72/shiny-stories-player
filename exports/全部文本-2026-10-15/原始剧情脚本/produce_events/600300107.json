@@ -1,0 +1,270 @@
+[
+  {
+    "bg": "00023",
+    "bgm": "008"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 6902001070010,
+    "speaker": "社長",
+    "text": "お前、担当アイドルのことをどう思っている？",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/600300107/6902001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……たしかに負けてしまいましたけど、\r\n彼女こそが最高のアイドルだと思っています",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6902001070020,
+    "speaker": "社長",
+    "text": "……！　そうか……",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/600300107/6902001070020"
+  },
+  {
+    "id": 6901001070010,
+    "speaker": "はづき",
+    "text": "ふふ\r\n社長が聞きたかった言葉、そのまま出てきましたね",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/600300107/6901001070010"
+  },
+  {
+    "id": 6901001070020,
+    "speaker": "はづき",
+    "text": "もし違う言葉が出てきたら、\r\n説教してやるって言って聞かなかったのに",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/600300107/6901001070020"
+  },
+  {
+    "id": 6902001070030,
+    "speaker": "社長",
+    "text": "……うるさいぞ。とにかく、\r\nそういうことなら私から言うことはない",
+    "charAnim1": "wait2",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/600300107/6902001070030"
+  },
+  {
+    "id": 6902001070040,
+    "speaker": "社長",
+    "text": "さあ、早くその最高のアイドルに\r\n会いに行ってこい",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/600300107/6902001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい！",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off"
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "meguru",
+    "charCategory": "stand_jersey",
+    "charType": "characters",
+    "charId": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00021",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 6003001070010,
+    "speaker": "めぐる",
+    "text": "違う……\r\nもっとこう……",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600300107/6003001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……めぐる",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6003001070020,
+    "speaker": "めぐる",
+    "text": "……あ、プロデューサー\r\nえへへ。負けちゃったねー",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600300107/6003001070020"
+  },
+  {
+    "id": 6003001070030,
+    "speaker": "めぐる",
+    "text": "……ごめんね\r\n期待に応えられなくて……",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600300107/6003001070030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺のほうこそ、すまない\r\nもっとめぐるの力になってやれたら……",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6003001070040,
+    "speaker": "めぐる",
+    "text": "……お互い、謝るのは禁止にしよっか",
+    "charAnim1": "wait1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600300107/6003001070040"
+  },
+  {
+    "id": 6003001070050,
+    "speaker": "めぐる",
+    "text": "……ダメだったんだよね……やっぱり、悔しいな",
+    "charAnim1": "sad2",
+    "charAnim2": "no",
+    "charAnim2Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600300107/6003001070050"
+  },
+  {
+    "id": 6003001070060,
+    "speaker": "めぐる",
+    "text": "でもね\r\nわたし……それ以上に、すっごく楽しかったんだ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600300107/6003001070060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だったらもう一度チャレンジしよう！\r\n次のステージでも、めぐるならやれるはずだ！",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6003001070070,
+    "speaker": "めぐる",
+    "text": "プロデューサー……\r\nありがとう！　約束だよっ！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600300107/6003001070070"
+  },
+  {
+    "id": 6003001070080,
+    "speaker": "めぐる",
+    "text": "次は負けられないから……\r\n一緒に頑張ろうね！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/600300107/6003001070080"
+  },
+  {
+    "label": "end"
+  }
+]

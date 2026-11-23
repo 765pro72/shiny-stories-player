@@ -1,0 +1,648 @@
+[
+  {
+    "id": 2002005040010,
+    "speaker": "灯織",
+    "text": "はぁー……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_a",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040020020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00003",
+    "bgm": "002",
+    "voice": "produce_events/200200504/2002005040010"
+  },
+  {
+    "id": 2002005040020,
+    "speaker": "灯織",
+    "text": "今日は、いつもより寒いですね……",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "昨日、結構雪降ってたもんな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "この辺はだいぶ綺麗になってるけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005040030,
+    "speaker": "灯織",
+    "text": "……はい、そうですね",
+    "charAnim1": "sad3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040030"
+  },
+  {
+    "id": 2002005040040,
+    "speaker": "灯織",
+    "text": "もしかしたら積もってるかもって、思ってたんですが……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_angry",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そっか……雪景色、見たかったよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005040050,
+    "speaker": "灯織",
+    "text": "はい、この辺りで雪は珍しいので\r\nちょっとだけ楽しみにしてました……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_angry",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それなら、どこか積もってるところでも探しにいくか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005040060,
+    "speaker": "灯織",
+    "text": "あ、いえ、\r\nちょっと見れたらくらいの気持ちでしたので……",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_smile",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040060"
+  },
+  {
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0117",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ！　灯織、あれを見てくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hiori",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "bg": "00101",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bg": "00003",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "公園の方はまだ雪があるみたいだぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005040070,
+    "speaker": "灯織",
+    "text": "本当だ……！　しっかり残ってる……",
+    "charAnim1": "surp1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040070"
+  },
+  {
+    "id": 2002005040080,
+    "speaker": "灯織",
+    "text": "あの、プロデューサー……",
+    "charAnim1": "wait3",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あぁ、近くまで行ってみようか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005040090,
+    "speaker": "灯織",
+    "text": "！　\r\nありがとうございます……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040090"
+  },
+  {
+    "charAnim1": "sad3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "y": 25,
+      "scale": 1.1,
+      "time": 400
+    },
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2002005040100,
+    "speaker": "灯織",
+    "text": "プロデューサーも、行きましょう……！",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、ああ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（袖を引いてくるなんて、よほど早く見たいんだな）",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "surp1",
+    "charAnim2": "face_serious",
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "y": -25,
+      "scale": 1,
+      "time": 400
+    },
+    "bgm": "008",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "bg": "00101",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2002005040110,
+    "speaker": "灯織",
+    "text": "……やっぱり、綺麗……",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200200504/2002005040110"
+  },
+  {
+    "id": 2002005040120,
+    "speaker": "灯織",
+    "text": "陽の光に雪の粒が反射して……キラキラと光ってて……",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、ひとつひとつが輝いていて\r\nステージの上の灯織たちみたいだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005040130,
+    "speaker": "灯織",
+    "text": "ふふ、それならプロデューサーは\r\n私たちを輝かせてくれる陽の光ですね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、それは少し大げさだろう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ところで灯織、そろそろ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "sad3",
+    "charAnim2": "face_wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "hiori",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2002005040140,
+    "speaker": "灯織",
+    "text": "あっ！　私、雪に夢中で、袖を……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040140"
+  },
+  {
+    "id": 2002005040150,
+    "speaker": "灯織",
+    "text": "すみません……はしゃぎすぎました",
+    "charAnim1": "shy2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、謝る必要はないぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、そうだ\r\nせっかくだし、雪で遊んできたら良いんじゃないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005040160,
+    "speaker": "灯織",
+    "text": "え……\r\nで、でもそれは……その……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_angry",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005040170,
+    "speaker": "灯織",
+    "text": "……ちょっと……子どもっぽい気がして……",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040170"
+  },
+  {
+    "id": 2002005040180,
+    "speaker": "灯織",
+    "text": "さっきもあんなにはしゃいでしまったので",
+    "charAnim1": "sad3",
+    "charAnim4": "eye_front",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040180"
+  },
+  {
+    "id": 2002005040190,
+    "speaker": "灯織",
+    "text": "これ以上、恥ずかしいところはお見せできないです",
+    "charAnim4": "blank",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なんだ、そんなことを気にしてたのか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005040200,
+    "speaker": "灯織",
+    "text": "え？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織くらいの年なら、雪を見てはしゃぐのは普通だよ\r\n俺だって高校の頃は飛び出してたし",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005040210,
+    "speaker": "灯織",
+    "text": "……プロデューサーも、ですか？",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、雪合戦とか色々やってたよ\r\nだから、恥ずかしがらずに行ってくると良い",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005040220,
+    "speaker": "灯織",
+    "text": "──じゃあ、少しだけ……",
+    "charAnim1": "sad3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040220"
+  },
+  {
+    "textFrame": "off",
+    "se": "1040020020",
+    "movie": "1040020020"
+  },
+  {
+    "id": 2002005040230,
+    "speaker": "灯織",
+    "text": "ひゃっ……！",
+    "charAnim1": "shy3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200200504/2002005040230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ははは、灯織、雪で真っ白になって……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おわっ！",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "99999",
+    "se": "0337",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "white_add"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "stillType": "idols",
+    "stillId": "1040020020"
+  },
+  {
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2002005040240,
+    "speaker": "灯織",
+    "text": "ふふっ……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040240"
+  },
+  {
+    "id": 2002005040250,
+    "speaker": "灯織",
+    "text": "プロデューサーも、真っ白……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200504/2002005040250"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

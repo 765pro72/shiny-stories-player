@@ -1,0 +1,647 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0155",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 500,
+    "bgEffectTime": 300
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 300
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 500,
+    "bgEffectTime": 300
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 300
+  },
+  {
+    "speaker": "カメラマン",
+    "text": "──うん、いいね",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1025003050010,
+    "speaker": "美琴",
+    "text": "……ありがとうございます",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050010"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00115",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "美琴……良かった\r\nしばらくお休みするって聞いたから、驚いたけど",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1025003050020,
+    "speaker": "美琴",
+    "text": "ごめんなさい\r\n撮影のスケジュール、ずらしてもらっちゃって",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "025",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/102500305/1025003050020"
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "いいのいいの！\r\nうちのモデルは絶対美琴にお願いしたかったから",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "最悪コレクションの発売をずらすつもりだったけど……\r\n間に合ってよかった",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1_s",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1025003050030,
+    "speaker": "美琴",
+    "text": "うん\r\n……よかった、すぐに帰ってきて",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050030"
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "そうよ\r\nあの休まない美琴が休むだなんて言うから",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "何かあったのかって\r\nすっごく心配したんだから",
+    "charAnim2": "face_wait",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1025003050040,
+    "speaker": "美琴",
+    "text": "……何か……",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050040"
+  },
+  {
+    "id": 1025003050050,
+    "speaker": "美琴",
+    "text": "…………\r\n何かは、あったのかも",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050050"
+  },
+  {
+    "id": 1025003050060,
+    "speaker": "美琴",
+    "text": "ね、プロデューサー",
+    "charAnim1": "surp3",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え……！？\r\nい、いや、はは……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLipAnim": "lip_anger1_s",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "……？\r\nそうなの？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "ふふ、じゃあ後で聞かせて、何があったのか\r\nじゃあ着替えてもらって次の衣装──……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1025003050070,
+    "speaker": "美琴",
+    "text": "──待って",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050070"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "id": 1025003050080,
+    "speaker": "美琴",
+    "text": "もう何枚か撮ってみてもらってもいい？\r\n私の、自由に",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/102500305/1025003050080"
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "……！\r\nえ、ええ、構わないけど……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1025003050090,
+    "speaker": "美琴",
+    "text": "じゃあ、お願いします",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050090"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00506",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "カメラマン",
+    "text": "──じゃあ思うように、やってみてください",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1025003050100,
+    "speaker": "美琴",
+    "text": "はい",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050100"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 500,
+    "bgEffectTime": 300
+  },
+  {
+    "textFrame": "off",
+    "bg": "00506",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 300
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "se": "0131",
+    "waitType": "time",
+    "waitTime": 500,
+    "bgEffectTime": 300
+  },
+  {
+    "textFrame": "off",
+    "bg": "00506",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 300
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "──…………",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00115",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "……あの、プロデューサーさん",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……？\r\nはい",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "0000"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "123"
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "美琴は本当に、何かあったんですか？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "これまで美琴が撮影する姿を\r\n何度も見てきましたけど",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "あの子があんなこと言うの、これまでになかったから\r\n……本当に、何かあったんだなって",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………そうですね",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "美琴は……\r\nただ、立ってるだけじゃなくて",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "一生懸命、生きようとしてるんだと思います",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "デザイナー",
+    "text": "…………？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00088",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "1263",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00650",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1300,
+    "bgEffectTime": 1300
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1025003050110,
+    "speaker": "美琴",
+    "text": "……ねえ、プロデューサー",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/102500305/1025003050110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん？\r\nどうした、美琴",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1025003050120,
+    "speaker": "美琴",
+    "text": "何か、良いことでもあったの",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え……？\r\nな、なんでだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1025003050130,
+    "speaker": "美琴",
+    "text": "なんだか、すごく楽しそうだから",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え……\r\nそ、そうかな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1025003050140,
+    "speaker": "美琴",
+    "text": "……ひとりで喜んで\r\nずるい",
+    "charAnim1": "smile3",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……\r\nそうか、ずるいか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "さっきの撮影、すごくよかったなって\r\nそう思ったら嬉しかったんだよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1025003050150,
+    "speaker": "美琴",
+    "text": "……それだけ？",
+    "charAnim1": "surp3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、そうだよ\r\n美琴はそれだけって思うかもしれないけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺にはすごく、嬉しいことだったんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1025003050160,
+    "speaker": "美琴",
+    "text": "……そうなんだ\r\nよくわからないけど",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050160"
+  },
+  {
+    "id": 1025003050170,
+    "speaker": "美琴",
+    "text": "プロデューサーが喜んでるなら\r\nよかった",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mikoto",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/102500305/1025003050170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……うん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "よかったんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mikoto",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00088",
+    "bgEffect": "fade",
+    "se": "0345",
+    "waitType": "time",
+    "waitTime": 7000,
+    "bgEffectTime": 2000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

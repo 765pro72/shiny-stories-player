@@ -1,0 +1,471 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "（昼休みだし、リフレッシュしとかなくちゃな！\r\n……お、あのラーメン屋なんか美味しそうだ）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00003",
+    "bgm": "002",
+    "se": "0120"
+  },
+  {
+    "id": 2003004010010,
+    "speaker": "？？？",
+    "text": "……大変大変！　このままじゃ遅れちゃうよー！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0118",
+    "voice": "produce_events/200300401/2003004010010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ん？　なんだ……\r\nって、うわぁ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0108",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2003004010020,
+    "speaker": "？？？",
+    "text": "きゃあっ！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いてて……すいません、大丈夫でしたか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003004010030,
+    "speaker": "めぐる",
+    "text": "ううん！　わたしの方こそごめんなさい……\r\n……って、プロデューサー！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040030010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200300401/2003004010030"
+  },
+  {
+    "id": 2003004010040,
+    "speaker": "めぐる",
+    "text": "こんなところで会うなんて偶然だね！\r\n何してたの？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なんだ、めぐるだったのか\r\n俺は気晴らしに街に出てただけだよ",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それよりめぐるこそ、そんなに急いでどうしたんだ？",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003004010050,
+    "speaker": "めぐる",
+    "text": "うん！　わたしはね、助っ人に呼ばれて、\r\nこれから行くところ……",
+    "charAnim2": "face_smile",
+    "charAnim3Loop": false,
+    "charAnim3": "yes",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010050"
+  },
+  {
+    "id": 2003004010060,
+    "speaker": "めぐる",
+    "text": "あー！　そうだった！　このままじゃ遅刻しちゃう！\r\nわたし、行かなくちゃ！　じゃあね、プロデューサー！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0118",
+    "charEffect": {
+      "type": "to",
+      "x": 200,
+      "alpha": 0,
+      "time": 450
+    },
+    "voice": "produce_events/200300401/2003004010060"
+  },
+  {
+    "textFrame": "off",
+    "movie": "1040030010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ、おい、めぐる！　……行っちゃった\r\n……せっかくだからめぐるの活躍ぶりでも見に行くか！",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bgEffect": "fade",
+    "bg": "00013",
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はぁ、はぁ……めぐるのやつ、さすがの速さだな……\r\n今どこに――あそこか。バスケの試合みたいだけど……",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003004010070,
+    "speaker": "めぐる",
+    "text": "こっちこっちー！\r\nパス、パス！",
+    "charAnim1": "hello",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0101",
+    "charEffect": {
+      "type": "to",
+      "x": -200,
+      "alpha": 1,
+      "time": 700
+    },
+    "voice": "produce_events/200300401/2003004010070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うーん、やっぱりめぐるの動きはすごいな……",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003004010080,
+    "speaker": "めぐる",
+    "text": "行くよー！\r\n……えいっ！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010080"
+  },
+  {
+    "textFrame": "off",
+    "se": "0102",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……おっ、ナイスシュートだな\r\nあれで逆転だ！",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……試合終了か。さすがはめぐる、あっと言う間に\r\nひっくり返したな",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003004010090,
+    "speaker": "めぐる",
+    "text": "プッロデューサー！",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200300401/2003004010090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うおっ！　め、めぐるか……",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003004010100,
+    "speaker": "めぐる",
+    "text": "えへへ！　試合中にプロデューサーが見えたから、\r\n終わったら絶対に話しかけようって思ってたんだ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010100"
+  },
+  {
+    "id": 2003004010110,
+    "speaker": "めぐる",
+    "text": "お昼休みなのに、見に来てくれたんだよね？\r\nありがとう！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "特に予定も無かったしな\r\nめぐるの活躍するところを見てみたかったし",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それにしても、見てて惚れ惚れするような\r\nすごい活躍だったぞ",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003004010120,
+    "speaker": "めぐる",
+    "text": "えへへ！　そうかな？　そうかなー！？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。それに、楽しそうにプレーしてるのが\r\n外から見ていても分かったよ",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003004010130,
+    "speaker": "めぐる",
+    "text": "だって、みんなと身体を動かせるとすっごく楽しいもん！\r\nそれに今日は、プロデューサーも見ててくれてたしね！",
+    "charAnim1": "wait3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010130"
+  },
+  {
+    "id": 2003004010140,
+    "speaker": "めぐる",
+    "text": "……そうだ！\r\n今度は事務所のみんなも見に来てくれないかなぁ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "みんなで応援に行けたら楽しそうだな\r\nなんとかスケジュールの都合をつけてみるよ",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003004010150,
+    "speaker": "めぐる",
+    "text": "ホント！？　\r\nじゃあじゃあ、今度の水泳大会がいいかな！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010150"
+  },
+  {
+    "id": 2003004010160,
+    "speaker": "めぐる",
+    "text": "それとも、次の週にあるバスケの練習試合がいいかな～\r\nあ、でも、陸上の試合も見に来てくれると……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ちょ、ちょっと待ってくれ、めぐる",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "さすがにそんなにたくさんは、\r\n全員のスケジュールを合わせられないよ",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003004010170,
+    "speaker": "めぐる",
+    "text": "あっ、そっか……\r\nそうだよね！　みんなもお仕事、あるもんね",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……えーと、俺だけで良ければ、だけど、\r\n見に行こうか？",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003004010180,
+    "speaker": "めぐる",
+    "text": "いいの！?\r\n……あ、でもプロデューサーも忙しいし……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺だけなら都合もつけやすいから、大丈夫だよ",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2003004010190,
+    "speaker": "めぐる",
+    "text": "本当にっ！?　やったー！\r\nじゃあ今度の試合、見に来てくれたら嬉しいな！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010190"
+  },
+  {
+    "id": 2003004010200,
+    "speaker": "めぐる",
+    "text": "プロデューサーが来るなら、楽しんでもらわなきゃだよね！\r\nわたし、いつもより頑張るから！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200300401/2003004010200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（めぐるがこれだけ喜んでるんだ\r\nなんとかスケジュールを調整して見に行かなくちゃな！）",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end"
+  }
+]

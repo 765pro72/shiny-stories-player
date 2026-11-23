@@ -1,0 +1,281 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   283PRISM REFINED STAGE POLISH — Built Cleanly On Top Of Original Layout
+   Preserves original daylight/night glass layouts & Home office positions,
+   elevating every surface with delicate prism lighting, 3D SSR foil tilt,
+   smooth scroll choreography & subtle concert atmosphere.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+@property --prism-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+:root {
+  --ls-prism-grad: linear-gradient(125deg, #22d3ee 0%, #818cf8 34%, #f472b6 68%, #fbbf24 100%);
+  --ls-prism-conic: conic-gradient(
+    from var(--prism-angle),
+    #22d3ee,
+    #818cf8,
+    #f472b6,
+    #fbbf24,
+    #34d399,
+    #22d3ee
+  );
+  --ls-ease-stage: cubic-bezier(0.16, 1, 0.3, 1);
+  --ls-ease-spring: cubic-bezier(0.22, 1.35, 0.36, 1);
+}
+
+@keyframes prismRotate {
+  to { --prism-angle: 360deg; }
+}
+
+@keyframes laserScan {
+  0% { transform: translateX(-120%) skewX(-24deg); opacity: 0; }
+  20% { opacity: 0.45; }
+  80% { opacity: 0.45; }
+  100% { transform: translateX(240%) skewX(-24deg); opacity: 0; }
+}
+
+/* ── 1. MAX-Intensity Stage Light & Particle Canvas (Original Layout Preserved!) ── */
+#prismLiveCanvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none !important;
+  z-index: 0;
+  opacity: 1;
+  transition: opacity 0.45s ease;
+}
+
+body.shell-host #prismLiveCanvas,
+body.page-home #prismLiveCanvas {
+  display: none !important;
+}
+
+html[data-stage-fx="soft"] #prismLiveCanvas {
+  opacity: 0.22 !important;
+}
+
+body:not(.page-home):not(.shell-host) > main,
+body:not(.page-home):not(.shell-host) > .arcade-shell,
+body:not(.page-home):not(.shell-host) > .music-shell,
+body:not(.page-home):not(.shell-host) > .music-stage-wrapper,
+body:not(.page-home):not(.shell-host) > header.site-header {
+  position: relative;
+  z-index: 2;
+}
+
+/* ── 2. Original Home Office Subtle Glass & Hover Micro-Interaction Polish ── */
+body.page-home header.ui.home-status a,
+body.page-home nav.side.ui button,
+body.page-home nav.side.ui a,
+body.page-home .tools button,
+body.page-home .tools a,
+body.page-home section.caption.ui {
+  transition: transform 0.22s var(--ls-ease-spring), box-shadow 0.24s ease, border-color 0.24s ease !important;
+}
+
+body.page-home header.ui.home-status a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(14, 165, 233, 0.18), 0 0 0 1px rgba(244, 114, 182, 0.25) !important;
+}
+
+body.page-home nav.side.ui button:hover,
+body.page-home nav.side.ui a:hover {
+  transform: translateY(-2px) scale(1.04);
+}
+
+body.page-home .tools button:hover,
+body.page-home .tools a:hover {
+  transform: scale(1.08);
+}
+
+/* ── 3. Hero Overview Banner Subtle Parallax & Light Sheen ── */
+.collection-overview {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.collection-overview::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 34%,
+    rgba(255, 255, 255, 0.18) 48%,
+    rgba(34, 211, 238, 0.12) 52%,
+    transparent 66%
+  );
+  animation: laserScan 7.5s var(--ls-ease-stage) infinite;
+}
+
+.collection-overview .archive-banner-art,
+.collection-overview .collection-cover-art {
+  transform: scale(1.09) translate3d(var(--px, 0px), var(--py, 0px), 0);
+  transition: transform 0.25s var(--ls-ease-stage);
+  will-change: transform;
+}
+
+/* ── 4. Collection Stat Cards Refined Prism Top Accent ── */
+.collection-stat {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.24s var(--ls-ease-spring), box-shadow 0.26s ease !important;
+}
+
+.collection-stat::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2.5px;
+  background: var(--ls-prism-grad);
+  opacity: 0.72;
+}
+
+html[data-theme="dark"] .collection-stat::before {
+  background: linear-gradient(90deg, #b3802c, #f5dca4, #d4a44e);
+  opacity: 0.92;
+}
+
+html[data-theme="dark"] .turntable-deck::before {
+  background: conic-gradient(from var(--prism-angle), #d4a44e, #fff2c6, #a87628, #f2d590, #d4a44e);
+}
+
+.collection-stat:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.10), 0 0 18px rgba(34, 211, 238, 0.14) !important;
+}
+
+/* ── 5. 3D SSR Holographic Foil Tilt on Gallery / Wardrobe / Story / Podcast Cards ── */
+.ls-holo-card {
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition:
+    transform 0.26s var(--ls-ease-stage),
+    box-shadow 0.26s ease,
+    border-color 0.22s ease !important;
+}
+
+.ls-holo-card.is-tilting {
+  transition: transform 0.06s linear, box-shadow 0.22s ease, border-color 0.22s ease !important;
+  z-index: 5;
+}
+
+.ls-holo-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    radial-gradient(
+      280px circle at var(--mx, 50%) var(--my, 50%),
+      rgba(255, 255, 255, 0.44),
+      rgba(34, 211, 238, 0.22) 36%,
+      rgba(244, 114, 182, 0.16) 58%,
+      transparent 78%
+    ),
+    linear-gradient(
+      125deg,
+      transparent 16%,
+      rgba(34, 211, 238, 0.22) 38%,
+      rgba(244, 114, 182, 0.24) 50%,
+      rgba(253, 224, 71, 0.20) 62%,
+      transparent 82%
+    );
+  mix-blend-mode: screen;
+  transition: opacity 0.22s ease;
+  z-index: 4;
+}
+
+.ls-holo-card:hover::after,
+.ls-holo-card.is-tilting::after {
+  opacity: 1;
+}
+
+.gallery-item:hover,
+.model-card:hover,
+.story-item:hover,
+.podcast-card:hover {
+  box-shadow:
+    0 16px 38px rgba(15, 23, 42, 0.12),
+    0 0 20px rgba(34, 211, 238, 0.16),
+    0 0 14px rgba(244, 114, 182, 0.14) !important;
+}
+
+/* ── 6. Music Turntable Subtle Prism Playing Halo ── */
+.turntable-deck {
+  position: relative !important;
+}
+
+.turntable-deck::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: 30px;
+  padding: 1.5px;
+  background: var(--ls-prism-conic);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.25;
+  pointer-events: none;
+  animation: prismRotate 7s linear infinite;
+  transition: opacity 0.35s ease;
+}
+
+.turntable-deck.is-playing::before {
+  opacity: 0.85;
+  animation-duration: 3.6s;
+}
+
+/* ── 7. Kinetic Scroll Reveal Choreography (MAX Spring Cascade) ── */
+.ls-reveal {
+  opacity: 0;
+  transform: translateY(28px) scale(0.955);
+  transition:
+    opacity 0.56s var(--ls-ease-stage),
+    transform 0.64s var(--ls-ease-spring);
+  transition-delay: var(--ls-delay, 0ms);
+}
+
+.ls-reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── 8. Delicate Prism Scrollbar ── */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(34, 211, 238, 0.35), rgba(244, 114, 182, 0.35));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(34, 211, 238, 0.65), rgba(244, 114, 182, 0.65));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #prismLiveCanvas { display: none !important; }
+  .ls-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .collection-overview::before,
+  .turntable-deck::before { animation: none !important; }
+}

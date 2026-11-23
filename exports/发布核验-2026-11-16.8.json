@@ -1,0 +1,57 @@
+{
+  "at": "2026-11-16T06:51:18.915Z",
+  "version": "2026-11-16.8",
+  "windows": {
+    "archive": "dist/ShinyStories-Lite-win32-x64.7z",
+    "bytes": 175421829,
+    "sha256": "8b8bdb7c05ecccb47112a4a09df1a66144c28e2661814afac5f8504587f0321b",
+    "checked": 14667,
+    "mismatches": [],
+    "uiVersion": "2026-11-16.8",
+    "translationFilesVerified": 10802,
+    "releaseGatePassed": true
+  },
+  "android": {
+    "apk": "dist/ShinyStories-Android.apk",
+    "bytes": 137507871,
+    "sha256": "cfd2e8dc7d0f10e9c8ce9d5955c0c65d07eb9cbd05808a97e6a6ac33a78e8943",
+    "versionCode": 2026111608,
+    "versionName": "2026.11.16.8",
+    "abis": [
+      "arm64-v8a"
+    ],
+    "minAndroid": 9,
+    "targetAPI": 35,
+    "alignment": "16KB",
+    "signature": "v3 (CN=Shiny Stories Unofficial, SHA-256 dc71e8ce…2476)",
+    "installedOrRun": true,
+    "install": {
+      "result": "Success",
+      "serial": "emulator-5554"
+    },
+    "testEnvironment": "Android 15 API35 emulator, arm64-on-x86_64, 1920x864@480 (20:9, CSS 640x288)",
+    "tests": [
+      "install: Success",
+      "first-launch unpack: ok",
+      "full-bleed 20:9 layout: no native letterbox, WebView fills 1920x864",
+      "home header: 283 + shortcuts + pill nav aligned, no overflow",
+      "card gallery: sticky header opaque on scroll, no text bleed",
+      "story player: 16:9 stage letterboxed inside viewport (Electron check at 640x288)",
+      "assistant: 44px ball opens chat; collapse keeps position"
+    ],
+    "limitations": [
+      "emulator is arm64 translation on x86_64, not a physical Dimensity/Snapdragon device",
+      "story player verified in Electron at the same CSS viewport, not re-checked on device after 16:9 removal",
+      "release APK keeps WebView debugging disabled"
+    ]
+  },
+  "changes": {
+    "android16by9": "MainActivity.fitViewport no longer forces 16:9; WebView/customView fill the window (match_parent). Story pages letterbox 16:9 inside the page.",
+    "moduleHeader": "mobile.css: sticky module headers get an opaque full-bleed background (phone only) so scrolled content cannot bleed through.",
+    "landingPages": "mobile.css: landing page h1/buttons scale with viewport; library header wraps, sidebar narrowed to 132px.",
+    "assistant": "assistant.css 44px collapsed ball; assistant.js clamp writes settings only while collapsed."
+  },
+  "newZIP": false,
+  "translationEdits": false,
+  "userProgramRestarted": false
+}

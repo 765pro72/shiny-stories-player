@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><link rel="stylesheet" href="/fonts.css">
+  <script src="/interface-font-core.js"></script>
+  <script src="/interface-font.js"></script>
+  <meta charset="utf-8">
+  <link rel="icon" href="/app-icon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>音乐馆 · 闪耀色彩 283 Jukebox</title>
+  
+  <link rel="stylesheet" href="interface.css">
+  <link rel="stylesheet" href="navigation.css">
+  <link rel="stylesheet" href="liquid-glass.css">
+  <link rel="stylesheet" href="module-design.css">
+  <link rel="stylesheet" href="layout-refinements.css">
+  <link rel="stylesheet" href="music.css">
+  <link rel="stylesheet" href="/ui-upgrade.css">
+
+  <script src="navigation.js"></script>
+  <script src="interface.js" defer></script>
+  <script src="vendor/qrcode.js" defer></script>
+  <script src="music.js" defer></script>
+  <script src="music-studio-fx.js" defer></script>
+</head>
+<body class="page-music">
+  <!-- Dynamic Ambient Glow Backdrop -->
+  <div class="music-ambient-aurora" aria-hidden="true"></div>
+
+  <!-- Window Drag Handle for Electron Frame -->
+  <div class="window-drag-handle" aria-hidden="true"></div>
+
+  <!-- Standard Top Site Header -->
+  <header class="site-header">
+    <a href="index.html" class="site-brand">
+      <b>283</b><span>闪耀色彩<small>STORIES &amp; MEMORIES</small></span>
+    </a>
+    <div class="header-drag-space" aria-hidden="true"></div>
+    <nav class="site-nav" aria-label="模块导航">
+      <a href="index.html">事务所</a>
+      <a href="guide.html">剧情馆</a>
+      <a href="card-gallery.html">卡片相册</a>
+      <a href="voice-gallery.html">语音馆</a>
+      <a href="model-picker.html">衣装室</a>
+      <a href="music.html" class="active" aria-current="page">音乐馆</a>
+      <a href="custom-story.html">怪文书</a>
+      <a id="continue" class="nav-continue" href="guide.html?mode=recent#archive">继续阅读</a>
+    </nav>
+  </header>
+
+  <!-- Main Music Landing Shell -->
+  <main class="music-app-shell">
+    <!-- 5 Master Franchises Switcher (偶像大师 5 大企划专页顶级导航栏) -->
+    <nav class="franchise-project-nav" role="tablist" aria-label="偶像大师企划专页切换">
+      <button class="franchise-tab-btn active" data-franchise="sc" role="tab" aria-selected="true" title="闪耀色彩 (THE IDOLM@STER SHINY COLORS)">
+        <div class="fr-logo-mini"><img src="/images/franchise-logos/logo-sc.png" alt="283PRO"></div>
+        <div class="fr-text-wrap">
+          <span class="fr-name">闪耀色彩</span>
+          <span class="fr-sub">283PRO</span>
+        </div>
+      </button>
+
+      <button class="franchise-tab-btn" data-franchise="gakuen" role="tab" aria-selected="false" title="学园偶像大师 (GAKUEN IDOLM@STER)">
+        <div class="fr-logo-mini"><img src="/images/franchise-logos/logo-gakuen.png" alt="初星学園"></div>
+        <div class="fr-text-wrap">
+          <span class="fr-name">学园偶像大师</span>
+          <span class="fr-sub">初星学園</span>
+        </div>
+      </button>
+
+      <button class="franchise-tab-btn" data-franchise="cg" role="tab" aria-selected="false" title="灰姑娘女孩 (THE IDOLM@STER CINDERELLA GIRLS)">
+        <div class="fr-logo-mini"><img src="/images/franchise-logos/logo-cg.png" alt="346PRO"></div>
+        <div class="fr-text-wrap">
+          <span class="fr-name">灰姑娘女孩</span>
+          <span class="fr-sub">346PRO</span>
+        </div>
+      </button>
+
+      <button class="franchise-tab-btn" data-franchise="ml" role="tab" aria-selected="false" title="百万现场 (THE IDOLM@STER MILLION LIVE!)">
+        <div class="fr-logo-mini"><img src="/images/franchise-logos/logo-ml.png" alt="765THEATER"></div>
+        <div class="fr-text-wrap">
+          <span class="fr-name">百万现场</span>
+          <span class="fr-sub">765THEATER</span>
+        </div>
+      </button>
+
+      <button class="franchise-tab-btn" data-franchise="as" role="tab" aria-selected="false" title="偶像大师本家 (765PRO ALLSTARS)">
+        <div class="fr-logo-mini"><img src="/images/franchise-logos/logo-as.png" alt="765PRO"></div>
+        <div class="fr-text-wrap">
+          <span class="fr-name">765PRO 本家</span>
+          <span class="fr-sub">ALLSTARS</span>
+        </div>
+      </button>
+    </nav>
+
+    <!-- Hero Banner Title (Apple Minimalist Icon-First Header) -->
+    <header class="music-hero-header">
+      <div class="music-title-wrap">
+        <div class="music-title-inline">
+          <div class="franchise-single-brand" id="franchiseBrandBtn" role="button" tabindex="0" title="点击切换下一个企划">
+            <div class="franchise-brand-img-wrap">
+              <img id="currentFranchiseLogo" src="/images/franchise-logos/logo-sc.png" alt="THE IDOLM@STER SHINY COLORS" class="hero-brand-logo-img">
+            </div>
+          </div>
+          <div class="music-title-meta">
+            <h1 id="heroFranchiseHeading"><span id="heroFranchisePrefix">283</span> 音乐馆 <span class="jukebox-badge" id="heroFranchiseBadge">JUKEBOX</span></h1>
+            <p id="heroFranchiseDesc" class="music-desc-muted">闪耀色彩 283PRO</p>
+          </div>
+          <div class="music-stats-summary" aria-label="曲库统计">
+            <div class="music-stats-item"><strong id="countSongs">270</strong><span>曲</span></div>
+            <i class="stat-sep" aria-hidden="true"></i>
+            <div class="music-stats-item"><strong id="countIdols">28</strong><span>偶像</span></div>
+            <i class="stat-sep" aria-hidden="true"></i>
+            <div class="music-stats-item"><strong id="playlistSourceAuthor">宫水三也</strong><span>整理</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="music-header-actions">
+        <!-- Compact Source Selector (Apple Segmented Popover) -->
+        <div class="sound-source-pill-group" role="group" aria-label="播放音源选择">
+          <button class="sound-engine-btn active" data-engine="netease" title="网易云音源">网易</button>
+          <button class="sound-engine-btn" data-engine="qq" title="QQ音乐音源">QQ</button>
+          <button class="sound-engine-btn" data-engine="kugou" title="酷狗音乐源">酷狗</button>
+          <button class="sound-engine-btn" data-engine="apple" title="Apple Music 官方试听源">苹果</button>
+          <button class="sound-engine-btn" data-engine="migu" title="咪咕音乐源">咪咕</button>
+          <button class="sound-engine-btn" data-engine="private" title="我的网易云扫码 / 私有曲库">自建</button>
+          <button class="sound-engine-btn" data-engine="auto" title="智能匹配">智能</button>
+        </div>
+
+        <!-- Icon-Only Apple Glass Action Buttons -->
+        <div class="music-icon-toolbar">
+          <button id="btnToggleCapsule" class="music-action-btn music-icon-btn" title="后台播放胶囊开关" aria-label="后台播放胶囊开关">
+            <span class="capsule-status-dot" id="capsuleStatusDot"></span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            <span id="capsuleStatusText" class="sr-only">后台胶囊</span>
+          </button>
+
+          <button id="btnOpenSourceDialog" class="music-action-btn music-icon-btn" title="导入歌单 / 音源配置" aria-label="导入歌单与音源配置">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+          </button>
+
+          <button id="btnDownloadAllMusic" class="music-action-btn music-icon-btn" title="一键下载当前列表" aria-label="一键下载当前列表">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </button>
+
+          <button id="btnOpenDownloads" class="music-action-btn music-icon-btn dl-mgr-trigger" title="下载管理 · 查看下载进度与已保存歌曲" aria-label="下载管理">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+            <span class="dl-badge-count" id="dlBadgeCount" hidden>0</span>
+          </button>
+
+          <button id="btnCheckMusicUpdate" class="music-action-btn music-icon-btn" title="检测歌单更新" aria-label="检测歌单更新">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><polyline points="21 3 21 9 15 9"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Unit & Idol Selection Filter Area (Clean Inline Rail — Zero Clipped Labels) -->
+    <section class="idol-filter-section" aria-label="组合与偶像分类筛选">
+      <div class="filter-sub-row">
+        <div class="idol-filter-label" id="filterUnitLabel">
+          <span>组合</span>
+        </div>
+        <div class="unit-carousel-track" id="unitCarouselTrack">
+          <!-- Rendered dynamically by music.js -->
+        </div>
+      </div>
+
+      <div class="filter-sub-row">
+        <div class="idol-carousel-track" id="idolCarouselTrack">
+          <!-- Rendered dynamically by music.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Jukebox Stage (Turntable + Lyrics & Catalogue) -->
+    <section class="music-stage-grid">
+      <!-- Left: Hi-Fi Studio Reference Vinyl Turntable -->
+      <div class="turntable-panel">
+        <div class="turntable-deck" id="turntableDeck">
+          <!-- Mode toggle: Vinyl Platter / 3D Album Sleeve -->
+          <button type="button" class="deck-view-flip-btn" id="btnFlipDeckCover" title="切换黑胶唱盘 / 3D 专辑封面">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="12" r="4"/></svg>
+          </button>
+
+          <!-- Ambient 36-Bar Radial Prism Visualizer Ring -->
+          <div class="vinyl-visualizer-ring" id="vinylVisualizerRing" aria-hidden="true"></div>
+
+          <div class="vinyl-stage-assembly" id="vinylStageAssembly">
+            <!-- Machined Platter Well -->
+            <div class="turntable-platter-well" aria-hidden="true"></div>
+
+            <!-- Spinning Gleaming Anisotropic LP Disc (Click to Play/Pause) -->
+            <div class="vinyl-disc" id="vinylDisc" role="button" tabindex="0" title="点击黑胶播放 / 暂停">
+              <div class="vinyl-grooves" aria-hidden="true"></div>
+              <div class="vinyl-center-label">
+                <img id="vinylCenterImg" src="/app-icon.png" alt="Vinyl Center">
+                <span class="vinyl-label-ring" aria-hidden="true"></span>
+              </div>
+              <div class="vinyl-spindle-hole" aria-hidden="true"></div>
+            </div>
+            <!-- Fixed-Angle Anisotropic Studio Light Sheen Over Spinning Grooves -->
+            <div class="vinyl-sheen" aria-hidden="true"></div>
+
+            <!-- Precision S-Curved Chrome Tonearm -->
+            <div class="turntable-tonearm" id="tonearm" aria-hidden="true">
+              <svg class="tonearm-svg" viewBox="0 0 110 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="armChrome" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#f8fafc"/>
+                    <stop offset="45%" stop-color="#94a3b8"/>
+                    <stop offset="100%" stop-color="#475569"/>
+                  </linearGradient>
+                  <radialGradient id="pivotBase" cx="40%" cy="35%" r="65%">
+                    <stop offset="0%" stop-color="#ffffff"/>
+                    <stop offset="55%" stop-color="#cbd5e1"/>
+                    <stop offset="100%" stop-color="#64748b"/>
+                  </radialGradient>
+                </defs>
+                <!-- Counterweight -->
+                <rect x="65" y="4" width="16" height="22" rx="4" fill="url(#armChrome)" stroke="#334155" stroke-width="1"/>
+                <!-- Gimbal Pivot Base -->
+                <circle cx="73" cy="40" r="19" fill="url(#pivotBase)" stroke="rgba(15,23,42,0.22)" stroke-width="1.2"/>
+                <circle cx="73" cy="40" r="11" fill="#1e293b" stroke="#e2e8f0" stroke-width="1.4"/>
+                <circle cx="73" cy="40" r="4.5" fill="url(#armChrome)"/>
+                <!-- S-Curved Tonearm Tube -->
+                <path d="M73 40 L73 118 C73 142, 54 156, 40 172" stroke="url(#armChrome)" stroke-width="5.2" stroke-linecap="round"/>
+                <path d="M71.5 42 L71.5 117 C71.5 140, 52.5 154, 39 170" stroke="rgba(255,255,255,0.72)" stroke-width="1.4" stroke-linecap="round"/>
+                <!-- Headshell & Cartridge -->
+                <g transform="translate(36, 174) rotate(36)">
+                  <rect x="-7" y="-4" width="14" height="24" rx="3.5" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+                  <path d="M7 2 L14 6" stroke="#cbd5e1" stroke-width="1.6" stroke-linecap="round"/>
+                  <circle class="stylus-led" cx="0" cy="15" r="2.6" fill="var(--music-theme, #0ea5e9)"/>
+                </g>
+              </svg>
+            </div>
+
+            <!-- Interactive Floating Mini Jacket (Click to expand 3D Holographic Cover) -->
+            <div class="album-jacket-sleeve" id="albumJacketSleeve" title="点击切换 3D 专辑封面预览">
+              <img id="albumCoverImg" src="/app-icon.png" alt="Album Cover Poster">
+            </div>
+          </div>
+        </div>
+
+        <!-- Song Metadata -->
+        <div class="hero-song-info">
+          <h2 class="hero-song-title" id="heroSongTitle">BEAM</h2>
+          <div class="hero-song-sub" id="heroSongSub">光束 (BEAM)</div>
+          <div class="hero-song-artists" id="heroSongArtists">
+            <span class="unit-tag">ALSTROEMERIA</span> 大崎甘奈・大崎甜花・桑山千雪
+          </div>
+          <div class="hero-song-album" id="heroSongAlbum">
+            专辑: BEAM
+          </div>
+          
+          <div class="hero-audio-tags">
+            <span class="quality-badge-tag" id="heroQualityTag">💎 SQ无损</span>
+            <span class="quality-badge-tag" id="heroPlatformTag" style="background:rgba(0,0,0,0.06);color:#555;">283PRO</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Synced Lyrics View & Song Catalogue Tabs -->
+      <div class="music-content-panel">
+        <div class="panel-header-tabs">
+          <div class="tab-buttons-group" role="tablist">
+            <button class="tab-btn active" data-tab="all" role="tab">全部</button>
+            <button class="tab-btn" data-tab="fav" role="tab" title="我的收藏"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="color:#ff3a3a;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>收藏</button>
+            <button class="tab-btn" data-tab="account" role="tab" title="已登录账号的云端歌单与喜欢">☁ 账号歌单</button>
+            <button class="tab-btn" data-tab="custom" role="tab" title="自建歌单"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>歌单</button>
+          </div>
+
+          <div class="panel-right-tools">
+            <div class="view-mode-toggle">
+              <button class="view-mode-btn active" id="btnShowSongs" title="曲目列表" aria-label="曲目列表">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h12"/></svg>
+              </button>
+              <button class="view-mode-btn" id="btnShowLyrics" title="沉浸歌词" aria-label="沉浸歌词">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18V6l11-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg>
+              </button>
+            </div>
+
+            <div class="song-search-wrap">
+              <svg class="song-search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+              <input type="text" id="songSearchInput" class="song-search-input" placeholder="全网全源搜歌…" aria-label="搜索歌曲">
+            </div>
+          </div>
+        </div>
+
+        <!-- 1. Song List Catalogue View -->
+        <div class="songs-view-container" id="songsViewContainer">
+          <div class="song-list-scroll" id="songListScroll">
+            <!-- Rendered dynamically by music.js -->
+          </div>
+        </div>
+
+        <!-- 2. Synced Lyrics Showcase View (Karaoke Center Aligned) -->
+        <div class="lyrics-view-container" id="lyricsViewContainer" style="display:none;">
+          <div class="lyrics-scroll-box" id="lyricsScrollBox">
+            <!-- Synchronized lyrics lines with center alignment rendered dynamically -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Tactile Liquid Glass Player Dock -->
+  <footer class="music-player-dock" role="region" aria-label="音乐播放控制器">
+    <div class="dock-main-row">
+      <!-- Left: Song Thumbnail & Title (Click to open Full-Screen Immersive Lyrics Page) -->
+      <div class="dock-current-track" id="dockTrackTrigger" role="button" tabindex="0" title="点击展开沉浸歌词页">
+        <div class="dock-thumb-wrap">
+          <img id="dockThumbImg" src="/app-icon.png" alt="Current Track">
+          <span class="dock-thumb-expand" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+          </span>
+        </div>
+        <div class="dock-track-info">
+          <span class="dock-track-title" id="dockTitle">BEAM</span>
+          <span class="dock-track-artist" id="dockArtist">光束 · ALSTROEMERIA</span>
+        </div>
+      </div>
+
+      <!-- Center: Strictly Centered on Play/Pause ([Mode][Prev] | [Play] | [Next][Quality]) -->
+      <div class="dock-center-controls">
+        <div class="dock-center-left">
+          <button class="dock-ctrl-btn" id="btnMode" title="列表循环" aria-label="切换播放模式">
+            <svg id="modeIcon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/>
+            </svg>
+          </button>
+
+          <button class="dock-ctrl-btn" id="btnPrev" title="上一曲" aria-label="上一曲">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+          </button>
+        </div>
+
+        <!-- Prominent Coral-Rose Play/Pause Button with Pure White Icon -->
+        <button class="dock-play-pause-btn" id="btnPlayPause" title="播放" aria-label="播放">
+          <svg id="iconPlay" viewBox="0 0 24 24" width="26" height="26"><path d="M8 5v14l11-7z"/></svg>
+          <svg id="iconPause" viewBox="0 0 24 24" width="26" height="26" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+        </button>
+
+        <div class="dock-center-right">
+          <button class="dock-ctrl-btn" id="btnNext" title="下一曲" aria-label="下一曲">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+          </button>
+
+          <!-- Audio Quality Button with NetEase SVIP Rich Popover (Right beside Next!) -->
+          <div class="quality-selector-wrap">
+            <button class="quality-badge-btn" id="btnQuality" title="切换当前歌曲音质">
+              <span id="qualityLabel">SQ</span>
+              <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+            </button>
+            <div class="quality-dropdown-menu quality-rich-menu" id="qualityDropdown">
+              <div class="qrm-head">
+                <strong>当前歌曲音质</strong>
+                <span>SVIP 无损 · 环绕声直连</span>
+              </div>
+              <div class="qrm-hero-grid">
+                <div class="quality-opt-item qrm-hero-card" data-quality="sky">
+                  <div class="qrm-hero-top">
+                    <span class="qrm-hero-ico">〰</span>
+                    <span class="qrm-tier-badge svip">SVIP</span>
+                  </div>
+                  <strong>沉浸环绕声</strong>
+                  <small class="qrm-en">Surround Audio</small>
+                  <span class="qrm-desc">环绕音感 最高5.1声道</span>
+                </div>
+                <div class="quality-opt-item qrm-hero-card" data-quality="jymaster">
+                  <div class="qrm-hero-top">
+                    <span class="qrm-hero-ico">◉</span>
+                    <span class="qrm-tier-badge svip">SVIP</span>
+                  </div>
+                  <strong>超清母带</strong>
+                  <small class="qrm-en">Master</small>
+                  <span class="qrm-desc">极致细节 192kHz/24bit</span>
+                </div>
+              </div>
+              <div class="qrm-list">
+                <div class="quality-opt-item qrm-row" data-quality="jyeffect">
+                  <span class="qrm-row-ico">❖</span>
+                  <div class="qrm-row-body">
+                    <div class="qrm-row-title">臻音全景声 (Audio Vivid) <span class="qrm-tier-badge svip">SVIP</span></div>
+                    <div class="qrm-row-sub">沉浸三维空间音频，最高7.1声道</div>
+                  </div>
+                  <span class="qrm-check" aria-hidden="true">✓</span>
+                </div>
+                <div class="quality-opt-item qrm-row" data-quality="hires">
+                  <span class="qrm-row-ico">⫯</span>
+                  <div class="qrm-row-body">
+                    <div class="qrm-row-title">高清臻音 (Spatial Audio) <span class="qrm-tier-badge vip">VIP</span></div>
+                    <div class="qrm-row-sub">高频细节还原与清晰沉浸感，96kHz/24bit</div>
+                  </div>
+                  <span class="qrm-check" aria-hidden="true">✓</span>
+                </div>
+                <div class="quality-opt-item qrm-row active" data-quality="flac">
+                  <span class="qrm-row-ico">SQ</span>
+                  <div class="qrm-row-body">
+                    <div class="qrm-row-title">无损 (SQ) <span class="qrm-tier-badge vip">VIP</span></div>
+                    <div class="qrm-row-sub">高保真无损音质，最高48kHz/16bit</div>
+                  </div>
+                  <span class="qrm-check" aria-hidden="true">✓</span>
+                </div>
+                <div class="quality-opt-item qrm-row" data-quality="320">
+                  <span class="qrm-row-ico">HQ</span>
+                  <div class="qrm-row-body">
+                    <div class="qrm-row-title">极高 (HQ)</div>
+                    <div class="qrm-row-sub">近 CD 音质的细节体验，最高320kbps</div>
+                  </div>
+                  <span class="qrm-check" aria-hidden="true">✓</span>
+                </div>
+                <div class="quality-opt-item qrm-row" data-quality="128">
+                  <span class="qrm-row-ico">标</span>
+                  <div class="qrm-row-body">
+                    <div class="qrm-row-title">标准</div>
+                    <div class="qrm-row-sub">128kbps</div>
+                  </div>
+                  <span class="qrm-check" aria-hidden="true">✓</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Minimalist Apple Aux Controls (Fav · Volume · ⋯ More) -->
+      <div class="dock-aux-controls">
+        <!-- Favorite Current Song Button -->
+        <button class="dock-pill-action-btn dock-icon-only" id="btnDockFav" title="收藏当前歌曲" aria-label="收藏当前歌曲">
+          <svg class="dock-fav-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          <span id="dockFavLabel" class="sr-only">收藏</span>
+        </button>
+
+        <div class="dock-volume-group">
+          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+          <input type="range" class="volume-slider" id="volumeRange" min="0" max="100" value="50" aria-label="音量调节">
+          <span class="dock-vol-val" id="volumeValText">50%</span>
+        </div>
+
+        <!-- ⋯ More Menu (Hover 260ms anti-misclick auto-expand or Click) -->
+        <div class="music-more-wrap dock-more-wrap" id="dockMoreWrap">
+          <button type="button" class="dock-pill-action-btn dock-icon-only music-more-btn" id="btnDockMore" title="更多功能（悬停或点击展开）" aria-label="更多音乐功能" aria-expanded="false" aria-haspopup="true">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><circle cx="5.5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="18.5" cy="12" r="1.8"/></svg>
+          </button>
+          <div class="music-more-menu dock-more-menu" id="dockMoreMenu" role="menu" aria-hidden="true">
+            <div class="mm-section-label">快捷操作</div>
+            <div class="mm-actions-row" id="dockMoreActions">
+              <!-- Set as Home BGM Button -->
+              <button class="dock-pill-action-btn dock-icon-only" id="btnSetHomeBgm" title="设为事务所主页 BGM" aria-label="设为事务所主页背景音乐">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5z"/></svg>
+              </button>
+
+              <!-- Download Current Song Button -->
+              <button class="dock-pill-action-btn dock-icon-only" id="btnDownloadCurrent" title="下载当前曲目" aria-label="下载当前曲目">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              </button>
+            </div>
+
+            <div class="mm-section-label">音效 · 歌源</div>
+            <div class="mm-pills-row" id="dockMorePills">
+              <!-- Audio Source Switcher Button with Dropdown -->
+              <div class="source-selector-wrap" style="position:relative;">
+                <button class="quality-badge-btn source-pill-btn" id="btnCurrentSource" title="切换播放音源">
+                  <span id="sourceLabel">网易云</span>
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+                </button>
+                <div class="quality-dropdown-menu" id="sourceDropdown" style="display:none;">
+                  <div class="source-opt-item" data-engine="private">我的网易云 / 私有曲库</div>
+                  <div class="source-opt-item active" data-engine="netease">网易云源</div>
+                  <div class="source-opt-item" data-engine="qq">QQ音乐源</div>
+                  <div class="source-opt-item" data-engine="kugou">酷狗音乐源</div>
+                  <div class="source-opt-item" data-engine="apple">Apple Music 苹果音乐</div>
+                  <div class="source-opt-item" data-engine="migu">咪咕音乐源</div>
+                  <div class="source-opt-item" data-engine="lx">自定义模板源</div>
+                  <div class="source-opt-item" data-engine="auto">全网智能匹配</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Progress Scrubber Row -->
+    <div class="dock-progress-row">
+      <span class="dock-time" id="currentTime">00:00</span>
+      <div class="dock-slider-wrap">
+        <input type="range" class="dock-range-input" id="progressRange" min="0" max="100" value="0" step="0.1" aria-label="播放进度">
+      </div>
+      <span class="dock-time" id="totalTime">00:00</span>
+    </div>
+  </footer>
+
+  <!-- Full-Screen Immersive Lyrics Overlay (Mainstream Apple Music / NetEase Style) -->
+  <section class="lyrics-full-overlay" id="lyricsFullOverlay" aria-hidden="true" role="dialog" aria-label="沉浸歌词页">
+    <div class="lfo-backdrop" aria-hidden="true">
+      <img id="lfoBackdropImg" src="/app-icon.png" alt="">
+      <div class="lfo-backdrop-scrim"></div>
+    </div>
+
+    <div class="lfo-inner">
+      <header class="lfo-top-bar">
+        <div class="lfo-top-left">
+          <button type="button" class="lfo-exit-btn" id="lfoCloseBtn" title="退出全屏 (Esc)" aria-label="退出全屏">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            <span>退出全屏</span>
+          </button>
+          <span class="lfo-pill-badge" id="lfoQualityBadge" hidden>SQ 无损</span>
+          <span class="lfo-pill-badge" id="lfoSourceBadge" hidden>283PRO</span>
+        </div>
+      </header>
+
+      <div class="lfo-stage">
+        <div class="lfo-art-col">
+          <div class="lfo-cover-frame">
+            <img id="lfoCoverImg" src="/app-icon.png" alt="Album Cover">
+          </div>
+          <div class="lfo-song-meta">
+            <h2 id="lfoTitle">BEAM</h2>
+            <p class="lfo-sub" id="lfoSub"></p>
+            <p class="lfo-artist" id="lfoArtist"></p>
+            <p class="lfo-album" id="lfoAlbum"></p>
+          </div>
+          <div class="lfo-transport">
+            <div class="lfo-scrub-row">
+              <span id="lfoCurTime">00:00</span>
+              <input type="range" id="lfoSeek" min="0" max="100" step="0.1" value="0" aria-label="播放进度">
+              <span id="lfoDurTime">00:00</span>
+            </div>
+            <div class="lfo-ctrl-row" id="lfoCtrlRow">
+              <button type="button" class="lfo-circle-btn" id="lfoModeBtn" title="切换播放顺序（顺序/随机/单曲）" aria-label="切换播放顺序">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/></svg>
+              </button>
+              <button type="button" class="lfo-ctrl-btn" id="lfoPrevBtn" aria-label="上一首">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+              </button>
+              <button type="button" class="lfo-ctrl-btn lfo-play-btn" id="lfoPlayBtn" aria-label="播放或暂停">
+                <svg class="lfo-ic-play" viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                <svg class="lfo-ic-pause" viewBox="0 0 24 24" width="26" height="26" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+              </button>
+              <button type="button" class="lfo-ctrl-btn" id="lfoNextBtn" aria-label="下一首">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+              </button>
+              <button type="button" class="lfo-circle-btn" id="lfoFavBtn" title="收藏歌曲" aria-label="收藏歌曲">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              </button>
+            </div>
+            <div class="lfo-sub-row" id="lfoSubRow">
+              <div class="lfo-volume-row" aria-label="沉浸页音量控制">
+                <button type="button" class="lfo-vol-btn" id="lfoMuteBtn" title="静音 / 取消静音" aria-label="静音切换">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+                </button>
+                <input type="range" id="lfoVolume" min="0" max="100" step="1" value="50" aria-label="沉浸页音量">
+                <span class="lfo-vol-val" id="lfoVolText">50%</span>
+              </div>
+              <button type="button" class="lfo-circle-btn" id="lfoQueueBtn" title="待播清单" aria-label="展开或收起待播清单">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h12M4 18h10"/><polygon points="18 13 22 16 18 19" fill="currentColor" stroke="none"/></svg>
+              </button>
+              <div class="music-more-wrap lfo-more-wrap" id="lfoMoreWrap">
+                <button type="button" class="lfo-circle-btn music-more-btn" id="btnLfoMore" title="更多功能（悬停或点击展开）" aria-label="更多沉浸功能" aria-expanded="false" aria-haspopup="true">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><circle cx="5.5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="18.5" cy="12" r="1.8"/></svg>
+                </button>
+                <div class="music-more-menu lfo-more-menu" id="lfoMoreMenu" role="menu" aria-hidden="true">
+                  <div class="mm-section-label">快捷操作</div>
+                  <div class="mm-actions-row" id="lfoMoreActions">
+                    <button type="button" class="lfo-circle-btn" id="lfoDlBtn" title="下载当前歌曲" aria-label="下载当前歌曲">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                    </button>
+                  </div>
+                  <div class="mm-selects-row mm-selects-grid" id="lfoMoreSelects">
+                    <label class="lfo-tune-field">
+                      <span>歌源</span>
+                      <select class="lfo-pill-select lfo-mini-select" id="lfoSourceSelect" title="切换当前歌源" aria-label="切换当前歌源">
+                        <option value="netease">🎵 网易云</option>
+                        <option value="qq">🐧 QQ音乐</option>
+                        <option value="kugou">🐶 酷狗</option>
+                        <option value="apple"> Apple Music</option>
+                        <option value="migu">📱 咪咕</option>
+                        <option value="private">🎵 自建</option>
+                        <option value="auto">🌟 全网智能</option>
+                      </select>
+                    </label>
+                    <div class="lfo-tune-field lfo-quality-tune-field" style="position:relative;">
+                      <span>音质</span>
+                      <button type="button" class="lfo-pill-select lfo-mini-select lfo-quality-btn" id="lfoQualityBtn" title="切换当前音质" aria-label="切换当前音质" aria-haspopup="true" aria-expanded="false">
+                        <span id="lfoQualityBtnText">超清母带 (SVIP)</span>
+                        <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true" style="margin-left:auto;flex-shrink:0;"><path d="M7 10l5 5 5-5z"/></svg>
+                      </button>
+                      <div class="quality-dropdown-menu quality-rich-menu lfo-quality-dropdown" id="lfoQualityDropdown" role="menu" aria-hidden="true"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lfo-lyrics-col">
+          <div class="lfo-lyrics-scroll" id="lfoLyricsScroll" data-lfo-pane="lyrics">
+            <!-- Rendered dynamically by music.js -->
+          </div>
+          <div class="lfo-queue-pane" id="lfoQueuePane" data-lfo-pane="queue" hidden></div>
+          <div class="lfo-comments-pane" id="lfoCommentsPane" data-lfo-pane="comments" hidden></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Dialog: Private Music Sources & Playlist Import (Apple Tabbed Sheet) -->
+  <dialog class="music-source-dialog" id="sourceDialog">
+    <div class="dialog-content-box source-sheet-box">
+      <div class="dialog-header">
+        <div>
+          <h3>音源配置与私有曲库</h3>
+          <p class="dialog-sub-note">配置仅保存在本机，用于连接你自己的正版账号 API 或私有曲库服务器</p>
+        </div>
+        <button class="dialog-close-btn" id="btnCloseSourceDialog" aria-label="关闭">✕</button>
+      </div>
+
+      <!-- Priority Switch -->
+      <div class="pm-priority-bar">
+        <label class="pm-toggle-row">
+          <input type="checkbox" id="pmPreferPrivate" checked>
+          <span>播放时优先使用已启用的自建 / 私有曲库源</span>
+        </label>
+      </div>
+
+      <!-- Segmented Source Tabs -->
+      <div class="pm-source-tabs" role="tablist">
+        <button type="button" class="pm-src-tab active" data-pm-tab="ncm" role="tab">网易云扫码登录</button>
+        <button type="button" class="pm-src-tab" data-pm-tab="subsonic" role="tab">Navidrome</button>
+        <button type="button" class="pm-src-tab" data-pm-tab="webdav" role="tab">WebDAV / NAS</button>
+        <button type="button" class="pm-src-tab" data-pm-tab="import" role="tab">歌单与模板</button>
+      </div>
+
+      <!-- Pane 1: Built-in NetEase QR Login (+ Optional External API) -->
+      <div class="pm-src-pane active" data-pm-pane="ncm">
+        <!-- Logged-in Account Card -->
+        <div class="ncm-account-card" id="ncmAccountCard" hidden>
+          <img id="ncmAccountAvatar" src="/app-icon.png" alt="">
+          <div class="ncm-account-meta">
+            <strong id="ncmAccountName">已登录网易云账号</strong>
+            <span>已自动启用本机无损直连通道 · 无需外置服务</span>
+          </div>
+          <button type="button" class="dialog-action-btn secondary" id="btnNcmLogout">退出登录</button>
+        </div>
+
+        <!-- Official Browser Window Login Card (No Risk-Blocked Self-Generated QR!) -->
+        <div class="ncm-qr-card" id="ncmQrCard" style="padding:20px 16px;text-align:center;">
+          <p class="dialog-note" style="margin:0 0 14px;line-height:1.6;">点击下方按钮打开<strong>网易云音乐官方网页登录窗口</strong>，使用手机网易云 App 扫码并点确认后，系统将自动提取会员凭证并关闭窗口（不再受第三方接口风控拦截）。</p>
+          <div class="ncm-qr-actions" style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+            <button type="button" class="dialog-action-btn primary" id="btnNcmBrowserLogin" title="直接打开网易云官方网页登录，扫码点确认后自动提取会员 Cookie 并关闭">🌐 打开网易云官方窗口扫码登录</button>
+          </div>
+          <p class="pm-status-line" id="ncmQrStatus" role="status"></p>
+        </div>
+
+        <label class="pm-field">
+          <span>默认音质等级</span>
+          <select id="pmNcmLevel" class="dialog-input">
+            <option value="jymaster" selected>超清母带 Master (192kHz/24bit · 默认最高档)</option>
+            <option value="sky">沉浸环绕声 Surround Audio (5.1 · SVIP)</option>
+            <option value="jyeffect">臻音全景声 Audio Vivid (7.1 · SVIP)</option>
+            <option value="hires">高清臻音 Spatial Audio (96kHz/24bit · VIP)</option>
+            <option value="lossless">无损 SQ (48kHz/16bit · FLAC)</option>
+            <option value="exhigh">极高 HQ (320kbps)</option>
+            <option value="standard">标准 (128kbps)</option>
+          </select>
+        </label>
+
+        <details class="pm-adv-details">
+          <summary>高级选项：外置 NetEaseCloudMusicApi / 手动 Cookie</summary>
+          <div class="pm-adv-body">
+            <label class="pm-enable-row">
+              <input type="checkbox" id="pmNcmEnabled">
+              <span>启用网易云账号直连通道</span>
+            </label>
+            <label class="pm-field">
+              <span>自定义 API 服务器地址（留空使用内置直连，无需外置服务）</span>
+              <input type="text" id="pmNcmUrl" class="dialog-input" placeholder="留空即可；或填 http://127.0.0.1:3000">
+            </label>
+            <label class="pm-field">
+              <span>手动 MUSIC_U Cookie（扫码登录后自动填写）</span>
+              <input type="password" id="pmNcmCookie" class="dialog-input" placeholder="扫码登录会自动保存">
+            </label>
+          </div>
+        </details>
+
+        <div class="pm-action-bar">
+          <button type="button" class="dialog-action-btn secondary" id="btnTestNcm">测试连接</button>
+          <button type="button" class="dialog-action-btn" id="btnSavePrivateSources1">保存配置</button>
+        </div>
+        <p class="pm-status-line" id="pmNcmStatus" role="status"></p>
+      </div>
+
+      <!-- Pane 2: Navidrome / Subsonic -->
+      <div class="pm-src-pane" data-pm-pane="subsonic">
+        <label class="pm-enable-row">
+          <input type="checkbox" id="pmSubEnabled">
+          <span>启用 Navidrome / Subsonic 私有曲库</span>
+        </label>
+        <label class="pm-field">
+          <span>服务器地址</span>
+          <input type="text" id="pmSubUrl" class="dialog-input" placeholder="例如：http://192.168.1.10:4533">
+        </label>
+        <div class="pm-field-grid">
+          <label class="pm-field">
+            <span>用户名</span>
+            <input type="text" id="pmSubUser" class="dialog-input" placeholder="Subsonic 用户名">
+          </label>
+          <label class="pm-field">
+            <span>密码</span>
+            <input type="password" id="pmSubPass" class="dialog-input" placeholder="Subsonic 密码">
+          </label>
+        </div>
+        <div class="pm-action-bar">
+          <button type="button" class="dialog-action-btn secondary" id="btnTestSub">测试连接</button>
+          <button type="button" class="dialog-action-btn" id="btnSavePrivateSources2">保存配置</button>
+        </div>
+        <p class="pm-status-line" id="pmSubStatus" role="status"></p>
+      </div>
+
+      <!-- Pane 3: WebDAV / NAS (支持飞牛音乐 fnOS / Alist / 群晖 / 极空间) -->
+      <div class="pm-src-pane" data-pm-pane="webdav">
+        <label class="pm-enable-row">
+          <input type="checkbox" id="pmDavEnabled">
+          <span>启用飞牛音乐 (fnOS) / WebDAV / Alist / NAS 曲库</span>
+        </label>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px;">
+          <button type="button" class="dialog-action-btn secondary" style="padding:5px 10px;font-size:12px;" onclick="document.getElementById('pmDavUrl').value='http://192.168.1.10:5005/Music';document.getElementById('pmDavEnabled').checked=true;">🐮 飞牛音乐 fnOS (HTTP 5005)</button>
+          <button type="button" class="dialog-action-btn secondary" style="padding:5px 10px;font-size:12px;" onclick="document.getElementById('pmDavUrl').value='https://192.168.1.10:5006/Music';document.getElementById('pmDavEnabled').checked=true;">🐮 飞牛音乐 fnOS (HTTPS 5006)</button>
+          <button type="button" class="dialog-action-btn secondary" style="padding:5px 10px;font-size:12px;" onclick="document.getElementById('pmDavUrl').value='http://192.168.1.10:5244/dav/Music';document.getElementById('pmDavEnabled').checked=true;">📁 Alist / OpenList (5244)</button>
+        </div>
+        <label class="pm-field">
+          <span>飞牛音乐 / WebDAV 音乐目录地址</span>
+          <input type="text" id="pmDavUrl" class="dialog-input" placeholder="飞牛示例：http://飞牛IP:5005/Music 或 http://IP:5244/dav/Music">
+        </label>
+        <div class="pm-field-grid">
+          <label class="pm-field">
+            <span>飞牛 / WebDAV 账号</span>
+            <input type="text" id="pmDavUser" class="dialog-input" placeholder="飞牛 NAS 账号 / WebDAV 账号">
+          </label>
+          <label class="pm-field">
+            <span>飞牛 / WebDAV 密码</span>
+            <input type="password" id="pmDavPass" class="dialog-input" placeholder="飞牛 NAS 密码 / WebDAV 密码">
+          </label>
+        </div>
+        <p class="dialog-note">支持 <b>飞牛 OS (fnOS) 飞牛音乐</b>（在飞牛「文件共享协议」开启 WebDAV 后填入 <code>http://飞牛IP:5005/音乐目录</code>）以及 Alist / 群晖 / 极空间，自动递归扫描 3 层目录（歌手/专辑/曲目）中的 FLAC / MP3 / M4A / WAV / OGG 并无损直连播放。</p>
+        <div class="pm-action-bar">
+          <button type="button" class="dialog-action-btn secondary" id="btnTestDav">测试并扫描曲库</button>
+          <button type="button" class="dialog-action-btn" id="btnSavePrivateSources3">保存配置</button>
+        </div>
+        <p class="pm-status-line" id="pmDavStatus" role="status"></p>
+      </div>
+
+      <!-- Pane 4: Playlist Import & Custom URL Template -->
+      <div class="pm-src-pane" data-pm-pane="import">
+        <div class="dialog-section">
+          <h4>网易云歌单在线导入</h4>
+          <p class="dialog-hint">输入公开歌单链接或歌单 ID，导入曲目列表：</p>
+          <div class="dialog-input-row">
+            <input type="text" id="inputPlaylistId" class="dialog-input" placeholder="输入歌单 ID (如 8896865808) 或完整链接" value="8896865808">
+            <button id="btnFetchPlaylist" class="dialog-action-btn">抓取导入</button>
+          </div>
+          <button id="btnResetOfficialCatalog" class="dialog-action-btn secondary" style="margin-top: 10px; width: 100%; font-size: 13px;">恢复官方全企划内置曲库 (1530首)</button>
+        </div>
+
+        <div class="dialog-section" style="margin-top:14px;">
+          <h4>自定义 URL 模板（高级）</h4>
+          <div class="dialog-input-row">
+            <input type="text" id="inputLxSource" class="dialog-input" placeholder="例如：https://你的服务/stream?id={id}&q={quality}" value="">
+            <button id="btnSaveLxSource" class="dialog-action-btn">保存模板</button>
+          </div>
+          <p class="dialog-note">支持变量：<code>{id}</code> 歌曲 ID，<code>{quality}</code> 音质（128k / 320k / flac / hires）。</p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal Dialog: Add To Custom Playlist -->
+  <dialog class="music-source-dialog playlist-add-dialog" id="dialogAddToPlaylist">
+    <div class="dialog-content-box" style="max-width:440px;">
+      <div class="dialog-header">
+        <h3>➕ 添加到自建歌单</h3>
+        <button class="dialog-close-btn" id="btnCloseAddToPlaylist">✕</button>
+      </div>
+      <div style="padding:16px 20px;">
+        <p style="font-size:13px;color:#64748b;margin-bottom:12px;" id="addToPlaylistSongName">选择目标歌单：</p>
+        <div class="custom-playlist-picker-list" id="customPlaylistPickerList" style="max-height:220px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;">
+          <!-- Dynamically populated playlists -->
+        </div>
+        <div style="margin-top:16px;padding-top:14px;border-top:1px dashed #e2e8f0;display:flex;gap:8px;">
+          <input type="text" id="inputNewPlaylistInline" class="dialog-input" placeholder="输入新歌单名称…" style="flex:1;">
+          <button id="btnCreateAndAddInline" class="dialog-action-btn" style="white-space:nowrap;">新建并加入</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal Dialog: Create Custom Playlist -->
+  <dialog class="music-source-dialog" id="dialogNewPlaylist">
+    <div class="dialog-content-box" style="max-width:400px;">
+      <div class="dialog-header">
+        <h3>📁 新建自建歌单</h3>
+        <button class="dialog-close-btn" id="btnCloseNewPlaylist">✕</button>
+      </div>
+      <div style="padding:16px 20px;">
+        <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:#334155;">歌单名称</label>
+        <input type="text" id="inputNewPlaylistName" class="dialog-input" placeholder="例如：我的必听神曲、周杰伦无损精选…" style="width:100%;margin-bottom:12px;">
+        <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:#334155;">歌单简介 (可选)</label>
+        <input type="text" id="inputNewPlaylistDesc" class="dialog-input" placeholder="简短描述这趟美妙的音乐旅程…" style="width:100%;margin-bottom:16px;">
+        <div style="display:flex;justify-content:flex-end;gap:10px;">
+          <button class="dialog-action-btn secondary" id="btnCancelNewPlaylist" style="background:rgba(0,0,0,0.06);color:#475569;">取消</button>
+          <button class="dialog-action-btn" id="btnConfirmNewPlaylist">创建歌单</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <!-- Floating Mini Download Progress Pill (Click to Open Download Manager) -->
+  <button type="button" class="dl-floating-pill" id="dlFloatingPill" hidden>
+    <span class="dl-fp-dot" aria-hidden="true">⬇</span>
+    <span class="dl-fp-text" id="dlFloatingText">正在下载…</span>
+    <span class="dl-fp-bar"><i id="dlFloatingBarFill" style="width:0%"></i></span>
+  </button>
+
+  <!-- Modal Dialog: Music Download Manager (下载列表与实时进度条) -->
+  <dialog class="music-source-dialog dl-manager-dialog" id="downloadManagerDialog">
+    <div class="dialog-content-box dl-mgr-box">
+      <div class="dialog-header">
+        <div>
+          <h3>⬇ 音乐下载管理</h3>
+          <p class="dialog-sub-note" id="dlMgrSub">自动识别真实音频格式保存为标准可播文件（FLAC / MP3 / M4A）并同步保存 .lrc 歌词</p>
+        </div>
+        <div class="dl-mgr-head-acts">
+          <button type="button" class="dialog-action-btn secondary" id="btnDlOpenFolder">打开目录</button>
+          <button type="button" class="dialog-action-btn secondary" id="btnDlClearDone">清空记录</button>
+          <button type="button" class="dialog-close-btn" id="btnCloseDownloadMgr">✕</button>
+        </div>
+      </div>
+      <div class="dl-mgr-list" id="dlMgrList">
+        <div class="dl-mgr-empty">暂无下载记录，点击歌曲右侧下载按钮即可开始下载并查看实时进度</div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

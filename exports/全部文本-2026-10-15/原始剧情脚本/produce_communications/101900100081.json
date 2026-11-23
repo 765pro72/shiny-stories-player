@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1019001000810010,
+    "speaker": "愛依",
+    "text": "プロデューサーってさ～\r\nなんか覚える時ってどーしてる～？",
+    "charAnim1": "smile3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "019",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00001",
+    "voice": "produce_communications/101900100081/1019001000810010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな……内容によって変わるけど\r\n何を覚えなくちゃならないんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1019001000810020,
+    "speaker": "愛依",
+    "text": "テストで同じとこ間違えちゃってさ～\r\nそこ覚えてないと次はヤバいんだよね～",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101900100081/1019001000810020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そういうことなら……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "部屋のドアに\r\n答えを貼っておく",
+    "nextLabel": "1019001000811"
+  },
+  {
+    "select": "何回も書いて覚える",
+    "nextLabel": "1019001000812"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "音読をして覚える",
+    "nextLabel": "1019001000813"
+  },
+  {
+    "id": 1019001000810030,
+    "label": "1019001000811",
+    "speaker": "愛依",
+    "text": "あ、それ良さげ～\r\n部屋のドアなら絶対見るもんね～",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101900100081/1019001000810030"
+  },
+  {
+    "id": 1019001000810040,
+    "speaker": "愛依",
+    "text": "帰ったら貼っとこーっと♪",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101900100081/1019001000810040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1019001000810050,
+    "label": "1019001000812",
+    "speaker": "愛依",
+    "text": "それしかないか～",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101900100081/1019001000810050"
+  },
+  {
+    "id": 1019001000810060,
+    "speaker": "愛依",
+    "text": "そういうのオードーって言うんだっけ？",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101900100081/1019001000810060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1019001000810070,
+    "label": "1019001000813",
+    "speaker": "愛依",
+    "text": "えぇ～、声出す的なやつ～？",
+    "charAnim1": "anger1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101900100081/1019001000810070"
+  },
+  {
+    "id": 1019001000810080,
+    "speaker": "愛依",
+    "text": "聞かれたら恥ずくな～い？",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101900100081/1019001000810080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

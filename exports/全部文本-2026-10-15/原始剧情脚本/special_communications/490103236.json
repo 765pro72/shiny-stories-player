@@ -1,0 +1,123 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00225",
+    "bgm": "018"
+  },
+  {
+    "select": "ゲームルーム",
+    "nextLabel": "1"
+  },
+  {
+    "select": "エコバッグ",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "真相ファイル",
+    "nextLabel": "3"
+  },
+  {
+    "id": 4901032360020,
+    "label": "1",
+    "speaker": "あさひ",
+    "text": "へー、そこで何を探すんすか？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103236/4901032360020"
+  },
+  {
+    "speaker": "弟子",
+    "text": "えっと、なんだったかな……\r\nいや、思い違いをしていました",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "2",
+    "textFrame": "off",
+    "se": "0914",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "弟子",
+    "text": "当館のスタッフのものかどうか……\r\n確認したいと思うんです",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032360010,
+    "speaker": "冬優子",
+    "text": "……何か確信があるみたいですね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "join",
+    "voice": "special_communications/490103236/4901032360010"
+  },
+  {
+    "label": "3",
+    "speaker": "弟子",
+    "text": "それがあれば、和泉さんがどうして黙っているのか……\r\nきっと理解できると思うんです",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032360030,
+    "speaker": "あさひ",
+    "text": "そうかもしれないっすけど、\r\nどこにあるんすか、それ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103236/4901032360030"
+  },
+  {
+    "speaker": "弟子",
+    "text": "あっ……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "autoWaitTime": 800
+  },
+  {
+    "id": 4901032360040,
+    "speaker": "冬優子",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "special_communications/490103236/4901032360040"
+  },
+  {
+    "label": "join",
+    "speaker": "弟子",
+    "text": "エコバッグの確認が終わったら……\r\nみなさんを、呼んできてくれませんか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032360050,
+    "speaker": "あさひ",
+    "text": "わかったっす！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103236/4901032360050"
+  },
+  {
+    "id": 4901032360060,
+    "speaker": "あさひ",
+    "text": "確かめたら、真相わかるっすかね？\r\nくー！　ワクワクしてきたっす～！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103236/4901032360060"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

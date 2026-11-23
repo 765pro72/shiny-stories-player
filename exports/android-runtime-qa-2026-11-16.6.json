@@ -1,0 +1,90 @@
+{
+  "at": "2026-11-16T05:49:07.077Z",
+  "version": "2026-11-16.6",
+  "apk": {
+    "bytes": 137507871,
+    "sha256": "99f6763582eac96060ba1d1bed3edaaca6851a2fe57e1d47c8f1bfe0392d3b95",
+    "versionCode": 2026111606
+  },
+  "device": {
+    "serial": "emulator-5554",
+    "android": "15 (API 35)",
+    "override": "wm size 1920x864, wm density 480",
+    "letterbox": "content 1536x864 centered, 192px black bars left and right",
+    "cssViewport": "512x288",
+    "appAbi": "arm64-v8a",
+    "hostAbi": "x86_64 (arm64 translation)"
+  },
+  "install": {
+    "result": "Success",
+    "serial": "emulator-5554",
+    "command": "adb install -r dist\\ShinyStories-Android.apk",
+    "method": "incremental/streamed"
+  },
+  "launch": {
+    "command": "adb shell pm clear io.shinystories.player && adb shell am start -n io.shinystories.player/.MainActivity",
+    "freshState": true,
+    "homeRendered": true,
+    "screenshot": "exports/android-2026-11-16.6-home-20x9.png"
+  },
+  "layout": {
+    "nav": "single row, all 8 items, no wrap, 44px tall",
+    "navLabels": 11,
+    "sideRow": "公告/收藏/更新 at y=100, 46x46 each, clear of the caption",
+    "toolsRow": "4 buttons at y=62, 44x44 each, right aligned",
+    "caption": {
+      "x": 8,
+      "y": 198,
+      "w": 236,
+      "h": 83,
+      "font": 13
+    },
+    "assistant": {
+      "w": 202,
+      "h": 58,
+      "nameSingleLine": true,
+      "note": "position follows saved/clamped settings; fresh install sits bottom-right clear of the caption"
+    },
+    "overlaps": []
+  },
+  "probes": [
+    {
+      "viewport": "512x288",
+      "navEnd": 499,
+      "caption": "8,198 236x83",
+      "assistant": "300,208 202x58",
+      "overlaps": 0
+    },
+    {
+      "viewport": "560x315",
+      "navEnd": 548,
+      "caption": "8,225 258x83",
+      "assistant": "348,235 202x58",
+      "overlaps": 0
+    },
+    {
+      "viewport": "640x360",
+      "navEnd": 628,
+      "caption": "8,270 294x83",
+      "assistant": "428,280 202x58",
+      "overlaps": 0
+    },
+    {
+      "viewport": "700x394",
+      "navEnd": 688,
+      "caption": "8,304 300x83",
+      "assistant": "488,314 202x58",
+      "overlaps": 0
+    },
+    {
+      "viewport": "800x360",
+      "navEnd": 788,
+      "caption": "8,270 300x83",
+      "assistant": "588,280 202x58",
+      "overlaps": 0
+    }
+  ],
+  "probeNotes": "automated check reports no overlaps among caption/shortcuts/tools/assistant and every non-nav control at least 44px; header/brand overlap is by design (brand sits inside the header).",
+  "limitation": "Emulator with arm64 translation; CSS width 512-800 verified, a real 2800x1260 phone may pick another width in that range.",
+  "ok": true
+}

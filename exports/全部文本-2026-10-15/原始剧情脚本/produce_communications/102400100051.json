@@ -1,0 +1,280 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0133",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1024001000510010,
+    "speaker": "にちか",
+    "text": "……\r\n…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100051/1024001000510010"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……に、にちか\r\n大丈夫か、その…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0164",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いいんだぞ、俺は。これ、分けたって……\r\nでもダイエットだって言うから──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "024",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1024001000510020,
+    "speaker": "にちか",
+    "text": "…………\r\n………………",
+    "charLabel": "nichika",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100051/1024001000510020"
+  },
+  {
+    "select": "話さなくていい",
+    "nextLabel": "1024001000511"
+  },
+  {
+    "select": "あっちで\r\n食べてくるよ",
+    "nextLabel": "1024001000512"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "……悪いな\r\n俺ばっかり",
+    "nextLabel": "1024001000513"
+  },
+  {
+    "label": "1024001000511",
+    "speaker": "プロデューサー",
+    "text": "……カロリー使うもんな\r\n話すっていうのも……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0328"
+  },
+  {
+    "charAnim2": "face_close",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0152",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1024001000510030,
+    "speaker": "にちか",
+    "text": "……\r\nていうか……",
+    "charLipAnim": "lip_anger",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100051/1024001000510030"
+  },
+  {
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1024001000510040,
+    "speaker": "にちか",
+    "text": "しまってくださいよ……\r\nそれ…………",
+    "charLipAnim": "lip_sad",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100051/1024001000510040"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "1024001000512",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1024001000510050,
+    "speaker": "にちか",
+    "text": "…………\r\nそれは……ありがたいです…………",
+    "charLipAnim": "lip_sad",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100051/1024001000510050"
+  },
+  {
+    "textFrame": "off",
+    "se": "0164",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1024001000510060,
+    "speaker": "にちか",
+    "text": "……あ、でも…………\r\nちょっと見てたい……かもです……ハンバーグ弁当……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0220",
+    "voice": "produce_communications/102400100051/1024001000510060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "1024001000513",
+    "textFrame": "off",
+    "se": "0164",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1024001000510070,
+    "speaker": "にちか",
+    "text": "…………って、言うんだったら…………",
+    "charLipAnim": "lip_sad",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100051/1024001000510070"
+  },
+  {
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0152",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1024001000510080,
+    "speaker": "にちか",
+    "text": "食べなきゃいいじゃないですかー…………",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100051/1024001000510080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

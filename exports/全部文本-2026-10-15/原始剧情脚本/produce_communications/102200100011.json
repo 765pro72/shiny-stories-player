@@ -1,0 +1,159 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "小糸ー？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001000110010,
+    "speaker": "小糸",
+    "text": "ぴゃ！？\r\nななななんでしょう……",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "022",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102200100011/1022001000110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、そんなに怖がらなくても\r\n大丈夫なんだけどな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、そうだ\r\nポケットに確か──……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "koito",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "──飴、\r\n食べないか？",
+    "nextLabel": "1022001000111"
+  },
+  {
+    "select": "──チョコ、\r\n少し溶けてるけど",
+    "nextLabel": "1022001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "……あれ、\r\n何もなかった",
+    "nextLabel": "1022001000113"
+  },
+  {
+    "id": 1022001000110020,
+    "label": "1022001000111",
+    "speaker": "小糸",
+    "text": "え、あ……\r\nい、いいんですか……！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100011/1022001000110020"
+  },
+  {
+    "id": 1022001000110030,
+    "speaker": "小糸",
+    "text": "え、えへ……ありがとうございます\r\n……お、おいしい……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100011/1022001000110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1022001000110040,
+    "label": "1022001000112",
+    "speaker": "小糸",
+    "text": "あ……えっと\r\nあ、ありがとうございます……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100011/1022001000110040"
+  },
+  {
+    "id": 1022001000110050,
+    "speaker": "小糸",
+    "text": "い、いただきます……！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100011/1022001000110050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ごめん、何かお菓子が入ってたと\r\n思ったんだけど……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1022001000110060,
+    "label": "1022001000113",
+    "speaker": "小糸",
+    "text": "べ、べつにお菓子……\r\nい、いりません……！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102200100011/1022001000110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

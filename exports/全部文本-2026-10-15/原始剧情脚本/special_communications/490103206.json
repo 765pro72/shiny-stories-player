@@ -1,0 +1,688 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0000"
+  },
+  {
+    "speaker": "off",
+    "text": "20XX年 XX月 XX日 06:23",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00484",
+    "bgEffect": "fade",
+    "bgEffectTime": 2500,
+    "waitType": "time",
+    "waitTime": 4500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00225",
+    "bgEffect": "fade",
+    "bgEffectTime": 2000,
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "弟子",
+    "text": "みなさん、\r\n朝早くからお集まりいただきありがとうございます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "──残念なお知らせをしなくてはなりません\r\n我が師、『Ａ』が……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "弟子",
+    "text": "自室にて何者かに殺害され、遺体となっているのを\r\n発見しました",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032060001,
+    "speaker": "探偵たち",
+    "text": "──！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060001"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00277",
+    "bgEffect": "fade",
+    "bgm": "067",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 4901032060010,
+    "speaker": "めぐる",
+    "text": "……どうして『Ａ』が亡くなってるってわかったの？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030030040",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103206/4901032060010"
+  },
+  {
+    "id": 4901032060020,
+    "speaker": "めぐる",
+    "text": "『Ａ』の自室がわかった理由についても……\r\n詳しく教えてもらっていいかな",
+    "charAnim1": "think",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060020"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "弟子",
+    "text": "……はい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "６時ちょうどのことでした",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00577",
+    "fg": "001921"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "弟子",
+    "text": "私のパソコンに\r\n自動応答メッセージが配信されたんです",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "それは『Ａ』のつけているスマートウォッチから、\r\n生体反応がなくなってしばらく経つと……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "表示されるもののようでした",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "そこには『Ａ』の本当の自室の位置と、\r\n入室するためのパスワードが書かれていて……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032060030,
+    "speaker": "智代子",
+    "text": "それで確認しに行ったら……ってことですか……？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060030"
+  },
+  {
+    "speaker": "弟子",
+    "text": "はい｡『Ａ』は自室にて後頭部を殴られ、\r\n出血した状態で横たわっていました",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032060040,
+    "speaker": "凛世",
+    "text": "そうですか……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060040"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00277",
+    "fg": "fade_out",
+    "bgEffect": "fade",
+    "fgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032060050,
+    "speaker": "凛世",
+    "text": "他に何か気づいた点はございますか？\r\n死亡推定時刻や、現場について、など……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030120010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103206/4901032060050"
+  },
+  {
+    "speaker": "弟子",
+    "text": "死亡推定時刻については……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00432",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "弟子",
+    "text": "遺体はすっかり冷たくなっていましたから、殺害されてから\r\nだいぶ時間が経っているようでした、とだけ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "死亡推定時刻を割り出すキットはありますが、\r\n詳しいことを調べるのは時間がかかりますので……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032060060,
+    "speaker": "咲耶",
+    "text": "私たちへの知らせを優先させてくれたんだね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060060"
+  },
+  {
+    "speaker": "弟子",
+    "text": "はい。また、部屋は荒らされており……\r\n金庫も空けられ、中身は空になっていました",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032060070,
+    "speaker": "恋鐘",
+    "text": "ちょ、ちょっと待って……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060070"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00277",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032060080,
+    "speaker": "恋鐘",
+    "text": "そい……解毒剤も全部なくなっとるってこと？",
+    "charAnim1": "wait5",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040040030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103206/4901032060080"
+  },
+  {
+    "speaker": "弟子",
+    "text": "……そういうことになりますね",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "弟子",
+    "text": "軽く探してみましたが、\r\n部屋の中には解毒剤はありませんでした",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032060090,
+    "speaker": "千雪",
+    "text": "……『Ａ』を殺した犯人が持ち去ったんでしょうか\r\nでも、何のために……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060090"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00684",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032060100,
+    "speaker": "愛依",
+    "text": "そんなの……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030190010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103206/4901032060100"
+  },
+  {
+    "id": 4901032060110,
+    "speaker": "愛依",
+    "text": "うちらに対して……\r\n取引できるカードにするために決まってるし……",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060110"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901032060120,
+    "speaker": "智代子",
+    "text": "……うん\r\n可能性はあるよね",
+    "charAnim1": "wait",
+    "charAnim2": "face_serious",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040100020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103206/4901032060120"
+  },
+  {
+    "id": 4901032060130,
+    "speaker": "智代子",
+    "text": "だって犯人は、自分の分を飲んだ後、\r\nその場で残りを割ってもよかったんだもん",
+    "charAnim1": "wait3",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060130"
+  },
+  {
+    "id": 4901032060140,
+    "speaker": "智代子",
+    "text": "そうしなかったってことは、\r\n何かやりたいことがあったのかもしれない",
+    "charAnim1": "think",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060140"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00432",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "弟子",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "また、現場は施錠され、\r\n天窓もしっかりと閉められていました……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032060150,
+    "speaker": "咲耶",
+    "text": "なるほど\r\nいわゆる密室殺人……というわけだね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060150"
+  },
+  {
+    "id": 4901032060160,
+    "speaker": "咲耶",
+    "text": "謎を解いて、犯人を見つけ出さなければ\r\n解毒剤のありかもわからないままだろう",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060160"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00277",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032060170,
+    "speaker": "咲耶",
+    "text": "まずは現場を見てみたい",
+    "charAnim1": "think",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040060020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103206/4901032060170"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901032060180,
+    "speaker": "摩美々",
+    "text": "……ていうか、スマートウォッチに\r\n心拍数とか、そういう記録が残ってるんじゃないー？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040050050",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103206/4901032060180"
+  },
+  {
+    "id": 4901032060190,
+    "speaker": "摩美々",
+    "text": "それを見れば、\r\n何時まで『Ａ』が生きてたかわかるかもー",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060190"
+  },
+  {
+    "speaker": "弟子",
+    "text": "確かに……！\r\nその可能性はありそうです",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00225",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 4901032060200,
+    "speaker": "霧子",
+    "text": "あの……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060200"
+  },
+  {
+    "id": 4901032060210,
+    "speaker": "霧子",
+    "text": "ご遺体を見たら、\r\n何かわかることがあるかもしれません……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060210"
+  },
+  {
+    "id": 4901032060220,
+    "speaker": "結華",
+    "text": "本当！？\r\nすごいね……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060220"
+  },
+  {
+    "id": 4901032060230,
+    "speaker": "結華",
+    "text": "三峰にはそんな特殊技能はないんだけど……！\r\n現場、調べさせてもらえると嬉しいな",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060230"
+  },
+  {
+    "id": 4901032060240,
+    "speaker": "恋鐘",
+    "text": "うちも一緒に行ってよか？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060240"
+  },
+  {
+    "id": 4901032060250,
+    "speaker": "恋鐘",
+    "text": "昨日の晩、食べたもんの中に毒ば入れた～って\r\n『Ａ』は言っとったけん",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060250"
+  },
+  {
+    "id": 4901032060260,
+    "speaker": "恋鐘",
+    "text": "部屋調べたら、\r\nどがん毒が入れられたかわかるかもしれん",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060260"
+  },
+  {
+    "id": 4901032060270,
+    "speaker": "霧子",
+    "text": "うん……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103206/4901032060270"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

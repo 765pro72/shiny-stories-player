@@ -1,0 +1,775 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00014",
+    "bgm": "0000"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "甘奈ちゃん、今の部分なんだけどね\r\nアルストロメリアにいる時とは違う表情を見せてほしいの",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1014003010010,
+    "speaker": "甘奈",
+    "text": "──え",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "3000140030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101400301/1014003010010"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "『G.R.A.D.』は個人戦でしょう？\r\nだから、審査員が求めているのは『甘奈ちゃん』だけ",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "ユニットにいる時と同じ顔しか見せられないなら、\r\nユニットでのお仕事だけでいいやって思われちゃうよ",
+    "charAnim2": "face_wait",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1014003010020,
+    "speaker": "甘奈",
+    "text": "──……は、はいっ\r\nすみませんっ、もう一度お願いします……！",
+    "charAnim1": "anger3",
+    "charAnim2": "face_trouble",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1014003010030,
+    "speaker": "甘奈",
+    "text": "──……アルストロメリアじゃない、甘奈……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010030"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00014",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1014003010040,
+    "speaker": "甘奈",
+    "text": "あの──……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101400301/1014003010040"
+  },
+  {
+    "id": 1014003010050,
+    "speaker": "甘奈",
+    "text": "……上手にできなくて、ごめんなさい……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010050"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "……ううん！　いきなりだと難しいよね\r\n甘奈ちゃん、ずっとユニットで活動してきてるんだから",
+    "charAnim2": "face_sad",
+    "charAnim4": "blank",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "じゃあ、これは宿題ってことにしよう\r\nでも、ちゃんと答えを見つけようね",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "アルストロメリアじゃない甘奈ちゃんは、\r\n何を見せてくれるのか",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "お客さんたちに、どういう価値を提供できるのか",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1014003010060,
+    "speaker": "甘奈",
+    "text": "──アルストロメリアじゃない甘奈が、提供できる価値……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010060"
+  },
+  {
+    "id": 1014003010070,
+    "speaker": "甘奈",
+    "text": "…………甘奈は……──",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010070"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black4",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00014",
+    "fg": "001921",
+    "effectLabel": "black4",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 1014003010080,
+    "label": "回想",
+    "speaker": "甘奈",
+    "text": "ホントに甜花ちゃんが輝きはじめたら……\r\nなんか、怖くなってきちゃった……かも",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010080"
+  },
+  {
+    "id": 1014003010090,
+    "label": "回想",
+    "speaker": "甘奈",
+    "text": "甘奈から離れて、どっか行っちゃいそうって、\r\n考えちゃうんだ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010090"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00104",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1014003010100,
+    "label": "回想",
+    "speaker": "甘奈",
+    "text": "甘奈が思い描く未来ってね、\r\nいつまでも今が続けばいいなってことだったの",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101400301/1014003010100"
+  },
+  {
+    "id": 1014003010110,
+    "label": "回想",
+    "speaker": "甘奈",
+    "text": "ふたりと一緒にいたい\r\n今が幸せで、これ以上のことは望んでない……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010110"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00055",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1014003010120,
+    "label": "回想",
+    "speaker": "甘奈",
+    "text": "ずーっと……\r\n今までみたいな感じで……いられ────",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040140020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101400301/1014003010120"
+  },
+  {
+    "id": 1014003010130,
+    "label": "回想",
+    "speaker": "甘奈",
+    "text": "────…………\r\nううん……",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010130"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black5",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "fg": "off",
+    "effectLabel": "black5",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1014003010140,
+    "speaker": "甘奈",
+    "text": "……アルストロメリアじゃない甘奈は──……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010140"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1014003010150,
+    "speaker": "甘奈",
+    "text": "……甘奈はずっと、アルストロメリアでいたいのに",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010150"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00078",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 1014003010160,
+    "speaker": "甘奈",
+    "text": "──……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "014",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101400301/1014003010160"
+  },
+  {
+    "id": 1014003010170,
+    "speaker": "甘奈",
+    "text": "ふたりはきっと、簡単に見つけちゃうんだろうな……\r\nふたりにしか、できないこと……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010170"
+  },
+  {
+    "id": 1014003010180,
+    "speaker": "甘奈",
+    "text": "甘奈は…………──",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charAnim4": "blank",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010180"
+  },
+  {
+    "id": 1014003010190,
+    "speaker": "甘奈",
+    "text": "…………",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010190"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim4": "blank",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──お～い！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1014003010200,
+    "speaker": "甘奈",
+    "text": "！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad2_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101400301/1014003010200"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "やっぱり甘奈だった\r\nお疲れ、レッスンは終わったのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1014003010210,
+    "speaker": "甘奈",
+    "text": "──うん！\r\n今日もバッチリ頑張ってきたよー☆",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "060",
+    "voice": "produce_events/101400301/1014003010210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、うん。そこは心配してないよ\r\n甘奈だからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1014003010220,
+    "speaker": "甘奈",
+    "text": "……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『G.R.A.D.』に向けて、気合い入れてくれてただろ？",
+    "charAnim2": "face_wait",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺も負けないようにしないとって思ってるところだよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1014003010230,
+    "speaker": "甘奈",
+    "text": "もー\r\nプロデューサーさんはいつも頑張ってくれてるでしょ！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010230"
+  },
+  {
+    "id": 1014003010240,
+    "speaker": "甘奈",
+    "text": "……えへへ、でも\r\nありがとー、プロデューサーさん☆",
+    "charAnim1": "hello",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010240"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "fade_out"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 1014003010250,
+    "speaker": "甘奈",
+    "text": "……それから、ごめんね……\r\nプロデューサーさん",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101400301/1014003010250"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

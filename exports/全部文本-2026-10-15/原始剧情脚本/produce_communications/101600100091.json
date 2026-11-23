@@ -1,0 +1,164 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "（うーん……どうしようかな、これ……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00001"
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1016001000910010,
+    "speaker": "千雪",
+    "text": "おはようございます\r\n……あら、プロデューサーさん、そのハンカチ……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "016",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_communications/101600100091/1016001000910010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、アイドル番組のディレクターからもらったんだ\r\nテレビ局のマスコットグッズらしいんだが……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1016001000910020,
+    "speaker": "千雪",
+    "text": "わぁ、そうなんですね……\r\nすごく可愛い……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100091/1016001000910020"
+  },
+  {
+    "select": "……千雪、\r\nよかったら使うか？",
+    "nextLabel": "1016001000911"
+  },
+  {
+    "select": "そんなに\r\n気に入ったのか？",
+    "nextLabel": "1016001000912"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "俺にはあまり\r\nわからないが……",
+    "nextLabel": "1016001000913"
+  },
+  {
+    "id": 1016001000910030,
+    "label": "1016001000911",
+    "speaker": "千雪",
+    "text": "えっ、いいんですか？",
+    "charAnim1": "smile1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100091/1016001000910030"
+  },
+  {
+    "id": 1016001000910040,
+    "speaker": "千雪",
+    "text": "きゃ～っありがとうございます！\r\nふふっ、今日から使っちゃいます……♪",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100091/1016001000910040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1016001000910050,
+    "label": "1016001000912",
+    "speaker": "千雪",
+    "text": "い、いえ、その……\r\nとっても可愛いハンカチなので、つい……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100091/1016001000910050"
+  },
+  {
+    "id": 1016001000910060,
+    "speaker": "千雪",
+    "text": "なんだか、はしゃいじゃいましたね……\r\n恥ずかしい～……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger",
+    "charAnim3": "no",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100091/1016001000910060",
+    "charAnim3Loop": false
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1016001000910070,
+    "label": "1016001000913",
+    "speaker": "千雪",
+    "text": "ええ～\r\nこんなに可愛いのに……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100091/1016001000910070"
+  },
+  {
+    "id": 1016001000910080,
+    "speaker": "千雪",
+    "text": "プロデューサーさん\r\nそんなこと言っちゃ、この子がかわいそうですよ？",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100091/1016001000910080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

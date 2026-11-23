@@ -1,0 +1,188 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1802001000410010,
+    "speaker": "かな",
+    "text": "はぁ……\r\nまた言われてる",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "802",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/180200100041/1802001000410010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうかしたのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1802001000410020,
+    "speaker": "かな",
+    "text": "誹謗中傷ってほどじゃないけど\r\n私に対する嫌な書き込みを見ちゃったの",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100041/1802001000410020"
+  },
+  {
+    "id": 1802001000410030,
+    "speaker": "かな",
+    "text": "慣れてるとはいえ\r\nやっぱりいい気はしないわよね",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kana",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100041/1802001000410030"
+  },
+  {
+    "select": "いい書き込みを\r\n探しておく",
+    "nextLabel": "1802001000411"
+  },
+  {
+    "select": "気にしなくていい",
+    "nextLabel": "1802001000412"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "見ないほうがいい",
+    "nextLabel": "1802001000413"
+  },
+  {
+    "id": 1802001000410040,
+    "label": "1802001000411",
+    "speaker": "かな",
+    "text": "私に好意的な書き込みを探すつもり？\r\nきっと時間の無駄よ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100041/1802001000410040"
+  },
+  {
+    "id": 1802001000410050,
+    "speaker": "かな",
+    "text": "でももし見つけられたら\r\nあなたのこと、少しだけ見直すかもしれないわね",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100041/1802001000410050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1802001000410060,
+    "label": "1802001000412",
+    "speaker": "かな",
+    "text": "そうね、ただの感想だもの\r\n無視するのが一番なのは私もわかってる",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100041/1802001000410060"
+  },
+  {
+    "id": 1802001000410070,
+    "speaker": "かな",
+    "text": "わかってるけど……\r\n気にしないって、案外難しいのよね",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100041/1802001000410070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1802001000410080,
+    "label": "1802001000413",
+    "speaker": "かな",
+    "text": "そりゃ、見なかったら\r\n嫌な気持ちにもならなかったけど",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100041/1802001000410080"
+  },
+  {
+    "id": 1802001000410090,
+    "speaker": "かな",
+    "text": "すでに見たあとだから、どうしようもないし\r\n悪口を言われてる事実に変わりはないのよね……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180200100041/1802001000410090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

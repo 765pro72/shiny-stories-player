@@ -1,0 +1,655 @@
+[
+  {
+    "bg": "00014",
+    "bgm": "0000"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "よし、今日はこんなところにしておこう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040010,
+    "speaker": "あさひ",
+    "text": "プロデューサーさん、今日もありがとっす！\r\nお疲れっす！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、お疲れ様",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（あれ以降、ステップにこだわりすぎて\r\n無理をすることもなくなったみたいだな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "よし、俺は残りの仕事を片付けるか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00106",
+    "bgm": "029",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もうこんな時間か……\r\n最後に戸締りを確認して……と",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あれ？　倉庫の明りが……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "bg": "00109",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "誰かいるのか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040020,
+    "speaker": "あさひ",
+    "text": "あ、プロデューサーさん！\r\nお疲れさまっす！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101700104/1017001040020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あさひ！　帰ったんじゃなかったのか！\r\n……何してるんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040030,
+    "speaker": "あさひ",
+    "text": "今は発声の本を読んでたっす！\r\n前の映像のヒント、あるんじゃないかと思って！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、そうじゃなくてだな\r\nあまり無理しちゃダメだって、何回も言ってるだろ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……もしかして、ずっとこの調子なのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040040,
+    "speaker": "あさひ",
+    "text": "そっす！　でもなんでそんなこと聞くんすか？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040040"
+  },
+  {
+    "id": 1017001040050,
+    "speaker": "あさひ",
+    "text": "あ、レッスンのあとにライブに行ったりもしてるっす！\r\nやっぱ生で見ると色んなことが見えるんすよね！",
+    "charAnim1": "think1",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──あさひ……確かにあさひの探求心とか\r\n貪欲な姿勢は俺も頼もしいと思う",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でもな……それ以前にこういう無理が重なって\r\nあさひが体を壊しちゃったら、どうしようもないんだぞ",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1017001040060,
+    "speaker": "あさひ",
+    "text": "……ごめんなさいっす",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "わかってくれたか、ありがとな、あさひ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "前も言ったが、あさひはまだアイドルになったばかりなんだ\r\nだから、焦らずゆっくりと──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040070,
+    "speaker": "あさひ",
+    "text": "それはいやっす！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あさひ……？",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "off"
+  },
+  {
+    "id": 1017001040080,
+    "speaker": "あさひ",
+    "text": "頭から離れてくれないんっすよ！\r\nあの輝きとかドキドキが……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "008",
+    "voice": "produce_events/101700104/1017001040080"
+  },
+  {
+    "id": 1017001040090,
+    "speaker": "あさひ",
+    "text": "絶対ああなりたいって、\r\nわたしもなんでかわかんないっすけど……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040090"
+  },
+  {
+    "id": 1017001040100,
+    "speaker": "あさひ",
+    "text": "とにかくあの気持ちを確かめないと\r\n納得いかないっす！",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040100"
+  },
+  {
+    "id": 1017001040110,
+    "speaker": "あさひ",
+    "text": "プロデューサーさんが\r\n心配してくれるのは嬉しいっすけど……",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040110"
+  },
+  {
+    "id": 1017001040120,
+    "speaker": "あさひ",
+    "text": "でも……それでも、じっとしてらんないっす！\r\nわたしは、もっと……！",
+    "charAnim1": "anger1",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あさひ……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "わかった",
+    "nextLabel": "1"
+  },
+  {
+    "select": "それでも\r\n無理はダメだ",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "少し動いてみてくれるか",
+    "nextLabel": "3"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "わかった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "あさひの想い、しっかりと受け止めた\r\n明日、しっかり話し合おう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040130,
+    "speaker": "あさひ",
+    "text": "……どゆことっすか？",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "無理をしすぎないラインは引かせてもらうけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あさひのやりたいことを\r\n最大限やれるスケジュールを組むんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040140,
+    "speaker": "あさひ",
+    "text": "！　あはは、さすがっす、プロデューサーさん！\r\n明日からもレッスンレッスン、っすね～！",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、たまには休息も必要だ\r\n毎日こんな調子じゃ、体を壊してしまう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "けど、これまでよりは色々できるようにする\r\n……何度も言うが、無理はするなよ。約束だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040150,
+    "speaker": "あさひ",
+    "text": "はい、約束っす～！\r\nこれでもーっと色々研究できるっすね！",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040150"
+  },
+  {
+    "id": 1017001040160,
+    "speaker": "あさひ",
+    "text": "ワクワクが止まんないっすね、プロデューサーさん！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040160"
+  },
+  {
+    "speaker": "off",
+    "text": "off",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それでも無理はダメだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040170,
+    "label": "2",
+    "speaker": "あさひ",
+    "text": "え、なんでっすか？\r\nわたし、早く上手くなりたいっす！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もちろん、その熱意は嬉しいぞ\r\nアイドルとして大切な考え方の１つだとも思う",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だけど、さっきも話したように\r\nあさひが無理をして倒れたら、みんなが悲しむことになる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あさひが目指してるのは\r\nファンを悲しませるようなアイドルなのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040180,
+    "speaker": "あさひ",
+    "text": "それは……違うっす！\r\nそんなの全然楽しくないっす！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だったら、やりすぎはダメだ　\r\nな？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それに、あさひの代わりは誰にも務まらないんだ\r\nだから、もっと自分を大事にしてくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040190,
+    "speaker": "あさひ",
+    "text": "……プロデューサーさん",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040190"
+  },
+  {
+    "id": 1017001040200,
+    "speaker": "あさひ",
+    "text": "わたし、誓うっす！\r\nもう絶対無理しないって！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040200"
+  },
+  {
+    "speaker": "off",
+    "text": "off",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "少し動いてみてくれるか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040210,
+    "label": "3",
+    "speaker": "あさひ",
+    "text": "へ？\r\nこんな感じっすか？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あさひ、何か違和感を覚えないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040220,
+    "speaker": "あさひ",
+    "text": "違和感……っすか？",
+    "charAnim1": "think1",
+    "charAnim2": "blank",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "少しだが、いつもよりキレが悪く見える",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040230,
+    "speaker": "あさひ",
+    "text": "……そっすね\r\nプロデューサーさんが言うなら、きっとそうっす",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close2",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。そのステップをずっと見てきた\r\n俺が言うんだから、間違いない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いいか、あさひ。根を詰めて頑張りすぎると\r\nかえって明日に疲れが残るってこともあるんだぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "早く成長したいなら、しっかり休みもとるべきだ\r\n急がば回れ、なんて言ったりもするだろ？",
+    "charAnim2": "blank",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040240,
+    "speaker": "あさひ",
+    "text": "ふんふん、自分の体のことも気を遣わなきゃならないんすね",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、万全なコンディションでこそ\r\nしっかりとしたパフォーマンスができるんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1017001040250,
+    "speaker": "あさひ",
+    "text": "わかったっす！　プロデューサーさん！　ありがとっす！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101700104/1017001040250"
+  },
+  {
+    "speaker": "off",
+    "text": "off",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

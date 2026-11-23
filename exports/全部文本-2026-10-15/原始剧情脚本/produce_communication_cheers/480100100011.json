@@ -1,0 +1,129 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 4801001000110010,
+    "speaker": "ルビー",
+    "text": "すぅ……はぁっ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "801",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communication_cheers/480100100011/4801001000110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（緊張しているのかな……？）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "select": "ルビーなら大丈夫だ",
+    "nextLabel": "4801001000111"
+  },
+  {
+    "textFrame": "off",
+    "select": "客はジャガイモと思え",
+    "nextLabel": "4801001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "textFrame": "off",
+    "select": "わっ！",
+    "nextLabel": "4801001000113"
+  },
+  {
+    "id": 4801001000110020,
+    "label": "4801001000111",
+    "speaker": "ルビー",
+    "text": "も、もちろん！　言われなくてもわかってる！\r\nでも……ありがと",
+    "charAnim1": "surp2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480100100011/4801001000110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（表情が柔らかくなった、この調子なら……！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4801001000110030,
+    "label": "4801001000112",
+    "speaker": "ルビー",
+    "text": "また古いネタを……でもジャガイモか……\r\nなんかお腹空いてきちゃったな～",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480100100011/4801001000110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うまく仕事が終わったら、\r\n何かおごってあげようかな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4801001000110040,
+    "label": "4801001000113",
+    "speaker": "ルビー",
+    "text": "うわぁっ！\r\nび、びっくりした……急にどうしたの？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480100100011/4801001000110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（緊張より動揺させてしまったかもしれない……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

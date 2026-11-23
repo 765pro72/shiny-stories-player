@@ -1,0 +1,161 @@
+[
+  {
+    "id": 1015001001210010,
+    "speaker": "甜花",
+    "text": "プロデューサーさん……\r\n甜花、おしゃべりの……練習したいんだけど……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "015",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/101500100121/1015001001210010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おしゃべり？\r\nトークの練習ってことか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1015001001210020,
+    "speaker": "甜花",
+    "text": "えっと……お仕事もそうだけど……\r\nも、もう少し……他の人とも、話せたらなって……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100121/1015001001210020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そういうことか\r\nなら……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "とことん付き合うぞ",
+    "nextLabel": "1015001001211"
+  },
+  {
+    "select": "事務所のみんなと\r\n話してみたら？",
+    "nextLabel": "1015001001212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "外の人に声をかける",
+    "nextLabel": "1015001001213"
+  },
+  {
+    "id": 1015001001210030,
+    "label": "1015001001211",
+    "speaker": "甜花",
+    "text": "にへへ……ありがとう\r\nプロデューサーさん、優しいね……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100121/1015001001210030"
+  },
+  {
+    "id": 1015001001210040,
+    "speaker": "甜花",
+    "text": "じゃあ……えっと……\r\nい、いい天気でしゅ、ね！　……あう……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100121/1015001001210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1015001001210050,
+    "label": "1015001001212",
+    "speaker": "甜花",
+    "text": "うん……\r\n事務所のみんなは……優しいから、平気……",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100121/1015001001210050"
+  },
+  {
+    "id": 1015001001210060,
+    "speaker": "甜花",
+    "text": "にへへ……\r\nプロデューサーさん……ありがと……",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100121/1015001001210060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1015001001210070,
+    "label": "1015001001213",
+    "speaker": "甜花",
+    "text": "え……？　いきなり、知らない人と……話すの……？",
+    "charAnim1": "surp1",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100121/1015001001210070"
+  },
+  {
+    "id": 1015001001210080,
+    "speaker": "甜花",
+    "text": "あうう……\r\n甜花には……まだ、無理……だと思う……",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100121/1015001001210080",
+    "charAnim3Loop": false
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

@@ -1,0 +1,988 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "あそこのカフェなら空いてそうだな",
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "011",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00028",
+    "bgm": "001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 2011004030010,
+    "speaker": "樹里",
+    "text": "え？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030010"
+  },
+  {
+    "id": 2011004030020,
+    "speaker": "樹里",
+    "text": "……いや、ちょ……マジか……？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ダメか？　ファミレスは混んでたし、\r\n食事する時間がなくなるよりはと思ったんだが……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030030,
+    "speaker": "樹里",
+    "text": "そりゃそうだけど……！\r\nでも、ちょっともっかい考えてみろって！",
+    "charAnim1": "anger3",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030030"
+  },
+  {
+    "id": 2011004030040,
+    "speaker": "樹里",
+    "text": "あ、あんなとこ、行ったことねーぞ……！",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺もあんまり知らないから大丈夫だ\r\nお洒落なカフェは難しいよなぁ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030050,
+    "speaker": "樹里",
+    "text": "いや、だからっ……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030050"
+  },
+  {
+    "id": 2011004030060,
+    "speaker": "樹里",
+    "text": "……それ、大丈夫じゃねーだろ……",
+    "charAnim2": "face_cry",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030060"
+  },
+  {
+    "id": 2011004030070,
+    "speaker": "樹里",
+    "text": "～～っ……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……樹里？　そんなに嫌なら──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030080,
+    "speaker": "樹里",
+    "text": "……そうじゃねーよ",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030080"
+  },
+  {
+    "id": 2011004030090,
+    "speaker": "樹里",
+    "text": "まぁ、行ってみるか……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030090"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00011",
+    "bgm": "010",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えーっと、空いてる席は……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030100,
+    "speaker": "樹里",
+    "text": "ばっ……！　待て待て待て\r\nよくわかんねーのに動き回ろうとすんな！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201100403/2011004030100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そ、そうか。そうだよな……悪い",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030110,
+    "speaker": "樹里",
+    "text": "いいよ、アタシも似たよーなもんなんだから",
+    "charAnim1": "smile2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030110"
+  },
+  {
+    "id": 2011004030120,
+    "speaker": "樹里",
+    "text": "……それより、他のお客さんがどうするか見とこうぜ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030130,
+    "speaker": "樹里＆プロデューサー",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030130"
+  },
+  {
+    "id": 2011004030140,
+    "speaker": "樹里",
+    "text": "おい、なんか先に注文するみたいだぞ",
+    "charAnim1": "sad1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうみたいだな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030150,
+    "speaker": "樹里",
+    "text": "……頼みに……行く、か……？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうだな。ここで立ち尽くしてても始まらないしな……\r\n──よし、行こう。樹里",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030160,
+    "speaker": "樹里",
+    "text": "！\r\nお、おう……！",
+    "charAnim1": "surp1",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030160"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "juri"
+  },
+  {
+    "se": "0117",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2011004030170,
+    "speaker": "樹里",
+    "text": "……メニュー、は……？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030170"
+  },
+  {
+    "id": 2011004030180,
+    "speaker": "樹里",
+    "text": "…………",
+    "charAnim1": "shy2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_a",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030180"
+  },
+  {
+    "id": 2011004030190,
+    "speaker": "樹里",
+    "text": "じゅ、呪文みてーじゃん……！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030190"
+  },
+  {
+    "id": 2011004030200,
+    "speaker": "樹里",
+    "text": "ふ、フラ……\r\nこれ、コーヒーじゃねーのかよ……？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_shy",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030200"
+  },
+  {
+    "id": 2011004030210,
+    "speaker": "樹里",
+    "text": "トッピングも、とか……\r\n何乗っけりゃいいか想像つかねーし……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030210"
+  },
+  {
+    "id": 2011004030220,
+    "speaker": "樹里",
+    "text": "…………",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030220"
+  },
+  {
+    "id": 2011004030230,
+    "speaker": "樹里",
+    "text": "……とりあえず、プロデューサーの様子でも見て……！",
+    "charAnim1": "wait5",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030230"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "すみません、コーヒーをひとつお願いします\r\nえっと、サイズはこの……ベン……１番大きいやつで……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black9",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "effectLabel": "black9",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2011004030240,
+    "speaker": "樹里",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201100403/2011004030240"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0117",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "se": "0152",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、お疲れ、樹里……\r\n注文、上手くいったか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030250,
+    "speaker": "樹里",
+    "text": "……お、おう……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030250"
+  },
+  {
+    "id": 2011004030260,
+    "speaker": "樹里",
+    "text": "すげー変な感じだけど……\r\nなんとか、なったな……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030260"
+  },
+  {
+    "select": "樹里は何を頼んだんだ？",
+    "nextLabel": "1"
+  },
+  {
+    "select": "これでもうお洒落\r\nカフェも怖くないな",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "また来たいな",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2011004030270,
+    "label": "1",
+    "speaker": "樹里",
+    "text": "えっと……カフェラテと……\r\n……なんか、カラフルなサンドイッチ……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……確かにカラフルだな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030280,
+    "speaker": "樹里",
+    "text": "……そういうプロデューサーは何頼んだんだよ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺は……\r\nキッシュと、完全にサイズを間違えたコーヒーだな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030290,
+    "speaker": "樹里",
+    "text": "さっきからでかいコーヒーだなって思ってたんだよ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030290"
+  },
+  {
+    "id": 2011004030300,
+    "speaker": "樹里＆プロデューサー",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030300"
+  },
+  {
+    "id": 2011004030310,
+    "speaker": "樹里",
+    "text": "……っふ、ふふっ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おい樹里、笑うなって\r\n……っふ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030320,
+    "speaker": "樹里",
+    "text": "ふふ、いやだって、無理だろ！\r\nプロデューサーだって笑ってるし！",
+    "charAnim1": "anger3",
+    "charAnim2": "face_smile",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030320"
+  },
+  {
+    "id": 2011004030330,
+    "speaker": "樹里",
+    "text": "ふふふっ……はー……\r\nアタシたち、ダメダメだな",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだなぁ、成功とは言えないな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、これも良い経験になったよ\r\nお洒落カフェ体験には違いない",
+    "charAnim2": "face_serious",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030340,
+    "speaker": "樹里",
+    "text": "……だな\r\n変に気張らないで済んだし、悪くねー",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030340"
+  },
+  {
+    "id": 2011004030350,
+    "speaker": "樹里",
+    "text": "さ、せっかく美味しそうなんだし、\r\n早く食べようぜ",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201100403/2011004030350"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2011004030360,
+    "label": "2",
+    "speaker": "樹里",
+    "text": "そ、そうか……？\r\nその自信、どっから出てくんだよ……？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030360"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "１回やってみたんだし、樹里も勝手はわかっただろ？\r\nだったら、次からはもっとスムーズにいけるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030370,
+    "speaker": "樹里",
+    "text": "……いやー……？\r\n……自分じゃ全然想像できねーんだけど……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030370"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そんなことない、俺は断言できるぞ\r\n少なくとも俺よりはサクッと注文できる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030380,
+    "speaker": "樹里",
+    "text": "そりゃアンタよりはな！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030380"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ほら、だから大丈夫だよ\r\nユニットのメンバーとか、友達とかと来たらどうだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030390,
+    "speaker": "樹里",
+    "text": "や、いいよ、アタシはそういうの……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030390"
+  },
+  {
+    "id": 2011004030400,
+    "speaker": "樹里",
+    "text": "プロデューサーと、休憩に来るくらいでちょうど良──",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030400"
+  },
+  {
+    "id": 2011004030410,
+    "speaker": "樹里",
+    "text": "っ！",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030410"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "樹里？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030420,
+    "speaker": "樹里",
+    "text": "あ……な、なんでもねー！　今のはなしだ！！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030420"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、おう……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030430,
+    "speaker": "樹里",
+    "text": "なしだからな！",
+    "charAnim1": "anger3",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201100403/2011004030430"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2011004030440,
+    "label": "3",
+    "speaker": "樹里",
+    "text": "え？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030440"
+  },
+  {
+    "id": 2011004030450,
+    "speaker": "樹里",
+    "text": "ま、まぁ、プロデューサーがそう言うなら……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030450"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、コーヒーもキッシュも美味い！\r\n次来た時は、サイズを間違えないぞ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2011004030460,
+    "speaker": "樹里",
+    "text": "あ……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030460"
+  },
+  {
+    "id": 2011004030470,
+    "speaker": "樹里",
+    "text": "……そ、そういうことか……",
+    "charAnim1": "wait3",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030470"
+  },
+  {
+    "id": 2011004030480,
+    "speaker": "樹里",
+    "text": "……なんだよ、独り言ならそう言っとけよな……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030480"
+  },
+  {
+    "id": 2011004030490,
+    "speaker": "樹里",
+    "text": "……っん……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030490"
+  },
+  {
+    "textFrame": "off",
+    "se": "0166",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2011004030500,
+    "speaker": "樹里",
+    "text": "あぁ、ホントだ……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201100403/2011004030500"
+  },
+  {
+    "id": 2011004030510,
+    "speaker": "樹里",
+    "text": "苦いけど……うめーな",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201100403/2011004030510"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,294 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですか……参加はできませんでしたか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7901001080010,
+    "speaker": "はづき",
+    "text": "……不参加って連絡が来たとき、\r\n聞き間違いかと思いました",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702800108/7901001080010"
+  },
+  {
+    "id": 7901001080020,
+    "speaker": "はづき",
+    "text": "私には、どうして彼女が参加できないのか\r\nちっともわかりません……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702800108/7901001080020"
+  },
+  {
+    "id": 7902001080010,
+    "speaker": "社長",
+    "text": "その気持ちはわかるが……これが結果なんだ\r\n受け入れるより他にあるまい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702800108/7902001080010"
+  },
+  {
+    "id": 7901001080030,
+    "speaker": "はづき",
+    "text": "……私、きっとあの子のファンだったんですね\r\nだからこの結果が、悔しくてたまらないんです……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/702800108/7901001080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺もです。彼女のプロデューサーである俺自身が、\r\n誰よりも彼女のファンでしたから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……社長\r\n俺、彼女に会いに行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001080020,
+    "speaker": "社長",
+    "text": "ああ、そうするといい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/702800108/7902001080020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────はるき\r\nその…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7028001080010,
+    "speaker": "はるき",
+    "text": "はい……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "028",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/702800108/7028001080010"
+  },
+  {
+    "id": 7028001080020,
+    "speaker": "はるき",
+    "text": "『W.I.N.G.』は、だめだったんですね…………",
+    "charAnim1": "wait3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702800108/7028001080020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ────\r\nでも、ここまで来られたのはすごいことだよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7028001080030,
+    "speaker": "はるき",
+    "text": "それは……わたしもそう思います",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702800108/7028001080030"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_close3",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "haruki",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 7028001080040,
+    "speaker": "はるき",
+    "text": "…………\r\n次は──",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702800108/7028001080040"
+  },
+  {
+    "id": 7028001080050,
+    "speaker": "はるき",
+    "text": "もっともっといい結果を出せる気がします",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702800108/7028001080050"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 7028001080060,
+    "speaker": "はるき",
+    "text": "──────強がってもだめ、ですね",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702800108/7028001080060"
+  },
+  {
+    "id": 7028001080070,
+    "speaker": "はるき",
+    "text": "しばらくちょっと……落ち込みます",
+    "charAnim1": "wait2",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702800108/7028001080070"
+  },
+  {
+    "id": 7028001080080,
+    "speaker": "はるき",
+    "text": "────でも、元気になったらまた\r\n今まで以上にがんばりたいです",
+    "charAnim1": "think",
+    "charAnim2": "face_sad2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/702800108/7028001080080"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "haruki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

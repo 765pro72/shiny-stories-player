@@ -1,0 +1,335 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0114",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──ええと、差入れ持ってきたぞ\r\nよかったら",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "id": 1024001000210010,
+    "speaker": "にちか",
+    "text": "わー！　お菓子じゃないですかー！！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "024",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102400100021/1024001000210010"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0164",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1024001000210020,
+    "speaker": "にちか",
+    "text": "────えーっ、でもこれ\r\n思いっきりスナック菓子なんですけど……！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102400100021/1024001000210020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？　あぁ……\r\nにちか、この前好きだって言ってたから……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1024001000210030,
+    "speaker": "にちか",
+    "text": "この前はこの前ですってー……！\r\n今日からダイエット期間入ってるんですよーもうーーー！！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "se": "0328",
+    "voice": "produce_communications/102400100021/1024001000210030"
+  },
+  {
+    "select": "そ、それは\r\nすまん……",
+    "nextLabel": "1024001000211"
+  },
+  {
+    "select": "……！\r\nそうだったのか……",
+    "nextLabel": "1024001000212"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "無理しなくって\r\nいいんだ",
+    "nextLabel": "1024001000213"
+  },
+  {
+    "label": "1024001000211",
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0164",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1024001000210040,
+    "speaker": "にちか",
+    "text": "はぁーー348キロカロリーかぁーーー……じゃ\r\n50キロカロリー上限で、何個食べれるか計算してください",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102400100021/1024001000210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？　……と、348だから……\r\nこれの７分の１だろ……大体…………ええと………",
+    "charAnim2": "face_wait",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0220"
+  },
+  {
+    "id": 1024001000210050,
+    "speaker": "にちか",
+    "text": "……もういいですー！\r\nじゃ、プロデューサーさんも食べるの手伝ってくださいねーー",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100021/1024001000210050"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0621",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1024001000210060,
+    "label": "1024001000212",
+    "speaker": "にちか",
+    "text": "そうですー\r\nタイミングわるいなー……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close3",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0220",
+    "voice": "produce_communications/102400100021/1024001000210060"
+  },
+  {
+    "charAnim1": "think2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1024001000210070,
+    "speaker": "にちか",
+    "text": "えっとー……何キロ走ったらプラマイゼロになるか\r\n計算してください。それで、伴走お願いします",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100021/1024001000210070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ、お、おう……！\r\n任せてくれ……！",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1024001000210080,
+    "label": "1024001000213",
+    "speaker": "にちか",
+    "text": "……うわー\r\nすっごい他人事ですねー……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0328",
+    "voice": "produce_communications/102400100021/1024001000210080"
+  },
+  {
+    "charAnim1": "surp1",
+    "charAnim2": "face_close3",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1024001000210090,
+    "speaker": "にちか",
+    "text": "無理しなきゃいけないから無理してるんじゃないですかー\r\n……これはもらいますけどー",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100021/1024001000210090"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0621",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、おう……すまん\r\nこれからは買う前に相談するよ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

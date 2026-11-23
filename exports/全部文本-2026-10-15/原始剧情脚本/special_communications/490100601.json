@@ -1,0 +1,189 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "001",
+    "se": "0539",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901006010010,
+    "speaker": "社長",
+    "text": "入ってくれ",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "voice": "special_communications/490100601/4901006010010"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00006",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "し、失礼します……！　社長、お呼びでしょうか……？",
+    "charLabel": "ceo",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "sub_characters",
+    "charId": "ceo",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901006010020,
+    "speaker": "社長",
+    "text": "ご苦労……忙しいところすまないな\r\n掛けてくれ",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "voice": "special_communications/490100601/4901006010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "は、はい！\r\n……あの、私、何かしてしまったんでしょうか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901006010030,
+    "speaker": "社長",
+    "text": "何……？　何か心当たりでもあるのか？",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "voice": "special_communications/490100601/4901006010030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "い、いえそんな！　……でも、社長に呼び出されるの、\r\n珍しいなと思いまして……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901006010040,
+    "speaker": "社長",
+    "text": "フン……安心しろ\r\n今日は小言を言うためにお前を呼び出した訳ではない",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "voice": "special_communications/490100601/4901006010040"
+  },
+  {
+    "id": 4901006010050,
+    "speaker": "社長",
+    "text": "日頃の業務の振り返りも兼ね、面談でもと思ってな……",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "voice": "special_communications/490100601/4901006010050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "め、面談ですか……？　あ、ありがとうございます…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901006010060,
+    "speaker": "社長",
+    "text": "なんだ、不服なのか？　\r\n面談の結果によっては、ボーナスも考えていたんだがな……",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "voice": "special_communications/490100601/4901006010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ボーナスですか！？　社長、ありがとうございます……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901006010070,
+    "speaker": "社長",
+    "text": "フン、喜ぶのはまだ早いぞ、プロデューサー\r\nお前の返答次第では……覚悟することだ",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "voice": "special_communications/490100601/4901006010070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "は……はい！　頑張ります……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901006010080,
+    "speaker": "社長",
+    "text": "それでは早速はじめよう\r\n……プロデューサー、アイドルとはうまくやれているのか？",
+    "textCtrl": "l",
+    "textFrame": "015",
+    "voice": "special_communications/490100601/4901006010080"
+  },
+  {
+    "select": "まあそれなりに……",
+    "nextLabel": "1"
+  },
+  {
+    "select": "アイドルに\r\n教わることも多いです",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "むしろアイドルに\r\n頼りきりです",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "2",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "3",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

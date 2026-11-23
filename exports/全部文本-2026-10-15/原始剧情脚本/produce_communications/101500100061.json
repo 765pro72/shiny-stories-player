@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1015001000610010,
+    "speaker": "甜花",
+    "text": "プロデューサーさん……\r\n……おはよう……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "015",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/101500100061/1015001000610010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、おはよう甜花",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1015001000610020,
+    "speaker": "甜花",
+    "text": "あの……プロデューサーさん……\r\nソファー、使ってもいい……？",
+    "charAnim1": "anger1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100061/1015001000610020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（いきなりどうしたんだろう\r\n心なしか、眠そうな気もするけど……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "風邪をひかないようにな",
+    "nextLabel": "1015001000611"
+  },
+  {
+    "select": "眠そうだな",
+    "nextLabel": "1015001000612"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "予定があることも\r\n忘れずに",
+    "nextLabel": "1015001000613"
+  },
+  {
+    "id": 1015001000610030,
+    "label": "1015001000611",
+    "speaker": "甜花",
+    "text": "ありがとう……気を付けるね……\r\nプロデューサーさん……優しい……にへへ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100061/1015001000610030"
+  },
+  {
+    "id": 1015001000610040,
+    "speaker": "甜花",
+    "text": "あ、でも出かけるときには……\r\n……起こしてくれると……嬉しいかも……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100061/1015001000610040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1015001000610050,
+    "label": "1015001000612",
+    "speaker": "甜花",
+    "text": "う、うん……お天気、いいから……\r\n眠くなっちゃって……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100061/1015001000610050"
+  },
+  {
+    "id": 1015001000610060,
+    "speaker": "甜花",
+    "text": "でも……もうちょっと……頑張ってみるね……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100061/1015001000610060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1015001000610070,
+    "label": "1015001000613",
+    "speaker": "甜花",
+    "text": "あうう……そ、そうだったね……\r\nじゃあ、我慢しないと、だよね……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100061/1015001000610070"
+  },
+  {
+    "id": 1015001000610080,
+    "speaker": "甜花",
+    "text": "お昼寝しないで、頑張る……\r\n頑張らなきゃ、だめ……",
+    "charAnim2": "face_close",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100061/1015001000610080",
+    "charAnim3Loop": false
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

@@ -1,0 +1,976 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00099",
+    "bgm": "002"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2006011040010,
+    "speaker": "咲耶",
+    "text": "はづきさん！\r\n現場で頂いたお菓子、冷蔵庫に入れておくよ──",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200601104/2006011040010"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0374",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2006011040020,
+    "speaker": "咲耶",
+    "text": "──おや\r\n今日のキミはこんなところにいたんだね、コウモリくん",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601104/2006011040020"
+  },
+  {
+    "id": 2006011040030,
+    "speaker": "咲耶",
+    "text": "可哀想に、こんなに冷えて……\r\nキミのご主人様はひどい仕打ちをするものだ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040030"
+  },
+  {
+    "id": 2006011040040,
+    "speaker": "咲耶",
+    "text": "──おいで\r\n私とともに行こう",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040040"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0375",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2006011040050,
+    "speaker": "咲耶",
+    "text": "……キミのご主人様には\r\n反省をしてもらわなきゃ、だな",
+    "charAnim1": "think",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601104/2006011040050"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "029",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ただいま戻りました──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……さて\r\n今日はどこに隠れてるのかな～……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（昨日は観葉植物の鉢の中だっただろー\r\nその前は、雑誌の陰で……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……テレビの裏にいたこともあったよな\r\n同じ場所には隠さないだろうから……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（そろそろ倉庫に行ってる可能性も考えるべきか──\r\nって、お……！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "窓なんて、今日はずいぶんわかりやすいところにいるんだな\r\n『星が見たい』とか、おねだりでもしたのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（──あ。メモがついてる……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00152",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2006011040060,
+    "speaker": "咲耶",
+    "text": "『プロデューサー？』",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601104/2006011040060"
+  },
+  {
+    "id": 2006011040070,
+    "speaker": "咲耶",
+    "text": "『冷蔵庫の中に入れるなんて、\r\nコウモリくんが冷えて可哀想なんじゃないか？』",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040070"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──おっと",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はは……\r\n確かにそこには気が回っていなかった……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "すまん、コウモリくん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "見つからないようにするのに夢中になりすぎて、\r\n君の都合を無視しちゃってたな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……代わりに\r\n今日はとっておきの場所に連れていくから",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "おやつのある\r\n引き出し",
+    "nextLabel": "1"
+  },
+  {
+    "select": "倉庫",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "ソファの\r\nクッションの上",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "──よし、こっち",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00107",
+    "bgEffect": "fade",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0886",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ここのお菓子、この間補充したばっかりなんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お詫びと言ったらなんだけど──\r\nよかったら、食べてくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "遠慮はナシだぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0807",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0887",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00018",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0046",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2006011040080,
+    "speaker": "咲耶",
+    "text": "おはようございます",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040080"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00099",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0886",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2006011040090,
+    "speaker": "咲耶",
+    "text": "フフ\r\nここにいたのかい？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601104/2006011040090"
+  },
+  {
+    "id": 2006011040100,
+    "speaker": "咲耶",
+    "text": "さながら、キミ専用のパティスリーといった風情だね",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040100"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2006011040110,
+    "speaker": "咲耶",
+    "text": "『お菓子は好きかな？\r\n昨日のお詫びに、色々用意してみたんだ』",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601104/2006011040110"
+  },
+  {
+    "id": 2006011040120,
+    "speaker": "咲耶",
+    "text": "『よかったら、食べてくれ\r\n遠慮はナシだぞ』",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040120"
+  },
+  {
+    "id": 2006011040130,
+    "speaker": "咲耶",
+    "text": "……フフ\r\nキミのご主人様は、なんて言っていたんだろうか",
+    "charAnim1": "think",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040130"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "2",
+    "speaker": "プロデューサー",
+    "text": "……決めた\r\nでも準備がいるんだ、もうちょっと待ってな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0807",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっと……？\r\n確か空き箱がこの辺に──……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "se": "0781",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00018",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0046",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2006011040140,
+    "speaker": "咲耶",
+    "text": "おはようございます",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040140"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00166",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2006011040150,
+    "speaker": "咲耶",
+    "text": "──ああ……！\r\nこれはまた、素敵な寝室を用意してもらったね……！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601104/2006011040150"
+  },
+  {
+    "id": 2006011040160,
+    "speaker": "咲耶",
+    "text": "（お菓子の空き箱の部屋……\r\n綿を敷き詰めたマグカップは、ベッドのつもりかな……？）",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040160"
+  },
+  {
+    "id": 2006011040170,
+    "speaker": "咲耶",
+    "text": "（……フフ、テーブルや椅子まで……\r\n器用なんだね、プロデューサー）",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040170"
+  },
+  {
+    "id": 2006011040180,
+    "speaker": "咲耶",
+    "text": "キミのご主人様は、可愛らしい人だ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040180"
+  },
+  {
+    "id": 2006011040190,
+    "speaker": "咲耶",
+    "text": "……ときどきうっかりすることもあるけれど、\r\nこうしてキミに多くの愛情を注いでくれている",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040190"
+  },
+  {
+    "id": 2006011040200,
+    "speaker": "咲耶",
+    "text": "…………ねぇ、コウモリくん\r\nこれは、自慢なのだけれど",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040200"
+  },
+  {
+    "id": 2006011040210,
+    "speaker": "咲耶",
+    "text": "──キミの可愛らしいご主人様は、\r\n私の素晴らしいプロデューサーでもあるんだよ？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040210"
+  },
+  {
+    "id": 2006011040220,
+    "speaker": "咲耶",
+    "text": "……フフ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040220"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "3",
+    "speaker": "プロデューサー",
+    "text": "……一番居心地がいい場所って言ったら、\r\nここだよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──……あとは、そうだな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0781",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0490",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "se": "0491",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00018",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0046",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2006011040230,
+    "speaker": "咲耶",
+    "text": "おはようございます",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040230"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2006011040240,
+    "speaker": "咲耶",
+    "text": "──フフッ",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601104/2006011040240"
+  },
+  {
+    "id": 2006011040250,
+    "speaker": "咲耶",
+    "text": "昨日の私の隠し場所に負けないくらい、\r\nわかりやすいところにいるじゃないか",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040250"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0181",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2006011040260,
+    "speaker": "咲耶",
+    "text": "『コウモリくん専用！』とは\r\n──ずいぶん格上げをしてもらったね？　コウモリくん",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200601104/2006011040260"
+  },
+  {
+    "id": 2006011040270,
+    "speaker": "咲耶",
+    "text": "……知っているかい？\r\nそれは、あの人のお気に入りのクッションなんだよ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040270"
+  },
+  {
+    "id": 2006011040280,
+    "speaker": "咲耶",
+    "text": "ソファに座る時、彼はよくそれを使っているんだ",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040280"
+  },
+  {
+    "id": 2006011040290,
+    "speaker": "咲耶",
+    "text": "自分の一番を、キミに譲ってくれたんだね",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040290"
+  },
+  {
+    "id": 2006011040300,
+    "speaker": "咲耶",
+    "text": "──まったく\r\nうらやましいコウモリくんだ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601104/2006011040300"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

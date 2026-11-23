@@ -1,0 +1,183 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "1544",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1028001000810010,
+    "speaker": "はるき",
+    "text": "わわっ……！\r\nあ～…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100081/1028001000810010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうした！？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1028001000810020,
+    "speaker": "はるき",
+    "text": "ペンが……\r\nソファーの下に入っちゃいました",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "028",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102800100081/1028001000810020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おっと、それは\r\n大変だ……！",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "よし、ソファーを\r\n動かすぞ",
+    "nextLabel": "1028001000811"
+  },
+  {
+    "select": "何か隙間に\r\n入るものは……",
+    "nextLabel": "1028001000812"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "とりあえず\r\n代わりのペンだ",
+    "nextLabel": "1028001000813"
+  },
+  {
+    "id": 1028001000810030,
+    "label": "1028001000811",
+    "speaker": "はるき",
+    "text": "えっ、これをですか……？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100081/1028001000810030"
+  },
+  {
+    "id": 1028001000810040,
+    "speaker": "はるき",
+    "text": "……じゃあ\r\nわたしも一緒に持ち上げます！",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100081/1028001000810040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1028001000810050,
+    "label": "1028001000812",
+    "speaker": "はるき",
+    "text": "す、すみません\r\nお忙しいところ……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100081/1028001000810050"
+  },
+  {
+    "id": 1028001000810060,
+    "speaker": "はるき",
+    "text": "あとは自分でなんとかしますから",
+    "charAnim1": "think",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100081/1028001000810060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1028001000810070,
+    "label": "1028001000813",
+    "speaker": "はるき",
+    "text": "あ、えっと……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100081/1028001000810070"
+  },
+  {
+    "id": 1028001000810080,
+    "speaker": "はるき",
+    "text": "特に何か書いてたわけじゃないんです……",
+    "charAnim1": "wait4",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100081/1028001000810080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,775 @@
+[
+  {
+    "id": 2013004030010,
+    "speaker": "夏葉",
+    "text": "プロデューサー！\r\nアナタ、早起きは得意？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00002",
+    "bgm": "029",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/201300403/2013004030010"
+  },
+  {
+    "id": 2013004030020,
+    "speaker": "夏葉",
+    "text": "よかったら、明日の朝、\r\nランニングに付き合ってもらえないかしら",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、いいよ\r\nそういえば最近運動不足だし",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030030,
+    "speaker": "夏葉",
+    "text": "良かったわ！\r\n詳しいことは後で連絡するから",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030030"
+  },
+  {
+    "id": 2013004030040,
+    "speaker": "夏葉",
+    "text": "今日は先に失礼するわね\r\n……明日、楽しみにしているわ！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030040"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "bg": "00003",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（待ち合わせの時間に間に合ったな。夏葉は……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030050,
+    "speaker": "夏葉",
+    "text": "……プロデューサー！",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "off",
+    "voice": "produce_events/201300403/2013004030050"
+  },
+  {
+    "textFrame": "off",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2013004030060,
+    "speaker": "夏葉",
+    "text": "おはよう！　寝坊しなかったのね、感心だわ！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_jersey",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bgm": "015",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/201300403/2013004030060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう\r\n今日はすっきり目が覚めたよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030070,
+    "speaker": "夏葉",
+    "text": "あら、それなら遠くから\r\n大きなあくびが見えたのは気のせいかしら？",
+    "charAnim1": "think",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030070"
+  },
+  {
+    "id": 2013004030080,
+    "speaker": "夏葉",
+    "text": "まあいいわ\r\n身体をあたためたら早速行きましょう！",
+    "charAnim2": "face_smile2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030080"
+  },
+  {
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "bg": "00013",
+    "se": "0119",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "fade"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はあ……はあ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030090,
+    "speaker": "夏葉",
+    "text": "大丈夫？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201300403/2013004030090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "思ったよりもなんとか……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（夏葉ならもっと速く走ると思っていたが……）",
+    "charAnim2": "face_wait",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030100,
+    "speaker": "夏葉",
+    "text": "頼もしいわね\r\nその調子でしっかりついてきて頂戴！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030100"
+  },
+  {
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "bg": "00071",
+    "se": "0119",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "fade"
+  },
+  {
+    "id": 2013004030110,
+    "speaker": "夏葉",
+    "text": "ちょっと雲が出てきたかしら？\r\nねえ……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201300403/2013004030110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はあ……はあ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030120,
+    "speaker": "夏葉",
+    "text": "プロデューサー！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ……ああ、本当だ……\r\n雨が降るかもしれないな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ペースを上げようか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030130,
+    "speaker": "夏葉",
+    "text": "そうね……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030130"
+  },
+  {
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2013004030140,
+    "speaker": "夏葉",
+    "text": "いえ、もう少しでゴールだから大丈夫よ\r\nペースは崩さない方が良いわ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030140"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00034",
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2013004030150,
+    "speaker": "夏葉",
+    "text": "お疲れ様……！\r\n飲み物とってくるわね",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/201300403/2013004030150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はあ……お疲れさま\r\n夏葉には物足りなかったんじゃないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030160,
+    "speaker": "夏葉",
+    "text": "まだ走れるくらいがちょうど良いのよ\r\nスポーツドリンクでいい？",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ありがとう──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（ごくごく……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030170,
+    "speaker": "夏葉",
+    "text": "久しぶりに走ってみてどう？\r\n疲れたでしょう？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030170"
+  },
+  {
+    "select": "すっきりした",
+    "nextLabel": "1"
+  },
+  {
+    "select": "少し疲れた",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "また走りたいな",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "最近、デスクワークばかりで\r\nだいぶ身体が縮こまっていたんだ",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "008"
+  },
+  {
+    "id": 2013004030180,
+    "speaker": "夏葉",
+    "text": "……本当？　無理していない？",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ！　朝の空気も気持ち良かったし\r\nこんなに清々しい気持ちは久しぶりだよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030190,
+    "speaker": "夏葉",
+    "text": "そう、なら良かったわ！　うふふ……！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030190"
+  },
+  {
+    "textFrame": "off",
+    "se": "0125",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2013004030200,
+    "speaker": "夏葉",
+    "text": "あら、雨の音……？　降ってきたみたいね",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "通り雨みたいだから\r\nすぐに止むんじゃないかな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、そうしたら……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030210,
+    "speaker": "夏葉",
+    "text": "虹が見られたりするかしら！？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030210"
+  },
+  {
+    "id": 2013004030220,
+    "speaker": "夏葉",
+    "text": "ねえ、雨が上がったら\r\nもう１度、走ってみない？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030220"
+  },
+  {
+    "id": 2013004030230,
+    "speaker": "夏葉",
+    "text": "川の方に行ってみたら\r\n水面にまあるく映った虹を見られるかもしれないわ",
+    "charAnim2": "face_smile1",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030230"
+  },
+  {
+    "id": 2013004030240,
+    "speaker": "夏葉",
+    "text": "アナタさえ良ければだけれど、\r\nどうかしら！？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201300403/2013004030240"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2013004030250,
+    "label": "2",
+    "speaker": "夏葉",
+    "text": "ほら、普段運動しないからよ？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_cry",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "008",
+    "voice": "produce_events/201300403/2013004030250"
+  },
+  {
+    "id": 2013004030260,
+    "speaker": "夏葉",
+    "text": "もう、アナタが自分を気遣う暇もないくらい\r\n忙しいのはわかっているけれど……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030260"
+  },
+  {
+    "id": 2013004030270,
+    "speaker": "夏葉",
+    "text": "もう少し自分にも優しくしてあげて",
+    "charAnim2": "face_cry",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ありがとう……\r\nわかったよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030280,
+    "speaker": "夏葉",
+    "text": "ええ",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030280"
+  },
+  {
+    "id": 2013004030290,
+    "speaker": "夏葉",
+    "text": "でも今日は運動より先に休ませるべきだったわね\r\n失敗したわ……",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030290"
+  },
+  {
+    "id": 2013004030300,
+    "speaker": "夏葉",
+    "text": "少しゆっくりしていて\r\nしばらくしたら起こしてあげる",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030300"
+  },
+  {
+    "id": 2013004030310,
+    "speaker": "夏葉",
+    "text": "またあとでね",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201300403/2013004030310"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2013004030320,
+    "label": "3",
+    "speaker": "夏葉",
+    "text": "そう！？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "014",
+    "voice": "produce_events/201300403/2013004030320"
+  },
+  {
+    "id": 2013004030330,
+    "speaker": "夏葉",
+    "text": "それなら、ちゃんとトレーニングしてみる？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "やってみようかな\r\n健康にも良さそうだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030340,
+    "speaker": "夏葉",
+    "text": "その言葉を待っていたわ！\r\n実はもうアナタのためのメニューを考えてあるのよ！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030340"
+  },
+  {
+    "id": 2013004030350,
+    "speaker": "夏葉",
+    "text": "まずは水泳でしょ、それにダンベル、加圧、スパーリング……",
+    "charAnim1": "think",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030350"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "い、いきなりハードじゃないか？\r\nもっと気楽なものでも……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2013004030360,
+    "speaker": "夏葉",
+    "text": "ダメ！　やるならとことんよ！\r\nアナタは『有栖川夏葉』のプロデューサーでしょ？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030360"
+  },
+  {
+    "id": 2013004030370,
+    "speaker": "夏葉",
+    "text": "数ヶ月後、どうなっているかしら……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201300403/2013004030370"
+  },
+  {
+    "id": 2013004030380,
+    "speaker": "夏葉",
+    "text": "とっても楽しみね！\r\nうふふ……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/201300403/2013004030380"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

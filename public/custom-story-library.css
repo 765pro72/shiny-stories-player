@@ -1,0 +1,15 @@
+dialog.custom-story-delete-dialog{box-sizing:border-box;width:min(480px,calc(100vw - 32px));max-height:calc(100vh - 40px);padding:26px;border:1px solid #e6d6df;border-radius:24px;background:#fcfafb;color:#263e4d;box-shadow:0 20px 90px #26344440;overflow:auto}
+.custom-story-delete-dialog::backdrop{background:#201c2d77;backdrop-filter:blur(6px)}
+.custom-story-delete-dialog h2{margin:0 0 16px;font-size:22px}
+.custom-story-delete-dialog p{line-height:1.65;overflow-wrap:anywhere}
+.custom-story-delete-name{font-weight:700}
+.custom-story-delete-dialog .custom-story-delete-error{color:#a13352;min-height:1.5em}
+.custom-story-delete-actions{display:flex;justify-content:flex-end;gap:10px}
+.custom-story-delete-dialog button,.custom-story-delete-notices button{position:static;width:auto;min-height:38px;padding:9px 16px;border:1px solid #ddced9;border-radius:12px;background:#fff;color:#263e4d;font:inherit;cursor:pointer}
+.custom-story-delete-dialog .custom-story-confirm-delete{background:#9b526f;border-color:#9b526f;color:#fff}
+.custom-story-delete-dialog button:disabled,.custom-story-delete-notices button:disabled{opacity:.5;cursor:wait}
+.custom-story-delete-notices{display:grid;gap:8px;margin:14px 0}
+.custom-story-delete-notices[hidden]{display:none}
+.custom-story-deleted-notice{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:12px 16px;border:1px solid #e6d6df;border-radius:14px;background:#fcf5f9;color:#5c4758}
+.custom-story-deleted-notice span{overflow-wrap:anywhere;min-width:0;flex:1 1 180px}
+.story-text-actions .custom-story-delete,.saved-project .custom-story-delete{color:#9b526f}

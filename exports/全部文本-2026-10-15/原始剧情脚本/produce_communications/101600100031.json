@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1016001000310010,
+    "speaker": "千雪",
+    "text": "あれ？　プロデューサーさん\r\n今朝は、コンビニごはんですか？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "016",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "voice": "produce_communications/101600100031/1016001000310010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、そうなんだ\r\nバタバタしてて、あまり時間が取れなくてな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1016001000310020,
+    "speaker": "千雪",
+    "text": "それだけだと、栄養が偏っちゃいますね……\r\nよかったら、私のお弁当、少しお分けしましょうか？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100031/1016001000310020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（千雪のお弁当、うまそうだ……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "千雪の分が\r\nなくなってしまう",
+    "nextLabel": "1016001000311"
+  },
+  {
+    "select": "千雪は料理も\r\nできるんだな",
+    "nextLabel": "1016001000312"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "もったいなくて\r\n食べられないよ",
+    "nextLabel": "1016001000313"
+  },
+  {
+    "id": 1016001000310030,
+    "label": "1016001000311",
+    "speaker": "千雪",
+    "text": "ふふ。お気遣いありがとうございます",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100031/1016001000310030"
+  },
+  {
+    "id": 1016001000310040,
+    "speaker": "千雪",
+    "text": "でも、プロデューサーさんが食べてくれたほうが、\r\n私も安心してお腹いっぱいになれますから♪",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100031/1016001000310040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1016001000310050,
+    "label": "1016001000312",
+    "speaker": "千雪",
+    "text": "ええ、人並みですけど……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100031/1016001000310050",
+    "charAnim3Loop": false
+  },
+  {
+    "id": 1016001000310060,
+    "speaker": "千雪",
+    "text": "でも、お弁当を毎日考えて作るの、結構楽しいんですよ♪",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100031/1016001000310060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1016001000310070,
+    "label": "1016001000313",
+    "speaker": "千雪",
+    "text": "そんなことないですよ……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charLipAnim": "lip_sad2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100031/1016001000310070",
+    "charAnim3Loop": false
+  },
+  {
+    "id": 1016001000310080,
+    "speaker": "千雪",
+    "text": "でも、無理に押し付けてたらごめんなさい……\r\n……お昼は、ちゃんとしたものも食べてくださいね？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101600100031/1016001000310080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

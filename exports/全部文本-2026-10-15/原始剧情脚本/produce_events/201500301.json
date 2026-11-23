@@ -1,0 +1,492 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "（うーん……甜花、遅いな\r\nレッスンの時間をだいぶ過ぎてる……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00001",
+    "bgm": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（携帯にかけても、家の電話にかけても出ないし……\r\n来る途中で何かあったのか？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "心配だな……\r\nひとまず、家まで行ってみるか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bgEffect": "mask",
+    "bg": "00003",
+    "se": "0116",
+    "waitType": "time",
+    "waitTime": 2200
+  },
+  {
+    "textFrame": "off",
+    "bgEffect": "fade",
+    "bg": "00028",
+    "se": "0116",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "bg": "00000",
+    "se": "0112",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffect1": "fade"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……甜花、入るぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2015003010010,
+    "speaker": "甜花",
+    "text": "え……？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010010"
+  },
+  {
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "id": 2015003010020,
+    "speaker": "甜花",
+    "text": "あ……プロデューサーさん……",
+    "stillType": "idols",
+    "stillId": "1030150010",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010020"
+  },
+  {
+    "id": 2015003010030,
+    "speaker": "甜花",
+    "text": "え……\r\nなんで……家に……？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010030"
+  },
+  {
+    "id": 2015003010040,
+    "speaker": "甜花",
+    "text": "なーちゃんの……おむかえ……？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010040"
+  },
+  {
+    "id": 2015003010050,
+    "speaker": "甜花",
+    "text": "それとも、三者面談……？\r\n甜花、ちゃんとできてないから……？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、どれも違うよ……\r\nでも、無事なら良かった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015003010060,
+    "speaker": "甜花",
+    "text": "……？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "甜花がレッスンに来なかったから、迎えに来たんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015003010070,
+    "speaker": "甜花",
+    "text": "え……え……？　レッスンは、明日じゃ……\r\n確か……スマホにも、登録……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010070"
+  },
+  {
+    "id": 2015003010080,
+    "speaker": "甜花",
+    "text": "あ……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010080"
+  },
+  {
+    "id": 2015003010090,
+    "speaker": "甜花",
+    "text": "きょ、今日だった……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010090"
+  },
+  {
+    "id": 2015003010100,
+    "speaker": "甜花",
+    "text": "ご、ごめんなさい、プロデューサーさん……\r\n甜花……明日だと思ってた、から……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか……事情はわかったよ\r\nとにかく、今は早いとこレッスンに行こう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015003010110,
+    "speaker": "甜花",
+    "text": "で、でも……今から行ったら……遅刻で……\r\n先生、怒らない……？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "たしかに怒られるかもな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015003010120,
+    "speaker": "甜花",
+    "text": "ひぅっ……！\r\nや、やっぱり……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、遅れることは連絡してあるしな\r\nもし怒られたら、そのときは俺も一緒に謝るよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015003010130,
+    "speaker": "甜花",
+    "text": "プロデューサーさん、も……？\r\nじゃあ……い、行ってみる……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん\r\n俺は外で待ってるから、準備ができたら来てくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "stillCtrl": "off"
+  },
+  {
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka",
+    "charType": "idols",
+    "charId": "1030150010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それにしても……日にちを間違えたのは仕方ないけど、\r\n電話は出なくちゃダメじゃないか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "甜花に何かあったのかもしれないって、心配したんだぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015003010140,
+    "speaker": "甜花",
+    "text": "ごめんなさい……\r\n迷惑、かけちゃった……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010140"
+  },
+  {
+    "id": 2015003010150,
+    "speaker": "甜花",
+    "text": "えっと……その……電話があったとき、寝てて……\r\n気づかなかった……",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010150"
+  },
+  {
+    "id": 2015003010160,
+    "speaker": "甜花",
+    "text": "起きて、かけ直そうって、思ったんだけど……\r\nお休みだから……いっかなって……",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほどな……でも今度からは、\r\n気づいたらすぐ返すようにしてくれ。俺も心配になるから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015003010170,
+    "speaker": "甜花",
+    "text": "うん……そうする……",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ま、それはそれとしてだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015003010180,
+    "speaker": "甜花",
+    "text": "ふぇ……？",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "甜花は普段、ずいぶんゆるっとした服を着てるんだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015003010190,
+    "speaker": "甜花",
+    "text": "あうぅ……あれは……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010190"
+  },
+  {
+    "id": 2015003010200,
+    "speaker": "甜花",
+    "text": "楽だから……\r\n家では、いつも……あんな感じ……",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010200"
+  },
+  {
+    "id": 2015003010210,
+    "speaker": "甜花",
+    "text": "家から、あんまり出ないし……いいかなって……",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "まぁ、外に出なければたしかにそうなるか……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015003010220,
+    "speaker": "甜花",
+    "text": "プロデューサーさん、来るって……\r\n思ってなかった……から……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "確かに、いきなり部屋に入ったのは俺だからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お……もうそろそろ、レッスン場だな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015003010230,
+    "speaker": "甜花",
+    "text": "……ごめんね、甜花のせいで……",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺も間違えることはあるしな。お互い様だよ\r\nそれより、覚悟はいいか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2015003010240,
+    "speaker": "甜花",
+    "text": "う、うん……ちゃんと……謝る……\r\nプロデューサーさんと……一緒に……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010240"
+  },
+  {
+    "id": 2015003010250,
+    "speaker": "甜花",
+    "text": "……ありがとう、プロデューサーさん",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201500301/2015003010250"
+  },
+  {
+    "label": "end"
+  }
+]

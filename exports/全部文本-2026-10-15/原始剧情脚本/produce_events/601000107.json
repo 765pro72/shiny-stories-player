@@ -1,0 +1,260 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00023",
+    "bgm": "008",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 6902001070010,
+    "speaker": "社長",
+    "text": "お前、担当アイドルのことをどう思っている？",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601000107/6902001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……たしかに負けてしまいましたけど、\r\n彼女こそが最高のアイドルだと思っています",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6902001070020,
+    "speaker": "社長",
+    "text": "……！　そうか……",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601000107/6902001070020"
+  },
+  {
+    "id": 6901001070010,
+    "speaker": "はづき",
+    "text": "ふふ\r\n社長が聞きたかった言葉、そのまま出てきましたね",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/601000107/6901001070010"
+  },
+  {
+    "id": 6901001070020,
+    "speaker": "はづき",
+    "text": "もし違う言葉が出てきたら、\r\n説教してやるって言って聞かなかったのに",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/601000107/6901001070020"
+  },
+  {
+    "id": 6902001070030,
+    "speaker": "社長",
+    "text": "……うるさいぞ。とにかく、\r\nそういうことなら私から言うことはない",
+    "charAnim1": "wait2",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601000107/6902001070030"
+  },
+  {
+    "id": 6902001070040,
+    "speaker": "社長",
+    "text": "さあ、早くその最高のアイドルに\r\n会いに行ってこい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601000107/6902001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "off",
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charType": "characters",
+    "charId": "010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00002",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 6010001070010,
+    "speaker": "智代子",
+    "text": "あっ、プロデューサーさん、お疲れ様です！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601000107/6010001070010"
+  },
+  {
+    "id": 6010001070020,
+    "speaker": "智代子",
+    "text": "あの！　私、今後のために色々と考えたんです！\r\nまずですね、チョコアイドルとしては──",
+    "charAnim1": "surp1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601000107/6010001070020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ち、智代子……？\r\nその……大丈夫、なのか？",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6010001070030,
+    "speaker": "智代子",
+    "text": "はい！　ずっと落ち込んだままではいられません！\r\nまた頑張らなきゃですから！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601000107/6010001070030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうか\r\nさすが、智代子だな",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6010001070040,
+    "speaker": "智代子",
+    "text": "……えへへ、プロデューサーさんは、やっぱり優しいです",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601000107/6010001070040"
+  },
+  {
+    "id": 6010001070050,
+    "speaker": "智代子",
+    "text": "あの、私、もっと成長できるように、\r\nまだまだ挑戦してみてもいいですか？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601000107/6010001070050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "智代子なら、そう言ってくれると思ってた\r\nくじけているヒマなんてないよな",
+    "charAnim2": "blank",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6010001070060,
+    "speaker": "智代子",
+    "text": "はい！　チョコアイドル園田智代子は、永久に不滅なので！\r\n……って、こういう台詞は勝ったときに言うべきですよね",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601000107/6010001070060"
+  },
+  {
+    "id": 6010001070070,
+    "speaker": "智代子",
+    "text": "とにかく、アイドル活動はすっごくすっごく楽しいので、\r\nこんなところで止まるなんてありえないです！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601000107/6010001070070"
+  },
+  {
+    "id": 6010001070080,
+    "speaker": "智代子",
+    "text": "もっと輝いた姿を、ファンのみんなにも\r\nプロデューサーさんにも、絶対見てもらいますから！",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_smile",
+    "charAnim3Loop": false,
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601000107/6010001070080"
+  },
+  {
+    "label": "end"
+  }
+]

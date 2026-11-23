@@ -1,0 +1,2983 @@
+[
+  {
+    "id": 4001015040010,
+    "speaker": "off",
+    "text": "『２日目、昼』",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bg": "00075",
+    "bgm": "0000",
+    "voice": "game_event_communications/400101504/4001015040010"
+  },
+  {
+    "id": 4001015040020,
+    "speaker": "off",
+    "text": "『天気は晴れ。目を閉じても眩しいほどの』",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040020"
+  },
+  {
+    "id": 4001015040030,
+    "speaker": "off",
+    "text": "『こんな日は、こどもの頃のことを教えて？』",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040030"
+  },
+  {
+    "id": 4001015040040,
+    "speaker": "off",
+    "text": "『ボトルメール　波に投げ返した返事』",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "0029",
+    "voice": "game_event_communications/400101504/4001015040040"
+  },
+  {
+    "id": 4001015040050,
+    "speaker": "off",
+    "text": "『わたしはあさひ』",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040050"
+  },
+  {
+    "id": 4001015040060,
+    "speaker": "off",
+    "text": "『中学生とアイドルをやっています』",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040060"
+  },
+  {
+    "id": 4001015040070,
+    "speaker": "off",
+    "text": "『あなたは誰ですか。一緒に遊びましょう！』",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040070"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00062",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "015",
+    "se": "0263",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001015040080,
+    "speaker": "あさひ",
+    "text": "果穂ちゃん、こっち！\r\nこの先でボトルメールに返事したから！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charType": "idols",
+    "charId": "3000170090",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040080"
+  },
+  {
+    "charLabel": "asahi",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001015040090,
+    "speaker": "果穂",
+    "text": "わぁぁ、スゴいです……！\r\n新しいお手紙、来てるでしょうか！？",
+    "charAnim1": "touch",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charType": "idols",
+    "charId": "3000090090",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040090"
+  },
+  {
+    "id": 4001015040100,
+    "speaker": "あさひ",
+    "text": "それを見に行くんだよ！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040100"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0263",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001015040110,
+    "speaker": "灯織",
+    "text": "ま、待ってふたりとも……！\r\nあんまりみんなから離れたら──",
+    "charAnim1": "sad3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charType": "idols",
+    "charId": "3000020090",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040110"
+  },
+  {
+    "id": 4001015040120,
+    "speaker": "灯織",
+    "text": "ああダメだ、聞こえてない……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040120"
+  },
+  {
+    "id": 4001015040130,
+    "speaker": "灯織",
+    "text": "果穂っ、あさひ……！\r\n私も行くから待って……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_cheat",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040130"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0262",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "asahi",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001015040140,
+    "speaker": "あさひ",
+    "text": "ふんっふ～～ん♪",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040140"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040150,
+    "speaker": "灯織",
+    "text": "ボトルメールがあるか確認したら\r\nすぐ戻ろう、ふたりとも……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040150"
+  },
+  {
+    "id": 4001015040160,
+    "speaker": "灯織",
+    "text": "ずっと別行動してると\r\nみんな心配しちゃうと思うから……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040160"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "asahi",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040170,
+    "speaker": "果穂",
+    "text": "はいっ、わかりました！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040170"
+  },
+  {
+    "id": 4001015040180,
+    "speaker": "あさひ",
+    "text": "えー、これぐらい平気っすよ～",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040180"
+  },
+  {
+    "id": 4001015040190,
+    "speaker": "あさひ",
+    "text": "遠くまで来てるわけじゃないし、ルール違反でもないっす！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040190"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040200,
+    "speaker": "灯織",
+    "text": "ダメだよ、その考え方じゃいろんな人に迷惑が──",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040200"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040210,
+    "speaker": "あさひ",
+    "text": "あ！　ここっす、ここ！\r\nここに昨日ボトルメールが──",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040210"
+  },
+  {
+    "id": 4001015040220,
+    "speaker": "あさひ",
+    "text": "！！",
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040220"
+  },
+  {
+    "charLabel": "asahi",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001015040230,
+    "speaker": "果穂",
+    "text": "！　ビンですっ！\r\nあさひさん、もしかして──！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040230"
+  },
+  {
+    "id": 4001015040240,
+    "speaker": "あさひ",
+    "text": "ボトルメールだ！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "fade_out",
+    "voice": "game_event_communications/400101504/4001015040240"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "asahi",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001015040250,
+    "speaker": "あさひ",
+    "text": "えいっ！",
+    "charAnim1": "surp3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "0029",
+    "se": "0592",
+    "voice": "game_event_communications/400101504/4001015040250"
+  },
+  {
+    "charAnim1": "sad1",
+    "charAnim2": "face_surp",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "se": "0219",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 4001015040251,
+    "speaker": "あさひ",
+    "text": "──……わぁっ……！",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040251"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040260,
+    "speaker": "果穂",
+    "text": "な、なんて書いてあるんですか、あさひさん……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040260"
+  },
+  {
+    "id": 4001015040270,
+    "speaker": "灯織",
+    "text": "……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_a",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040270"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040280,
+    "speaker": "あさひ",
+    "text": "『お返事ありがとう』",
+    "charAnim1": "think1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040280"
+  },
+  {
+    "id": 4001015040290,
+    "speaker": "あさひ",
+    "text": "『一緒に遊べるの嬉しいな』",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040290"
+  },
+  {
+    "id": 4001015040300,
+    "speaker": "あさひ",
+    "text": "『今夜、あなたの前で待ち合わせ』",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040300"
+  },
+  {
+    "id": 4001015040310,
+    "speaker": "あさひ",
+    "text": "──返事っすよ返事！\r\nちゃんと返事が来たっすー！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_surp",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040310"
+  },
+  {
+    "charLabel": "asahi",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001015040320,
+    "speaker": "果穂",
+    "text": "！！\r\nスゴいです！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040320"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040330,
+    "speaker": "灯織",
+    "text": "──",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040330"
+  },
+  {
+    "id": 4001015040340,
+    "speaker": "灯織",
+    "text": "……いや、でも、待って……\r\nボトルも紙も、結構古いものに見えるから",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040340"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040341,
+    "speaker": "果穂＆あさひ",
+    "text": "？",
+    "charAnim1": "why",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040341"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040350,
+    "speaker": "灯織",
+    "text": "昨日の返事として出されたんだとしたら、\r\nこの劣化具合はおかしいと思う",
+    "charAnim1": "sad1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040350"
+  },
+  {
+    "id": 4001015040360,
+    "speaker": "灯織",
+    "text": "偶然返事に見えただけなんじゃないかな……",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040360"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040361,
+    "speaker": "果穂＆あさひ",
+    "text": "……",
+    "charAnim1": "think1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040361"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040370,
+    "speaker": "灯織",
+    "text": "──あ、その……",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040370"
+  },
+  {
+    "id": 4001015040380,
+    "speaker": "灯織",
+    "text": "ごめんなさい、ふたりをがっかりさせたいわけじゃなくて、\r\n可能性の話を──",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "fade_out",
+    "voice": "game_event_communications/400101504/4001015040380"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040390,
+    "speaker": "果穂",
+    "text": "──じゃあ、このビンは時を越えたってことですか！？",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "015",
+    "voice": "game_event_communications/400101504/4001015040390"
+  },
+  {
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001015040400,
+    "speaker": "あさひ",
+    "text": "確かめなきゃいけないっすね！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040400"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040410,
+    "speaker": "灯織",
+    "text": "えっ？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_angry",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040410"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040420,
+    "speaker": "あさひ",
+    "text": "実験っす！\r\n今日の手紙にも返事を書くっすよ！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040420"
+  },
+  {
+    "id": 4001015040430,
+    "speaker": "あさひ",
+    "text": "果穂ちゃんも灯織ちゃんもよろしくっす！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040430"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040440,
+    "speaker": "果穂",
+    "text": "はいっ！",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040440"
+  },
+  {
+    "id": 4001015040450,
+    "speaker": "灯織",
+    "text": "ええっ？",
+    "charAnim1": "shy3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040450"
+  },
+  {
+    "id": 4001015040460,
+    "speaker": "灯織",
+    "text": "って、私も……！？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040460"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040470,
+    "speaker": "果穂",
+    "text": "あさひさん、ペンはありますかっ？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101504/4001015040470"
+  },
+  {
+    "charLabel": "kaho",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001015040480,
+    "speaker": "あさひ",
+    "text": "あ！　忘れちゃったっす！\r\n持ってくればよかった～！！！",
+    "charAnim1": "surp4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "asahi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040480"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040490,
+    "speaker": "果穂",
+    "text": "じゃあ、向こうでちょこ先輩たちに聞いてきます！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "kaho",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101504/4001015040490"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kaho",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0262",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001015040500,
+    "speaker": "灯織",
+    "text": "──っ、待って果穂！\r\nひとりで行動するのはルール違反だから──！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040500"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "bg": "00160"
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "se": "0276",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001015040510,
+    "speaker": "摩美々",
+    "text": "……元気だよねー",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "037",
+    "voice": "game_event_communications/400101504/4001015040510"
+  },
+  {
+    "id": 4001015040520,
+    "speaker": "甘奈",
+    "text": "えっ？",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040520"
+  },
+  {
+    "id": 4001015040530,
+    "speaker": "摩美々",
+    "text": "泳いでる組ー",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040530"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00209",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4001015040540,
+    "speaker": "甘奈",
+    "text": "──ああ……うん！　そうだね！\r\nみんなもうずっと泳いでるもんね～",
+    "charAnim1": "sad1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charType": "idols",
+    "charId": "3000140090",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040540"
+  },
+  {
+    "id": 4001015040550,
+    "speaker": "甘奈",
+    "text": "海、楽しまなきゃ～☆　って言ってたよ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040550"
+  },
+  {
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001015040560,
+    "speaker": "摩美々",
+    "text": "海って言ったら、\r\n日陰でジュースが一番だけどねー",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charType": "idols",
+    "charId": "3000050090",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040560"
+  },
+  {
+    "id": 4001015040570,
+    "speaker": "甘奈",
+    "text": "ふふ……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040570"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040580,
+    "speaker": "摩美々",
+    "text": "……",
+    "charAnim1": "touch",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400101504/4001015040580"
+  },
+  {
+    "id": 4001015040590,
+    "speaker": "摩美々",
+    "text": "今日、もうひとりは一緒じゃないのー？",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040590"
+  },
+  {
+    "charLabel": "mamimi",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001015040600,
+    "speaker": "甘奈",
+    "text": "え",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040600"
+  },
+  {
+    "id": 4001015040610,
+    "speaker": "摩美々",
+    "text": "てーんーかぁ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040610"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp2_s",
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_surp2_s",
+    "charLabel": "amana",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4001015040620,
+    "speaker": "甘奈",
+    "text": "──……うん",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile2",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040620"
+  },
+  {
+    "id": 4001015040630,
+    "speaker": "甘奈",
+    "text": "甜花ちゃんとは、\r\n後で今日あったことを教え合う約束なんだ",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040630"
+  },
+  {
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001015040640,
+    "speaker": "摩美々",
+    "text": "ふーん……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040640"
+  },
+  {
+    "id": 4001015040650,
+    "speaker": "甘奈",
+    "text": "……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040650"
+  },
+  {
+    "id": 4001015040660,
+    "speaker": "摩美々",
+    "text": "──じゃ、私とおしゃべりしてみて、どうでしたぁ？",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040660"
+  },
+  {
+    "id": 4001015040670,
+    "speaker": "甘奈",
+    "text": "えっ！？\r\nど、どうって言われても！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040670"
+  },
+  {
+    "id": 4001015040680,
+    "speaker": "摩美々",
+    "text": "ほらぁ、感想感想ー\r\n甜花に報告するんでしょー",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040680"
+  },
+  {
+    "id": 4001015040690,
+    "speaker": "甘奈",
+    "text": "待って待って！\r\n急に言われても困っちゃうよーっ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_trouble",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040690"
+  },
+  {
+    "id": 4001015040700,
+    "speaker": "摩美々",
+    "text": "そんなんじゃ、\r\n甜花、退屈するんじゃないー？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040700"
+  },
+  {
+    "id": 4001015040710,
+    "speaker": "甘奈",
+    "text": "わーんっ、摩美々ちゃんの意地悪～っ",
+    "charAnim1": "touch",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "fade_out",
+    "voice": "game_event_communications/400101504/4001015040710"
+  },
+  {
+    "id": 4001015040720,
+    "speaker": "摩美々",
+    "text": "ふふー",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "0034",
+    "voice": "game_event_communications/400101504/4001015040720"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040730,
+    "speaker": "咲耶",
+    "text": "フフ、どうしたのかなお嬢さんたち\r\nずいぶんと賑やかな旋律が聞こえてきたけれど",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "se": "0282",
+    "voice": "game_event_communications/400101504/4001015040730"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040740,
+    "speaker": "摩美々",
+    "text": "あ、おかえりー",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040740"
+  },
+  {
+    "id": 4001015040750,
+    "speaker": "甘奈",
+    "text": "おかえりー☆",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "fade_out",
+    "voice": "game_event_communications/400101504/4001015040750"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040760,
+    "speaker": "めぐる",
+    "text": "ただいま！\r\nふたりとも、元気なら泳ぎに行かない？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charType": "idols",
+    "charId": "3000030090",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "046",
+    "voice": "game_event_communications/400101504/4001015040760"
+  },
+  {
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001015040770,
+    "speaker": "摩美々",
+    "text": "めぐる、今戻ってきたばっかじゃん……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040770"
+  },
+  {
+    "id": 4001015040780,
+    "speaker": "めぐる",
+    "text": "だって楽しいよ！？　魚と一緒に泳ぐの！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040780"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "charType": "idols",
+    "charId": "3000060090",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040790,
+    "speaker": "愛依",
+    "text": "そーそー！\r\nマジでちょーヤバ近い！　魚、目の前！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charType": "idols",
+    "charId": "3000190090",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040790"
+  },
+  {
+    "id": 4001015040800,
+    "speaker": "咲耶",
+    "text": "潜るのが好みでないのなら、\r\n浮いているという手もあることだし……どうだろう？",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040800"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mei",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "natsuha",
+    "charType": "idols",
+    "charId": "3000130090",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040810,
+    "speaker": "霧子",
+    "text": "うん……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charType": "idols",
+    "charId": "3000080090",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040810"
+  },
+  {
+    "id": 4001015040820,
+    "speaker": "霧子",
+    "text": "白鳥さんに……\r\n乗せてもらえるんだ……",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040820"
+  },
+  {
+    "id": 4001015040830,
+    "speaker": "夏葉",
+    "text": "ええ！　私、スワンフロートを持ってきてるの\r\nぜひ楽しんでちょうだい！",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040830"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040831"
+  },
+  {
+    "id": 4001015040831,
+    "speaker": "摩美々＆甘奈",
+    "text": "……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait3",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040831"
+  },
+  {
+    "charAnim1": "hello",
+    "charAnim2": "face_smile",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "voice": "game_event_communications/400101504/4001015040832"
+  },
+  {
+    "id": 4001015040832,
+    "speaker": "摩美々＆甘奈",
+    "text": "今は遠慮しまぁす",
+    "charAnim1": "play",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040832"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040840,
+    "speaker": "咲耶",
+    "text": "おや\r\n素敵な人魚たちが加わってくれるものと思ったのに",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040840"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040850,
+    "speaker": "摩美々",
+    "text": "紫の人魚は休憩中なんでー",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040850"
+  },
+  {
+    "id": 4001015040860,
+    "speaker": "甘奈",
+    "text": "青の人魚もでーす☆",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040860"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040870,
+    "speaker": "愛依",
+    "text": "休憩中ならしゃーないかぁ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mei",
+    "textCtrl": "r",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040870",
+    "voiceKeep": true
+  },
+  {
+    "speaker": "愛依",
+    "text": "明けたらもっかい誘うとしてー",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "0017"
+  },
+  {
+    "charLabel": "mei",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001015040880,
+    "speaker": "摩美々",
+    "text": "本日の田中摩美々は終了しましたぁ",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040880"
+  },
+  {
+    "id": 4001015040890,
+    "speaker": "愛依",
+    "text": "ええーっ！？",
+    "charAnim1": "anger1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "fade_out",
+    "voice": "game_event_communications/400101504/4001015040890"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mei",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、楽しそうだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001015040891,
+    "speaker": "一同",
+    "text": "プロデューサー！",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "bgm": "036",
+    "voice": "game_event_communications/400101504/4001015040891"
+  },
+  {
+    "id": 4001015040900,
+    "speaker": "甘奈",
+    "text": "プロデューサーさんも泳ぎに来たの？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040900"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、俺はみんなの様子を見に来ただけだよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040910,
+    "speaker": "めぐる",
+    "text": "えーっ、もったいない！\r\nプロデューサーも泳いだらいいのに！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040910"
+  },
+  {
+    "id": 4001015040920,
+    "speaker": "咲耶",
+    "text": "私もめぐるに賛成だな\r\n海もアナタを呼んでいるように思えるよ",
+    "charAnim1": "wait5",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040920"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "さ、さすがに監督者として遊ぶわけには……\r\nほら、水着も持ってないし",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040930,
+    "speaker": "夏葉",
+    "text": "私、さっき売店に寄ったんだけど\r\n一式揃えられそうだったわよ",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040930"
+  },
+  {
+    "id": 4001015040940,
+    "speaker": "夏葉",
+    "text": "アナタも飛び込みを体験しておくべきじゃないかしら！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040940"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "mei",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001015040950,
+    "speaker": "摩美々",
+    "text": "まぁ、カナヅチなプロデューサーには\r\n難しい遊びかもしれませんケドー",
+    "charAnim1": "play",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040950"
+  },
+  {
+    "id": 4001015040960,
+    "speaker": "愛依",
+    "text": "ありゃ、だとしたら悪いことしてる……？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040960"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "別に泳げないわけじゃ──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001015040970,
+    "speaker": "愛依",
+    "text": "じゃあ行ってきた方がいいって！\r\nいけるっしょ、プロデューサー！",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040970"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mei",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おいおい、みんな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mamimi",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "amana",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mei",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "amana",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mei",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（──こんなの）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "飛び込みをする",
+    "nextLabel": "1"
+  },
+  {
+    "label": "1",
+    "speaker": "プロデューサー",
+    "text": "（こんなの、飛ぶしかないじゃないか……！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001015040980,
+    "speaker": "霧子",
+    "text": "それじゃあ……\r\n売店は、こっちです……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400101504/4001015040980"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00160",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001015040981,
+    "speaker": "一同",
+    "text": "プロデューサー、頑張ってー！",
+    "textCtrl": "p",
+    "textFrame": "0017",
+    "voice": "game_event_communications/400101504/4001015040981"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ええい……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（後でまた仕事に戻ります……！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0188",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black99",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "effectLabel": "black99",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "blur",
+    "se": "0267",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "label": "end"
+  }
+]

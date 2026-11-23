@@ -1,0 +1,74 @@
+[
+  {
+    "id": 201200100110010,
+    "speaker": "凛世",
+    "text": "プロデューサーさま……",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "012",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "voice": "produce_communications_promises/20120010011/201200100110010"
+  },
+  {
+    "id": 201200100110020,
+    "speaker": "凛世",
+    "text": "高音が……安定しないのです\r\n今週、レッスンを、お願い、したいのですが……",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "rinze",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications_promises/20120010011/201200100110020"
+  },
+  {
+    "charLabel": "rinze",
+    "textFrame": "001",
+    "select": "いいよ",
+    "nextLabel": "agree"
+  },
+  {
+    "charLabel": "rinze",
+    "textCtrl": "cm",
+    "textFrame": "001",
+    "select": "ごめん",
+    "nextLabel": "disagree"
+  },
+  {
+    "id": 201200100990010,
+    "label": "agree",
+    "speaker": "凛世",
+    "text": "凛世を、お気遣いくださり……\r\nありがとう、ございます。プロデューサーさま……",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_communications_promises/20120010011/201200100990010"
+  },
+  {
+    "id": 201200100990020,
+    "label": "disagree",
+    "speaker": "凛世",
+    "text": "……お手を、煩わせてしまい\r\n申し訳、ございませんでした",
+    "charAnim1": "anger2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_communications_promises/20120010011/201200100990020"
+  },
+  {
+    "label": "end"
+  }
+]

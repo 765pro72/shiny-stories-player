@@ -1,0 +1,1890 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   283 PRISM GLASS — Unified Apple-Grade Design System (All Module Pages)
+   Light (Pearl Prism) & Dark (Midnight Stage) · Subtraction · Ergonomics
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --ap-bg: #f5f6fa;
+  --ap-surface: rgba(255, 255, 255, 0.78);
+  --ap-surface-solid: #ffffff;
+  --ap-surface-muted: rgba(15, 23, 42, 0.045);
+  --ap-glass: rgba(255, 255, 255, 0.68);
+  --ap-glass-strong: rgba(255, 255, 255, 0.88);
+  --ap-rim: rgba(255, 255, 255, 0.94);
+  --ap-border: rgba(15, 23, 42, 0.075);
+  --ap-ink: #141821;
+  --ap-ink-2: #4e596c;
+  --ap-ink-muted: #8490a3;
+  --ap-accent: #0ea5e9;
+  --ap-rose: #ec4899;
+  --ap-prism: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #f472b6 100%);
+  --ap-shadow-xs: 0 2px 8px rgba(15, 23, 42, 0.045);
+  --ap-shadow-sm: 0 6px 20px rgba(15, 23, 42, 0.065), 0 1px 3px rgba(15, 23, 42, 0.035);
+  --ap-shadow-md: 0 14px 36px rgba(15, 23, 42, 0.095), 0 3px 10px rgba(15, 23, 42, 0.045);
+  --ap-shadow-lg: 0 24px 64px rgba(15, 23, 42, 0.16), 0 6px 18px rgba(15, 23, 42, 0.07);
+  --ap-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ap-spring: cubic-bezier(0.32, 1.24, 0.52, 1);
+  --header-height: 62px;
+}
+
+html[data-theme="dark"] {
+  --ap-bg: #09090d;
+  --ap-surface: rgba(20, 19, 25, 0.86);
+  --ap-surface-solid: #16151c;
+  --ap-surface-muted: rgba(230, 194, 122, 0.08);
+  --ap-glass: rgba(18, 17, 23, 0.82);
+  --ap-glass-strong: rgba(22, 20, 28, 0.94);
+  --ap-rim: rgba(230, 194, 122, 0.24);
+  --ap-border: rgba(230, 194, 122, 0.14);
+  --ap-ink: #f5f1e8;
+  --ap-ink-2: #c4baa8;
+  --ap-ink-muted: #847c6e;
+  --ap-accent: #e6c27a;
+  --ap-rose: #d9a75c;
+  --ap-prism: linear-gradient(135deg, #f5dca4 0%, #d4a44e 52%, #a87628 100%);
+  --ap-shadow-xs: 0 2px 10px rgba(0, 0, 0, 0.38);
+  --ap-shadow-sm: 0 8px 26px rgba(0, 0, 0, 0.48);
+  --ap-shadow-md: 0 18px 46px rgba(0, 0, 0, 0.6);
+  --ap-shadow-lg: 0 28px 76px rgba(0, 0, 0, 0.75);
+
+  --paper: #09090d;
+  --surface: #16151c;
+  --ink: #f5f1e8;
+  --muted: #9c9282;
+  --line: rgba(230, 194, 122, 0.14);
+  --rose: #e6c27a;
+  --rose-light: rgba(230, 194, 122, 0.12);
+  --blue: rgba(230, 194, 122, 0.08);
+  --glass-fill: rgba(18, 17, 23, 0.86);
+  --music-bg-top: #09090d;
+  --music-bg-bottom: #100f15;
+  --music-card-bg: rgba(19, 18, 24, 0.84);
+  --music-card-border: rgba(230, 194, 122, 0.2);
+  --music-text-primary: #f5f1e8;
+  --music-text-secondary: #c4baa8;
+  --music-text-muted: #847c6e;
+}
+
+/* ── 1. Base Canvas & Smooth Typography ─────────────────────────────────── */
+html {
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+body:not(.page-home) {
+  background:
+    radial-gradient(ellipse 60% 45% at 85% 5%, rgba(244, 114, 182, 0.10), transparent 60%),
+    radial-gradient(ellipse 55% 45% at 10% 25%, rgba(56, 189, 248, 0.10), transparent 60%),
+    radial-gradient(ellipse 50% 45% at 50% 95%, rgba(251, 191, 36, 0.07), transparent 60%),
+    var(--ap-bg) !important;
+  background-attachment: fixed !important;
+  color: var(--ap-ink) !important;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.35s var(--ap-ease), color 0.3s ease;
+}
+
+html[data-theme="dark"] body:not(.page-home) {
+  background:
+    radial-gradient(ellipse 55% 40% at 85% 5%, rgba(244, 114, 182, 0.11), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 12% 22%, rgba(56, 189, 248, 0.11), transparent 55%),
+    var(--ap-bg) !important;
+}
+
+/* ── 2. Kill Legacy Jank (No Runaway GPU Layers, No Cartoon Button Jumps) ─ */
+button,
+.site-nav a,
+.model-card,
+.voice,
+.card,
+.unit,
+.action-button {
+  will-change: auto !important;
+  transition: transform 0.18s var(--ap-ease), background-color 0.18s ease, box-shadow 0.22s ease, border-color 0.18s ease, color 0.16s ease, opacity 0.18s ease !important;
+}
+
+button:hover,
+.site-nav a:hover {
+  transform: none !important;
+}
+
+button:active:not(:disabled):not(#idolTouch) {
+  transform: scale(0.965) !important;
+  transition-duration: 70ms !important;
+}
+
+/* Crisp macOS Thin Scrollbars */
+::-webkit-scrollbar {
+  width: 7px !important;
+  height: 7px !important;
+  background: transparent !important;
+}
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.28) !important;
+  border: 1.5px solid transparent !important;
+  background-clip: content-box !important;
+  border-radius: 999px !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.48) !important;
+  border: 1.5px solid transparent !important;
+  background-clip: content-box !important;
+}
+html[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* ── 3. In-Shell Seamless Mode (Single Persistent Header Owned by shell.html) */
+html.in-shell .site-header,
+html.in-shell .window-drag-handle,
+html.in-shell #appSplash,
+html.in-shell .mini-music-capsule-wrap,
+html.in-shell .mobile-bottom-nav,
+html.in-shell .mobile-more-menu,
+html.in-shell .mobile-more-backdrop {
+  display: none !important;
+}
+
+html.in-shell {
+  height: 100% !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+html.in-shell body:not(.page-home) {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow: visible !important;
+  display: block !important;
+  padding-top: 66px !important;
+}
+
+html.in-shell body:not(.page-home) > main {
+  overflow: visible !important;
+}
+
+html.in-shell body.page-home {
+  height: 100vh !important;
+  height: 100dvh !important;
+  overflow: hidden !important;
+  padding-top: 0 !important;
+}
+
+/* ── 4. Standalone Header Geometry Lock (Zero Shift When Opened Directly) ── */
+html:not(.in-shell) .site-header {
+  padding: 0 28px !important;
+  height: 60px !important;
+}
+
+html:not(.in-shell)[data-desktop-chrome="overlay"] .site-header {
+  padding-right: 160px !important;
+}
+
+/* ── 5. 事务所 (index.html) — VisionOS Spatial Full-Bleed Stage HUD ──────── */
+body.page-home .screen {
+  background-color: #10141d;
+}
+
+/* Top-Left Ultra-Clean Micro Status Pill */
+body.page-home header.home-status {
+  top: 74px !important;
+  left: 20px !important;
+  gap: 6px !important;
+  padding: 4px !important;
+  border-radius: 999px !important;
+  background: var(--ap-glass) !important;
+  backdrop-filter: blur(28px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
+  border: 1px solid var(--ap-rim) !important;
+  box-shadow: var(--ap-shadow-sm), inset 0 1px 0 var(--ap-rim) !important;
+  opacity: 0.86;
+  transition: opacity 0.25s ease, transform 0.25s var(--ap-ease) !important;
+}
+
+body.page-home header.home-status:hover {
+  opacity: 1;
+}
+
+body.page-home header.home-status a {
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 5px 11px !important;
+  border-radius: 999px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: var(--ap-ink-2) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  text-shadow: none !important;
+}
+
+body.page-home header.home-status a:hover {
+  background: var(--ap-surface-muted) !important;
+  color: var(--ap-ink) !important;
+}
+
+body.page-home header.home-status b {
+  margin-left: 0 !important;
+  color: var(--ap-ink) !important;
+  font-weight: 750 !important;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Left Vertical Apple VisionOS Icon Rail */
+body.page-home .side {
+  top: 50% !important;
+  left: 20px !important;
+  transform: translateY(-50%) !important;
+  padding: 6px !important;
+  gap: 6px !important;
+  border-radius: 24px !important;
+  background: var(--ap-glass) !important;
+  backdrop-filter: blur(32px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(200%) !important;
+  border: 1px solid var(--ap-rim) !important;
+  box-shadow: var(--ap-shadow-md), inset 0 1px 0 var(--ap-rim) !important;
+}
+
+body.page-home .side a,
+body.page-home .side button {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 16px !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--ap-ink-2) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 2px !important;
+  padding: 0 !important;
+}
+
+body.page-home .side a:hover,
+body.page-home .side button:hover {
+  background: var(--ap-surface-solid) !important;
+  color: var(--ap-ink) !important;
+  box-shadow: var(--ap-shadow-xs) !important;
+}
+
+body.page-home .side .ic {
+  width: 19px !important;
+  height: 19px !important;
+  stroke: currentColor !important;
+  stroke-width: 1.85 !important;
+}
+
+body.page-home .side small {
+  font-size: 9.5px !important;
+  font-weight: 650 !important;
+  color: inherit !important;
+  opacity: 0.85;
+  line-height: 1 !important;
+}
+
+/* Right Apple Control Center Action Rail */
+body.page-home .tools {
+  top: 50% !important;
+  right: 20px !important;
+  transform: translateY(-50%) !important;
+  padding: 6px !important;
+  gap: 6px !important;
+  border-radius: 999px !important;
+  background: var(--ap-glass) !important;
+  backdrop-filter: blur(32px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(200%) !important;
+  border: 1px solid var(--ap-rim) !important;
+  box-shadow: var(--ap-shadow-md), inset 0 1px 0 var(--ap-rim) !important;
+}
+
+body.page-home .tools button,
+body.page-home .tools a {
+  width: 38px !important;
+  height: 38px !important;
+  border-radius: 50% !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--ap-ink-2) !important;
+}
+
+body.page-home .tools button:hover,
+body.page-home .tools a:hover {
+  background: var(--ap-surface-solid) !important;
+  color: var(--ap-ink) !important;
+  box-shadow: var(--ap-shadow-xs) !important;
+}
+
+body.page-home .tools button[aria-pressed="true"] {
+  background: var(--ap-prism) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.38) !important;
+}
+
+body.page-home .tools .ic {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* VisionOS Frosted Glass Subtitle Card */
+body.page-home .caption {
+  top: auto !important;
+  bottom: 24px !important;
+  left: 20px !important;
+  width: min(400px, 34vw) !important;
+  min-width: 260px !important;
+  height: auto !important;
+  max-height: 28vh !important;
+  padding: 16px 18px 13px !important;
+  border-radius: 24px !important;
+  background: var(--ap-glass-strong) !important;
+  backdrop-filter: blur(34px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(34px) saturate(200%) !important;
+  border: 1px solid var(--ap-rim) !important;
+  box-shadow: var(--ap-shadow-lg), inset 0 1px 0 var(--ap-rim) !important;
+  color: var(--ap-ink) !important;
+}
+
+body.page-home .caption #greeting {
+  font-size: 14.5px !important;
+  line-height: 1.6 !important;
+  font-weight: 550 !important;
+  color: var(--ap-ink) !important;
+  margin: 0 0 10px !important;
+  max-height: 14vh !important;
+}
+
+body.page-home .captionBottom {
+  border-top: 1px solid var(--ap-border) !important;
+  padding-top: 9px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+body.page-home .caption .captionBottom strong {
+  font-size: 12.5px !important;
+  font-weight: 750 !important;
+  color: var(--ap-ink-2) !important;
+  letter-spacing: 0.02em;
+}
+
+body.page-home .captionBottom button#replayVoice {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50% !important;
+  background: var(--ap-surface-muted) !important;
+  color: var(--ap-ink) !important;
+  font-size: 13px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+}
+
+body.page-home .captionBottom button#replayVoice:hover:not(:disabled) {
+  background: var(--ap-accent) !important;
+  color: #fff !important;
+}
+
+body.page-home .caption #voiceStatus {
+  font-size: 11px !important;
+  color: var(--ap-ink-muted) !important;
+  margin-top: 4px !important;
+}
+
+/* ── 6. Unified Editorial Subtraction Across Collection Pages ────────────── */
+.collection-page-head,
+.writer-heading {
+  display: flex !important;
+  align-items: baseline !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 10px 16px !important;
+  margin: 0 0 14px !important;
+}
+
+.collection-page-head .eyebrow,
+.writer-heading small {
+  display: none !important;
+}
+
+.collection-page-head h1,
+.writer-heading h1 {
+  margin: 0 !important;
+  font-size: clamp(24px, 2vw, 32px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  color: var(--ap-ink) !important;
+  line-height: 1.15 !important;
+}
+
+.collection-page-head .sub,
+.writer-heading p {
+  margin: 0 !important;
+  font-size: 13px !important;
+  color: var(--ap-ink-muted) !important;
+  font-weight: 500 !important;
+}
+
+/* Compact Cinematic Editorial Hero (replaces giant 380px banners) */
+.collection-overview,
+.story-overview,
+.archive-banner,
+.voice-overview,
+.studio-overview,
+.writer-overview {
+  min-height: 172px !important;
+  max-height: 210px !important;
+  border-radius: 24px !important;
+  border: 1px solid var(--ap-rim) !important;
+  box-shadow: var(--ap-shadow-md) !important;
+  margin: 0 0 16px !important;
+  overflow: hidden !important;
+}
+
+.collection-overview .overview-copy,
+.story-overview .overview-copy,
+.writer-overview > div:first-child {
+  padding: 20px 26px !important;
+}
+
+.collection-overview .overview-copy small,
+.writer-overview small {
+  font-size: 10px !important;
+  letter-spacing: 0.16em !important;
+  opacity: 0.72 !important;
+}
+
+.collection-overview .overview-copy h2,
+.story-overview h2,
+.writer-overview h2 {
+  font-size: clamp(20px, 1.65vw, 28px) !important;
+  line-height: 1.25 !important;
+  margin: 6px 0 12px !important;
+  letter-spacing: -0.025em !important;
+}
+
+.collection-overview .overview-copy a {
+  padding: 7px 14px !important;
+  border-radius: 999px !important;
+  font-size: 12.5px !important;
+  font-weight: 650 !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+}
+
+/* Slim Single-Row Frosted Stats Bar */
+.collection-stats,
+.story-stats,
+.writer-stats {
+  gap: 10px !important;
+  margin: 0 0 16px !important;
+}
+
+.collection-stat,
+.story-stat,
+.writer-stats > div {
+  padding: 11px 16px !important;
+  border-radius: 16px !important;
+  background: var(--ap-surface) !important;
+  backdrop-filter: blur(22px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(22px) saturate(180%) !important;
+  border: 1px solid var(--ap-rim) !important;
+  box-shadow: var(--ap-shadow-xs) !important;
+  color: var(--ap-ink-2) !important;
+}
+
+.collection-stat b,
+.story-stat b,
+.writer-stats b {
+  font-size: clamp(18px, 1.3vw, 24px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--ap-ink) !important;
+  font-variant-numeric: tabular-nums;
+}
+
+.collection-stat span,
+.story-stat span {
+  font-size: 11.5px !important;
+  color: var(--ap-ink-muted) !important;
+}
+
+/* ── 7. macOS Tahoe Floating Frosted Sidebars ───────────────────────────── */
+.guide-unified > aside {
+  top: 72px !important;
+  left: 14px !important;
+  bottom: 14px !important;
+  height: auto !important;
+  border-radius: 22px !important;
+  padding: 18px 14px !important;
+  background: var(--ap-glass) !important;
+  backdrop-filter: blur(32px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(190%) !important;
+  border: 1px solid var(--ap-rim) !important;
+  box-shadow: var(--ap-shadow-sm), inset 0 1px 0 var(--ap-rim) !important;
+}
+
+.guide-unified > aside .brand,
+.guide-unified > aside .back-home,
+.guide-unified > aside footer {
+  display: none !important;
+}
+
+.guide-unified > main {
+  padding: 12px clamp(22px, 2.6vw, 44px) 48px !important;
+  margin-left: calc(var(--story-rail, 240px) + 18px) !important;
+}
+
+@media (max-width: 960px), (max-height: 540px) {
+  .guide-unified > aside {
+    display: none;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    bottom: auto !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 12px 12px !important;
+  }
+  .guide-unified.filters-open > aside {
+    display: block !important;
+  }
+  .guide-unified > main {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding: 8px clamp(12px, 3vw, 24px) 32px !important;
+  }
+}
+
+.card-archive .unit-sidebar,
+.page-voice .voice-directory,
+.page-voice #voicePreview,
+.page-wardrobe .model-index,
+.page-wardrobe .selected-model,
+.page-custom .panel {
+  border-radius: 22px !important;
+  background: var(--ap-glass) !important;
+  backdrop-filter: blur(28px) saturate(185%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(185%) !important;
+  border: 1px solid var(--ap-rim) !important;
+  box-shadow: var(--ap-shadow-sm), inset 0 1px 0 var(--ap-rim) !important;
+  color: var(--ap-ink) !important;
+}
+
+/* Align all 3 Wardrobe columns (Left Index | Center Framed Results | Right Fitting Room) flush top-to-bottom! */
+html.in-shell .card-archive .unit-sidebar,
+html.in-shell .page-wardrobe .model-index,
+html.in-shell .page-wardrobe .selected-model,
+html.in-shell .page-voice #voicePreview {
+  top: 0 !important;
+}
+
+.page-wardrobe .wardrobe-layout {
+  align-items: stretch !important;
+}
+
+.page-wardrobe .model-index,
+.page-wardrobe .model-results,
+.page-wardrobe .selected-model {
+  margin-top: 0 !important;
+  align-self: stretch !important;
+  border-radius: 22px !important;
+}
+
+.page-wardrobe .model-results {
+  padding: 20px 22px 16px !important;
+  border: 1px solid var(--ap-rim) !important;
+  background: var(--ap-surface) !important;
+  box-shadow: var(--ap-shadow-sm), inset 0 1px 0 var(--ap-rim) !important;
+}
+
+.page-wardrobe .model-index {
+  padding: 20px 14px 14px !important;
+  border: 1px solid var(--ap-rim) !important;
+  background: var(--ap-surface) !important;
+  box-shadow: var(--ap-shadow-sm), inset 0 1px 0 var(--ap-rim) !important;
+}
+
+.page-wardrobe .selected-model {
+  padding: 20px 20px 18px !important;
+  border: 1px solid var(--ap-rim) !important;
+  box-shadow: var(--ap-shadow-sm), inset 0 1px 0 var(--ap-rim) !important;
+}
+
+/* Fix Voice Gallery Alignment & Non-Overlapping Heading Toolbar */
+.page-voice .voice-directory {
+  top: 0 !important;
+  align-self: stretch !important;
+}
+
+.page-voice .voice-browser .collection-heading {
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 10px 14px !important;
+  min-height: auto !important;
+}
+
+/* Unified Clean Alignment for Export Original / Import Translation Toolbars across Guide, Card Gallery & Voice Gallery */
+#storyTextToolbar.story-text-toolbar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 8px !important;
+  padding: 0 !important;
+  margin: 4px 0 14px !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+#storyTextToolbar.story-text-toolbar button {
+  padding: 6px 13px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  border-radius: 999px !important;
+  border: 1px solid var(--ap-border) !important;
+  background: var(--ap-surface) !important;
+  color: var(--ap-ink-2) !important;
+  box-shadow: var(--ap-shadow-xs) !important;
+  white-space: nowrap !important;
+}
+
+#storyTextToolbar.story-text-toolbar button:hover:not(:disabled) {
+  background: var(--ap-surface-solid) !important;
+  color: var(--ap-ink) !important;
+  border-color: rgba(14, 165, 233, 0.34) !important;
+}
+
+#storyTextToolbar.story-text-toolbar button:disabled,
+#storyTextToolbar.story-text-toolbar button[hidden] {
+  display: none !important;
+}
+
+#storyTextToolbar .voice-toolbar-hint {
+  margin: 0 !important;
+  font-size: 11.5px !important;
+  color: var(--ap-ink-muted) !important;
+}
+
+#storyTextToolbar .voice-toolbar-hint:empty {
+  display: none !important;
+}
+
+/* ── 8. Apple Frosted Inputs, Selects, Buttons & Cards ──────────────────── */
+body:not(.page-home):not(.page-music) input[type="text"],
+body:not(.page-home):not(.page-music) input[type="search"],
+body:not(.page-home):not(.page-music) input[type="number"],
+body:not(.page-home):not(.page-music) select,
+body:not(.page-home):not(.page-music) textarea {
+  border-radius: 12px !important;
+  border: 1px solid var(--ap-border) !important;
+  background: var(--ap-surface-solid) !important;
+  color: var(--ap-ink) !important;
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.03) !important;
+  transition: border-color 0.18s ease, box-shadow 0.2s ease !important;
+}
+
+body:not(.page-home):not(.page-music) :is(input, select, textarea):focus {
+  outline: none !important;
+  border-color: var(--ap-accent) !important;
+  box-shadow: 0 0 0 3.5px rgba(14, 165, 233, 0.2) !important;
+}
+
+/* Cards: Crisp Apple Elevation without Harassing Scale Jumps */
+.guide-unified .unit,
+.guide-unified #list .card,
+.card-archive .gallery-item,
+.page-voice .voice,
+.page-wardrobe .model-card {
+  border-radius: 18px !important;
+  background: var(--ap-surface) !important;
+  border: 1px solid var(--ap-rim) !important;
+  box-shadow: var(--ap-shadow-xs), inset 0 1px 0 var(--ap-rim) !important;
+  color: var(--ap-ink) !important;
+}
+
+.guide-unified #list .card:hover,
+.card-archive .gallery-item:hover,
+.page-voice .voice:hover,
+.page-wardrobe .model-card:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: var(--ap-shadow-md), inset 0 1px 0 var(--ap-rim) !important;
+  border-color: rgba(14, 165, 233, 0.28) !important;
+}
+
+.guide-unified #list .card:active,
+.card-archive .gallery-item:active,
+.page-voice .voice:active,
+.page-wardrobe .model-card:active {
+  transform: scale(0.985) !important;
+}
+
+/* Expandable Story Guide .unit containers can grow 10,000px+ tall: NEVER scale/translate/3D-transform them on hover or click! */
+.guide-unified .unit,
+.guide-unified .unit:hover,
+.guide-unified .unit:active {
+  transform: none !important;
+  transform-style: flat !important;
+}
+.guide-unified .unit:hover {
+  box-shadow: var(--ap-shadow-md), inset 0 1px 0 var(--ap-rim) !important;
+  border-color: rgba(14, 165, 233, 0.24) !important;
+}
+
+/* Sidebar / Pill Buttons */
+.guide-unified > aside .nav,
+.guide-unified .shortcuts a,
+.guide-actions button,
+.page-wardrobe .collection-scopes button,
+.page-custom .writer-actions button {
+  border-radius: 12px !important;
+  border: 1px solid var(--ap-border) !important;
+  background: var(--ap-surface) !important;
+  color: var(--ap-ink-2) !important;
+  font-weight: 600 !important;
+  box-shadow: var(--ap-shadow-xs) !important;
+}
+
+.guide-unified > aside .nav:hover,
+.guide-unified .shortcuts a:hover,
+.guide-actions button:hover,
+.page-wardrobe .collection-scopes button:hover,
+.page-custom .writer-actions button:hover {
+  background: var(--ap-surface-solid) !important;
+  color: var(--ap-ink) !important;
+  border-color: rgba(14, 165, 233, 0.3) !important;
+}
+
+.guide-unified > aside .nav.active,
+.page-wardrobe .collection-scopes button[aria-pressed="true"],
+.page-custom .writer-actions button.primary,
+.page-custom .stage-heading button.primary {
+  background: var(--ap-prism) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.3) !important;
+}
+
+/* ── 9. macOS Frosted Glass Sheets (All Dialogs) ────────────────────────── */
+dialog {
+  border-radius: 26px !important;
+  background: var(--ap-glass-strong) !important;
+  backdrop-filter: blur(40px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(40px) saturate(200%) !important;
+  border: 1px solid var(--ap-rim) !important;
+  box-shadow: var(--ap-shadow-lg), inset 0 1px 0 var(--ap-rim) !important;
+  color: var(--ap-ink) !important;
+}
+
+dialog[open] {
+  animation: apSheetIn 0.28s var(--ap-spring) both !important;
+}
+
+@keyframes apSheetIn {
+  from { opacity: 0; transform: translateY(10px) scale(0.955); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+dialog::backdrop {
+  background: rgba(12, 16, 26, 0.42) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+}
+
+/* Dark Mode Text & Surface Harmonies */
+html[data-theme="dark"] .guide-unified .note,
+html[data-theme="dark"] .guide-unified .inline-story,
+html[data-theme="dark"] .guide-unified .inline-series > summary,
+html[data-theme="dark"] .card-archive .gallery-controls,
+html[data-theme="dark"] .page-voice .filters,
+html[data-theme="dark"] .page-wardrobe .filters,
+html[data-theme="dark"] .page-custom .project-bar {
+  background: var(--ap-surface) !important;
+  border-color: var(--ap-border) !important;
+  color: var(--ap-ink) !important;
+}
+
+html[data-theme="dark"] .guide-unified .unit h2,
+html[data-theme="dark"] .collection-heading h2,
+html[data-theme="dark"] .panel h2,
+html[data-theme="dark"] .panel h3,
+html[data-theme="dark"] #wardrobeDialog h2,
+html[data-theme="dark"] #wardrobeDialog label,
+html[data-theme="dark"] .section-title h2 {
+  color: var(--ap-ink) !important;
+}
+
+html[data-theme="dark"] #wardrobeDialog select,
+html[data-theme="dark"] #wardrobeDialog .chosen-outfit,
+html[data-theme="dark"] dialog button {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: var(--ap-ink) !important;
+  border-color: var(--ap-border) !important;
+}
+
+html[data-theme="dark"] #wardrobeDialog #chooseModel,
+html[data-theme="dark"] #wardrobeDialog .chosen-outfit a {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(165, 180, 252, 0.42) !important;
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.28) !important;
+}
+
+html[data-theme="dark"] #wardrobeDialog .story-subtitle-setting,
+html[data-theme="dark"] #wardrobeDialog .banner-setting-row {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 16px !important;
+  padding: 14px 16px !important;
+  margin-bottom: 8px !important;
+  color: var(--ap-ink) !important;
+}
+
+html[data-theme="dark"] #viewer > details > summary,
+html[data-theme="dark"] #storyViewer > details > summary {
+  background: transparent !important;
+  color: var(--ap-ink) !important;
+}
+
+/* ── 10. 怪文书 Studio Declutter ────────────────────────────────────────── */
+.page-custom .scene-properties .hint,
+.page-custom .asset-shelf .hint,
+.page-custom .stage-tip {
+  font-size: 11.5px !important;
+  line-height: 1.45 !important;
+  color: var(--ap-ink-muted) !important;
+  opacity: 0.85;
+}
+
+.page-custom .writer-page {
+  padding-top: 10px !important;
+}
+
+/* ── 11. Assistant Orb Harmony with Apple Liquid Glass ──────────────────── */
+.ia-fab,
+#iaFab {
+  backdrop-filter: blur(24px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
+  box-shadow: var(--ap-shadow-md), inset 0 1px 0 rgba(255, 255, 255, 0.85) !important;
+  transition: transform 0.22s var(--ap-spring), box-shadow 0.22s ease !important;
+}
+
+.ia-fab:active,
+#iaFab:active {
+  transform: scale(0.92) !important;
+}
+
+/* ── Crisp Scrollbar Override & Guide Toolbar Refinement ── */
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.3) !important;
+  border: 1.5px solid transparent !important;
+  background-clip: content-box !important;
+  border-radius: 999px !important;
+}
+
+html[data-theme="dark"]::-webkit-scrollbar-thumb,
+html[data-theme="dark"] *::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: 1.5px solid transparent !important;
+  background-clip: content-box !important;
+}
+
+/* Streamlined Guide Actions & Shortcuts */
+.guide-unified .guide-actions.toolbar {
+  gap: 6px !important;
+  margin-bottom: 10px !important;
+}
+
+.guide-unified .guide-actions.toolbar button {
+  padding: 6px 12px !important;
+  font-size: 12px !important;
+  border-radius: 999px !important;
+}
+
+.guide-unified .guide-actions.toolbar button:disabled {
+  display: none !important;
+}
+
+.guide-unified .shortcuts {
+  gap: 6px !important;
+  margin-bottom: 14px !important;
+}
+
+.guide-unified .shortcuts a {
+  padding: 5px 12px !important;
+  font-size: 12px !important;
+  border-radius: 999px !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   283 PRISM MOTION — 3D Holographic Foil Cards · Live Video Hover · Cascade
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.card-archive .gallery-item,
+.guide-unified #list .card,
+.page-wardrobe .model-card,
+.page-voice .voice {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+/* Specular Holographic Prism Foil Overlay */
+.card-archive .gallery-item::after,
+.page-wardrobe .model-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 4;
+  opacity: calc(var(--pm-glare, 0) * 0.85);
+  background:
+    radial-gradient(240px circle at var(--pm-mx, 50%) var(--pm-my, 50%), rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0) 64%);
+  mix-blend-mode: overlay;
+  transition: opacity 0.22s ease;
+}
+
+/* Iridescent Shiny Colors Rainbow Foil for SSR / UR Cards */
+.card-archive .gallery-item[data-rarity="SSR"]::after,
+.card-archive .gallery-item[data-rarity="UR"]::after {
+  background:
+    radial-gradient(220px circle at var(--pm-mx, 50%) var(--pm-my, 50%), rgba(255, 255, 255, 0.48), transparent 58%),
+    linear-gradient(
+      118deg,
+      transparent 16%,
+      rgba(56, 189, 248, 0.26) 36%,
+      rgba(244, 114, 182, 0.28) 50%,
+      rgba(251, 191, 36, 0.24) 64%,
+      transparent 82%
+    );
+  background-size: 100% 100%, 220% 220%;
+  background-position: 0 0, var(--pm-mx, 50%) var(--pm-my, 50%);
+  mix-blend-mode: screen;
+  opacity: calc(var(--pm-glare, 0) * 0.72);
+}
+
+/* Smooth 3D Physical Tilt Transform */
+.pm-tilting {
+  transform: perspective(920px) rotateX(var(--pm-rx, 0deg)) rotateY(var(--pm-ry, 0deg)) translateY(-5px) scale(1.016) !important;
+  transition: box-shadow 0.24s ease, border-color 0.24s ease !important;
+  z-index: 6;
+}
+
+.collection-overview.pm-tilting,
+.story-overview.pm-tilting,
+.archive-banner.pm-tilting,
+.writer-overview.pm-tilting,
+.turntable-deck.pm-tilting {
+  transform: perspective(1200px) rotateX(var(--pm-rx, 0deg)) rotateY(var(--pm-ry, 0deg)) !important;
+}
+
+/* Subtle Inner Image Depth Parallax on Hover */
+.card-archive .gallery-item img {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+.card-archive .gallery-item.pm-tilting img {
+  transform: scale(1.055) translate3d(var(--pm-px, 0px), var(--pm-py, 0px), 0) !important;
+}
+
+/* LIVE Dynamic Card Video Preview Layer (supports dual 觉醒前 <-> 觉醒后 seamless crossfade) */
+.card-archive .gallery-item video.pm-live-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card-archive .gallery-item video.pm-live-preview.is-ready {
+  opacity: 1;
+  z-index: 3;
+}
+
+/* Luminous LIVE Pill Indicator on Dynamic Cards */
+.card-archive .gallery-item.has-movie::before {
+  content: '● LIVE';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 5;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  background: rgba(15, 23, 42, 0.56);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+.card-archive .gallery-item.has-movie.pm-video-active::before {
+  background: linear-gradient(135deg, #0ea5e9, #ec4899);
+  border-color: rgba(255, 255, 255, 0.65);
+}
+
+/* Choreographed Staggered Cascade Wave Entrance */
+.pm-cascade {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0) scale(0.97);
+}
+
+.pm-cascade.pm-revealed {
+  animation: pmCascadeIn 0.48s cubic-bezier(0.16, 1, 0.3, 1) var(--pm-delay, 0ms) both;
+}
+
+@keyframes pmCascadeIn {
+  from { opacity: 0; transform: translate3d(0, 18px, 0) scale(0.97); }
+  to { opacity: 1; transform: translate3d(0, 0, 0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pm-cascade,
+  .pm-cascade.pm-revealed {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   OBSIDIAN & CHAMPAGNE GOLD (暗金典藏夜间模式) — ZERO STRAY WHITE ELEMENTS
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+html[data-theme="dark"] body:not(.page-home) {
+  background:
+    radial-gradient(ellipse 62% 42% at 82% 4%, rgba(230, 194, 122, 0.12), transparent 56%),
+    radial-gradient(ellipse 52% 40% at 12% 24%, rgba(186, 132, 60, 0.09), transparent 56%),
+    radial-gradient(ellipse 50% 45% at 50% 96%, rgba(140, 96, 40, 0.07), transparent 58%),
+    #09090d !important;
+}
+
+/* Primary Gold Active Buttons */
+html[data-theme="dark"] .guide-unified > aside .nav.active,
+html[data-theme="dark"] .page-wardrobe .collection-scopes button[aria-pressed="true"],
+html[data-theme="dark"] .page-custom .writer-actions button.primary,
+html[data-theme="dark"] .page-custom .stage-heading button.primary {
+  background: linear-gradient(135deg, #f5dca4 0%, #d4a44e 52%, #a87628 100%) !important;
+  color: #161108 !important;
+  font-weight: 750 !important;
+  box-shadow: 0 8px 22px rgba(212, 164, 78, 0.32), inset 0 1px 0 rgba(255, 248, 224, 0.65) !important;
+}
+
+/* Collection Overview Banners — Rich Obsidian Gold Glass Veil */
+html[data-theme="dark"] .collection-overview,
+html[data-theme="dark"] .story-overview,
+html[data-theme="dark"] .archive-banner,
+html[data-theme="dark"] .voice-overview,
+html[data-theme="dark"] .studio-overview,
+html[data-theme="dark"] .writer-overview {
+  background: linear-gradient(135deg, #16141d 0%, #1c1820 55%, #121118 100%) !important;
+  border-color: rgba(230, 194, 122, 0.28) !important;
+}
+
+html[data-theme="dark"] .collection-cover-shade,
+html[data-theme="dark"] .archive-banner-shade {
+  z-index: 0 !important;
+  background: linear-gradient(90deg, #16141d 0%, rgba(22, 20, 29, 0.96) 28%, rgba(22, 20, 29, 0.68) 48%, rgba(16, 14, 22, 0.18) 76%, transparent 100%) !important;
+}
+
+/* Art on LEFT, Text on RIGHT (卡片相册 & 衣装室): dark scrim MUST anchor on RIGHT behind text! */
+html[data-theme="dark"] .card-archive .archive-banner-shade,
+html[data-theme="dark"] .page-wardrobe .studio-overview .collection-cover-shade {
+  z-index: 0 !important;
+  background: linear-gradient(270deg, #16141d 0%, rgba(22, 20, 29, 0.96) 28%, rgba(22, 20, 29, 0.68) 48%, rgba(16, 14, 22, 0.18) 76%, transparent 100%) !important;
+}
+
+.collection-overview .overview-copy,
+.story-overview .overview-copy {
+  position: relative;
+  z-index: 2 !important;
+}
+
+/* Collection / Story Stat Cards — Dark Obsidian & Champagne Gold (beats ui-upgrade.css white!) */
+html[data-theme="dark"] .collection-stat,
+html[data-theme="dark"] .story-stat,
+html[data-theme="dark"] .collection-stats .collection-stat,
+html[data-theme="dark"] .collection-stats .story-stat {
+  background: rgba(20, 19, 27, 0.88) !important;
+  border-color: rgba(230, 194, 122, 0.36) !important;
+  color: #f5f1e8 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(255, 236, 179, 0.14) !important;
+}
+html[data-theme="dark"] .collection-stat > b,
+html[data-theme="dark"] .collection-stat b,
+html[data-theme="dark"] .story-stat > b,
+html[data-theme="dark"] .story-stat b {
+  color: #f5dca4 !important;
+}
+html[data-theme="dark"] .collection-stat > span,
+html[data-theme="dark"] .collection-stat span,
+html[data-theme="dark"] .story-stat > span,
+html[data-theme="dark"] .story-stat span {
+  color: #b8ae9e !important;
+}
+
+html[data-theme="dark"] .collection-overview .overview-copy h2,
+html[data-theme="dark"] .collection-overview .overview-copy small,
+html[data-theme="dark"] .writer-overview h2,
+html[data-theme="dark"] .writer-overview p,
+html[data-theme="dark"] .writer-overview small {
+  color: #f7efe0 !important;
+}
+
+html[data-theme="dark"] .collection-overview .overview-copy a {
+  background: rgba(230, 194, 122, 0.16) !important;
+  border: 1px solid rgba(230, 194, 122, 0.42) !important;
+  color: #f5dca4 !important;
+}
+
+/* Guide Page — Eliminate All White Panels, Unit Cards, List Cards, Inline Details */
+html[data-theme="dark"] .guide-unified .unit,
+html[data-theme="dark"] .guide-unified #list .card,
+html[data-theme="dark"] .guide-unified .note,
+html[data-theme="dark"] .guide-unified .inline-story,
+html[data-theme="dark"] .guide-unified .inline-series,
+html[data-theme="dark"] .guide-unified .idol,
+html[data-theme="dark"] .guide-unified .pagination button,
+html[data-theme="dark"] .guide-unified .searchrow input,
+html[data-theme="dark"] .guide-unified > aside .nav,
+html[data-theme="dark"] .guide-unified > aside select {
+  background: rgba(22, 20, 28, 0.88) !important;
+  border-color: rgba(230, 194, 122, 0.18) !important;
+  color: #f5f1e8 !important;
+}
+
+html[data-theme="dark"] .guide-unified .unit::before,
+html[data-theme="dark"] .guide-unified .unit header {
+  background: transparent !important;
+}
+
+html[data-theme="dark"] .guide-unified .unit .eyebrow,
+html[data-theme="dark"] .section-title .eyebrow,
+html[data-theme="dark"] .collection-heading .eyebrow,
+html[data-theme="dark"] .voice-directory > p {
+  color: #d4a44e !important;
+}
+
+/* Card Gallery — Eliminate All White Sidebars, Unit Buttons, Controls, Cards */
+html[data-theme="dark"] .card-archive .unit-sidebar,
+html[data-theme="dark"] .card-archive .unit-sidebar button,
+html[data-theme="dark"] .card-archive .unit-sidebar .unit,
+html[data-theme="dark"] .card-archive .gallery-controls,
+html[data-theme="dark"] .card-archive .gallery-item,
+html[data-theme="dark"] .card-archive .gallery-results {
+  background: rgba(20, 19, 25, 0.86) !important;
+  border-color: rgba(230, 194, 122, 0.18) !important;
+  color: #f5f1e8 !important;
+}
+
+html[data-theme="dark"] .card-archive .gallery-item span,
+html[data-theme="dark"] .card-archive .gallery-item strong {
+  color: #f5f1e8 !important;
+}
+
+html[data-theme="dark"] .card-archive .gallery-item small {
+  color: #a99f8f !important;
+}
+
+html[data-theme="dark"] .card-archive .unit-sidebar button[aria-pressed="true"],
+html[data-theme="dark"] .card-archive .unit-sidebar button.active {
+  background: rgba(230, 194, 122, 0.18) !important;
+  border-color: rgba(230, 194, 122, 0.45) !important;
+  color: #f5dca4 !important;
+}
+
+/* Voice Gallery — Eliminate All White Voice Cards, Directory, Browser & Preview */
+html[data-theme="dark"] .page-voice .voice-browser,
+html[data-theme="dark"] .page-voice .voice-directory,
+html[data-theme="dark"] .page-voice #voicePreview,
+html[data-theme="dark"] .page-voice .voice,
+html[data-theme="dark"] .page-voice .voice-kind-nav button,
+html[data-theme="dark"] .page-voice .voice-browser nav button,
+html[data-theme="dark"] .page-voice #storyTextToolbar button {
+  background: rgba(20, 19, 25, 0.88) !important;
+  border-color: rgba(230, 194, 122, 0.18) !important;
+  color: #f5f1e8 !important;
+}
+
+html[data-theme="dark"] .page-voice .voice-kind-nav button[aria-pressed="true"],
+html[data-theme="dark"] .page-voice .voice.active {
+  background: rgba(230, 194, 122, 0.18) !important;
+  border-color: rgba(230, 194, 122, 0.5) !important;
+  color: #f5dca4 !important;
+}
+
+html[data-theme="dark"] .page-voice .voice strong,
+html[data-theme="dark"] .page-voice .voice-directory > h2,
+html[data-theme="dark"] .page-voice #previewName {
+  color: #f5f1e8 !important;
+}
+
+html[data-theme="dark"] .page-voice .voice small,
+html[data-theme="dark"] .page-voice #status {
+  color: #a69d8e !important;
+}
+
+/* Wardrobe (衣装室) — Eliminate All White Cards & Index */
+html[data-theme="dark"] .page-wardrobe .model-index,
+html[data-theme="dark"] .page-wardrobe #idolIndex button,
+html[data-theme="dark"] .page-wardrobe .model-results,
+html[data-theme="dark"] .page-wardrobe .model-card,
+html[data-theme="dark"] .page-wardrobe .selected-model,
+html[data-theme="dark"] .page-wardrobe .selected-art {
+  background: rgba(20, 19, 25, 0.88) !important;
+  border-color: rgba(230, 194, 122, 0.18) !important;
+  color: #f5f1e8 !important;
+}
+
+html[data-theme="dark"] .page-wardrobe #idolIndex button[aria-pressed="true"],
+html[data-theme="dark"] .page-wardrobe .model-card.active {
+  background: rgba(230, 194, 122, 0.18) !important;
+  border-color: rgba(230, 194, 122, 0.52) !important;
+  color: #f5dca4 !important;
+}
+
+/* Custom Story Studio (怪文书) — Eliminate All White Panels, Hints, Scene Cards */
+html[data-theme="dark"] .page-custom .project-bar,
+html[data-theme="dark"] .page-custom .panel,
+html[data-theme="dark"] .page-custom #sceneList li,
+html[data-theme="dark"] .page-custom .stage-edit-hint,
+html[data-theme="dark"] .page-custom .playback-bar,
+html[data-theme="dark"] .page-custom .writer-actions button:not(.primary),
+html[data-theme="dark"] .page-custom .rail-actions button,
+html[data-theme="dark"] .page-custom .stage-heading button:not(.primary),
+html[data-theme="dark"] .page-custom .playback-bar button,
+html[data-theme="dark"] .page-custom .panel button:not(.primary) {
+  background: rgba(20, 19, 25, 0.88) !important;
+  border-color: rgba(230, 194, 122, 0.18) !important;
+  color: #f5f1e8 !important;
+}
+
+html[data-theme="dark"] .page-custom #sceneList li.active {
+  background: rgba(230, 194, 122, 0.16) !important;
+  border-color: rgba(230, 194, 122, 0.5) !important;
+}
+
+/* Inputs & Selects Dark Gold Styling */
+html[data-theme="dark"] input[type="text"],
+html[data-theme="dark"] input[type="search"],
+html[data-theme="dark"] input[type="number"],
+html[data-theme="dark"] select,
+html[data-theme="dark"] textarea {
+  background: #14131a !important;
+  border-color: rgba(230, 194, 122, 0.22) !important;
+  color: #f5f1e8 !important;
+}
+
+html[data-theme="dark"] option {
+  background: #14131a;
+  color: #f5f1e8;
+}
+
+/* Music Page Dark Gold Accents */
+html[data-theme="dark"] .franchise-project-nav,
+html[data-theme="dark"] .turntable-panel,
+html[data-theme="dark"] .music-content-panel,
+html[data-theme="dark"] .music-stats-summary,
+html[data-theme="dark"] .sound-source-pill-group,
+html[data-theme="dark"] .music-player-dock {
+  background: rgba(18, 17, 23, 0.86) !important;
+  border-color: rgba(230, 194, 122, 0.22) !important;
+}
+
+html[data-theme="dark"] .franchise-tab-btn.active,
+html[data-theme="dark"] .sound-engine-btn.active,
+html[data-theme="dark"] .tab-btn.active,
+html[data-theme="dark"] .view-mode-btn.active {
+  background: linear-gradient(135deg, rgba(230, 194, 122, 0.24), rgba(180, 134, 54, 0.14)) !important;
+  border-color: rgba(230, 194, 122, 0.42) !important;
+  color: #f5dca4 !important;
+}
+
+html[data-theme="dark"] .song-row-item.active {
+  background: rgba(230, 194, 122, 0.13) !important;
+  border-color: rgba(230, 194, 122, 0.38) !important;
+}
+
+html[data-theme="dark"] .turntable-deck {
+  background:
+    radial-gradient(circle at 26% 20%, rgba(230, 194, 122, 0.1), transparent 52%),
+    linear-gradient(145deg, #1b1922, #100f15) !important;
+  border-color: rgba(230, 194, 122, 0.24) !important;
+}
+
+/* ── 283 Office Dynamic Atmosphere Transitions & Weather Pill ── */
+body.page-home .screen {
+  transition: background-image 0.65s ease, filter 0.65s ease;
+}
+
+body.page-home .screen[data-office-rain="1"]::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(30, 52, 78, 0.24) 0%, rgba(18, 28, 42, 0.14) 55%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+body.page-home .screen[data-office-time="night"]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 75% 65% at 50% 45%, transparent 45%, rgba(8, 7, 12, 0.34) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+body.page-home .office-atmo-pill {
+  border: 0 !important;
+  border-left: 1px solid var(--ap-border) !important;
+  background: transparent !important;
+  padding: 5px 11px !important;
+  border-radius: 0 999px 999px 0 !important;
+  font-size: 12px !important;
+  font-weight: 650 !important;
+  color: var(--ap-ink-2) !important;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+body.page-home .office-atmo-pill:hover {
+  background: var(--ap-surface-muted) !important;
+  color: var(--ap-ink) !important;
+}
+
+/* Final Obsidian Gold Polish on Guide Unit Card Headers & Toggle Button */
+html[data-theme="dark"] #toggleDirectory,
+html[data-theme="dark"] .guide-unified .section-title button {
+  background: rgba(22, 20, 28, 0.88) !important;
+  border-color: rgba(230, 194, 122, 0.24) !important;
+  color: #f5e6c4 !important;
+}
+
+html[data-theme="dark"] .guide-unified .unit .unit-head,
+html[data-theme="dark"] .guide-unified .unit-banner,
+html[data-theme="dark"] .guide-unified .unit > header {
+  background: linear-gradient(135deg, rgba(230, 194, 122, 0.14), rgba(20, 19, 25, 0.65)) !important;
+  border-bottom-color: rgba(230, 194, 122, 0.14) !important;
+}
+
+html[data-theme="dark"] .guide-unified .unit .unit-index,
+html[data-theme="dark"] .guide-unified .unit .unit-num {
+  color: rgba(230, 194, 122, 0.16) !important;
+}
+
+/* ── Dark Mode Bug Fixes: Settings Cards, Font Dialog, Outfit Buttons & Pagination ── */
+html[data-theme="dark"] .producer-profile-card,
+html[data-theme="dark"] .interface-font-setting {
+  background: rgba(24, 22, 30, 0.92) !important;
+  border: 1px solid rgba(230, 194, 122, 0.22) !important;
+  color: #f5f1e8 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) !important;
+}
+
+html[data-theme="dark"] .producer-profile-card h3,
+html[data-theme="dark"] .producer-profile-card label,
+html[data-theme="dark"] .producer-profile-card strong,
+html[data-theme="dark"] .interface-font-setting h3 {
+  color: #f5e6c4 !important;
+}
+
+html[data-theme="dark"] .producer-profile-card p,
+html[data-theme="dark"] .producer-profile-card small,
+html[data-theme="dark"] .interface-font-setting p {
+  color: #b8afa0 !important;
+}
+
+html[data-theme="dark"] .producer-profile-card input,
+html[data-theme="dark"] .producer-profile-card select,
+html[data-theme="dark"] #wardrobeDialog input[type="text"],
+html[data-theme="dark"] #wardrobeDialog input[type="search"] {
+  background: #14131a !important;
+  border: 1px solid rgba(230, 194, 122, 0.28) !important;
+  color: #f5f1e8 !important;
+}
+
+html[data-theme="dark"] .producer-profile-card input::placeholder {
+  color: #7d7568 !important;
+}
+
+html[data-theme="dark"] .interface-font-setting .interface-font-trigger,
+html[data-theme="dark"] #interfaceFontOpen {
+  background: linear-gradient(135deg, rgba(230, 194, 122, 0.22), rgba(184, 138, 62, 0.12)) !important;
+  border: 1px solid rgba(230, 194, 122, 0.42) !important;
+  color: #f5e6c4 !important;
+}
+
+html[data-theme="dark"] dialog.interface-font-dialog {
+  background: rgba(18, 17, 23, 0.96) !important;
+  border: 1px solid rgba(230, 194, 122, 0.28) !important;
+  color: #f5f1e8 !important;
+}
+
+html[data-theme="dark"] dialog.interface-font-dialog .font-sample {
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #f5f1e8 !important;
+  border: 1px solid rgba(230, 194, 122, 0.18) !important;
+}
+
+html[data-theme="dark"] dialog.interface-font-dialog select,
+html[data-theme="dark"] dialog.interface-font-dialog input {
+  background: #14131a !important;
+  border-color: rgba(230, 194, 122, 0.26) !important;
+  color: #f5f1e8 !important;
+}
+
+/* Outfit Cards "使用" Button & All Pagination Buttons ("上一页 / 下一页") */
+html[data-theme="dark"] .page-wardrobe .model-card button,
+html[data-theme="dark"] .page-wardrobe .model-results > nav button,
+html[data-theme="dark"] .page-wardrobe .pagination button,
+html[data-theme="dark"] .card-archive .pagination button,
+html[data-theme="dark"] .page-voice .voice-browser > nav button,
+html[data-theme="dark"] .pagination button {
+  background: rgba(34, 31, 42, 0.92) !important;
+  border: 1px solid rgba(230, 194, 122, 0.3) !important;
+  color: #f5e6c4 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+}
+
+html[data-theme="dark"] .page-wardrobe .model-card button:hover:not(:disabled),
+html[data-theme="dark"] .page-wardrobe .model-results > nav button:hover:not(:disabled),
+html[data-theme="dark"] .pagination button:hover:not(:disabled) {
+  background: linear-gradient(135deg, rgba(230, 194, 122, 0.28), rgba(184, 138, 62, 0.16)) !important;
+  border-color: rgba(230, 194, 122, 0.58) !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .pagination button:disabled,
+html[data-theme="dark"] .page-wardrobe .model-results > nav button:disabled,
+html[data-theme="dark"] .page-voice .voice-browser > nav button:disabled {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  color: rgba(245, 241, 232, 0.32) !important;
+}
+
+html[data-theme="dark"] .page-wardrobe .model-card.active button {
+  background: linear-gradient(135deg, #d4af37, #f5d78e) !important;
+  color: #14120d !important;
+  border-color: transparent !important;
+}
+
+/* Eliminate white root overscroll strip & style obsidian dressing room stage behind transparent cutouts */
+html[data-theme="dark"],
+html[data-theme="dark"] body {
+  background-color: #09090d !important;
+  min-height: 100%;
+}
+
+html[data-theme="dark"] .page-wardrobe .model-card .art,
+html[data-theme="dark"] .page-wardrobe .selected-art {
+  background: radial-gradient(ellipse 72% 68% at 50% 44%, rgba(230, 194, 122, 0.14) 0%, rgba(24, 22, 31, 0.96) 72%, rgba(14, 13, 19, 1) 100%) !important;
+}
+
+/* ── Instant Zero-Lag Theme Switching (Disable transitions for 2 frames while toggling Day <-> Night) ── */
+html.is-theme-switching,
+html.is-theme-switching *,
+html.is-theme-switching *::before,
+html.is-theme-switching *::after {
+  transition: none !important;
+}
+
+/* ── Luxury Obsidian & Champagne-Gold Frames across ALL Modules & Home HUD in Night Mode ── */
+html[data-theme="dark"] .collection-overview,
+html[data-theme="dark"] .story-overview,
+html[data-theme="dark"] .archive-banner,
+html[data-theme="dark"] .voice-overview,
+html[data-theme="dark"] .studio-overview,
+html[data-theme="dark"] .writer-overview,
+html[data-theme="dark"] .collection-stat,
+html[data-theme="dark"] .guide-unified > aside,
+html[data-theme="dark"] .guide-unified .unit,
+html[data-theme="dark"] .guide-unified #list .card,
+html[data-theme="dark"] .guide-unified .note,
+html[data-theme="dark"] .guide-unified .guide-actions button,
+html[data-theme="dark"] .guide-unified .shortcuts a,
+html[data-theme="dark"] .card-archive .unit-sidebar,
+html[data-theme="dark"] .card-archive .gallery-results,
+html[data-theme="dark"] .card-archive .gallery-controls,
+html[data-theme="dark"] .card-archive .gallery-item,
+html[data-theme="dark"] .page-voice .voice-browser,
+html[data-theme="dark"] .page-voice .voice-directory,
+html[data-theme="dark"] .page-voice #voicePreview,
+html[data-theme="dark"] .page-voice .voice,
+html[data-theme="dark"] .page-wardrobe .model-index,
+html[data-theme="dark"] .page-wardrobe .model-results,
+html[data-theme="dark"] .page-wardrobe .model-card,
+html[data-theme="dark"] .page-wardrobe .selected-model,
+html[data-theme="dark"] .page-wardrobe .selected-art,
+html[data-theme="dark"] .page-custom .project-bar,
+html[data-theme="dark"] .page-custom .panel,
+html[data-theme="dark"] .page-custom #sceneList li,
+html[data-theme="dark"] #storyTextToolbar.story-text-toolbar button,
+html[data-theme="dark"] dialog,
+html[data-theme="dark"] .franchise-project-nav,
+html[data-theme="dark"] .turntable-panel,
+html[data-theme="dark"] .music-content-panel,
+html[data-theme="dark"] .music-stats-summary,
+html[data-theme="dark"] .sound-source-pill-group,
+html[data-theme="dark"] .music-player-dock,
+html[data-theme="dark"] .turntable-deck {
+  border-color: rgba(230, 194, 122, 0.44) !important;
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.44),
+    inset 0 1px 0 rgba(255, 236, 179, 0.18) !important;
+}
+
+html[data-theme="dark"] .guide-unified .unit:hover,
+html[data-theme="dark"] .guide-unified #list .card:hover,
+html[data-theme="dark"] .card-archive .gallery-item:hover,
+html[data-theme="dark"] .page-voice .voice:hover,
+html[data-theme="dark"] .page-wardrobe .model-card:hover,
+html[data-theme="dark"] .collection-stat:hover,
+html[data-theme="dark"] #storyTextToolbar.story-text-toolbar button:hover:not(:disabled),
+html[data-theme="dark"] .guide-unified .guide-actions button:hover:not(:disabled),
+html[data-theme="dark"] .guide-unified .shortcuts a:hover {
+  border-color: rgba(245, 215, 142, 0.76) !important;
+  box-shadow:
+    0 14px 36px rgba(0, 0, 0, 0.54),
+    0 0 18px rgba(212, 175, 55, 0.22),
+    inset 0 1px 0 rgba(255, 240, 196, 0.28) !important;
+}
+
+html[data-theme="dark"] input[type="text"],
+html[data-theme="dark"] input[type="search"],
+html[data-theme="dark"] input[type="number"],
+html[data-theme="dark"] select,
+html[data-theme="dark"] textarea {
+  border-color: rgba(230, 194, 122, 0.40) !important;
+}
+
+/* Home Office HUD Translucent Twilight Frosted Glass in Night Mode (Blends harmoniously with 283 Office!) */
+html[data-theme="dark"] body.page-home header.home-status,
+html[data-theme="dark"] body.page-home .side,
+html[data-theme="dark"] body.page-home .tools,
+html[data-theme="dark"] body.page-home section.caption.ui {
+  background: rgba(28, 38, 62, 0.42) !important;
+  backdrop-filter: blur(18px) saturate(145%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(145%) !important;
+  color: #f4f7ff !important;
+  border: 1px solid rgba(220, 232, 255, 0.24) !important;
+  box-shadow:
+    0 8px 24px rgba(10, 16, 32, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18) !important;
+}
+
+html[data-theme="dark"] body.page-home header.home-status a,
+html[data-theme="dark"] body.page-home .side a,
+html[data-theme="dark"] body.page-home .side button,
+html[data-theme="dark"] body.page-home .tools button,
+html[data-theme="dark"] body.page-home .tools a,
+html[data-theme="dark"] body.page-home .caption #greeting,
+html[data-theme="dark"] body.page-home .caption .captionBottom strong {
+  color: #f4f7ff !important;
+  background: transparent !important;
+}
+
+html[data-theme="dark"] body.page-home header.home-status b {
+  color: #fde68a !important;
+}
+
+html[data-theme="dark"] body.page-home header.ui.home-status a:hover,
+html[data-theme="dark"] body.page-home nav.side.ui button:hover,
+html[data-theme="dark"] body.page-home nav.side.ui a:hover,
+html[data-theme="dark"] body.page-home .tools button:hover,
+html[data-theme="dark"] body.page-home .tools a:hover {
+  background: rgba(255, 255, 255, 0.16) !important;
+  border-color: rgba(255, 255, 255, 0.42) !important;
+  color: #ffffff !important;
+}
+
+/* Guide & Card Gallery & Mobile Flow Unit Visual Banners in Night Mode (ZERO white cards!) */
+html[data-theme="dark"] .guide-unified .unit .unit-visual,
+html[data-theme="dark"] .card-archive .unit .unit-visual,
+html[data-theme="dark"] .card-archive #unitIndex .unit-visual,
+html[data-theme="dark"] .mf-cards .unit-visual,
+html[data-theme="dark"] .mf-guide .unit-visual,
+html[data-theme="dark"] .mf-list .unit-visual,
+html[data-theme="dark"] .card-archive .unit-sidebar .sidebar-head {
+  background: linear-gradient(135deg, rgba(230, 194, 122, 0.16) 0%, rgba(24, 22, 31, 0.94) 58%, rgba(15, 14, 20, 0.98) 100%) !important;
+  border-color: rgba(230, 194, 122, 0.34) !important;
+  color: #f5e6c4 !important;
+}
+
+html[data-theme="dark"] .card-archive #unitIndex > .unit,
+html[data-theme="dark"] .mf-cards #unitIndex > .unit,
+html[data-theme="dark"] .mf-guide > .unit,
+html[data-theme="dark"] .mf-list #unitIndex > .unit {
+  background: rgba(20, 19, 27, 0.92) !important;
+  border: 1px solid rgba(230, 194, 122, 0.32) !important;
+  color: #f5f1e8 !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.44), inset 0 1px 0 rgba(255, 236, 179, 0.14) !important;
+}
+
+html[data-theme="dark"] .card-archive .unit h2,
+html[data-theme="dark"] .mf-cards .unit h2,
+html[data-theme="dark"] .mf-guide .unit h2,
+html[data-theme="dark"] .card-archive .unit-heading {
+  color: #f5e6c4 !important;
+}
+
+html[data-theme="dark"] .card-archive .unit-meta,
+html[data-theme="dark"] .mf-cards .unit-meta,
+html[data-theme="dark"] .mf-guide .unit-meta,
+html[data-theme="dark"] .card-archive .unit > .idol .count,
+html[data-theme="dark"] .mf-cards .unit > .idol .count {
+  color: #a99f8f !important;
+}
+
+html[data-theme="dark"] .card-archive .unit > .idol,
+html[data-theme="dark"] .mf-cards .unit > .idol,
+html[data-theme="dark"] .mf-list .unit > .idol,
+html[data-theme="dark"] .card-archive .card-idol,
+html[data-theme="dark"] .mf-member-row {
+  border-top-color: rgba(230, 194, 122, 0.14) !important;
+  border-bottom-color: rgba(230, 194, 122, 0.14) !important;
+  color: #e8e2d5 !important;
+}
+
+html[data-theme="dark"] .card-archive .unit > .idol > summary,
+html[data-theme="dark"] .mf-cards .unit > .idol > summary,
+html[data-theme="dark"] .card-archive .card-idol button {
+  color: #f0eadc !important;
+  background: transparent !important;
+}
+
+html[data-theme="dark"] .card-archive .unit-portrait,
+html[data-theme="dark"] .mf-cards .unit-portrait,
+html[data-theme="dark"] .mf-guide .unit-portrait {
+  border-color: rgba(230, 194, 122, 0.55) !important;
+  background: rgba(24, 22, 31, 0.9) !important;
+}
+
+html[data-theme="dark"] .mf-top,
+html[data-theme="dark"] .mf-back,
+html[data-theme="dark"] .mf-display-settings,
+html[data-theme="dark"] .guide-actions.toolbar button,
+html[data-theme="dark"] .story-quality-settings[open],
+html[data-theme="dark"] #displaySettingsDialog {
+  background: rgba(22, 20, 29, 0.94) !important;
+  border-color: rgba(230, 194, 122, 0.36) !important;
+  color: #f5e6c4 !important;
+}
+
+html[data-theme="dark"] .guide-unified .unit .unit-visual small,
+html[data-theme="dark"] .card-archive .unit .unit-visual small,
+html[data-theme="dark"] .mf-cards .unit-visual small,
+html[data-theme="dark"] .mf-guide .unit-visual small,
+html[data-theme="dark"] .card-archive .unit-sidebar .sidebar-head strong {
+  color: #e6c27a !important;
+}
+
+html[data-theme="dark"] .guide-unified .unit .unit-visual::after,
+html[data-theme="dark"] .card-archive .unit .unit-visual::after,
+html[data-theme="dark"] .mf-cards .unit-visual::after,
+html[data-theme="dark"] .mf-guide .unit-visual::after {
+  color: rgba(230, 194, 122, 0.14) !important;
+}
+
+html[data-theme="dark"] header.site-header {
+  background: rgba(11, 10, 15, 0.94) !important;
+  border-bottom: 1px solid rgba(230, 194, 122, 0.30) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+html[data-theme="dark"] .site-header .site-brand,
+html[data-theme="dark"] .site-header .site-nav,
+html[data-theme="dark"] .mini-music-capsule {
+  background: linear-gradient(135deg, #1d1b26 0%, #121118 100%) !important;
+  border: 1px solid rgba(230, 194, 122, 0.52) !important;
+  color: #f5f1e8 !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.54), inset 0 1px 0 rgba(255, 238, 188, 0.22) !important;
+}
+
+html[data-theme="dark"] .site-header .site-brand span,
+html[data-theme="dark"] .site-header .site-nav a,
+html[data-theme="dark"] .mini-music-capsule .mmc-title,
+html[data-theme="dark"] .mini-music-capsule strong,
+html[data-theme="dark"] .mini-music-capsule span {
+  color: #f5e6c4 !important;
+}
+
+html[data-theme="dark"] .site-header .site-nav a.active {
+  background: linear-gradient(135deg, rgba(235, 198, 124, 0.28), rgba(168, 120, 40, 0.16)) !important;
+  border: 1px solid rgba(235, 200, 128, 0.56) !important;
+  color: #fff3d1 !important;
+}
+
+html[data-theme="dark"] .page-wardrobe .model-card button,
+html[data-theme="dark"] .page-wardrobe .model-results > nav button,
+html[data-theme="dark"] .pagination button {
+  border-color: rgba(230, 194, 122, 0.48) !important;
+}
+
+/* ── High-Contrast Range Sliders across All Dialogs & Panels in Dark Mode ── */
+html[data-theme="dark"] input[type="range"] {
+  accent-color: #e6c27a;
+}
+
+/* ── 60fps Zero-Lag Day/Night Theme Switching across ALL Module Pages ── */
+html.is-theme-switching,
+html.is-theme-switching *,
+html.is-theme-switching *::before,
+html.is-theme-switching *::after {
+  transition: none !important;
+  animation-play-state: paused !important;
+}
+
+/* ── NEW Content Corner Badge & One-Click Clear Button (新剧情 / 新衣装 / 新卡片) ── */
+.has-new-badge {
+  position: relative !important;
+}
+
+.shiny-new-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 12;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  line-height: 1.3;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #ff3b6b 0%, #ff7b47 100%) !important;
+  box-shadow: 0 3px 10px rgba(255, 59, 107, 0.45), 0 0 0 1.5px rgba(255, 255, 255, 0.85);
+  pointer-events: none;
+  user-select: none;
+}
+
+html[data-theme="dark"] .shiny-new-badge {
+  color: #161108 !important;
+  background: linear-gradient(135deg, #ffe29f 0%, #f59e0b 100%) !important;
+  box-shadow: 0 3px 12px rgba(245, 158, 11, 0.55), 0 0 0 1.5px rgba(255, 245, 214, 0.85);
+}
+
+.btn-clear-new-badges {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 13px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(255, 59, 107, 0.35) !important;
+  background: linear-gradient(135deg, rgba(255, 59, 107, 0.12), rgba(255, 123, 71, 0.12)) !important;
+  color: #e11d48 !important;
+  font-size: 12px !important;
+  font-weight: 750 !important;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-clear-new-badges:hover {
+  background: linear-gradient(135deg, #ff3b6b, #ff7b47) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+
+html[data-theme="dark"] .btn-clear-new-badges {
+  background: linear-gradient(135deg, rgba(255, 226, 159, 0.18), rgba(245, 158, 11, 0.14)) !important;
+  border-color: rgba(245, 158, 11, 0.48) !important;
+  color: #fde68a !important;
+}
+
+html[data-theme="dark"] .btn-clear-new-badges:hover {
+  background: linear-gradient(135deg, #ffe29f, #f59e0b) !important;
+  color: #161108 !important;
+}
+
+.btn-clear-new-badges[hidden] {
+  display: none !important;
+}
+
+/* ── Global Dark Mode Safety Net for All Inputs, Selects, Textareas & 怪文书 Studio ── */
+html[data-theme="dark"] input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]):not(.lfo-pill-select),
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select:not(.lfo-pill-select) {
+  background: rgba(20, 24, 36, 0.92) !important;
+  color: #f1f5f9 !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+  color-scheme: dark;
+}
+html[data-theme="dark"] input::placeholder,
+html[data-theme="dark"] textarea::placeholder {
+  color: rgba(203, 213, 225, 0.56) !important;
+}
+html[data-theme="dark"] select option {
+  background: #141926;
+  color: #f1f5f9;
+}
+
+/* 怪文书 (custom-story.html) Complete Dark Mode Adaptation */
+html[data-theme="dark"] .page-custom .writer-overview,
+html[data-theme="dark"] .page-custom .writer-stats > div,
+html[data-theme="dark"] .page-custom .panel,
+html[data-theme="dark"] .page-custom .cue-row,
+html[data-theme="dark"] .page-custom .saved-project,
+html[data-theme="dark"] .page-custom .local-voice-dialog {
+  background: rgba(22, 24, 34, 0.92) !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+  color: #f1f5f9 !important;
+}
+html[data-theme="dark"] .page-custom .writer-overview small,
+html[data-theme="dark"] .page-custom .writer-overview p,
+html[data-theme="dark"] .page-custom .writer-stats > div,
+html[data-theme="dark"] .page-custom .project-bar .check,
+html[data-theme="dark"] .page-custom #writerStatus,
+html[data-theme="dark"] .page-custom label {
+  color: #cbd5e1 !important;
+}
+html[data-theme="dark"] .page-custom .writer-stats b {
+  color: #fde68a !important;
+}
+html[data-theme="dark"] .page-custom #sceneList li button {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #f1f5f9 !important;
+}
+html[data-theme="dark"] .page-custom #sceneList li.active button {
+  background: rgba(230, 194, 122, 0.16) !important;
+  border-color: rgba(230, 194, 122, 0.58) !important;
+}
+html[data-theme="dark"] .page-custom .stage-edit-hint,
+html[data-theme="dark"] .page-custom .motion-row.selected,
+html[data-theme="dark"] .page-custom .motion-row button[aria-pressed="true"],
+html[data-theme="dark"] .page-custom #editMoveStart[aria-pressed="true"] {
+  background: rgba(230, 194, 122, 0.14) !important;
+  border-color: rgba(230, 194, 122, 0.45) !important;
+  color: #fde68a !important;
+}
+html[data-theme="dark"] .page-custom .cue-bar,
+html[data-theme="dark"] .page-custom .local-voice-dialog canvas {
+  background: rgba(15, 23, 42, 0.85) !important;
+}
+html[data-theme="dark"] .page-custom .stage-caption {
+  background: rgba(18, 22, 34, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #f8fafc !important;
+}

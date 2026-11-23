@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1015001000110010,
+    "speaker": "甜花",
+    "text": "あ、あの……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "015",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/101500100011/1015001000110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、甜花。\r\nおはよう。いい朝だな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1015001000110020,
+    "speaker": "甜花",
+    "text": "お、おはよう……\r\nプロデューサーさん……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100011/1015001000110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（あれ……？　なんだか甜花の声が小さいような……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "今日も頑張ろう！",
+    "nextLabel": "1015001000111"
+  },
+  {
+    "select": "元気出して行くぞ！",
+    "nextLabel": "1015001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "元気がないようだが\r\n大丈夫か？",
+    "nextLabel": "1015001000113"
+  },
+  {
+    "id": 1015001000110030,
+    "label": "1015001000111",
+    "speaker": "甜花",
+    "text": "う、うん……っ\r\n甜花、頑張る……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100011/1015001000110030"
+  },
+  {
+    "id": 1015001000110040,
+    "speaker": "甜花",
+    "text": "にへへ……\r\n今日は……失敗しないように、するからね……",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100011/1015001000110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1015001000110050,
+    "label": "1015001000112",
+    "speaker": "甜花",
+    "text": "えっ……元気出してるけど……",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100011/1015001000110050"
+  },
+  {
+    "id": 1015001000110060,
+    "speaker": "甜花",
+    "text": "もっと、出せるかな……\r\nや、やってみるね……",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100011/1015001000110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1015001000110070,
+    "label": "1015001000113",
+    "speaker": "甜花",
+    "text": "え、え……？　甜花、普通だよ……？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100011/1015001000110070"
+  },
+  {
+    "id": 1015001000110080,
+    "speaker": "甜花",
+    "text": "プロデューサーさんから見ると……\r\nもっと元気出したほうが……いいんだね……",
+    "charAnim2": "face_wait2",
+    "charAnim3": "yes",
+    "charLipAnim": "lip_sad",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101500100011/1015001000110080",
+    "charAnim3Loop": false
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

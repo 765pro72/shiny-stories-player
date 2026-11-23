@@ -1,0 +1,114 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019"
+  },
+  {
+    "id": 4022001000120010,
+    "speaker": "小糸",
+    "text": "どどどどうしましょうプロデューサーさん……！\r\nははは始まっちゃいます……！",
+    "charAnim1": "surp3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "022",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communication_cheers/402200100012/4022001000120010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……緊張で落ち着かないみたいだ）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "深呼吸しよう",
+    "nextLabel": "4022001000121"
+  },
+  {
+    "select": "お菓子食べるか？",
+    "nextLabel": "4022001000122"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "とりあえず落ち着け",
+    "nextLabel": "4022001000123"
+  },
+  {
+    "id": 4022001000120020,
+    "label": "4022001000121",
+    "speaker": "小糸",
+    "text": "は、はい……！\r\nすーはー……よ、よし……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402200100012/4022001000120020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、切り替えられたみたいだな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4022001000120030,
+    "label": "4022001000122",
+    "speaker": "小糸",
+    "text": "えっ、お、お菓子……！\r\nいいんですか……！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402200100012/4022001000120030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（とりあえず、少しは落ち着いたか……？）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4022001000120040,
+    "label": "4022001000123",
+    "speaker": "小糸",
+    "text": "あ、えっと……そ、そうですよね……！\r\nおおお落ち着かなきゃ……落ち着かなきゃ……！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "koito",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402200100012/4022001000120040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（余計に落ち着けなくなったみたいだ……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

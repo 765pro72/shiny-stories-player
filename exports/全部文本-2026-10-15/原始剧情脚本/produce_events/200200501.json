@@ -1,0 +1,809 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "──次の仕事はこんな感じだ\r\n何か質問はあるか？",
+    "charAnim1": "wait3",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00001",
+    "bgm": "015",
+    "charCategory": "stand_fix"
+  },
+  {
+    "id": 2002005010010,
+    "speaker": "灯織",
+    "text": "そうですね……\r\n一旦、整理したいので資料を見返します",
+    "charAnim1": "surp2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "わからない部分は気軽に聞いてくれて良いからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010020,
+    "speaker": "灯織",
+    "text": "いえ、まずは自分できちんと確認してからにします\r\n調べもしないで質問するのは失礼ですので",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ……わかった……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim4": "eye_right",
+    "charLabel": "hiori"
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "surp1",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "se": "0124",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charLabel": "hiori",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim4": "eye_front",
+    "charLabel": "hiori",
+    "se": "0124",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black4",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "effectLabel": "black4",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0129",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……よし、大体まとめ終わったな\r\nあとは──）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010030,
+    "speaker": "灯織",
+    "text": "──痛っ……",
+    "charAnim1": "pain",
+    "charAnim4": "blank",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "se": "0332",
+    "voice": "produce_events/200200501/2002005010030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織、どうした！",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010040,
+    "speaker": "灯織",
+    "text": "……あ、いえ\r\nちょっと……紙で指を切ってしまって",
+    "charAnim1": "wait1",
+    "charAnim4": "eye_right",
+    "charAnim2": "face_anger",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_angry",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010040"
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim4": "eye_front",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "y": 25,
+      "scale": 1.1,
+      "time": 400
+    },
+    "se": "0327",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "血が出てるじゃないか！　早く手当てしないと！",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 2002005010050,
+    "speaker": "灯織",
+    "text": "だ、大丈夫です……！　自分でできますから",
+    "charAnim1": "shy3",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "y": -25,
+      "scale": 1,
+      "time": 400
+    },
+    "voice": "produce_events/200200501/2002005010050"
+  },
+  {
+    "id": 2002005010060,
+    "speaker": "灯織",
+    "text": "あ……",
+    "charAnim1": "sad3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、すまん……急に手を掴まれたら驚くよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010070,
+    "speaker": "灯織",
+    "text": "……すみません、手を振り払ってしまって……\r\n心配してくれたのに……",
+    "charAnim1": "sad1",
+    "charAnim4": "blank",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010070"
+  },
+  {
+    "id": 2002005010080,
+    "speaker": "灯織",
+    "text": "仕事……途中ですよね？\r\n私のことは大丈夫ですから……",
+    "charAnim4": "eye_front",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010080"
+  },
+  {
+    "select": "救急箱を\r\n持ってくるよ",
+    "nextLabel": "1"
+  },
+  {
+    "select": "そう言ってもな……",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "そこで\r\n待っててほしい",
+    "nextLabel": "3"
+  },
+  {
+    "text": "★選択肢①【救急箱を\r\n持ってくるよ】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "救急箱を持ってくるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010090,
+    "label": "1",
+    "speaker": "灯織",
+    "text": "いえ、それも自分で……！",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010090"
+  },
+  {
+    "id": 2002005010100,
+    "speaker": "灯織",
+    "text": "この前、七草さんに場所を聞いたので大丈夫です",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010100"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2002005010110,
+    "speaker": "灯織",
+    "text": "よし、これで大丈夫……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "手伝えなくて、すまなかったな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010120,
+    "speaker": "灯織",
+    "text": "！　……いえ、気にしないでください",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010120"
+  },
+  {
+    "id": 2002005010130,
+    "speaker": "灯織",
+    "text": "心配してもらっただけでも申し訳ないのに",
+    "charAnim1": "sad3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010130"
+  },
+  {
+    "id": 2002005010140,
+    "speaker": "灯織",
+    "text": "その上\r\nプロデューサーの仕事まで止めてしまっては……",
+    "charAnim1": "wait3",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "仕事が止まることより、灯織のケガの方が一大事だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だから、そういう時は\r\n遠慮せず頼ってくれると嬉しい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010150,
+    "speaker": "灯織",
+    "text": "……",
+    "charAnim1": "anger1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010150"
+  },
+  {
+    "id": 2002005010160,
+    "speaker": "灯織",
+    "text": "はい、次からは、そうしますね",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010160"
+  },
+  {
+    "id": 2002005010170,
+    "speaker": "灯織",
+    "text": "ありがとう……ございます",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200200501/2002005010170"
+  },
+  {
+    "text": "★選択肢②【そう言ってもな……】",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そう言ってもな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "2",
+    "speaker": "プロデューサー",
+    "text": "やっぱり、心配だからもう一度見せて欲しい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010180,
+    "speaker": "灯織",
+    "text": "……",
+    "charAnim1": "wait3",
+    "charAnim4": "blank",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010180"
+  },
+  {
+    "id": 2002005010190,
+    "speaker": "灯織",
+    "text": "はい……わかりました",
+    "charAnim1": "wait1",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うーん……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "まだ血が止まってないし、深く切ってるかもしれない……\r\n手当てするから座っててくれるか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00106",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "fade"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "よし、あった……",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffect": "fade"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "消毒液が染みるかもしれないが、我慢してくれ",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 2002005010200,
+    "speaker": "灯織",
+    "text": "っ！",
+    "charAnim1": "touch",
+    "charAnim4": "eye_right",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もう少しだからな……\r\n絆創膏を貼って……よし、これで大丈夫だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はがれにくいように巻いておいたから\r\nレッスンとかあっても大丈夫だぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010210,
+    "speaker": "灯織",
+    "text": "ありがとうございます……",
+    "charAnim4": "eye_front",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010210"
+  },
+  {
+    "id": 2002005010220,
+    "speaker": "灯織",
+    "text": "手際……良いんですね",
+    "charAnim1": "surp1",
+    "charAnim4": "eye_right",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いつ何が起きても大丈夫なように勉強してたんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010230,
+    "speaker": "灯織",
+    "text": "そうなんですね……",
+    "charAnim1": "wait2",
+    "charAnim4": "blank",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010230"
+  },
+  {
+    "id": 2002005010240,
+    "speaker": "灯織",
+    "text": "あの、もし良かったら、今度応急処置のお話とか\r\n教えてもらっても良いですか？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、大丈夫だ！",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010250,
+    "speaker": "灯織",
+    "text": "ありがとうございます、よろしくお願いします……！",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200200501/2002005010250"
+  },
+  {
+    "label": "3",
+    "speaker": "プロデューサー",
+    "text": "えっと、救急箱は……あった",
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あっ、でも、絆創膏が切れてるな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010260,
+    "speaker": "灯織",
+    "text": "でしたら、自分で買いに……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0220",
+    "voice": "produce_events/200200501/2002005010260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ちょっと待っててくれ\r\n確か、手持ちのが……あった、これで手当てしよう",
+    "charAnim2": "blank",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2002005010270,
+    "speaker": "灯織",
+    "text": "ありがとうございます……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "気にしなくていいぞ\r\nこういう時のために持ち歩いているんだし",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010280,
+    "speaker": "灯織",
+    "text": "プロデューサーのおかげで助かりました……\r\n今度、何かお礼をさせてください",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いやいや、大丈夫だ\r\nこれくらい大したことじゃない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010290,
+    "speaker": "灯織",
+    "text": "いえ、そういうわけにはいきません",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200501/2002005010290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "わ、わかった、じゃあ、待ってるぞ",
+    "charAnim2": "blank",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002005010300,
+    "speaker": "灯織",
+    "text": "はい、ありがとうございます",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200200501/2002005010300"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

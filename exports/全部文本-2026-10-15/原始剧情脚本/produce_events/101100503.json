@@ -1,0 +1,943 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00003",
+    "fg": "001922",
+    "bgm": "0000",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1011005030010,
+    "speaker": "樹里",
+    "text": "『……そこまで言ったんだ\r\nアタシのことアイドルらしくしてみろよ』",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "011",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101100503/1011005030010"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00014",
+    "fg": "fade_out",
+    "bgEffect": "fade",
+    "bgm": "077",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000,
+    "fgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "1278",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1011005030020,
+    "speaker": "樹里",
+    "text": "（って、勢いで言っちゃったけど──）",
+    "charAnim1": "wait5",
+    "charAnim2": "face_serious",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030110010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101100503/1011005030020"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim4": "eye_right",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ここがよく使うレッスン場\r\nそれから、そこにいらっしゃるのがトレーナーさんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "あっ、噂されてる！？\r\nチャオ～",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "1391"
+  },
+  {
+    "id": 1011005030030,
+    "speaker": "樹里",
+    "text": "こ、こんにちは……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101100503/1011005030030"
+  },
+  {
+    "textFrame": "off",
+    "se": "1268",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "彼女はまだスカウト中なんです\r\nアイドルってどういうものか説明していて",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "そっかそっか\r\nじゃあアイドルやりたくなるように紹介しないと～",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1011005030040,
+    "speaker": "樹里",
+    "text": "あの……ここではどんなことするんですか？",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030040"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "私はダンス専門だから、ダンスレッスンだね\r\nジャンルもいろいろ扱ってるよ",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1011005030050,
+    "speaker": "樹里",
+    "text": "ダンスしたことなくても……\r\nその、大丈夫なんですか？",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030050"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "もちろん！\r\nそういう子もいっぱいいるよ！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "うーん、そうだなー。これできる？\r\nこの動き真似してみて！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "se": "1146",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1011005030060,
+    "speaker": "樹里",
+    "text": "えっ……ええ……\r\nこうか……？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "se": "0454",
+    "voice": "produce_events/101100503/1011005030060"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "1146",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おっ……\r\n動きが綺麗だな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1011005030070,
+    "speaker": "樹里",
+    "text": "えっ、これだけでわかんのか？",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101100503/1011005030070"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "わかるわかる\r\n体幹ができてるねー",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "柔軟性もよさげ！\r\n筋力もそこそこありそうだし……じゃ、こんなのは？",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "1619"
+  },
+  {
+    "textFrame": "off",
+    "se": "1771",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 1011005030080,
+    "speaker": "樹里",
+    "text": "えっ……難しいな……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101100503/1011005030080"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "1771",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 1011005030090,
+    "speaker": "樹里",
+    "text": "こう……？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101100503/1011005030090"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "ワォ！　リズムつかめるね！\r\n関節の動きも柔らかい！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "絶対、何か運動してたでしょ？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1011005030100,
+    "speaker": "樹里",
+    "text": "……っ\r\nあー……まあ、身体動かすのは好きです",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そういえば、最初見た時も姿勢がいいなって\r\n思ったなあ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textFrame": "off"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "身体づくりはできてるってことだから上達は早そう！\r\nアイドル、やりなよ～！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1011005030110,
+    "speaker": "樹里",
+    "text": "は、はあ……",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030110"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim3": "blank",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00508",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1300,
+    "bgEffectTime": 1300
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "off",
+    "text": "～～♪",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1011005030120,
+    "speaker": "樹里",
+    "text": "すげー声……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "歌のレッスンだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00321",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 800,
+    "bgEffectTime": 800
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1011005030130,
+    "speaker": "樹里",
+    "text": "はあ……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101100503/1011005030130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あとは……そうだな、ウォーキングとか\r\n見せ方のレッスンもあったりするよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1011005030140,
+    "speaker": "樹里",
+    "text": "み、見せ方……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "レッスンの雰囲気はこんな感じで、次は……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0000",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0806",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──とまあ\r\n仕事内容はこんなところか",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bgm": "099"
+  },
+  {
+    "id": 1011005030150,
+    "speaker": "樹里",
+    "text": "思ったより……すごかった\r\nやること多いんだな",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101100503/1011005030150"
+  },
+  {
+    "id": 1011005030160,
+    "speaker": "樹里",
+    "text": "もし……やるってなったら\r\nスケジュールとか、どんな感じなんだ？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな……たとえば",
+    "textCtrl": "r",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "学校行っている子だとこんな感じかな",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "1522"
+  },
+  {
+    "id": 1011005030170,
+    "speaker": "樹里",
+    "text": "うわ、みっちり……！\r\nハードな部活並みだな",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あっ──いや、いきなりこれってわけじゃないから\r\nレッスンとかも、段階に応じて──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00344",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1011005030180,
+    "speaker": "樹里",
+    "text": "……アイドルって、可愛いだけじゃないんだな",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030180"
+  },
+  {
+    "id": 1011005030190,
+    "speaker": "樹里",
+    "text": "ダンスも歌も楽々とやってるわけじゃなくて……\r\n楽々に見えるくらい、練習してんだ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030190"
+  },
+  {
+    "id": 1011005030200,
+    "speaker": "樹里",
+    "text": "仕事とかもやりながら──",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──ああ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1011005030210,
+    "speaker": "樹里",
+    "text": "アタシにやれるかな、こんなの──",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030210"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "se": "0730",
+    "waitType": "time",
+    "waitTime": 1000,
+    "bgEffectTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "できるように、俺が西城さんを\r\nサポートするから大丈夫！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1011005030220,
+    "speaker": "樹里",
+    "text": "──樹里でいいって言っただろ",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101100503/1011005030220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あっ……\r\nああ、そうだったな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait5",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1011005030230,
+    "speaker": "樹里",
+    "text": "大丈夫、ねえ……",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あっ……大丈夫って思ってもらえるくらい\r\n俺を信頼してもらうところからか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1011005030240,
+    "speaker": "樹里",
+    "text": "あははっ\r\n変なヤツ！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ……\r\n笑うとこか……？",
+    "charAnim2": "face_wait",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1011005030250,
+    "speaker": "樹里",
+    "text": "うん、面白れー",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そ、そうか……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、あとな。アイドルをやってくれるんだったら\r\n樹里にはユニットに入ってもらおうと思ってる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1011005030260,
+    "speaker": "樹里",
+    "text": "──ユニット？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、チームみたいな感じかな\r\n数人のグループにしたいんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "一緒に育っていく仲間ができるわけだし\r\nお互い励みになると思うぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1011005030270,
+    "speaker": "樹里",
+    "text": "チーム……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_serious",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……？\r\nあ、もちろん、強制じゃないけど──……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1011005030280,
+    "speaker": "樹里",
+    "text": "いや、うん……\r\nそういうのもあんのかって驚いただけ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030280"
+  },
+  {
+    "id": 1011005030290,
+    "speaker": "樹里",
+    "text": "ま、細かいことは……\r\nあとで考えさせてくれ",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101100503/1011005030290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、だんだんとやっていこう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

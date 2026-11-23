@@ -1,0 +1,19 @@
+const fs=require('node:fs'),path=require('node:path'),os=require('node:os'),assert=require('node:assert/strict'),electron=require('electron');
+if(!electron.app){const env={...process.env};delete env.ELECTRON_RUN_AS_NODE;process.exit(require('node:child_process').spawnSync(electron,[__filename],{env,stdio:'inherit'}).status??1)}
+const {app,BrowserWindow}=electron,root=path.resolve(__dirname,'..'),temp=fs.mkdtempSync(path.join(os.tmpdir(),'sc-child-proportions-')),fixture='__child-proportions-'+Date.now()+'.html';
+app.setPath('userData',path.join(temp,'profile'));let win,service;
+app.whenReady().then(async()=>{const timeout=setTimeout(()=>app.exit(1),120000);try{
+ const catalog=require('../public/home-assets/catalog.json'),children=catalog.flatMap(person=>person.outfits.filter(outfit=>outfit.preludeCardId&&outfit.path.includes('/support_idols/')).map(outfit=>({idol:person.name,child:outfit.path,adult:person.outfits.find(x=>x.key.endsWith('-plain'))?.path}))).filter(x=>x.adult);
+ assert.ok(children.length>=8,'catalog includes the supported childhood model set');
+ const init='<script>localStorage.setItem("home",'+JSON.stringify(JSON.stringify({idol:'1',outfit:'1040010010-plain',count:1,members:[{idol:'1',outfit:'1040010010-plain'}],volume:60,idle:false}))+')</script>';
+ fs.writeFileSync(path.join(root,'public',fixture),fs.readFileSync(path.join(root,'public/index.html'),'utf8').replace('<head>','<head>'+init));
+ service=await require('../server.cjs').start(path.join(root,'cache'),0,()=>path.join(root,'data'));
+ win=new BrowserWindow({show:false,width:1280,height:800,webPreferences:{backgroundThrottling:false}});win.webContents.setAudioMuted(true);const js=s=>win.webContents.executeJavaScript(s),wait=s=>js(`(async()=>{let at=Date.now();while(!(${s})){if(Date.now()-at>30000)throw Error('Timed out: '+${JSON.stringify(s)});await new Promise(r=>setTimeout(r,30))}})()`);
+ await win.loadURL(service.url+'/'+fixture);await wait('window.homeReady===true&&window.HomeLayout');
+ const rows=await js(`(async()=>{const pairs=${JSON.stringify(children)};async function height(path,i){const loader=new PIXI.Loader();const resource=await new Promise((resolve,reject)=>{loader.onError.add(e=>reject(e));loader.add('probe-'+i,'/asset-original/'+path).load((_,r)=>r['probe-'+i]?.spineData?resolve(r['probe-'+i]):reject(Error('Spine data missing: '+path)))});const model=new PIXI.spine.Spine(resource.spineData);try{model.skeleton.setSkinByName('normal')}catch{}model.skeleton.setToSetupPose();homeStage.app.stage.addChild(model);model.updateTransform();const bounds=model.getLocalBounds(),value=bounds.height;homeStage.app.stage.removeChild(model);model.destroy({children:true,texture:false,baseTexture:false});return value}const rows=[];for(let i=0;i<pairs.length;i++){const adult=await height(pairs[i].adult,i+'a'),child=await height(pairs[i].child,i+'c');rows.push({idol:pairs[i].idol,adult,child,ratio:child/adult})}return rows})()`);
+ assert.equal(rows.length,children.length);assert.ok(rows.every(x=>Number.isFinite(x.ratio)&&x.ratio>0),'every child and adult model reports valid Spine bounds');
+ const layout=await js(`(()=>{const bounds=[{x:0,y:0,width:400,height:${rows[0].adult}},{x:0,y:0,width:400,height:${rows[0].child}}],viewport={width:1280,height:800},scale=HomeLayout.sharedScale([bounds[0]],viewport,'middle');return bounds.map((b,i)=>HomeLayout.place(b,i,2,viewport,'middle',scale).scale*b.height)})()`);
+ assert.ok(layout[1]<layout[0],'child model keeps its authored smaller size beside an adult');
+ assert.ok(rows.every(x=>x.ratio<.9),'every childhood model remains at least 10% shorter than its adult counterpart');
+ console.log(JSON.stringify({checked:rows.length,models:rows,layoutHeights:layout,pass:true},null,2));
+ }catch(e){console.error(e);process.exitCode=1}finally{clearTimeout(timeout);win?.destroy();service?.server.close();try{fs.unlinkSync(path.join(root,'public',fixture))}catch{}app.exit(process.exitCode||0)}});

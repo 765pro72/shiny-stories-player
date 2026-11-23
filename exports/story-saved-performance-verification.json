@@ -1,0 +1,111 @@
+{
+  "at": "2026-11-15T13:11:37.118Z",
+  "savedAudioPlaying": true,
+  "speaking": true,
+  "listenerClosed": true,
+  "producerClosed": true,
+  "nativeReturn": true,
+  "arm": [
+    {
+      "time": 0,
+      "body": "arm_down",
+      "up": 1,
+      "down": 0
+    },
+    {
+      "time": 0.1,
+      "body": "arm_down",
+      "up": 1,
+      "down": 0
+    },
+    {
+      "time": 0.2,
+      "body": "arm_down",
+      "up": 1,
+      "down": 0
+    },
+    {
+      "time": 0.35,
+      "body": "arm_down",
+      "up": 1,
+      "down": 0
+    },
+    {
+      "time": 0.5,
+      "body": "arm_down",
+      "up": 0,
+      "down": 1
+    },
+    {
+      "time": 0.75,
+      "body": "arm_down",
+      "up": 0,
+      "down": 1
+    },
+    {
+      "time": 1,
+      "body": "wait1",
+      "up": 0,
+      "down": 1
+    },
+    {
+      "time": 1.1,
+      "body": "wait1",
+      "up": 0,
+      "down": 1
+    }
+  ],
+  "legacyActorIdRecovered": true,
+  "timed": {
+    "bindings": [
+      "3a05e00d-58bd-45b3-a24c-b5afa11933f1",
+      "b2668031-02d5-4124-9d5c-f99b9defdbe3"
+    ],
+    "currentActors": [
+      "3a05e00d-58bd-45b3-a24c-b5afa11933f1",
+      "b2668031-02d5-4124-9d5c-f99b9defdbe3"
+    ],
+    "firstSpeakerMoves": true,
+    "firstListenerClosed": true,
+    "replySpeakerMoves": true,
+    "previousSpeakerClosed": true,
+    "producerClosed": true
+  },
+  "cueReturns": [
+    {
+      "motion": "smile1",
+      "expected": "arm_down",
+      "actual": "arm_down",
+      "progress": 0.19999999999999996
+    },
+    {
+      "motion": "shy1",
+      "expected": "arm_down_L",
+      "actual": "arm_down_L",
+      "progress": 0.19999999999999996
+    },
+    {
+      "motion": "surp1",
+      "expected": "arm_down_R",
+      "actual": "arm_down_R",
+      "progress": 0.19999999999999996
+    }
+  ],
+  "gazeDuringReturn": {
+    "actual": 129.68976453955239,
+    "expected": 129.68976453955239,
+    "difference": 0
+  },
+  "continuity": {
+    "relayContinues": true,
+    "relayOffset": 0.4,
+    "settled": true,
+    "sameModel": true
+  },
+  "gasha": {
+    "voicePlaying": true,
+    "speakerMoves": true,
+    "listenerClosed": true,
+    "pausedClosed": true
+  }
+}

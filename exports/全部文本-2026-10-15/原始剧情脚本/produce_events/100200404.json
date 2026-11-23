@@ -1,0 +1,619 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00319",
+    "bgm": "029"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0399",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1002004040010,
+    "speaker": "灯織",
+    "text": "────",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……よし、これで送信完了だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織、ありがとうな",
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0328"
+  },
+  {
+    "id": 1002004040020,
+    "speaker": "灯織",
+    "text": "…………え",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040020"
+  },
+  {
+    "id": 1002004040030,
+    "speaker": "灯織",
+    "text": "お礼を言われるようなこと、していません",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040030"
+  },
+  {
+    "id": 1002004040040,
+    "speaker": "灯織",
+    "text": "むしろ、ご迷惑をおかけしてしまって……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040040"
+  },
+  {
+    "id": 1002004040050,
+    "speaker": "灯織",
+    "text": "期限ぎりぎりまで待ってもらったくせに、\r\nやっぱりわからない、なんて──",
+    "charAnim1": "sad3",
+    "charAnim2": "face_anger",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いやいや、そう落ち込まないでくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『ファンや２８３のみんな、ステージに立つこと』",
+    "charAnim2": "face_anger",
+    "charAnim4": "blank",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あの時も言ったけど、俺はこれもいい答えだと思ってるよ",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "本当に、本心から",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002004040060,
+    "speaker": "灯織",
+    "text": "それは……疑っていないのですが……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040060"
+  },
+  {
+    "id": 1002004040070,
+    "speaker": "灯織",
+    "text": "違うものを書きたいとわがままを言った手前、\r\nきちんと見つけたかったなと思って……",
+    "charAnim1": "think",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな……\r\nでもさ、別に適当にしてたわけじゃないだろ？",
+    "charAnim2": "face_anger",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いつも言ってるけど、\r\n灯織はいつだってアイドルであることに真摯だからさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だから、自分に向き合ってくれてありがとうな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002004040080,
+    "speaker": "灯織",
+    "text": "…………",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、あれ？　なんか変なこと言ったか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002004040090,
+    "speaker": "灯織",
+    "text": "いえ\r\nやっぱり『ありがとう』は過剰だなと",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040090"
+  },
+  {
+    "id": 1002004040100,
+    "speaker": "灯織",
+    "text": "私は、私がやるべきことをやろうと思っているだけなので",
+    "charAnim1": "surp2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ならますます大丈夫だな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "se": "0454",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ファンが好き、２８３のみんなが好き、\r\nステージに立つことが好き──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "応援している立場からすると、\r\n本人が言ってくれるのってすごく嬉しいんだよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002004040110,
+    "speaker": "灯織",
+    "text": "そうでしょうか……？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織のファン１号の俺が言うんだから間違いない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_angry_s",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺はプロデューサーって立場だから、\r\n灯織のこういうこと、いつだって聞ける",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でもな\r\n普通にイルミネの灯織を好きな人は、そうはいかないんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だから、臆せずもっと声に出してくれ",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織が思っているよりもずっと、\r\nみんなは灯織の言葉を待ってるよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002004040120,
+    "speaker": "灯織",
+    "text": "もっと声に……",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040120"
+  },
+  {
+    "id": 1002004040130,
+    "speaker": "灯織",
+    "text": "いいんでしょうか……",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もちろん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002004040140,
+    "speaker": "灯織",
+    "text": "────",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040140"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1002004040150,
+    "speaker": "灯織",
+    "text": "ほっとしたらお腹が空いてしまいました",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/100200404/1002004040150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ははっ！\r\nそうだな、何か食べるか！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織は何が食べたい？\r\n今から食べに出ると、帰り遅くなっちゃうかな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002004040160,
+    "speaker": "灯織",
+    "text": "あ、私が作りますよ",
+    "charAnim1": "smile3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040160"
+  },
+  {
+    "id": 1002004040170,
+    "speaker": "灯織",
+    "text": "プロデューサー、食べたいものありますか？",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ！　いやいや、結構作ってもらうこと多いし\r\n毎回はさすがに悪いよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002004040180,
+    "speaker": "灯織",
+    "text": "小学生の時からずっとやってることですし、\r\n今さら料理を手間だとか、面倒だなんて思いませんよ？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "しかしなぁ……\r\nしょっちゅう何か作ってもらって申し訳ないというか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002004040190,
+    "speaker": "灯織",
+    "text": "ええ……？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040190"
+  },
+  {
+    "id": 1002004040200,
+    "speaker": "灯織",
+    "text": "強要されているならまだしも……",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040200"
+  },
+  {
+    "id": 1002004040210,
+    "speaker": "灯織",
+    "text": "私がやりたくてやってることですし\r\n問題ないと思いますが……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040210"
+  },
+  {
+    "id": 1002004040220,
+    "speaker": "灯織",
+    "text": "食べたいものが外食でしか食べられない\r\nとかじゃなければ、作らせてください",
+    "charAnim1": "sad3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040220"
+  },
+  {
+    "id": 1002004040230,
+    "speaker": "灯織",
+    "text": "私、料理するの──────",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040230"
+  },
+  {
+    "id": 1002004040240,
+    "speaker": "灯織",
+    "text": "…………………………",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040240"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……灯織？　どうした？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1002004040250,
+    "speaker": "灯織",
+    "text": "あ…………いえ、すみません\r\nなんでもありません",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040250"
+  },
+  {
+    "id": 1002004040260,
+    "speaker": "灯織",
+    "text": "えっと……その……！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040260"
+  },
+  {
+    "id": 1002004040270,
+    "speaker": "灯織",
+    "text": "何が作れそうか、ちょっと冷蔵庫見てきますね……！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/100200404/1002004040270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、おう……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………急にどうしたんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

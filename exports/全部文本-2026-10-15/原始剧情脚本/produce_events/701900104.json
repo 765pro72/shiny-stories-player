@@ -1,0 +1,237 @@
+[
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00023",
+    "bgm": "017"
+  },
+  {
+    "id": 7901001040010,
+    "speaker": "はづき",
+    "text": "残念ですね……。一次審査を突破できたんですし、\r\nこの調子で、と思ったんですけど",
+    "charAnim1": "sad1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701900104/7901001040010"
+  },
+  {
+    "id": 7901001040020,
+    "speaker": "はづき",
+    "text": "現実は、なかなか厳しいですね……",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/701900104/7901001040020"
+  },
+  {
+    "id": 7902001040010,
+    "speaker": "社長",
+    "text": "しかし、新人アイドルと新人プロデューサーにしては、\r\n悪くない結果だった",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701900104/7902001040010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、まだまだ先にも行けたと思うんです\r\n俺にもっと力があれば……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001040020,
+    "speaker": "社長",
+    "text": "評価はしているが、弱音を聞きたいわけではないぞ",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701900104/7902001040020"
+  },
+  {
+    "id": 7902001040030,
+    "speaker": "社長",
+    "text": "力が足りないのなら、彼女とともに\r\nこれから成長していけばいいだけのことだ",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701900104/7902001040030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうですね\r\n彼女に、会いに行ってきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7902001040040,
+    "speaker": "社長",
+    "text": "ああ、行ってこい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/701900104/7902001040040"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 101
+  },
+  {
+    "bg": "00002",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 7019001040010,
+    "speaker": "愛依",
+    "text": "そっか……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "019",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/701900104/7019001040010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ああ、さっき結果が届いてな\r\n二次審査、通らなかったんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7019001040020,
+    "speaker": "愛依",
+    "text": "やっぱり、うちが失敗したから……",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701900104/7019001040020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、それとこれとは別の問題だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、すまない、愛依\r\n俺がもっと早くに対策をしていれば",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7019001040030,
+    "speaker": "愛依",
+    "text": "プロデューサーは悪くないっしょ\r\nうちがもっと上手くやれてればよかったワケだし……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701900104/7019001040030"
+  },
+  {
+    "id": 7019001040040,
+    "speaker": "愛依",
+    "text": "プロデューサー、挽回、できるかな？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701900104/7019001040040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、きっと大丈夫だ\r\nだからこれからも頑張っていこう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 7019001040050,
+    "speaker": "愛依",
+    "text": "……へこんでたらうちらしくないもんね！\r\nサンキュ、プロデューサー",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701900104/7019001040050"
+  },
+  {
+    "id": 7019001040060,
+    "speaker": "愛依",
+    "text": "これからもヨロシク！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/701900104/7019001040060"
+  },
+  {
+    "label": "end"
+  }
+]

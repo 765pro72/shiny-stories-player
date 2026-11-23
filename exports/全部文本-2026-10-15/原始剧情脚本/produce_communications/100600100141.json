@@ -1,0 +1,159 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "咲耶、次の仕事で使う資料だ\r\n時間があるときに目を通しておいてくれ",
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "006",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001"
+  },
+  {
+    "id": 1006001001410010,
+    "speaker": "咲耶",
+    "text": "ありがとう、プロデューサー\r\n……なんだか、疲れている様子に見えるね",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100141/1006001001410010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ははは。この位大丈夫だよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1006001001410020,
+    "speaker": "咲耶",
+    "text": "アナタにはいつも世話になってばかりだね。何かお礼を……\r\nそうだ、今度手料理を振る舞わせてくれないか？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100141/1006001001410020"
+  },
+  {
+    "select": "楽しみだ",
+    "nextLabel": "1006001001411"
+  },
+  {
+    "select": "その気持ちで充分",
+    "nextLabel": "1006001001412"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "一生懸命な姿だけで\r\n充分だ",
+    "nextLabel": "1006001001413"
+  },
+  {
+    "id": 1006001001410030,
+    "label": "1006001001411",
+    "speaker": "咲耶",
+    "text": "ああ。アナタのために、\r\n腕によりをかけようじゃないか",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100141/1006001001410030"
+  },
+  {
+    "id": 1006001001410040,
+    "speaker": "咲耶",
+    "text": "リクエストにも応えるから、\r\n食べたい料理を考えておいてくれないかい？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100141/1006001001410040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1006001001410050,
+    "label": "1006001001412",
+    "speaker": "咲耶",
+    "text": "謙虚なんだね\r\nもっと甘えてくれてもいいのに",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100141/1006001001410050"
+  },
+  {
+    "id": 1006001001410060,
+    "speaker": "咲耶",
+    "text": "少し寂しいが、\r\nその清廉さは好ましいよ",
+    "charAnim1": "sad2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100141/1006001001410060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1006001001410070,
+    "label": "1006001001413",
+    "speaker": "咲耶",
+    "text": "アイドルとして上を目指す……\r\nフフ、言われるまでもないさ",
+    "charAnim1": "wait5",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100141/1006001001410070"
+  },
+  {
+    "id": 1006001001410080,
+    "speaker": "咲耶",
+    "text": "何か他のことができればと思ったが、\r\nそういわれてしまったら、レッスンに励むしかないな",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100600100141/1006001001410080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

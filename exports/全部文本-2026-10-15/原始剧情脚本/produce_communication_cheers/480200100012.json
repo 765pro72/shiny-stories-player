@@ -1,0 +1,129 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 4802001000120010,
+    "speaker": "かな",
+    "text": "ここでターンして、ポーズを決めて……\r\nここの流れは間違いやすいから、気をつけないと",
+    "charAnim1": "sad1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "802",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communication_cheers/480200100012/4802001000120010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（パフォーマンスの確認をしてるのか。邪魔したくはないが\r\n時間的に声をかけたほうがよさそうだ）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "しっかり確認できたか？",
+    "nextLabel": "4802001000121"
+  },
+  {
+    "select": "もうすぐ出番だが、\r\n大丈夫か？",
+    "nextLabel": "4802001000122"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "落ち着いてやれば\r\n大丈夫だ",
+    "nextLabel": "4802001000123"
+  },
+  {
+    "id": 4802001000120020,
+    "label": "4802001000121",
+    "speaker": "かな",
+    "text": "そうね、流れは全部頭に入ってるけど\r\nパフォーマンスの精度を高めると安心するわ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480200100012/4802001000120020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（たしかに、落ち着いてるみたいだな\r\nこの調子で挑めば大丈夫そうだ）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4802001000120030,
+    "label": "4802001000122",
+    "speaker": "かな",
+    "text": "平気よ。不安があるわけじゃないし\r\n暇だから最終確認してただけ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480200100012/4802001000120030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（いつもどおりのかな、だな\r\n特に問題はなさそうだ）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4802001000120040,
+    "label": "4802001000123",
+    "speaker": "かな",
+    "text": "当たり前でしょ\r\n私は最初から落ち着いてるわ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480200100012/4802001000120040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（安心させようと思ったんだが\r\n余計なことを言ったみたいだな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

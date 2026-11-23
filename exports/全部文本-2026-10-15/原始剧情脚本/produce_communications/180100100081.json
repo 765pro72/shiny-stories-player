@@ -1,0 +1,176 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1801001000810010,
+    "speaker": "ルビー",
+    "text": "あ、いいところに！\r\nねえねえ、気分転換にちょっと散歩しない？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "801",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/180100100081/1801001000810010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なんだ、暇なのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1801001000810020,
+    "speaker": "ルビー",
+    "text": "うん！　動けるのに家の中にいるのって\r\nもったいないじゃん！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100081/1801001000810020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "select": "外の空気でも\r\n吸いに行くか",
+    "nextLabel": "1801001000811"
+  },
+  {
+    "textFrame": "off",
+    "select": "動きたいなら\r\nレッスン場行くか？",
+    "nextLabel": "1801001000812"
+  },
+  {
+    "textCtrl": "cm",
+    "textFrame": "off",
+    "select": "仕事が終わったらな",
+    "nextLabel": "1801001000813"
+  },
+  {
+    "id": 1801001000810030,
+    "label": "1801001000811",
+    "speaker": "ルビー",
+    "text": "よーし、決まり！\r\nそれじゃ早速行くよ、ついてきてプロデューサー！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100081/1801001000810030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おい、待てって！\r\nもうそれは散歩じゃなくてかけっこだぞ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1801001000810040,
+    "label": "1801001000812",
+    "speaker": "ルビー",
+    "text": "レッスン場でも身体は動かせるからいいんだけど……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100081/1801001000810040"
+  },
+  {
+    "id": 1801001000810050,
+    "speaker": "ルビー",
+    "text": "散歩は景色が変わるのがいいんだよ\r\nいつも同じ景色は飽きちゃうから",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100081/1801001000810050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1801001000810060,
+    "label": "1801001000813",
+    "speaker": "ルビー",
+    "text": "気分転換って言ってるじゃん！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100081/1801001000810060"
+  },
+  {
+    "id": 1801001000810070,
+    "speaker": "ルビー",
+    "text": "プロデューサー、いじわるだね",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/180100100081/1801001000810070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

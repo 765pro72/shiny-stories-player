@@ -1,0 +1,181 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──カバンについてるの、マスコットか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1020001001010010,
+    "speaker": "透",
+    "text": "これ？　うん",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102000100101/1020001001010010"
+  },
+  {
+    "id": 1020001001010020,
+    "speaker": "透",
+    "text": "雛菜につけられた",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100101/1020001001010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、つけられちゃったのか",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "仲いいな",
+    "nextLabel": "1020001001011"
+  },
+  {
+    "select": "可愛い\r\nマスコットだな",
+    "nextLabel": "1020001001012"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "透は優しいな",
+    "nextLabel": "1020001001013"
+  },
+  {
+    "id": 1020001001010030,
+    "label": "1020001001011",
+    "speaker": "透",
+    "text": "──ふふっ。うん",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100101/1020001001010030"
+  },
+  {
+    "id": 1020001001010040,
+    "speaker": "透",
+    "text": "まぁね",
+    "charAnim2": "face_close",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100101/1020001001010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1020001001010050,
+    "label": "1020001001012",
+    "speaker": "透",
+    "text": "そう？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100101/1020001001010050"
+  },
+  {
+    "id": 1020001001010060,
+    "speaker": "透",
+    "text": "──そうかも\r\n初めてちゃんと見た",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100101/1020001001010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1020001001010070,
+    "label": "1020001001013",
+    "speaker": "透",
+    "text": "え？　うーん……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100101/1020001001010070"
+  },
+  {
+    "id": 1020001001010080,
+    "speaker": "透",
+    "text": "優しいとかってことじゃないけど……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_surp",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100101/1020001001010080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

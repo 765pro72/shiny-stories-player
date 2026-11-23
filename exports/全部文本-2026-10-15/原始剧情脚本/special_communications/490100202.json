@@ -1,0 +1,828 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "無理やりにでも一度寝たほうがいいと思いますよ\r\n疲れていたら、いい仕事はできないですから",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "0011",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00073",
+    "bgm": "001"
+  },
+  {
+    "id": 4901002020010,
+    "speaker": "はづき",
+    "text": "そう言われてしまうと……\r\nわかりました、一度休むことにしますね～……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "0010",
+    "voice": "special_communications/490100202/4901002020010"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black7",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "sleep1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "hazuki",
+    "bg": "00001",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "effectLabel": "black7",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4901002020020,
+    "speaker": "はづき",
+    "text": "それじゃあ、お言葉に甘えて\r\n奥で寝かせてもらいますね～……",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "0010",
+    "voice": "special_communications/490100202/4901002020020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はい、ゆっくり休んでください",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………\r\nはづきさん、大丈夫かな……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4901002020030,
+    "speaker": "真乃",
+    "text": "おはようございます",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490100202/4901002020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ま、真乃！？",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002020040,
+    "speaker": "真乃",
+    "text": "ほわ……っ\r\nど、どうかしたんですか、プロデューサーさん？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100202/4901002020040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、いや……真乃と会えるなんて\r\n思ってなかったからさ……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002020050,
+    "speaker": "真乃",
+    "text": "そう、なんですか……？\r\nどうしてそんなに──あっ……！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100202/4901002020050"
+  },
+  {
+    "id": 4901002020060,
+    "speaker": "真乃",
+    "text": "そ、そう言えば、今日はお休みの日でしたね……\r\n勘違いして来ちゃいました……",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100202/4901002020060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ……はは、そうだったのか",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002020070,
+    "speaker": "真乃",
+    "text": "えへへ、ごめんなさい……",
+    "charAnim1": "shy2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100202/4901002020070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（う～ん……何か変な感じがしていたが\r\n真乃もいつも通りだし、俺の勘違いだったのかもな）",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、何も謝ることはないよ\r\n真乃はどうする？　オフなんだし、帰るか？",
+    "charAnim2": "face_wait",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002020080,
+    "speaker": "真乃",
+    "text": "そうですね\r\nピーちゃんのお散歩もありますし……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100202/4901002020080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なら、気をつけて帰るんだぞ",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002020090,
+    "speaker": "真乃",
+    "text": "はいっ\r\nありがとうございます、プロデューサーさんっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100202/4901002020090"
+  },
+  {
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "x": -200,
+      "alpha": 0,
+      "time": 450
+    },
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あれ？　はは、今日の真乃はうっかり屋だな\r\nそっちは出口じゃな──",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002020100,
+    "speaker": "真乃",
+    "text": "──",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "special_communications/490100202/4901002020100"
+  },
+  {
+    "textFrame": "off",
+    "se": "0200",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……？\r\nどうしたんだ、窓の前に立って）",
+    "textCtrl": "p",
+    "textFrame": "0011",
+    "bgm": "013"
+  },
+  {
+    "id": 4901002020110,
+    "speaker": "真乃",
+    "text": "……すぅ～",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100202/4901002020110"
+  },
+  {
+    "id": 4901002020120,
+    "speaker": "真乃",
+    "text": "ぽっぽる～",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100202/4901002020120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ま、真乃！？\r\n何を言って──",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0259",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00087",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4901002020130,
+    "speaker": "真乃",
+    "text": "行こっ\r\nピーちゃんっ",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "special_communications/490100202/4901002020130"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "y": -100,
+      "alpha": 0,
+      "time": 450
+    },
+    "se": "0097",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（真乃が……真乃が……！）",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（大きいピーちゃんに乗って飛び去って行った……！）",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "やっぱり、この世界はおかしいぞ！\r\nひとまず、真乃を追いかけよう！",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black8",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00073",
+    "se": "0118",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black8",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0108",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4901002020140,
+    "speaker": "？？？",
+    "text": "あっ……！",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100202/4901002020140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うわっ、申し訳ありません！\r\n少し急いでいたもので──",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002020150,
+    "speaker": "甜花",
+    "text": "………",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "charType": "characters",
+    "charId": "015",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490100202/4901002020150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、甜花か……すまん！\r\nもっと気をつけて走るべきだった……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002020160,
+    "speaker": "甜花",
+    "text": "…………",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100202/4901002020160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん……？\r\nどうしたんだ、何か様子が──",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002020170,
+    "speaker": "甜花",
+    "text": "……お家で待ってるね……\r\n今日はみんな、いるから……",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0009",
+    "voice": "special_communications/490100202/4901002020170"
+  },
+  {
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？　て、甜花、それはどういう……\r\nって、もういないか……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "真乃のことも、\r\n甜花のことも気になるが……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ここは──",
+    "textCtrl": "l",
+    "textFrame": "0011"
+  },
+  {
+    "select": "真乃を追いかけよう",
+    "nextLabel": "1"
+  },
+  {
+    "select": "甜花のところに\r\n行ってみるか",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "どうすべきか、\r\nもっと考えよう……",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "2",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "3",
+    "speaker": "プロデューサー",
+    "text": "一体何がどうなってるんだ……\r\n俺はアイドルたちを……う～ん……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002020180,
+    "speaker": "はづき",
+    "text": "ふぁ……プロデューサーさん～……",
+    "charAnim1": "sleep2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "0010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "special_communications/490100202/4901002020180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あれ？\r\nはづきさん、どうかしたんですか？",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002020190,
+    "speaker": "はづき",
+    "text": "ちょっとお話しておきたいことがあったのを\r\n思い出しまして～……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "0010",
+    "voice": "special_communications/490100202/4901002020190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black9",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00007",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "hazuki",
+    "effectLabel": "black9",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0111",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もうすぐ本番か……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002020200,
+    "speaker": "はづき",
+    "text": "ふふ、緊張していますか～？",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "0010",
+    "voice": "special_communications/490100202/4901002020200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はづきさん……ええ、さすがに俺自身が\r\nアイドルをやるなんて、考えたこともなかったですから……",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "でも、不思議な気分でもあるんです\r\n何か、突き動かされるような……こんな感覚は初めてです",
+    "textCtrl": "p",
+    "textFrame": "0011",
+    "bgm": "020"
+  },
+  {
+    "id": 4901002020210,
+    "speaker": "はづき",
+    "text": "……ふふっ、今日は良いステージが見られそうですね～\r\nプロデューサーさん♪",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "0010",
+    "voice": "special_communications/490100202/4901002020210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは。今は、はづきさんのほうが\r\nプロデューサーですよ",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "今の俺は、『元』プロデューサーですから",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "id": 4901002020220,
+    "speaker": "はづき",
+    "text": "あっ……ふふ、そうでしたね～\r\nでも、私にとってはこっちのほうが呼び慣れてますから",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "0010",
+    "voice": "special_communications/490100202/4901002020220"
+  },
+  {
+    "id": 4901002020230,
+    "speaker": "はづき",
+    "text": "改めまして……プロデューサーさん、\r\nステージ頑張ってきてくださいっ",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "0010",
+    "voice": "special_communications/490100202/4901002020230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──はい！\r\n俺のサイコーのアイドル姿、見ていてください！",
+    "textCtrl": "p",
+    "textFrame": "0011"
+  },
+  {
+    "speaker": "off",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "effectLabel": "black10",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "still": "49010020201"
+  },
+  {
+    "effectLabel": "black10",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "text": "『古びたメモを発見した』",
+    "textCtrl": "p",
+    "textFrame": "0010"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

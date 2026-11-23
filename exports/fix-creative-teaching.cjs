@@ -1,0 +1,3 @@
+const fs=require('fs');function edit(p,fn){fs.writeFileSync(p,fn(fs.readFileSync(p,'utf8')))}
+edit('public/story-voice.js',s=>s.replace("target={projectId:p.id};const host=$('#ttsQueue')","target={projectId:p.id,sceneId:target?.projectId===p.id?target.sceneId:W().currentScene.id};const host=$('#ttsQueue')"));
+edit('scripts/render-workshop-creative-next.cjs',s=>s.replace("await click('.material-card>button');","await click('.material-card>button:not(.material-select)');").replace("await click('#ttsApply');await frame(2);","await click('#ttsApply');await wait('!!StoryAI.candidate.scenes[0].voice');await frame(2);"));

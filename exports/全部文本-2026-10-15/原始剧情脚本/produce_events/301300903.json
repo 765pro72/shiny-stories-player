@@ -1,0 +1,981 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0014",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 3013009030010,
+    "speaker": "智代子",
+    "text": "──夏葉ちゃーんっ！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bg": "00154",
+    "bgEffect": "fade",
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 3000,
+    "voice": "produce_events/301300903/3013009030010"
+  },
+  {
+    "id": 3013009030020,
+    "speaker": "夏葉",
+    "text": "智代子！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "001",
+    "voice": "produce_events/301300903/3013009030020"
+  },
+  {
+    "id": 3013009030030,
+    "speaker": "夏葉",
+    "text": "どうしたの……？\r\nすごく息切れしているけど……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030030"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013009030040,
+    "speaker": "智代子",
+    "text": "電車、降りたら……っ！\r\n夏葉ちゃんが見えたから……っ",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/301300903/3013009030040"
+  },
+  {
+    "id": 3013009030050,
+    "speaker": "智代子",
+    "text": "走ってきちゃった……！",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030050"
+  },
+  {
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3013009030060,
+    "speaker": "夏葉",
+    "text": "そうだったの？\r\n連絡してくれれば待っていたのに",
+    "charAnim1": "shy2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301300903/3013009030060"
+  },
+  {
+    "id": 3013009030070,
+    "speaker": "智代子",
+    "text": "はっ！　そっかー！\r\n思いつかなかった……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030070"
+  },
+  {
+    "id": 3013009030080,
+    "speaker": "夏葉",
+    "text": "もう、転んだら危ないんだから\r\n次からはそうしなさいね？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030080"
+  },
+  {
+    "id": 3013009030090,
+    "speaker": "智代子",
+    "text": "うんっ！　そうします！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030090"
+  },
+  {
+    "id": 3013009030100,
+    "speaker": "夏葉",
+    "text": "それで……そんなに急いで\r\n何か私に用事でもあった？",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030100"
+  },
+  {
+    "id": 3013009030110,
+    "speaker": "智代子",
+    "text": "えっ、ううん！\r\nこれから事務所に行くんだよね？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030110"
+  },
+  {
+    "id": 3013009030120,
+    "speaker": "智代子",
+    "text": "一緒に行きたいなって思って！",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030120"
+  },
+  {
+    "id": 3013009030130,
+    "speaker": "夏葉",
+    "text": "……ふふっ、ふふふっ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030130"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013009030140,
+    "speaker": "夏葉",
+    "text": "それであんなに\r\n必死になって追いかけてきてくれたのね？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301300903/3013009030140"
+  },
+  {
+    "id": 3013009030150,
+    "speaker": "夏葉",
+    "text": "いいわ、一緒に行きましょう！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030150"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "bg": "00063"
+  },
+  {
+    "se": "0247b",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3013009030160,
+    "speaker": "智代子",
+    "text": "──ふんふ～ん♪",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030160"
+  },
+  {
+    "id": 3013009030170,
+    "speaker": "夏葉",
+    "text": "智代子、今日はなんだか\r\nずいぶんご機嫌ね？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030170"
+  },
+  {
+    "id": 3013009030180,
+    "speaker": "智代子",
+    "text": "あっ、私いま鼻うた歌ってた！？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030180"
+  },
+  {
+    "id": 3013009030190,
+    "speaker": "夏葉",
+    "text": "ええ、ふんふ～ん♪　って歌ってたわよ\r\n何かいいことでもあったの？",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030190"
+  },
+  {
+    "id": 3013009030200,
+    "speaker": "智代子",
+    "text": "実は……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030200"
+  },
+  {
+    "id": 3013009030210,
+    "speaker": "智代子",
+    "text": "最近、すごーくラッキーなことが\r\n続いてるんだよね……！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030210"
+  },
+  {
+    "id": 3013009030220,
+    "speaker": "夏葉",
+    "text": "あら、どんな？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030220"
+  },
+  {
+    "id": 3013009030230,
+    "speaker": "智代子",
+    "text": "えーっと、例えば、今日食べたお菓子の中に\r\n当たりのハート型があったり",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030230"
+  },
+  {
+    "id": 3013009030240,
+    "speaker": "智代子",
+    "text": "あと小テストでね、\r\n直前に見てたところがばっちり出題されたり！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030240"
+  },
+  {
+    "id": 3013009030250,
+    "speaker": "夏葉",
+    "text": "うふふ、可愛らしいラッキーね",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030250"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013009030260,
+    "speaker": "智代子",
+    "text": "えっ、そうかな？\r\n他にも、体育の持久走が雨でバドミントンになったし……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301300903/3013009030260"
+  },
+  {
+    "id": 3013009030270,
+    "speaker": "智代子",
+    "text": "お昼に食べたカレー、いつものよりちょっと量が多くて、\r\nお肉がたくさん入ってたし……",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030270"
+  },
+  {
+    "id": 3013009030280,
+    "speaker": "智代子",
+    "text": "……結構すごくない！？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030280"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013009030290,
+    "speaker": "夏葉",
+    "text": "ええ、そうね",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301300903/3013009030290"
+  },
+  {
+    "id": 3013009030300,
+    "speaker": "夏葉",
+    "text": "そういう、日常のちょっとしたラッキーを\r\n幸せに変えられる智代子がすごいと思うわ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030300"
+  },
+  {
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3013009030310,
+    "speaker": "智代子",
+    "text": "えっ、ええ……！？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301300903/3013009030310"
+  },
+  {
+    "id": 3013009030320,
+    "speaker": "智代子",
+    "text": "……えへへ……そうかな……？",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030320"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00017",
+    "se": "0247b",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 3013009030330,
+    "speaker": "智代子",
+    "text": "──あ、もしかして",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030330"
+  },
+  {
+    "id": 3013009030340,
+    "speaker": "智代子",
+    "text": "ラッキーなことがたくさん起こってるのって、\r\nこの間夏葉ちゃんと果穂が運気を分けてくれたからかも！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030340"
+  },
+  {
+    "charLabel": "chiyoko",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3013009030350,
+    "speaker": "夏葉",
+    "text": "そういえば、そんなこともあったわね",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301300903/3013009030350"
+  },
+  {
+    "id": 3013009030360,
+    "speaker": "智代子",
+    "text": "──私、夏葉ちゃんたちのラッキーを\r\n奪っちゃってない！？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030360"
+  },
+  {
+    "id": 3013009030370,
+    "speaker": "夏葉",
+    "text": "えっ？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030370"
+  },
+  {
+    "id": 3013009030380,
+    "speaker": "智代子",
+    "text": "何か悪いこと、起きてない！？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030380"
+  },
+  {
+    "id": 3013009030390,
+    "speaker": "夏葉",
+    "text": "いいえ、大丈夫よ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030390"
+  },
+  {
+    "id": 3013009030400,
+    "speaker": "智代子",
+    "text": "本当に……？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030400"
+  },
+  {
+    "id": 3013009030410,
+    "speaker": "夏葉",
+    "text": "ええ、今月は私もすごくラッキーなんだから！",
+    "charAnim1": "wink",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030410"
+  },
+  {
+    "id": 3013009030420,
+    "speaker": "智代子",
+    "text": "そうなんだ、よかった……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030420"
+  },
+  {
+    "id": 3013009030430,
+    "speaker": "智代子",
+    "text": "夏葉ちゃんは、どんないいことがあったの？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030430"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013009030440,
+    "speaker": "夏葉",
+    "text": "……まず、星座占いが１位だったでしょう？\r\nそれから、カトレアのすごく可愛い写真が撮れたわ",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301300903/3013009030440"
+  },
+  {
+    "id": 3013009030450,
+    "speaker": "夏葉",
+    "text": "放課後クライマックスガールズが載った\r\n雑誌の記事もすごく評判が良かったし──",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030450"
+  },
+  {
+    "id": 3013009030460,
+    "speaker": "夏葉",
+    "text": "ああ、あと\r\n今日とってもいいことがあったわ",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030460"
+  },
+  {
+    "charLabel": "natsuha",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3013009030470,
+    "speaker": "智代子",
+    "text": "えっ、なになに？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301300903/3013009030470"
+  },
+  {
+    "id": 3013009030480,
+    "speaker": "夏葉",
+    "text": "……知りたい？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030480"
+  },
+  {
+    "id": 3013009030490,
+    "speaker": "智代子",
+    "text": "もちろん！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030490"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013009030500,
+    "speaker": "夏葉",
+    "text": "うふふ、\r\n今日は駅で偶然、智代子に会ったのよ！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301300903/3013009030500"
+  },
+  {
+    "id": 3013009030510,
+    "speaker": "夏葉",
+    "text": "智代子が走って追いかけてきてくれて、\r\n事務所までおしゃべりしながら一緒に歩いたの",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030510"
+  },
+  {
+    "id": 3013009030520,
+    "speaker": "夏葉",
+    "text": "どう？\r\nすごくラッキーなことだったでしょう？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030520"
+  },
+  {
+    "charLabel": "natsuha",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3013009030530,
+    "speaker": "智代子",
+    "text": "！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301300903/3013009030530"
+  },
+  {
+    "id": 3013009030540,
+    "speaker": "智代子",
+    "text": "……うん！　ほんとに！\r\nすっごくラッキーだね！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301300903/3013009030540"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

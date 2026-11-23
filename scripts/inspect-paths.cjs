@@ -1,0 +1,1 @@
+const fs=require('fs'),s=fs.readFileSync('research/client/app.js','utf8');for(const term of ['VOICE_PATH','getVoicePath:function','getVoicePath",','getVoicePath(e','voiceType:"home"']){let p=-1,n=0;while((p=s.indexOf(term,p+1))>=0&&n++<8)console.log(term,s.slice(Math.max(0,p-160),p+400))}

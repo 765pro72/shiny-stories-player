@@ -1,0 +1,129 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん……\r\n鏡とにらめっこして、どうしたんだ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4801001000210010,
+    "speaker": "ルビー",
+    "text": "ん～……髪型がなんか決まんなくて\r\nここんとこ、変じゃない？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "801",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communication_cheers/480100100021/4801001000210010"
+  },
+  {
+    "textFrame": "off",
+    "select": "大丈夫、可愛いよ",
+    "nextLabel": "4801001000211"
+  },
+  {
+    "textFrame": "off",
+    "select": "あ、たしかに……",
+    "nextLabel": "4801001000212"
+  },
+  {
+    "textCtrl": "cm",
+    "textFrame": "off",
+    "select": "いつも通りだと思うけど",
+    "nextLabel": "4801001000213"
+  },
+  {
+    "id": 4801001000210020,
+    "label": "4801001000211",
+    "speaker": "ルビー",
+    "text": "え、ありがとう、自信出てくる！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480100100021/4801001000210020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うん、ちょっと跳ねてるくらい……大丈夫！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4801001000210030,
+    "label": "4801001000212",
+    "speaker": "ルビー",
+    "text": "……そうだよね……応急処置できないかな……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480100100021/4801001000210030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（心配させてしまった……\r\nスタイリストさんに声をかけよう……！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4801001000210040,
+    "label": "4801001000213",
+    "speaker": "ルビー",
+    "text": "えー、違うって。こう、ミリ単位で\r\nなんか気になっちゃうな……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad2",
+    "charLipAnim": "lip_shy",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480100100021/4801001000210040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（鏡に集中してしまった\r\n本番、大丈夫かな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

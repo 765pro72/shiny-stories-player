@@ -1,0 +1,197 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "雛菜、おはよう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1023001001110010,
+    "speaker": "雛菜",
+    "text": "あ、おはよう～\r\nプロデューサー………………",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "023",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102300100111/1023001001110010"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hinana",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0152",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "こら、朝の挨拶をしながらソファに\r\n寝転がるんじゃない……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1023001001110020,
+    "speaker": "雛菜",
+    "text": "あは～\r\nだってここ雛菜の特等席だもん～",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102300100111/1023001001110020"
+  },
+  {
+    "select": "今だけ\r\nだぞ……！",
+    "nextLabel": "1023001001111"
+  },
+  {
+    "select": "誰か来たら\r\n退くんだぞ？",
+    "nextLabel": "1023001001112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "ここで\r\n寝ちゃだめだ",
+    "nextLabel": "1023001001113"
+  },
+  {
+    "id": 1023001001110030,
+    "label": "1023001001111",
+    "speaker": "雛菜",
+    "text": "うん～\r\n誰か来たらちゃんと座るよ～？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102300100111/1023001001110030"
+  },
+  {
+    "id": 1023001001110040,
+    "speaker": "雛菜",
+    "text": "プロデューサーしかいなかったら\r\nいいでしょ～？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102300100111/1023001001110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1023001001110050,
+    "label": "1023001001112",
+    "speaker": "雛菜",
+    "text": "わかってるよ～",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102300100111/1023001001110050"
+  },
+  {
+    "id": 1023001001110060,
+    "speaker": "雛菜",
+    "text": "だから今はおやすみ～……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile2",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102300100111/1023001001110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1023001001110070,
+    "label": "1023001001113",
+    "speaker": "雛菜",
+    "text": "え～……\r\n雛菜、寝てるから聞こえません～",
+    "charAnim1": "anger1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102300100111/1023001001110070"
+  },
+  {
+    "id": 1023001001110080,
+    "speaker": "雛菜",
+    "text": "聞こえてないからね～～～？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hinana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102300100111/1023001001110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,633 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00690",
+    "fg": "002341",
+    "bgm": "065"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "true",
+    "command": "conditional_jump",
+    "commandKey": "SELECT-1_read"
+  },
+  {
+    "select": "遺体を調べる",
+    "nextLabel": "1"
+  },
+  {
+    "select": "部屋を調べる",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "クローゼットを\r\n調べる",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "textFrame": "off",
+    "fg": "off"
+  },
+  {
+    "speaker": "弟子",
+    "text": "死亡推定時刻は､幅を広めに見積もって\r\n昨夜の21時半から23時の間のようですね",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "おそらくは即死……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032340010,
+    "speaker": "霧子",
+    "text": "……\r\n死因は背後から鈍器で殴られたこと……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040080010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103234/4901032340010"
+  },
+  {
+    "id": 4901032340020,
+    "speaker": "霧子",
+    "text": "だいぶ重たいもので殴られたみたい……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340020"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00729",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032340030,
+    "speaker": "咲耶",
+    "text": "ゴルフクラブやトロフィー……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340030"
+  },
+  {
+    "id": 4901032340040,
+    "speaker": "咲耶",
+    "text": "凶器になりそうなものは色々あるけれど──",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340040"
+  },
+  {
+    "id": 4901032340050,
+    "speaker": "咲耶",
+    "text": "血のついたものは見当たらないね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340050"
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 4901032340060,
+    "speaker": "霧子",
+    "text": "転がってるゴルフクラブは、\r\nあの入れ物に立てられるのと同じ本数……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340060"
+  },
+  {
+    "id": 4901032340070,
+    "speaker": "霧子",
+    "text": "欠けているものはないみたい……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340070"
+  },
+  {
+    "speaker": "弟子",
+    "text": "犯人がこの現場に初めて来たのなら、\r\n部屋に何があるのかは予想できないのではないかと……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032340080,
+    "speaker": "咲耶",
+    "text": "ああ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340080"
+  },
+  {
+    "id": 4901032340090,
+    "speaker": "咲耶",
+    "text": "犯人は凶器を用意してきて、\r\nそのまま持ち帰ったと考えるのが自然だろう",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340090"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00432",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032340100,
+    "speaker": "咲耶",
+    "text": "──財布と身分証がある",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340100"
+  },
+  {
+    "textFrame": "off",
+    "se": "0453",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 4901032340110,
+    "speaker": "咲耶",
+    "text": "……天井努\r\nこれが彼の本名か……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340110"
+  },
+  {
+    "id": 4901032340120,
+    "speaker": "霧子",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340120"
+  },
+  {
+    "id": 4901032340130,
+    "speaker": "咲耶",
+    "text": "……？\r\nどうかした？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340130"
+  },
+  {
+    "id": 4901032340140,
+    "speaker": "霧子",
+    "text": "なんでもありません……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340140"
+  },
+  {
+    "speaker": "弟子",
+    "text": "（幽谷霧子の様子も気になるが……\r\n他のところも見てみようかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "2",
+    "textFrame": "off",
+    "fg": "off"
+  },
+  {
+    "id": 4901032340150,
+    "speaker": "結華",
+    "text": "散らかされたものに目が行くけど……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340150"
+  },
+  {
+    "id": 4901032340160,
+    "speaker": "結華",
+    "text": "壁のCDとかレコードはなんなんだろうね……？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340160"
+  },
+  {
+    "id": 4901032340170,
+    "speaker": "摩美々",
+    "text": "『Ａ』は犯人にかまをかけて\r\n『うたわせる』ことが得意だったみたいー",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340170"
+  },
+  {
+    "id": 4901032340180,
+    "speaker": "摩美々",
+    "text": "……ですよねー？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340180"
+  },
+  {
+    "speaker": "弟子",
+    "text": "ええ。田中さんの仰るとおりです",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "うたわせる……自分の口で犯行を自白させた方が、\r\n犯人は言い逃れできなくなる……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "『Ａ』はそう言っていました",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032340190,
+    "speaker": "結華",
+    "text": "へぇ。じゃあこれには、『Ａ』がうたわせた犯人の\r\n音声データが入ってるかもしれないんだ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340190"
+  },
+  {
+    "id": 4901032340200,
+    "speaker": "結華",
+    "text": "ふーん……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340200"
+  },
+  {
+    "id": 4901032340210,
+    "speaker": "摩美々",
+    "text": "…………んー",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040050050",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103234/4901032340210"
+  },
+  {
+    "speaker": "弟子",
+    "text": "どうかされたんですか？\r\n裏側をのぞき込んだりして……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00733",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "se": "0353",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032340220,
+    "speaker": "摩美々",
+    "text": "……レコードやCDを留めてる金具を登って\r\n天窓から脱出できないかって思ったんですケド",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340220"
+  },
+  {
+    "id": 4901032340230,
+    "speaker": "摩美々",
+    "text": "それをやったとしたら\r\nレコードやCDが外れちゃいますよねー",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340230"
+  },
+  {
+    "speaker": "弟子",
+    "text": "そうですね……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "もし登れたとしても、\r\nそこから天窓を閉めるのは難しいかもしれません",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00531",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "弟子",
+    "text": "天窓の開閉は、\r\n今デスクの上に載っているリモコンで行うので……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032340240,
+    "speaker": "結華",
+    "text": "ワンチャン、リモコン持って外に出た後ボタンを押して、\r\n天窓が閉まりきるまでに放り込むのは──",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340240"
+  },
+  {
+    "speaker": "弟子",
+    "text": "だいぶ高さがあるので……\r\nリモコンが壊れてしまうかと",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032340250,
+    "speaker": "結華",
+    "text": "あはは、だよねー",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340250"
+  },
+  {
+    "id": 4901032340260,
+    "speaker": "結華",
+    "text": "そもそも落としただけじゃ\r\n綺麗に『置かれた』感じにはならないもんなぁ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "special_communications/490103234/4901032340260"
+  },
+  {
+    "label": "3",
+    "textFrame": "off",
+    "fg": "off"
+  },
+  {
+    "textFrame": "off",
+    "se": "0200",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4901032340270,
+    "speaker": "恋鐘",
+    "text": "クローゼットん中の金庫……\r\n鍵ばこじ開けられたりはしとらんみたいやね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340270"
+  },
+  {
+    "id": 4901032340280,
+    "speaker": "恋鐘",
+    "text": "中身は綺麗になくなっとる",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340280"
+  },
+  {
+    "id": 4901032340290,
+    "speaker": "恋鐘",
+    "text": "解毒剤も、事件の真相を綴じたファイルも、\r\n犯人が持っていったんやろね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340290"
+  },
+  {
+    "speaker": "弟子",
+    "text": "そうですね……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032340300,
+    "speaker": "恋鐘",
+    "text": "あと、クローゼットのそばに落ちとった鞄と\r\nデスクの引き出しが気になるばい……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340300"
+  },
+  {
+    "id": 4901032340310,
+    "speaker": "恋鐘",
+    "text": "お弟子さん、見てみんね\r\nいろいろ引っかき回した跡があるばい",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340310"
+  },
+  {
+    "speaker": "弟子",
+    "text": "本当ですね\r\n犯人は何を探していたんでしょう……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0781",
+    "waitType": "time",
+    "waitTime": 5000
+  },
+  {
+    "speaker": "弟子",
+    "text": "……あと、これ──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00432",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032340320,
+    "speaker": "恋鐘",
+    "text": "うん、そん机……\r\n一番下の引き出しん中、色んな毒が入っとったばい",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340320"
+  },
+  {
+    "id": 4901032340330,
+    "speaker": "恋鐘",
+    "text": "昨日の夕食に混ぜた毒は、\r\nきっと『Ａ』がブレンドしたもんなんやろね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340330"
+  },
+  {
+    "speaker": "弟子",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "毒の種類を特定して、解毒剤がなくても\r\nなんとかなるように動くのは無理そうですね……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032340340,
+    "speaker": "恋鐘",
+    "text": "でも、お弟子さん！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340340"
+  },
+  {
+    "id": 4901032340350,
+    "speaker": "恋鐘",
+    "text": "今回のは、解毒剤ば自分だけこっそり飲んで、\r\nあとは割るような犯人じゃなか……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340350"
+  },
+  {
+    "id": 4901032340360,
+    "speaker": "恋鐘",
+    "text": "自分以外の２５人ば殺すとに、\r\nためらいがあった人ばい！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340360"
+  },
+  {
+    "id": 4901032340370,
+    "speaker": "恋鐘",
+    "text": "やけん……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103234/4901032340370"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00690",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032340380,
+    "speaker": "恋鐘",
+    "text": "うちは探偵のみんなと協力して犯人ば見つけ出して、\r\n生き残る気まんまんばい！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "kogane",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040040030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103234/4901032340380"
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "kogane",
+    "textFrame": "off",
+    "nextLabel": "end",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "true",
+    "select": "遺体を調べる",
+    "nextLabel": "1"
+  },
+  {
+    "select": "部屋を調べる",
+    "nextLabel": "2"
+  },
+  {
+    "select": "クローゼットを\r\n調べる",
+    "nextLabel": "3"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "調査を終える",
+    "nextLabel": "4"
+  },
+  {
+    "label": "4",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

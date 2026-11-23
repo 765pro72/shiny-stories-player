@@ -1,0 +1,288 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001",
+    "waitType": "time",
+    "waitTime": 700
+  },
+  {
+    "textFrame": "off",
+    "se": "1105",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだ、はるきさ────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "think",
+    "charAnim2": "face_close4",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "haruki",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "028",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2300
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "haruki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 1028001001310010,
+    "speaker": "はるき",
+    "text": "────…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0766",
+    "voice": "produce_communications/102800100131/1028001001310010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……集中して書いてるな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（こういう時のはるきは\r\n何も聞こえなくなるからなぁ────）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "窓を開けるか",
+    "nextLabel": "1028001001311"
+  },
+  {
+    "select": "お茶でもいれよう",
+    "nextLabel": "1028001001312"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "仕事でも\r\nするか",
+    "nextLabel": "1028001001313"
+  },
+  {
+    "label": "1028001001311",
+    "textFrame": "off",
+    "se": "0440",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "se": "1463",
+    "waitType": "time",
+    "waitTime": 3500
+  },
+  {
+    "id": 1028001001310020,
+    "speaker": "はるき",
+    "text": "……わ、風が……\r\n気持ちいいです",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102800100131/1028001001310020"
+  },
+  {
+    "id": 1028001001310030,
+    "speaker": "はるき",
+    "text": "ふふ、ちょっと思いついたことがあって……\r\nお話してもいいですか？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100131/1028001001310030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "1028001001312",
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0404",
+    "waitType": "time",
+    "waitTime": 900
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1028001001310040,
+    "speaker": "はるき",
+    "text": "……あ\r\nいい匂い……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102800100131/1028001001310040"
+  },
+  {
+    "id": 1028001001310050,
+    "speaker": "はるき",
+    "text": "プロデューサーさん、\r\n今日はいいお菓子があるんですよ～",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100131/1028001001310050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "1028001001313",
+    "textFrame": "off",
+    "se": "1602",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1028001001310060,
+    "speaker": "はるき",
+    "text": "……！",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102800100131/1028001001310060"
+  },
+  {
+    "id": 1028001001310070,
+    "speaker": "はるき",
+    "text": "あ、ごめんなさい……\r\n別の部屋行きますね……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "haruki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102800100131/1028001001310070"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "haruki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "1227",
+    "waitType": "time",
+    "waitTime": 1250
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 300
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。\r\n気を遣わせてしまったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

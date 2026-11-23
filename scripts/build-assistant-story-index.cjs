@@ -1,0 +1,3 @@
+const fs=require('node:fs'),path=require('node:path'),G=require('../story-guide-index.cjs'),root=path.resolve(__dirname,'..');
+const value=G.build(require('../data/catalog.json'),key=>JSON.parse(fs.readFileSync(path.join(root,'cache/json',key),'utf8')),require('../public/home-assets/catalog.json'));
+fs.writeFileSync(path.join(root,'data/assistant-story-index.json'),JSON.stringify(value));console.log({catalog:value.catalog,indexed:value.indexed,pending:value.pending,bytes:fs.statSync(path.join(root,'data/assistant-story-index.json')).size});console.log(G.search(require('../data/catalog.json'),value.entries,{character:'斑鸠',limit:3}));

@@ -1,0 +1,181 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──卵焼きは、甘い派か？　しょっぱい派か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1020001000110010,
+    "speaker": "透",
+    "text": "えっ、何",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102000100011/1020001000110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、すまん……\r\nさっき出先で、そういう話になって──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1020001000110020,
+    "speaker": "透",
+    "text": "卵焼き……",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100011/1020001000110020"
+  },
+  {
+    "select": "──腹、\r\n減ってないか？",
+    "nextLabel": "1020001000111"
+  },
+  {
+    "select": "嫌いか？　卵焼き",
+    "nextLabel": "1020001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "……どうでも\r\nいいよな",
+    "nextLabel": "1020001000113"
+  },
+  {
+    "id": 1020001000110030,
+    "label": "1020001000111",
+    "speaker": "透",
+    "text": "え？　うん\r\n──あ、心配してくれたんだ",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100011/1020001000110030"
+  },
+  {
+    "id": 1020001000110040,
+    "speaker": "透",
+    "text": "ありがと",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100011/1020001000110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1020001000110050,
+    "label": "1020001000112",
+    "speaker": "透",
+    "text": "え？　ううん……\r\nていうか",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charAnim4": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100011/1020001000110050"
+  },
+  {
+    "id": 1020001000110060,
+    "speaker": "透",
+    "text": "甘い卵焼きって何？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100011/1020001000110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 1020001000110070,
+    "label": "1020001000113",
+    "speaker": "透",
+    "text": "え、ううん……\r\n考えてたけど",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charAnim4": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100011/1020001000110070"
+  },
+  {
+    "id": 1020001000110080,
+    "speaker": "透",
+    "text": "作ってくれるとか\r\nそういう話じゃなくて？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "toru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102000100011/1020001000110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

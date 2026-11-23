@@ -1,0 +1,1682 @@
+[
+  {
+    "textCtrl": "p",
+    "textFrame": "003",
+    "bg": "00000",
+    "bgm": "0000"
+  },
+  {
+    "id": 3003009030010,
+    "speaker": "めぐる",
+    "text": "（鍵、財布、スマホ、定期、スケジュール帳、イヤホン！\r\n花は今日も元気！　おかげでわたしも元気！）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030010"
+  },
+  {
+    "id": 3003009030020,
+    "speaker": "めぐる",
+    "text": "（今日も帰りに１輪買ってくるから、待っててね）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030020"
+  },
+  {
+    "id": 3003009030030,
+    "speaker": "めぐる",
+    "text": "……よしっ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030030"
+  },
+  {
+    "id": 3003009030040,
+    "speaker": "めぐる",
+    "text": "いってきまーす！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030040"
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00003"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "005",
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 3003009030050,
+    "speaker": "真乃",
+    "text": "あれ……？ お花屋さんにいるの……？",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040010010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030050"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00167",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 3003009030060,
+    "speaker": "めぐる",
+    "text": "（そろそろお花の真乃、決めたいけど──……\r\nうーん……）",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040030010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030060"
+  },
+  {
+    "id": 3003009030070,
+    "speaker": "めぐる",
+    "text": "やっぱり……",
+    "charAnim2": "face_close2",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030070"
+  },
+  {
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030080,
+    "speaker": "めぐる",
+    "text": "（いいのがいっぱいあって迷うなー……！\r\n今日も他の人にしようかなー……）",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030080"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 3003009030090,
+    "speaker": "真乃",
+    "text": "めぐるちゃん",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030090"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030100,
+    "speaker": "めぐる",
+    "text": "ん……？　真乃だっ！\r\nお疲れさまー！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030100"
+  },
+  {
+    "id": 3003009030110,
+    "speaker": "めぐる",
+    "text": "どうしてここに……\r\nって、あれ？　打ち合わせは？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030110"
+  },
+  {
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3003009030120,
+    "speaker": "真乃",
+    "text": "お疲れさま\r\nもう終わって帰るところだよっ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030120"
+  },
+  {
+    "id": 3003009030130,
+    "speaker": "真乃",
+    "text": "めぐるちゃん、先に帰ったはずなのに、",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "r",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030130",
+    "voiceKeep": true
+  },
+  {
+    "speaker": "真乃",
+    "text": "まだ近くにいたから……",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p"
+  },
+  {
+    "id": 3003009030140,
+    "speaker": "めぐる",
+    "text": "そうなの！？\r\nわたし、そんなにずっとお花屋さんにいたんだ……",
+    "charAnim1": "touch",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030140"
+  },
+  {
+    "id": 3003009030150,
+    "speaker": "真乃",
+    "text": "あっでも、すぐに終わったから\r\nそんなに時間は経ってないと思うよっ",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030150"
+  },
+  {
+    "id": 3003009030160,
+    "speaker": "真乃",
+    "text": "えっと。めぐるちゃん、お花、選んでたのかな？\r\n邪魔しちゃってごめんね",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030160"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030170,
+    "speaker": "めぐる",
+    "text": "──ううん！\r\n今、真乃のおかげで決まったから大丈夫！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300300903/3003009030170"
+  },
+  {
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3003009030180,
+    "speaker": "真乃",
+    "text": "ほわっ……私、何もしてないよ……？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030180"
+  },
+  {
+    "id": 3003009030190,
+    "speaker": "めぐる",
+    "text": "真乃からしたらそうかもっ\r\nでも、わたしは真乃と会えたから決められたんだ！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030190"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030200,
+    "speaker": "めぐる",
+    "text": "だから、ありがとう！\r\nお花買ってくるね！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300300903/3003009030200"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 3003009030210,
+    "speaker": "めぐる",
+    "text": "──ちょっとだけ待っててもらってもいい？\r\n真乃のバス停まで一緒に帰りたい！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030210"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030220,
+    "speaker": "真乃",
+    "text": "めぐるちゃん、あのね……っ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030220"
+  },
+  {
+    "id": 3003009030230,
+    "speaker": "真乃",
+    "text": "もしよかったら、めぐるちゃんと駅まで歩きたいなっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030230"
+  },
+  {
+    "charLabel": "mano",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3003009030240,
+    "speaker": "めぐる",
+    "text": "本当！？　やったー！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030240"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "mano"
+  },
+  {
+    "id": 3003009030250,
+    "speaker": "めぐる",
+    "text": "あっでも、\r\n駅まで行くと真乃が遠回りになっちゃうから……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030250"
+  },
+  {
+    "id": 3003009030260,
+    "speaker": "真乃",
+    "text": "めぐるちゃん……っ\r\nえっと……これはね、お散歩だから……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030260"
+  },
+  {
+    "id": 3003009030270,
+    "speaker": "真乃",
+    "text": "全然、遠回りじゃないよ……っ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030270"
+  },
+  {
+    "id": 3003009030280,
+    "speaker": "めぐる",
+    "text": "真乃……！　ありがとう！\r\n超特急で買ってくるから、ちょっと待っててっ",
+    "charAnim1": "touch",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030280"
+  },
+  {
+    "id": 3003009030290,
+    "speaker": "真乃",
+    "text": "うんっ\r\nいってらっしゃい",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030290"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030300,
+    "speaker": "めぐる",
+    "text": "……っえへへ、いってきまーす！\r\n──って、すぐ戻ってくるけどねっ！？",
+    "charAnim1": "shy1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300300903/3003009030300"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0247",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00003",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0247b",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "006"
+  },
+  {
+    "id": 3003009030310,
+    "speaker": "真乃",
+    "text": "めぐるちゃん、毎日お花を買ってるんだね",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030310"
+  },
+  {
+    "id": 3003009030320,
+    "speaker": "めぐる",
+    "text": "うん、２８３プロのみんなみたいなお花があったら\r\n楽しそうだなーって思って！　お花屋さん通いしてるんだ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030320"
+  },
+  {
+    "id": 3003009030330,
+    "speaker": "めぐる",
+    "text": "今、わたしのお部屋にお花の２８３プロを作ってるところ！\r\n朝からすっごく元気出るんだよー！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030330"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "meguru"
+  },
+  {
+    "id": 3003009030340,
+    "speaker": "真乃",
+    "text": "ふふ、そうなんだ……っ",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "r",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030340",
+    "voiceKeep": true
+  },
+  {
+    "speaker": "真乃",
+    "text": "見てみたいなぁ",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "id": 3003009030350,
+    "speaker": "めぐる",
+    "text": "今日からスイートピーが増えるし、真乃にも見てほしい！\r\n帰ったら写真送ってもいい？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030350"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "meguru"
+  },
+  {
+    "id": 3003009030360,
+    "speaker": "真乃",
+    "text": "うんっ、楽しみにしてるね",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030360"
+  },
+  {
+    "id": 3003009030370,
+    "speaker": "めぐる",
+    "text": "えへへっ\r\nベストショット期待してて！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030370"
+  },
+  {
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030380,
+    "speaker": "めぐる",
+    "text": "──お花の真乃ね、いいなーって思うのがいっぱいあって\r\nずっと迷ってたんだ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030380"
+  },
+  {
+    "id": 3003009030390,
+    "speaker": "めぐる",
+    "text": "ほわっとしてるお花がいいなーとか",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030390"
+  },
+  {
+    "id": 3003009030400,
+    "speaker": "めぐる",
+    "text": "桜は見てて癒されるとこが真乃と似てるなーとか\r\nあとあと、あのちっちゃいパイナップルとか！",
+    "charAnim2": "face_wait",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030400"
+  },
+  {
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3003009030410,
+    "speaker": "真乃",
+    "text": "ほわ、そんな……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030410"
+  },
+  {
+    "id": 3003009030420,
+    "speaker": "めぐる",
+    "text": "でも、やっぱり真乃はスイートピーだよね！\r\n花びらがふわふわ、ひらひらしてて、すっごく可愛い！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030420"
+  },
+  {
+    "id": 3003009030430,
+    "speaker": "真乃",
+    "text": "……め、めぐるちゃん……っ \r\nいっぱい、考えてくれてありがとう……っ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030430"
+  },
+  {
+    "id": 3003009030440,
+    "speaker": "めぐる",
+    "text": "お花の２８３プロに真乃が加入するから──\r\nわたし、明日からもっともーっと元気になれると思う！",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030440"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "meguru"
+  },
+  {
+    "id": 3003009030450,
+    "speaker": "真乃",
+    "text": "ふふっ……うれしいなっ",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030450"
+  },
+  {
+    "id": 3003009030460,
+    "speaker": "真乃",
+    "text": "もしかして、お花の灯織ちゃんもいるのかなっ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030460"
+  },
+  {
+    "id": 3003009030470,
+    "speaker": "めぐる",
+    "text": "いるよー！　マーガレットなんだ！",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030470"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030480,
+    "speaker": "めぐる",
+    "text": "みんなで花束を買った日から、\r\nお花屋さんに通うことに決めたんだけどっ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300300903/3003009030480"
+  },
+  {
+    "id": 3003009030490,
+    "speaker": "めぐる",
+    "text": "あの日は灯織と帰りが一緒になったから、\r\n灯織っぽいお花にしようと思ったんだ！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030490"
+  },
+  {
+    "id": 3003009030500,
+    "speaker": "めぐる",
+    "text": "だからマーガレットを買って帰ったの！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030500"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030510,
+    "speaker": "真乃",
+    "text": "うん、私も……っ\r\n占いが好きな灯織ちゃんらしいなって思ったんだっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030510"
+  },
+  {
+    "charLabel": "mano",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3003009030520,
+    "speaker": "めぐる",
+    "text": "えっ！　マーガレットって何か占いに関係あるの？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030520"
+  },
+  {
+    "id": 3003009030530,
+    "speaker": "真乃",
+    "text": "えっとね、花占いに使われたりするんだ……っ \r\n『好き』『嫌い』『好き』『嫌い』……って",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030530"
+  },
+  {
+    "id": 3003009030540,
+    "speaker": "めぐる",
+    "text": "そうなんだ！？\r\n花占いってマーガレットでやるんだね、知らなかったよー！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030540"
+  },
+  {
+    "id": 3003009030550,
+    "speaker": "めぐる",
+    "text": "そっかー、花占い……！\r\n灯織っぽいねっ",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030550"
+  },
+  {
+    "id": 3003009030560,
+    "speaker": "真乃",
+    "text": "めぐるちゃんは、\r\nどんなところが灯織ちゃんらしいなって思ったの？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030560"
+  },
+  {
+    "id": 3003009030570,
+    "speaker": "めぐる",
+    "text": "茎とかはなびらがまっすぐ伸びてるところが、\r\n灯織のまっすぐさに似てるなって！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030570"
+  },
+  {
+    "id": 3003009030580,
+    "speaker": "真乃",
+    "text": "すごいなぁ……っ\r\nめぐるちゃん、お花をそういうふうに見れるんだねっ……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030580"
+  },
+  {
+    "id": 3003009030590,
+    "speaker": "めぐる",
+    "text": "わたしが選ぶと、つい見た目で連想しちゃうかも！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030590"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030600,
+    "speaker": "めぐる",
+    "text": "真乃はそういうのある？\r\n──この間のスイートピーとか！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300300903/3003009030600"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030610,
+    "speaker": "真乃",
+    "text": "えっ……えっと、その……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030610"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030620,
+    "speaker": "めぐる",
+    "text": "うんうん",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030620"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030630,
+    "speaker": "真乃",
+    "text": "ほわ……\r\n…………ひ、ひみつなんだ……っ",
+    "charAnim1": "surp2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030630"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030640,
+    "speaker": "めぐる",
+    "text": "ひみつ……！",
+    "charAnim1": "touch",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030640"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030650,
+    "speaker": "真乃",
+    "text": "うん……っ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030650"
+  },
+  {
+    "charLabel": "mano",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 3003009030660,
+    "speaker": "めぐる",
+    "text": "そっかー、ひみつならしょうがないよねー",
+    "charAnim1": "shy1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030660"
+  },
+  {
+    "id": 3003009030670,
+    "speaker": "真乃",
+    "text": "ご、ごめんね……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "r",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030670",
+    "voiceKeep": true
+  },
+  {
+    "speaker": "真乃",
+    "text": "あっ、でも──他に伝えられることがあるよっ",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030680,
+    "speaker": "めぐる",
+    "text": "えっ、なになに！？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300300903/3003009030680"
+  },
+  {
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3003009030690,
+    "speaker": "真乃",
+    "text": "この間のめぐるちゃんの花束──\r\nチューリップを選んでたよねっ",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030690"
+  },
+  {
+    "id": 3003009030700,
+    "speaker": "めぐる",
+    "text": "うん！　春っていったらチューリップだー！　って思って",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030700"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030710,
+    "speaker": "真乃",
+    "text": "うんっ\r\nあのね……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030710"
+  },
+  {
+    "id": 3003009030720,
+    "speaker": "真乃",
+    "text": "あの時、花言葉を調べたんだけど……\r\nとってもめぐるちゃんらしくて──",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030720"
+  },
+  {
+    "id": 3003009030730,
+    "speaker": "真乃",
+    "text": "『思いやり』だったんだっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/300300903/3003009030730"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030740,
+    "speaker": "めぐる",
+    "text": "──っ！！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030740"
+  },
+  {
+    "charLabel": "meguru",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3003009030750,
+    "speaker": "真乃",
+    "text": "ねっ、めぐるちゃんらしい──",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "r",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030750",
+    "voiceKeep": true
+  },
+  {
+    "speaker": "真乃",
+    "text": "あれ？　めぐるちゃん？",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030760,
+    "speaker": "真乃",
+    "text": "ど、どうしたの……？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/300300903/3003009030760"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3003009030770,
+    "speaker": "めぐる",
+    "text": "う、えっと……\r\n……ひみつ……！",
+    "charAnim1": "shy2",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/300300903/3003009030770"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

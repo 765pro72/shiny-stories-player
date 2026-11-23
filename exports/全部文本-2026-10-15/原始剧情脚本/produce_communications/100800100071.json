@@ -1,0 +1,164 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLipAnim": "lip_anger",
+    "charLabel": "kiriko",
+    "charType": "characters",
+    "charId": "008",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうした？　悩みでもあるのか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1008001000710010,
+    "speaker": "霧子",
+    "text": "みんなで……ごはんに行くんです……\r\nわたし、お店を決める係になっちゃって……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100071/1008001000710010"
+  },
+  {
+    "id": 1008001000710020,
+    "speaker": "霧子",
+    "text": "あまり……よく知らなくて……\r\nど、どんなところなら……喜んでもらえるでしょうか……？",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100071/1008001000710020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "(みんなでご飯か。それなら……)",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "美味しいそば屋なら\r\n知ってるぞ",
+    "nextLabel": "1008001000711"
+  },
+  {
+    "select": "ファミレスなんかが\r\nいいと思うぞ？",
+    "nextLabel": "1008001000712"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "家によんで手料理を\r\n振る舞うのは？",
+    "nextLabel": "1008001000713"
+  },
+  {
+    "id": 1008001000710030,
+    "label": "1008001000711",
+    "speaker": "霧子",
+    "text": "お、おそば……！\r\nすごく……大人っぽいです……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100071/1008001000710030"
+  },
+  {
+    "id": 1008001000710040,
+    "speaker": "霧子",
+    "text": "落ち着いてお話しできそう……\r\nみんなに……聞いてみます……！",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100071/1008001000710040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001000710050,
+    "label": "1008001000712",
+    "speaker": "霧子",
+    "text": "は、はい……ファミレスなら……\r\nたくさん、おしゃべりできそうです……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100071/1008001000710050"
+  },
+  {
+    "id": 1008001000710060,
+    "speaker": "霧子",
+    "text": "でも、よく行っているので……\r\n今回は……他のところを探してみたいです……！",
+    "charAnim1": "shy1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100071/1008001000710060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1008001000710070,
+    "label": "1008001000713",
+    "speaker": "霧子",
+    "text": "わ、わたしの料理を……\r\nみんなに……ですか……？",
+    "charAnim1": "sad1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100071/1008001000710070"
+  },
+  {
+    "id": 1008001000710080,
+    "speaker": "霧子",
+    "text": "み、みんなに食べてもらえるようなのは……\r\nまだ……難しいかもです……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100800100071/1008001000710080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

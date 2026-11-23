@@ -1,0 +1,716 @@
+[
+  {
+    "id": 1013001040010,
+    "speaker": "夏葉",
+    "text": "おはよう、プロデューサー",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "bgm": "001",
+    "voice": "produce_events/101300104/1013001040010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おはよう、夏葉",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013001040020,
+    "speaker": "夏葉",
+    "text": "プロデューサー、ちょっといいかしら？",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040020"
+  },
+  {
+    "id": 1013001040030,
+    "speaker": "夏葉",
+    "text": "今から自主レッスンをしようと思っているのよ\r\nプロデューサー、見てもらってもいいかしら",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、もちろん",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013001040040,
+    "speaker": "夏葉",
+    "text": "ありがとう\r\nそれじゃあ行きましょう――",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040040"
+  },
+  {
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00014",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（しかし、見てほしいって……\r\n何か特別なことでもするんだろうか？）",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013001040050,
+    "speaker": "夏葉",
+    "text": "……始めるわ\r\nそれじゃあ、見てて頂戴",
+    "charAnim1": "anger2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_jersey",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/101300104/1013001040050"
+  },
+  {
+    "speaker": "off",
+    "text": "off",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "se": "0121",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（…………見たところ、普通のレッスンみたいだが……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013001040060,
+    "speaker": "夏葉",
+    "text": "ワン、ツー、スリー、フォー！",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_jersey",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/101300104/1013001040060"
+  },
+  {
+    "id": 1013001040070,
+    "speaker": "夏葉",
+    "text": "…………",
+    "charAnim1": "think",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040070"
+  },
+  {
+    "speaker": "off",
+    "text": "off",
+    "charLabel": "natsuha",
+    "textFrame": "off",
+    "se": "0121",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 1013001040080,
+    "speaker": "夏葉",
+    "text": "ワン、ツー、スリー、フォー！\r\n……",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_jersey",
+    "charType": "characters",
+    "charId": "013",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/101300104/1013001040080"
+  },
+  {
+    "speaker": "off",
+    "text": "off",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait2",
+    "charLabel": "natsuha",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 1013001040090,
+    "speaker": "夏葉",
+    "text": "～～～～♪♪",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040090"
+  },
+  {
+    "id": 1013001040100,
+    "speaker": "夏葉",
+    "text": "～～～～♪♪",
+    "charAnim1": "think",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040100"
+  },
+  {
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait1",
+    "charLabel": "natsuha",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 1013001040110,
+    "speaker": "夏葉",
+    "text": "～～～～♪♪",
+    "charLipAnim": "lip_anger",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040110"
+  },
+  {
+    "speaker": "off",
+    "text": "off",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……夏葉には感心させられるな。このレッスンは\r\nただがむしゃらにやってるんじゃない）",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（自分の魅力を少しでも引き出していくために\r\n常に全神経を研ぎ澄まして試行錯誤している……）",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "anger1",
+    "charLabel": "natsuha",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 1013001040120,
+    "speaker": "夏葉",
+    "text": "ふぅ……\r\nどうだったかしら、プロデューサー？",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040120"
+  },
+  {
+    "select": "夏葉の気合いが\r\n伝わってきたよ",
+    "nextLabel": "1"
+  },
+  {
+    "select": "いつもの夏葉だな",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "夏葉はどう思う？",
+    "nextLabel": "3"
+  },
+  {
+    "id": 1013001040130,
+    "label": "1",
+    "speaker": "夏葉",
+    "text": "それならよかったわ\r\n……私、この間、歌い方のことで迷っていたでしょう？",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、そうだな",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013001040140,
+    "speaker": "夏葉",
+    "text": "あのときのことをずっと考えていたの\r\nそれでやっとわかったわ",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040140"
+  },
+  {
+    "id": 1013001040150,
+    "speaker": "夏葉",
+    "text": "きっと私は近道をしようとしてたのよね……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040150"
+  },
+  {
+    "id": 1013001040160,
+    "speaker": "夏葉",
+    "text": "トップアイドルになるためには近道なんてない\r\nあたりまえの努力をただ積み重ねていくだけなのに……",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040160"
+  },
+  {
+    "id": 1013001040170,
+    "speaker": "夏葉",
+    "text": "あのときのプロデューサーが伝えたかったこと……\r\nそういうことよね？",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "夏葉がそう思うなら、きっとそれが答えだな",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013001040180,
+    "speaker": "夏葉",
+    "text": "ええ。自分の間違いに気づくことができたわ",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040180"
+  },
+  {
+    "id": 1013001040190,
+    "speaker": "夏葉",
+    "text": "ありがとう、プロデューサー",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040190"
+  },
+  {
+    "id": 1013001040200,
+    "speaker": "夏葉",
+    "text": "これからはもう近道なんて\r\n恥ずかしいことは２度と考えない",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040200"
+  },
+  {
+    "id": 1013001040210,
+    "speaker": "夏葉",
+    "text": "迷わずトップへの道を進んでいくわ",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/101300104/1013001040210"
+  },
+  {
+    "label": "2",
+    "speaker": "プロデューサー",
+    "text": "迷いがない姿勢は、まさに夏葉だ",
+    "charAnim1": "wait1",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013001040220,
+    "speaker": "夏葉",
+    "text": "それならいいの\r\nずっと私らしいやり方を考えていたから",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040220"
+  },
+  {
+    "id": 1013001040230,
+    "speaker": "夏葉",
+    "text": "歌い方に悩んだあのとき、\r\n私は誰かの真似をしようとしていたわ……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040230"
+  },
+  {
+    "id": 1013001040240,
+    "speaker": "夏葉",
+    "text": "でも、それは間違いだったのよね",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "答えが、出たんだな",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013001040250,
+    "speaker": "夏葉",
+    "text": "ええ、私にとって何よりも大切なことは……\r\nただ地道に、１歩ずつ努力をしていくことだったのに",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040250"
+  },
+  {
+    "id": 1013001040260,
+    "speaker": "夏葉",
+    "text": "それがやっとわかったから\r\nプロデューサーに見てほしかったの",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013001040270,
+    "speaker": "夏葉",
+    "text": "ええ、私はもう迷わないわ\r\n安易な手段に頼ろうなんて愚かなことも２度としない",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040270"
+  },
+  {
+    "id": 1013001040280,
+    "speaker": "夏葉",
+    "text": "私はこのやり方で、真正面から\r\nトップアイドル道を突き進んでいくのよ！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（しっかりと悩んで、自分で答えを出したようだな\r\nこの経験はきっと大きな自信につながるだろう）",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（夏葉はこれからもっともっと\r\n輝きを増していくに違いない）",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1013001040290,
+    "label": "3",
+    "speaker": "夏葉",
+    "text": "これが私よ",
+    "charAnim1": "smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040290"
+  },
+  {
+    "id": 1013001040300,
+    "speaker": "夏葉",
+    "text": "できないことも足りないこともあるけど\r\nでもそれもひっくるめて私なの",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040300"
+  },
+  {
+    "id": 1013001040310,
+    "speaker": "夏葉",
+    "text": "私は私だもの、\r\n他の誰かになんてなれないわ",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040310"
+  },
+  {
+    "id": 1013001040320,
+    "speaker": "夏葉",
+    "text": "そんなことより、ただひたすらに\r\n自分を磨けばいいだけなのよね",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040320"
+  },
+  {
+    "id": 1013001040330,
+    "speaker": "夏葉",
+    "text": "もう迷いはないから安心して\r\n私は私なりの輝きでトップアイドルを目指すわ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……それはよかった",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "しかし何かアドバイスできればと思ってたけど\r\n必要なかったな。役に立たなくてごめん",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1013001040340,
+    "speaker": "夏葉",
+    "text": "なに言ってるのよ。私は私なんだからって\r\n自信をもたせてくれたのはプロデューサーじゃない",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101300104/1013001040340"
+  },
+  {
+    "id": 1013001040350,
+    "speaker": "夏葉",
+    "text": "だから、もっと自信を持ってくれなきゃ困るわ！",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "natsuha",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/101300104/1013001040350"
+  },
+  {
+    "label": "end"
+  }
+]

@@ -1,0 +1,92 @@
+{
+  "at": "2026-11-16T06:24:57.641Z",
+  "version": "2026-11-16.7",
+  "windows": {
+    "at": "2026-11-16T06:24:57.641Z",
+    "archive": "F:\\sc\\dist\\ShinyStories-Lite-win32-x64.7z",
+    "archiveFormat": "7z",
+    "bytes": 175424139,
+    "sha256": "fb4fae6e731ac951f0abbb9d2ef2e8823de53a251f9a9c23be6bd681d02e566d",
+    "checked": 14667,
+    "mismatches": [],
+    "uiVersion": "2026-11-16.7",
+    "translationFilesVerified": 10802,
+    "releaseGatePassed": true,
+    "packagedScenarioRegressionPassed": false
+  },
+  "android": {
+    "at": "2026-11-16T06:24:57.641Z",
+    "apk": "F:\\sc\\dist\\ShinyStories-Android.apk",
+    "bytes": 137507871,
+    "sha256": "8474306687b413d8f4fc1b2fdf3930f51e3c9c5cd67b3c07cda7824870f7677c",
+    "debug": false,
+    "versionCode": 2026111607,
+    "versionName": "2026.11.16.7",
+    "abis": [
+      "arm64-v8a"
+    ],
+    "minAndroid": 9,
+    "targetAPI": 35,
+    "bundleFiles": 14441,
+    "bundleSHA256": "afae5e8f5b7effb9980937bb39f38ca5e43c4797865643d0bfa07e75f93c421f",
+    "alignment": "16KB",
+    "signatureSha256": "dc71e8ce147366d77bb07c5f164b508103f4203c910533f85ac6abdd936d2476",
+    "installedOrRun": true,
+    "install": {
+      "result": "Success",
+      "serial": "emulator-5554"
+    },
+    "testEnvironment": "Android 15 (API 35) emulator, arm64 app on x86_64 host translation; wm size 1920x864 / density 480 reproduces a 20:9 phone with 16:9 letterbox (CSS viewport 512x288).",
+    "screenshots": [
+      "exports/android-2026-11-16.7-home-20x9.png",
+      "exports/android-2026-11-16.7-chat-ball.png",
+      "exports/android-2026-11-16.7-guide-20x9.png"
+    ],
+    "tests": {
+      "passed": [
+        "install + cold start after pm clear",
+        "20:9: 16:9 content centered with 192px black bars; CSS viewport 512x288",
+        "283 logo, 公告/收藏/更新 and nav share one 36px-tall baseline row; no header overflow",
+        "nav fits fully at 512 wide (scrollWidth == clientWidth)",
+        "right tool buttons vertical column, 34px, flush to the right edge",
+        "caption 190x70 at 10.5px, bottom-left, clear of the idol",
+        "assistant collapsed as a 44px avatar ball; tap expands chat panel",
+        "collapse after expand returns the ball to its anchor (bottom-right), not the top-left",
+        "guide.html: header actions and body scale down; no horizontal overflow",
+        "layout probes at 512x288 / 560x315 / 640x360 / 700x394 / 800x450: no overlap among caption/tools/side/assistant"
+      ],
+      "limitations": [
+        "Emulator with arm64 translation, not a physical Snapdragon/Dimensity phone.",
+        "Small header controls are 34-36 CSS px tall (below the 44px guideline) because the user asked to shrink the header; nav links keep a 36px hit row.",
+        "Chinese \"刚刚说错了\" clarification could not be resolved from the screenshot alone; current build keeps the aligned header."
+      ]
+    }
+  },
+  "changes": {
+    "phoneLayout": {
+      "problem": "On a 20:9 phone the 16:9 letterbox leaves a 512x288 CSS viewport. The earlier phone layout still had the brand and nav too large, the three shortcuts over the idol, horizontal tool buttons, a big assistant pill and an oversized caption.",
+      "files": [
+        "public/mobile.css",
+        "public/assistant.css",
+        "public/assistant.js"
+      ],
+      "fix": [
+        "283 brand shrunk to a 36px-tall pill; 公告/收藏/更新 moved to its right in the same row, all three the same height as the brand and nav.",
+        "Nav shares that 36px baseline, uses clamp(…) font sizes and fits entirely at 512 without clipping; header keeps 12px right margin so the pill no longer pokes out.",
+        "Right-side tools become a vertical 34px column flush to the right edge.",
+        "Caption reduced to 190x70 with 10.5px text at bottom-left; idol stays unobstructed.",
+        "Assistant collapsed state is a 44px circular avatar ball; tapping it opens the chat panel; expand no longer overwrites the collapsed anchor, so collapsing returns the ball to where the user left it.",
+        "Removed 剧情/已有译文 chips from the phone home; module pages (guide/card/voice/wardrobe) get compressed heroes, scaled headings and toolbar buttons via clamp(1.9-4vw)."
+      ],
+      "verification": [
+        "exports/android-2026-11-16.7-home-20x9.png",
+        "exports/android-2026-11-16.7-chat-ball.png",
+        "exports/android-2026-11-16.7-guide-20x9.png"
+      ]
+    },
+    "versionBump": "2026-11-16.6 -> 2026-11-16.7 (Windows uiVersion, Android versionCode 2026111607 / versionName 2026.11.16.7).",
+    "translationEdits": false,
+    "newZIP": false,
+    "userProgramRestarted": false
+  }
+}

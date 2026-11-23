@@ -1,0 +1,194 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ルカ、この前撮影があっただろ？\r\nその雑誌が届いたんだけど、見ないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1026001000310010,
+    "speaker": "ルカ",
+    "text": "ゲラ確認しただろ………",
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "026",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102600100031/1026001000310010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それはそうなんだけど\r\n実物を見るのはまたいいもんだろ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1026001000310020,
+    "speaker": "ルカ",
+    "text": "ひとりで勝手に見とけよ",
+    "charAnim1": "wait2",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100031/1026001000310020"
+  },
+  {
+    "select": "じゃあ……\r\nそうしようかな……",
+    "nextLabel": "1026001000311"
+  },
+  {
+    "select": "事務所のみんなにも\r\n見せてあげよう",
+    "nextLabel": "1026001000312"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "でも……",
+    "nextLabel": "1026001000313"
+  },
+  {
+    "label": "1026001000311",
+    "charAnim1": "wait",
+    "charAnim2": "face_serious",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "1218",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……へぇ、どれもいい感じに撮れてるな！\r\nうん……これなんか雰囲気が出てて──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1026001000310030,
+    "speaker": "ルカ",
+    "text": "黙って見れねェのかよ……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_communications/102600100031/1026001000310030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "1026001000312",
+    "speaker": "プロデューサー",
+    "text": "参考になるし\r\nいい刺激にもなると思うんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1026001000310040,
+    "speaker": "ルカ",
+    "text": "いいよそんなもん\r\n面倒くせぇだけ……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100031/1026001000310040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1026001000310050,
+    "label": "1026001000313",
+    "speaker": "ルカ",
+    "text": "うるせぇな……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100031/1026001000310050"
+  },
+  {
+    "id": 1026001000310060,
+    "speaker": "ルカ",
+    "text": "やることあんだから\r\n邪魔すんなよ……",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102600100031/1026001000310060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

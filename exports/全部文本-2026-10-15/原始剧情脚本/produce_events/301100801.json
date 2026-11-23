@@ -1,0 +1,1006 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00158",
+    "bgm": "0013",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3011008010010,
+    "speaker": "樹里",
+    "text": "おー、凛世\r\n今帰りか？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010010"
+  },
+  {
+    "id": 3011008010020,
+    "speaker": "凛世",
+    "text": "はい……\r\nこれから……事務所に……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010020"
+  },
+  {
+    "id": 3011008010030,
+    "speaker": "樹里",
+    "text": "アタシも今から向かうとこ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010030"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00283",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 3011008010040,
+    "speaker": "樹里",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "011",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "005",
+    "voice": "produce_events/301100801/3011008010040"
+  },
+  {
+    "id": 3011008010050,
+    "speaker": "樹里",
+    "text": "あー……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010050"
+  },
+  {
+    "id": 3011008010060,
+    "speaker": "樹里",
+    "text": "ここ、通るだけで\r\nいい匂いするよな……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010060"
+  },
+  {
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3011008010070,
+    "speaker": "凛世",
+    "text": "ふふ……\r\nこれは……コロッケ……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030120040",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/301100801/3011008010070"
+  },
+  {
+    "id": 3011008010071,
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "juri",
+    "voice": "produce_events/301100801/3011008010071"
+  },
+  {
+    "id": 3011008010071,
+    "speaker": "樹里＆凛世",
+    "text": "…………",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010071"
+  },
+  {
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "rinze",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "精肉店の店員",
+    "text": "──あっ、樹里ちゃん！　凛世ちゃん！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "精肉店の店員",
+    "text": "今日は寄っていかないの！？\r\n揚げたてだよ！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 3011008010080,
+    "speaker": "樹里",
+    "text": "ごめん\r\nこのあと事務所行くんだ！",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_shy",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301100801/3011008010080"
+  },
+  {
+    "id": 3011008010090,
+    "speaker": "樹里",
+    "text": "また今度来るよ！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010090"
+  },
+  {
+    "speaker": "精肉店の店員",
+    "text": "はーい！\r\nじゃあまたね！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 3011008010100,
+    "speaker": "樹里",
+    "text": "おー！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010100"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "juri",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3011008010110,
+    "speaker": "凛世",
+    "text": "ふふ……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301100801/3011008010110"
+  },
+  {
+    "id": 3011008010120,
+    "speaker": "凛世",
+    "text": "樹里さんは……\r\n人気者……",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010120"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "rinze"
+  },
+  {
+    "id": 3011008010130,
+    "speaker": "樹里",
+    "text": "や、今のはアタシと凛世\r\nふたりに声掛けたんだろ",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010130"
+  },
+  {
+    "id": 3011008010140,
+    "speaker": "樹里",
+    "text": "だから、アタシが人気なら\r\n凛世も人気ってことだ",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010140"
+  },
+  {
+    "id": 3011008010150,
+    "speaker": "凛世",
+    "text": "…………",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010150"
+  },
+  {
+    "id": 3011008010160,
+    "speaker": "樹里",
+    "text": "つーか勝手に返事しちゃったけど\r\n……寄りたかったか？",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010160"
+  },
+  {
+    "id": 3011008010170,
+    "speaker": "凛世",
+    "text": "いえ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010170"
+  },
+  {
+    "id": 3011008010180,
+    "speaker": "凛世",
+    "text": "ありがとうございます……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010180"
+  },
+  {
+    "id": 3011008010190,
+    "speaker": "樹里",
+    "text": "今日は事務所寄ったら\r\nそのまま寮戻って夕飯だからなー",
+    "charAnim1": "wait5",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010190"
+  },
+  {
+    "id": 3011008010200,
+    "speaker": "樹里",
+    "text": "まあ、食べようと思えば\r\n楽勝だけどさ",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010200"
+  },
+  {
+    "id": 3011008010210,
+    "speaker": "凛世",
+    "text": "はい……\r\n余裕です……",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010210"
+  },
+  {
+    "id": 3011008010220,
+    "speaker": "樹里",
+    "text": "あはは、だよな……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010220"
+  },
+  {
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "bg": "00158",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 3011008010230,
+    "speaker": "樹里",
+    "text": "──こうやって事務所に向かうのもさ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010230"
+  },
+  {
+    "id": 3011008010240,
+    "speaker": "樹里",
+    "text": "なんつーか……\r\nもう日常って感じだよな",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010240"
+  },
+  {
+    "id": 3011008010250,
+    "speaker": "樹里",
+    "text": "ちょっと前じゃここで\r\nこんなふうにしてるなんて、思いもしなかった",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010250"
+  },
+  {
+    "id": 3011008010260,
+    "speaker": "凛世",
+    "text": "はい……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010260"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00283",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 3011008010270,
+    "speaker": "樹里",
+    "text": "しかもアイドルやってるなんてさ",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301100801/3011008010270"
+  },
+  {
+    "id": 3011008010280,
+    "speaker": "樹里",
+    "text": "……まぁ、それに関しては未だに\r\n慣れない部分ばっかりだけど",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010280"
+  },
+  {
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3011008010290,
+    "speaker": "凛世",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301100801/3011008010290"
+  },
+  {
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3011008010300,
+    "speaker": "樹里",
+    "text": "スカウトしてもらって、\r\n寮に引っ越してくることになってさ",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301100801/3011008010300"
+  },
+  {
+    "id": 3011008010310,
+    "speaker": "樹里",
+    "text": "ここに荷物持って来た時、\r\n坂ばっかですげー大変だったんだよ",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010310"
+  },
+  {
+    "charLabel": "juri",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 3011008010320,
+    "speaker": "凛世",
+    "text": "それは……",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301100801/3011008010320"
+  },
+  {
+    "id": 3011008010330,
+    "speaker": "凛世",
+    "text": "そうだったかも……\r\nしれません……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010330"
+  },
+  {
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3011008010340,
+    "speaker": "樹里",
+    "text": "だよな……！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/301100801/3011008010340"
+  },
+  {
+    "id": 3011008010350,
+    "speaker": "樹里",
+    "text": "なんでこんな坂ばっかなんだよって\r\nあの時は思ったけど",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010350"
+  },
+  {
+    "id": 3011008010360,
+    "speaker": "樹里",
+    "text": "……でも、ここでよかったなって思うよ\r\nすげーいい人ばっかりだし",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010360"
+  },
+  {
+    "id": 3011008010370,
+    "speaker": "樹里",
+    "text": "……それに、凛世もいるしな！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010370"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 3011008010380,
+    "speaker": "凛世",
+    "text": "…………",
+    "charAnim1": "surp2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301100801/3011008010380"
+  },
+  {
+    "id": 3011008010390,
+    "speaker": "凛世",
+    "text": "ふふ……",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010390"
+  },
+  {
+    "id": 3011008010400,
+    "speaker": "凛世",
+    "text": "はい……\r\n凛世も……おります……",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010400"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "bg": "00154",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "bg": "00086",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "bg": "00289",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "charLabel": "rinze",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 3011008010410,
+    "speaker": "樹里",
+    "text": "……そういえばさ",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/301100801/3011008010410"
+  },
+  {
+    "id": 3011008010420,
+    "speaker": "凛世",
+    "text": "……？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010420"
+  },
+  {
+    "id": 3011008010430,
+    "speaker": "樹里",
+    "text": "今日って、なんで\r\n事務所呼ばれたんだっけ",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010430"
+  },
+  {
+    "id": 3011008010440,
+    "speaker": "凛世",
+    "text": "用件は……\r\nまだ……",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010440"
+  },
+  {
+    "id": 3011008010450,
+    "speaker": "樹里",
+    "text": "そっか\r\nアタシもそうなんだよな",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010450"
+  },
+  {
+    "id": 3011008010460,
+    "speaker": "樹里",
+    "text": "……まぁ、入ればわかるか",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010460"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "rinze",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "juri",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "se": "0247b",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "bg": "00106",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "bg": "00070",
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 3011008010461,
+    "label": "回想",
+    "speaker": "樹里",
+    "text": "おはようございま──……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/301100801/3011008010461"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end"
+  }
+]

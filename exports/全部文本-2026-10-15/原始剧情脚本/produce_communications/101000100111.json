@@ -1,0 +1,161 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "智代子、学校の様子はどうだ？",
+    "charAnim1": "wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charType": "characters",
+    "charId": "010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001"
+  },
+  {
+    "id": 1010001001110010,
+    "speaker": "智代子",
+    "text": "楽しいですよ！　みんな優しいですし、面白いですし！",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100111/1010001001110010"
+  },
+  {
+    "id": 1010001001110020,
+    "speaker": "智代子",
+    "text": "でも私、昔からクラスの友達にからかわれやすいんです\r\n……どうしてなんでしょうか？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100111/1010001001110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだな……",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "好かれているからだ",
+    "nextLabel": "1010001001111"
+  },
+  {
+    "select": "素直だからだろう",
+    "nextLabel": "1010001001112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "親しみやすいから？",
+    "nextLabel": "1010001001113"
+  },
+  {
+    "id": 1010001001110030,
+    "label": "1010001001111",
+    "speaker": "智代子",
+    "text": "えへへ、そうだったらすっごく嬉しいです！\r\nアイドルとしても役に立ちますよねっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100111/1010001001110030"
+  },
+  {
+    "id": 1010001001110040,
+    "speaker": "智代子",
+    "text": "プロデューサーさんが言ってくれたみたいに、\r\nポジティブに考えておくことにします！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100111/1010001001110040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1010001001110050,
+    "label": "1010001001112",
+    "speaker": "智代子",
+    "text": "考えてることとか、わかりやすいんですかね……？\r\n顔に出ちゃう……？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100111/1010001001110050"
+  },
+  {
+    "id": 1010001001110060,
+    "speaker": "智代子",
+    "text": "自分では結構しっかりしてるつもりなんですけど……\r\nうーん……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100111/1010001001110060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1010001001110070,
+    "label": "1010001001113",
+    "speaker": "智代子",
+    "text": "そう言ってもらえるのは嬉しいんです、\r\n嬉しいんですけど……！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100111/1010001001110070"
+  },
+  {
+    "id": 1010001001110080,
+    "speaker": "智代子",
+    "text": "みんなお手軽にちょっかいかけすぎなのでは\r\nないでしょうか……！",
+    "charAnim2": "face_close",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/101000100111/1010001001110080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

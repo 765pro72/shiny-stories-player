@@ -1,0 +1,129 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 4801001000230010,
+    "speaker": "ルビー",
+    "text": "あー、喉乾いた！\r\nプロデューサー、なに飲もっか！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "801",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communication_cheers/480100100023/4801001000230010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（いろんなドリンクが置いてあるな\r\n本番前だし、ここは……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "select": "ミネラルウォーター",
+    "nextLabel": "4801001000231"
+  },
+  {
+    "textFrame": "off",
+    "select": "お茶",
+    "nextLabel": "4801001000232"
+  },
+  {
+    "textCtrl": "cm",
+    "textFrame": "off",
+    "select": "炭酸飲料",
+    "nextLabel": "4801001000233"
+  },
+  {
+    "id": 4801001000230020,
+    "label": "4801001000231",
+    "speaker": "ルビー",
+    "text": "サンキュー！　……………っ\r\nよし、行ってくるね！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480100100023/4801001000230020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（気合が入ったみたいだ！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4801001000230030,
+    "label": "4801001000232",
+    "speaker": "ルビー",
+    "text": "ありがと！　……………っ\r\nあー……、おいしい",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480100100023/4801001000230030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（リラックスできたみたいだ！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4801001000230040,
+    "label": "4801001000233",
+    "speaker": "ルビー",
+    "text": "あー、ありがと！\r\nでも、できれば喉がベタつかないのがいいかな！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480100100023/4801001000230040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（確かに、チョイスを間違ったか……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

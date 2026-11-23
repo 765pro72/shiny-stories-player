@@ -1,0 +1,76 @@
+[
+  {
+    "id": 201600100110010,
+    "speaker": "千雪",
+    "text": "あーあーあーあーあー♪\r\n声……出てます？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "016",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "voice": "produce_communications_promises/20160010011/201600100110010"
+  },
+  {
+    "id": 201600100110020,
+    "speaker": "千雪",
+    "text": "私、もうちょっと練習したくて……\r\n今週にボーカルレッスンを入れていただけませんか？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications_promises/20160010011/201600100110020"
+  },
+  {
+    "select": "いいよ",
+    "nextLabel": "agree"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "ごめん",
+    "nextLabel": "disagree"
+  },
+  {
+    "id": 201600100990010,
+    "label": "agree",
+    "speaker": "千雪",
+    "text": "わぁ、ありがとうございます♪\r\nプロデューサーさん",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_communications_promises/20160010011/201600100990010"
+  },
+  {
+    "id": 201600100990020,
+    "label": "disagree",
+    "speaker": "千雪",
+    "text": "まあ、そうなんですね……、いえ\r\n私が急に言い出したことですから、お気になさらず",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_communications_promises/20160010011/201600100990020",
+    "charAnim3Loop": false
+  },
+  {
+    "label": "end"
+  }
+]

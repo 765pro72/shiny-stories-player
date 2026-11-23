@@ -1,0 +1,2856 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00074",
+    "bgm": "0000",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 4001020080010,
+    "speaker": "off",
+    "text": "『雪の魔法は、眩しい──』",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080010"
+  },
+  {
+    "id": 4001020080020,
+    "speaker": "off",
+    "text": "『……解けちゃう前に\r\n一緒に、行きませんか』",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080020"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 250
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "029",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……うん、30秒ＣＭの方は\r\n問題なさそうだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それから……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080030,
+    "speaker": "はづき",
+    "text": "あっ、プロデューサーさん\r\nこの間の映像、出来上がったんですね～",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はづきさん！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ちょうど先程編集されたものが\r\n上がってきて、確認していたんです",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080040,
+    "speaker": "はづき",
+    "text": "そうだったんですね～\r\nどうでしたか～？",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、よかったら\r\nはづきさんも一緒に見てくれませんか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これから２８３プロのチャンネルで公開する方を\r\n確認するんですが……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080050,
+    "speaker": "はづき",
+    "text": "私もいいんですか～？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はい、はづきさんにも同行していただきましたし\r\n何か意見があれば聞かせてください",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080060,
+    "speaker": "はづき",
+    "text": "わかりました～",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "じゃあ、よろしくお願いします",
+    "charAnim2": "face_wait",
+    "charLabel": "hazuki",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "再生",
+    "nextLabel": "1"
+  },
+  {
+    "label": "1",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black99",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black99",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──あ、今の所",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "すみません、巻き戻してもいいですか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080070,
+    "speaker": "はづき",
+    "text": "はい～、もちろんです",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080070"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black98",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1030190010",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00276",
+    "fg": "002341",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1040100010",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black98",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001020080080,
+    "speaker": "愛依",
+    "text": "よーし智代子ちゃん！\r\n雪玉、ロッジの前で合体させよ！",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080080"
+  },
+  {
+    "id": 4001020080090,
+    "speaker": "智代子",
+    "text": "うん！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080090"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001020080100,
+    "speaker": "智代子",
+    "text": "雪だるま、ロッジの前に作るから\r\n灯織ちゃんもよかったら後で見てみてね",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "game_event_communications/400102008/4001020080100"
+  },
+  {
+    "id": 4001020080110,
+    "speaker": "灯織",
+    "text": "う、うん……！\r\n──でも、ロッジ前に勝手に置いていいの……？",
+    "charAnim2": "face_wait",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080110"
+  },
+  {
+    "id": 4001020080120,
+    "speaker": "智代子",
+    "text": "大丈夫！\r\nさっき管理人さんに許可もらったから！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080120"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black97",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00002",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black97",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織たちの方に愛依が映ってるのか……\r\nここはカットしてもらわないと……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080130,
+    "speaker": "はづき",
+    "text": "そうですよね～……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080130"
+  },
+  {
+    "id": 4001020080140,
+    "speaker": "はづき",
+    "text": "少しもったいない気もしてしまいます～\r\nとっても素敵な表情なので……",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですね……\r\nでも、元のデータはきちんと保管しておきますから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いつかこの映像を、愛依のファンの方たちが\r\n見られる日まで",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080150,
+    "speaker": "はづき",
+    "text": "……はい\r\nそうですね～",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080150"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4001020080160,
+    "speaker": "はづき",
+    "text": "……あっ\r\nプロデューサーさん、今の所──",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080160"
+  },
+  {
+    "id": 4001020080170,
+    "speaker": "はづき",
+    "text": "もう一度、巻き戻して\r\nもらってもいいですか～？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はい、もちろん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black96",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00275",
+    "fg": "002341"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black96",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001020080180,
+    "speaker": "摩美々",
+    "text": "──じゃーカメラはあとで\r\n持っていくからぁ",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080180"
+  },
+  {
+    "id": 4001020080190,
+    "speaker": "めぐる",
+    "text": "オッケー！\r\n待ってるね！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "charType": "idols",
+    "charId": "1030030020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080190"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001020080200,
+    "speaker": "樹里",
+    "text": "あ……あとさ、誰か\r\nロッジの前の雪だるまにマフラーかけたか？",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "charType": "idols",
+    "charId": "1030110030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080200"
+  },
+  {
+    "id": 4001020080210,
+    "speaker": "樹里",
+    "text": "あのままにしておくと\r\n濡れたり凍ったりしそうだけど……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080210"
+  },
+  {
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001020080220,
+    "speaker": "凛世",
+    "text": "いえ……凛世は……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "charType": "idols",
+    "charId": "3000120030",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080220"
+  },
+  {
+    "id": 4001020080230,
+    "speaker": "摩美々",
+    "text": "それ、私たちじゃないと思うー",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080230"
+  },
+  {
+    "id": 4001020080240,
+    "speaker": "樹里",
+    "text": "……そっか",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "juri",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080240"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "juri",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001020080250,
+    "speaker": "咲耶",
+    "text": "他の誰かがかけてあげたのかもしれないね",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "charType": "idols",
+    "charId": "1030060020",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080250"
+  },
+  {
+    "id": 4001020080260,
+    "speaker": "めぐる",
+    "text": "誰も使わないなら、そのまま\r\nかけてあげててもいいんじゃないかな？",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "meguru",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080260"
+  },
+  {
+    "id": 4001020080270,
+    "speaker": "咲耶",
+    "text": "ロッジの中で\r\n他のみんなにも聞いてみようか",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080270"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black95",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "meguru",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00002",
+    "fg": "off"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black95",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001020080280,
+    "speaker": "はづき",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ここが、どうかしたんですか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080290,
+    "speaker": "はづき",
+    "text": "……実はこのマフラー\r\n私のなんです～……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだったんですか……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080300,
+    "speaker": "はづき",
+    "text": "はい～\r\n暖かそうで可愛いかなと思ったんですが……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080300"
+  },
+  {
+    "id": 4001020080310,
+    "speaker": "はづき",
+    "text": "みなさん、誰のものか探し回ってくださったみたいで\r\n申し訳ないことをしてしまいました～……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080310"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、ここも……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もったいないけど\r\n切らないとな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black94",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00275",
+    "fg": "002341"
+  },
+  {
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "3000120030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black94",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001020080320,
+    "speaker": "凛世",
+    "text": "……\r\n『お年玉』……",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080320"
+  },
+  {
+    "id": 4001020080321,
+    "speaker": "凛世",
+    "text": "本当の中身は……\r\nナイターリフト券……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080321"
+  },
+  {
+    "id": 4001020080330,
+    "speaker": "摩美々",
+    "text": "…………バレてたぁ？",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080330"
+  },
+  {
+    "id": 4001020080340,
+    "speaker": "摩美々",
+    "text": "……凛世は、\r\nスキーとかスノボがよかったぁ？",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080340"
+  },
+  {
+    "id": 4001020080350,
+    "speaker": "凛世",
+    "text": "いえ……\r\n凛世は……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080350"
+  },
+  {
+    "id": 4001020080360,
+    "speaker": "凛世",
+    "text": "ソリが一番……",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "rinze",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080360"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black93",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "rinze",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00002",
+    "fg": "off"
+  },
+  {
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black93",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001020080370,
+    "speaker": "はづき",
+    "text": "ここも使わないんですね～",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080370"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はい、ふたり……\r\n特に摩美々は隠したいでしょうから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080380,
+    "speaker": "はづき",
+    "text": "ふふ……\r\nそうかもしれないですね～",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080380"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "夜だし、スノボやスキーで\r\nロッジから遠く離れるのは危ないんじゃないかって",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "何か他に方法は……って\r\n考えてくれたみたいなんですよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080390,
+    "speaker": "はづき",
+    "text": "それで、ナイターリフト券をやめて\r\nソリを借りていったんですね～",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080390"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はい\r\n……あ、これ内緒にしておいてください",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080400,
+    "speaker": "はづき",
+    "text": "ふふ、もちろんです～",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080400"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──ん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "すみません、今の所も\r\nもう一度巻き戻しますね",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080410,
+    "speaker": "はづき",
+    "text": "はい～",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080410"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black92",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00276",
+    "fg": "002341"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "3000150030",
+    "charPosition": {
+      "x": 936,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "3000080030",
+    "charPosition": {
+      "x": 200,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "3000010030",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black92",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001020080420,
+    "speaker": "甜花",
+    "text": "──……あ、あれ？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080420"
+  },
+  {
+    "id": 4001020080430,
+    "speaker": "霧子",
+    "text": "どうしたの……？　甜花ちゃん",
+    "charAnim1": "anger2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080430"
+  },
+  {
+    "id": 4001020080440,
+    "speaker": "甜花",
+    "text": "そこの……\r\n雪だるま……",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080440"
+  },
+  {
+    "id": 4001020080450,
+    "speaker": "真乃",
+    "text": "あっ……昨日、\r\n智代子ちゃんと愛依ちゃんが作ってたやつかな",
+    "charAnim1": "think",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080450"
+  },
+  {
+    "id": 4001020080460,
+    "speaker": "霧子",
+    "text": "マフラーと……帽子……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080460"
+  },
+  {
+    "id": 4001020080470,
+    "speaker": "甜花",
+    "text": "あったかそうに……なってる……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080470"
+  },
+  {
+    "id": 4001020080480,
+    "speaker": "真乃",
+    "text": "ほんとだねっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080480"
+  },
+  {
+    "id": 4001020080490,
+    "speaker": "霧子",
+    "text": "誰かが……\r\n貸してあげたのかな……",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080490"
+  },
+  {
+    "id": 4001020080500,
+    "speaker": "甜花",
+    "text": "そうかも……？",
+    "charAnim1": "think",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080500"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black91",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00002",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black91",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "………………………\r\n……結華のカメラに写り込んでたのか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080510,
+    "speaker": "はづき",
+    "text": "プロデューサーさん、もしかして……",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080510"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はい、これ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080520,
+    "speaker": "はづき",
+    "text": "プロデューサーさんの帽子だったんですか～",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080520"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00276",
+    "fg": "002341",
+    "waitType": "time",
+    "waitTime": 250
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001020080530,
+    "speaker": "真乃",
+    "text": "えっと……\r\nそれじゃあ、私たちのお年玉、開きます……っ",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080530"
+  },
+  {
+    "textFrame": "off",
+    "se": "0442",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4001020080540,
+    "speaker": "真乃",
+    "text": "『雪の魔法を探せ！』",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080540"
+  },
+  {
+    "id": 4001020080550,
+    "speaker": "霧子",
+    "text": "雪の……魔法……？",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080550"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4001020080560,
+    "speaker": "甜花",
+    "text": "なんか……甜花たち、だけ……\r\nお年玉の中身……違う……",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080560"
+  },
+  {
+    "id": 4001020080570,
+    "speaker": "真乃",
+    "text": "ご、ごめんねっ\r\nもっと違うの引いたらよかった……っ",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080570"
+  },
+  {
+    "id": 4001020080580,
+    "speaker": "甜花",
+    "text": "あ、う、ううん！\r\n真乃ちゃん、なんにも……悪くない……！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080580"
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    }
+  },
+  {
+    "id": 4001020080581,
+    "speaker": "真乃＆霧子＆甜花",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080581"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "tenka",
+    "textFrame": "off"
+  },
+  {
+    "id": 4001020080582,
+    "speaker": "真乃＆霧子＆甜花",
+    "text": "……うーん……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080582"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black90",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00002",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "effectLabel": "black90",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うーん、やっぱりこのお題は\r\n難しかったよなぁ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080590,
+    "speaker": "はづき",
+    "text": "確かに、そうですね～",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080590"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "スキー場の今年のキャッチフレーズに\r\nちなんで……ってことだったんですけど",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080600,
+    "speaker": "はづき",
+    "text": "なるほど～\r\nそういうことだったんですね～",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080600"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black4",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00276",
+    "fg": "002341",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black4",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 4001020080610,
+    "speaker": "真乃",
+    "text": "あ……えっと\r\nあの、ロッジの前の雪だるま……",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080610"
+  },
+  {
+    "id": 4001020080620,
+    "speaker": "霧子",
+    "text": "あ……手袋……\r\n増えてる……",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080620"
+  },
+  {
+    "id": 4001020080630,
+    "speaker": "真乃",
+    "text": "すごく小さいから\r\n子ども用の手袋みたい",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080630"
+  },
+  {
+    "id": 4001020080640,
+    "speaker": "霧子",
+    "text": "また誰かが……\r\n貸してあげたのかな……？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080640"
+  },
+  {
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001020080650,
+    "speaker": "甜花",
+    "text": "でも、このロッジ……\r\n今、使ってるの……甜花たちだけ……",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080650"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "kiriko",
+    "textFrame": "off"
+  },
+  {
+    "id": 4001020080651,
+    "speaker": "真乃＆霧子＆甜花",
+    "text": "……………………",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080651"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black89",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00002",
+    "fg": "off"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black89",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080660,
+    "speaker": "はづき",
+    "text": "これもプロデューサーさんですか～？",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080660"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、これは違います\r\nはづきさんじゃないんですか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080670,
+    "speaker": "はづき",
+    "text": "いえ～、違いますよ～",
+    "charAnim1": "sad1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080670"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black88",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00276",
+    "fg": "002341",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black88",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "ロッジの管理人",
+    "text": "──あぁ、それは\r\nゆきんこかもしれないなぁ",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 4001020080680,
+    "speaker": "甜花",
+    "text": "ゆきんこ……？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080680"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "ロッジの管理人",
+    "text": "そう、この地方に古くから伝わる\r\n雪の妖精のことだよ",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 4001020080690,
+    "speaker": "真乃",
+    "text": "雪の……",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080690"
+  },
+  {
+    "id": 4001020080700,
+    "speaker": "霧子",
+    "text": "妖精さん……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "kiriko",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080700"
+  },
+  {
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    }
+  },
+  {
+    "id": 4001020080710,
+    "speaker": "甜花",
+    "text": "妖精さんだから……\r\n魔法……使えるのかな……",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080710"
+  },
+  {
+    "speaker": "ロッジの管理人",
+    "text": "そうだね\r\n雪の妖精だから、雪がある時だけだろうけど",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "ロッジの管理人",
+    "text": "きっとみんなに、来てくれてありがとうって\r\n言いたかったんじゃないかな",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "kiriko",
+    "textFrame": "off"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "tenka",
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black87",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "kiriko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "tenka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00002",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black87",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001020080720,
+    "speaker": "はづき",
+    "text": "それじゃあ、妖精さんの仕業かも\r\nしれないですね～",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080720"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、そうかもしれないですね",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080730,
+    "speaker": "はづき",
+    "text": "だけど、みなさんの映像を観ていると\r\nとっても眩しくて……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080730"
+  },
+  {
+    "id": 4001020080740,
+    "speaker": "はづき",
+    "text": "本当に魔法ってあるのかも\r\nなんて思っちゃいますね～",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080740"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black86",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00276",
+    "fg": "002341"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black86",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 4001020080750,
+    "speaker": "真乃",
+    "text": "──みんなと、\r\nここに来られてよかった……っ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "0021",
+    "voice": "game_event_communications/400102008/4001020080750"
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black85",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00002",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black85",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0508",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "id": 4001020080760,
+    "speaker": "はづき",
+    "text": "……ふふ\r\nとっても素敵でした～",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "game_event_communications/400102008/4001020080760"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はづきさん、\r\n付き合っていただいてありがとうございました",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080770,
+    "speaker": "はづき",
+    "text": "いえいえ～\r\n公開が楽しみですね～",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080770"
+  },
+  {
+    "id": 4001020080780,
+    "speaker": "はづき",
+    "text": "はやくたくさんの人に\r\n見ていただきたいです～",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080780"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はい、本当に……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4001020080790,
+    "speaker": "はづき",
+    "text": "きっとファンの方々も、\r\n素敵なアイドルのみなさんを見て……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080790"
+  },
+  {
+    "id": 4001020080800,
+    "speaker": "はづき",
+    "text": "元気の魔法をもらえるはずです～♪",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "game_event_communications/400102008/4001020080800"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "bg": "00093",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうですね、彼女たちはきっと",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "魔法使いや、妖精みたいに\r\nたくさんの人を幸せにすることが出来る──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "アイドルって、きっと\r\nそういう『魔法』が使えるんです",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end"
+  }
+]

@@ -1,0 +1,582 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00028",
+    "bgm": "012"
+  },
+  {
+    "id": 2014005020010,
+    "speaker": "甘奈",
+    "text": "ひとつめのお仕事、結構早く終わったね",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1030140020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/201400502/2014005020010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、次までまだ時間があるし……\r\nどこかで少し、時間をつぶそう",
+    "charAnim2": "face_wait",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014005020020,
+    "speaker": "甘奈",
+    "text": "それなら……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020020"
+  },
+  {
+    "id": 2014005020021,
+    "speaker": "甘奈",
+    "text": "——あっ！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020021"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん、どうした？",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014005020030,
+    "speaker": "甘奈",
+    "text": "あれ、甜花ちゃんだよ、プロデューサーさん……！",
+    "charAnim1": "surp1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え、甜花……？",
+    "charAnim2": "face_smile2",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おぉ！　甜花と……それから甘奈のポスターか！\r\nこの間作ってもらったものだな",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "amana",
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect",
+    "stillType": "idols",
+    "stillId": "1030140020"
+  },
+  {
+    "id": 2014005020040,
+    "speaker": "甘奈",
+    "text": "ね！\r\nこのポスターの甜花ちゃん、やっぱかわいーなぁ……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、事務所にサンプルが送られてきた時も\r\nそうやって眺めてたよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014005020050,
+    "speaker": "甘奈",
+    "text": "うん、特に今回のはいつもと違った魅力があって\r\nつい見とれちゃう……☆",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020050"
+  },
+  {
+    "id": 2014005020060,
+    "speaker": "甘奈",
+    "text": "あれ？　でもサンプルの時と、なんか印象違うかも",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、そう思うか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014005020070,
+    "speaker": "甘奈",
+    "text": "うんっ。甜花ちゃんキラキラ倍増～って感じ！\r\nお日様の下で見てるから？　……だけじゃないよね",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ。甜花の魅力が引き立つように、\r\nいろいろと調整してもらったからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014005020080,
+    "speaker": "甘奈",
+    "text": "そうだったんだ！\r\nやっぱりプロデューサーさんはすごいなぁ",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは。まぁ俺は、こんなふうにしてくださいって\r\n頼んだだけで、あとは甜花自身の魅力さ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014005020090,
+    "speaker": "甘奈",
+    "text": "でも、甜花ちゃんのことをしっかりわかってるから\r\n魅力を引き出せるんじゃないかな？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020090"
+  },
+  {
+    "id": 2014005020100,
+    "speaker": "甘奈",
+    "text": "えへへ、かわいーとこいっぱいの甜花ちゃんに\r\nこんなに頼れるプロデューサーさんがついてるんだもん",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020100"
+  },
+  {
+    "id": 2014005020110,
+    "speaker": "甘奈",
+    "text": "なんかも～、最強って感じだよね☆",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はは、大げさな気もするが……\r\nそう言ってもらえて、嬉しいよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect",
+    "stillCtrl": "off"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、そうだ\r\nせっかくだし、甜花と一緒に写真撮っておこう！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014005020120,
+    "speaker": "甘奈",
+    "text": "やったー！　ありがとー、プロデューサーさん！\r\nえっへへー、かわいー甜花ちゃんとツーショット☆",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020120"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "甘奈、もう少し横に寄れるか？",
+    "charAnim2": "face_wait",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 686,
+      "y": 640,
+      "order": 1
+    },
+    "se": "0243",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2014005020130,
+    "speaker": "甘奈",
+    "text": "おっけー！\r\n……こんな感じかな？",
+    "charAnim1": "surp2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、大丈夫だ！　撮るぞ～",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "se": "0132",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2014005020140,
+    "speaker": "甘奈",
+    "text": "えへへ、ありがと！",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "voice": "produce_events/201400502/2014005020140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "じゃ、次は甘奈のポスターと一緒にだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014005020150,
+    "speaker": "甘奈",
+    "text": "ん～、自分と撮るのはなんか恥ずかしいから大丈夫かな",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020150"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか？\r\nいい記念になると思ったんだが——",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014005020160,
+    "speaker": "甘奈",
+    "text": "あ、じゃあさ！\r\nプロデューサーさんが甘奈のと写るんじゃダメかな？",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……？　いいけど？\r\n……こんな感じで、隣に立っておけばいいか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014005020170,
+    "speaker": "甘奈",
+    "text": "バッチリ！　じゃ、撮るね……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020170"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "se": "0132",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2014005020180,
+    "speaker": "甘奈",
+    "text": "……うん、いいかんじ☆\r\nありがと、プロデューサーさんっ！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020180"
+  },
+  {
+    "id": 2014005020190,
+    "speaker": "甘奈",
+    "text": "——あっ、そろそろ移動しないとだよね、行こっ！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_shy",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020190"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "blank",
+    "charLabel": "amana",
+    "textFrame": "off",
+    "se": "0117",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00003",
+    "bgm": "002",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……甘奈、本当に自分と撮らなくて良かったのか？",
+    "charAnim1": "wait2",
+    "charAnim2": "face_surp",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014005020200,
+    "speaker": "甘奈",
+    "text": "うん、本当に気にしないで！",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "俺が写っても記念にはならないと思うんだが……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2014005020210,
+    "speaker": "甘奈",
+    "text": "それは違うかな！",
+    "charAnim1": "anger3",
+    "charAnim2": "face_smile",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020210"
+  },
+  {
+    "id": 2014005020220,
+    "speaker": "甘奈",
+    "text": "だって、甘奈のポスターを見てもらえるのって\r\nプロデューサーさんのおかげでしょ？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020220"
+  },
+  {
+    "id": 2014005020230,
+    "speaker": "甘奈",
+    "text": "だから、甘奈にとってはね？　プロデューサーさんが\r\n一緒の方が記念になるんだ☆　えへへ！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "amana",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/201400502/2014005020230"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

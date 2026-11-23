@@ -1,0 +1,823 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00269",
+    "bgm": "016"
+  },
+  {
+    "speaker": "番組MC",
+    "text": "この冬、ぜったいに見るべきお出かけスポット！\r\n第１位は！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "番組MC",
+    "text": "現場に櫻木真乃ちゃんが行ってくれています！\r\n真乃ちゃーん！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00410",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_smile",
+    "charAnim3": "off",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1030010050",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2001012110010,
+    "speaker": "真乃",
+    "text": "おはようございます……っ\r\nイルミネーションスターズの櫻木真乃です",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200101211/2001012110010"
+  },
+  {
+    "id": 2001012110020,
+    "speaker": "真乃",
+    "text": "……見てください、このイルミネーション\r\n澄んだ冬の空にとってもきれいに輝いています……っ",
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200101211/2001012110020"
+  },
+  {
+    "speaker": "番組MC",
+    "text": "すごいねー\r\n確か、大幅にリニューアルしたんだっけ",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "id": 2001012110030,
+    "speaker": "真乃",
+    "text": "はい……っ、電飾の数が２倍になって、\r\nイルミネーションエリアもぐっと広がりましたっ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "fg": "002681",
+    "middleFg": "002341",
+    "fgEffect": "fade",
+    "middleFgEffect": "fade",
+    "fgEffectTime": 2500,
+    "middleFgEffectTime": 2500,
+    "voice": "produce_events/200101211/2001012110030"
+  },
+  {
+    "id": 2001012110040,
+    "speaker": "真乃",
+    "text": "明るい時間帯でもこんなにきれいなんですけれど、\r\n夜は見どころが満載でとってもおすすめです……っ",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200101211/2001012110040"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00266",
+    "fg": "off",
+    "middleFg": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……真乃。生放送だからって、\r\n昨日はちょっと緊張してたみたいだけど……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うん、ちゃんと紹介できてるぞ！）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bg": "00410",
+    "fg": "002681",
+    "middleFg": "002341",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2001012110050,
+    "speaker": "真乃",
+    "text": "遠くから見ると、木々に小さなお花が\r\nたくさん咲いているみたいなんですけれど……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200101211/2001012110050"
+  },
+  {
+    "id": 2001012110060,
+    "speaker": "真乃",
+    "text": "近付くと、お星様の瞬きの中にいるみたいで、\r\n星空の中をお散歩している気分になれるんです……っ",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200101211/2001012110060"
+  },
+  {
+    "speaker": "番組MC",
+    "text": "うんうん、目の前にするとそんなに綺麗なんだ\r\nますます行ってみたくなるな～",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2001012110070,
+    "speaker": "真乃",
+    "text": "特におすすめなのは……",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200101211/2001012110070"
+  },
+  {
+    "id": 2001012110080,
+    "speaker": "真乃",
+    "text": "１時間に１度、イルミネーションの光が\r\n切り替わるタイミングです……っ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200101211/2001012110080"
+  },
+  {
+    "id": 2001012110090,
+    "speaker": "真乃",
+    "text": "まるで魔法がかけられたみたいで\r\nとっても素敵なんですっ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200101211/2001012110090"
+  },
+  {
+    "id": 2001012110100,
+    "speaker": "真乃",
+    "text": "よかったら、大切な人との思い出に、\r\nみなさんにもぜひ見に行っていただけたらと思いますっ",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200101211/2001012110100"
+  },
+  {
+    "id": 2001012110110,
+    "speaker": "真乃",
+    "text": "期間限定ですので、お見逃しなくです……っ",
+    "charAnim1": "anger3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200101211/2001012110110"
+  },
+  {
+    "id": 2001012110120,
+    "speaker": "真乃",
+    "text": "櫻木真乃でしたっ\r\nスタジオにお返しします──",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200101211/2001012110120"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "black2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close",
+    "charAnim3": "on",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00266",
+    "fg": "off",
+    "middleFg": "off",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0097",
+    "effectLabel": "black2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0461",
+    "waitType": "time",
+    "waitTime": 2300
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 600
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『真乃、お疲れ様！\r\n生放送見たぞ。楽しそうですごくよかった！』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1300
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（──っと……\r\n本当は現場に付き添えたらよかったんだけど）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（急に出張が入っちゃったからなぁ……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうだ……向こうに着いてからの\r\nバスの時間調べておかないとだ……えーっと──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgEffectTime": 2000,
+    "bgm": "fade_out",
+    "se": "0461",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "se": "0182",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "0000"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00266",
+    "bgEffect": "fade",
+    "bgm": "0097",
+    "waitType": "time",
+    "waitTime": 2800
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……ん？　真乃からか\r\nもう上がったのかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00241",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "真乃",
+    "text": "『お疲れさまです、プロデューサーさん\r\n見てくださってありがとうございます』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "005"
+  },
+  {
+    "speaker": "真乃",
+    "text": "『今日は出張の日だと思うんですけれど、\r\n大丈夫でしたでしょうか？』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『おう、早めに空港に来てロビーの大きなテレビで見たよ\r\nたくさんの人が見てくれてて誇らしくなった』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "真乃",
+    "text": "『わ、そうだったんですね』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "真乃",
+    "text": "『収録の最中はとにかく夢中だったので……』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『短い時間の中で情報をちゃんと伝えつつ、\r\nMCさんとのやり取りも、しっかりできてたって思うよ』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "真乃",
+    "text": "『ありがとうございます\r\nそう言っていただけて、とってもうれしいです^^』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "speaker": "真乃",
+    "text": "『前もってイルミネーションを見に行けたので\r\n慌てずにお話しできたような気がします』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "speaker": "真乃",
+    "text": "『プロデューサーさんのおかげです』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『どういたしまして\r\nでも、それも真乃が行きたいって思ってくれたからだよ』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『だから、これからも\r\n行きたいとこでもなんでも、言ってくれな！』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "真乃",
+    "text": "『はいっ\r\nありがとうございます』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00266",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………さて、そろそろ搭乗口かな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0182",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00241",
+    "bgEffect": "fade",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "speaker": "真乃",
+    "text": "『お仕事のこととは\r\nちがうんですけれど……』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "speaker": "真乃",
+    "text": "『そうしたら、もう一度、\r\nイルミネーションを見に行ってもいいでしょうか』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "speaker": "真乃",
+    "text": "『プロデューサーさんが、\r\n出張から帰ってきたら、一緒に』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『全然構わないぞ』",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0272"
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……そうだ──確かあの時……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00409",
+    "fg": "001922",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2001012110130,
+    "label": "回想",
+    "speaker": "真乃",
+    "text": "……灯織ちゃんとめぐるちゃんとも見れたら──\r\nふたりとも喜んでくれるかな……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_close",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200101211/2001012110130"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00266",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00241",
+    "bgEffect": "fade",
+    "bgEffectTime": 2000,
+    "se": "0461",
+    "waitType": "time",
+    "waitTime": 1700
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『なんなら、灯織とめぐるも誘って\r\nみんなで行くか？』",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "真乃",
+    "text": "『わ、本当ですか\r\nみんなで行けたらとってもうれしいです^^』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "真乃",
+    "text": "『えっと、そしたら\r\n約束です……』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "speaker": "真乃",
+    "text": "『絶対、絶対\r\n気を付けて帰ってきてくださいね』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "真乃",
+    "text": "『とっても、楽しみにしています』",
+    "textCtrl": "p",
+    "textFrame": "001"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00087",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 4000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『おう、なるはやで帰れるようにするな！』",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0461"
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "fade",
+    "bgEffectTime": 2500,
+    "waitType": "time",
+    "waitTime": 4500
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

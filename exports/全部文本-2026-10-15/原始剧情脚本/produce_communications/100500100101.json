@@ -1,0 +1,164 @@
+[
+  {
+    "speaker": "off",
+    "charAnim1": "wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charType": "characters",
+    "charId": "005",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00001",
+    "se": "0156",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それ、朝ご飯か？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1005001001010010,
+    "speaker": "摩美々",
+    "text": "そうですよー\r\n美味しそうなサンドイッチを見かけたので、ついー",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100101/1005001001010010"
+  },
+  {
+    "id": 1005001001010020,
+    "speaker": "摩美々",
+    "text": "……あ、手にソースがついちゃいましたぁ",
+    "charAnim2": "face_wait3",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100101/1005001001010020"
+  },
+  {
+    "select": "水道はすぐそこだぞ",
+    "nextLabel": "1005001001011"
+  },
+  {
+    "select": "ウェットティッシュが\r\nあるぞ",
+    "nextLabel": "1005001001012"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "服にじゃないのか",
+    "nextLabel": "1005001001013"
+  },
+  {
+    "id": 1005001001010030,
+    "label": "1005001001011",
+    "speaker": "摩美々",
+    "text": "ソースもすっごく美味しいのにー、\r\nもったいないですー",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100101/1005001001010030"
+  },
+  {
+    "id": 1005001001010040,
+    "speaker": "摩美々",
+    "text": "あ。プロデューサー、味見してみますかぁ？\r\n……ふふー。冗談ですよー",
+    "charAnim1": "anger1",
+    "charAnim2": "face_shy",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100101/1005001001010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1005001001010050,
+    "label": "1005001001012",
+    "speaker": "摩美々",
+    "text": "プロデューサーは優しいですねー",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100101/1005001001010050"
+  },
+  {
+    "id": 1005001001010060,
+    "speaker": "摩美々",
+    "text": "助かりましたぁ\r\nすぐに渡してくれるなんて、準備いいんですねー",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100101/1005001001010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1005001001010070,
+    "label": "1005001001013",
+    "speaker": "摩美々",
+    "text": "えー、流石にそこまで子どもじゃないんですケド",
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100101/1005001001010070"
+  },
+  {
+    "id": 1005001001010080,
+    "speaker": "摩美々",
+    "text": "そういうこと言うのはぁ、\r\nちょっと失礼だと思いますー",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/100500100101/1005001001010080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……)",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

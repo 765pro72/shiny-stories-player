@@ -1,0 +1,50 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0000"
+  },
+  {
+    "nextLabel": "true",
+    "command": "conditional_jump",
+    "commandKey": "A-3_read"
+  },
+  {
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "nextLabel": "end"
+  },
+  {
+    "label": "true",
+    "textFrame": "off",
+    "select": "散歩にでも\r\n行ってみるか",
+    "nextLabel": "1"
+  },
+  {
+    "textCtrl": "cm",
+    "textFrame": "off",
+    "select": "掃除でもしてみるか",
+    "nextLabel": "2"
+  },
+  {
+    "label": "1",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "label": "2",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

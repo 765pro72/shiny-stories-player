@@ -1,0 +1,831 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00150",
+    "bgm": "0000"
+  },
+  {
+    "id": 1016003010010,
+    "speaker": "千雪",
+    "text": "ボタニカル柄のご機嫌なファブリック\r\n112センチ×100センチ、1,230円",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010010"
+  },
+  {
+    "id": 1016003010020,
+    "speaker": "千雪",
+    "text": "遠い国の屋根裏部屋で眠っていたチロリアンテープ\r\n５センチ×50センチ、528円",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010020"
+  },
+  {
+    "id": 1016003010030,
+    "speaker": "千雪",
+    "text": "仲良し３色で撚った麻紐、\r\n各色20メートル、330円",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010030"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00151",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1016003010040,
+    "speaker": "千雪",
+    "text": "出来上がったマイ・スイート・巾着袋、\r\n────",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010040"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "white_add",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "se": "0692",
+    "waitType": "time",
+    "waitTime": 1600
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bgm": "012",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0399",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────えっ……\r\nもうこんなに値が付いてるのか……！？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0399",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "残り……何日だっけ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1016003010050,
+    "speaker": "千雪",
+    "text": "……え、ええと\r\nあと３日です……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "016",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101600301/1016003010050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか\r\n……まだ値上がりするかな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1016003010060,
+    "speaker": "千雪",
+    "text": "……\r\nどうでしょう……",
+    "charAnim1": "wait4",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010060"
+  },
+  {
+    "charAnim2": "face_sad",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_anger2_s",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0730",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………うーん\r\nまぁ、オークション企画だからな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "これだけ注目があれば企画としては成功だろうな\r\nチャリティになるんだから、額が大きいのは悪いことじゃない",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1016003010070,
+    "speaker": "千雪",
+    "text": "そ、そうですよね……！\r\n私……────",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "se": "0220",
+    "voice": "produce_events/101600301/1016003010070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん。喜んでいいんだ\r\n千雪や千雪の作品が評価されてるってことだから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1016003010080,
+    "speaker": "千雪",
+    "text": "え、ええ……それは本当に嬉しいんです\r\n…………でも、こんなハンドメイドの巾着袋が────",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010080"
+  },
+  {
+    "textFrame": "off",
+    "se": "0152",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "まぁ……\r\nちょっとゼロの数が、な",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00224",
+    "bgEffect": "fade",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1016003010081,
+    "speaker": "千雪",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010081"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "se": "0549",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ、また上がった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1016003010090,
+    "speaker": "千雪",
+    "text": "──なんだかありがたいような申し訳ないような……\r\nもちろん、一生懸命作ったものではあるんですけど",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101600301/1016003010090"
+  },
+  {
+    "id": 1016003010100,
+    "speaker": "千雪",
+    "text": "だからって、その……\r\nちょっと見合わないといいますか",
+    "charAnim1": "touch",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……まぁ、気持ちはわかるよ",
+    "charAnim2": "face_sad",
+    "charAnim4": "blank",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "けど、千雪が心をこめて作ったものだってこともよくわかる\r\n忙しい合間を縫って、丁寧に",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0328"
+  },
+  {
+    "id": 1016003010110,
+    "speaker": "千雪",
+    "text": "…………",
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger2_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ここはありがたく見守らせてもらおう\r\n……な？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1016003010120,
+    "speaker": "千雪",
+    "text": "は、はい……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101600301/1016003010120"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00344",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1016003010130,
+    "speaker": "千雪",
+    "text": "……うん\r\n入札してくださる方のお気持ち、大事にしなきゃ────",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010130"
+  },
+  {
+    "id": 1016003010140,
+    "speaker": "千雪",
+    "text": "ラジオでちょっと話題にしただけなのに\r\nこんな企画につなげてくださったスタッフさんたちにも",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010140"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そう思うよ。『G.R.A.D.』にエントリーしてるアイドルたちは\r\nみんなこういう機会を大切に────",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger2_s",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──あ、その……\r\nすまん、ちょっと先走っちゃったな",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0220"
+  },
+  {
+    "id": 1016003010150,
+    "speaker": "千雪",
+    "text": "あ……",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010150"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "textFrame": "off",
+    "se": "0242b",
+    "waitType": "time",
+    "waitTime": 400
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、急いで結論を出さなくていいんだ\r\n出場したってしなくたって、千雪は千雪だから────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00224",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1016003010160,
+    "speaker": "千雪",
+    "text": "──ふふっ、プロデューサーさん\r\n『G.R.A.D.』の件だったら、もう私の気持ちは決まってます",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010160"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1016003010170,
+    "speaker": "千雪",
+    "text": "出させてください",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101600301/1016003010170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────っ、えっと────",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0730"
+  },
+  {
+    "id": 1016003010180,
+    "speaker": "千雪",
+    "text": "落ちたって受かったって、\r\n『千雪は千雪』ですから",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0220",
+    "voice": "produce_events/101600301/1016003010180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……千雪",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0328"
+  },
+  {
+    "id": 1016003010190,
+    "speaker": "千雪",
+    "text": "グランプリ、獲りにいきますね",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────ははっ、そうか……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00344",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、グランプリを獲ろう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "id": 1016003010200,
+    "speaker": "千雪",
+    "text": "はい……！\r\nどうかよろしくお願いします、プロデューサーさん……！",
+    "charAnim1": "smile1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101600301/1016003010200"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00087",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00018",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00319",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "textFrame": "off",
+    "se": "0399",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……うわ、また上がった",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "fg": "001922",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 1016003010190,
+    "label": "回想",
+    "speaker": "千雪",
+    "text": "グランプリ、獲りにいきますね",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101600301/1016003010190"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00002",
+    "fg": "off",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──うん\r\n……頑張ろうな、千雪",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "その気持ちにはさ、\r\n値段なんてつけられないよ────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 3000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

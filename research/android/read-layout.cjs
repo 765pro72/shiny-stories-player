@@ -1,0 +1,1 @@
+const {PNG}=require('pngjs'),fs=require('fs');for(const n of ['001','002']){const p='cache/images/event/txt/'+n+'.png';if(fs.existsSync(p)){const i=PNG.sync.read(fs.readFileSync(p));console.log(n,i.width,i.height)}}const s=fs.readFileSync('public/player/scenario/TextPlayer.js','utf8');console.log(s.slice(0,4000));

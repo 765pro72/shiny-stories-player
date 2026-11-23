@@ -1,0 +1,259 @@
+[
+  {
+    "bgm": "017",
+    "bg": "00023"
+  },
+  {
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "textFrame": "003",
+    "speaker": "はづき",
+    "textCtrl": "p",
+    "charLabel": "hazuki",
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad_s",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 7901001040010,
+    "textFrame": "003",
+    "speaker": "はづき",
+    "text": "残念ですね……。一次審査を突破できたんですし、\r\nこの調子で、と思ったんですけど",
+    "textCtrl": "p",
+    "charLabel": "hazuki",
+    "charAnim1": "sad1",
+    "charLipAnim": "lip_sad",
+    "voice": "produce_events/700100104/7901001040010"
+  },
+  {
+    "id": 7901001040020,
+    "textFrame": "003",
+    "speaker": "はづき",
+    "text": "現実は、なかなか厳しいですね……",
+    "textCtrl": "p",
+    "charLabel": "hazuki",
+    "charAnim1": "wait1",
+    "charLipAnim": "lip_sad",
+    "voice": "produce_events/700100104/7901001040020"
+  },
+  {
+    "id": 7902001040010,
+    "textFrame": "004",
+    "speaker": "社長",
+    "text": "しかし、新人アイドルと新人プロデューサーにしては、\r\n悪くない結果だった",
+    "textCtrl": "p",
+    "voice": "produce_events/700100104/7902001040010"
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "でも、まだまだ先にも行けたと思うんです\r\n俺にもっと力があれば……！",
+    "textCtrl": "p"
+  },
+  {
+    "id": 7902001040020,
+    "textFrame": "004",
+    "speaker": "社長",
+    "text": "評価はしているが、弱音を聞きたいわけではないぞ",
+    "textCtrl": "p",
+    "voice": "produce_events/700100104/7902001040020"
+  },
+  {
+    "id": 7902001040030,
+    "textFrame": "004",
+    "speaker": "社長",
+    "text": "力が足りないのなら、彼女とともに\r\nこれから成長していけばいいだけのことだ",
+    "textCtrl": "p",
+    "voice": "produce_events/700100104/7902001040030"
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "……そうですね\r\n彼女に、会いに行ってきます",
+    "textCtrl": "p"
+  },
+  {
+    "id": 7902001040040,
+    "textFrame": "004",
+    "speaker": "社長",
+    "text": "ああ、行ってこい",
+    "textCtrl": "p",
+    "voice": "produce_events/700100104/7902001040040"
+  },
+  {
+    "textFrame": "off",
+    "speaker": "off"
+  },
+  {
+    "waitType": "effect",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    }
+  },
+  {
+    "speaker": "off",
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charType": "characters",
+    "charId": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charLabel": "mano",
+    "charAnim1": "wait",
+    "charLipAnim": "lip_sad_s2",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "effect",
+    "bg": "00002",
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    }
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "真乃……『W.I.N.G.』の二次審査の結果が出た\r\n残念だけど……",
+    "textCtrl": "p"
+  },
+  {
+    "id": 7001001040010,
+    "textFrame": "001",
+    "speaker": "真乃",
+    "text": "そう、ですか……アイドルってやっぱり厳しいですね……\r\n私の力はまだまだ足りてないんだってよくわかりました……",
+    "textCtrl": "p",
+    "charLabel": "mano",
+    "charAnim1": "think",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "voice": "produce_events/700100104/7001001040010"
+  },
+  {
+    "id": 7001001040020,
+    "textFrame": "001",
+    "speaker": "真乃",
+    "text": "私、自分がアイドルに向いてるのか、\r\nまだよくわかっていません……",
+    "textCtrl": "p",
+    "charLabel": "mano",
+    "charAnim1": "sad2",
+    "charAnim3Loop": false,
+    "charAnim3": "no2",
+    "charLipAnim": "lip_sad",
+    "voice": "produce_events/700100104/7001001040020"
+  },
+  {
+    "id": 7001001040030,
+    "textFrame": "001",
+    "speaker": "真乃",
+    "text": "でも、ちょっとずつ歌やダンスが上手くなって、\r\nいろんなお仕事も頂いて……毎日が楽しく思えてきたんです",
+    "textCtrl": "p",
+    "charLabel": "mano",
+    "charAnim1": "wait1",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "voice": "produce_events/700100104/7001001040030"
+  },
+  {
+    "id": 7001001040040,
+    "textFrame": "001",
+    "speaker": "真乃",
+    "text": "アイドルとしてやっていけるのか、\r\nそれほど自信はありません。けど……",
+    "textCtrl": "p",
+    "charLabel": "mano",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "voice": "produce_events/700100104/7001001040040"
+  },
+  {
+    "id": 7001001040050,
+    "textFrame": "001",
+    "speaker": "真乃",
+    "text": "まだ、アイドルを続けていきたいですっ",
+    "textCtrl": "p",
+    "charLabel": "mano",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "voice": "produce_events/700100104/7001001040050"
+  },
+  {
+    "id": 7001001040060,
+    "textFrame": "001",
+    "speaker": "真乃",
+    "text": "だから……プロデューサーさんさえ良ければ……\r\nこれからも私のこと応援してくれませんか……？",
+    "textCtrl": "p",
+    "charLabel": "mano",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_trouble",
+    "voice": "produce_events/700100104/7001001040060"
+  },
+  {
+    "textFrame": "002",
+    "speaker": "プロデューサー",
+    "text": "もちろんだ、真乃！　\r\nこちちこそ、これからもよろしく頼むよ",
+    "textCtrl": "p",
+    "charAnim2": "blank"
+  },
+  {
+    "id": 7001001040070,
+    "textFrame": "001",
+    "speaker": "真乃",
+    "text": "プロデューサーさん……ありがとうございますっ\r\n私、頑張りますね",
+    "textCtrl": "p",
+    "charLabel": "mano",
+    "charAnim1": "hello",
+    "charLipAnim": "lip_smile",
+    "voice": "produce_events/700100104/7001001040070"
+  },
+  {
+    "id": 7001001040080,
+    "textFrame": "001",
+    "speaker": "真乃",
+    "text": "むんっ",
+    "textCtrl": "p",
+    "charLabel": "mano",
+    "charAnim1": "anger1",
+    "charLipAnim": "lip_smile",
+    "voice": "produce_events/700100104/7001001040080"
+  },
+  {
+    "label": "end"
+  }
+]

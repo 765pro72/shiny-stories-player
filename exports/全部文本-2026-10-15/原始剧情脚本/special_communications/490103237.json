@@ -1,0 +1,620 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00684",
+    "bgm": "057b"
+  },
+  {
+    "select": "ペットボトル",
+    "nextLabel": "1"
+  },
+  {
+    "select": "雨",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "靴下",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "textFrame": "off",
+    "se": "0914",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00682",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "弟子",
+    "text": "そうですね、和泉さん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032370010,
+    "speaker": "愛依",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "join",
+    "voice": "special_communications/490103237/4901032370010"
+  },
+  {
+    "label": "2",
+    "speaker": "弟子",
+    "text": "そうですね、和泉さん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032370020,
+    "speaker": "霧子",
+    "text": "ま、待って……\r\n雨に打たれた時間は短いから、偽装はできないって……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370020"
+  },
+  {
+    "speaker": "弟子",
+    "text": "そうでした、思い違いをしていたようですね……",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "3",
+    "speaker": "弟子",
+    "text": "そうですね、和泉さん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032370030,
+    "speaker": "愛依",
+    "text": "……え、靴下……？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370030"
+  },
+  {
+    "speaker": "弟子",
+    "text": "（あれ、違ったかな……？）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "join",
+    "textFrame": "off",
+    "bg": "00684",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032370040,
+    "speaker": "冬優子",
+    "text": "……どういうことですか？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370040"
+  },
+  {
+    "speaker": "弟子",
+    "text": "台所にいた桑山さんたちから聞いています",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgEffectTime": 300,
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00683",
+    "fg": "001921",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "fgEffect": "fade",
+    "fgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "弟子",
+    "text": "冷蔵庫の中に、冷えたペットボトルがあったと……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "そして、台所には──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "凍るか凍らないか……という温度をキープするための\r\n冷蔵庫もありました",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1030190010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "弟子",
+    "text": "和泉さんはその中からペットボトルを取りだして……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "念のため、凍った固体の部分をなくすために\r\n冷蔵庫に入れていたのでしょう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "fg": "fade_out",
+    "bgEffect": "fade",
+    "bgEffectTime": 300,
+    "fgEffectTime": 300,
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00690",
+    "fg": "001921",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "fgEffect": "fade",
+    "fgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 4901032370050,
+    "speaker": "千雪",
+    "text": "そうやって冷やしたお水を遺体にかけた……\r\nだからメモがふやけて、濡れていたのね……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370050"
+  },
+  {
+    "id": 4901032370060,
+    "speaker": "雛菜",
+    "text": "ん～……\r\nだったら、天窓は開けておいていいんじゃない？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370060"
+  },
+  {
+    "id": 4901032370070,
+    "speaker": "雛菜",
+    "text": "わざわざ閉めて、\r\n雨が当たらないところにずらさなくても",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370070"
+  },
+  {
+    "id": 4901032370080,
+    "speaker": "灯織",
+    "text": "……私もそう思います",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370080"
+  },
+  {
+    "id": 4901032370090,
+    "speaker": "灯織",
+    "text": "お弟子さんは、凶器は何だと思っているんですか？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370090"
+  },
+  {
+    "speaker": "弟子",
+    "text": "……碁石です",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "和泉さんはそれを袋のようなものに入れ、\r\nブラックジャック代わりにして『Ａ』を殺したのでしょう",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032370100,
+    "speaker": "小糸",
+    "text": "ご、碁石のセットを見ていた、というのは\r\nわたしも聞きました……！",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370100"
+  },
+  {
+    "id": 4901032370110,
+    "speaker": "小糸",
+    "text": "でも…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370110"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00432",
+    "fg": "fade_out",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "fgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "se": "0453",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 4901032370120,
+    "speaker": "冬優子",
+    "text": "……少し、進め方が強引じゃないですか？\r\nまるで愛依ちゃんを犯人にしたいみたい",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370120"
+  },
+  {
+    "id": 4901032370130,
+    "speaker": "冬優子",
+    "text": "そういうことなら……ふゆは\r\n愛依ちゃんに人を殺すなんてできない、と主張します",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370130"
+  },
+  {
+    "id": 4901032370140,
+    "speaker": "あさひ",
+    "text": "わたしも同感っす",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370140"
+  },
+  {
+    "id": 4901032370150,
+    "speaker": "あさひ",
+    "text": "……愛依ちゃん、本当に殺したんすか？",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370150"
+  },
+  {
+    "id": 4901032370160,
+    "speaker": "愛依",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "fade_out",
+    "voice": "special_communications/490103237/4901032370160"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00277",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "se": "0220",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 4901032370170,
+    "speaker": "愛依",
+    "text": "そう……\r\nうちがやった…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "011",
+    "voice": "special_communications/490103237/4901032370170"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close2",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "surp3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "fuyuko",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1040180030",
+    "charPosition": {
+      "x": 310,
+      "y": 640,
+      "order": 1
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "surp3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charType": "idols",
+    "charId": "1030170010",
+    "charPosition": {
+      "x": 796,
+      "y": 640,
+      "order": 2
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "fuyuko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "asahi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901032370180,
+    "speaker": "愛依",
+    "text": "信じてくれたのに……ごめん",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_surp",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "special_communications/490103237/4901032370180"
+  },
+  {
+    "speaker": "弟子",
+    "text": "……自白してくださって\r\nありがとうございます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "弟子",
+    "text": "タイムリミットが迫っておりますので……\r\n解毒剤の在処を教えていただけますか？",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032370190,
+    "speaker": "愛依",
+    "text": "…………それ、は……",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370190"
+  },
+  {
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_shy_s",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim4": "blank",
+    "charLabel": "mei",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 4901032370200,
+    "speaker": "千雪",
+    "text": "何か不都合があるのかな？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040160020",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "special_communications/490103237/4901032370200"
+  },
+  {
+    "id": 4901032370210,
+    "speaker": "千雪",
+    "text": "あとでお弟子さんにだけ話す、とかでも\r\n私は構いません",
+    "charAnim1": "wait3",
+    "charLipAnim": "lip_anger2",
+    "charLabel": "chiyuki",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370210"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "chiyuki",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00432",
+    "bgEffect": "fade",
+    "bgEffectTime": 1000,
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "弟子",
+    "text": "そうですね……\r\n教えてくれるなら、どんな形でも歓迎です",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901032370220,
+    "speaker": "愛依",
+    "text": "……わかった\r\nじゃあ、そうするから……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370220"
+  },
+  {
+    "id": 4901032370230,
+    "speaker": "愛依",
+    "text": "10分後に、うちの部屋に来て……\r\n解毒剤を用意しておくから……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370230"
+  },
+  {
+    "textFrame": "off",
+    "se": "1196",
+    "waitType": "time",
+    "waitTime": 5000
+  },
+  {
+    "id": 4901032370231,
+    "speaker": "あさひ＆冬優子",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "special_communications/490103237/4901032370231"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgEffectTime": 2500,
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 5000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,1296 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   283 UNIFIED MULTI-DEVICE ADAPTATION (Desktop Parity + All Target Ratios)
+   Explicitly calibrated for:
+     • 20:9 Landscape & Portrait Phones (e.g. 2400×1080 -> 800×360 / 915×412)
+     • 21:9 Cinema Ultrawide Phones     (e.g. 2520×1080 -> 840×360 / 960×412)
+     • 16:10 Tablets                    (e.g. 1024×640 / 1280×800 / MatePad)
+     • 3:2 Tablets & Laptops            (e.g. 960×640 / 1080×720 / 1200×800)
+     • Windows High-DPI (125%–200%) & Huawei JoyTrans (卓易通) GPU Optimization
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+html, body {
+  min-height: 100dvh;
+}
+
+/* ── 0. GLOBAL DESKTOP-PARITY SYMMETRY LOCK FOR HOME OFFICE (.side & .tools) ──
+   Ensures left (.side) and right (.tools) rails are ALWAYS vertical, symmetric,
+   centered at 50% height, and never stretch horizontally or clip off the top! */
+body.page-home nav.side.ui,
+html[data-platform="android"] body.page-home nav.side.ui,
+body.page-home .tools,
+html[data-platform="android"] body.page-home .tools {
+  position: fixed !important;
+  top: 50% !important;
+  bottom: auto !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: auto !important;
+  height: auto !important;
+  z-index: 30 !important;
+}
+
+body.page-home nav.side.ui,
+html[data-platform="android"] body.page-home nav.side.ui {
+  left: max(16px, env(safe-area-inset-left)) !important;
+  right: auto !important;
+}
+
+body.page-home .tools,
+html[data-platform="android"] body.page-home .tools {
+  right: max(16px, env(safe-area-inset-right)) !important;
+  left: auto !important;
+}
+
+/* ── 1. SHARED COMPACT HEADER: TRUE GEOMETRIC CENTER + ZERO OVERLAP (<= 1240px or height <= 540px) ──
+   Uses 3-track symmetric CSS Grid (minmax(0, 1fr) auto minmax(0, 1fr)):
+   .prism-dock is ALWAYS mathematically dead-centered at 50% of screen width,
+   while .shell-right (.dynamic-island + utils) lives strictly inside Track 3 so overlap is impossible! */
+@media (max-width: 1240px), (max-height: 540px) {
+  .shell-header {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: 6px !important;
+  }
+
+  .shell-left {
+    justify-self: start !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .shell-right {
+    justify-self: end !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 5px !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .shell-header .prism-dock {
+    justify-self: center !important;
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    scrollbar-width: none !important;
+  }
+
+  .shell-header .prism-dock::-webkit-scrollbar {
+    display: none;
+  }
+
+  .shell-header #islandAnchor {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .shell-header .dynamic-island {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Story Guide: eliminate legacy fixed sidebar left margin ONLY when sidebar collapses (<= 960px or short landscape) */
+@media (max-width: 960px), (max-height: 540px) {
+  .guide-unified > main {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  .guide-unified #units {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+}
+@media (max-width: 559px) {
+  .guide-unified #units {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   2. 20:9 LANDSCAPE PHONES (height <= 520px, e.g. 800×360 .. 915×412 CSS px)
+   ═══════════════════════════════════════════════════════════════════════════ */
+@media (orientation: landscape) and (max-height: 520px) {
+  :root {
+    --sh-header-h: 48px;
+    --header-height: 48px;
+  }
+
+  /* A. Top Shell Bar — Crisp Single-Row, Zero Overlap, Cutout Safe */
+  .shell-header {
+    height: 48px !important;
+    padding: 5px max(10px, env(safe-area-inset-right)) 0 max(10px, env(safe-area-inset-left)) !important;
+    gap: 5px !important;
+  }
+
+  .prism-brand {
+    height: 34px !important;
+    padding: 0 9px 0 7px !important;
+    gap: 4px !important;
+  }
+
+  .prism-num {
+    font-size: 18px !important;
+    width: auto !important;
+  }
+
+  .prism-brand-text {
+    display: none !important;
+  }
+
+  .env-anchor {
+    display: inline-flex !important;
+  }
+
+  .env-capsule {
+    height: 34px !important;
+    padding: 2px 8px !important;
+    border-radius: 11px !important;
+  }
+
+  .env-city,
+  .env-date {
+    display: none !important;
+  }
+
+  .env-weather,
+  .env-clock {
+    font-size: 10.5px !important;
+  }
+
+  .shell-header .prism-dock {
+    height: 34px !important;
+    padding: 2px 3px !important;
+    gap: 1px !important;
+    box-sizing: border-box !important;
+  }
+
+  .shell-header .dock-pill,
+  .shell-header .dock-hover-pill {
+    top: 2px !important;
+    bottom: 2px !important;
+    height: auto !important;
+  }
+
+  .dock-item {
+    min-width: 30px !important;
+    height: 28px !important;
+    padding: 0 6px !important;
+    font-size: 11px !important;
+  }
+
+  /* 20:9 / 21:9 Landscape Calendar & Weather Popover: 2-column compact layout so Calendar is NEVER clipped! */
+  .env-popover {
+    position: fixed !important;
+    top: 50px !important;
+    left: max(10px, env(safe-area-inset-left)) !important;
+    right: auto !important;
+    width: min(620px, calc(100vw - max(20px, env(safe-area-inset-left) + env(safe-area-inset-right)))) !important;
+    max-height: calc(100dvh - 58px) !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.06fr) !important;
+    gap: 12px !important;
+    padding: 10px 12px !important;
+    border-radius: 16px !important;
+  }
+
+  .env-pop-info,
+  .env-pop-calendar {
+    gap: 6px !important;
+  }
+
+  .env-pop-head strong { font-size: 12px !important; }
+  .env-pop-head span { font-size: 10px !important; }
+  .env-pop-clock-big { font-size: 13px !important; }
+  .env-city-input-row input { padding: 3px 8px !important; font-size: 10.5px !important; }
+  .env-city-btn { padding: 3px 8px !important; font-size: 10px !important; }
+  .env-chip { padding: 1px 6px !important; font-size: 9.5px !important; }
+  .env-atmo-btn { padding: 3px 7px !important; font-size: 10px !important; }
+  .env-cal-head { border-top: 0 !important; padding-top: 0 !important; }
+  .env-cal-head strong { font-size: 11.5px !important; }
+  .env-cal-nav { width: 22px !important; height: 22px !important; }
+  .env-cal-weekdays span { font-size: 9.5px !important; padding: 1px 0 !important; }
+  .env-cal-grid { gap: 2px !important; }
+  .env-cal-day { height: 22px !important; font-size: 10.5px !important; border-radius: 6px !important; }
+  .env-cal-bday-note { font-size: 9.5px !important; line-height: 1.3 !important; margin: 0 !important; }
+
+  .dock-item svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .dock-item:not(.is-active) .dock-label {
+    display: none !important;
+  }
+
+  .shell-header .dynamic-island {
+    height: 34px !important;
+    padding: 2px 5px 2px 3px !important;
+    max-width: clamp(92px, 15vw, 152px) !important;
+    gap: 4px !important;
+  }
+
+  .island-cover-btn {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .island-title {
+    font-size: 10.5px !important;
+    max-width: 68px !important;
+  }
+
+  .island-eq {
+    display: none !important;
+  }
+
+  .island-mini-mode,
+  .island-mini-play {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  .island-popover {
+    width: min(300px, 84vw) !important;
+    max-height: calc(100dvh - 58px) !important;
+    overflow-y: auto !important;
+    padding: 12px !important;
+  }
+
+  .shell-utils {
+    padding: 2px !important;
+    gap: 2px !important;
+  }
+
+  .util-btn {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .util-btn svg {
+    width: 13.5px !important;
+    height: 13.5px !important;
+  }
+
+  /* B. Home Office — Desktop-Symmetric Vertical Rails, Mathematically Collision-Free on 360px height */
+  body.page-home .screen {
+    width: 100vw !important;
+    height: 100dvh !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  body.page-home header.ui.home-status,
+  html[data-platform="android"] body.page-home header.ui.home-status {
+    position: fixed !important;
+    top: 52px !important;
+    left: max(12px, env(safe-area-inset-left)) !important;
+    right: auto !important;
+    gap: 5px !important;
+    z-index: 25 !important;
+  }
+
+  body.page-home header.ui.home-status a,
+  html[data-platform="android"] body.page-home header.ui.home-status a {
+    padding: 4px 9px !important;
+    font-size: 10.5px !important;
+  }
+
+  body.page-home nav.side.ui,
+  html[data-platform="android"] body.page-home nav.side.ui {
+    left: max(12px, env(safe-area-inset-left)) !important;
+    gap: 4px !important;
+    padding: 5px 4px !important;
+    border-radius: 18px !important;
+  }
+
+  body.page-home nav.side.ui button,
+  body.page-home nav.side.ui a,
+  html[data-platform="android"] body.page-home nav.side.ui button,
+  html[data-platform="android"] body.page-home nav.side.ui a {
+    width: 34px !important;
+    height: 32px !important;
+    min-width: 34px !important;
+    min-height: 32px !important;
+    border-radius: 12px !important;
+  }
+
+  body.page-home nav.side.ui .ic {
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  body.page-home nav.side.ui small {
+    font-size: 8.5px !important;
+  }
+
+  body.page-home .tools,
+  html[data-platform="android"] body.page-home .tools {
+    right: max(12px, env(safe-area-inset-right)) !important;
+    gap: 4px !important;
+    padding: 5px 4px !important;
+    border-radius: 999px !important;
+  }
+
+  body.page-home .tools button,
+  body.page-home .tools a,
+  html[data-platform="android"] body.page-home .tools button,
+  html[data-platform="android"] body.page-home .tools a {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+  }
+
+  body.page-home .tools .ic {
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  body.page-home section.caption.ui,
+  html[data-platform="android"] body.page-home section.caption.ui {
+    position: fixed !important;
+    bottom: max(8px, env(safe-area-inset-bottom)) !important;
+    left: max(12px, env(safe-area-inset-left)) !important;
+    right: auto !important;
+    width: clamp(230px, 32vw, 360px) !important;
+    min-width: 0 !important;
+    height: auto !important;
+    max-height: 92px !important;
+    padding: 7px 11px !important;
+    border-radius: 15px !important;
+  }
+
+  body.page-home #greeting {
+    font-size: 11.5px !important;
+    line-height: 1.38 !important;
+  }
+
+  body.page-home .captionBottom strong {
+    font-size: 11.5px !important;
+  }
+
+  /* C. Content Pages Top Clearance (ZERO overlap with 48px floating shell header!) */
+  html.in-shell body:not(.page-home),
+  html[data-platform="android"].in-shell body:not(.page-home) {
+    padding-top: 54px !important;
+  }
+
+  .gallery-page,
+  body:not(.page-home) > main,
+  html[data-platform="android"] body:not(.page-home) > main,
+  html[data-platform="android"] .card-archive .gallery-page {
+    padding: 6px max(12px, env(safe-area-inset-right)) max(22px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left)) !important;
+  }
+
+  .collection-page-head,
+  .guide-head {
+    margin-bottom: 10px !important;
+  }
+
+  .collection-page-head h1,
+  .guide-head h1 {
+    font-size: clamp(20px, 3vw, 26px) !important;
+    margin-bottom: 4px !important;
+  }
+
+  .collection-page-head .sub,
+  .guide-head .sub {
+    font-size: 12px !important;
+  }
+
+  .collection-overview,
+  .story-overview {
+    min-height: 124px !important;
+    height: clamp(124px, 32dvh, 162px) !important;
+    max-height: 168px !important;
+    padding: 14px 18px !important;
+    margin-bottom: 12px !important;
+    border-radius: 18px !important;
+  }
+
+  .collection-overview h2,
+  .story-overview h2 {
+    font-size: clamp(16px, 2.5vw, 21px) !important;
+    margin: 6px 0 8px !important;
+  }
+
+  .card-archive #cardGrid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  /* D. Music Studio — 20:9 Ultrawide Split Console */
+  .music-stage-wrapper,
+  main.music-main {
+    padding: 4px max(12px, env(safe-area-inset-right)) 68px max(12px, env(safe-area-inset-left)) !important;
+  }
+
+  .franchise-tabs-bar {
+    padding: 4px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .franchise-tab-btn {
+    padding: 4px 10px !important;
+    font-size: 11.5px !important;
+  }
+
+  .music-header-bar {
+    padding: 6px 10px !important;
+    margin-bottom: 5px !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+  }
+
+  .music-header-sub,
+  .music-stats-bar {
+    display: none !important;
+  }
+
+  .music-header-title { font-size: 15px !important; }
+
+  .idol-filter-section {
+    padding: 4px 8px !important;
+    margin-bottom: 6px !important;
+    gap: 3px !important;
+  }
+
+  .music-stage-grid {
+    grid-template-columns: 186px minmax(0, 1fr) !important;
+    gap: 8px !important;
+  }
+
+  .turntable-panel { padding: 8px !important; }
+  .turntable-deck { width: 140px !important; height: 140px !important; margin-bottom: 6px !important; }
+  .vinyl-stage-assembly { width: 120px !important; height: 120px !important; }
+  .hero-song-title { font-size: 13px !important; }
+  .hero-song-sub, .hero-song-artists, .hero-song-album { font-size: 10.5px !important; }
+
+  .music-player-dock {
+    left: max(10px, env(safe-area-inset-left)) !important;
+    right: max(10px, env(safe-area-inset-right)) !important;
+    bottom: max(4px, env(safe-area-inset-bottom)) !important;
+    transform: none !important;
+    width: auto !important;
+    max-width: none !important;
+    padding: 5px 12px 4px !important;
+    border-radius: 16px !important;
+  }
+
+  .dock-thumb-wrap { width: 34px !important; height: 34px !important; }
+  .dock-play-pause-btn { width: 34px !important; height: 34px !important; }
+  .dock-volume-group { display: none !important; }
+
+  /* Fullscreen Lyrics on short landscape phones */
+  .lfo-stage {
+    grid-template-columns: 220px minmax(0, 1fr) !important;
+    gap: 18px !important;
+  }
+  .lfo-cover-frame {
+    width: clamp(92px, 28dvh, 138px) !important;
+    height: clamp(92px, 28dvh, 138px) !important;
+  }
+  .lfo-song-meta h2 { font-size: 15px !important; }
+  .lfo-line-jp { font-size: 16px !important; }
+  .lfo-line-zh { font-size: 12px !important; }
+
+  /* E. Arcade (斗地主 / 掼蛋 / 大富豪) — True 1-Screen Edge-to-Edge Fit on 20:9 / 21:9 Landscape Phones */
+  body.page-arcade .arcade-shell {
+    padding: 2px max(8px, env(safe-area-inset-right)) max(4px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left)) !important;
+    gap: 4px !important;
+  }
+
+  body.page-arcade .lounge-bar {
+    padding: 3px 8px !important;
+    border-radius: 12px !important;
+    gap: 5px !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scrollbar-width: none;
+  }
+  body.page-arcade .lounge-bar::-webkit-scrollbar { display: none; }
+  body.page-arcade .lounge-brand { display: none !important; }
+  body.page-arcade .lounge-tabs { gap: 3px !important; flex-wrap: nowrap !important; flex: 0 0 auto !important; }
+  body.page-arcade .lounge-tab { padding: 3px 8px !important; font-size: 10.5px !important; white-space: nowrap !important; }
+  body.page-arcade .lounge-global-ctrls { gap: 4px !important; flex-wrap: nowrap !important; flex: 0 0 auto !important; }
+  body.page-arcade .lounge-diff-wrap,
+  body.page-arcade .lounge-voice-wrap { padding: 2px 7px !important; font-size: 10.5px !important; white-space: nowrap !important; }
+  body.page-arcade .lounge-select { font-size: 10.5px !important; }
+  body.page-arcade .lounge-vol-slider { width: 46px !important; }
+  body.page-arcade .lounge-fs-btn { padding: 3px 8px !important; font-size: 10.5px !important; white-space: nowrap !important; }
+
+  body.page-arcade .table-rules-line { display: none !important; }
+
+  body.page-arcade .casino-table {
+    height: calc(100dvh - 96px) !important;
+    min-height: 256px !important;
+    max-height: calc(100dvh - 96px) !important;
+    padding: 5px 9px 5px !important;
+    border-radius: 16px !important;
+    gap: 3px !important;
+    justify-content: space-between !important;
+    overflow: hidden !important;
+  }
+
+  body.page-arcade.is-arcade-fullscreen .casino-table {
+    height: 100dvh !important;
+    min-height: 0 !important;
+    max-height: 100dvh !important;
+    padding: 6px max(12px, env(safe-area-inset-right)) max(5px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left)) !important;
+    border-radius: 0 !important;
+  }
+
+  body.page-arcade .table-felt-rail { inset: 4px !important; border-radius: 12px !important; }
+  body.page-arcade .table-hud {
+    padding: 0 2px !important;
+    gap: 4px !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scrollbar-width: none;
+    flex: none !important;
+  }
+  body.page-arcade .table-hud::-webkit-scrollbar { display: none; }
+  body.page-arcade .hud-left,
+  body.page-arcade .hud-right { flex-wrap: nowrap !important; gap: 4px !important; flex: 0 0 auto !important; }
+  body.page-arcade .hud-chip.mode-chip { display: none !important; }
+  body.page-arcade .hud-chip,
+  body.page-arcade .hud-btn { padding: 2px 7px !important; font-size: 10px !important; white-space: nowrap !important; }
+  body.page-arcade .ddz-kitty-box { padding: 1px 6px !important; gap: 4px !important; }
+  body.page-arcade .ddz-kitty-box .kitty-label { font-size: 9.5px !important; }
+  body.page-arcade .mini-card { padding: 0 3px !important; font-size: 9.5px !important; }
+
+  body.page-arcade .ct-tracker-bar { padding: 2px 6px !important; gap: 3px !important; flex: none !important; }
+  body.page-arcade .ct-tk-cell { min-width: 22px !important; padding: 1px 2px !important; }
+  body.page-arcade .ct-tk-cell .tk-r { font-size: 8.5px !important; }
+  body.page-arcade .ct-tk-cell .tk-c { font-size: 10px !important; }
+
+  body.page-arcade .table-arena {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    grid-template-columns: minmax(118px, 156px) minmax(0, 1fr) minmax(118px, 156px) !important;
+    grid-template-rows: auto minmax(0, 1fr) !important;
+    gap: 5px !important;
+    align-items: center !important;
+  }
+  body.page-arcade .idol-seat {
+    max-width: 156px !important;
+    padding: 4px 7px !important;
+    gap: 5px !important;
+    border-radius: 12px !important;
+  }
+  body.page-arcade .seat-avatar-wrap img { width: 32px !important; height: 32px !important; }
+  body.page-arcade .seat-card-badge { min-width: 17px !important; height: 17px !important; font-size: 9.5px !important; }
+  body.page-arcade .seat-name-row strong { font-size: 11px !important; }
+  body.page-arcade .seat-role-tag { font-size: 9px !important; padding: 0 5px !important; }
+  body.page-arcade .seat-speech { font-size: 9.5px !important; min-height: 12px !important; }
+
+  body.page-arcade .table-center {
+    min-height: 70px !important;
+    height: 100% !important;
+    padding: 4px 10px !important;
+    border-radius: 14px !important;
+    gap: 4px !important;
+  }
+  body.page-arcade .center-meta { font-size: 10.5px !important; }
+  body.page-arcade .center-cards .poker-card {
+    width: 36px !important;
+    height: 50px !important;
+    margin-left: -12px !important;
+  }
+  body.page-arcade .center-cards .poker-card:first-child { margin-left: 0 !important; }
+
+  body.page-arcade .player-dock {
+    flex: none !important;
+    padding: 5px 8px 4px !important;
+    gap: 4px !important;
+    border-radius: 14px !important;
+  }
+  body.page-arcade .player-bar {
+    flex-wrap: nowrap !important;
+    gap: 4px !important;
+    overflow-x: auto !important;
+    scrollbar-width: none;
+  }
+  body.page-arcade .player-bar::-webkit-scrollbar { display: none; }
+  body.page-arcade .player-id { gap: 5px !important; font-size: 10.5px !important; white-space: nowrap !important; flex: 0 0 auto !important; }
+  body.page-arcade .player-role-badge { padding: 2px 7px !important; font-size: 10px !important; }
+  body.page-arcade .player-sel-hint { font-size: 10px !important; }
+  body.page-arcade .player-actions { flex-wrap: nowrap !important; gap: 4px !important; flex: 0 0 auto !important; }
+  body.page-arcade .stamp-bar { gap: 2px !important; }
+  body.page-arcade .stamp-btn { width: 24px !important; height: 24px !important; font-size: 12px !important; }
+  body.page-arcade .act-btn { padding: 4px 10px !important; font-size: 10.5px !important; white-space: nowrap !important; }
+
+  body.page-arcade .card-fan {
+    min-height: 68px !important;
+    padding-top: 10px !important;
+    padding-bottom: 2px !important;
+  }
+  body.page-arcade .poker-card {
+    width: 42px !important;
+    height: 60px !important;
+    margin-left: -15px !important;
+    padding: 3px 4px !important;
+    border-radius: 7px !important;
+  }
+  body.page-arcade .casino-table[data-mode="guandan"] .card-fan .poker-card {
+    width: 37px !important;
+    height: 55px !important;
+    margin-left: -18px !important;
+  }
+  body.page-arcade .poker-card:first-child { margin-left: 0 !important; }
+  body.page-arcade .poker-card .pc-rank { font-size: 12px !important; }
+  body.page-arcade .poker-card .pc-suit { font-size: 15px !important; }
+  body.page-arcade .poker-card .pc-foot { display: none !important; }
+  body.page-arcade .poker-card.is-selected { transform: translateY(-9px) !important; }
+
+  dialog {
+    max-height: calc(100dvh - 18px) !important;
+    max-width: min(94vw, 660px) !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   3. 21:9 CINEMA ULTRAWIDE PHONES (aspect >= 2.05, max-height: 540px)
+   ═══════════════════════════════════════════════════════════════════════════ */
+@media (orientation: landscape) and (min-aspect-ratio: 205/100) and (max-height: 540px) {
+  .shell-header {
+    padding-left: max(20px, env(safe-area-inset-left)) !important;
+    padding-right: max(20px, env(safe-area-inset-right)) !important;
+    gap: 8px !important;
+  }
+
+  .shell-header .dynamic-island {
+    max-width: clamp(128px, 18vw, 200px) !important;
+  }
+
+  .island-title {
+    max-width: 96px !important;
+  }
+
+  body.page-home nav.side.ui,
+  html[data-platform="android"] body.page-home nav.side.ui {
+    left: max(20px, env(safe-area-inset-left)) !important;
+  }
+
+  body.page-home .tools,
+  html[data-platform="android"] body.page-home .tools {
+    right: max(20px, env(safe-area-inset-right)) !important;
+  }
+
+  body.page-home header.ui.home-status,
+  body.page-home section.caption.ui {
+    left: max(20px, env(safe-area-inset-left)) !important;
+  }
+
+  .music-stage-grid {
+    grid-template-columns: 224px minmax(0, 1fr) !important;
+  }
+
+  .poker-card {
+    width: 48px !important;
+    margin-left: -15px !important;
+  }
+
+  .card-archive #cardGrid {
+    grid-template-columns: repeat(auto-fill, minmax(176px, 1fr)) !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   4. PORTRAIT 20:9 & 21:9 PHONES (max-width: 560px)
+   ═══════════════════════════════════════════════════════════════════════════ */
+@media (orientation: portrait) and (max-width: 560px) {
+  :root {
+    --sh-header-h: 48px;
+    --header-height: 48px;
+  }
+
+  .shell-header {
+    height: 48px !important;
+    padding: 5px max(8px, env(safe-area-inset-right)) 0 max(8px, env(safe-area-inset-left)) !important;
+    gap: 4px !important;
+  }
+
+  .prism-brand {
+    height: 34px !important;
+    padding: 0 8px 0 6px !important;
+  }
+
+  .prism-brand-text,
+  .env-anchor {
+    display: none !important;
+  }
+
+  .shell-header .prism-dock {
+    height: 34px !important;
+    padding: 2px !important;
+    box-sizing: border-box !important;
+  }
+
+  .shell-header .dock-pill,
+  .shell-header .dock-hover-pill {
+    top: 2px !important;
+    bottom: 2px !important;
+    height: auto !important;
+  }
+
+  /* Portrait 20:9 / 21:9 Calendar Popover: viewport-bounded, zero horizontal/vertical clipping */
+  .env-popover {
+    position: fixed !important;
+    top: calc(env(safe-area-inset-top, 0px) + 52px) !important;
+    left: 10px !important;
+    right: 10px !important;
+    width: auto !important;
+    max-width: 380px !important;
+    max-height: calc(100dvh - env(safe-area-inset-top, 0px) - 64px) !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    padding: 12px !important;
+    gap: 8px !important;
+  }
+  .env-cal-day {
+    height: 26px !important;
+  }
+
+  .dock-item {
+    min-width: 28px !important;
+    height: 28px !important;
+    padding: 0 5px !important;
+  }
+
+  .dock-item .dock-label {
+    display: none !important;
+  }
+
+  .util-btn {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .shell-header.island-below #islandAnchor {
+    position: fixed !important;
+    top: calc(env(safe-area-inset-top, 0px) + 52px) !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    z-index: 999 !important;
+  }
+
+  html.in-shell body:not(.page-home),
+  html[data-platform="android"].in-shell body:not(.page-home) {
+    padding-top: calc(env(safe-area-inset-top, 0px) + 56px) !important;
+  }
+
+  body.page-home header.ui.home-status,
+  html[data-platform="android"] body.page-home header.ui.home-status {
+    position: fixed !important;
+    top: calc(env(safe-area-inset-top, 0px) + 94px) !important;
+    left: 12px !important;
+    right: 12px !important;
+    gap: 6px !important;
+  }
+
+  body.page-home nav.side.ui,
+  html[data-platform="android"] body.page-home nav.side.ui {
+    left: 10px !important;
+    padding: 5px 4px !important;
+    gap: 5px !important;
+  }
+
+  body.page-home .tools,
+  html[data-platform="android"] body.page-home .tools {
+    right: 10px !important;
+    padding: 5px 4px !important;
+    gap: 5px !important;
+  }
+
+  body.page-home section.caption.ui,
+  html[data-platform="android"] body.page-home section.caption.ui {
+    position: fixed !important;
+    bottom: max(12px, env(safe-area-inset-bottom)) !important;
+    left: 12px !important;
+    right: 12px !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-height: 24dvh !important;
+  }
+
+  .collection-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .card-archive #cardGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  .music-stage-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   5. 16:10 & 3:2 TABLETS — LANDSCAPE (720px..1280px, height >= 521px)
+      Covers Huawei MatePad 3:2 / 16:10, Xiaomi Pad, Surface, iPad, 150%-200% DPI
+   ═══════════════════════════════════════════════════════════════════════════ */
+@media (orientation: landscape) and (min-width: 720px) and (max-width: 1280px) and (min-height: 521px) {
+  :root {
+    --sh-header-h: 56px;
+    --header-height: 56px;
+  }
+
+  .shell-header {
+    height: 56px !important;
+    padding: 7px max(14px, env(safe-area-inset-right)) 0 max(14px, env(safe-area-inset-left)) !important;
+    gap: 8px !important;
+  }
+
+  .prism-brand {
+    height: 38px !important;
+    padding: 0 11px 0 8px !important;
+  }
+
+  .prism-brand-text small,
+  .env-date {
+    display: none !important;
+  }
+
+  /* Keep Prism Dock in flex flow (NEVER position:absolute) so it NEVER overlaps Dynamic Island! */
+  .shell-header .prism-dock {
+    height: 38px !important;
+    padding: 3px !important;
+    gap: 2px !important;
+    box-sizing: border-box !important;
+  }
+
+  .shell-header .dock-pill,
+  .shell-header .dock-hover-pill {
+    top: 3px !important;
+    bottom: 3px !important;
+    height: auto !important;
+  }
+
+  .dock-item {
+    min-width: 34px !important;
+    height: 32px !important;
+    padding: 0 8px !important;
+  }
+
+  .dock-item:not(.is-active) .dock-label {
+    display: none !important;
+  }
+
+  .shell-header .dynamic-island {
+    height: 38px !important;
+    max-width: clamp(120px, 16vw, 188px) !important;
+  }
+
+  /* Content Pages Top Clearance */
+  html.in-shell body:not(.page-home),
+  html[data-platform="android"].in-shell body:not(.page-home) {
+    padding-top: 64px !important;
+  }
+
+  .gallery-page,
+  body:not(.page-home) > main,
+  html[data-platform="android"] body:not(.page-home) > main,
+  html[data-platform="android"] .card-archive .gallery-page {
+    padding: 8px max(18px, env(safe-area-inset-right)) max(26px, env(safe-area-inset-bottom)) max(18px, env(safe-area-inset-left)) !important;
+  }
+
+  /* Home Office — Desktop-Identical Symmetric Vertical Rails */
+  body.page-home .screen {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  body.page-home header.ui.home-status,
+  html[data-platform="android"] body.page-home header.ui.home-status {
+    position: fixed !important;
+    top: 66px !important;
+    left: max(18px, env(safe-area-inset-left)) !important;
+  }
+
+  body.page-home nav.side.ui,
+  html[data-platform="android"] body.page-home nav.side.ui {
+    left: max(16px, env(safe-area-inset-left)) !important;
+    padding: 6px !important;
+    gap: 6px !important;
+  }
+
+  body.page-home .tools,
+  html[data-platform="android"] body.page-home .tools {
+    right: max(16px, env(safe-area-inset-right)) !important;
+    padding: 6px !important;
+    gap: 6px !important;
+  }
+
+  body.page-home section.caption.ui,
+  html[data-platform="android"] body.page-home section.caption.ui {
+    position: fixed !important;
+    bottom: max(18px, env(safe-area-inset-bottom)) !important;
+    left: max(18px, env(safe-area-inset-left)) !important;
+    width: clamp(300px, 36vw, 440px) !important;
+    height: auto !important;
+    max-height: 165px !important;
+  }
+
+  /* Music Studio — Spacious 16:10 & 3:2 Split */
+  .music-stage-grid {
+    grid-template-columns: 248px minmax(0, 1fr) !important;
+    gap: 14px !important;
+  }
+
+  .turntable-deck { width: 210px !important; height: 210px !important; }
+  .vinyl-stage-assembly { width: 184px !important; height: 184px !important; }
+
+  /* Arcade — Tactile Tablet Card Table */
+  .arcade-shell {
+    padding: 8px max(14px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left)) !important;
+  }
+
+  .card-table,
+  .mj-table {
+    min-height: calc(100dvh - 126px) !important;
+  }
+
+  .poker-card {
+    width: 54px !important;
+    height: 78px !important;
+    margin-left: -18px !important;
+  }
+  .poker-card:first-child { margin-left: 0 !important; }
+
+  /* Galleries — Clean 3-Column Tablet Grid */
+  .card-archive #cardGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+}
+
+/* Narrower Tablet Landscape (720px..960px, e.g. 16:10/3:2 at high DPI): hide brand text so header breathes */
+@media (orientation: landscape) and (min-width: 720px) and (max-width: 960px) and (min-height: 521px) {
+  .prism-brand-text,
+  .env-city {
+    display: none !important;
+  }
+}
+
+/* 3:2 Tablet Specific Fine-Tuning (aspect 1.42 ~ 1.55 — MatePad Pro 3:2 / Surface) */
+@media (orientation: landscape) and (min-aspect-ratio: 142/100) and (max-aspect-ratio: 155/100) and (min-height: 560px) {
+  body.page-home section.caption.ui {
+    width: clamp(320px, 40vw, 460px) !important;
+  }
+  .collection-overview {
+    min-height: 210px !important;
+  }
+  .poker-card {
+    width: 56px !important;
+    height: 82px !important;
+  }
+}
+
+/* 16:10 Tablet Specific Fine-Tuning (aspect 1.56 ~ 1.68 — Xiaomi Pad / MatePad 16:10) */
+@media (orientation: landscape) and (min-aspect-ratio: 156/100) and (max-aspect-ratio: 168/100) and (min-height: 540px) {
+  .collection-overview {
+    min-height: 196px !important;
+  }
+  .card-archive #cardGrid {
+    grid-template-columns: repeat(auto-fill, minmax(192px, 1fr)) !important;
+  }
+}
+
+/* Tablet Portrait (2:3 & 10:16 — 561px..920px) */
+@media (orientation: portrait) and (min-width: 561px) and (max-width: 920px) {
+  :root {
+    --sh-header-h: 56px;
+    --header-height: 56px;
+  }
+
+  .shell-header {
+    height: 56px !important;
+    padding: 7px 14px 0 !important;
+  }
+  .prism-brand-text,
+  .env-date,
+  .env-city {
+    display: none !important;
+  }
+  .dock-item:not(.is-active) .dock-label {
+    display: none !important;
+  }
+  html.in-shell body:not(.page-home),
+  html[data-platform="android"].in-shell body:not(.page-home) {
+    padding-top: 64px !important;
+  }
+  .music-stage-grid { grid-template-columns: 1fr !important; }
+  .turntable-panel {
+    display: flex !important;
+    align-items: center !important;
+    gap: 18px !important;
+  }
+  .turntable-deck { width: 184px !important; height: 184px !important; margin: 0 !important; flex-shrink: 0 !important; }
+  .vinyl-stage-assembly { width: 158px !important; height: 158px !important; }
+  .card-archive .gallery-layout { grid-template-columns: 1fr !important; }
+  .card-archive #cardGrid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .poker-card { width: 50px !important; height: 74px !important; margin-left: -20px !important; }
+  .poker-card:first-child { margin-left: 0 !important; }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   6. MOBILE-ONLY PERFORMANCE MODE (Android · iOS · Huawei HarmonyOS / Kirin / JoyTrans)
+      Zero impact on Windows Desktop PC!
+      Uses ID-boosted :not(#_) specificity (1,2,0) so mobile fast-path ALWAYS beats
+      every class-based backdrop-filter: blur(30-40px) !important in apple-reset.css,
+      music.css, ui-upgrade.css, shell.css & arcade.css!
+   ═══════════════════════════════════════════════════════════════════════════ */
+:root[data-mobile="1"]:not(#_) *,
+:root[data-mobile="1"]:not(#_) *::before,
+:root[data-mobile="1"]:not(#_) *::after,
+:root[data-android="1"]:not(#_) *,
+:root[data-android="1"]:not(#_) *::before,
+:root[data-android="1"]:not(#_) *::after,
+:root[data-joytrans="1"]:not(#_) *,
+:root[data-joytrans="1"]:not(#_) *::before,
+:root[data-joytrans="1"]:not(#_) *::after,
+:root[data-kirin="1"]:not(#_) *,
+:root[data-harmony="1"]:not(#_) * {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Crisp high-opacity surface replacements so Mobile Light & Dark mode stay sharp & readable without GPU blur readbacks */
+/* NOTE: Scope .player-dock strictly to body.page-music so Arcade's dark green card-hand .player-dock NEVER turns white! */
+:root[data-mobile="1"]:not(#_) .prism-dock,
+:root[data-mobile="1"]:not(#_) .prism-brand,
+:root[data-mobile="1"]:not(#_) .env-capsule,
+:root[data-mobile="1"]:not(#_) .util-btn,
+:root[data-mobile="1"]:not(#_) body.page-music .turntable-panel,
+:root[data-mobile="1"]:not(#_) body.page-music .song-list-panel,
+:root[data-mobile="1"]:not(#_) body.page-music .filter-section,
+:root[data-mobile="1"]:not(#_) body.page-music .player-dock,
+:root[data-mobile="1"]:not(#_) body.page-music .franchise-project-nav,
+:root[data-android="1"]:not(#_) .prism-dock,
+:root[data-android="1"]:not(#_) .prism-brand,
+:root[data-android="1"]:not(#_) .env-capsule,
+:root[data-android="1"]:not(#_) .util-btn,
+:root[data-android="1"]:not(#_) body.page-music .turntable-panel,
+:root[data-android="1"]:not(#_) body.page-music .song-list-panel,
+:root[data-android="1"]:not(#_) body.page-music .filter-section,
+:root[data-android="1"]:not(#_) body.page-music .player-dock,
+:root[data-android="1"]:not(#_) body.page-music .franchise-project-nav {
+  background: rgba(255, 255, 255, 0.94) !important;
+}
+:root[data-theme="dark"][data-mobile="1"]:not(#_) .prism-dock,
+:root[data-theme="dark"][data-mobile="1"]:not(#_) .prism-brand,
+:root[data-theme="dark"][data-mobile="1"]:not(#_) .env-capsule,
+:root[data-theme="dark"][data-mobile="1"]:not(#_) .util-btn,
+:root[data-theme="dark"][data-mobile="1"]:not(#_) body.page-music .turntable-panel,
+:root[data-theme="dark"][data-mobile="1"]:not(#_) body.page-music .song-list-panel,
+:root[data-theme="dark"][data-mobile="1"]:not(#_) body.page-music .filter-section,
+:root[data-theme="dark"][data-mobile="1"]:not(#_) body.page-music .player-dock,
+:root[data-theme="dark"][data-mobile="1"]:not(#_) body.page-music .franchise-project-nav,
+:root[data-theme="dark"][data-android="1"]:not(#_) .prism-dock,
+:root[data-theme="dark"][data-android="1"]:not(#_) .prism-brand,
+:root[data-theme="dark"][data-android="1"]:not(#_) .env-capsule,
+:root[data-theme="dark"][data-android="1"]:not(#_) .util-btn,
+:root[data-theme="dark"][data-android="1"]:not(#_) body.page-music .turntable-panel,
+:root[data-theme="dark"][data-android="1"]:not(#_) body.page-music .song-list-panel,
+:root[data-theme="dark"][data-android="1"]:not(#_) body.page-music .filter-section,
+:root[data-theme="dark"][data-android="1"]:not(#_) body.page-music .player-dock,
+:root[data-theme="dark"][data-android="1"]:not(#_) body.page-music .franchise-project-nav {
+  background: rgba(20, 19, 27, 0.95) !important;
+}
+
+:root[data-mobile="1"]:not(#_) .island-popover,
+:root[data-mobile="1"]:not(#_) .env-popover,
+:root[data-android="1"]:not(#_) .island-popover,
+:root[data-android="1"]:not(#_) .env-popover {
+  background: rgba(252, 253, 255, 0.98) !important;
+  filter: none !important;
+  transition: opacity 0.14s ease, transform 0.16s ease, visibility 0.16s !important;
+}
+:root[data-theme="dark"][data-mobile="1"]:not(#_) .island-popover,
+:root[data-theme="dark"][data-mobile="1"]:not(#_) .env-popover,
+:root[data-theme="dark"][data-android="1"]:not(#_) .island-popover,
+:root[data-theme="dark"][data-android="1"]:not(#_) .env-popover {
+  background: rgba(18, 17, 24, 0.98) !important;
+}
+
+/* Kill heavy optical blur stagger on popover children on mobile */
+:root[data-mobile="1"]:not(#_) .island-popover > *,
+:root[data-android="1"]:not(#_) .island-popover > *,
+:root[data-joytrans="1"]:not(#_) .island-popover > * {
+  filter: none !important;
+  transition: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Kill giant blur(60-88px) full-screen aurora layers, 36-bar visualizer ring & particle canvas on mobile */
+:root[data-mobile="1"]:not(#_) .shell-aurora,
+:root[data-android="1"]:not(#_) .shell-aurora,
+:root[data-joytrans="1"]:not(#_) .shell-aurora,
+:root[data-mobile="1"]:not(#_) .music-aurora,
+:root[data-mobile="1"]:not(#_) .music-ambient-aurora,
+:root[data-android="1"]:not(#_) .music-aurora,
+:root[data-android="1"]:not(#_) .music-ambient-aurora,
+:root[data-joytrans="1"]:not(#_) .music-ambient-aurora,
+:root[data-mobile="1"]:not(#_) #vinylVisualizerRing,
+:root[data-android="1"]:not(#_) #vinylVisualizerRing,
+:root[data-mobile="1"]:not(#_) #prismLiveCanvas,
+:root[data-android="1"]:not(#_) #prismLiveCanvas {
+  display: none !important;
+}
+
+/* Mobile Music Hall: pure compositor-thread CSS vinyl spin (0ms main-thread JS rAF!) */
+:root[data-mobile="1"]:not(#_) #vinylDisc,
+:root[data-android="1"]:not(#_) #vinylDisc {
+  will-change: transform;
+  animation: vinylRotate 7s linear infinite !important;
+  animation-play-state: paused !important;
+}
+:root[data-mobile="1"]:not(#_) #vinylDisc.playing,
+:root[data-android="1"]:not(#_) #vinylDisc.playing {
+  animation-play-state: running !important;
+}
+
+:root[data-mobile="1"]:not(#_) .prism-dock::before,
+:root[data-mobile="1"]:not(#_) .prism-brand::before,
+:root[data-mobile="1"]:not(#_) .collection-overview::before,
+:root[data-mobile="1"]:not(#_) .live-dot-ping,
+:root[data-mobile="1"]:not(#_) .island-eq i,
+:root[data-mobile="1"]:not(#_) .turntable-deck::before,
+:root[data-mobile="1"]:not(#_) .dock-item.is-popping svg,
+:root[data-mobile="1"]:not(#_) .dock-item.is-active .dock-label,
+:root[data-android="1"]:not(#_) .prism-dock::before,
+:root[data-android="1"]:not(#_) .prism-brand::before,
+:root[data-android="1"]:not(#_) .collection-overview::before,
+:root[data-android="1"]:not(#_) .live-dot-ping,
+:root[data-android="1"]:not(#_) .island-eq i,
+:root[data-android="1"]:not(#_) .turntable-deck::before,
+:root[data-android="1"]:not(#_) .dock-item.is-popping svg,
+:root[data-android="1"]:not(#_) .dock-item.is-active .dock-label,
+:root[data-joytrans="1"]:not(#_) .prism-dock::before,
+:root[data-joytrans="1"]:not(#_) .prism-brand::before,
+:root[data-joytrans="1"]:not(#_) .collection-overview::before,
+:root[data-joytrans="1"]:not(#_) .turntable-deck::before {
+  animation: none !important;
+}
+
+:root[data-mobile="1"]:not(#_) .dock-pill,
+:root[data-android="1"]:not(#_) .dock-pill {
+  transition: transform 0.14s ease, width 0.14s ease !important;
+}
+
+/* Disable cascade/reveal fade transitions on scrolling lists for instant 60fps mobile scroll */
+:root[data-mobile="1"]:not(#_) .ls-reveal,
+:root[data-mobile="1"]:not(#_) .pm-cascade,
+:root[data-android="1"]:not(#_) .ls-reveal,
+:root[data-android="1"]:not(#_) .pm-cascade {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Simplify heavy multi-layer box-shadows & drop-shadows on dense cards/rows for smooth mobile tile rasterization */
+:root[data-mobile="1"]:not(#_) .song-row-item,
+:root[data-android="1"]:not(#_) .song-row-item {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 62px;
+  box-shadow: none !important;
+  transition: background-color 0.12s ease !important;
+}
+:root[data-mobile="1"]:not(#_) .gallery-item,
+:root[data-mobile="1"]:not(#_) .guide-unified #list .card,
+:root[data-mobile="1"]:not(#_) .page-wardrobe .model-card,
+:root[data-mobile="1"]:not(#_) .page-voice .voice,
+:root[data-android="1"]:not(#_) .gallery-item,
+:root[data-android="1"]:not(#_) .guide-unified #list .card,
+:root[data-android="1"]:not(#_) .page-wardrobe .model-card,
+:root[data-android="1"]:not(#_) .page-voice .voice {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 220px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08) !important;
+  transition: none !important;
+}
+:root[data-mobile="1"]:not(#_) .poker-card,
+:root[data-android="1"]:not(#_) .poker-card {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.28) !important;
+  transition: transform 0.1s ease !important;
+}
+
+/* Maleoon/Mobile TBDR win: eliminate 40+ per-line blur passes & cut backdrop blur 72px -> 14px */
+:root[data-mobile="1"]:not(#_) .lfo-line,
+:root[data-kirin="1"]:not(#_) .lfo-line,
+:root[data-harmony="1"]:not(#_) .lfo-line,
+:root[data-joytrans="1"]:not(#_) .lfo-line,
+:root[data-android="1"]:not(#_) .lfo-line {
+  filter: none !important;
+}
+
+:root[data-mobile="1"]:not(#_) .lfo-backdrop img,
+:root[data-android="1"]:not(#_) .lfo-backdrop img,
+:root[data-kirin="1"]:not(#_) .lfo-backdrop img,
+:root[data-harmony="1"]:not(#_) .lfo-backdrop img,
+:root[data-joytrans="1"]:not(#_) .lfo-backdrop img {
+  filter: blur(14px) saturate(140%) brightness(0.46) !important;
+}
+
+:root:not([data-theme="dark"])[data-mobile="1"]:not(#_) .lfo-backdrop img,
+:root:not([data-theme="dark"])[data-android="1"]:not(#_) .lfo-backdrop img,
+:root:not([data-theme="dark"])[data-kirin="1"]:not(#_) .lfo-backdrop img,
+:root:not([data-theme="dark"])[data-harmony="1"]:not(#_) .lfo-backdrop img,
+:root:not([data-theme="dark"])[data-joytrans="1"]:not(#_) .lfo-backdrop img {
+  filter: blur(14px) saturate(145%) brightness(1.1) contrast(0.95) !important;
+}
+
+/* Disable full-screen prism light-beam wipe on Mobile/Android/Kirin/HarmonyOS/JoyTrans */
+:root[data-mobile="1"]:not(#_) .stage-prism-wipe,
+:root[data-joytrans="1"]:not(#_) .stage-prism-wipe,
+:root[data-kirin="1"]:not(#_) .stage-prism-wipe,
+:root[data-harmony="1"]:not(#_) .stage-prism-wipe,
+:root[data-android="1"]:not(#_) .stage-prism-wipe {
+  display: none !important;
+  animation: none !important;
+}
+
+:root[data-mobile="1"]:not(#_) .song-list-scroll,
+:root[data-mobile="1"]:not(#_) #cardGrid,
+:root[data-mobile="1"]:not(#_) .dl-mgr-list,
+:root[data-android="1"]:not(#_) .song-list-scroll,
+:root[data-android="1"]:not(#_) #cardGrid,
+:root[data-android="1"]:not(#_) .dl-mgr-list {
+  -webkit-overflow-scrolling: touch;
+  contain: layout style;
+}
+
+:root[data-mobile="1"]:not(#_) body.page-home .screen,
+:root[data-android="1"]:not(#_) body.page-home .screen,
+:root[data-joytrans="1"]:not(#_) body.page-home .screen {
+  background-size: cover !important;
+  background-position: center center !important;
+  transition: none !important;
+}

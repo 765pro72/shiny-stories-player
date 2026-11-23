@@ -1,0 +1,434 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgm": "0000"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "では、本番お願いしまーす",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "スタート",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "bgEffect": "white_add",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "1040060050",
+    "movie": "1040060050"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "──カット！",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "0445"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "お疲れ様でした\r\n白瀬さんの個人パートはこちらで終了です",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "スタッフ",
+    "text": "月岡さんは一度着替えていただいた後、\r\nメインの撮影を──",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00115",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bgm": "002",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お疲れ様、咲耶！\r\nすごくよかったぞ──！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006011030010,
+    "speaker": "咲耶",
+    "text": "ああ──ありがとう、プロデューサー",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040060050",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200601103/2006011030010"
+  },
+  {
+    "id": 2006011030020,
+    "speaker": "咲耶",
+    "text": "アナタの尽力のおかげだね",
+    "charAnim1": "smile1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030020"
+  },
+  {
+    "id": 2006011030030,
+    "speaker": "咲耶",
+    "text": "吸血鬼という役を\r\n迷いなく演じることができたのは──",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030030"
+  },
+  {
+    "id": 2006011030040,
+    "speaker": "咲耶",
+    "text": "アナタとの練習があったからだ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは\r\nなんでもかんでも俺の手柄にされちゃ困るな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "立派な吸血鬼だったのは、間違いなく咲耶なんだから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006011030050,
+    "speaker": "咲耶",
+    "text": "フフ……",
+    "charAnim1": "think",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030050"
+  },
+  {
+    "id": 2006011030060,
+    "speaker": "咲耶",
+    "text": "私としては、アナタという乙女の献身が\r\n吸血鬼の私を形作ったのだと思っているのだけれど",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030060"
+  },
+  {
+    "id": 2006011030070,
+    "speaker": "咲耶",
+    "text": "──しかし、アナタからの賛辞という糧もまた\r\n甘くて味わい深い",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030070"
+  },
+  {
+    "id": 2006011030080,
+    "speaker": "咲耶",
+    "text": "ありがたく頂戴するとしようか",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうしてくれると嬉しいよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……あと、乙女は勘弁だ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006011030090,
+    "speaker": "咲耶",
+    "text": "フフフ……！",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──それじゃあ、先に控室に戻っててくれ\r\nインタビューが始まるまで休憩時間になるから──",
+    "charAnim2": "face_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006011030100,
+    "speaker": "咲耶",
+    "text": "……ああ\r\nアナタはもう行ってしまうんだね……？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "fade_out",
+    "voice": "produce_events/200601103/2006011030100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "え？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006011030110,
+    "speaker": "咲耶",
+    "text": "ひどい人だ\r\nプロデューサー、私はアナタを確かに虜にしたと思ったのに",
+    "charAnim1": "anger1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030110"
+  },
+  {
+    "id": 2006011030120,
+    "speaker": "咲耶",
+    "text": "アナタは簡単に私のそばを離れると言う\r\n……やはり私のチャームでは不十分なのだろうか",
+    "charAnim1": "shy2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030120"
+  },
+  {
+    "id": 2006011030130,
+    "speaker": "咲耶",
+    "text": "アナタをとどめておけないのだから──……",
+    "charAnim1": "wait5",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おいおい……！？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_sad",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "y": 50,
+      "scale": 1.1,
+      "time": 400
+    },
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2006011030140,
+    "speaker": "咲耶",
+    "text": "──このまま腕の中に閉じ込めて、\r\n飽きるほど牙を立てられたらどんなにいいか……",
+    "charLipAnim": "lip_anger",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "こら、咲耶……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006011030150,
+    "speaker": "咲耶",
+    "text": "──おっと。これは失礼",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030150"
+  },
+  {
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "sakuya",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "y": -50,
+      "scale": 1,
+      "time": 400
+    },
+    "bgm": "0000",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2006011030160,
+    "speaker": "咲耶",
+    "text": "少々悪戯が過ぎてしまったようだね\r\nすまない、プロデューサー",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "002",
+    "voice": "produce_events/200601103/2006011030160"
+  },
+  {
+    "id": 2006011030170,
+    "speaker": "咲耶",
+    "text": "ハロウィンの住人のやったこととして──\r\n水に流してもらえると嬉しいな？",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……\r\nなかなか心臓にくる悪戯だな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2006011030180,
+    "speaker": "咲耶",
+    "text": "フフ、悪かったよ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030180"
+  },
+  {
+    "id": 2006011030190,
+    "speaker": "咲耶",
+    "text": "許してほしい\r\n私の親愛なるプロデューサー",
+    "charAnim1": "wink",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "sakuya",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200601103/2006011030190"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

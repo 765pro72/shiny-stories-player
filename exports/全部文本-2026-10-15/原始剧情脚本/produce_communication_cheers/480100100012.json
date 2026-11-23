@@ -1,0 +1,129 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そろそろ出番だぞ、準備はいいか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4801001000120010,
+    "speaker": "ルビー",
+    "text": "うん、いつでもどうぞって感じ\r\n今ならなんでもできちゃいそう！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile2",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "ruby",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "801",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communication_cheers/480100100012/4801001000120010"
+  },
+  {
+    "textFrame": "off",
+    "select": "そのいきだ！",
+    "nextLabel": "4801001000121"
+  },
+  {
+    "textFrame": "off",
+    "select": "慢心は駄目だぞ",
+    "nextLabel": "4801001000122"
+  },
+  {
+    "textCtrl": "cm",
+    "textFrame": "off",
+    "select": "心配だな……",
+    "nextLabel": "4801001000123"
+  },
+  {
+    "id": 4801001000120020,
+    "label": "4801001000121",
+    "speaker": "ルビー",
+    "text": "おっ、嬉しいこと言ってくれる\r\nじゃあ、有言実行しなくちゃね！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480100100012/4801001000120020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（意気揚々と舞台へ向かっていく……\r\nうまく発破を掛けられたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4801001000120030,
+    "label": "4801001000122",
+    "speaker": "ルビー",
+    "text": "確かに調子に乗ったらダメだよね……\r\n気を付けるよ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_sad",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480100100012/4801001000120030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（気を引き締め直せたみたいだ）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4801001000120040,
+    "label": "4801001000123",
+    "speaker": "ルビー",
+    "text": "そんな事言わずに、大船に乗ったつもりでいてよ\r\nなんだかこっちまで不安になっちゃう",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad1",
+    "charLipAnim": "lip_wait",
+    "charLabel": "ruby",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/480100100012/4801001000120040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（しまった、もっと違うことを言えばよかったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

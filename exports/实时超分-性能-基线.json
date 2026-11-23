@@ -1,0 +1,71 @@
+{
+  "at": "2026-11-13T07:36:19.449Z",
+  "method": "1136x640; three warm-up + six timed frames; input and output gl.finish; optional GPU timestamp query",
+  "adapter": "ANGLE (AMD, AMD Radeon RX 5700 XT (0x0000731F) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "rows": [
+    {
+      "model": "3x12",
+      "input": [
+        1136,
+        640
+      ],
+      "output": [
+        2272,
+        1280
+      ],
+      "sourceRenderMs": 0.23333333184321722,
+      "upscaleAndFinishMs": 0.15000000099341074,
+      "gpuElapsedMs": 4.483568333333333,
+      "samples": 6,
+      "compileAndRunMs": 376.5
+    },
+    {
+      "model": "4x16",
+      "input": [
+        1136,
+        640
+      ],
+      "output": [
+        2272,
+        1280
+      ],
+      "sourceRenderMs": 0.1333333303531011,
+      "upscaleAndFinishMs": 0.10000000149011612,
+      "gpuElapsedMs": 7.99467,
+      "samples": 6,
+      "compileAndRunMs": 395.09999999403954
+    },
+    {
+      "model": "4x32",
+      "input": [
+        1136,
+        640
+      ],
+      "output": [
+        2272,
+        1280
+      ],
+      "sourceRenderMs": 0.10000000149011612,
+      "upscaleAndFinishMs": 0.1666666641831398,
+      "gpuElapsedMs": 77.79488166666665,
+      "samples": 6,
+      "compileAndRunMs": 1274.2999999970198
+    },
+    {
+      "model": "8x32",
+      "input": [
+        1136,
+        640
+      ],
+      "output": [
+        2272,
+        1280
+      ],
+      "sourceRenderMs": 0.11666666467984517,
+      "upscaleAndFinishMs": 0.23333333432674408,
+      "gpuElapsedMs": 155.23545833333333,
+      "samples": 6,
+      "compileAndRunMs": 2010.4000000059605
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "bgm": "001",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1024001001010010,
+    "speaker": "にちか",
+    "text": "────えーーっとですねーーー……",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "characters",
+    "charId": "024",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communications/102400100101/1024001001010010"
+  },
+  {
+    "id": 1024001001010020,
+    "speaker": "にちか",
+    "text": "にちかのお願い、叶えちゃうぞのコーナー\r\n始めますねー！",
+    "charAnim1": "smile3",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0327",
+    "voice": "produce_communications/102400100101/1024001001010020"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……えっ！\r\nええと────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1024001001010030,
+    "speaker": "にちか",
+    "text": "じゃーん、こちらです……！\r\nこのチケット、取れませんかねー……！？",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100101/1024001001010030"
+  },
+  {
+    "select": "も、もちろん\r\n取れる……！",
+    "nextLabel": "1024001001011"
+  },
+  {
+    "select": "そんなコーナー\r\nあったか……！？",
+    "nextLabel": "1024001001012"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "取れないことは\r\nないと思うけど……",
+    "nextLabel": "1024001001013"
+  },
+  {
+    "label": "1024001001011",
+    "textFrame": "off",
+    "se": "0780",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1024001001010040,
+    "speaker": "にちか",
+    "text": "えっ……！\r\nす、すごい！　ほんとですかーー！！！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100101/1024001001010040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん……ただし、研究目的ってことじゃないと難しいよ\r\nレポートとか、出せるか？",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0220"
+  },
+  {
+    "id": 1024001001010050,
+    "speaker": "にちか",
+    "text": "……！　もちろん出せます！！\r\n４万字とか超えちゃうかもですけど、読めますか！？？",
+    "charAnim1": "smile2",
+    "charAnim2": "face_excite",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0884",
+    "voice": "produce_communications/102400100101/1024001001010050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（よし、楽しく話せたな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "id": 1024001001010060,
+    "label": "1024001001012",
+    "speaker": "にちか",
+    "text": "ナーウ！　オン・エアー！\r\nこれに行けたら、私、また伸びますよ！！",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0328",
+    "voice": "produce_communications/102400100101/1024001001010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おお……！\r\nそういうことなら、なんとか押さえてみるか……！",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0730"
+  },
+  {
+    "id": 1024001001010070,
+    "speaker": "にちか",
+    "text": "……！\r\nほんとですか！？　絶対お願いしますね！　ぜったい！！",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0220",
+    "voice": "produce_communications/102400100101/1024001001010070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（まぁ、普通に話せたかな）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "1024001001013",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "nichika",
+    "textFrame": "off",
+    "se": "0242",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 1024001001010080,
+    "speaker": "にちか",
+    "text": "えっ……！\r\nど、どっちです……！？",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communications/102400100101/1024001001010080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うーん、押さえることはできるけど、\r\n事務所としては個人的な目的のためにそういう────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1024001001010090,
+    "speaker": "にちか",
+    "text": "……っ\r\n個人的な目的が個人を高めるんじゃないですかね……？",
+    "charAnim1": "sad2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp",
+    "charLabel": "nichika",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0328",
+    "voice": "produce_communications/102400100101/1024001001010090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（うっ……しまった。別のことを言えば良かったな……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

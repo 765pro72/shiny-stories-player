@@ -1,0 +1,97 @@
+[
+  {
+    "id": 4901006030010,
+    "speaker": "社長",
+    "text": "ほう\r\nアイドルを導くべき立場のお前が、か？",
+    "charLabel": "ceo",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "charType": "sub_characters",
+    "charId": "ceo",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00006",
+    "bgm": "001",
+    "voice": "special_communications/490100631/4901006030010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はい……\r\nみんなと話していると気付かされることが多くて",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "まだまだ勉強することばかりの毎日です",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901006030020,
+    "speaker": "社長",
+    "text": "それは恥ずべきことではない\r\nアイドルたちが切磋琢磨して成長していくように",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "voice": "special_communications/490100631/4901006030020"
+  },
+  {
+    "id": 4901006030030,
+    "speaker": "社長",
+    "text": "お前とアイドルも互いに刺激しあい、\r\n共に成長していけばいい",
+    "textCtrl": "p",
+    "textFrame": "015",
+    "voice": "special_communications/490100631/4901006030030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい！\r\nありがとうございます！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 4901006030040,
+    "speaker": "社長",
+    "text": "…それでは次の質問だ\r\nお前の将来像を教えてくれ",
+    "textCtrl": "l",
+    "textFrame": "015",
+    "voice": "special_communications/490100631/4901006030040"
+  },
+  {
+    "select": "理想のプロデューサーを\r\n目指します",
+    "nextLabel": "1"
+  },
+  {
+    "select": "このまま\r\nプロデュースを続けます",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "忙しくて、\r\nつい後回しに……",
+    "nextLabel": "3"
+  },
+  {
+    "label": "1",
+    "nextLabel": "end"
+  },
+  {
+    "label": "2",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "3",
+    "textFrame": "off",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end"
+  }
+]

@@ -1,0 +1,63 @@
+*{box-sizing:border-box}body{margin:0;background:#f6f5f1;color:#354965;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}button,a{font:inherit;color:inherit;cursor:pointer;text-decoration:none}button:focus-visible,a:focus-visible{outline:3px solid #ec509b;outline-offset:3px}.screen{width:100vw;height:100vh;position:relative;overflow:hidden;background:url('home-assets/office.jpg') center/cover;container-type:inline-size}#idol{position:absolute;inset:0;pointer-events:none}#idol canvas{width:100%;height:100%;object-fit:cover;display:block}header.home-status{position:absolute;top:calc(var(--header-height, 68px) + 14px);left:20px;right:auto;display:flex;gap:10px;align-items:center;z-index:10}.logo{font-style:italic;line-height:.95;color:white;text-shadow:0 2px 4px #487da9;font-size:3cqw;font-weight:900;margin-right:auto}.logo small{display:block;font-size:.85cqw;letter-spacing:.16em;margin-top:8px}header.home-status a{border:2px solid white;border-radius:30px;background:#ffffffde;padding:.5cqw 1.2cqw;font-size:1.2cqw;box-shadow:0 2px 5px #46698c44}header.home-status b{color:#4780ab;margin-left:1cqw}.side{position:absolute;top:20%;left:2%;display:grid;gap:1.6cqw}.side a,.side button{display:grid;place-content:center;text-align:center;background:linear-gradient(#fff,#e4eff7);border:2px solid white;border-radius:14px;box-shadow:0 3px 7px #3455;width:6.3cqw;height:6.1cqw;font-weight:bold;font-size:2.3cqw;color:#74a0c8}.side small{font-size:1.15cqw;color:#354965}.tools{position:absolute;top:3%;right:1.5%;display:grid;gap:.9cqw}.tools button, .tools a{width:3.5cqw;height:3.5cqw;border:2px solid white;background:#ffffffd9;border-radius:50%;font-size:1.6cqw;display:flex;align-items:center;justify-content:center;color:inherit;text-decoration:none;box-sizing:border-box}.caption{position:absolute;bottom:21%;left:2%;width:30%;padding:1.2cqw 1.6cqw;background:#fffffff0;border:2px solid white;border-radius:4px 22px 22px 22px;box-shadow:0 4px 12px #3453;font-size:1.25cqw;line-height:1.8}.caption strong{display:block;color:#6e81a4;font-size:1.5cqw}.caption p{margin:0}.caption small{font-size:.8cqw}.banner{position:absolute;bottom:5%;left:2%;width:30%;padding:1.6cqw;background:linear-gradient(115deg,#397baf,#80b4ce);border:3px solid #fff;box-shadow:0 3px 12px #3356;color:#fff;transform:rotate(-2deg);font-size:2.2cqw;font-weight:bold}.banner small{display:block;font-size:.9cqw;letter-spacing:.2em}.menus{position:absolute;right:2%;bottom:5%;width:62%;display:flex;align-items:end;gap:.7cqw}.menus a{flex:1;text-align:center;border:3px solid white;background:linear-gradient(#fff 35%,#dcecfb);box-shadow:0 3px 8px #3455;border-radius:7px;padding:1cqw .3cqw;font-size:1.3cqw;font-weight:bold;min-height:7cqw}.menus i{display:block;font-style:normal;color:#73a4c8;font-size:2.2cqw;margin-bottom:.3cqw}.menus .primary{flex:1.65;background:linear-gradient(140deg,#ffa8cf,#ec5aa3);color:white;min-height:9cqw;font-size:2cqw;text-shadow:0 2px #d34789}.menus .purple{background:linear-gradient(140deg,#bdabef,#937bd3);color:white}.menus .primary i,.menus .purple i{color:white}footer{position:absolute;bottom:.7%;left:2%;font-size:.85cqw;color:white;text-shadow:0 1px 3px #000}.clean .ui{visibility:hidden}dialog{border:0;border-radius:18px;padding:28px;max-width:500px;line-height:1.8;box-shadow:0 20px 80px #0005}dialog::backdrop{background:#16304b77}dialog button{padding:8px 18px;border:1px solid #c6d7e3;border-radius:8px;background:#eef6fc}#notice{font-size:14px;white-space:pre-line}button:hover,a:hover{filter:brightness(1.06)}#idolTouch{position:absolute;left:38%;top:16%;width:31%;height:61%;background:transparent;border:0;cursor:pointer}#wardrobeDialog{width:520px;max-height:90vh;overflow:auto}#wardrobeDialog label{display:block;margin:14px 0;font-weight:bold}#wardrobeDialog select{display:block;width:100%;padding:10px;margin-top:6px;border:1px solid #bed0e1;border-radius:8px;background:#f6faff;color:#354965;font:inherit}#wardrobeDialog input[type=range]{display:block;width:100%;accent-color:#e273ad}#wardrobeDialog .check{font-weight:normal}.wardrobeActions{display:flex;gap:10px}.hint,#outfitStatus{font-size:13px;color:#62778b}.caption{pointer-events:none}#wardrobeDialog button:disabled{opacity:.5;cursor:wait}
+.caption{width:42%;padding:1cqw 1.6cqw .6cqw;border:2px solid #ffffffd9;border-radius:4px 20px 4px 4px;background:rgba(255,255,255,.88);color:#625a70;box-shadow:0 2px 6px #43516a33;pointer-events:auto}.caption #greeting{font-size:1.65cqw;line-height:1.45;font-weight:600;white-space:pre-wrap;min-height:3.8cqw;max-height:12cqw;overflow:auto;margin:0 0 .55cqw}.captionBottom{border-top:3px dotted #a49cab;padding-top:.4cqw;display:flex;align-items:center;justify-content:space-between}.caption .captionBottom strong{font-size:1.7cqw;color:#625a70}.captionBottom button{border:0;background:transparent;padding:0 .4cqw;color:#625a70;font-size:2cqw;line-height:1.1;font-weight:bold}.captionBottom button:disabled{opacity:.35;cursor:default}.caption #voiceStatus{display:block;font-size:.75cqw;color:#827b8d;line-height:1.3;margin-top:.3cqw}
+.side{top:18%;gap:.8cqw}.side a,.side button{width:5.8cqw;height:5.2cqw}.caption{top:54%;bottom:21%;display:flex;flex-direction:column}.caption #greeting{min-height:0;max-height:none;flex:1;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin}.captionBottom,.caption #voiceStatus{flex-shrink:0}
+
+/* A single story entrance leaves more room for subtitles. */
+.menus{left:auto;right:2%;bottom:2%;width:76%;gap:.55cqw}.menus a{min-height:5.5cqw;padding:.65cqw .25cqw;font-size:1.1cqw;border-width:2px}.menus i{font-size:1.8cqw;margin-bottom:.2cqw}.menus .primary{min-height:7.1cqw;font-size:1.6cqw}.menus .primary small{display:block;font-size:.8cqw;font-weight:normal;margin-top:.25cqw;text-shadow:none}.caption{top:50%;bottom:20%;width:39%}.caption #voiceStatus[hidden]{display:none}.caption #greeting{font-size:1.6cqw;line-height:1.4}
+
+
+/* Subtitle panel occupies the free lower-left corner beside the menu. */
+.caption{top:auto;bottom:2%;left:2%;width:19%;height:21%;padding:.7cqw .85cqw}.caption #greeting{font-size:1.25cqw;line-height:1.45}.caption .captionBottom strong{font-size:1.25cqw}.captionBottom button{font-size:1.6cqw}
+.clean .caption{visibility:visible}
+
+.screen{background-image:url('home-assets/office.jpg')}
+
+.chosen-outfit{display:flex;align-items:center;gap:1rem;padding:1rem;border:1px solid #d1deec;border-radius:1rem;background:#f5f8fd;margin:1rem 0}.chosen-outfit img{width:38%;max-height:240px;object-fit:contain;border-radius:.7rem}.chosen-outfit p{font-size:14px;line-height:1.6}.chosen-outfit a{display:block;background:#8e83ba;color:#fff;padding:.8rem;border-radius:.6rem;text-align:center}#chosenOutfitHint{color:#7f90a6;font-size:12px}
+
+/* Prevent reserved right-edge scrollbar gutter (white strip) on full-bleed Home screen */
+html:has(body.page-home), body.page-home { scrollbar-gutter: auto !important; overflow: hidden !important; width: 100%; height: 100%; margin: 0; background: #0d1220; }
+body.page-home .screen { width: 100% !important; height: 100% !important; }
+html[data-theme="dark"] body.page-home .screen { background-image: url('home-assets/office-night.jpg'); }
+
+.home-random-row {
+  margin: 14px 0 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.btn-random-action {
+  padding: 10px 14px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+  background: linear-gradient(135deg, #f0f7ff, #e1effe) !important;
+  border: 1.5px solid #b9d8fb !important;
+  color: #1e429f !important;
+  transition: all 0.16s ease !important;
+  cursor: pointer !important;
+  text-align: center;
+}
+.btn-random-action:hover {
+  background: linear-gradient(135deg, #e1effe, #cce5ff) !important;
+  border-color: #76a9fa !important;
+  transform: translateY(-1px);
+}
+.btn-random-all {
+  background: linear-gradient(135deg, #fff0f6, #ffe3ec) !important;
+  border: 1.5px solid #fbcfe8 !important;
+  color: #9d174d !important;
+}
+.btn-random-all:hover {
+  background: linear-gradient(135deg, #ffe3ec, #fcc2d7) !important;
+  border-color: #f472b6 !important;
+}
+html[data-theme="dark"] .btn-random-action {
+  background: linear-gradient(135deg, #1e293b, #172033) !important;
+  border: 1.5px solid #334155 !important;
+  color: #93c5fd !important;
+}
+html[data-theme="dark"] .btn-random-all {
+  background: linear-gradient(135deg, #2e1065, #240b4a) !important;
+  border: 1.5px solid #4c1d95 !important;
+  color: #f472b6 !important;
+}

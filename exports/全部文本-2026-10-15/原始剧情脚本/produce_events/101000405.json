@@ -1,0 +1,996 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00526",
+    "bgm": "0114"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2600
+  },
+  {
+    "speaker": "あすみ",
+    "text": "……チョコちゃん\r\n私、ずっと怖くて聞けなかったんだけど……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "あすみ",
+    "text": "アイドルになったこと、後悔してない……？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1010004050010,
+    "speaker": "智代子",
+    "text": "えっ",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "010",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/101000405/1010004050010"
+  },
+  {
+    "id": 1010004050020,
+    "speaker": "智代子",
+    "text": "──えっ！？　なんで！？\r\n待ってあすみちゃん、私のどこがそう見えたの！？",
+    "charAnim1": "surp1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "fade_out",
+    "voice": "produce_events/101000405/1010004050020"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "あすみ",
+    "text": "ううん、違うの！　違うの！\r\nチョコちゃんがそう見えたとかじゃなくて──！",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "0454"
+  },
+  {
+    "speaker": "あすみ",
+    "text": "私がずっと、勝手に不安だっただけなの！\r\n夢を叶えてほしいなんて、勝手に押し付けたから──！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "あすみ",
+    "text": "そういう言葉は……重荷にもなるのに……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1010004050030,
+    "speaker": "智代子",
+    "text": "……あすみちゃん……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101000405/1010004050030"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00144",
+    "fg": "004521",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00539",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "99999",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00526",
+    "bgEffect": "fade",
+    "bgEffectTime": 2000,
+    "waitType": "time",
+    "waitTime": 2800
+  },
+  {
+    "id": 1010004050040,
+    "speaker": "智代子",
+    "text": "──感謝なら、たくさんあるけど",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "073",
+    "voice": "produce_events/101000405/1010004050040"
+  },
+  {
+    "id": 1010004050050,
+    "speaker": "智代子",
+    "text": "後悔したことなんて一度もないし、\r\nあすみちゃんの言葉を重荷だなんて思ったこともないよ",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050050"
+  },
+  {
+    "id": 1010004050060,
+    "speaker": "智代子",
+    "text": "私は今、あすみちゃんに背中を押してもらったおかげで\r\nひとりだったら絶対に見られなかった世界を見てる",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050060"
+  },
+  {
+    "id": 1010004050070,
+    "speaker": "智代子",
+    "text": "ずーっと、幸運だよ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050070"
+  },
+  {
+    "speaker": "あすみ",
+    "text": "チョコちゃん……──",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 1010004050080,
+    "speaker": "智代子",
+    "text": "……ありがとう\r\n怖いって思ってたのに、聞いてくれて",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101000405/1010004050080"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "あすみ",
+    "text": "ううん、ううん……！\r\n本当はもっと、早くに聞かなきゃいけなかった",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "0327"
+  },
+  {
+    "speaker": "あすみ",
+    "text": "でも、本当に後悔させちゃってたらどうしようって、\r\n私ずっと、先延ばしにして──",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "あすみ",
+    "text": "ごめんなさ──",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1010004050090,
+    "speaker": "智代子",
+    "text": "わーっ、言わないであすみちゃん！\r\n違うよ、それは私の方！",
+    "charAnim1": "surp2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_fear",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101000405/1010004050090"
+  },
+  {
+    "id": 1010004050100,
+    "speaker": "智代子",
+    "text": "あすみちゃんのこと、そんなふうに不安にさせてるなんて\r\n全然気が付かなかった",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050100"
+  },
+  {
+    "id": 1010004050110,
+    "speaker": "智代子",
+    "text": "ごめんなさい",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050110"
+  },
+  {
+    "speaker": "あすみ",
+    "text": "！？\r\n違う、チョコちゃんは──",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1010004050120,
+    "speaker": "智代子",
+    "text": "違わないよ",
+    "charAnim2": "face_serious",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_serious",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050120"
+  },
+  {
+    "id": 1010004050130,
+    "speaker": "智代子",
+    "text": "あすみちゃんの友達なのに──\r\nあすみちゃんの一番のアイドルなのに",
+    "charAnim1": "sad1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050130"
+  },
+  {
+    "id": 1010004050140,
+    "speaker": "智代子",
+    "text": "あすみちゃんを、一番の笑顔にできてなかったんだ",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050140"
+  },
+  {
+    "speaker": "あすみ",
+    "text": "……！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1010004050150,
+    "speaker": "智代子",
+    "text": "だから、ごめんなさい",
+    "charAnim1": "wait1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_nothing",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050150"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 1010004050160,
+    "speaker": "智代子",
+    "text": "──でも、もうそんな不安な気持ちになんてさせない",
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050160"
+  },
+  {
+    "id": 1010004050170,
+    "speaker": "智代子",
+    "text": "アイドルになれてよかったって、\r\nずっとアイドルでいたいんだって",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050170"
+  },
+  {
+    "id": 1010004050180,
+    "speaker": "智代子",
+    "text": "あすみちゃんを──ファンのみんなを\r\n必ず笑顔にして、夢中にさせるアイドルになるって",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050180"
+  },
+  {
+    "id": 1010004050190,
+    "speaker": "智代子",
+    "text": "そういうことがしたいから、アイドルでいるんだって\r\n……そう、証明してみせるから",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050190"
+  },
+  {
+    "id": 1010004050200,
+    "speaker": "智代子",
+    "text": "だから、見ててほしいな",
+    "charAnim1": "wait3",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050200"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "あすみ",
+    "text": "────……！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "あすみ",
+    "text": "……ふふっ……！\r\nやっぱり、私の推しはすごいな……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "あすみ",
+    "text": "心配なんてなくなっちゃった\r\nこれからは……ただ普通に、応援できる──",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1010004050210,
+    "speaker": "智代子",
+    "text": "あすみちゃんがずーっと応援したくなる\r\nアイドルでいられるように、頑張るよ",
+    "charAnim1": "wait2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101000405/1010004050210"
+  },
+  {
+    "speaker": "あすみ",
+    "text": "ううん、特別に頑張らなくても\r\nチョコちゃんは絶対、ずっと私の一番だよ",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1010004050220,
+    "speaker": "智代子",
+    "text": "判定甘くしちゃダメだったら",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050220"
+  },
+  {
+    "speaker": "あすみ",
+    "text": "甘くなんかしてないよ",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "あすみ",
+    "text": "してないけど、わかるの\r\nチョコちゃんはずっとそうだ、って",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1010004050230,
+    "speaker": "智代子",
+    "text": "ええ～……？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_shy2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050230"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "あすみ",
+    "text": "ワンマンライブ、頑張ってね",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1010004050240,
+    "speaker": "智代子",
+    "text": "──うん",
+    "charAnim2": "face_serious",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050240"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp_s",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00413",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "あすみ",
+    "text": "あー、いい席だといいなぁ……！",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "autoWaitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00526",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2500
+  },
+  {
+    "speaker": "あすみ",
+    "text": "……あっ、ごめんね……！\r\n私招待断ったのに、席の心配……",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 1010004050250,
+    "speaker": "智代子",
+    "text": "えーっ、なんで謝るの……！",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101000405/1010004050250"
+  },
+  {
+    "id": 1010004050260,
+    "speaker": "智代子",
+    "text": "来てもらえるだけで嬉しいのに、自力で行きたいって\r\n言ってもらえたんだもん！　私は嬉しいだけだよ！",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050260"
+  },
+  {
+    "id": 1010004050270,
+    "speaker": "智代子",
+    "text": "だからもちろん、見やすいところが当たってくれたら\r\nいいなって思ってるけど──",
+    "charAnim1": "wait3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050270"
+  },
+  {
+    "id": 1010004050280,
+    "speaker": "智代子",
+    "text": "──でも\r\nどんな場所にいても、楽しませるよ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050280"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "chiyoko",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgEffectTime": 2500,
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 6000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00129",
+    "bgEffect": "fade",
+    "bgm": "077",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 1010004050290,
+    "speaker": "智代子",
+    "text": "プロデューサーさん\r\n私、決めました",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/101000405/1010004050290"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010004050300,
+    "speaker": "智代子",
+    "text": "この間の目標の話です",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050300"
+  },
+  {
+    "id": 1010004050310,
+    "speaker": "智代子",
+    "text": "私は、私を見て、私の歌を聴いて、\r\n私を思ってくれている間を──",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050310"
+  },
+  {
+    "id": 1010004050320,
+    "speaker": "智代子",
+    "text": "みんなの特別な時間にできるような、\r\nそんなアイドルになりたい",
+    "charAnim1": "sad1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050320"
+  },
+  {
+    "id": 1010004050330,
+    "speaker": "智代子",
+    "text": "私を推して、後悔させないだけじゃない……\r\nずっと夢中にさせるような",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050330"
+  },
+  {
+    "id": 1010004050340,
+    "speaker": "智代子",
+    "text": "応援してもらっている分を、いつだってそれ以上で\r\n返せるような──そんなアイドルになります",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050340"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──そうか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それじゃあ、叶えなくちゃな\r\n智代子なら絶対、なれるから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 1010004050350,
+    "speaker": "智代子",
+    "text": "──はいっ",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050350"
+  },
+  {
+    "id": 1010004050360,
+    "speaker": "智代子",
+    "text": "そのためにも引き続き、よろしくお願いします！\r\nプロデューサーさん！",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "chiyoko",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/101000405/1010004050360"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00007",
+    "bgm": "019"
+  },
+  {
+    "id": 4021001000110010,
+    "speaker": "円香",
+    "text": "何か飲み物をもらえませんか",
+    "charAnim1": "wait4",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "021",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_communication_cheers/402100100011/4021001000110010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（用意したのは……）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "ミネラルウォーター",
+    "nextLabel": "4021001000111"
+  },
+  {
+    "select": "ジュース",
+    "nextLabel": "4021001000112"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "ウーロン茶",
+    "nextLabel": "4021001000113"
+  },
+  {
+    "id": 4021001000110020,
+    "label": "4021001000111",
+    "speaker": "円香",
+    "text": "ありがとうございます",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402100100011/4021001000110020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（ああ、歌う前には喉を潤すことが大切だ……！）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4021001000110030,
+    "label": "4021001000112",
+    "speaker": "円香",
+    "text": "……それなら結構です",
+    "charAnim1": "shy2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402100100011/4021001000110030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（甘くて美味しいと思ったんだけど……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "id": 4021001000110040,
+    "label": "4021001000113",
+    "speaker": "円香",
+    "text": "……呆れた",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_surp",
+    "charLabel": "madoka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/402100100011/4021001000110040"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "madoka",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（受け取らずに行ってしまった……）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

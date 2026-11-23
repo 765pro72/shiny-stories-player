@@ -1,0 +1,843 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "01039",
+    "bgm": "0082",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "se": "0239",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "──オッケー！\r\nよかったよ斑鳩さん！",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "前のソロ曲とはずいぶん雰囲気が違うのに\r\nやっぱさすがだね、もう歌いこなしてるって感じ！",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "1275"
+  },
+  {
+    "id": 2026010020010,
+    "speaker": "ルカ",
+    "text": "……",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040260060",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/202601002/2026010020010"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "何か気になってるところとかはある？\r\nなければ今日は終わりにするけど",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "0328"
+  },
+  {
+    "id": 2026010020020,
+    "speaker": "ルカ",
+    "text": "……特には",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charAnim4": "blank",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020020"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "はーい、じゃあおしまい！\r\nこのままいけばレコーディングもバッチリよ",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "0454"
+  },
+  {
+    "speaker": "トレーナー",
+    "text": "ファンの人たち、きっと斑鳩さんの新しい一面を\r\n喜んでくれるんじゃない？",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "id": 2026010020030,
+    "speaker": "ルカ",
+    "text": "──",
+    "charAnim1": "wait1",
+    "charAnim2": "face_surp",
+    "charAnim3": "blank",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020030",
+    "autoWaitTime": 1700
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close2",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 5000,
+    "bgEffectTime": 1500,
+    "bgmFadeTime": 3000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00659",
+    "bgEffect": "fade",
+    "bgm": "0052",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1000
+  },
+  {
+    "speaker": "SNSの投稿",
+    "text": "『ルカはわたしたちの光　闇』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "se": "1806",
+    "waitType": "time",
+    "waitTime": 1100
+  },
+  {
+    "speaker": "SNSの投稿",
+    "text": "『私が独りでいる時、\r\nルカも同じようにいてくれるってわかってるから大丈夫』",
+    "textCtrl": "p",
+    "textFrame": "003"
+  },
+  {
+    "textFrame": "off",
+    "se": "1806",
+    "waitType": "time",
+    "waitTime": 1700
+  },
+  {
+    "id": 2026010020040,
+    "speaker": "ルカ",
+    "text": "──……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020040"
+  },
+  {
+    "id": 2026010020050,
+    "speaker": "ルカ",
+    "text": "（新しい一面──……を、見たいのかどうか）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020050"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00659",
+    "fg": "004521"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "SNSの投稿",
+    "text": "『どうして？　ルカはどこ？』",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "1021"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 700
+  },
+  {
+    "speaker": "SNSの投稿",
+    "text": "『知らないカミサマがいる\r\nそれとも、もういないの……？』",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "se": "1021"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 2026010020060,
+    "speaker": "ルカ",
+    "text": "（……混乱させる可能性もある）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020060"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00290",
+    "middleFg": "003251"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2026010020070,
+    "speaker": "ルカ",
+    "text": "『オマエらが知らない私』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020070"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1100
+  },
+  {
+    "id": 2026010020080,
+    "speaker": "ルカ",
+    "text": "（──……\r\n……情報出しすぎるのも野暮か……？）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020080"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00225",
+    "fg": "fade_out",
+    "middleFg": "fade_out",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1700,
+    "bgEffectTime": 1000,
+    "fgEffectTime": 700,
+    "middleFgEffectTime": 700
+  },
+  {
+    "textFrame": "off",
+    "fg": "off",
+    "middleFg": "off"
+  },
+  {
+    "id": 2026010020090,
+    "speaker": "ルカ",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020090",
+    "autoWaitTime": 1500
+  },
+  {
+    "id": 2026010020100,
+    "speaker": "ルカ",
+    "text": "（……相談──────）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020100",
+    "autoWaitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white2",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "fg": "004521"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 200
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white2",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "なるほど……！\r\nどの程度情報を発信すべきかって話だな……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0328",
+    "waitType": "time",
+    "waitTime": 1700
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "まず、ルカの気持ちを教えてほしい",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ルカはどうしたい？\r\nそれをベースに考えていこう！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 800
+  },
+  {
+    "id": 2026010020110,
+    "speaker": "ルカ",
+    "text": "（──……、……）",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020110"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00123",
+    "fg": "fade_out",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 1700,
+    "bgEffectTime": 700,
+    "fgEffectTime": 500
+  },
+  {
+    "textFrame": "off",
+    "fg": "off"
+  },
+  {
+    "id": 2026010020120,
+    "speaker": "ルカ",
+    "text": "────ナシ",
+    "charAnim1": "wait3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202601002/2026010020120",
+    "autoWaitTime": 1400
+  },
+  {
+    "charAnim1": "sad2",
+    "charAnim2": "face_anger1",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2800
+  },
+  {
+    "id": 2026010020130,
+    "speaker": "ルカ",
+    "text": "つーか……\r\n何想像できてんだよ…………",
+    "charLipAnim": "lip_sad",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020130"
+  },
+  {
+    "id": 2026010020140,
+    "speaker": "ルカ",
+    "text": "──",
+    "charAnim1": "anger2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020140",
+    "autoWaitTime": 1700
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 4500,
+    "bgEffectTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "bg": "00534",
+    "bgEffect": "fade",
+    "se": "1465",
+    "waitType": "time",
+    "waitTime": 4700,
+    "bgEffectTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "se": "0496",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "bg": "00129",
+    "bgEffect": "fade",
+    "se": "0152",
+    "waitType": "time",
+    "waitTime": 1500,
+    "bgEffectTime": 1000
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 700
+  },
+  {
+    "textFrame": "off",
+    "se": "0384",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おはようルカ！\r\n今日もよろしく頼むな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2026010020150,
+    "speaker": "ルカ",
+    "text": "……、……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_serious",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202601002/2026010020150"
+  },
+  {
+    "id": 2026010020160,
+    "speaker": "ルカ",
+    "text": "はぁ……",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっ、どうした！？\r\nなんのため息だ……！？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2026010020170,
+    "speaker": "ルカ",
+    "text": "なんでもない",
+    "charAnim2": "face_anger1",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "本当か……！？\r\n何かあるならまずルカの気持ちを────",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim4": "blank",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1600
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white3",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 500,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00001",
+    "fg": "004521"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white3",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 500,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1700
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white4",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "ffffff"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 500,
+      "easing": "easeOutQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "bg": "00129",
+    "fg": "off"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "white4",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 500,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "id": 2026010020180,
+    "speaker": "ルカ",
+    "text": "本当になんでもない",
+    "charAnim1": "anger2",
+    "charAnim2": "face_anger2",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/202601002/2026010020180"
+  },
+  {
+    "id": 2026010020190,
+    "speaker": "ルカ",
+    "text": "──……とっとと出せよ",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close2",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "りょ、了解……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "charAnim1": "wait4",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "se": "0345",
+    "waitType": "time",
+    "waitTime": 6000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "────……なぁ、ルカ……？　もし──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2026010020200,
+    "speaker": "ルカ",
+    "text": "しつこい……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_close2",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020200",
+    "autoWaitTime": 1700
+  },
+  {
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_serious_s",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2026010020210,
+    "speaker": "ルカ",
+    "text": "……アンタには関係ねぇよ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_serious",
+    "charLabel": "luca",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/202601002/2026010020210",
+    "autoWaitTime": 3200
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "luca",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "bg": "00000",
+    "bgEffect": "fade",
+    "waitType": "time",
+    "waitTime": 2000,
+    "bgEffectTime": 1500
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

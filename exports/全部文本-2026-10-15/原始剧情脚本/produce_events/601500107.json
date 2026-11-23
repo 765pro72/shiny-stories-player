@@ -1,0 +1,242 @@
+[
+  {
+    "charAnim1": "wait",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "charType": "sub_characters",
+    "charId": "staff",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "bg": "00023",
+    "bgm": "008",
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "id": 6902001070010,
+    "speaker": "社長",
+    "text": "お前、担当アイドルのことをどう思っている？",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601500107/6902001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……たしかに負けてしまいましたけど、\r\n彼女こそが最高のアイドルだと思っています",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6902001070020,
+    "speaker": "社長",
+    "text": "……！　そうか……",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601500107/6902001070020"
+  },
+  {
+    "id": 6901001070010,
+    "speaker": "はづき",
+    "text": "ふふ\r\n社長が聞きたかった言葉、そのまま出てきましたね",
+    "charAnim1": "smile2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/601500107/6901001070010"
+  },
+  {
+    "id": 6901001070020,
+    "speaker": "はづき",
+    "text": "もし違う言葉が出てきたら、\r\n説教してやるって言って聞かなかったのに",
+    "charAnim1": "smile3",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "voice": "produce_events/601500107/6901001070020"
+  },
+  {
+    "id": 6902001070030,
+    "speaker": "社長",
+    "text": "……うるさいぞ。とにかく、\r\nそういうことなら私から言うことはない",
+    "charAnim1": "wait2",
+    "charLabel": "hazuki",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601500107/6902001070030"
+  },
+  {
+    "id": 6902001070040,
+    "speaker": "社長",
+    "text": "さあ、早くその最高のアイドルに\r\n会いに行ってこい",
+    "textCtrl": "p",
+    "textFrame": "004",
+    "voice": "produce_events/601500107/6902001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……はい！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "off",
+    "charLabel": "hazuki",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00021",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "speaker": "off",
+    "textFrame": "off",
+    "se": "0121",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 6015001070010,
+    "speaker": "甜花",
+    "text": "はぁ……はぁ……\r\nふぅ……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_jersey",
+    "charType": "characters",
+    "charId": "015",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/601500107/6015001070010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "甜花……ひとりで練習してたのか……\r\n悔しい気持ちはわかるけど、無理はするな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6015001070020,
+    "speaker": "甜花",
+    "text": "プロデューサーさん……\r\nでも……",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601500107/6015001070020"
+  },
+  {
+    "id": 6015001070030,
+    "speaker": "甜花",
+    "text": "甜花……本当に悔しくて……\r\nどうすればいいのかわかんない……",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_shy2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601500107/6015001070030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "だからって、甜花もつらいだろう\r\n休むときには休んだほうがいいぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6015001070040,
+    "speaker": "甜花",
+    "text": "でも……このままじゃ、いけないんだって……\r\nそれだけはわかるから……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601500107/6015001070040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（……甜花は本当に成長したんだな\r\nアイドルとしても……）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6015001070050,
+    "speaker": "甜花",
+    "text": "だから……レッスン、する……\r\nプロデューサーさん……見てて……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_surp2",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601500107/6015001070050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ああ、わかった。でも今日だけじゃない\r\n甜花が活躍できるように、これからも傍で支えていくよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 6015001070060,
+    "speaker": "甜花",
+    "text": "にへへ……プロデューサーさん、ありがと……",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "tenka",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/601500107/6015001070060"
+  },
+  {
+    "label": "end"
+  }
+]

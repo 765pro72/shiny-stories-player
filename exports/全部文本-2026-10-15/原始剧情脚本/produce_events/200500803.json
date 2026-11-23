@@ -1,0 +1,855 @@
+[
+  {
+    "speaker": "店主",
+    "text": "──へい、お待ち！！",
+    "textCtrl": "p",
+    "textFrame": "003",
+    "bg": "00196",
+    "bgm": "0000"
+  },
+  {
+    "textFrame": "off",
+    "se": "0166",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2005008030010,
+    "speaker": "摩美々",
+    "text": "…………",
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "005",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "004",
+    "voice": "produce_events/200500803/2005008030010"
+  },
+  {
+    "id": 2005008030020,
+    "speaker": "摩美々",
+    "text": "……正気ですかぁ？",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030030,
+    "speaker": "摩美々",
+    "text": "こんな暑いのに、ラーメンなんて……",
+    "charAnim1": "touch",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……？\r\n摩美々が食べたいって言ったんじゃないか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030040,
+    "speaker": "摩美々",
+    "text": "……そうですケド……",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030040"
+  },
+  {
+    "id": 2005008030050,
+    "speaker": "摩美々",
+    "text": "でもそれは……\r\nそーいうんじゃなかったんでー",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030050"
+  },
+  {
+    "id": 2005008030060,
+    "speaker": "摩美々",
+    "text": "……そーいうんじゃ……",
+    "charAnim2": "face_close2",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030060"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "bg": "00000",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "bg": "00075"
+  },
+  {
+    "bgm": "0002",
+    "effectLabel": "black",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "bg": "00163",
+    "bgEffect": "fade",
+    "bgm": "fade_out",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "撮影、お疲れ様",
+    "charAnim1": "wait",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "bgm": "002"
+  },
+  {
+    "id": 2005008030070,
+    "speaker": "摩美々",
+    "text": "はいー",
+    "charAnim1": "hello",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "それにしても暑いなー……\r\n事務所に帰る前に、どこかで涼んでいくか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "摩美々、\r\n何か食べたいものとかはないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030080,
+    "speaker": "摩美々",
+    "text": "うーん……\r\n……あ、ラーメンが食べたいですねー",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030080"
+  },
+  {
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2005008030090,
+    "speaker": "摩美々",
+    "text": "ふふー……",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_smile_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──そうか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030100,
+    "speaker": "摩美々",
+    "text": "……え",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_a",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "暑さには熱さを──\r\n摩美々らしい逆転の発想だな……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "よし、今日のお昼はラーメンで決まりだ！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030110,
+    "speaker": "摩美々",
+    "text": "ええー……",
+    "charAnim1": "sad1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030110"
+  },
+  {
+    "textFrame": "off",
+    "bgm": "fade_out",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "alpha": 0,
+      "time": 240
+    },
+    "waitType": "effect"
+  },
+  {
+    "charAnim1": "wait",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "bg": "00196",
+    "fg": "off",
+    "waitType": "time",
+    "waitTime": 500
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "id": 2005008030120,
+    "speaker": "摩美々",
+    "text": "…………",
+    "charAnim1": "sad2",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030120"
+  },
+  {
+    "id": 2005008030130,
+    "speaker": "摩美々",
+    "text": "ま……いいやぁ\r\n……いただきまぁす",
+    "charAnim1": "surp1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030130"
+  },
+  {
+    "charAnim1": "sleep",
+    "charLabel": "mamimi",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "textFrame": "off",
+    "se": "0336",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2005008030131,
+    "speaker": "摩美々＆プロデューサー",
+    "text": "…………",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030131"
+  },
+  {
+    "id": 2005008030140,
+    "speaker": "摩美々",
+    "text": "……うー……\r\n暑い……",
+    "charAnim2": "face_anger",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200500803/2005008030140"
+  },
+  {
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "waitType": "time",
+    "waitTime": 1200
+  },
+  {
+    "id": 2005008030150,
+    "speaker": "摩美々",
+    "text": "…………",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030150"
+  },
+  {
+    "id": 2005008030160,
+    "speaker": "摩美々",
+    "text": "……プロデューサー\r\n一味、取ってくださいー",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "bgm": "015",
+    "voice": "produce_events/200500803/2005008030160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おう。これか──って",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………何をするつもりだ……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030170,
+    "speaker": "摩美々",
+    "text": "何って……\r\nラーメンにかけるんですケド",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030170"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "暑いのに？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030180,
+    "speaker": "摩美々",
+    "text": "はい",
+    "charAnim1": "wait2",
+    "charAnim2": "face_wait",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "辛いのを？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030190,
+    "speaker": "摩美々",
+    "text": "はいー",
+    "charAnim1": "surp1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030190"
+  },
+  {
+    "id": 2005008030200,
+    "speaker": "摩美々",
+    "text": "暑さには熱さを……\r\n『私らしい逆転の発想』ですよー",
+    "charAnim2": "face_close",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………わかった。俺が摩美々のラーメンにかけよう\r\n好きなところでストップと言ってくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030210,
+    "speaker": "摩美々",
+    "text": "……はい？\r\nちょっと意味がわかんないんですケド",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030210"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "いや、だってなあ……\r\n摩美々に一味なんて渡したら、何をされるか……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030220,
+    "speaker": "摩美々",
+    "text": "…………はぁ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030220"
+  },
+  {
+    "id": 2005008030230,
+    "speaker": "摩美々",
+    "text": "……私のこと、そんなふうに見てたんですねー\r\nなんだかショックですー",
+    "charAnim1": "sad1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030230"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うっ……\r\nそ、そうだよな。すまん……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………\r\nはい、一味──",
+    "charAnim2": "face_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "anger1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2005008030240,
+    "speaker": "摩美々",
+    "text": "おーっと手が滑ったぁ",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "se": "0589",
+    "voice": "produce_events/200500803/2005008030240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ま、摩美々ーーーーっ！！",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "やっぱりイタズラ\r\nするんじゃないか！",
+    "nextLabel": "1"
+  },
+  {
+    "select": "仕方ない……\r\n食べるか",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "食べ物を粗末に\r\nするんじゃない！",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2005008030250,
+    "label": "1",
+    "speaker": "摩美々",
+    "text": "違いますよー\r\n暑くて手が滑っただけですー",
+    "charAnim1": "shy2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030250"
+  },
+  {
+    "id": 2005008030260,
+    "speaker": "摩美々",
+    "text": "何度もアイドルを疑うなんて……\r\n酷いプロデューサーですねー",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030260"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "…………すまん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030270,
+    "speaker": "摩美々",
+    "text": "──ということで、その一味マシマシラーメンを\r\nいっそひと思いにー",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030270"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ああ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "よし、いただきま──\r\n…………辛っ！！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030280,
+    "speaker": "摩美々",
+    "text": "ふふ……",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030280"
+  },
+  {
+    "id": 2005008030290,
+    "speaker": "摩美々",
+    "text": "……なんかぁ、いい夏になりそうですー",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200500803/2005008030290"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2005008030300,
+    "label": "2",
+    "speaker": "摩美々",
+    "text": "──え",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_a",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "い、意外といけるな……！\r\nゲホッ……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030310,
+    "speaker": "摩美々",
+    "text": "……ちょっとー\r\nやせ我慢しないでくださいー",
+    "charAnim1": "touch",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030310"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "やせ我慢なんかじゃないぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "プロデューサーがアイドルの失敗を\r\nフォローするのは、当たり前のことだ……ゴホッ",
+    "charAnim2": "face_wait",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "mamimi",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mamimi",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2005008030320,
+    "speaker": "摩美々",
+    "text": "…………ぁ……\r\nあの……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030320"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030330,
+    "speaker": "摩美々",
+    "text": "……事務所に私のアイスがあるので……\r\n帰ったらプロデューサーにあげますねー……",
+    "charAnim1": "shy1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_anger",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200500803/2005008030330"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2005008030340,
+    "label": "3",
+    "speaker": "摩美々",
+    "text": "粗末にするかしないかは\r\nプロデューサー次第じゃないですかぁ？",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030340"
+  },
+  {
+    "id": 2005008030350,
+    "speaker": "摩美々",
+    "text": "完食すれば、粗末にはならないですよー",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030350"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "う、そうか……\r\n……それじゃあ……いただきます",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──……ゲホッ、辛っ！？\r\nそして……暑いっ……！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2005008030360,
+    "speaker": "摩美々",
+    "text": "ふふー\r\n今日もナイスリアクションー",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030360"
+  },
+  {
+    "id": 2005008030370,
+    "speaker": "摩美々",
+    "text": "プロデューサーが面白いので、\r\n私はちょっと涼しくなったかもですー",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mamimi",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200500803/2005008030370"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

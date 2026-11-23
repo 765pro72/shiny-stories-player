@@ -1,0 +1,621 @@
+[
+  {
+    "speaker": "プロデューサー",
+    "text": "えーっと……みんなのレッスンの予定は、\r\nはづきさんに伝えて調整したし",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "bg": "00001",
+    "bgm": "012"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あとはこの書類を整理すれば──\r\nうん、もう少しで一区切りつけられるな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0182",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？\r\n──真乃から、メッセージか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2001009010010,
+    "speaker": "真乃",
+    "text": "『プロデューサーさん\r\nお芋はお好きですか？』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "芋……？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えっと、とりあえず……\r\n『人並みには好きだよ』……っと",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "se": "0461"
+  },
+  {
+    "textFrame": "off",
+    "se": "0330",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（急にどうしたんだ……？）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "se": "0182",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2001009010020,
+    "speaker": "真乃",
+    "text": "『わ、よかったです^^\r\nレッスン前に事務所に持って行きます』",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "事務所に、芋を……？\r\n……まぁ、真乃が来てから聞けばいいか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "よーし、もうひと頑張りするぞー！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "textFrame": "off",
+    "effectLabel": "black1",
+    "effectTarget": {
+      "type": "rect",
+      "width": 1136,
+      "height": 640,
+      "color": "000000"
+    },
+    "effectValue": {
+      "type": "from",
+      "x": 1000,
+      "alpha": 0,
+      "time": 1000
+    },
+    "waitType": "effect"
+  },
+  {
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "effectLabel": "black1",
+    "effectValue": {
+      "type": "to",
+      "alpha": 0,
+      "time": 1000,
+      "easing": "easeInQuart"
+    },
+    "waitType": "effect"
+  },
+  {
+    "textFrame": "off",
+    "se": "0113",
+    "waitType": "time",
+    "waitTime": 1000
+  },
+  {
+    "id": 2001009010030,
+    "speaker": "真乃",
+    "text": "おはようございます",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、真乃\r\nおはよう──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001009010040,
+    "speaker": "真乃",
+    "text": "あっ、プロデューサーさんっ\r\nおはようございますっ",
+    "charAnim1": "smile2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charType": "idols",
+    "charId": "1040010040",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "voice": "produce_events/200100901/2001009010040"
+  },
+  {
+    "id": 2001009010050,
+    "speaker": "真乃",
+    "text": "あの、よかったらこれ──",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010050"
+  },
+  {
+    "charAnim1": "wait",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "charEffect": {
+      "type": "to",
+      "alpha": 0,
+      "time": 100
+    }
+  },
+  {
+    "se": "0219",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2001009010060,
+    "speaker": "真乃",
+    "text": "温かいうちに一緒に食べませんかっ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "to",
+      "alpha": 1,
+      "time": 100
+    },
+    "voice": "produce_events/200100901/2001009010060"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "お、焼き芋かぁ\r\nさっきの連絡はこのためだったんだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001009010070,
+    "speaker": "真乃",
+    "text": "はいっ\r\n事務所に来る途中で屋台を見つけて……",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010070"
+  },
+  {
+    "id": 2001009010080,
+    "speaker": "真乃",
+    "text": "お芋の甘くていい匂いにつられて、\r\n買っちゃいましたっ",
+    "charAnim1": "sad1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010080"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、そうか。わざわざ俺の分までありがとう\r\n……せっかくだし、頂こうかな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──うん、ほくほくしててすごく美味い！\r\n俺も、屋台のあのメロディーを聞くと無性に食べたくなるよ",
+    "charAnim2": "face_wait",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……焼き芋の季節になったんだなぁ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001009010090,
+    "speaker": "真乃",
+    "text": "ふふっ、そうですね\r\nなんだか、秋なんだなって思って私もつい買っちゃいます",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010090"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、確かに秋の風物詩って感じだよな",
+    "charAnim2": "face_wait",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか……もう秋か──",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "紅葉が\r\n綺麗な季節だ",
+    "nextLabel": "1"
+  },
+  {
+    "select": "身体を\r\n動かしたくなるな",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "天高く\r\n馬肥ゆる……",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2001009010100,
+    "label": "1",
+    "speaker": "真乃",
+    "text": "はいっ\r\nちょうど見ごろの時期ですっ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もし時間ができれば、\r\n温泉にでも入りながらゆっくり眺めたいもんだな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001009010110,
+    "speaker": "真乃",
+    "text": "温泉……ほわぁ……\r\nとってもいいですねっ",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、そうだろう？\r\n落ちてくる紅葉を眺めながら肩まで湯につかったら……",
+    "charAnim2": "face_wait",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001009010120,
+    "speaker": "真乃",
+    "text": "……想像するだけで\r\nとっても気持ちよくなってきちゃいますっ",
+    "charAnim1": "sad2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010120"
+  },
+  {
+    "id": 2001009010130,
+    "speaker": "真乃",
+    "text": "ふふ……灯織ちゃんとめぐるちゃん、ふたりとも一緒に\r\nゆっくり見れたら……素敵です……っ",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、そうだな\r\nみんながまとまった休みをとれるよう、俺も頑張るよ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001009010140,
+    "speaker": "真乃",
+    "text": "本当ですかっ？\r\nありがとうございますっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200100901/2001009010140"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2001009010150,
+    "label": "2",
+    "speaker": "真乃",
+    "text": "ふふっ、そうですねっ\r\n涼しくって、でもなんだかポカポカして……",
+    "charAnim1": "shy1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010150"
+  },
+  {
+    "id": 2001009010160,
+    "speaker": "真乃",
+    "text": "私も普段より遠くまで歩いたりしちゃいますっ",
+    "charAnim1": "wait4",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "秋はハイキングの季節でもあるもんな\r\n紅葉の見られるコースなんか歩いたらすごそうだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001009010170,
+    "speaker": "真乃",
+    "text": "はいっ、葉っぱが鮮やかに色付いていて……",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010170"
+  },
+  {
+    "id": 2001009010171,
+    "speaker": "真乃",
+    "text": "とっても綺麗で、すごく気持ちがいいですっ",
+    "charAnim1": "smile2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010171"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、それはいいな\r\n真乃は、季節の名所みたいなところにも結構行くのか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001009010180,
+    "speaker": "真乃",
+    "text": "最近は、なかなか機会がないんですけれど\r\n以前はよく行っていましたっ",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010180"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "じゃあ、もし時間が空いたら\r\n他のふたりも誘って行ってみるか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001009010190,
+    "speaker": "真乃",
+    "text": "ほわぁ……みんなで……",
+    "charAnim1": "surp2",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010190"
+  },
+  {
+    "id": 2001009010191,
+    "speaker": "真乃",
+    "text": "はいっ、ぜひ行きましょうっ",
+    "charAnim1": "anger2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200100901/2001009010191"
+  },
+  {
+    "id": 2001009010200,
+    "label": "3",
+    "speaker": "真乃",
+    "text": "……？",
+    "charAnim1": "wait4",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_sad_s",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは……秋は美味しいものが多いから、\r\n食べ過ぎないように自制もしないとって思ってな……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001009010210,
+    "speaker": "真乃",
+    "text": "ほわ…………",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010210"
+  },
+  {
+    "charAnim1": "shy1",
+    "charAnim2": "face_shy",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_sad_s2",
+    "charLabel": "mano",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "あ……い、いや、すまん──\r\n真乃は心配しなくても大丈夫だと思うぞ……！",
+    "charAnim4": "blank",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "レッスンでしっかり体を動かしてるんだし──",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001009010220,
+    "speaker": "真乃",
+    "text": "で、でも、お仕事に支障があったらいけないですし\r\nやっぱり、普段から心掛けた方がいいですよね……",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_trouble",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010220"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "えーと……──真乃は、今からダンスレッスンだよな？\r\nそれを頑張るためのご褒美だと思ってもいいんじゃないか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ほら、ある程度お腹に入れておいた方が\r\nレッスンにも集中できるだろうし",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2001009010230,
+    "speaker": "真乃",
+    "text": "……確かに、それもそうです……",
+    "charAnim1": "surp1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010230"
+  },
+  {
+    "id": 2001009010231,
+    "speaker": "真乃",
+    "text": "ありがとうございます、プロデューサーさんっ",
+    "charAnim1": "wait1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200100901/2001009010231"
+  },
+  {
+    "id": 2001009010240,
+    "speaker": "真乃",
+    "text": "今日のレッスン、このお芋を食べて\r\nいっぱい頑張りますっ……むんっ",
+    "charAnim1": "anger1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "mano",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200100901/2001009010240"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

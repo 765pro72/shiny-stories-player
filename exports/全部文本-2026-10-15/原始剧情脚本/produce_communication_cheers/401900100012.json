@@ -1,0 +1,119 @@
+[
+  {
+    "id": 4019001000120010,
+    "speaker": "愛依",
+    "text": "んんっ！",
+    "charAnim1": "anger1",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_anger_s",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "charCategory": "stand_costume",
+    "charType": "characters",
+    "charId": "019",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bg": "00007",
+    "bgm": "019",
+    "voice": "produce_communication_cheers/401900100012/4019001000120010"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（のどの調子が悪いのか？）",
+    "textCtrl": "l",
+    "textFrame": "002"
+  },
+  {
+    "select": "軽く声出し、しとくか",
+    "nextLabel": "4019001000121"
+  },
+  {
+    "select": "のど飴、いるか",
+    "nextLabel": "4019001000122"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "カラオケで\r\n歌いすぎたりしたか",
+    "nextLabel": "4019001000123"
+  },
+  {
+    "id": 4019001000120020,
+    "label": "4019001000121",
+    "speaker": "愛依",
+    "text": "サンキュ！　別に調子は悪くないんだけどさ\r\nちょっと出が不安だったんだよね～",
+    "charAnim1": "wait1",
+    "charAnim2": "face_smile1",
+    "charLipAnim": "lip_smile1",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/401900100012/4019001000120020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（調子は悪くないみたいだ）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 4019001000120030,
+    "label": "4019001000122",
+    "speaker": "愛依",
+    "text": "ん～、調子は悪くないから大丈夫っぽいけど\r\nま、一応もらっとくわ！",
+    "charAnim1": "wait1",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/401900100012/4019001000120030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（気休めにはなったかな）",
+    "textCtrl": "p",
+    "textFrame": "002",
+    "nextLabel": "end"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 4019001000120040,
+    "label": "4019001000123",
+    "speaker": "愛依",
+    "text": "いやいや、さすがにうちもそこまではやんないよ？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_sad",
+    "charLabel": "mei",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_communication_cheers/401900100012/4019001000120040"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "（悪い勘繰りをしてしまった）",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]

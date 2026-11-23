@@ -1,0 +1,734 @@
+[
+  {
+    "textFrame": "off",
+    "bg": "00034",
+    "bgm": "0000",
+    "se": "0124",
+    "waitType": "time",
+    "waitTime": 900
+  },
+  {
+    "se": "0124",
+    "waitType": "time",
+    "waitTime": 900
+  },
+  {
+    "id": 2002008010010,
+    "speaker": "灯織",
+    "text": "……",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010010"
+  },
+  {
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "charCategory": "stand_fix",
+    "charType": "characters",
+    "charId": "002",
+    "charPosition": {
+      "x": 568,
+      "y": 640,
+      "order": 0
+    },
+    "charEffect": {
+      "type": "from",
+      "alpha": 0,
+      "time": 100
+    },
+    "bgm": "002",
+    "waitType": "time",
+    "waitTime": 900
+  },
+  {
+    "id": 2002008010020,
+    "speaker": "灯織",
+    "text": "──あの、プロデューサー……",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010020"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "どうした、わからないところでもあったか？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010030,
+    "speaker": "灯織",
+    "text": "あ、いえ、そうではなく\r\nこの仕事、資料を読む限りは面白そうです",
+    "charAnim1": "anger1",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010030"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "そうか！　プールのアトラクションってだけで、\r\nテンションが上がるというか……楽しそうだよな、これ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "タイムアタック方式なのが、また闘争心を煽ってくる……",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010040,
+    "speaker": "灯織",
+    "text": "はい。たくさんのアイドルがクリアタイムを競う……\r\nきっとそこがウリなんですよね",
+    "charAnim2": "face_serious",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010040"
+  },
+  {
+    "id": 2002008010050,
+    "speaker": "灯織",
+    "text": "それで……このバラエティ番組について、\r\nひとつ、聞いてもいいですか",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010050"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "おう、俺に答えられることなら",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010060,
+    "speaker": "灯織",
+    "text": "……",
+    "charAnim1": "sad3",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_a",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010060"
+  },
+  {
+    "bgm": "fade_out"
+  },
+  {
+    "id": 2002008010070,
+    "speaker": "灯織",
+    "text": "……これ、本当に私に来たオファーでしょうか",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_anger",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010070"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "──！",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim2": "face_close2",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 1500
+  },
+  {
+    "id": 2002008010080,
+    "speaker": "灯織",
+    "text": "やっぱり……",
+    "charAnim1": "wait2",
+    "charAnim2": "face_sad",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charAnim4": "blank",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "l",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010080"
+  },
+  {
+    "select": "ご明察だ",
+    "nextLabel": "1"
+  },
+  {
+    "select": "いや、灯織に来た\r\nオファーだよ",
+    "nextLabel": "2"
+  },
+  {
+    "textCtrl": "cm",
+    "select": "実はな……",
+    "nextLabel": "3"
+  },
+  {
+    "id": 2002008010090,
+    "label": "1",
+    "speaker": "灯織",
+    "text": "──プロデューサー？",
+    "charAnim1": "anger2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_angry",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010090"
+  },
+  {
+    "bgm": "005"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ああ、すまん、ごまかそうとかじゃなくて\r\nその……灯織の言う通りなんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010100,
+    "speaker": "灯織",
+    "text": "……そうですか",
+    "charAnim1": "surp1",
+    "charAnim2": "face_close2",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010100"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "先方はめぐるにって言っていたけど、\r\n俺がぜひ灯織をって推したんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010110,
+    "speaker": "灯織",
+    "text": "……え？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_cheat",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010110"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織にこの仕事を受けてほしくてな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010120,
+    "speaker": "灯織",
+    "text": "……どうして私に？",
+    "charAnim1": "anger1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010120"
+  },
+  {
+    "id": 2002008010130,
+    "speaker": "灯織",
+    "text": "この仕事、私はめぐるが向いていると思います\r\nそれに──",
+    "charAnim2": "face_anger",
+    "charLipAnim": "lip_anger",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010130"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "『運動で活躍するのはめぐるであるべき』？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010140,
+    "speaker": "灯織",
+    "text": "…………そこまでは……",
+    "charAnim1": "shy2",
+    "charAnim2": "face_anger",
+    "charAnim4": "eye_right",
+    "charLipAnim": "lip_anger",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010140"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "まぁ、これは俺の想像なんだけど\r\n似たようなことを考えてるんじゃないかと思ってな",
+    "charAnim4": "blank",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010150,
+    "speaker": "灯織",
+    "text": "それは……",
+    "charAnim1": "sad3",
+    "charAnim2": "face_sad",
+    "charAnim4": "eye_front",
+    "charLipAnim": "lip_shy",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010150"
+  },
+  {
+    "id": 2002008010160,
+    "speaker": "灯織",
+    "text": "……",
+    "charAnim2": "face_close2",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait_s",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010160"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "得意不得意、向き不向きの話なら別なんだけど\r\n灯織のそれは、また違う話だから",
+    "charAnim2": "face_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織だって十分運動神経いいだろ？\r\nアピールポイントなのに、もったいないと思ってな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "灯織に持ってきた理由、\r\nちゃんと言えばよかった、すまん",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010170,
+    "speaker": "灯織",
+    "text": "そんなことありません\r\nその、……ありがとうございます",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010170"
+  },
+  {
+    "id": 2002008010180,
+    "speaker": "灯織",
+    "text": "お仕事、頑張りますね",
+    "charAnim1": "smile3",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200200801/2002008010180"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2002008010190,
+    "label": "2",
+    "speaker": "灯織",
+    "text": "騙されません\r\nプロデューサー、明らかに驚いた顔をしていました",
+    "charAnim1": "sad1",
+    "charAnim2": "face_anger",
+    "charAnim3": "no",
+    "charAnim3Loop": false,
+    "charAnim4": "eye_left",
+    "charLipAnim": "lip_anger",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010190"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……ばれてたか",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010200,
+    "speaker": "灯織",
+    "text": "ばればれですよ",
+    "charAnim1": "sad2",
+    "charAnim2": "blank",
+    "charAnim4": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010200"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "はは、いや……そのな？\r\n驚いたのはオファーについてじゃないんだ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010210,
+    "speaker": "灯織",
+    "text": "違うんですか？",
+    "charAnim1": "wait3",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010210"
+  },
+  {
+    "bgm": "005"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん、違う。驚いたのはな、\r\nやっぱり灯織はそう思ってるんだなと思ってさ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "運動系の仕事、自分では力不足だと考えてるんだろ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010220,
+    "speaker": "灯織",
+    "text": "……そうですね\r\n私はすぐ考えてしまうので、瞬発力がないんです",
+    "charAnim1": "think",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010220"
+  },
+  {
+    "id": 2002008010230,
+    "speaker": "灯織",
+    "text": "運動神経のいい人は、考える前に体が動いているというか、\r\n感覚やセンスで掴んでいるんだろうなって……",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010230"
+  },
+  {
+    "id": 2002008010240,
+    "speaker": "灯織",
+    "text": "後から身につくものではないと思うので、\r\n敵わないなって感じます",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010240"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……灯織は、自分のことをよく分析してるよな",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010250,
+    "speaker": "灯織",
+    "text": "……そうでしょうか",
+    "charAnim1": "surp1",
+    "charAnim2": "face_sad",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010250"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うん。でも、灯織が気付いてないこともあるんじゃないか？\r\n灯織には灯織の強みがあるんだ",
+    "charAnim2": "face_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "先方も、それに気付いていて、\r\nぜひ灯織にと言ってくださっている",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……と俺は思ってる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "charAnim1": "wait3",
+    "charAnim2": "face_close",
+    "charLabel": "hiori",
+    "textFrame": "off",
+    "waitType": "time",
+    "waitTime": 2000
+  },
+  {
+    "id": 2002008010260,
+    "speaker": "灯織",
+    "text": "私の強み……ですか……\r\n自分では、まだわかりませんが……",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010260"
+  },
+  {
+    "id": 2002008010270,
+    "speaker": "灯織",
+    "text": "このお仕事を通して、見つけたいです",
+    "charAnim1": "smile1",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200200801/2002008010270"
+  },
+  {
+    "textFrame": "off"
+  },
+  {
+    "id": 2002008010280,
+    "label": "3",
+    "speaker": "灯織",
+    "text": "……はい",
+    "charAnim1": "wait3",
+    "charAnim2": "face_serious",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010280"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "うちの事務所からひとり、としか言われてなくて",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010290,
+    "speaker": "灯織",
+    "text": "……え？",
+    "charAnim1": "surp2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010290"
+  },
+  {
+    "bgm": "005"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "色々と鑑みて、俺は灯織にお願いしたいと思ってる",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "もちろん、受けるかどうか決めるのは灯織自身だ\r\n他の仕事やレッスンのことも含めて、考えてみてくれ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "一応あてはあるから、\r\n断った時のことは気にしなくていいぞ",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010300,
+    "speaker": "灯織",
+    "text": "……めぐるですね？",
+    "charAnim1": "anger2",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010300"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "さすが、よくわかってるな\r\nこういう仕事、特に喜びそうだろ？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010310,
+    "speaker": "灯織",
+    "text": "確かに……\r\n資料を読んだ時点ではしゃぎそうです",
+    "charAnim1": "think",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010310"
+  },
+  {
+    "id": 2002008010320,
+    "speaker": "灯織",
+    "text": "これ、先にめぐるへ聞いても良かったんじゃないですか？\r\nすごく向いていると思うんですが",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_wait",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010320"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "……そうだな、それも考えた",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "けど、言ったろ？\r\n『色々と鑑みて、俺は灯織にお願いしたい』って",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010330,
+    "speaker": "灯織",
+    "text": "そうですか……\r\nあの、プロデューサー",
+    "charAnim1": "wait3",
+    "charAnim2": "face_wait",
+    "charLipAnim": "lip_sad",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010330"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "ん？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010340,
+    "speaker": "灯織",
+    "text": "お仕事、受けます",
+    "charAnim2": "face_smile",
+    "charAnim3": "yes",
+    "charAnim3Loop": false,
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010340"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "本当か！？",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010350,
+    "speaker": "灯織",
+    "text": "はい",
+    "charAnim1": "smile2",
+    "charAnim2": "face_smile",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010350"
+  },
+  {
+    "id": 2002008010351,
+    "speaker": "灯織",
+    "text": "……なんだか嬉しそうですね？",
+    "charAnim1": "surp1",
+    "charAnim2": "face_surp",
+    "charLipAnim": "lip_surp",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "voice": "produce_events/200200801/2002008010351"
+  },
+  {
+    "speaker": "プロデューサー",
+    "text": "当たり前だろ？\r\n俺は灯織にと思ってるんだから",
+    "textCtrl": "p",
+    "textFrame": "002"
+  },
+  {
+    "id": 2002008010360,
+    "speaker": "灯織",
+    "text": "ふふっ、そうでした\r\nお仕事、精いっぱい頑張りますね",
+    "charAnim1": "wait2",
+    "charAnim2": "blank",
+    "charLipAnim": "lip_smile",
+    "charLabel": "hiori",
+    "textCtrl": "p",
+    "textFrame": "001",
+    "nextLabel": "end",
+    "voice": "produce_events/200200801/2002008010360"
+  },
+  {
+    "label": "end",
+    "textFrame": "off"
+  }
+]
