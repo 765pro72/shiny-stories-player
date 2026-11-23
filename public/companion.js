@@ -39,6 +39,8 @@
   const CFG_KEY = 'shiny.companionConfig';
   const TTS_KEY = 'shiny.localTtsConfig';
   const AI_KEY = 'shiny.companionAiConfig';
+  const CHAT_KEY = 'shiny.companionChatHistory';
+  const MEMO_KEY = 'shiny.companionMemo';
   const NOW_PLAYING_KEY = 'shiny.nowPlaying';
 
   const readJson = (key, fallback) => {
@@ -78,6 +80,15 @@
   const elSparkles = $('#cmpSparkleLayer');
   const elIdolDrawer = $('#cmpIdolDrawer');
   const elIdolGrid = $('#cmpIdolGrid');
+  const elChatDrawer = $('#cmpChatDrawer');
+  const elChatTitle = $('#cmpChatTitle');
+  const elChatLog = $('#cmpChatLog');
+  const elChatInput = $('#cmpChatInput');
+  const elMemoDrawer = $('#cmpMemoDrawer');
+  const elTodoInput = $('#cmpTodoInput');
+  const elTodoList = $('#cmpTodoList');
+  const elMemoTextarea = $('#cmpMemoTextarea');
+  const elMemoSavedHint = $('#cmpMemoSavedHint');
   const elTtsDrawer = $('#cmpTtsDrawer');
   const elTtsBaseUrl = $('#ttsBaseUrl');
   const elTtsVoice = $('#ttsVoice');
@@ -440,22 +451,201 @@
   try { applyNowPlaying(JSON.parse(localStorage.getItem(NOW_PLAYING_KEY) || 'null')); } catch {}
 
   // Wire controls
-  $('#btnSwitchIdol')?.addEventListener('click', () => {
+  const closeAllDrawers = () => {
+    elIdolDrawer.hidden = true;
     elTtsDrawer.hidden = true;
-    elIdolDrawer.hidden = !elIdolDrawer.hidden;
+    elMemoDrawer.hidden = true;
+    elChatDrawer.hidden = true;
+  };
+
+  $('#btnAiChat')?.addEventListener('click', () => {
+    const willOpen = elChatDrawer.hidden;
+    closeAllDrawers();
+    elChatDrawer.hidden = !willOpen;
+    if (willOpen) {
+      if (elChatTitle) elChatTitle.textContent = `💬 与${currentIdol.name}对话`;
+      renderChatLog();
+      elChatInput?.focus();
+    }
+  });
+
+  $('#btnMemoPad')?.addEventListener('click', () => {
+    const willOpen = elMemoDrawer.hidden;
+    closeAllDrawers();
+    elMemoDrawer.hidden = !willOpen;
+    if (willOpen) elMemoTextarea?.focus();
+  });
+
+  $('#btnSwitchIdol')?.addEventListener('click', () => {
+    const willOpen = elIdolDrawer.hidden;
+    closeAllDrawers();
+    elIdolDrawer.hidden = !willOpen;
   });
 
   $('#btnTtsSlot')?.addEventListener('click', () => {
-    elIdolDrawer.hidden = true;
-    elTtsDrawer.hidden = !elTtsDrawer.hidden;
+    const willOpen = elTtsDrawer.hidden;
+    closeAllDrawers();
+    elTtsDrawer.hidden = !willOpen;
   });
 
   document.querySelectorAll('[data-close-drawer]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      elIdolDrawer.hidden = true;
-      elTtsDrawer.hidden = true;
-    });
+    btn.addEventListener('click', closeAllDrawers);
   });
+
+  // Fused Multi-Turn AI Assistant Chat inside Desktop Companion
+  let chatHistory = [];
+  try {
+    const raw = JSON.parse(localStorage.getItem(CHAT_KEY) || '[]');
+    if (Array.isArray(raw)) chatHistory = raw.slice(-30);
+  } catch {}
+  const saveChat = () => writeJson(CHAT_KEY, chatHistory.slice(-30));
+  const renderChatLog = () => {
+    if (!elChatLog) return;
+    elChatLog.innerHTML = '';
+    if (!chatHistory.length) {
+      const welcome = document.createElement('div');
+      welcome.className = 'cmp-msg assistant';
+      welcome.innerHTML = `<small>${currentIdol.name}</small>制作人好呀！这里已经融合了小偶像对话助手，直接发消息就能聊天；点右上角 ⚙ 可配置你的 AI API 或一键接入本机语音模型。`;
+      elChatLog.append(welcome);
+      return;
+    }
+    for (const m of chatHistory) {
+      const div = document.createElement('div');
+      div.className = 'cmp-msg ' + (m.role === 'user' ? 'user' : 'assistant');
+      if (m.role === 'assistant') {
+        div.innerHTML = `<small>${m.who || currentIdol.name}</small>`;
+        div.append(document.createTextNode(m.text));
+        div.title = '点击朗读本句（需已接入本机语音）';
+        div.addEventListener('click', () => { if (ttsCfg.enabled) speakText(m.text); });
+      } else {
+        div.textContent = m.text;
+      }
+      elChatLog.append(div);
+    }
+    elChatLog.scrollTop = elChatLog.scrollHeight;
+  };
+  const sendFusedChat = async () => {
+    const prompt = String(elChatInput?.value || '').trim();
+    if (!prompt) return;
+    elChatInput.value = '';
+    chatHistory.push({ role: 'user', text: prompt });
+    saveChat();
+    renderChatLog();
+
+    const base = String(aiCfg.baseUrl || elAiUrl?.value || '').trim().replace(/\/+$/, '');
+    let reply = '';
+    if (base) {
+      try {
+        const headers = { 'Content-Type': 'application/json' };
+        const key = String(aiCfg.apiKey || elAiKey?.value || '').trim();
+        if (key) headers.Authorization = `Bearer ${key}`;
+        const msgs = [
+          { role: 'system', content: `你是《偶像大师 闪耀色彩》283事务所的偶像「${currentIdol.name}」（所属组合 ${currentIdol.unit}）。请用自然、贴合角色性格的中文简短回复制作人。` },
+          ...chatHistory.slice(-8).map(m => ({ role: m.role, content: m.text }))
+        ];
+        const res = await fetch(`${base}/chat/completions`, {
+          method: 'POST',
+          headers,
+          body: JSON.stringify({ model: aiCfg.model || elAiModel?.value || 'gpt-4o-mini', messages: msgs, max_tokens: 180 })
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        reply = String(data?.choices?.[0]?.message?.content || '').trim();
+      } catch (err) {
+        reply = `外部 AI 接口暂未连通（${err.message}）。你可以点右上角 ⚙ 检查接口地址，或先和我用内置语音互动哦！`;
+      }
+    } else {
+      // Friendly offline/unconfigured idol reply + guide to ⚙
+      const line = currentIdol.lines[Math.floor(Math.random() * currentIdol.lines.length)];
+      reply = `${line}（提示：点击右上角 ⚙ 填入任意 OpenAI 兼容 API 后，我就能和你自由多轮聊天啦！）`;
+    }
+    chatHistory.push({ role: 'assistant', who: currentIdol.name, text: reply });
+    saveChat();
+    renderChatLog();
+    elBubbleText.textContent = reply;
+    spawnSparkles(6);
+    if (ttsCfg.enabled) speakText(reply);
+  };
+  $('#btnChatSend')?.addEventListener('click', sendFusedChat);
+  elChatInput?.addEventListener('keydown', e => { if (e.key === 'Enter') sendFusedChat(); });
+  $('#btnChatClear')?.addEventListener('click', () => { chatHistory = []; saveChat(); renderChatLog(); });
+  $('#btnChatConfig')?.addEventListener('click', () => { closeAllDrawers(); elTtsDrawer.hidden = false; });
+
+  // Producer Desktop Sticky Notepad & Todo Runtime
+  const memoState = readJson(MEMO_KEY, { text: '', todos: [] });
+  if (!Array.isArray(memoState.todos)) memoState.todos = [];
+  const saveMemo = () => {
+    writeJson(MEMO_KEY, memoState);
+    if (elMemoSavedHint) {
+      const t = new Date();
+      elMemoSavedHint.textContent = `已自动保存 · ${String(t.getHours()).padStart(2, '0')}:${String(t.getMinutes()).padStart(2, '0')}`;
+    }
+  };
+  const renderTodos = () => {
+    if (!elTodoList) return;
+    elTodoList.innerHTML = '';
+    memoState.todos.forEach((item, idx) => {
+      const li = document.createElement('li');
+      li.className = 'cmp-todo-item' + (item.done ? ' done' : '');
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.checked = !!item.done;
+      cb.addEventListener('change', () => {
+        item.done = cb.checked;
+        saveMemo();
+        renderTodos();
+        if (item.done) spawnSparkles(6);
+      });
+      const sp = document.createElement('span');
+      sp.textContent = item.text;
+      const del = document.createElement('button');
+      del.type = 'button';
+      del.className = 'cmp-todo-del';
+      del.textContent = '×';
+      del.addEventListener('click', () => {
+        memoState.todos.splice(idx, 1);
+        saveMemo();
+        renderTodos();
+      });
+      li.append(cb, sp, del);
+      elTodoList.append(li);
+    });
+  };
+  const addTodo = () => {
+    const txt = String(elTodoInput?.value || '').trim();
+    if (!txt) return;
+    memoState.todos.unshift({ text: txt, done: false });
+    elTodoInput.value = '';
+    saveMemo();
+    renderTodos();
+  };
+  if (elMemoTextarea) {
+    elMemoTextarea.value = memoState.text || '';
+    let memoTimer = 0;
+    elMemoTextarea.addEventListener('input', () => {
+      memoState.text = elMemoTextarea.value;
+      clearTimeout(memoTimer);
+      memoTimer = setTimeout(saveMemo, 220);
+    });
+  }
+  $('#btnAddTodo')?.addEventListener('click', addTodo);
+  elTodoInput?.addEventListener('keydown', e => { if (e.key === 'Enter') addTodo(); });
+  $('#btnClearDoneTodos')?.addEventListener('click', () => {
+    memoState.todos = memoState.todos.filter(x => !x.done);
+    saveMemo();
+    renderTodos();
+  });
+  $('#btnExportMemo')?.addEventListener('click', () => {
+    const todoLines = memoState.todos.map(x => `${x.done ? '[x]' : '[ ]'} ${x.text}`).join('\n');
+    const content = `=== 283 制作人桌面记事本 ===\n\n${todoLines ? '【待办清单】\n' + todoLines + '\n\n' : ''}【备忘录】\n${memoState.text || ''}\n`;
+    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `283-memo-${new Date().toISOString().slice(0, 10)}.txt`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  });
+  renderTodos();
 
   const btnPinTop = $('#btnPinTop');
   btnPinTop?.classList.toggle('active', cfg.alwaysOnTop !== false);

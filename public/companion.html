@@ -18,8 +18,10 @@
         <span class="cmp-unit" id="cmpIdolUnit">SHHis</span>
       </div>
       <div class="cmp-actions">
+        <button type="button" class="cmp-btn" id="btnAiChat" title="小偶像 AI 对话助手">💬</button>
+        <button type="button" class="cmp-btn" id="btnMemoPad" title="制作人桌面记事本与待办">📝</button>
         <button type="button" class="cmp-btn" id="btnSwitchIdol" title="切换 283 偶像">🎭</button>
-        <button type="button" class="cmp-btn" id="btnTtsSlot" title="本地语音模型一键接入窗口">🔌</button>
+        <button type="button" class="cmp-btn" id="btnTtsSlot" title="本地语音模型与 AI API 一键接入">🔌</button>
         <button type="button" class="cmp-btn active" id="btnPinTop" title="窗口置顶：开">📌</button>
         <button type="button" class="cmp-btn cmp-btn-close" id="btnCloseCompanion" title="关闭桌面伙伴">×</button>
       </div>
@@ -54,6 +56,26 @@
       <div class="cmp-sparkle-layer" id="cmpSparkleLayer" aria-hidden="true"></div>
     </div>
 
+    <!-- Fused 283 Idol AI Assistant Multi-Turn Chat Drawer -->
+    <section class="cmp-drawer cmp-chat-drawer" id="cmpChatDrawer" hidden aria-label="283 小偶像 AI 对话助手">
+      <div class="cmp-drawer-head">
+        <div>
+          <strong id="cmpChatTitle">💬 与七草日花对话</strong>
+          <small>已融合小偶像助手 · 支持外部 AI API 与本地语音朗读</small>
+        </div>
+        <div style="display:flex;gap:4px;">
+          <button type="button" class="cmp-drawer-close" id="btnChatConfig" title="配置 AI / 语音接口">⚙</button>
+          <button type="button" class="cmp-drawer-close" id="btnChatClear" title="清空对话">🗑</button>
+          <button type="button" class="cmp-drawer-close" data-close-drawer>×</button>
+        </div>
+      </div>
+      <div class="cmp-chat-log" id="cmpChatLog"></div>
+      <div class="cmp-chat-row">
+        <input type="text" id="cmpChatInput" placeholder="跟她聊聊天或问剧情（回车发送）…">
+        <button type="button" class="cmp-primary-btn" id="btnChatSend" style="flex:0 0 auto;padding:0 12px;">发送</button>
+      </div>
+    </section>
+
     <!-- Quick Idol Picker Popover -->
     <section class="cmp-drawer" id="cmpIdolDrawer" hidden aria-label="选择 283 桌面伙伴">
       <div class="cmp-drawer-head">
@@ -61,6 +83,33 @@
         <button type="button" class="cmp-drawer-close" data-close-drawer>×</button>
       </div>
       <div class="cmp-idol-grid" id="cmpIdolGrid"></div>
+    </section>
+
+    <!-- Producer Desktop Sticky Notepad & Todo List -->
+    <section class="cmp-drawer cmp-memo-drawer" id="cmpMemoDrawer" hidden aria-label="制作人桌面记事本">
+      <div class="cmp-drawer-head">
+        <div>
+          <strong>📝 制作人桌面记事本</strong>
+          <small id="cmpMemoSavedHint">自动持久化保存，重启不丢失</small>
+        </div>
+        <button type="button" class="cmp-drawer-close" data-close-drawer>×</button>
+      </div>
+
+      <div class="cmp-todo-input-row">
+        <input type="text" id="cmpTodoInput" placeholder="添加待办事项（回车新建）…">
+        <button type="button" class="cmp-ghost-btn" id="btnAddTodo">+</button>
+      </div>
+      <ul class="cmp-todo-list" id="cmpTodoList"></ul>
+
+      <label class="cmp-field cmp-memo-area-wrap">
+        <span>随手备忘录</span>
+        <textarea id="cmpMemoTextarea" rows="6" placeholder="记下想看的剧情、灵感、台词或今日安排…"></textarea>
+      </label>
+
+      <div class="cmp-tts-actions">
+        <button type="button" class="cmp-ghost-btn" id="btnClearDoneTodos">清理已完成</button>
+        <button type="button" class="cmp-primary-btn" id="btnExportMemo">导出 .txt</button>
+      </div>
     </section>
 
     <!-- Local TTS One-Click Connection Slot (Model NOT bundled; connects on demand) -->

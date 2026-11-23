@@ -3393,19 +3393,19 @@ html[data-theme="dark"] .turntable-platter-well {
   position: relative;
   z-index: 1;
   height: 100%;
-  max-width: 860px;
+  max-width: 1320px;
   width: 100%;
   margin: 0 auto;
-  padding: max(72px, calc(var(--header-height, 68px) + 20px)) clamp(16px, 3vw, 36px) max(20px, env(safe-area-inset-bottom)) !important;
+  padding: max(72px, calc(var(--header-height, 68px) + 20px)) clamp(16px, 3vw, 44px) max(20px, env(safe-area-inset-bottom)) !important;
   display: flex !important;
   flex-direction: column !important;
-  align-items: center !important;
+  align-items: stretch !important;
   box-sizing: border-box !important;
 }
 
 .lfo-top-bar {
   width: 100% !important;
-  max-width: 520px !important;
+  max-width: 1240px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
@@ -3464,24 +3464,24 @@ html[data-theme="dark"] .turntable-platter-well {
   flex: 1;
   min-height: 0;
   width: 100% !important;
-  max-width: 580px !important;
-  display: flex !important;
-  flex-direction: column !important;
+  max-width: 1240px !important;
+  display: grid !important;
+  grid-template-columns: minmax(300px, 410px) minmax(0, 1fr) !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-items: stretch !important;
   margin: 0 auto !important;
-  gap: 0 !important;
+  gap: clamp(24px, 4vw, 64px) !important;
 }
 
 .lfo-art-col {
   width: 100% !important;
-  max-width: 480px !important;
+  max-width: 410px !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
   text-align: center !important;
-  margin: 0 auto !important;
+  margin: 0 !important;
 }
 
 .lfo-cover-frame {
@@ -5918,6 +5918,12 @@ html[data-theme="dark"] .qrm-tier-badge.locked {
   align-items: center !important;
   justify-content: space-between !important;
   width: 100% !important;
+  height: 34px !important;
+  min-height: 34px !important;
+  max-height: 34px !important;
+  flex: 0 0 auto !important;
+  padding: 0 12px !important;
+  border-radius: 999px !important;
   text-align: left !important;
   gap: 6px !important;
   user-select: none !important;
@@ -6600,6 +6606,16 @@ html:not([data-theme="dark"]) .dock-more-menu .mm-section-label {
 .mm-selects-row .lfo-mini-select {
   flex: 1 1 110px;
   max-width: none !important;
+  height: 34px !important;
+  min-height: 34px !important;
+  max-height: 34px !important;
+}
+.lfo-quality-tune-field .lfo-quality-btn.lfo-mini-select {
+  flex: 0 0 auto !important;
+  height: 34px !important;
+  min-height: 34px !important;
+  max-height: 34px !important;
+  width: 100% !important;
 }
 /* Ensure nested quality/source dropdowns inside dockMoreMenu pop cleanly above it */
 .dock-more-menu .quality-dropdown-menu {
@@ -6681,7 +6697,7 @@ html:not([data-theme="dark"]) .dock-more-menu .mm-section-label {
 }
 
 /* Portrait Phones (20:9 / 21:9) & Narrow Split-Screen */
-@media (max-width: 820px), (max-aspect-ratio: 4/5) {
+@media (max-width: 720px) {
   .lfo-stage {
     display: flex !important;
     flex-direction: column !important;
@@ -6703,15 +6719,13 @@ html:not([data-theme="dark"]) .dock-more-menu .mm-section-label {
   }
 }
 
-/* Tablet Landscape (16:10 / 3:2) */
-@media (min-width: 821px) and (max-width: 1180px) {
+/* Tablet Landscape (16:10 / 3:2) — Keep 2-column left-art + right-lyrics */
+@media (min-width: 721px) and (max-width: 1180px) {
   .lfo-stage {
-    display: flex !important;
-    flex-direction: column !important;
+    display: grid !important;
+    grid-template-columns: minmax(260px, 340px) minmax(0, 1fr) !important;
     align-items: center !important;
-    justify-content: center !important;
-    margin: 0 auto !important;
-    gap: 0 !important;
+    gap: clamp(20px, 3vw, 40px) !important;
   }
   .lfo-cover-frame {
     width: clamp(190px, 30dvh, 260px) !important;
@@ -7159,12 +7173,10 @@ html[data-joytrans="1"] .lyrics-full-overlay .lfo-right-tabs {
     height: clamp(108px, 24dvh, 170px) !important;
   }
   .lfo-stage {
-    display: flex !important;
-    flex-direction: column !important;
+    display: grid !important;
+    grid-template-columns: minmax(220px, 300px) minmax(0, 1fr) !important;
     align-items: center !important;
-    justify-content: center !important;
-    margin: 0 auto !important;
-    gap: 0 !important;
+    gap: 20px !important;
   }
   .lfo-line-jp {
     font-size: clamp(15px, 2.7dvh, 19px);
