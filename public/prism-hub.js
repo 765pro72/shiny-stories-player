@@ -391,11 +391,21 @@
         if (isP) {
           av.textContent = 'P';
           av.style.cssText = 'display:grid;place-items:center;font-weight:900;font-size:13px;color:#38bdf8;background:rgba(56,189,248,0.16);';
-        } else if (window.CharacterPortraits?.mount) {
-          window.CharacterPortraits.mount(av, spk);
         } else {
-          av.textContent = String(spk).slice(0, 1);
-          av.style.cssText = 'display:grid;place-items:center;font-weight:800;font-size:13px;color:#f8fafc;';
+          const doMount = () => {
+            if (window.CharacterPortraits?.mount) {
+              window.CharacterPortraits.mount(av, spk);
+            } else {
+              av.textContent = String(spk).slice(0, 1);
+              av.style.cssText = 'display:grid;place-items:center;font-weight:800;font-size:13px;color:#f8fafc;';
+            }
+          };
+          if (window.CharacterPortraits?.mount) {
+            doMount();
+          } else {
+            window.addEventListener('DOMContentLoaded', doMount, { once: true });
+            setTimeout(doMount, 300);
+          }
         }
         const b = document.createElement('div');
         b.className = 'ph-bubble' + (isP ? ' is-producer' : '');

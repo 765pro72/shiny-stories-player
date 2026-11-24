@@ -1993,6 +1993,16 @@
       elHeader.classList.toggle('is-hidden', !!msg.hidden);
     } else if (msg.type === 'shiny-auto-theme') {
       setAutoTheme(!!msg.enabled);
+    } else if (msg.type === 'shiny-clean-fullscreen') {
+      elHeader.classList.toggle('is-hidden', !!msg.active);
+      document.body.classList.toggle('is-clean-fullscreen', !!msg.active);
+      try {
+        if (msg.active && !document.fullscreenElement && document.documentElement.requestFullscreen) {
+          document.documentElement.requestFullscreen().catch(() => {});
+        } else if (!msg.active && document.fullscreenElement && document.exitFullscreen) {
+          document.exitFullscreen().catch(() => {});
+        }
+      } catch {}
     }
   });
 

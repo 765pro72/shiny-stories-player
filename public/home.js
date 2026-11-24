@@ -6,6 +6,42 @@ function notice(t){$('#notice').textContent=t;$('#info').showModal()}
 $('#close').onclick=()=>$('#info').close();
 if($('#hide'))$('#hide').onclick=()=>$('.screen').classList.toggle('clean');
 if($('#fullscreen'))$('#fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen()}catch(e){notice(e.message)}};
+const btnCleanScreen=$('#btnCleanScreen'),cleanExitPill=$('#cleanExitPill');
+let cleanPillTimer=0;
+function setCleanFullscreen(active){
+ const isClean=!!active;
+ document.body.classList.toggle('is-clean-fullscreen',isClean);
+ $('.screen')?.classList.toggle('is-clean-fullscreen',isClean);
+ if(cleanExitPill){
+  cleanExitPill.hidden=!isClean;
+  cleanExitPill.classList.remove('faded');
+ }
+ if(isClean){
+  if(window.homeStage?.applySilent)window.homeStage.applySilent(true);
+  try{if(!document.fullscreenElement&&document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(()=>{});}catch{}
+  try{window.parent?.postMessage?.({type:'shiny-clean-fullscreen',active:true},location.origin);}catch{}
+  clearTimeout(cleanPillTimer);
+  cleanPillTimer=setTimeout(()=>{if(cleanExitPill)cleanExitPill.classList.add('faded');},3200);
+ }else{
+  try{if(document.fullscreenElement&&document.exitFullscreen)document.exitFullscreen().catch(()=>{});}catch{}
+  try{window.parent?.postMessage?.({type:'shiny-clean-fullscreen',active:false},location.origin);}catch{}
+ }
+}
+if(btnCleanScreen)btnCleanScreen.onclick=()=>setCleanFullscreen(true);
+if(cleanExitPill)cleanExitPill.onclick=()=>setCleanFullscreen(false);
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&document.body.classList.contains('is-clean-fullscreen'))setCleanFullscreen(false);
+});
+document.addEventListener('fullscreenchange',()=>{
+ if(!document.fullscreenElement&&document.body.classList.contains('is-clean-fullscreen'))setCleanFullscreen(false);
+});
+document.addEventListener('mousemove',()=>{
+ if(document.body.classList.contains('is-clean-fullscreen')&&cleanExitPill){
+  cleanExitPill.classList.remove('faded');
+  clearTimeout(cleanPillTimer);
+  cleanPillTimer=setTimeout(()=>{cleanExitPill.classList.add('faded');},2800);
+ }
+});
 $('#continue').onclick=e=>{e.preventDefault();let keys=[];try{keys=JSON.parse(localStorage.getItem('recent')||'[]')}catch{}location.href='guide.html?'+(keys[0]?'story='+encodeURIComponent(keys[0]):'mode=recent')+'#archive'};
 async function counts(){try{const s=await(await fetch('/data/summary.json')).json();$('#count').textContent=s.catalog.toLocaleString();$('#translated').textContent=s.translationFiles.toLocaleString()}catch{$('#count').textContent='读取失败'}}
 counts();window.addEventListener('content-updated',counts);

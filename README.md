@@ -11,62 +11,43 @@
 * **283 音乐馆 (Jukebox)**：学马风格黑胶拟真唱片机，全量偶像大师企划曲目在线与本地离线播放，支持多音质引擎（沉浸环绕声、超清母带、极高 HQ、臻音全景声等）。
 * **卡面相册与衣装室**：高清卡面画廊、双卡面切换、动态卡面演出播放；支持偶像 3D / Spine 动态衣装模型试听与动作表情调试。
 * **全量语音馆**：收录全部角色主界面、私语、电话、组合对话语音与同步字幕，支持直接补译与回填导出。
+* **☀️ 晨间问候 (朝コミュ)**：每日早晨（05:00~12:00）自动来信，全量 317 篇晨间对白原汁原味 3 选 1 互动评价（Perfect / Good / Normal）与原声语音反馈，带连续打卡记录。
+* **🔇 纯净全屏静音看板**：一键开启背景偶像静音模式（偶像不说话、不弹台词气泡），全屏隐藏顶栏和侧栏按钮，作为纯净动态桌面壁纸静心陪伴。
+* **🔌 本地模型与透明桌面伙伴接入**：支持无缝接入本地 GPT-SoVITS / Irodori-TTS 拟真配音引擎与 Ollama / LM Studio 本地大模型。
 * **283 VIP 游乐厅**：斗地主、掼蛋 2v2、大富豪等多款内置同台卡牌小游戏。
 * **多端适配优化**：
   * **Windows**：支持原生高 DPI（`Ctrl + + / -` 自由无损缩放）、多屏与全屏沉浸播放。
-  * **Android**：深度适配 20:9 / 21:9 全面屏与 16:10 / 3:2 平板；专为华为卓易通 / 鸿蒙容器降低能耗，流畅丝滑。
+  * **Android**：深度适配 20:9 / 21:9 全面屏与 16:10 / 3:2 平板；专为华为卓易通 / 鸿蒙系统优化降耗，避免重度模糊损耗。
 
 ---
 
 ## 📦 发行版下载 (Releases)
 
-可在本项目 GitLab 的 **[Releases (发布版)](http://72.765pro.space:8929/root/shiny-stories-player/-/releases)** 页面直接下载各平台已编译安装包：
+可在本项目 Releases 专页直接取用已编译运行文件：
 
-* **Windows 版**：`ShinyStories-Lite-win32-x64.7z`（约 258 MB，解压即用免安装）
-* **Android 版**：`ShinyStories-Android.apk`（约 262 MB，手机 / 平板 / 鸿蒙卓易通均可直接安装）
+* **Windows 客户端**：`ShinyStories-Lite-win32-x64.7z`（解压即用免安装）
+* **Android 安装包**：`ShinyStories-Android.apk`（手机 / 平板 / 鸿蒙系统均可直接安装）
 
 ---
 
-## 🛠️ 本地开发与运行
-
-### 环境需求
-* Node.js >= 18
-* Windows x64 (运行桌面端) 或 Android SDK / NDK (编译移动端)
-
-### 快速启动
+## 🛠️ 本地运行与构建
 
 ```bash
-# 1. 安装依赖
+# 安装依赖
 npm install
 
-# 2. 启动本地开发服务与 Electron 桌面客户端
+# 启动本地服务与 Electron 桌面端
 npm start
 
-# 3. 校验离线资源与汉化状态
-node scripts/verify-offline.cjs
-node scripts/audit-translation-status.cjs
-```
-
-### 构建与打包
-
-```bash
-# 构建 Windows 免安装发行包 (.7z)
+# 构建 Windows 发布包
 npm run release
 
-# 构建 Android APK 安装包 (.apk)
+# 构建 Android APK 安装包
 node scripts/build-android.cjs
 ```
 
 ---
 
-## 📚 统一技术文档目录
+## 📜 鸣谢与版权声明
 
-本项目所有开发架构、专题规范与历史维护交接已统一归档于 **[docs/](docs/README.md)** 目录：
-
-* **[系统整体架构 (docs/ARCHITECTURE.md)](docs/ARCHITECTURE.md)**：技术选型、通信架构与核心数据流。
-* **[剧情播放与音乐馆 (docs/PLAYER.md)](docs/PLAYER.md)**：剧本解析、双语字幕、全屏居中排版与音乐引擎。
-* **[Android 移动端开发 (docs/ANDROID.md)](docs/ANDROID.md)**：APK 编译、16KB 页对齐、全面屏与鸿蒙卓易通降耗。
-* **[怪文书二创与语音口型 (docs/CREATIVE.md)](docs/CREATIVE.md)**：剧情编辑、TTS 语音合成与嘴型动画生成。
-* **[实时超分辨率技术 (docs/SUPER_RESOLUTION.md)](docs/SUPER_RESOLUTION.md)**：Anime4K、ArtCNN 与 WebGL 渲染管线。
-* **[剧情汉化与翻译对账 (docs/TRANSLATION.md)](docs/TRANSLATION.md)**：翻译对账台账、变更审计与回填导出。
-* **[历史交接归档目录 (docs/handover/)](docs/handover/)**：历史版本维护交接记录、日常优化与修复日志。
+本项目为偶像大师闪耀色彩爱好者开发交流之作，所有官方美术、音频与剧情版权均归属于万代南梦宫（BANDAI NAMCO Entertainment Inc.）。衷心感谢社区汉化组与历代译者的辛勤付出。
