@@ -862,13 +862,22 @@
     { name: '郁田春希', file: '/model-previews/4b36e2ede60f3a21d85c73ec.webp' }
   ];
 
-  let currentAmbientMode = 'art'; // 'art' | 'idol'
-  let currentIdolIdx = 0;
   let idleFadeTimer = null;
 
-  async function openAmbientFrame(initialMode = 'art') {
+  function setHomeFrameVisibility(active) {
+    try {
+      const homeFrame = document.querySelector('#shellStage iframe[data-page="index.html"], #shellStage iframe[src*="index.html"]');
+      if (homeFrame?.contentWindow) {
+        if (active && !homeFrame.classList.contains('is-active')) return;
+        homeFrame.contentWindow.postMessage({ type: 'shiny-shell-visibility', active: !!active }, location.origin);
+      }
+    } catch {}
+  }
+
+  async function openAmbientFrame() {
     closeModal();
-    currentAmbientMode = initialMode;
+    // Immediately silence & pause the background 283 office idol so she never talks behind the screensaver!
+    setHomeFrameVisibility(false);
     const { catalog, cardArt } = await ensureCatalog();
     const artList = [];
     for (const [sKey, a] of Object.entries(cardArt || {})) {
@@ -894,18 +903,12 @@
       ambientEl.innerHTML = `
         <div class="ph-af-art-bg" id="phAfBg"></div>
         <div class="ph-af-shade"></div>
-        <div class="ph-af-idol-stage" id="phAfIdolStage" hidden>
-          <div class="ph-af-stage-spot"></div>
-          <img class="ph-af-idol-img" id="phAfIdolImg" src="" alt="全屏静音偶像">
-        </div>
         <header class="ph-af-top">
           <div>
             <div class="ph-af-clock" id="phAfClock">00:00</div>
             <div class="ph-af-date" id="phAfDate">283 PRODUCTION · AMBIENT ART FRAME</div>
           </div>
           <div style="display:flex;gap:8px;align-items:center;">
-            <button type="button" class="ph-btn ghost" id="phAfSwitchModeBtn" title="在卡面壁纸与全屏偶像立绘间切换">💃 偶像立绘</button>
-            <button type="button" class="ph-btn ghost" id="phAfNextIdolBtn" hidden title="切换全屏陪伴偶像">🎭 换偶像</button>
             <button type="button" class="ph-btn ghost" id="phAfNextArtBtn">🖼 换画作</button>
             <button type="button" class="ph-btn ghost" id="phAfDimBtn" title="切换夜间调光亮度">🌙 调光: 100%</button>
             <button type="button" class="ph-btn ghost" id="phAfFullscreenBtn" title="切换操作系统全屏 (F11)">⛶ 全屏</button>
@@ -950,10 +953,6 @@
 
       document.getElementById('phAfExitBtn')?.addEventListener('click', closeAmbientFrame);
       document.getElementById('phAfNextArtBtn')?.addEventListener('click', () => cycleArt());
-      document.getElementById('phAfNextIdolBtn')?.addEventListener('click', () => cycleIdol());
-      document.getElementById('phAfSwitchModeBtn')?.addEventListener('click', () => {
-        toggleAmbientMode();
-      });
       document.getElementById('phAfPlayBtn')?.addEventListener('click', () => {
         document.getElementById('islandMiniPlay')?.click();
         setTimeout(tick, 60);
@@ -998,53 +997,8 @@
       const cap = document.getElementById('phAfCardName');
       const jumpBtn = document.getElementById('phAfJumpStoryBtn');
       if (bg) bg.style.backgroundImage = `url("${currentArtPick.url}")`;
-      if (cap && currentAmbientMode === 'art') cap.textContent = `✦ ${currentArtPick.name}`;
-      if (jumpBtn) {
-        jumpBtn.hidden = !currentArtPick.storyKey || currentAmbientMode !== 'art';
-      }
-    };
-
-    const cycleIdol = () => {
-      currentIdolIdx = (currentIdolIdx + 1) % IDOL_STANDS.length;
-      updateIdolDisplay();
-    };
-
-    const updateIdolDisplay = () => {
-      const idol = IDOL_STANDS[currentIdolIdx];
-      const img = document.getElementById('phAfIdolImg');
-      const cap = document.getElementById('phAfCardName');
-      if (img) img.src = idol.file;
-      if (cap && currentAmbientMode === 'idol') cap.textContent = `✦ 静音专注陪伴：${idol.name}（不说话）`;
-    };
-
-    const toggleAmbientMode = () => {
-      currentAmbientMode = currentAmbientMode === 'art' ? 'idol' : 'art';
-      applyAmbientMode();
-    };
-
-    const applyAmbientMode = () => {
-      const isIdol = currentAmbientMode === 'idol';
-      const stageEl = document.getElementById('phAfIdolStage');
-      const nextIdolBtn = document.getElementById('phAfNextIdolBtn');
-      const nextArtBtn = document.getElementById('phAfNextArtBtn');
-      const modeBtn = document.getElementById('phAfSwitchModeBtn');
-      const jumpBtn = document.getElementById('phAfJumpStoryBtn');
-      const dt = document.getElementById('phAfDate');
-
-      if (stageEl) stageEl.hidden = !isIdol;
-      if (nextIdolBtn) nextIdolBtn.hidden = !isIdol;
-      if (nextArtBtn) nextArtBtn.hidden = isIdol;
-      if (jumpBtn) jumpBtn.hidden = isIdol || !currentArtPick?.storyKey;
-      if (modeBtn) modeBtn.textContent = isIdol ? '🖼 卡面画框' : '💃 偶像立绘';
-
-      if (isIdol) {
-        updateIdolDisplay();
-        if (dt) dt.textContent = `283 PRODUCTION · 全屏偶像专注待机（静音不说话）`;
-      } else {
-        cycleArt();
-        const now = new Date();
-        if (dt) dt.textContent = `${now.getFullYear()}年${now.getMonth() + 1}月${now.getDate()}日 · 283 待机黑胶艺术画框`;
-      }
+      if (cap) cap.textContent = `✦ ${currentArtPick.name}`;
+      if (jumpBtn) jumpBtn.hidden = !currentArtPick.storyKey;
     };
 
     const tick = () => {
@@ -1052,7 +1006,9 @@
       const hh = String(now.getHours()).padStart(2, '0');
       const mm = String(now.getMinutes()).padStart(2, '0');
       const cl = document.getElementById('phAfClock');
+      const dt = document.getElementById('phAfDate');
       if (cl) cl.textContent = `${hh}:${mm}`;
+      if (dt) dt.textContent = `${now.getFullYear()}年${now.getMonth() + 1}月${now.getDate()}日 · 283 待机黑胶艺术画框`;
       try {
         const isPlaying = document.getElementById('dynamicIsland')?.classList.contains('is-playing') ||
                           localStorage.getItem('shiny.musicPlaying') === '1';
@@ -1076,12 +1032,12 @@
     };
 
     ambientEl.hidden = false;
-    applyAmbientMode();
+    cycleArt();
     tick();
     clearInterval(ambientTimer);
     ambientTimer = setInterval(() => {
       tick();
-      if (currentAmbientMode === 'art') cycleArt();
+      cycleArt();
     }, 14000);
   }
 
@@ -1089,6 +1045,7 @@
     clearTimeout(idleFadeTimer);
     clearInterval(ambientTimer);
     if (ambientEl) ambientEl.hidden = true;
+    setHomeFrameVisibility(true);
   }
 
   // ── Feature #7: Morning Communication (朝コミュ) 3-Choice System ──
@@ -1431,6 +1388,12 @@
 
     const stripEl = document.getElementById('phDossierStrip');
     const contentEl = document.getElementById('phDossierContent');
+    stripEl?.addEventListener('wheel', (e) => {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        e.preventDefault();
+        stripEl.scrollLeft += e.deltaY;
+      }
+    }, { passive: false });
 
     const renderStrip = () => {
       stripEl.innerHTML = '';
@@ -1676,12 +1639,7 @@
         </button>
         <button type="button" class="mh-item" data-act="ambient">
           <span class="mh-ico">🖼️</span>
-          <span class="mh-txt"><strong>全屏「黑胶艺术画框 / 待机屏保」</strong><small>全景卡面轮播 + 旋转黑胶与时钟</small></span>
-        </button>
-        <button type="button" class="mh-item" data-act="silent-idol">
-          <span class="mh-ico">🧘</span>
-          <span class="mh-txt"><strong>全屏偶像专注待机（静音·不说话）</strong><small>全屏纯净立绘安静陪伴，零弹窗与语音打扰，沉浸专注屏保</small></span>
-          <span class="mh-badge" style="background:rgba(56,189,248,0.22);color:#7dd3fc;border-color:rgba(56,189,248,0.4);">静音纯净</span>
+          <span class="mh-txt"><strong>全屏「黑胶艺术画框 / 待机屏保」</strong><small>全景卡面轮播 + 旋转黑胶与时钟（自动静音背景偶像）</small></span>
         </button>
         <button type="button" class="mh-item" data-act="companion" id="mhCompanionItem">
           <span class="mh-ico">💬</span>
@@ -1736,8 +1694,7 @@
         else if (act === 'chain') openChainAnd1v1('chain');
         else if (act === 'matrix') openAddressMatrix();
         else if (act === 'resume') openProducerResume();
-        else if (act === 'ambient') openAmbientFrame('art');
-        else if (act === 'silent-idol') openAmbientFrame('idol');
+        else if (act === 'ambient') openAmbientFrame();
         else if (act === 'companion') document.getElementById('btnCompanion')?.click();
         else if (act === 'stagefx') document.getElementById('btnStageFx')?.click();
       });
@@ -1762,7 +1719,6 @@
     openResume: openProducerResume,
     openFortune: openDailyFortune,
     openAmbientFrame,
-    openSilentIdol: () => openAmbientFrame('idol'),
     openMorning: openMorningGreetingModal
   };
 })();

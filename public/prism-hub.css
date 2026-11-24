@@ -1185,8 +1185,29 @@ html[data-joytrans="1"] .ph-modal-backdrop {
   align-items: center;
   gap: 6px;
   overflow-x: auto;
-  padding: 2px 2px 8px;
+  overflow-y: hidden;
+  flex-shrink: 0;
+  min-height: 46px;
+  padding: 4px 2px 10px;
   scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.35) transparent;
+}
+.ph-dossier-strip::-webkit-scrollbar {
+  height: 5px;
+}
+.ph-dossier-strip::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.35);
+  border-radius: 999px;
+}
+.ph-dossier-strip::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.42);
+  border-radius: 999px;
+}
+.ph-dossier-strip::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.7);
+}
+#phDossierContent {
+  flex-shrink: 0;
 }
 .ph-dossier-chip {
   display: inline-flex;
