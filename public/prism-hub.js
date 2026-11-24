@@ -820,8 +820,44 @@
   }
 
   // ── Feature #15: Fullscreen Ambient Vinyl Art Frame (283 Ambient Frame) ──
-  async function openAmbientFrame() {
+  const IDOL_STANDS = [
+    { name: '樱木真乃', file: '/model-previews/f05d0a686a100ff0f263f23c.webp' },
+    { name: '风野灯织', file: '/model-previews/b5683cb7a251fe18479e2572.webp' },
+    { name: '八宫巡', file: '/model-previews/a84cfdde2116bc301d50dc91.webp' },
+    { name: '月冈恋钟', file: '/model-previews/88e25ef6f5662b30ba684f10.webp' },
+    { name: '田中摩美美', file: '/model-previews/11242569230dce70436737d0.webp' },
+    { name: '白濑咲耶', file: '/model-previews/7856b186e1d1c54f3f4166d8.webp' },
+    { name: '三峰结华', file: '/model-previews/b2350beebfab1fce49386012.webp' },
+    { name: '幽谷雾子', file: '/model-previews/d89fd9e0dbbbaba748e8b49b.webp' },
+    { name: '小宫果穗', file: '/model-previews/1a5770d3c8a3da07c58006c1.webp' },
+    { name: '园田智代子', file: '/model-previews/9e172189909f0e9e070c286e.webp' },
+    { name: '西城树里', file: '/model-previews/de9d5cd5223cacbdb726dd1a.webp' },
+    { name: '杜野凛世', file: '/model-previews/4bcb1c33b3e97ecf113be942.webp' },
+    { name: '有栖川夏叶', file: '/model-previews/09c08ba85ffae7cae4fed2ed.webp' },
+    { name: '大崎甘奈', file: '/model-previews/942fc03d7d5125e242e4ee44.webp' },
+    { name: '大崎甜花', file: '/model-previews/92bd99957ac402764997eff9.webp' },
+    { name: '桑山千雪', file: '/model-previews/73692b9d02f2223727213471.webp' },
+    { name: '芹泽朝日', file: '/model-previews/339ddf848482b8b1c368186e.webp' },
+    { name: '黛冬优子', file: '/model-previews/135967cb39e425086b91bda4.webp' },
+    { name: '和泉爱依', file: '/model-previews/7703903084f8553488c3546f.webp' },
+    { name: '浅仓透', file: '/model-previews/607530f43bf64a4122e5458e.webp' },
+    { name: '樋口圆香', file: '/model-previews/2fb762b9f7da838448e09ffa.webp' },
+    { name: '福丸小糸', file: '/model-previews/329c48323f585fdabbb4acf5.webp' },
+    { name: '市川雏菜', file: '/model-previews/627e5bb79fd26ba6af5d84c1.webp' },
+    { name: '七草日花', file: '/model-previews/624a684cfb8a3ab3e685c2e5.webp' },
+    { name: '绯田美琴', file: '/model-previews/03b3ed095f233a6eca2024c6.webp' },
+    { name: '斑鸠路加', file: '/model-previews/c90720fc1591dab072922245.webp' },
+    { name: '铃木羽那', file: '/model-previews/9638cd6e23bd59cfa67a7fa3.webp' },
+    { name: '郁田春希', file: '/model-previews/4b36e2ede60f3a21d85c73ec.webp' }
+  ];
+
+  let currentAmbientMode = 'art'; // 'art' | 'idol'
+  let currentIdolIdx = 0;
+  let idleFadeTimer = null;
+
+  async function openAmbientFrame(initialMode = 'art') {
     closeModal();
+    currentAmbientMode = initialMode;
     const { catalog, cardArt } = await ensureCatalog();
     const artList = [];
     for (const [sKey, a] of Object.entries(cardArt || {})) {
@@ -847,16 +883,22 @@
       ambientEl.innerHTML = `
         <div class="ph-af-art-bg" id="phAfBg"></div>
         <div class="ph-af-shade"></div>
+        <div class="ph-af-idol-stage" id="phAfIdolStage" hidden>
+          <div class="ph-af-stage-spot"></div>
+          <img class="ph-af-idol-img" id="phAfIdolImg" src="" alt="全屏静音偶像">
+        </div>
         <header class="ph-af-top">
           <div>
             <div class="ph-af-clock" id="phAfClock">00:00</div>
             <div class="ph-af-date" id="phAfDate">283 PRODUCTION · AMBIENT ART FRAME</div>
           </div>
           <div style="display:flex;gap:8px;align-items:center;">
+            <button type="button" class="ph-btn ghost" id="phAfSwitchModeBtn" title="在卡面壁纸与全屏偶像立绘间切换">💃 偶像立绘</button>
+            <button type="button" class="ph-btn ghost" id="phAfNextIdolBtn" hidden title="切换全屏陪伴偶像">🎭 换偶像</button>
+            <button type="button" class="ph-btn ghost" id="phAfNextArtBtn">🖼 换画作</button>
             <button type="button" class="ph-btn ghost" id="phAfDimBtn" title="切换夜间调光亮度">🌙 调光: 100%</button>
             <button type="button" class="ph-btn ghost" id="phAfFullscreenBtn" title="切换操作系统全屏 (F11)">⛶ 全屏</button>
-            <button type="button" class="ph-btn ghost" id="phAfNextArtBtn">🖼 切换画作</button>
-            <button type="button" class="ph-btn ghost" id="phAfExitBtn">退出画框 (ESC) ×</button>
+            <button type="button" class="ph-btn ghost" id="phAfExitBtn">退出 (ESC) ×</button>
           </div>
         </header>
         <footer class="ph-af-bottom">
@@ -882,8 +924,25 @@
         </footer>
       `;
       document.body.appendChild(ambientEl);
+
+      const resetIdleTimer = () => {
+        ambientEl?.classList.remove('is-zen');
+        clearTimeout(idleFadeTimer);
+        idleFadeTimer = setTimeout(() => {
+          if (ambientEl && !ambientEl.hidden) {
+            ambientEl.classList.add('is-zen');
+          }
+        }, 3600);
+      };
+      ambientEl.addEventListener('mousemove', resetIdleTimer);
+      ambientEl.addEventListener('pointerdown', resetIdleTimer);
+
       document.getElementById('phAfExitBtn')?.addEventListener('click', closeAmbientFrame);
       document.getElementById('phAfNextArtBtn')?.addEventListener('click', () => cycleArt());
+      document.getElementById('phAfNextIdolBtn')?.addEventListener('click', () => cycleIdol());
+      document.getElementById('phAfSwitchModeBtn')?.addEventListener('click', () => {
+        toggleAmbientMode();
+      });
       document.getElementById('phAfPlayBtn')?.addEventListener('click', () => {
         document.getElementById('islandMiniPlay')?.click();
         setTimeout(tick, 60);
@@ -928,9 +987,52 @@
       const cap = document.getElementById('phAfCardName');
       const jumpBtn = document.getElementById('phAfJumpStoryBtn');
       if (bg) bg.style.backgroundImage = `url("${currentArtPick.url}")`;
-      if (cap) cap.textContent = `✦ ${currentArtPick.name}`;
+      if (cap && currentAmbientMode === 'art') cap.textContent = `✦ ${currentArtPick.name}`;
       if (jumpBtn) {
-        jumpBtn.hidden = !currentArtPick.storyKey;
+        jumpBtn.hidden = !currentArtPick.storyKey || currentAmbientMode !== 'art';
+      }
+    };
+
+    const cycleIdol = () => {
+      currentIdolIdx = (currentIdolIdx + 1) % IDOL_STANDS.length;
+      updateIdolDisplay();
+    };
+
+    const updateIdolDisplay = () => {
+      const idol = IDOL_STANDS[currentIdolIdx];
+      const img = document.getElementById('phAfIdolImg');
+      const cap = document.getElementById('phAfCardName');
+      if (img) img.src = idol.file;
+      if (cap && currentAmbientMode === 'idol') cap.textContent = `✦ 静音专注陪伴：${idol.name}（不说话）`;
+    };
+
+    const toggleAmbientMode = () => {
+      currentAmbientMode = currentAmbientMode === 'art' ? 'idol' : 'art';
+      applyAmbientMode();
+    };
+
+    const applyAmbientMode = () => {
+      const isIdol = currentAmbientMode === 'idol';
+      const stageEl = document.getElementById('phAfIdolStage');
+      const nextIdolBtn = document.getElementById('phAfNextIdolBtn');
+      const nextArtBtn = document.getElementById('phAfNextArtBtn');
+      const modeBtn = document.getElementById('phAfSwitchModeBtn');
+      const jumpBtn = document.getElementById('phAfJumpStoryBtn');
+      const dt = document.getElementById('phAfDate');
+
+      if (stageEl) stageEl.hidden = !isIdol;
+      if (nextIdolBtn) nextIdolBtn.hidden = !isIdol;
+      if (nextArtBtn) nextArtBtn.hidden = isIdol;
+      if (jumpBtn) jumpBtn.hidden = isIdol || !currentArtPick?.storyKey;
+      if (modeBtn) modeBtn.textContent = isIdol ? '🖼 卡面画框' : '💃 偶像立绘';
+
+      if (isIdol) {
+        updateIdolDisplay();
+        if (dt) dt.textContent = `283 PRODUCTION · 全屏偶像专注待机（静音不说话）`;
+      } else {
+        cycleArt();
+        const now = new Date();
+        if (dt) dt.textContent = `${now.getFullYear()}年${now.getMonth() + 1}月${now.getDate()}日 · 283 待机黑胶艺术画框`;
       }
     };
 
@@ -939,9 +1041,7 @@
       const hh = String(now.getHours()).padStart(2, '0');
       const mm = String(now.getMinutes()).padStart(2, '0');
       const cl = document.getElementById('phAfClock');
-      const dt = document.getElementById('phAfDate');
       if (cl) cl.textContent = `${hh}:${mm}`;
-      if (dt) dt.textContent = `${now.getFullYear()}年${now.getMonth() + 1}月${now.getDate()}日 · 283 待机黑胶艺术画框`;
       try {
         const isPlaying = document.getElementById('dynamicIsland')?.classList.contains('is-playing') ||
                           localStorage.getItem('shiny.musicPlaying') === '1';
@@ -965,16 +1065,17 @@
     };
 
     ambientEl.hidden = false;
-    cycleArt();
+    applyAmbientMode();
     tick();
     clearInterval(ambientTimer);
     ambientTimer = setInterval(() => {
       tick();
-      cycleArt();
-    }, 12000);
+      if (currentAmbientMode === 'art') cycleArt();
+    }, 14000);
   }
 
   function closeAmbientFrame() {
+    clearTimeout(idleFadeTimer);
     clearInterval(ambientTimer);
     if (ambientEl) ambientEl.hidden = true;
   }
@@ -1340,6 +1441,11 @@
           <span class="mh-ico">🖼️</span>
           <span class="mh-txt"><strong>全屏「黑胶艺术画框 / 待机屏保」</strong><small>全景卡面轮播 + 旋转黑胶与时钟</small></span>
         </button>
+        <button type="button" class="mh-item" data-act="silent-idol">
+          <span class="mh-ico">🧘</span>
+          <span class="mh-txt"><strong>全屏偶像专注待机（静音·不说话）</strong><small>全屏纯净立绘安静陪伴，零弹窗与语音打扰，沉浸专注屏保</small></span>
+          <span class="mh-badge" style="background:rgba(56,189,248,0.22);color:#7dd3fc;border-color:rgba(56,189,248,0.4);">静音纯净</span>
+        </button>
         <button type="button" class="mh-item" data-act="companion" id="mhCompanionItem">
           <span class="mh-ico">💬</span>
           <span class="mh-txt"><strong>透明桌面伙伴 · AI / 记事本 / 语音</strong><small>置顶悬浮伙伴、整点报时与语音一键接入</small></span>
@@ -1392,7 +1498,8 @@
         else if (act === 'chain') openChainAnd1v1('chain');
         else if (act === 'matrix') openAddressMatrix();
         else if (act === 'resume') openProducerResume();
-        else if (act === 'ambient') openAmbientFrame();
+        else if (act === 'ambient') openAmbientFrame('art');
+        else if (act === 'silent-idol') openAmbientFrame('idol');
         else if (act === 'companion') document.getElementById('btnCompanion')?.click();
         else if (act === 'stagefx') document.getElementById('btnStageFx')?.click();
       });
@@ -1416,6 +1523,7 @@
     openResume: openProducerResume,
     openFortune: openDailyFortune,
     openAmbientFrame,
+    openSilentIdol: () => openAmbientFrame('idol'),
     openMorning: openMorningGreetingModal
   };
 })();

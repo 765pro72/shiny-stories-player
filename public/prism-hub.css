@@ -654,6 +654,70 @@ html[data-joytrans="1"] .ph-modal-backdrop {
 }
 .ph-ambient-frame[hidden] { display: none !important; }
 
+/* ── Fullscreen Silent Idol Mode (全屏偶像不说话 · 专注待机) ── */
+.ph-ambient-frame.is-zen .ph-af-top,
+.ph-ambient-frame.is-zen .ph-af-bottom {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+}
+.ph-ambient-frame.is-zen {
+  cursor: none;
+}
+.ph-af-idol-stage {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  pointer-events: none;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.ph-af-stage-spot {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(380px, 60vw, 880px);
+  height: clamp(140px, 22vh, 320px);
+  background: radial-gradient(ellipse at 50% 60%, rgba(56, 189, 248, 0.38) 0%, rgba(129, 140, 248, 0.16) 45%, transparent 75%);
+  pointer-events: none;
+  filter: blur(12px);
+  animation: phSpotPulse 7s ease-in-out infinite alternate;
+}
+@keyframes phSpotPulse {
+  0% { transform: translateX(-50%) scale(0.96); opacity: 0.8; }
+  100% { transform: translateX(-50%) scale(1.05); opacity: 1; }
+}
+.ph-af-idol-img {
+  position: relative;
+  height: clamp(480px, 86vh, 980px);
+  max-width: 90vw;
+  object-fit: contain;
+  object-position: bottom center;
+  filter: drop-shadow(0 20px 48px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 28px rgba(56, 189, 248, 0.28));
+  animation: phIdolBreathe 6.5s ease-in-out infinite alternate;
+  pointer-events: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+.ph-af-idol-img:hover {
+  filter: drop-shadow(0 22px 54px rgba(0, 0, 0, 0.85)) drop-shadow(0 0 36px rgba(251, 191, 36, 0.4));
+}
+@keyframes phIdolBreathe {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-4px) scale(1.004); }
+  100% { transform: translateY(-9px) scale(1.008); }
+}
+
 .ph-af-art-bg {
   position: absolute;
   inset: 0;
