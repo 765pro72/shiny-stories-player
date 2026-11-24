@@ -9,7 +9,7 @@ function createPrismFeatureService({ base, dataRoot }) {
 
   function ensureCorpus() {
     if (corpusCache) return corpusCache;
-    const dRoot = typeof dataRoot === 'function' ? dataRoot() : dataRoot;
+    const dRoot = (typeof dataRoot === 'function' ? dataRoot() : dataRoot) || (base ? path.join(base, 'data') : path.resolve('./data'));
     const catPath = fs.existsSync(path.join(dRoot, 'catalog.json'))
       ? path.join(dRoot, 'catalog.json')
       : path.join(base, 'data/catalog.json');
@@ -230,8 +230,95 @@ function createPrismFeatureService({ base, dataRoot }) {
     return addressMatrixCache;
   }
 
+  function getMorningGreeting(idolFilter = '') {
+    const dRoot = (typeof dataRoot === 'function' ? dataRoot() : dataRoot) || (base ? path.join(base, 'data') : path.resolve('./data'));
+    const catPath = fs.existsSync(path.join(dRoot, 'catalog.json'))
+      ? path.join(dRoot, 'catalog.json')
+      : path.join(base, 'data/catalog.json');
+    const catalog = JSON.parse(fs.readFileSync(catPath, 'utf8'));
+    const qIdol = String(idolFilter || '').trim();
+    let morningScripts = catalog.filter(c => c.group === 'Morning' && c.translated);
+    if (qIdol) {
+      const match = morningScripts.filter(s => s.idol === qIdol || s.idol.includes(qIdol));
+      if (match.length) morningScripts = match;
+    }
+    if (!morningScripts.length) return { ok: false, error: 'No morning scripts found' };
+
+    const pick = morningScripts[Math.floor(Math.random() * morningScripts.length)];
+    const commId = pick.key.replace(/^produce_communications\//, '').replace(/\.json$/, '');
+    const transRoot = fs.existsSync(path.join(dRoot, 'translations'))
+      ? path.join(dRoot, 'translations')
+      : path.join(base, 'data/translations');
+    const fp = path.join(transRoot, pick.key);
+    const raw = JSON.parse(fs.readFileSync(fp, 'utf8'));
+    const rows = raw.rows || [];
+    const selectIdxs = [];
+    rows.forEach((r, i) => { if (r.id === 'select') selectIdxs.push(i); });
+    if (selectIdxs.length !== 3) return { ok: false, error: 'Malformed script' };
+
+    const openingRows = rows.slice(0, selectIdxs[0]);
+    const choiceRows = rows.slice(selectIdxs[0], selectIdxs[2] + 1);
+    const reactionRows = rows.slice(selectIdxs[2] + 1);
+
+    const branches = [[], [], []];
+    let curBranch = 0;
+    for (const r of reactionRows) {
+      branches[curBranch].push(r);
+      if (/（よし|楽しく話せた|完璧|手応え|バッチリ）/i.test(r.text) || /（まぁ、普通|普通に話せた|悪くは）/i.test(r.text) || /（うっ……|しまった|微妙|失敗）/i.test(r.text)) {
+        if (curBranch < 2) curBranch++;
+      }
+    }
+
+    const choices = choiceRows.map((c, i) => {
+      const branch = branches[i] || [];
+      const producerComment = branch.find(r => r.name === 'プロデューサー' || /（/.test(r.text))?.trans || '';
+      const idolLines = branch.filter(r => r.name !== 'プロデューサー' && !/（/.test(r.text));
+      return {
+        id: 'c_' + i,
+        text: (c.trans || c.text).replace(/\\n/g, ' '),
+        original: (c.text || '').replace(/\\n/g, ' '),
+        grade: i === 0 ? 'Perfect' : (i === 1 ? 'Good' : 'Normal'),
+        producerComment: producerComment.replace(/\\n/g, ' '),
+        idolLines: idolLines.map(l => ({
+          speaker: l.name || pick.idol,
+          trans: (l.trans || l.text).replace(/\\n/g, ' '),
+          text: (l.text || '').replace(/\\n/g, ' '),
+          voice: (l.id && l.id.startsWith(commId)) ? `/asset/sounds/voice/events/produce_communications/${commId}/${l.id}.m4a` : ''
+        }))
+      };
+    });
+
+    const shuffledChoices = choices.map(v => ({ v, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(x => x.v);
+
+    return {
+      ok: true,
+      idol: pick.idol,
+      title: pick.title,
+      key: pick.key,
+      commId,
+      opening: {
+        producer: (openingRows.find(r => r.name === 'プロデューサー')?.trans || '').replace(/\\n/g, ' '),
+        idolLines: openingRows.filter(r => r.name !== 'プロデューサー').map(l => ({
+          speaker: l.name || pick.idol,
+          trans: (l.trans || l.text).replace(/\\n/g, ' '),
+          text: (l.text || '').replace(/\\n/g, ' '),
+          voice: (l.id && l.id.startsWith(commId)) ? `/asset/sounds/voice/events/produce_communications/${commId}/${l.id}.m4a` : ''
+        }))
+      },
+      choices: shuffledChoices
+    };
+  }
+
   return async function handler(req, res, u) {
     const p = decodeURIComponent(u.pathname);
+    if (p === '/api/morning-greeting') {
+      const idol = u.searchParams.get('idol') || '';
+      const out = getMorningGreeting(idol);
+      res.setHeader('Content-Type', 'application/json; charset=utf-8');
+      res.setHeader('Cache-Control', 'no-store');
+      res.end(JSON.stringify(out));
+      return true;
+    }
     if (p === '/api/dialogue-search') {
       const q = u.searchParams.get('q') || '';
       const speaker = u.searchParams.get('speaker') || '';

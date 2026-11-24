@@ -159,6 +159,7 @@
   }
 
   function closeModal() {
+    stopMorningVoice();
     if (backdropEl) backdropEl.hidden = true;
   }
 
@@ -978,10 +979,329 @@
     if (ambientEl) ambientEl.hidden = true;
   }
 
+  // ── Feature #7: Morning Communication (朝コミュ) 3-Choice System ──
+  let morningVoiceAudio = null;
+
+  function stopMorningVoice() {
+    if (morningVoiceAudio) {
+      try {
+        morningVoiceAudio.pause();
+        morningVoiceAudio.currentTime = 0;
+      } catch {}
+      morningVoiceAudio = null;
+    }
+    document.querySelectorAll('.ph-voice-btn.is-playing').forEach(b => b.classList.remove('is-playing'));
+  }
+
+  function playMorningVoice(url, btnEl) {
+    if (!url) return;
+    stopMorningVoice();
+    morningVoiceAudio = new Audio(url);
+    if (btnEl) btnEl.classList.add('is-playing');
+    morningVoiceAudio.onended = () => {
+      if (btnEl) btnEl.classList.remove('is-playing');
+      morningVoiceAudio = null;
+    };
+    morningVoiceAudio.onerror = () => {
+      if (btnEl) btnEl.classList.remove('is-playing');
+      morningVoiceAudio = null;
+    };
+    morningVoiceAudio.play().catch(() => {});
+  }
+
+  async function openMorningGreetingModal(preloadedData = null) {
+    stopMorningVoice();
+    openModal('283 MORNING COMMUNICATION', '☀️ 每日「晨间问候」朝コミュ · 3选1经典互动');
+    modalBodyEl.innerHTML = `
+      <div style="text-align:center;padding:48px 20px;color:#94a3b8;">
+        <div class="ph-spinner"></div>
+        <div style="margin-top:14px;font-size:14px;color:#cbd5e1;font-weight:600;">正在连通 283 事务所走廊，偶遇今日晨间偶像…</div>
+      </div>
+    `;
+
+    let data = preloadedData;
+    if (!data) {
+      try {
+        const res = await fetch('/api/morning-greeting');
+        data = await res.json();
+      } catch (err) {
+        modalBodyEl.innerHTML = `<div class="ph-empty">获取晨间问候失败，请检查网络或服务运行状态。</div>`;
+        return;
+      }
+    }
+
+    if (!data || !data.ok) {
+      modalBodyEl.innerHTML = `<div class="ph-empty">${esc(data?.error || '未找到晨间剧本')}</div>`;
+      return;
+    }
+
+    const todayStr = new Date().toISOString().slice(0, 10);
+    const lastDate = localStorage.getItem('shiny.morningGreeting.lastDate') || '';
+    let streak = parseInt(localStorage.getItem('shiny.morningGreeting.streak') || '0', 10);
+
+    const openingProducer = data.opening?.producer || '';
+    const openingLines = data.opening?.idolLines || [];
+
+    modalBodyEl.innerHTML = `
+      <div class="ph-morning-card" id="phMornCard">
+        <div class="ph-morning-header">
+          <div class="ph-morning-avatar" id="phMornAvatar"></div>
+          <div class="ph-morning-meta">
+            <h3>
+              <span>${esc(data.idol)}</span>
+              <span class="ph-morning-badge">${esc(data.title || '朝コミュ')}</span>
+            </h3>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;flex-wrap:wrap;">
+              <span class="ph-morning-streak-badge" id="phMornStreakBadge">🔥 晨间连击 ${streak} 天</span>
+              <small style="color:#94a3b8;font-size:11px;">283 事务所早晨走廊 · 偶遇事件</small>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          ${openingProducer ? `
+            <div class="ph-bubble producer">
+              <div class="ph-bubble-speaker"><span>制作人</span></div>
+              <div class="ph-bubble-cn">${esc(openingProducer)}</div>
+            </div>
+          ` : ''}
+
+          ${openingLines.map((l, lIdx) => `
+            <div class="ph-bubble idol">
+              <div class="ph-bubble-speaker">
+                <span>${esc(l.speaker || data.idol)}</span>
+                ${l.voice ? `
+                  <button type="button" class="ph-voice-btn" data-voice="${esc(l.voice)}" id="phMornVoiceOpen_${lIdx}">
+                    <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                    <span>播放语音</span>
+                  </button>
+                ` : ''}
+              </div>
+              ${l.text ? `<div class="ph-bubble-jp">${esc(l.text)}</div>` : ''}
+              <div class="ph-bubble-cn">${esc(l.trans || l.text)}</div>
+            </div>
+          `).join('')}
+        </div>
+
+        <div id="phMornInteractiveArea">
+          <div style="font-size:12.5px;font-weight:700;color:#fde047;margin-bottom:8px;display:flex;align-items:center;gap:6px;">
+            <span>✦ 制作人，请做出你的回应选择：</span>
+          </div>
+          <div class="ph-choice-list" id="phMornChoices">
+            ${data.choices.map((c, idx) => `
+              <button type="button" class="ph-choice-btn" data-choice-idx="${idx}">
+                <span class="ph-choice-tag">${['A', 'B', 'C'][idx]}</span>
+                <div class="ph-choice-content">
+                  <div class="ph-choice-cn">${esc(c.text)}</div>
+                  ${c.original && c.original !== c.text ? `<div class="ph-choice-jp">${esc(c.original)}</div>` : ''}
+                </div>
+              </button>
+            `).join('')}
+          </div>
+        </div>
+
+        <div id="phMornResultArea" hidden style="display:flex;flex-direction:column;gap:12px;"></div>
+      </div>
+    `;
+
+    // Mount Avatar
+    const avatarEl = document.getElementById('phMornAvatar');
+    if (avatarEl && window.CharacterPortraits?.mount) {
+      window.CharacterPortraits.mount(avatarEl, data.idol);
+    }
+
+    // Bind Opening Voice Buttons
+    modalBodyEl.querySelectorAll('.ph-voice-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        playMorningVoice(btn.dataset.voice, btn);
+      });
+    });
+
+    // Autoplay first idol opening line if voice exists
+    const firstVoiceBtn = document.getElementById('phMornVoiceOpen_0');
+    if (firstVoiceBtn) {
+      setTimeout(() => firstVoiceBtn.click(), 300);
+    }
+
+    // Choice Selection Handlers
+    const interactiveArea = document.getElementById('phMornInteractiveArea');
+    const resultArea = document.getElementById('phMornResultArea');
+
+    modalBodyEl.querySelectorAll('.ph-choice-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const cIdx = parseInt(btn.dataset.choiceIdx, 10);
+        const choice = data.choices[cIdx];
+        if (!choice) return;
+
+        // Hide choices
+        if (interactiveArea) interactiveArea.hidden = true;
+
+        // Update streak if not completed today
+        const curToday = new Date().toISOString().slice(0, 10);
+        const curLast = localStorage.getItem('shiny.morningGreeting.lastDate') || '';
+        if (curLast !== curToday) {
+          streak += 1;
+          localStorage.setItem('shiny.morningGreeting.lastDate', curToday);
+          localStorage.setItem('shiny.morningGreeting.streak', String(streak));
+          const streakBadge = document.getElementById('phMornStreakBadge');
+          if (streakBadge) streakBadge.textContent = `🔥 晨间连击 ${streak} 天 (今日已打卡!)`;
+          try {
+            const mhBadge = document.getElementById('mhMorningBadge');
+            if (mhBadge) {
+              mhBadge.textContent = `已打卡 🔥 ${streak}天`;
+              mhBadge.style.background = 'rgba(34, 197, 94, 0.25)';
+              mhBadge.style.color = '#86efac';
+            }
+          } catch {}
+        }
+
+        const gradeClass = choice.grade === 'Perfect' ? 'is-perfect' : (choice.grade === 'Good' ? 'is-good' : 'is-normal');
+        const gradeTitle = choice.grade === 'Perfect' ? '🌟 PERFECT COMMUNICATION 🌟'
+          : (choice.grade === 'Good' ? '✨ GOOD COMMUNICATION ✨' : '💬 NORMAL COMMUNICATION 💬');
+        const gradeDesc = choice.grade === 'Perfect' ? '亲密度大幅上升 · 心意相通，完美的一天开始了！'
+          : (choice.grade === 'Good' ? '交流顺畅 · 元气满满，偶像带着微笑投入了排练！' : '日常交流 · 虽然有点微妙，但更加了解了彼此！');
+
+        if (resultArea) {
+          resultArea.hidden = false;
+          resultArea.innerHTML = `
+            <div class="ph-bubble producer">
+              <div class="ph-bubble-speaker"><span>制作人的回应</span></div>
+              <div class="ph-bubble-cn" style="color:#7dd3fc;font-weight:700;">${esc(choice.text)}</div>
+            </div>
+
+            <div class="ph-grade-banner ${gradeClass}">
+              <div>
+                <div class="ph-grade-title">${gradeTitle}</div>
+                <div class="ph-grade-sub">${gradeDesc}</div>
+              </div>
+              <span style="font-size:22px;">${choice.grade === 'Perfect' ? '💖' : (choice.grade === 'Good' ? '🌸' : '💭')}</span>
+            </div>
+
+            ${choice.idolLines.map((l, rIdx) => `
+              <div class="ph-bubble idol" style="animation: phGradePop 0.35s ease;">
+                <div class="ph-bubble-speaker">
+                  <span>${esc(l.speaker || data.idol)}</span>
+                  ${l.voice ? `
+                    <button type="button" class="ph-voice-btn" data-voice="${esc(l.voice)}" id="phMornVoiceReact_${rIdx}">
+                      <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                      <span>播放语音</span>
+                    </button>
+                  ` : ''}
+                </div>
+                ${l.text ? `<div class="ph-bubble-jp">${esc(l.text)}</div>` : ''}
+                <div class="ph-bubble-cn">${esc(l.trans || l.text)}</div>
+              </div>
+            `).join('')}
+
+            ${choice.producerComment ? `
+              <div class="ph-bubble producer">
+                <div class="ph-bubble-speaker"><span>💭 制作人的感想</span></div>
+                <div class="ph-bubble-cn" style="color:#94a3b8;font-style:italic;">${esc(choice.producerComment)}</div>
+              </div>
+            ` : ''}
+
+            <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:6px;">
+              <button type="button" class="ph-btn ghost" id="phMornReplayStoryBtn">🎬 在播放器中重温该剧 ↗</button>
+              <button type="button" class="ph-btn ghost" id="phMornNextIdolBtn">🔄 偶遇另一位偶像</button>
+              <button type="button" class="ph-btn" id="phMornFinishBtn">✓ 完成今日晨间问候</button>
+            </div>
+          `;
+
+          // Bind reaction voice buttons
+          resultArea.querySelectorAll('.ph-voice-btn').forEach(vBtn => {
+            vBtn.addEventListener('click', () => {
+              playMorningVoice(vBtn.dataset.voice, vBtn);
+            });
+          });
+
+          // Autoplay reaction voice
+          const reactVoiceBtn = document.getElementById('phMornVoiceReact_0');
+          if (reactVoiceBtn) {
+            setTimeout(() => reactVoiceBtn.click(), 300);
+          }
+
+          document.getElementById('phMornReplayStoryBtn')?.addEventListener('click', () => {
+            closeModal();
+            navigateStory(data.key);
+          });
+          document.getElementById('phMornNextIdolBtn')?.addEventListener('click', () => {
+            openMorningGreetingModal();
+          });
+          document.getElementById('phMornFinishBtn')?.addEventListener('click', () => {
+            closeModal();
+          });
+        }
+      });
+    });
+  }
+
+  let morningToastEl = null;
+
+  function showMorningGreetingToast(data) {
+    if (!data || !data.ok) return;
+    if (document.getElementById('phMorningToast')) return;
+
+    morningToastEl = document.createElement('div');
+    morningToastEl.className = 'ph-morning-toast';
+    morningToastEl.id = 'phMorningToast';
+    morningToastEl.innerHTML = `
+      <div class="ph-toast-avatar" id="phToastAvatar"></div>
+      <div class="ph-toast-info">
+        <span class="ph-toast-title">☀️ 晨间问候待查收</span>
+        <span class="ph-toast-sub">来自 ${esc(data.idol)} 的早晨对话 · 点击交流</span>
+      </div>
+      <button type="button" class="ph-toast-close" title="稍后提醒">✕</button>
+    `;
+    document.body.appendChild(morningToastEl);
+
+    if (window.CharacterPortraits?.mount) {
+      window.CharacterPortraits.mount(document.getElementById('phToastAvatar'), data.idol);
+    }
+
+    setTimeout(() => {
+      morningToastEl?.classList.add('show');
+    }, 100);
+
+    morningToastEl.addEventListener('click', e => {
+      if (e.target.closest('.ph-toast-close')) {
+        e.stopPropagation();
+        morningToastEl.classList.remove('show');
+        setTimeout(() => morningToastEl?.remove(), 400);
+        return;
+      }
+      morningToastEl.classList.remove('show');
+      setTimeout(() => morningToastEl?.remove(), 400);
+      openMorningGreetingModal(data);
+    });
+  }
+
+  async function checkMorningGreetingAuto() {
+    const todayStr = new Date().toISOString().slice(0, 10);
+    const lastDate = localStorage.getItem('shiny.morningGreeting.lastDate') || '';
+    if (lastDate === todayStr) return;
+
+    const hour = new Date().getHours();
+    if (hour < 5 || hour >= 12) return;
+
+    try {
+      const res = await fetch('/api/morning-greeting');
+      const data = await res.json();
+      if (data && data.ok) {
+        setTimeout(() => {
+          showMorningGreetingToast(data);
+        }, 1200);
+      }
+    } catch {}
+  }
+
   // Mount Consolidated "✦ 更多" Button in .shell-utils
   function mountMoreHub() {
     const utils = document.querySelector('.shell-utils');
     if (!utils || document.getElementById('btnMoreHub')) return;
+
+    const todayStr = new Date().toISOString().slice(0, 10);
+    const isDoneToday = localStorage.getItem('shiny.morningGreeting.lastDate') === todayStr;
+    const streak = parseInt(localStorage.getItem('shiny.morningGreeting.streak') || '0', 10);
 
     const anchor = document.createElement('div');
     anchor.className = 'more-hub-anchor';
@@ -991,6 +1311,11 @@
       </button>
       <div class="more-hub-popover" id="moreHubPopover" hidden>
         <div class="mh-head">283 PRODUCTION · 百宝箱与扩展</div>
+        <button type="button" class="mh-item" data-act="morning">
+          <span class="mh-ico">☀️</span>
+          <span class="mh-txt"><strong>每日「晨间问候」朝コミュ</strong><small>28 位偶像晨间走廊对话与经典三选一</small></span>
+          <span class="mh-badge" id="mhMorningBadge" style="${isDoneToday ? 'background:rgba(34,197,94,0.25);color:#86efac;border-color:rgba(34,197,94,0.4);' : 'background:rgba(251,191,36,0.25);color:#fde047;border-color:rgba(251,191,36,0.4);'}">${isDoneToday ? `已打卡 🔥 ${streak}天` : (streak > 0 ? `待打卡 · 连击${streak}天` : '今日待打卡')}</span>
+        </button>
         <button type="button" class="mh-item" data-act="search">
           <span class="mh-ico">🔍</span>
           <span class="mh-txt"><strong>全剧本「台词级」秒搜</strong><small>50 万+ 句双语台词毫秒级定位名场面</small></span>
@@ -1061,7 +1386,8 @@
       item.addEventListener('click', () => {
         const act = item.dataset.act;
         closePop();
-        if (act === 'search') openDialogueSearch();
+        if (act === 'morning') openMorningGreetingModal();
+        else if (act === 'search') openDialogueSearch();
         else if (act === 'fortune') openDailyFortune();
         else if (act === 'chain') openChainAnd1v1('chain');
         else if (act === 'matrix') openAddressMatrix();
@@ -1074,9 +1400,13 @@
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', mountMoreHub);
+    document.addEventListener('DOMContentLoaded', () => {
+      mountMoreHub();
+      checkMorningGreetingAuto();
+    });
   } else {
     mountMoreHub();
+    checkMorningGreetingAuto();
   }
 
   window.PrismHub = {
@@ -1085,6 +1415,7 @@
     openMatrix: openAddressMatrix,
     openResume: openProducerResume,
     openFortune: openDailyFortune,
-    openAmbientFrame
+    openAmbientFrame,
+    openMorning: openMorningGreetingModal
   };
 })();

@@ -770,9 +770,345 @@ html[data-joytrans="1"] .ph-modal-backdrop {
   display: none !important;
 }
 
+/* ═══════════════════════════════════════════════════════════════════════════
+   Morning Greeting (朝コミュ) VisionOS Interactive Dialogues & Toast
+   ═══════════════════════════════════════════════════════════════════════════ */
+.ph-morning-toast {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-30px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px 8px 10px;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(251, 191, 36, 0.45);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.5), 0 0 24px rgba(251, 191, 36, 0.25);
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.38s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+.ph-morning-toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+.ph-morning-toast:hover {
+  border-color: #fbbf24;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6), 0 0 32px rgba(251, 191, 36, 0.45);
+  transform: translateX(-50%) translateY(-2px);
+}
+.ph-toast-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #fbbf24;
+  overflow: hidden;
+  position: relative;
+  flex: none;
+  background: #0f172a;
+}
+.ph-toast-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ph-toast-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+.ph-toast-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #fde047;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.ph-toast-sub {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.ph-toast-close {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: all 0.2s ease;
+}
+.ph-toast-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Morning Modal Interactive Card */
+.ph-morning-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: radial-gradient(circle at 50% 0%, rgba(251, 191, 36, 0.12), transparent 70%), rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 12px 36px rgba(0, 0, 0, 0.4);
+}
+.ph-morning-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.ph-morning-avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid #fbbf24;
+  box-shadow: 0 0 16px rgba(251, 191, 36, 0.4);
+  overflow: hidden;
+  position: relative;
+  flex: none;
+  background: #0b0f19;
+}
+.ph-morning-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ph-morning-meta {
+  flex: 1;
+  min-width: 0;
+}
+.ph-morning-meta h3 {
+  margin: 0;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ph-morning-badge {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  background: rgba(251, 191, 36, 0.2);
+  color: #fde047;
+  border: 1px solid rgba(251, 191, 36, 0.4);
+}
+.ph-morning-streak-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.3), rgba(239, 68, 68, 0.3));
+  color: #fef08a;
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Dialogue Bubble */
+.ph-bubble {
+  position: relative;
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: all 0.25s ease;
+}
+.ph-bubble.idol {
+  border-left: 3px solid #fbbf24;
+}
+.ph-bubble.producer {
+  background: rgba(15, 23, 42, 0.6);
+  border-left: 3px solid #38bdf8;
+}
+.ph-bubble-speaker {
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ph-bubble-jp {
+  font-size: 12.5px;
+  color: #94a3b8;
+  line-height: 1.45;
+}
+.ph-bubble-cn {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #f8fafc;
+  line-height: 1.55;
+}
+
+/* Audio Wave Voice Button */
+.ph-voice-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  background: rgba(56, 189, 248, 0.18);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  color: #38bdf8;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.ph-voice-btn:hover {
+  background: rgba(56, 189, 248, 0.35);
+  color: #fff;
+  border-color: #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+.ph-voice-btn.is-playing {
+  background: #0284c7;
+  color: #fff;
+  border-color: #38bdf8;
+}
+.ph-voice-btn svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+}
+
+/* Choice Buttons */
+.ph-choice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+.ph-choice-btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(30, 41, 59, 0.8);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  color: #f1f5f9;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+.ph-choice-btn:hover {
+  background: rgba(51, 65, 85, 0.9);
+  border-color: #38bdf8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.25);
+}
+.ph-choice-btn:active {
+  transform: translateY(0);
+}
+.ph-choice-tag {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: rgba(56, 189, 248, 0.2);
+  color: #7dd3fc;
+  font-size: 12px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+.ph-choice-btn:hover .ph-choice-tag {
+  background: #38bdf8;
+  color: #0f172a;
+}
+.ph-choice-content {
+  flex: 1;
+  min-width: 0;
+}
+.ph-choice-cn {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.45;
+}
+.ph-choice-jp {
+  font-size: 11.5px;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+/* Grade Banner */
+.ph-grade-banner {
+  padding: 12px 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  animation: phGradePop 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes phGradePop {
+  0% { transform: scale(0.92); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.ph-grade-banner.is-perfect {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.35), rgba(234, 179, 8, 0.25));
+  border: 1.5px solid #fbbf24;
+  box-shadow: 0 0 24px rgba(251, 191, 36, 0.35);
+}
+.ph-grade-banner.is-good {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.35), rgba(56, 189, 248, 0.25));
+  border: 1.5px solid #38bdf8;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+.ph-grade-banner.is-normal {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(129, 140, 248, 0.2));
+  border: 1.5px solid #818cf8;
+}
+.ph-grade-title {
+  font-size: 15px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.is-perfect .ph-grade-title { color: #fde047; }
+.is-good .ph-grade-title { color: #7dd3fc; }
+.is-normal .ph-grade-title { color: #c7d2fe; }
+.ph-grade-sub {
+  font-size: 11.5px;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
 @media (max-width: 720px) {
   .ph-chain-layout { grid-template-columns: 1fr; max-height: 70dvh; }
   .ph-thread-list { max-height: 150px; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
   .ph-matrix-pair-box { grid-template-columns: 1fr; }
   .ph-resume-stats { grid-template-columns: repeat(2, 1fr); }
+  .ph-morning-toast { width: calc(100vw - 24px); max-width: 380px; }
 }

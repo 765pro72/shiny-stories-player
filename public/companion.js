@@ -109,6 +109,11 @@
 
   function getTimeGreeting() {
     const h = new Date().getHours();
+    const todayStr = new Date().toISOString().slice(0, 10);
+    const lastDate = localStorage.getItem('shiny.morningGreeting.lastDate') || '';
+    if (h >= 5 && h < 12 && lastDate !== todayStr) {
+      return { tag: '早安 · 朝コミュ', outfit: '🌅 晨间便服', text: '☀️ 制作人早安！今天的晨间问候还没完成哦，去主窗口回应一下吧♪' };
+    }
     if (h >= 5 && h < 11) return { tag: '早安 · 283 事务所', outfit: '🌅 晨间便服', text: '早安制作人！新的一天从 283 事务所开始吧！' };
     if (h >= 11 && h < 17) return { tag: '日间 · 排练时段', outfit: '☀ 演出排练服', text: '下午也要保持好状态，记得起身活动一下哦！' };
     if (h >= 17 && h < 21) return { tag: '傍晚 · 归途暮色', outfit: '🌇 暮色常服', text: '今天也辛苦啦制作人！晚上想听首歌还是看篇剧情？' };
