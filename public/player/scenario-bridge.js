@@ -32,6 +32,7 @@
  $('#playerExitBtn')?.addEventListener('click', exitPlayer);
  window.addEventListener('keydown', e => {
    if (e.key === 'Escape' || e.key === 'Esc') {
+     if (window.__branchInspectorOpen) return;
      e.preventDefault();
      exitPlayer();
    }
@@ -86,6 +87,7 @@
   const result=ScenarioText.annotate(raw,translation,names,common,overrides,language),converted=converter.convertResourcePaths(result.tracks);
   if(!tracks.length)tracks=converted;else for(let i=0;i<tracks.length;i++){if(converted[i].text!==undefined)tracks[i].text=converted[i].text;if(converted[i].select!==undefined)tracks[i].select=converted[i].select}
   lastRows=result.rows||[];emit('lines',lastRows);refreshLanguage();
+  window.dispatchEvent(new CustomEvent('scenario-tracks-ready'));
  }
  function refreshLanguage(){
   if(!player)return;const log=player._scenarioLogLayer;log._tracks=[];
@@ -229,7 +231,19 @@
    }
    fail(e.reason);
  });
- window.ScenarioBridge={get player(){return player},get tracks(){return tracks},get raw(){return raw},get history(){return history},get started(){return started},get ended(){return ended},next,setAuto,inspect:()=>({engine:'ShinyScenarioViewer',commit:'66e8d76',key,language,started,ended,volume,current:player?._trackManager?._current,state:player?._state,error:player?._fatalError?.message||null,characters:player?._characterStage._spineMap.size||0})};
+ function selectActiveOption(nextLabel){
+  if(!player||!player._selectList?.active||!nextLabel)return false;
+  try{
+   if(typeof player._onSelect==='function'){player._onSelect(nextLabel);return true;}
+   const items=player._selectList._items||[];
+   const cur=player._trackManager?._current||0;
+   const opts=tracks.slice(Math.max(0,cur-items.length+1),cur+1).filter(t=>t.select);
+   const idx=opts.findIndex(o=>o.nextLabel===nextLabel);
+   if(idx>=0&&items[idx]){items[idx].emit?.('pointertap');return true;}
+  }catch{}
+  return false;
+ }
+ window.ScenarioBridge={get player(){return player},get tracks(){return tracks},get raw(){return raw},get lastRows(){return lastRows},get names(){return names},get key(){return key},get language(){return language},get history(){return history},get started(){return started},get ended(){return ended},next,setAuto,selectActiveOption,inspect:()=>({engine:'ShinyScenarioViewer',commit:'66e8d76',key,language,started,ended,volume,current:player?._trackManager?._current,state:player?._state,error:player?._fatalError?.message||null,characters:player?._characterStage._spineMap.size||0})};
  init().catch(fail);
 })();
 

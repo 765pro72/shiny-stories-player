@@ -164,7 +164,7 @@
   }
 
   // ── Feature #1: Full-Script Dialogue Search Engine ──
-  function openDialogueSearch(initialQuery = '') {
+  function openDialogueSearch(initialQuery = '', initialSpeaker = '') {
     openModal('283 DIALOGUE LOCATOR · 10,960 SCRIPTS', '🔍 全剧本「台词级」秒搜引擎（名场面定位器）');
     modalBodyEl.innerHTML = `
       <div class="ph-bar">
@@ -325,8 +325,9 @@
         runSearch();
       });
     });
+    if (initialSpeaker && spkEl) spkEl.value = initialSpeaker;
     inputEl?.focus();
-    if (initialQuery) runSearch();
+    if (initialQuery || initialSpeaker) runSearch();
   }
 
   // ── Feature #2 & #24: 283 Smartphone Chain Chatroom & 1v1 Morning/Promise Aggregator ──
@@ -1406,6 +1407,227 @@
   }
 
   // Mount Consolidated "✦ 更多" Button in .shell-utils
+  // ── Feature #8: Idol Deep-Dive Dossier (Word Cloud, Co-Star Heatmap, Highlight Wall) ──
+  const dossierCache = new Map();
+  async function openIdolDossier(initialIdol = '') {
+    openModal('283 IDOL DOSSIER · 10,960 SCRIPTS ANALYTICS', '🌟 偶像个人高光档案 · 口头禅词云与搭档羁绊热力图');
+    let curIdol = initialIdol;
+    if (!curIdol) {
+      try {
+        const home = JSON.parse(localStorage.getItem('home') || '{}');
+        curIdol = IDOL_BY_ID.get(String(home.idol || '1'))?.name || '樱木真乃';
+      } catch {
+        curIdol = '樱木真乃';
+      }
+    }
+    let partnerTab = 'all'; // 'all' | 'cross'
+
+    modalBodyEl.innerHTML = `
+      <div class="ph-dossier-strip" id="phDossierStrip"></div>
+      <div id="phDossierContent" style="display:flex;flex-direction:column;gap:14px;">
+        <div style="padding:36px;text-align:center;color:#94a3b8;font-size:13px;">正在从 10,960 篇剧本离线统计个人档案…</div>
+      </div>
+    `;
+
+    const stripEl = document.getElementById('phDossierStrip');
+    const contentEl = document.getElementById('phDossierContent');
+
+    const renderStrip = () => {
+      stripEl.innerHTML = '';
+      for (const idol of IDOLS_28) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'ph-dossier-chip' + (idol.name === curIdol ? ' active' : '');
+        btn.style.setProperty('--idol-c', idol.color);
+        const av = document.createElement('span');
+        av.className = 'ph-dossier-chip-av';
+        if (window.CharacterPortraits?.mount) window.CharacterPortraits.mount(av, idol.name);
+        else av.textContent = idol.name.slice(0, 1);
+        const lbl = document.createElement('span');
+        lbl.textContent = idol.name;
+        btn.append(av, lbl);
+        btn.addEventListener('click', () => {
+          if (curIdol === idol.name) return;
+          curIdol = idol.name;
+          renderStrip();
+          loadIdol(curIdol);
+        });
+        stripEl.append(btn);
+      }
+      const activeBtn = stripEl.querySelector('.active');
+      activeBtn?.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    };
+
+    const renderDossier = (data) => {
+      if (!data || !data.ok) {
+        contentEl.innerHTML = '<div style="padding:24px;color:#fca5a5;">暂无该偶像的档案数据。</div>';
+        return;
+      }
+      const ov = data.overview;
+      const color = ov.color || '#38bdf8';
+      const list = partnerTab === 'cross' ? (data.crossUnitPartners || []) : (data.partners || []);
+      const maxShared = Math.max(1, ...(list.map(p => p.sharedStories)));
+
+      contentEl.innerHTML = `
+        <section class="ph-dossier-hero" style="--idol-c:${esc(color)};">
+          <div class="ph-dossier-avatar" id="phDossierHeroAv"></div>
+          <div style="width:100%;min-width:0;">
+            <div class="ph-dossier-name-row">
+              <h3>${esc(ov.idol)}</h3>
+              <span class="ph-dossier-unit">${esc(ov.unit)}</span>
+              <span style="font-size:11.5px;color:#94a3b8;">${(ov.categories || []).slice(0, 3).map(c => `${esc(c.name)} ${c.count}`).join(' · ')}</span>
+            </div>
+            <div class="ph-dossier-kpis">
+              <div class="ph-dossier-kpi">
+                <strong>${ov.totalStories.toLocaleString()} <small style="font-size:11px;color:#7dd3fc;">篇</small></strong>
+                <span>总参演（主役 ${ov.starringStories}）</span>
+              </div>
+              <div class="ph-dossier-kpi">
+                <strong>${ov.totalLines.toLocaleString()} <small style="font-size:11px;color:#7dd3fc;">句</small></strong>
+                <span>累计台词（译 ${ov.translatedLines.toLocaleString()}）</span>
+              </div>
+              <div class="ph-dossier-kpi">
+                <strong>${ov.avgLineLength} <small style="font-size:11px;color:#7dd3fc;">字/句</small></strong>
+                <span>平均台词长度</span>
+              </div>
+              <div class="ph-dossier-kpi">
+                <strong>${ov.choiceStories} <small style="font-size:11px;color:#34d399;">篇</small></strong>
+                <span>含分支选项剧情</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="ph-dossier-sec" style="--idol-c:${esc(color)};">
+          <div class="ph-dossier-sec-head">
+            <h4>💬 专属口头禅与高频特征词云</h4>
+            <small>按全员 TF-IDF 特征度排序 · 点击任意词直达全剧本检索</small>
+          </div>
+          <div class="ph-wordcloud" id="phDossierWordCloud">
+            ${(data.wordCloud || []).map((w, idx) => {
+              const tier = idx < 5 ? 'tier-1' : (idx < 14 ? 'tier-2' : 'tier-3');
+              return `<button type="button" class="ph-wc-tag ${tier}" data-word="${esc(w.word)}" title="在 ${esc(ov.idol)} 的台词中出现 ${w.count} 次，点击查看出处"><span>${esc(w.word)}</span><small>${w.count}</small></button>`;
+            }).join('')}
+          </div>
+        </section>
+
+        <section class="ph-dossier-sec" style="--idol-c:${esc(color)};">
+          <div class="ph-dossier-sec-head">
+            <h4>🤝 同框搭档关系热力图</h4>
+            <div style="display:flex;gap:6px;">
+              <button type="button" class="ph-btn ghost ${partnerTab === 'all' ? 'active' : ''}" id="phPartnerAll" style="height:26px;padding:0 10px;font-size:11.5px;">全部搭档</button>
+              <button type="button" class="ph-btn ghost ${partnerTab === 'cross' ? 'active' : ''}" id="phPartnerCross" style="height:26px;padding:0 10px;font-size:11.5px;">✨ 跨组合羁绊</button>
+            </div>
+          </div>
+          <div class="ph-partner-list" id="phPartnerList"></div>
+        </section>
+
+        <section class="ph-dossier-sec" style="--idol-c:${esc(color)};">
+          <div class="ph-dossier-sec-head">
+            <h4>✨ 私藏高光名台词墙</h4>
+            <small>从个人与活动剧本中自动精选 · 点击直达原剧名场面</small>
+          </div>
+          <div class="ph-quotes-grid">
+            ${(data.highlights || []).map(q => `
+              <article class="ph-quote-card">
+                <div class="ph-quote-zh">「${esc(q.trans)}」</div>
+                ${q.text && q.text !== q.trans ? `<div class="ph-quote-jp">${esc(q.text)}</div>` : ''}
+                <div class="ph-quote-foot">
+                  <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">📖 ${esc(q.title)}</span>
+                  <button type="button" class="ph-btn ghost" data-jump-key="${esc(q.key)}" data-jump-line="${q.lineIndex}" style="height:22px;padding:0 8px;font-size:10.5px;flex-shrink:0;">🎬 观看 ↗</button>
+                </div>
+              </article>
+            `).join('')}
+          </div>
+        </section>
+      `;
+
+      const heroAv = document.getElementById('phDossierHeroAv');
+      if (heroAv && window.CharacterPortraits?.mount) {
+        window.CharacterPortraits.mount(heroAv, ov.idol);
+      }
+
+      contentEl.querySelectorAll('[data-word]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          openDialogueSearch(btn.dataset.word, ov.idol);
+        });
+      });
+
+      contentEl.querySelectorAll('[data-jump-key]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          navigateStory(btn.dataset.jumpKey, Number(btn.dataset.jumpLine) || -1);
+        });
+      });
+
+      document.getElementById('phPartnerAll')?.addEventListener('click', () => {
+        partnerTab = 'all';
+        renderDossier(data);
+      });
+      document.getElementById('phPartnerCross')?.addEventListener('click', () => {
+        partnerTab = 'cross';
+        renderDossier(data);
+      });
+
+      const pListEl = document.getElementById('phPartnerList');
+      if (pListEl) {
+        for (const p of list) {
+          const row = document.createElement('div');
+          row.className = 'ph-partner-row';
+          const pct = Math.max(8, Math.round((p.sharedStories / maxShared) * 100));
+          row.innerHTML = `
+            <div class="ph-partner-main" title="点击展开同框代表剧情">
+              <span class="ph-partner-av"></span>
+              <div class="ph-partner-name">
+                <span>${esc(p.idol)}</span>
+                ${!p.sameUnit ? '<span class="ph-partner-badge">✨ 跨组合</span>' : `<span style="font-size:10px;color:#94a3b8;font-weight:500;">同组合</span>`}
+              </div>
+              <div class="ph-partner-bar-wrap">
+                <div class="ph-partner-bar-fill" style="width:${pct}%;--p-c:${esc(p.color || '#38bdf8')};"></div>
+              </div>
+              <span class="ph-partner-cnt">${p.sharedStories} 篇 ▾</span>
+            </div>
+            <div class="ph-partner-samples" hidden>
+              ${(p.samples || []).map(s => `<button type="button" class="ph-sample-story" data-skey="${esc(s.key)}">🎬 ${esc(s.title)}</button>`).join('')}
+            </div>
+          `;
+          const avEl = row.querySelector('.ph-partner-av');
+          if (avEl && window.CharacterPortraits?.mount) window.CharacterPortraits.mount(avEl, p.idol);
+          const mainRow = row.querySelector('.ph-partner-main');
+          const samplesBox = row.querySelector('.ph-partner-samples');
+          mainRow.addEventListener('click', () => {
+            samplesBox.hidden = !samplesBox.hidden;
+          });
+          row.querySelectorAll('[data-skey]').forEach(sb => {
+            sb.addEventListener('click', (e) => {
+              e.stopPropagation();
+              navigateStory(sb.dataset.skey);
+            });
+          });
+          pListEl.append(row);
+        }
+      }
+    };
+
+    const loadIdol = async (name) => {
+      if (dossierCache.has(name)) {
+        renderDossier(dossierCache.get(name));
+        return;
+      }
+      contentEl.innerHTML = `<div style="padding:36px;text-align:center;color:#94a3b8;font-size:13px;">正在离线分析 ${esc(name)} 的全部剧本档案…（首次计算需数秒，随后切换秒开）</div>`;
+      try {
+        const r = await fetch('/api/idol-dossier?idol=' + encodeURIComponent(name));
+        const data = await r.json();
+        if (data?.ok) dossierCache.set(name, data);
+        renderDossier(data);
+      } catch (e) {
+        contentEl.innerHTML = `<div style="padding:24px;color:#fca5a5;">档案载入失败：${esc(e.message)}</div>`;
+      }
+    };
+
+    renderStrip();
+    loadIdol(curIdol);
+  }
+
   function mountMoreHub() {
     const utils = document.querySelector('.shell-utils');
     if (!utils || document.getElementById('btnMoreHub')) return;
@@ -1426,6 +1648,11 @@
           <span class="mh-ico">☀️</span>
           <span class="mh-txt"><strong>每日「晨间问候」朝コミュ</strong><small>28 位偶像晨间走廊对话与经典三选一</small></span>
           <span class="mh-badge" id="mhMorningBadge" style="${isDoneToday ? 'background:rgba(34,197,94,0.25);color:#86efac;border-color:rgba(34,197,94,0.4);' : 'background:rgba(251,191,36,0.25);color:#fde047;border-color:rgba(251,191,36,0.4);'}">${isDoneToday ? `已打卡 🔥 ${streak}天` : (streak > 0 ? `待打卡 · 连击${streak}天` : '今日待打卡')}</span>
+        </button>
+        <button type="button" class="mh-item" data-act="dossier">
+          <span class="mh-ico">🌟</span>
+          <span class="mh-txt"><strong>偶像个人高光档案 & 词云羁绊</strong><small>28 位偶像口头禅词云、同框搭档热力图与私藏名台词墙</small></span>
+          <span class="mh-badge" style="background:rgba(168,85,247,0.25);color:#e9d5ff;border-color:rgba(168,85,247,0.45);">新功能</span>
         </button>
         <button type="button" class="mh-item" data-act="search">
           <span class="mh-ico">🔍</span>
@@ -1503,6 +1730,7 @@
         const act = item.dataset.act;
         closePop();
         if (act === 'morning') openMorningGreetingModal();
+        else if (act === 'dossier') openIdolDossier();
         else if (act === 'search') openDialogueSearch();
         else if (act === 'fortune') openDailyFortune();
         else if (act === 'chain') openChainAnd1v1('chain');
@@ -1528,6 +1756,7 @@
 
   window.PrismHub = {
     openSearch: openDialogueSearch,
+    openDossier: openIdolDossier,
     openChain: openChainAnd1v1,
     openMatrix: openAddressMatrix,
     openResume: openProducerResume,
