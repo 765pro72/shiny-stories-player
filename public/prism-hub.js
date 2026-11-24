@@ -61,7 +61,16 @@
 
   function navigateStory(storyKey, lineIndex = -1) {
     closeModal();
-    const url = `guide.html?story=${encodeURIComponent(storyKey)}${lineIndex >= 0 ? '&line=' + lineIndex : ''}`;
+    const guideFrame = document.querySelector('#shellStage iframe[data-page="guide.html"], #shellStage iframe[src*="guide.html"]');
+    if (guideFrame && guideFrame.contentWindow?.openStoryByKey) {
+      document.querySelector('#prismDock [data-page="guide.html"]')?.click();
+      guideFrame.contentWindow.openStoryByKey(storyKey);
+      if (lineIndex >= 0) {
+        guideFrame.contentWindow.highlightTranscriptLine?.(lineIndex);
+      }
+      return;
+    }
+    const url = `guide.html?story=${encodeURIComponent(storyKey)}${lineIndex >= 0 ? '&line=' + lineIndex : ''}#archive`;
     if (window.__shinyShell?.navigate) {
       window.__shinyShell.navigate(url);
       return;
@@ -79,6 +88,18 @@
 
   function esc(s) {
     return String(s || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+
+  function highlightQuery(text, query) {
+    if (!text || !query) return esc(text);
+    const words = String(query).trim().split(/\s+/).filter(Boolean);
+    if (!words.length) return esc(text);
+    const pattern = new RegExp(`(${words.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
+    const parts = String(text).split(pattern);
+    return parts.map(part => {
+      const isMatch = words.some(w => w.toLowerCase() === part.toLowerCase());
+      return isMatch ? `<mark class="ph-hl">${esc(part)}</mark>` : esc(part);
+    }).join('');
   }
 
   // 1. Mount Consolidated "✦ 更多" Button & Popover in .shell-utils
@@ -166,12 +187,109 @@
       </div>
       <div id="phDlgMeta" style="font-size:12px;color:#7dd3fc;">输入台词后按回车，将在本地 10,960 篇剧本、50 万+ 句双语台词中毫秒级定位出处。</div>
       <div id="phDlgResults" style="display:flex;flex-direction:column;gap:8px;"></div>
+      <div id="phDlgLoadMoreWrap" style="text-align:center;margin-top:10px;"></div>
     `;
 
     const inputEl = document.getElementById('phDlgQuery');
     const spkEl = document.getElementById('phDlgSpeaker');
     const metaEl = document.getElementById('phDlgMeta');
     const resEl = document.getElementById('phDlgResults');
+    const loadWrap = document.getElementById('phDlgLoadMoreWrap');
+
+    let curOffset = 0;
+    const PAGE_LIMIT = 40;
+    let curTotal = 0;
+    let curHits = [];
+
+    const appendCards = (hits, q) => {
+      hits.forEach((h, idx) => {
+        const card = document.createElement('div');
+        card.className = 'ph-hit-card';
+        card.style.setProperty('--card-i', String(Math.min(idx, 18)));
+        card.innerHTML = `
+          <div class="ph-hit-meta">
+            <span>🗣 ${esc(h.speaker)} · 第 ${h.lineIndex + 1} 句</span>
+            <span>📖 ${esc(h.idol)} · ${esc(h.group)} · ${esc(h.title)} ↗</span>
+          </div>
+          <div class="ph-hit-line">${highlightQuery(h.trans || h.text, q)}</div>
+          ${h.trans && h.text ? `<div class="ph-hit-jp">${highlightQuery(h.text, q)}</div>` : ''}
+          ${(h.prev || h.next) ? `<div class="ph-hit-ctx">${h.prev ? `前句 [${esc(h.prev.speaker || '…')}]: ${highlightQuery(h.prev.text, q)}<br>` : ''}${h.next ? `后句 [${esc(h.next.speaker || '…')}]: ${highlightQuery(h.next.text, q)}` : ''}</div>` : ''}
+          <div class="ph-hit-act-bar">
+            <button type="button" class="ph-hit-act-btn" data-act="jump">🎬 观看剧情</button>
+            <button type="button" class="ph-hit-act-btn" data-act="copy">📋 复制台词</button>
+            <button type="button" class="ph-hit-act-btn" data-act="bookmark">❝ 收藏名台词</button>
+          </div>
+        `;
+
+        card.querySelector('[data-act="jump"]')?.addEventListener('click', (e) => {
+          e.stopPropagation();
+          navigateStory(h.key, h.lineIndex);
+        });
+        card.querySelector('[data-act="copy"]')?.addEventListener('click', async (e) => {
+          e.stopPropagation();
+          const btn = e.currentTarget;
+          const quoteText = `[${h.speaker}] ${h.trans || h.text}${h.trans && h.text ? ' (' + h.text + ')' : ''} —— 出处：《${h.title}》`;
+          try {
+            await navigator.clipboard.writeText(quoteText);
+            btn.textContent = '✓ 已复制';
+            btn.classList.add('is-success');
+            setTimeout(() => { btn.textContent = '📋 复制台词'; btn.classList.remove('is-success'); }, 1800);
+          } catch {
+            btn.textContent = '已复制';
+          }
+        });
+        card.querySelector('[data-act="bookmark"]')?.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const btn = e.currentTarget;
+          const quotes = JSON.parse(localStorage.getItem('shiny.quoteBookmarks') || '[]');
+          const dup = quotes.some(q => q.storyKey === h.key && q.translation === (h.trans || h.text));
+          if (!dup) {
+            quotes.unshift({
+              id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+              storyKey: h.key,
+              storyTitle: h.title,
+              storyGroup: h.group,
+              idol: h.idol,
+              speaker: h.speaker,
+              translation: h.trans || h.text,
+              original: h.text,
+              savedAt: new Date().toISOString().slice(0, 10)
+            });
+            localStorage.setItem('shiny.quoteBookmarks', JSON.stringify(quotes.slice(0, 300)));
+            try { window.desktop?.saveState?.({ 'shiny.quoteBookmarks': JSON.stringify(quotes.slice(0, 300)) }); } catch {}
+          }
+          btn.textContent = dup ? '✓ 已在名台词本' : '✓ 收藏成功';
+          btn.classList.add('is-success');
+          setTimeout(() => { btn.textContent = '❝ 收藏名台词'; btn.classList.remove('is-success'); }, 1800);
+        });
+
+        card.addEventListener('click', () => navigateStory(h.key, h.lineIndex));
+        resEl.append(card);
+      });
+
+      if (curHits.length < curTotal) {
+        loadWrap.innerHTML = `<button type="button" class="ph-btn ghost" id="phDlgLoadMore" style="height:32px;padding:0 18px;">⬇ 加载更多匹配台词 (已展示 ${curHits.length} / 共 ${curTotal.toLocaleString()} 条)</button>`;
+        document.getElementById('phDlgLoadMore')?.addEventListener('click', loadMore);
+      } else {
+        loadWrap.innerHTML = '';
+      }
+    };
+
+    const loadMore = async () => {
+      const q = inputEl.value.trim();
+      const spk = spkEl.value.trim();
+      curOffset += PAGE_LIMIT;
+      const btn = document.getElementById('phDlgLoadMore');
+      if (btn) btn.textContent = '正在加载更多…';
+      try {
+        const r = await fetch(`/api/dialogue-search?q=${encodeURIComponent(q)}&speaker=${encodeURIComponent(spk)}&limit=${PAGE_LIMIT}&offset=${curOffset}`);
+        const data = await r.json();
+        curHits = curHits.concat(data.hits || []);
+        appendCards(data.hits || [], q);
+      } catch (e) {
+        if (btn) btn.textContent = '加载失败：' + e.message;
+      }
+    };
 
     const runSearch = async () => {
       const q = inputEl.value.trim();
@@ -179,26 +297,19 @@
       if (!q && !spk) return;
       metaEl.textContent = '正在检索全剧本台词库…';
       resEl.innerHTML = '';
+      loadWrap.innerHTML = '';
+      curOffset = 0;
       try {
-        const r = await fetch(`/api/dialogue-search?q=${encodeURIComponent(q)}&speaker=${encodeURIComponent(spk)}&limit=60`);
+        const r = await fetch(`/api/dialogue-search?q=${encodeURIComponent(q)}&speaker=${encodeURIComponent(spk)}&limit=${PAGE_LIMIT}&offset=0`);
         const data = await r.json();
-        metaEl.textContent = `共找到 ${(data.total || 0).toLocaleString()} 处台词匹配（耗时 ${data.tookMs} ms），展示前 ${data.hits.length} 条（点击直接打开该篇剧情并定位台词）：`;
-        (data.hits || []).forEach((h, idx) => {
-          const card = document.createElement('div');
-          card.className = 'ph-hit-card';
-          card.style.setProperty('--card-i', String(Math.min(idx, 18)));
-          card.innerHTML = `
-            <div class="ph-hit-meta">
-              <span>🗣 ${esc(h.speaker)} · 第 ${h.lineIndex + 1} 句</span>
-              <span>📖 ${esc(h.idol)} · ${esc(h.group)} · ${esc(h.title)} ↗</span>
-            </div>
-            <div class="ph-hit-line">${esc(h.trans || h.text)}</div>
-            ${h.trans && h.text ? `<div class="ph-hit-jp">${esc(h.text)}</div>` : ''}
-            ${(h.prev || h.next) ? `<div class="ph-hit-ctx">${h.prev ? `前句 [${esc(h.prev.speaker || '…')}]: ${esc(h.prev.text)}<br>` : ''}${h.next ? `后句 [${esc(h.next.speaker || '…')}]: ${esc(h.next.text)}` : ''}</div>` : ''}
-          `;
-          card.addEventListener('click', () => navigateStory(h.key, h.lineIndex));
-          resEl.append(card);
-        });
+        curTotal = data.total || 0;
+        curHits = data.hits || [];
+        metaEl.textContent = `共找到 ${curTotal.toLocaleString()} 处台词匹配（耗时 ${data.tookMs} ms），展示前 ${curHits.length} 条（点击直接定位原剧情）：`;
+        if (!curHits.length) {
+          resEl.innerHTML = '<div style="color:#94a3b8;font-size:12.5px;padding:12px;">未检索到匹配台词，可尝试更换关键词或说话人。</div>';
+          return;
+        }
+        appendCards(curHits, q);
       } catch (e) {
         metaEl.textContent = '检索失败：' + e.message;
       }
@@ -224,10 +335,18 @@
       <div class="ph-bar">
         <button type="button" class="ph-btn ghost ${initialMode === 'chain' ? 'active' : ''}" id="phTabChain">📱 283 Chain 群聊与来电归档</button>
         <button type="button" class="ph-btn ghost ${initialMode === '1v1' ? 'active' : ''}" id="phTab1v1">☀️ 育成 1v1 晨间问候 & 试镜约定合集</button>
-        <select class="ph-select" id="phChainIdol" style="margin-left:auto;">
+        <input type="search" class="ph-input" id="phChainSearch" placeholder="搜索话题/台词关键词…" style="width:160px;height:32px;margin-left:auto;">
+        <select class="ph-select" id="phChainIdol">
           <option value="">全部 283 偶像</option>
           ${IDOLS_28.map(i => `<option value="${esc(i.name)}" ${initialIdol === i.name ? 'selected' : ''}>${esc(i.name)} (${esc(i.unit)})</option>`).join('')}
         </select>
+      </div>
+      <div class="ph-bar" id="ph1v1SubBar" style="gap:6px;margin-top:2px;" ${initialMode !== '1v1' ? 'hidden' : ''}>
+        <span style="font-size:11px;color:#94a3b8;">互动类别：</span>
+        <button type="button" class="ph-btn ghost active" data-kind="">全部</button>
+        <button type="button" class="ph-btn ghost" data-kind="晨间">☀ 晨间问候</button>
+        <button type="button" class="ph-btn ghost" data-kind="试镜">🎤 试镜前鼓劲</button>
+        <button type="button" class="ph-btn ghost" data-kind="约定">🤝 约定互动</button>
       </div>
       <div class="ph-chain-layout">
         <div class="ph-thread-list" id="phThreadList"></div>
@@ -236,7 +355,10 @@
     `;
 
     let curMode = initialMode;
+    let curKind = '';
     const idolSel = document.getElementById('phChainIdol');
+    const searchInp = document.getElementById('phChainSearch');
+    const subBar = document.getElementById('ph1v1SubBar');
     const listEl = document.getElementById('phThreadList');
     const screenEl = document.getElementById('phChatScreen');
     const tabChain = document.getElementById('phTabChain');
@@ -284,10 +406,20 @@
           <div class="ph-bubble-zh">${esc(l.trans || l.text)}</div>
           ${l.trans && l.text ? `<div class="ph-bubble-jp">${esc(l.text)}</div>` : ''}
         `;
-        b.querySelector('[data-voice]')?.addEventListener('click', e => {
-          e.stopPropagation();
-          new Audio(e.currentTarget.dataset.voice).play().catch(() => {});
-        });
+        const vBtn = b.querySelector('[data-voice]');
+        if (vBtn) {
+          vBtn.addEventListener('click', e => {
+            e.stopPropagation();
+            vBtn.textContent = '🔊 播放中…';
+            const audio = new Audio(vBtn.dataset.voice);
+            audio.onended = () => { vBtn.textContent = '🔊 原声'; };
+            audio.onerror = () => {
+              vBtn.textContent = '⚠️ 无音频';
+              setTimeout(() => { vBtn.textContent = '🔊 原声'; }, 1500);
+            };
+            audio.play().catch(() => { vBtn.textContent = '🔊 原声'; });
+          });
+        }
         row.append(av, b);
         screenEl.append(row);
       }
@@ -297,12 +429,13 @@
       listEl.innerHTML = '<div style="padding:12px;color:#94a3b8;font-size:12px;">正在载入对话记录…</div>';
       screenEl.innerHTML = '';
       const idol = idolSel.value;
-      const r = await fetch(`/api/idol-interactions?mode=${curMode}&idol=${encodeURIComponent(idol)}`);
+      const q = searchInp.value.trim();
+      const r = await fetch(`/api/idol-interactions?mode=${curMode}&idol=${encodeURIComponent(idol)}&q=${encodeURIComponent(q)}&kind=${encodeURIComponent(curKind)}`);
       const data = await r.json();
       const items = curMode === '1v1' ? (data.episodes || []) : (data.threads || []);
       listEl.innerHTML = '';
       if (!items.length) {
-        listEl.innerHTML = '<div style="padding:12px;color:#94a3b8;font-size:12px;">暂无匹配记录，可切换其他偶像查看。</div>';
+        listEl.innerHTML = '<div style="padding:12px;color:#94a3b8;font-size:12px;">暂无匹配记录，可切换其他偶像或清空搜索词查看。</div>';
         return;
       }
       items.forEach((it, idx) => {
@@ -324,15 +457,29 @@
       curMode = 'chain';
       tabChain.classList.add('active');
       tab1v1.classList.remove('active');
+      subBar.hidden = true;
       loadData();
     });
     tab1v1?.addEventListener('click', () => {
       curMode = '1v1';
       tab1v1.classList.add('active');
       tabChain.classList.remove('active');
+      subBar.hidden = false;
       loadData();
     });
+    subBar.querySelectorAll('[data-kind]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        subBar.querySelectorAll('[data-kind]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        curKind = btn.dataset.kind;
+        loadData();
+      });
+    });
     idolSel?.addEventListener('change', loadData);
+    searchInp?.addEventListener('input', () => {
+      clearTimeout(searchInp.__t);
+      searchInp.__t = setTimeout(loadData, 280);
+    });
     loadData();
   }
 
@@ -351,7 +498,7 @@
         <select class="ph-select" id="phMatSpeaker">
           ${allChars.map(c => `<option value="${c.id}" ${c.id === '21' ? 'selected' : ''}>${esc(c.name)} (${esc(c.unit)})</option>`).join('')}
         </select>
-        <span style="color:#94a3b8;">⇄</span>
+        <button type="button" class="ph-btn ghost" id="phMatSwapBtn" style="height:28px;padding:0 9px;font-size:12px;" title="互换角色视角">⇄ 互换</button>
         <label style="font-size:12px;color:#7dd3fc;font-weight:700;">对方 B：</label>
         <select class="ph-select" id="phMatTarget">
           ${allChars.map(c => `<option value="${c.id}" ${c.id === '20' ? 'selected' : ''}>${esc(c.name)} (${esc(c.unit)})</option>`).join('')}
@@ -412,9 +559,19 @@
       );
       evEl.innerHTML = '';
       if (!evHits.length) {
-        evEl.innerHTML = '<div style="font-size:11.5px;color:#64748b;">当前两人在剧本抽样库中暂无直接点名记录，可使用「全剧本台词秒搜」进一步检索。</div>';
+        evEl.innerHTML = `
+          <div style="font-size:11.5px;color:#94a3b8;padding:4px 0;">当前两人在基础互称考据库中暂无直接互称记录。</div>
+          <button type="button" class="ph-btn ghost" id="phMatSearchJump" style="height:28px;padding:0 12px;font-size:11.5px;align-self:flex-start;">
+            🔍 在全剧本台词库中秒搜「${esc(charA.name)}」与「${esc(charB.name)}」的同场对话 ↗
+          </button>
+        `;
+        document.getElementById('phMatSearchJump')?.addEventListener('click', () => {
+          openDialogueSearch(charB.name);
+          const spk = document.getElementById('phDlgSpeaker');
+          if (spk) { spk.value = charA.name; spk.dispatchEvent(new Event('change')); }
+        });
       } else {
-        for (const ev of evHits.slice(0, 12)) {
+        for (const ev of evHits.slice(0, 16)) {
           const spkName = IDOL_BY_ID.get(String(ev.speaker))?.name || ev.speaker;
           const row = document.createElement('div');
           row.className = 'ph-hit-card';
@@ -428,6 +585,12 @@
       }
     };
 
+    document.getElementById('phMatSwapBtn')?.addEventListener('click', () => {
+      const tmp = selA.value;
+      selA.value = selB.value;
+      selB.value = tmp;
+      updateView();
+    });
     selA?.addEventListener('change', updateView);
     selB?.addEventListener('change', updateView);
     updateView();
@@ -479,10 +642,11 @@
       const unitStories = catalog.filter(s => s.idol === u.name || u.idols.includes(s.idol));
       const unitWatched = unitStories.filter(s => watched.has(s.key)).length;
       const pct = unitStories.length ? Math.min(100, Math.round((unitWatched / unitStories.length) * 100)) : 0;
+      const isComplete = unitWatched >= unitStories.length && unitStories.length > 0;
       return `
         <div class="ph-unit-bar-card">
           <div class="ph-unit-bar-head">
-            <span style="color:${u.color};">✦ ${esc(u.name)}</span>
+            <span style="color:${u.color};">✦ ${esc(u.name)}${isComplete ? '<span class="ph-unit-crown">👑 全通制霸</span>' : ''}</span>
             <span>${unitWatched} / ${unitStories.length} (${pct}%)</span>
           </div>
           <div class="ph-unit-bar-track">
@@ -657,10 +821,23 @@
   // ── Feature #15: Fullscreen Ambient Vinyl Art Frame (283 Ambient Frame) ──
   async function openAmbientFrame() {
     closeModal();
-    const { cardArt } = await ensureCatalog();
-    const artList = Object.values(cardArt)
-      .filter(a => a && a.type === 'idols' && a.id)
-      .map(a => ({ url: `/asset/images/content/${a.type}/card/${a.id}.jpg`, name: a.name || '283 Production' }));
+    const { catalog, cardArt } = await ensureCatalog();
+    const artList = [];
+    for (const [sKey, a] of Object.entries(cardArt || {})) {
+      if (a && a.id) {
+        artList.push({
+          url: `/asset/images/content/${a.type || 'idols'}/card/${a.id}.jpg`,
+          name: a.name || '283 Production',
+          storyKey: sKey
+        });
+      }
+    }
+    if (!artList.length) {
+      artList.push({ url: '/app-icon.png', name: '283 Production', storyKey: '' });
+    }
+
+    let dimLevel = 0; // 0: 100%, 1: 65%, 2: 35%
+    let currentArtPick = null;
 
     if (!ambientEl) {
       ambientEl = document.createElement('div');
@@ -674,7 +851,9 @@
             <div class="ph-af-clock" id="phAfClock">00:00</div>
             <div class="ph-af-date" id="phAfDate">283 PRODUCTION · AMBIENT ART FRAME</div>
           </div>
-          <div style="display:flex;gap:8px;">
+          <div style="display:flex;gap:8px;align-items:center;">
+            <button type="button" class="ph-btn ghost" id="phAfDimBtn" title="切换夜间调光亮度">🌙 调光: 100%</button>
+            <button type="button" class="ph-btn ghost" id="phAfFullscreenBtn" title="切换操作系统全屏 (F11)">⛶ 全屏</button>
             <button type="button" class="ph-btn ghost" id="phAfNextArtBtn">🖼 切换画作</button>
             <button type="button" class="ph-btn ghost" id="phAfExitBtn">退出画框 (ESC) ×</button>
           </div>
@@ -695,7 +874,10 @@
               <svg viewBox="0 0 24 24"><path d="M16 6.5h2.2v11H16zM5.8 6.5l8.4 5.5-8.4 5.5z"/></svg>
             </button>
           </div>
-          <div id="phAfCardName" style="font-size:12.5px;color:rgba(226,232,240,0.8);font-weight:600;"></div>
+          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+            <div id="phAfCardName" style="font-size:12.5px;color:rgba(226,232,240,0.85);font-weight:600;"></div>
+            <button type="button" class="ph-btn ghost" id="phAfJumpStoryBtn" style="height:26px;padding:0 9px;font-size:11px;" hidden>📖 观看此卡剧情 ↗</button>
+          </div>
         </footer>
       `;
       document.body.appendChild(ambientEl);
@@ -709,15 +891,46 @@
         document.getElementById('islandMiniNext')?.click();
         setTimeout(tick, 100);
       });
+      document.getElementById('phAfDimBtn')?.addEventListener('click', () => {
+        dimLevel = (dimLevel + 1) % 3;
+        ambientEl.classList.remove('dim-65', 'dim-35');
+        const dimBtn = document.getElementById('phAfDimBtn');
+        if (dimLevel === 1) {
+          ambientEl.classList.add('dim-65');
+          if (dimBtn) dimBtn.textContent = '🌙 调光: 65%';
+        } else if (dimLevel === 2) {
+          ambientEl.classList.add('dim-35');
+          if (dimBtn) dimBtn.textContent = '🌙 调光: 35%';
+        } else {
+          if (dimBtn) dimBtn.textContent = '🌙 调光: 100%';
+        }
+      });
+      document.getElementById('phAfFullscreenBtn')?.addEventListener('click', () => {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen().catch(() => {});
+        } else {
+          document.exitFullscreen().catch(() => {});
+        }
+      });
+      document.getElementById('phAfJumpStoryBtn')?.addEventListener('click', () => {
+        if (currentArtPick?.storyKey) {
+          closeAmbientFrame();
+          navigateStory(currentArtPick.storyKey);
+        }
+      });
     }
 
     const cycleArt = () => {
       if (!artList.length) return;
-      const pick = artList[Math.floor(Math.random() * artList.length)];
+      currentArtPick = artList[Math.floor(Math.random() * artList.length)];
       const bg = document.getElementById('phAfBg');
       const cap = document.getElementById('phAfCardName');
-      if (bg) bg.style.backgroundImage = `url("${pick.url}")`;
-      if (cap) cap.textContent = `✦ ${pick.name}`;
+      const jumpBtn = document.getElementById('phAfJumpStoryBtn');
+      if (bg) bg.style.backgroundImage = `url("${currentArtPick.url}")`;
+      if (cap) cap.textContent = `✦ ${currentArtPick.name}`;
+      if (jumpBtn) {
+        jumpBtn.hidden = !currentArtPick.storyKey;
+      }
     };
 
     const tick = () => {

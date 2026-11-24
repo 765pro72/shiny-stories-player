@@ -194,25 +194,36 @@
       }
     };
 
-    // If opened with ?line=<idx> from Dialogue Search, scroll & flash the matched line in #lines
+    // Expose global transcript line highlighter for Dialogue Search jumps
+    window.highlightTranscriptLine = (lineIdx) => {
+      if (typeof lineIdx !== 'number' || lineIdx < 0) return;
+      let attempts = 0;
+      const attempt = () => {
+        attempts++;
+        const rows = document.querySelectorAll('#transcript .line, #transcript > div');
+        if (rows.length > lineIdx) {
+          const targetRow = rows[lineIdx];
+          targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          targetRow.style.transition = 'background 0.5s ease, box-shadow 0.5s ease';
+          targetRow.style.background = 'rgba(250, 204, 21, 0.26)';
+          targetRow.style.boxShadow = '0 0 0 2px rgba(250, 204, 21, 0.75), 0 8px 24px rgba(250, 204, 21, 0.25)';
+          targetRow.style.borderRadius = '8px';
+          setTimeout(() => {
+            targetRow.style.background = '';
+            targetRow.style.boxShadow = '';
+          }, 4500);
+          return;
+        }
+        if (attempts < 20) setTimeout(attempt, 250);
+      };
+      attempt();
+    };
+
+    // If opened with ?line=<idx> from Dialogue Search, scroll & flash the matched line in #transcript
     const urlParams = new URLSearchParams(location.search);
     const targetLineIdx = urlParams.has('line') ? Number(urlParams.get('line')) : -1;
     if (targetLineIdx >= 0) {
-      let scrolledOnce = false;
-      const tryHighlightLine = () => {
-        if (scrolledOnce) return;
-        const rows = document.querySelectorAll('#lines tr');
-        if (rows.length > targetLineIdx) {
-          scrolledOnce = true;
-          const targetRow = rows[targetLineIdx];
-          targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          targetRow.style.transition = 'background 0.4s ease, box-shadow 0.4s ease';
-          targetRow.style.background = 'rgba(250, 204, 21, 0.25)';
-          targetRow.style.boxShadow = 'inset 0 0 0 1.5px rgba(250, 204, 21, 0.7)';
-        }
-      };
-      setTimeout(tryHighlightLine, 1100);
-      setTimeout(tryHighlightLine, 2200);
+      window.highlightTranscriptLine(targetLineIdx);
     }
   }
 

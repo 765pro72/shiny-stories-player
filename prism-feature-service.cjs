@@ -46,11 +46,11 @@ function createPrismFeatureService({ base, dataRoot }) {
     return corpusCache;
   }
 
-  function searchDialogues(query, speakerFilter = '', limit = 60) {
+  function searchDialogues(query, speakerFilter = '', limit = 60, offset = 0) {
     const t0 = Date.now();
     const q = String(query || '').trim().toLowerCase();
     const spk = String(speakerFilter || '').trim().toLowerCase();
-    if (!q && !spk) return { ok: true, tookMs: 0, total: 0, hits: [] };
+    if (!q && !spk) return { ok: true, tookMs: 0, total: 0, offset: 0, limit, hits: [] };
 
     const corpus = ensureCorpus();
     const terms = q.split(/\s+/).filter(Boolean);
@@ -70,8 +70,7 @@ function createPrismFeatureService({ base, dataRoot }) {
           }
           if (!allMatch) continue;
         }
-        total++;
-        if (hits.length < limit) {
+        if (total >= offset && hits.length < limit) {
           const prev = i > 0 ? rows[i - 1] : null;
           const next = i + 1 < rows.length ? rows[i + 1] : null;
           hits.push({
@@ -89,14 +88,17 @@ function createPrismFeatureService({ base, dataRoot }) {
             next: next ? { speaker: next.name, text: next.trans || next.text } : null
           });
         }
+        total++;
       }
     }
-    return { ok: true, tookMs: Date.now() - t0, total, hits };
+    return { ok: true, tookMs: Date.now() - t0, total, offset, limit, hits };
   }
 
-  function getIdolInteractions(idolFilter = '', mode = 'chain') {
+  function getIdolInteractions(idolFilter = '', mode = 'chain', searchFilter = '', kindFilter = '') {
     const corpus = ensureCorpus();
     const qIdol = String(idolFilter || '').trim();
+    const qText = String(searchFilter || '').trim().toLowerCase();
+    const qKind = String(kindFilter || '').trim();
 
     if (mode === '1v1') {
       // Aggregate Morning (晨间问候), Promise (约定), Audition (试镜前), Cheers (应援) into a continuous 1v1 collection
@@ -111,14 +113,23 @@ function createPrismFeatureService({ base, dataRoot }) {
           : /audition/i.test(doc.key) ? '🎤 试镜前 1v1 鼓劲'
           : /promise/i.test(doc.key) ? '🤝 制作人约定互动'
           : '💬 育成 1v1 互动';
+        if (qKind && !kindLabel.includes(qKind)) continue;
+
+        const filteredRows = doc.rows.filter(r => r.text || r.trans);
+        if (qText) {
+          const match = doc.title.toLowerCase().includes(qText) ||
+            filteredRows.some(r => (r.text + '\n' + r.trans).toLowerCase().includes(qText));
+          if (!match) continue;
+        }
+
         episodes.push({
           key: doc.key,
           idol: doc.idol,
           kind: kindLabel,
           title: doc.title,
-          lines: doc.rows.filter(r => r.text || r.trans).slice(0, 18)
+          lines: filteredRows.slice(0, 24)
         });
-        if (episodes.length >= 60) break;
+        if (episodes.length >= 80) break;
       }
       return { ok: true, mode: '1v1', count: episodes.length, episodes };
     }
@@ -134,6 +145,12 @@ function createPrismFeatureService({ base, dataRoot }) {
           if (!seq.length) continue;
           const speakers = [...new Set(seq.map(l => String(l.speaker || l.characterName || '').trim()).filter(Boolean))];
           if (qIdol && !speakers.some(s => s.includes(qIdol))) continue;
+
+          if (qText) {
+            const match = seq.some(l => (String(l.text || l.original || '') + '\n' + String(l.trans || l.translation || '')).toLowerCase().includes(qText));
+            if (!match) continue;
+          }
+
           threads.push({
             id: 'hc_' + c.id,
             kind: speakers.length > 2 ? '📱 283 Chain 组合群聊' : '📱 283 Chain 双人私聊',
@@ -146,7 +163,7 @@ function createPrismFeatureService({ base, dataRoot }) {
               voice: l.path ? '/asset/' + l.path : ''
             }))
           });
-          if (threads.length >= 45) break;
+          if (threads.length >= 60) break;
         }
       }
     } catch {}
@@ -155,22 +172,28 @@ function createPrismFeatureService({ base, dataRoot }) {
     for (const doc of corpus) {
       if (!doc.key.startsWith('business_unit_communication/') && !doc.key.startsWith('mypage_communications/')) continue;
       if (qIdol && doc.idol !== qIdol && !doc.rows.some(r => r.name.includes(qIdol))) continue;
+      const filteredRows = doc.rows.filter(r => r.text || r.trans);
+      if (qText) {
+        const match = doc.title.toLowerCase().includes(qText) ||
+          filteredRows.some(r => (r.text + '\n' + r.trans).toLowerCase().includes(qText));
+        if (!match) continue;
+      }
       const speakers = [...new Set(doc.rows.map(r => r.name).filter(Boolean))];
       threads.push({
         id: doc.key,
         storyKey: doc.key,
-        kind: doc.key.startsWith('mypage') ? '📞 制作人私密来电 / 主页留言' : '📱 283 营业工作群聊',
-        title: `${doc.idol} · ${doc.title}`,
-        participants: speakers.length ? speakers : [doc.idol],
-        lines: doc.rows.filter(r => r.text || r.trans).slice(0, 20).map(r => ({
-          speaker: r.name || doc.idol,
-          text: r.text,
-          trans: r.trans
+        kind: doc.key.startsWith('business_unit') ? '💼 283 偶像营业现场对谈' : '📞 制作人来电与大厅寄语',
+        title: doc.title || (speakers.join(' × ') + ' 对谈'),
+        participants: speakers,
+        lines: filteredRows.map(r => ({
+          speaker: r.name || doc.idol || '偶像',
+          text: r.text || '',
+          trans: r.trans || '',
+          voice: ''
         }))
       });
       if (threads.length >= 80) break;
     }
-
     return { ok: true, mode: 'chain', count: threads.length, threads };
   }
 
@@ -213,7 +236,8 @@ function createPrismFeatureService({ base, dataRoot }) {
       const q = u.searchParams.get('q') || '';
       const speaker = u.searchParams.get('speaker') || '';
       const limit = Math.min(120, Math.max(10, Number(u.searchParams.get('limit')) || 60));
-      const out = searchDialogues(q, speaker, limit);
+      const offset = Math.max(0, Number(u.searchParams.get('offset')) || 0);
+      const out = searchDialogues(q, speaker, limit, offset);
       res.setHeader('Content-Type', 'application/json; charset=utf-8');
       res.setHeader('Cache-Control', 'no-store');
       res.end(JSON.stringify(out));
@@ -222,7 +246,9 @@ function createPrismFeatureService({ base, dataRoot }) {
     if (p === '/api/idol-interactions') {
       const idol = u.searchParams.get('idol') || '';
       const mode = u.searchParams.get('mode') || 'chain';
-      const out = getIdolInteractions(idol, mode);
+      const q = u.searchParams.get('q') || '';
+      const kind = u.searchParams.get('kind') || '';
+      const out = getIdolInteractions(idol, mode, q, kind);
       res.setHeader('Content-Type', 'application/json; charset=utf-8');
       res.setHeader('Cache-Control', 'no-store');
       res.end(JSON.stringify(out));
