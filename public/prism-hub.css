@@ -665,9 +665,58 @@ html[data-joytrans="1"] .ph-modal-backdrop {
   box-shadow: 0 0 0 7px #0f172a, 0 0 0 8px rgba(255, 255, 255, 0.18), 0 8px 20px rgba(0, 0, 0, 0.6);
   animation: phAfSpin 11s linear infinite;
 }
+.ph-af-vinyl-card.is-paused .ph-af-disc {
+  animation-play-state: paused !important;
+  opacity: 0.85;
+}
 @keyframes phAfSpin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.ph-af-ctrl-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  flex-shrink: 0;
+}
+.ph-af-ctrl-btn:hover {
+  background: rgba(255, 255, 255, 0.24);
+  border-color: rgba(255, 255, 255, 0.55);
+  transform: scale(1.08);
+}
+.ph-af-ctrl-btn:active {
+  transform: scale(0.92);
+}
+.ph-af-ctrl-btn svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+.ph-af-ctrl-btn.play-btn {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.4), rgba(129, 140, 248, 0.4));
+  border: 1.5px solid rgba(56, 189, 248, 0.7);
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.35);
+}
+.ph-af-ctrl-btn.play-btn:hover {
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.55), rgba(129, 140, 248, 0.55));
+  border-color: #38bdf8;
+  box-shadow: 0 6px 22px rgba(56, 189, 248, 0.55);
+  transform: scale(1.1);
+}
+.ph-af-vinyl-card.is-paused .ic-pause,
+.ph-af-vinyl-card:not(.is-paused) .ic-play {
+  display: none !important;
 }
 
 @media (max-width: 720px) {

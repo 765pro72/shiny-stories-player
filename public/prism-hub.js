@@ -113,9 +113,18 @@
     document.getElementById('phModalClose')?.addEventListener('click', closeModal);
     backdropEl.addEventListener('click', e => { if (e.target === backdropEl) closeModal(); });
     window.addEventListener('keydown', e => {
-      if (e.key === 'Escape') {
-        if (ambientEl && !ambientEl.hidden) closeAmbientFrame();
-        else if (backdropEl && !backdropEl.hidden) closeModal();
+      if (ambientEl && !ambientEl.hidden) {
+        if (e.key === 'Escape') {
+          closeAmbientFrame();
+        } else if (e.key === ' ' || e.code === 'Space') {
+          const tag = (e.target?.tagName || '').toLowerCase();
+          if (tag !== 'input' && tag !== 'textarea') {
+            e.preventDefault();
+            document.getElementById('phAfPlayBtn')?.click();
+          }
+        }
+      } else if (e.key === 'Escape') {
+        if (backdropEl && !backdropEl.hidden) closeModal();
       }
     });
   }
@@ -671,15 +680,20 @@
           </div>
         </header>
         <footer class="ph-af-bottom">
-          <div class="ph-af-vinyl-card">
+          <div class="ph-af-vinyl-card" id="phAfVinylCard">
             <img class="ph-af-disc" id="phAfDisc" src="/app-icon.png" alt="">
             <div style="min-width:0;">
               <small style="color:#7dd3fc;font-weight:700;font-size:10.5px;">NOW SPINNING · 283 JUKEBOX</small>
               <strong id="phAfSong" style="display:block;font-size:15px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Spread the Wings!!</strong>
               <span id="phAfArtist" style="display:block;font-size:12px;color:#cbd5e1;">283 Production</span>
             </div>
-            <button type="button" class="ph-btn ghost" id="phAfPlayBtn" style="height:32px;padding:0 10px;">⏯</button>
-            <button type="button" class="ph-btn ghost" id="phAfNextSongBtn" style="height:32px;padding:0 10px;">⏭</button>
+            <button type="button" class="ph-af-ctrl-btn play-btn" id="phAfPlayBtn" aria-label="播放或暂停" data-tip="播放 / 暂停" title="播放 / 暂停 (Space)">
+              <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg>
+              <svg class="ic-pause" viewBox="0 0 24 24"><rect x="6.5" y="5" width="3.8" height="14" rx="1.4"/><rect x="13.7" y="5" width="3.8" height="14" rx="1.4"/></svg>
+            </button>
+            <button type="button" class="ph-af-ctrl-btn" id="phAfNextSongBtn" aria-label="下一首歌曲" data-tip="下一首歌曲" title="下一首歌曲">
+              <svg viewBox="0 0 24 24"><path d="M16 6.5h2.2v11H16zM5.8 6.5l8.4 5.5-8.4 5.5z"/></svg>
+            </button>
           </div>
           <div id="phAfCardName" style="font-size:12.5px;color:rgba(226,232,240,0.8);font-weight:600;"></div>
         </footer>
@@ -689,9 +703,11 @@
       document.getElementById('phAfNextArtBtn')?.addEventListener('click', () => cycleArt());
       document.getElementById('phAfPlayBtn')?.addEventListener('click', () => {
         document.getElementById('islandMiniPlay')?.click();
+        setTimeout(tick, 60);
       });
       document.getElementById('phAfNextSongBtn')?.addEventListener('click', () => {
         document.getElementById('islandMiniNext')?.click();
+        setTimeout(tick, 100);
       });
     }
 
@@ -713,6 +729,17 @@
       if (cl) cl.textContent = `${hh}:${mm}`;
       if (dt) dt.textContent = `${now.getFullYear()}年${now.getMonth() + 1}月${now.getDate()}日 · 283 待机黑胶艺术画框`;
       try {
+        const isPlaying = document.getElementById('dynamicIsland')?.classList.contains('is-playing') ||
+                          localStorage.getItem('shiny.musicPlaying') === '1';
+        const vinylCard = document.getElementById('phAfVinylCard');
+        if (vinylCard) {
+          vinylCard.classList.toggle('is-paused', !isPlaying);
+        }
+        const playBtn = document.getElementById('phAfPlayBtn');
+        if (playBtn) {
+          playBtn.setAttribute('title', isPlaying ? '暂停 (Space)' : '播放 (Space)');
+          playBtn.setAttribute('data-tip', isPlaying ? '暂停' : '播放');
+        }
         const np = JSON.parse(localStorage.getItem('shiny.nowPlaying') || 'null');
         if (np && np.title) {
           document.getElementById('phAfSong').textContent = np.title;
