@@ -204,7 +204,10 @@
   const convert=converter.convertResourcePaths.bind(converter);converter.convertResourcePaths=input=>convert(input).map(t=>{if(t.logTextFrame){const id=t.logTextFrame.split('/').pop();if(['001.png','002.png','003.png'].includes(id))t.logTextFrame='/player/scenario-ui/images/event/log_text_frame/'+id}return t});
   annotate();emit('ready');const errors=await preload();if(disposed)return;
   PIXI.utils.skipHello();gsap.registerPlugin(PixiPlugin);PixiPlugin.registerPIXI(PIXI);
-  app=new PIXI.Application({width:1136,height:640,resolution:1,autoDensity:true,antialias:true,backgroundColor:0x211b26});app.view.id='ShinyColors';document.body.append(app.view);resize();mountQuality();
+  if(PIXI.settings&&PIXI.MIPMAP_MODES)PIXI.settings.MIPMAP_TEXTURES=PIXI.MIPMAP_MODES.ON;
+  const _sds=document.documentElement.dataset,_sJoy=_sds.joytrans==='1'||_sds.kirin==='1',_sMob=_sds.mobile==='1'||_sds.android==='1'||_sds.platform==='android'||/Android|iPhone|iPad|Mobile|HarmonyOS/i.test(navigator.userAgent);
+  const _sRes=_sJoy?1.5:_sMob?Math.min(2,Math.max(1.5,window.devicePixelRatio||1.5)):Math.min(3.375,Math.max(2.25,(Math.max(window.innerWidth||1920,1920)*(window.devicePixelRatio||1))/1136));
+  app=new PIXI.Application({width:1136,height:640,resolution:_sRes,autoDensity:true,antialias:true,backgroundColor:0x211b26});app.view.id='ShinyColors';document.body.append(app.view);resize();mountQuality();
   player=new AdvPlayer(app,{masterVolume:volume});window.player=player;configurePlayer();app.stage.addChild(player.stageObj);applyFont();
   app.ticker.add(delta=>{if(!disposed)player.update(delta)});started=true;player.start(tracks);setVolume(volume);unlockAudio();
   status('准备完成 · 翻译：'+(translation.translator||'暂无汉化')+(translation.additionalSources?.length?' · 补译来源：'+translation.additionalSources.map(s=>s.credit).join('、'):'')+(errors.length?' · '+errors.length+' 个辅助或音频资源未加载':''));if(!ended)$('#loading').style.display='none';

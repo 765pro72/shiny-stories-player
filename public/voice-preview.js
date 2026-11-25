@@ -164,7 +164,10 @@
     const token = ++serial;
     $('#previewStatus').textContent = '正在加载服装…';
     try {
-      app ??= new PIXI.Application({ width: 900, height: 1000, transparent: true, antialias: true, resolution: 1, autoDensity: true });
+      const _vds = document.documentElement.dataset;
+      const _vRes = (_vds.joytrans === '1' || _vds.kirin === '1') ? 1.5 : ((_vds.mobile === '1' || _vds.android === '1' || _vds.platform === 'android' || /Android|iPhone|iPad|Mobile|HarmonyOS/i.test(navigator.userAgent)) ? Math.min(2, Math.max(1.5, window.devicePixelRatio || 1.5)) : Math.min(3, Math.max(2, (window.devicePixelRatio || 1) * 2)));
+      if (window.PIXI?.settings && window.PIXI?.MIPMAP_MODES) PIXI.settings.MIPMAP_TEXTURES = PIXI.MIPMAP_MODES.ON;
+      app ??= new PIXI.Application({ width: 900, height: 1000, transparent: true, antialias: true, resolution: _vRes, autoDensity: true });
       if (!app.view.parentNode) {
         app.view.style.width = '100%';
         app.view.style.height = '100%';

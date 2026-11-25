@@ -117,11 +117,16 @@ class AdvPlayer {
         }
 
         PIXI.utils.skipHello();
+        if (PIXI.settings && PIXI.MIPMAP_MODES) PIXI.settings.MIPMAP_TEXTURES = PIXI.MIPMAP_MODES.ON;
+        const _ds = document.documentElement.dataset;
+        const _isJoy = _ds.joytrans === '1' || _ds.kirin === '1';
+        const _isMob = _ds.mobile === '1' || _ds.android === '1' || _ds.platform === 'android' || /Android|iPhone|iPad|Mobile|HarmonyOS/i.test(navigator.userAgent);
+        const _initRes = _isJoy ? 1.5 : _isMob ? Math.min(2, Math.max(1.5, window.devicePixelRatio || 1.5)) : Math.min(3.375, Math.max(2.25, (Math.max(window.innerWidth || 1920, 1920) * (window.devicePixelRatio || 1)) / 1136));
 
         this._app = new PIXI.Application({
             width: 1136,
             height: 640,
-            resolution: 1,
+            resolution: _initRes,
             autoDensity: true,
             antialias: true,
         });

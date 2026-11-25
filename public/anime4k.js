@@ -130,6 +130,35 @@
       output.style.display = state.active ? 'block' : 'none';
       if (fill) Object.assign(output.style, { position: 'absolute', inset: '0', transform: 'none', width: '100%', height: '100%', objectFit: getComputedStyle(source).objectFit || 'contain' });
     }
+    function calcNativeRes() {
+      const ds = document.documentElement.dataset;
+      if (ds.joytrans === '1' || ds.kirin === '1') return 1.5;
+      const isMob = ds.mobile === '1' || ds.android === '1' || ds.platform === 'android' || /Android|iPhone|iPad|Mobile|HarmonyOS/i.test(navigator.userAgent);
+      if (isMob) return Math.min(2, Math.max(1.5, window.devicePixelRatio || 1.5));
+      const dpr = window.devicePixelRatio || 1;
+      const lw = Math.max(app.screen?.width || 1136, 900);
+      const targetW = Math.max(window.innerWidth || 1920, 1920) * dpr;
+      return Math.min(3.375, Math.max(2.25, targetW / lw));
+    }
+    let _inResizeSync = false;
+    function applyStageResolution(targetRes) {
+      if (_inResizeSync) return;
+      try {
+        const lw = app.screen?.width, lh = app.screen?.height;
+        if (!lw || !lh) return;
+        if (Math.abs((renderer.resolution || 1) - targetRes) < 0.02) return;
+        renderer.resolution = targetRes;
+        renderer.resize(lw, lh);
+        if (fill) {
+          source.style.width = '100%';
+          source.style.height = '100%';
+        } else {
+          _inResizeSync = true;
+          try { window.dispatchEvent(new Event('resize')); } finally { _inResizeSync = false; }
+        }
+        if (app.ticker && !app.ticker.started) app.render();
+      } catch {}
+    }
     function reset() {
       pipelineReady = false;state.output=output;state.exportImage=null;state.isReady=null;
       state.active = false; state.effectiveMode = 'off';
@@ -141,6 +170,7 @@
         pass.gl?.getExtension('WEBGL_lose_context')?.loseContext();
       }
       passes = [];
+      applyStageResolution(calcNativeRes());
       // Destroy the spare WebGL context too; repeated switches must not exhaust
       // Chromium's active-context limit and evict the actual game renderer.
     }
@@ -155,7 +185,8 @@
       // Recreate the output element after dispose, since lost contexts cannot
       // synchronously be reused. The source canvas and PIXI stage stay intact.
       if (passes.length || state.active) reset();
-      if (preset === 'off' || destroyed) { notify(); return; }
+      if (preset === 'off' || destroyed) { applyStageResolution(calcNativeRes()); notify(); return; }
+      applyStageResolution(1);
       try {
         const stages=override|| (preset==='artcnn'?enabledStages():[{id:'anime4k',level:preset}]);
         state.actualStages=stages.map(s=>({...s}));
@@ -187,6 +218,7 @@
       } catch (error) { if (token === generation && !destroyed) fallback(error.message || '超分无法启动'); }
     }
     function syncOutputSize() {
+      if (state.effectiveMode === 'off' && !destroyed && !_inResizeSync) applyStageResolution(calcNativeRes());
       syncSize();
     }
     function postrender() {

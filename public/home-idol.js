@@ -6,7 +6,10 @@
  try{if(localStorage.getItem('shiny.homeSubZhDefaultV1')!=='1'){if(prefs.language==='both'||!['zh','both','jp'].includes(prefs.language)){prefs.language='zh';const v=JSON.stringify(prefs);localStorage.setItem('home',v);window.desktop?.saveState?.({home:v});}localStorage.setItem('shiny.homeSubZhDefaultV1','1');}}catch{}
  // CSS must override autoDensity's fixed inline logical size at desktop resolutions.
  const isMobile=/ShinyStoriesAndroid|Android|iPhone|iPad|iPod|Mobile|HarmonyOS|JoyTrans|Droitong|KirinSoC/i.test(navigator.userAgent)||document.documentElement.dataset.platform==='android'||document.documentElement.dataset.mobile==='1';
- const app=new PIXI.Application({width:1136,height:640,resolution:1,autoDensity:true,backgroundAlpha:0,antialias:!isMobile,preserveDrawingBuffer:!isMobile,powerPreference:isMobile?'default':'high-performance'});app.ticker.maxFPS=isMobile?30:0;$('#idol').append(app.view);app.view.style.width='100%';app.view.style.height='100%';
+ const isJoyTrans=document.documentElement.dataset.joytrans==='1'||document.documentElement.dataset.kirin==='1';
+ if(window.PIXI?.settings&&window.PIXI?.MIPMAP_MODES)PIXI.settings.MIPMAP_TEXTURES=PIXI.MIPMAP_MODES.ON;
+ const initRes=isJoyTrans?1.5:isMobile?Math.min(2,Math.max(1.5,window.devicePixelRatio||1.5)):Math.min(3.375,Math.max(2.25,(Math.max(window.innerWidth||1920,1920)*(window.devicePixelRatio||1))/1136));
+ const app=new PIXI.Application({width:1136,height:640,resolution:initRes,autoDensity:true,backgroundAlpha:0,antialias:!isMobile,preserveDrawingBuffer:!isMobile,powerPreference:isMobile?'default':'high-performance'});app.ticker.maxFPS=isMobile?30:0;$('#idol').append(app.view);app.view.style.width='100%';app.view.style.height='100%';
  window.ShinyAnime4K?.attach(app,{fill:true});
  const qualitySettings=document.createElement('section');$('#wardrobeClose').before(qualitySettings);window.ShinyAnime4K?.mountControl(qualitySettings,{detailed:true});
  // Idle clips contain an intro and a loop_start event. Narrow the animation

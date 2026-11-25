@@ -49,6 +49,17 @@
       : `🖼️ 当前模式：原图（已加载 4K 包${detail}，可随时切回 4K）`;
   }
 
+  function disableRealtimeUpscalerForNative4k() {
+    try {
+      // Avoid real-time Anime4K downscaling the PIXI stage back to 640p before re-upscaling
+      localStorage.setItem('anime4k', 'off');
+      localStorage.setItem('qualityPipeline', JSON.stringify([{ id: 'anime4k', enabled: false, level: 'fine' }, { id: 'artcnn', enabled: false, level: 'c16' }]));
+      const d = getDesktop();
+      d?.saveState?.({ anime4k: 'off', qualityPipeline: JSON.stringify([{ id: 'anime4k', enabled: false, level: 'fine' }, { id: 'artcnn', enabled: false, level: 'c16' }]) });
+      window.ShinyAnime4K?.setMode?.('off');
+    } catch {}
+  }
+
   function reloadVisibleStage() {
     try {
       const topWin = (window.parent && window.parent !== window) ? window.parent : window;
@@ -122,6 +133,7 @@
           if (statusEl) statusEl.textContent = '❌ ' + (res?.error || '加载失败');
           return;
         }
+        if (res?.enabled) disableRealtimeUpscalerForNative4k();
         render(res);
         setTimeout(reloadVisibleStage, 450);
       } catch (e) {
@@ -145,6 +157,7 @@
           if (statusEl) statusEl.textContent = '❌ ' + (res?.error || '文件夹无效');
           return;
         }
+        if (res?.enabled) disableRealtimeUpscalerForNative4k();
         render(res);
         setTimeout(reloadVisibleStage, 350);
       } catch (e) {
@@ -161,6 +174,7 @@
       setBusy(true, next ? '正在切换为 4K 超清画质…' : '正在切换为原图画质…');
       try {
         const res = await toggleEnabled(next);
+        if (res?.enabled) disableRealtimeUpscalerForNative4k();
         render(res);
         setTimeout(reloadVisibleStage, 250);
       } catch (e) {
@@ -177,6 +191,12 @@
   function init() {
     const el = document.getElementById('pack4kSetting');
     if (el) bindContainer(el);
+    fetchStatus().then(st => {
+      if (st?.installed && st?.enabled && localStorage.getItem('shiny.pack4kAutoNativeV1') !== '1') {
+        localStorage.setItem('shiny.pack4kAutoNativeV1', '1');
+        disableRealtimeUpscalerForNative4k();
+      }
+    }).catch(() => {});
   }
 
   window.Pack4kUI = { fetchStatus, toggleEnabled, bindContainer, formatStatusText };
