@@ -211,7 +211,17 @@
         firstFrame ||= now;
         if (previousFrame) {
           const interval = now - previousFrame;
-          averageInterval = samples ? averageInterval * .85 + interval * .15 : interval;
+          // 切页/停帧产生的超长空白间隔（>1.5s）直接重置计时，不污染帧率统计
+          if (interval > 1500) {
+            resetTiming();
+            previousFrame = now;
+            if(now-lastNoticeAt>1000){lastNoticeAt=now;notify();}
+            return;
+          }
+          intervalWindow.push(interval);
+          if (intervalWindow.length > 31) intervalWindow.shift();
+          const sorted = [...intervalWindow].sort((a, b) => a - b);
+          averageInterval = sorted[sorted.length >> 1];
           samples++;
           if (monitorPerformance() && now - firstFrame > 3500 && ((samples >= 12 && averageInterval > 100) || (samples >= 3 && averageInterval > 500))) {
             const order = ['ultra', 'max2x', 'fine', 'quality', 'balanced'];
@@ -233,6 +243,7 @@
       if (destroyed) return;
       destroyed = true; generation++; renderer.off('postrender', postrender);
       observer.disconnect(); window.removeEventListener('resize', syncOutputSize); window.removeEventListener('pageshow', syncOutputSize);
+      window.removeEventListener('message', onShellVisibility);
       document.removeEventListener('visibilitychange', resetTiming);
       reset();output.remove();
       if (backgroundSprite) { app.stage.removeChild(backgroundSprite); backgroundSprite.destroy({ texture: false, baseTexture: false }); }
@@ -244,7 +255,10 @@
     window.addEventListener('resize', syncOutputSize);
     window.addEventListener('pageshow', syncOutputSize);
     window.addEventListener('pagehide', destroy, { once: true });
-    function resetTiming() { previousFrame = firstFrame = samples = averageInterval = sourceAt = sourceInterval = 0; }
+    let intervalWindow = [];
+    function resetTiming() { previousFrame = firstFrame = samples = averageInterval = sourceAt = sourceInterval = 0; intervalWindow = []; }
+    function onShellVisibility(e) { if (e.data && e.data.type === 'shiny-shell-visibility') resetTiming(); }
+    window.addEventListener('message', onShellVisibility);
     document.addEventListener('visibilitychange', resetTiming);
     configure();
     return state;

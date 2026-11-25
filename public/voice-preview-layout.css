@@ -1,0 +1,140 @@
+/* ===================================================================
+   语音馆设置面板：滚动修复 + 配色统一 + 全屏字幕编辑按钮避让（2026-11-25）
+   加载位置：voice-gallery.html，紧跟在 /ui-upgrade.css 之后。
+   =================================================================== */
+
+/* ---------- 1. 面板可纵向滚动 ---------- */
+html body.page-voice #voicePreviewSettings {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  overscroll-behavior: contain !important;
+  scrollbar-width: thin !important;
+  scrollbar-gutter: stable !important;
+}
+
+/* ---------- 2. 滚动时标题栏吸顶 ---------- */
+html body.page-voice #voicePreviewSettings[open] > summary {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 3 !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(8px) !important;
+  border-radius: 15px 15px 0 0 !important;
+}
+
+html[data-theme="dark"] body.page-voice #voicePreviewSettings[open] > summary {
+  background: rgba(24, 22, 30, 0.94) !important;
+}
+
+/* ---------- 3. 面板底色与正文色（未放大 / 放大全屏共用） ---------- */
+html body.page-voice #voicePreview #voicePreviewSettings,
+html body.page-voice #voicePreview:fullscreen #voicePreviewSettings,
+html body.page-voice #voicePreview.in-fullscreen #voicePreviewSettings {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(120, 140, 160, 0.28) !important;
+  color: #1f2a37 !important;
+}
+
+html[data-theme="dark"] body.page-voice #voicePreview #voicePreviewSettings,
+html[data-theme="dark"] body.page-voice #voicePreview:fullscreen #voicePreviewSettings,
+html[data-theme="dark"] body.page-voice #voicePreview.in-fullscreen #voicePreviewSettings {
+  background: rgba(26, 24, 34, 0.86) !important;
+  border-color: rgba(230, 194, 122, 0.2) !important;
+  color: #f5f1e8 !important;
+}
+
+/* 放大全屏时额外加浮层投影与背景模糊 */
+html body.page-voice #voicePreview:fullscreen #voicePreviewSettings,
+html body.page-voice #voicePreview.in-fullscreen #voicePreviewSettings {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+}
+
+/* ---------- 4. 画质增强文字色统一 ---------- */
+html body.page-voice #voicePreview #voicePreviewSettings :is(.anime4k-control, .anime4k-control > strong, .quality-model label, .anime4k-actual) {
+  color: #354965 !important;
+}
+
+html[data-theme="dark"] body.page-voice #voicePreview #voicePreviewSettings :is(.anime4k-control, .anime4k-control > strong, .quality-model label, .anime4k-actual) {
+  color: #e5dfd5 !important;
+}
+
+/* ---------- 5. .preview-actions 淡底 ---------- */
+html body.page-voice #voicePreview #voicePreviewSettings .preview-actions {
+  background: rgba(53, 73, 101, 0.06) !important;
+  border-color: rgba(53, 73, 101, 0.12) !important;
+}
+
+html[data-theme="dark"] body.page-voice #voicePreview #voicePreviewSettings .preview-actions {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* ---------- 6. 关闭状态档位行 ---------- */
+html body.page-voice #voicePreview #voicePreviewSettings .quality-model.disabled {
+  opacity: 0.85 !important;
+}
+
+/* ---------- 7. 细滚动条 ---------- */
+html body.page-voice #voicePreviewSettings::-webkit-scrollbar {
+  width: 10px !important;
+}
+html body.page-voice #voicePreviewSettings::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+html body.page-voice #voicePreviewSettings::-webkit-scrollbar-thumb {
+  background: rgba(96, 121, 141, 0.42) !important;
+  border: 2px solid transparent !important;
+  border-radius: 8px !important;
+  background-clip: padding-box !important;
+}
+html body.page-voice #voicePreviewSettings::-webkit-scrollbar-thumb:hover {
+  background: rgba(96, 121, 141, 0.7) !important;
+  background-clip: padding-box !important;
+}
+
+/* ---------- 8. 修复放大全屏时「修改字幕」按钮被顶部居中角色名牌遮挡 ---------- */
+html body.page-voice #voicePreview:fullscreen #editGallerySubtitle,
+html body.page-voice #voicePreview.in-fullscreen #editGallerySubtitle {
+  position: absolute !important;
+  top: 24px !important;
+  left: 112px !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  z-index: 12 !important;
+  margin: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 999px !important;
+  background: rgba(26, 24, 34, 0.86) !important;
+  color: #f5f1e8 !important;
+  border: 1px solid rgba(230, 194, 122, 0.35) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28) !important;
+}
+
+html body.page-voice #voicePreview:fullscreen #galleryEditBox,
+html body.page-voice #voicePreview.in-fullscreen #galleryEditBox {
+  position: fixed !important;
+  left: 50% !important;
+  bottom: 92px !important;
+  top: auto !important;
+  transform: translateX(-50%) !important;
+  width: min(560px, 90vw) !important;
+  z-index: 25 !important;
+}
+
+/* ---------- 9. 华为卓易通 / Android / 鸿蒙容器性能降耗 ---------- */
+html[data-joytrans="1"] body.page-voice #voicePreview #voicePreviewSettings,
+html[data-android="1"] body.page-voice #voicePreview #voicePreviewSettings,
+html[data-harmony="1"] body.page-voice #voicePreview #voicePreviewSettings,
+html[data-kirin="1"] body.page-voice #voicePreview #voicePreviewSettings,
+html[data-joytrans="1"] body.page-voice #voicePreviewSettings[open] > summary,
+html[data-android="1"] body.page-voice #voicePreviewSettings[open] > summary {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
