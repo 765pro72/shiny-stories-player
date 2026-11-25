@@ -199,12 +199,16 @@
     triggerBtn.className = 'bi-trigger';
     triggerBtn.title = '查看剧情分支对比与台词大纲';
     triggerBtn.innerHTML = '<span>📋</span><span>剧本大纲</span>';
-    if (isEmbedded) triggerBtn.hidden = true;
-    triggerBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      openDrawer();
-    });
-    document.body.appendChild(triggerBtn);
+    if (isEmbedded) {
+      triggerBtn.hidden = true;
+      triggerBtn.style.display = 'none';
+    } else {
+      triggerBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openDrawer();
+      });
+      document.body.appendChild(triggerBtn);
+    }
 
     backdropEl = document.createElement('div');
     backdropEl.className = 'bi-backdrop';

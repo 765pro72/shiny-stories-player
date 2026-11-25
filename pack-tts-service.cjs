@@ -384,6 +384,14 @@ function createPackTtsService({ base, userDir, fetch: customFetch, onChange = ()
 
     const ext = path.extname(entryPath).toLowerCase();
     fs.mkdirSync(defaultExtractDir, { recursive: true });
+    // Clear previous extracted weights/manifest so redeploying a new voice pack never leaves stale files
+    loadedWeights.clear();
+    for (const stale of ['models', 'refs', 'datasets', 'manifest.json']) {
+      const sp = path.join(defaultExtractDir, stale);
+      if (fs.existsSync(sp)) {
+        try { fs.rmSync(sp, { recursive: true, force: true }); } catch {}
+      }
+    }
     const sevenZip = sevenZipCandidates.find(p => fs.existsSync(p));
     let cmd, args;
     if (sevenZip) {
@@ -427,6 +435,20 @@ function createPackTtsService({ base, userDir, fetch: customFetch, onChange = ()
     onChange();
     onProgress(`部署完成！已成功载入 ${hit.voices.length} 组偶像声音模型。`);
     return await getStatus(true);
+  }
+
+  async function uninstallPack({ deleteFiles = true } = {}) {
+    cfg.customDir = '';
+    cfg.source = '';
+    cfg.loadedAt = '';
+    cfg.enabled = false;
+    loadedWeights.clear();
+    if (deleteFiles && defaultExtractDir && fs.existsSync(defaultExtractDir)) {
+      fs.rmSync(defaultExtractDir, { recursive: true, force: true });
+    }
+    saveCfg();
+    onChange();
+    return await getStatus(false);
   }
 
   async function launchRuntime() {
@@ -624,6 +646,11 @@ function createPackTtsService({ base, userDir, fetch: customFetch, onChange = ()
         sendJson(res, 200, await launchRuntime());
         return true;
       }
+      if (p === '/api/tts-pack/uninstall' && req.method === 'POST') {
+        const body = await readJsonBody(req);
+        sendJson(res, 200, await uninstallPack(body));
+        return true;
+      }
       if (p === '/api/tts-pack/synthesize' && req.method === 'POST') {
         const body = await readJsonBody(req);
         const controller = new AbortController();
@@ -667,6 +694,7 @@ function createPackTtsService({ base, userDir, fetch: customFetch, onChange = ()
     setCustomDir,
     setConfig,
     extractArchive,
+    uninstallPack,
     launchRuntime,
     resolveVoice,
     synthesize

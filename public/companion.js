@@ -396,6 +396,8 @@
           elTtsPackStatus.textContent = '未部署 30 声线包（点下方「📦 一键部署全部声音」选择 ShinyStories-TTS-Pack.7z）';
         }
       }
+      const btnUninstall = $('#btnTtsPackUninstall');
+      if (btnUninstall) btnUninstall.hidden = !st?.installed;
       if (st?.installed && st?.enabled && localStorage.getItem('shiny.companionTtsPackInitV1') !== '1') {
         localStorage.setItem('shiny.companionTtsPackInitV1', '1');
         ttsCfg.mode = 'gptsovits';
@@ -930,6 +932,31 @@
     } catch (e) {
       elTtsStatus.className = 'cmp-tts-status is-err';
       elTtsStatus.textContent = e.message;
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  });
+
+  $('#btnTtsPackUninstall')?.addEventListener('click', async () => {
+    const ok = window.confirm('确定要取消当前部署的声音整合包吗？（若是通过压缩包导入本地目录的将清理已解压权重，外部挂载目录仅解除关联不删原文件，之后可随时重新部署其他语音包）');
+    if (!ok) return;
+    const btn = $('#btnTtsPackUninstall');
+    if (btn) btn.disabled = true;
+    try {
+      const res = window.desktop?.uninstallTtsPack
+        ? await window.desktop.uninstallTtsPack()
+        : await (await fetch('/api/tts-pack/uninstall', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' })).json();
+      if (!res?.ok) throw new Error(res?.error || '取消部署失败');
+      ttsCfg.enabled = false;
+      localStorage.removeItem('shiny.companionTtsPackInitV1');
+      writeJson(TTS_KEY, ttsCfg);
+      updateTtsBadge(false);
+      await refreshTtsPackStatus(false);
+      elTtsStatus.className = 'cmp-tts-status is-ok';
+      elTtsStatus.textContent = '已取消当前语音部署，可点击「📦 一键部署全部声音」或「📁 挂载语音文件夹」重新部署其他语音！';
+    } catch (e) {
+      elTtsStatus.className = 'cmp-tts-status is-err';
+      elTtsStatus.textContent = `取消部署失败：${e.message}`;
     } finally {
       if (btn) btn.disabled = false;
     }

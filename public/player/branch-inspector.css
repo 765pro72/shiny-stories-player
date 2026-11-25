@@ -24,6 +24,10 @@
   touch-action: manipulation;
   opacity: 0.86;
 }
+.bi-trigger[hidden],
+body.in-iframe .bi-trigger {
+  display: none !important;
+}
 .bi-trigger:hover {
   opacity: 1;
   background: rgba(24, 32, 52, 0.94);
