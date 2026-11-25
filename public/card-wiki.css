@@ -1,0 +1,168 @@
+/* 卡片相册 · wiki 式展开视图
+   目的：保留原版左右双栏与全部视觉样式，取消「组合与成员」「卡面收藏」两处容器的内部滚动，
+   让两块内容随整页一起滚动、完整展开。每页卡面数量仍由 card-gallery.js 的 perPage=60 决定。
+   左栏「组合与成员」在桌面端吸附跟随滚动；右栏卡面为 3 列（窄屏 2 列 / 手机 2~1 列）。
+   加载位置：card-gallery.html，排在 ui-upgrade.css 与 anime4k.css 之后。 */
+
+/* ========== 桌面 / 平板横向（>=851px） ========== */
+@media (min-width: 851px) {
+  /* 页面恢复为整页滚动。注意：body 不能设 overflow:auto/scroll，
+     否则 body 会成为「和内容一样高的滚动容器」，内部 position:sticky 会失效。 */
+  html {
+    height: auto !important;
+  }
+
+  body.card-archive {
+    height: auto !important;
+    overflow: visible !important;
+    overscroll-behavior-y: auto;
+  }
+
+  body.card-archive > main.gallery-page {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* 左右双栏保留，取消固定高度（原为 height:clamp(620px,74dvh,1240px)） */
+  .card-archive .gallery-layout {
+    display: grid !important;
+    grid-template-columns: clamp(250px, 21vw, 310px) minmax(0, 1fr) !important;
+    align-items: start !important;
+    height: auto !important;
+    min-height: 0 !important;
+    gap: calc(var(--collection-gap) * .8) !important;
+  }
+
+  /* 左栏「组合与成员」：吸附跟随滚动，内容超出视口时可用滚轮/触控板在栏内上下移动，
+     滚动条平时隐藏、鼠标移上去才显形，避免整块被裁。 */
+  .card-archive .unit-sidebar {
+    position: sticky !important;
+    top: calc(var(--header-height) + 18px) !important;
+    align-self: start !important;
+    display: block !important;
+    height: auto !important;
+    max-height: calc(100dvh - var(--header-height) - 44px) !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    overscroll-behavior: contain !important;
+    padding: 14px 12px 6px !important;
+    scrollbar-width: none;
+  }
+
+  .card-archive .unit-sidebar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .card-archive .unit-sidebar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 999px;
+  }
+
+  .card-archive .unit-sidebar:hover::-webkit-scrollbar-thumb {
+    background: rgba(120, 140, 160, .55);
+  }
+
+  .card-archive .sidebar-head {
+    position: static !important;
+    padding: 0 2px 12px !important;
+  }
+
+  .card-archive #unitIndex {
+    display: block !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    padding: 0 !important;
+  }
+
+  .card-archive .card-idol button {
+    padding: 6px !important;
+  }
+
+  .card-archive .card-idol .character-portrait {
+    width: 34px !important;
+    height: 34px !important;
+    flex: none !important;
+  }
+
+  .card-archive .card-idol .character-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* 右栏「卡面收藏」：整块玻璃面板（与语音馆大窗口同款），内部不再滚动 */
+  .card-archive .gallery-results {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    background: var(--ap-glass);
+    border: 1px solid var(--ap-rim);
+    border-radius: 22px;
+    backdrop-filter: blur(22px) saturate(170%);
+    -webkit-backdrop-filter: blur(22px) saturate(170%);
+    padding: 24px 26px 8px;
+  }
+
+  .card-archive #cardGrid {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    grid-auto-rows: auto !important;
+  }
+}
+
+/* 平板竖向 / 小笔记本：仍 3 列但收窄左右留白，卡面不至于过挤 */
+@media (min-width: 851px) and (max-width: 1100px) {
+  .card-archive #cardGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* ========== 手机（<=850px）：保留原版「组合与成员」折叠式紧凑布局，只让卡面区随页面展开 ========== */
+@media (max-width: 850px) {
+  .card-archive .gallery-results {
+    overflow: visible !important;
+    max-height: none !important;
+    border-radius: 20px;
+    background: var(--ap-glass);
+    border: 1px solid var(--ap-rim);
+    padding: 18px 16px 6px;
+  }
+
+  .card-archive #cardGrid {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-archive #cardGrid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ========== 华为卓易通 / Android / 鸿蒙容器：去掉重度 backdrop-filter 读回 ========== */
+:root[data-joytrans="1"] .card-archive .gallery-results,
+:root[data-android="1"] .card-archive .gallery-results,
+:root[data-mobile="1"] .card-archive .gallery-results,
+:root[data-harmony="1"] .card-archive .gallery-results,
+:root[data-kirin="1"] .card-archive .gallery-results {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  background: rgba(255, 255, 255, .96);
+}
+
+html[data-theme="dark"][data-joytrans="1"] .card-archive .gallery-results,
+html[data-theme="dark"][data-android="1"] .card-archive .gallery-results,
+html[data-theme="dark"][data-mobile="1"] .card-archive .gallery-results,
+html[data-theme="dark"][data-harmony="1"] .card-archive .gallery-results,
+html[data-theme="dark"][data-kirin="1"] .card-archive .gallery-results {
+  background: rgba(24, 22, 30, .96);
+}

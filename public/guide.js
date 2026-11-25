@@ -11,6 +11,14 @@ window.storyNavigationReady=(async()=>{
  const main=['W.I.N.G.篇','粉丝感谢祭篇','G.R.A.D.篇','Landing Point篇','S.T.E.P.篇'];
  const canonical=g=>/感謝祭|感谢祭/.test(g)?main[1]:g;
  catalog.forEach(row=>row.group=canonical(row.group));
+ const normOrderKey=s=>String(s||'').normalize('NFKC').replace(/編/g,'篇').replace(/ファン感謝祭|感謝祭|粉丝感谢祭|感谢祭/g,'粉丝感谢祭').replace(/[·・•･]/g,'·').replace(/[―─—–-]/g,'-').replace(/[：:]/g,':').replace(/[～~]/g,'~').replace(/\s+/g,'').toLowerCase();
+ const orderDateByNorm=new Map(),orderPosByNorm=new Map();
+ for(const [k,v] of Object.entries(order.dates||{})){const nk=normOrderKey(k);if(!orderDateByNorm.has(nk)||orderDateByNorm.get(nk)>v)orderDateByNorm.set(nk,v)}
+ for(const [k,v] of Object.entries(order.groupPositions||{})){const nk=normOrderKey(k);if(!orderPosByNorm.has(nk)||orderPosByNorm.get(nk)>v)orderPosByNorm.set(nk,v)}
+ const docDateOf=g=>order.dates?.[g]||orderDateByNorm.get(normOrderKey(g))||'';
+ const docPosOf=g=>order.groupPositions?.[g]??orderPosByNorm.get(normOrderKey(g))??999999;
+ const chronoDateOf=g=>{const d=docDateOf(g)||String(cardOf(g).date||'').replace(/-/g,'/');return /^\d{4}\/\d{2}\/\d{2}$/.test(d)?d:''};
+ const compareChronoGroups=(a,b)=>{const da=chronoDateOf(a),db=chronoDateOf(b);if(da&&db&&da!==db)return da.localeCompare(db);if(da&&!db)return -1;if(!da&&db)return 1;const pa=docPosOf(a),pb=docPosOf(b);if(pa!==pb)return pa-pb;return compareGroups(a,b)};
  const groupRank=g=>{const index=main.indexOf(g);if(index>=0)return index;const numbered=/^第(\d+)章$/.exec(String(g||''));return numbered?10+Number(numbered[1]):99};
  const compareGroups=(a,b)=>groupRank(a)-groupRank(b)||(order.groupPositions[a]??99999)-(order.groupPositions[b]??99999)||a.localeCompare(b,'zh-CN');
  const episodeRank=row=>{const m=row.title.match(/第\s*(\d+)\s*[话話]/);return /序章|オープニング/.test(row.title)?0:m?Number(m[1]):/终章|終章|エンディング/.test(row.title)?999:500};
@@ -30,8 +38,8 @@ window.storyNavigationReady=(async()=>{
   for(const group of [...new Set(chapters.map(x=>x.group))].sort(compareGroups))list.append(window.inlineStoryGroups(chapters.filter(x=>x.group===group).sort(chapterSort),group));
   const pCards=byCard(cards,'P'),sCards=byCard(cards,'S');
   groupSections('P卡（培育卡）',pCards);groupSections('S卡（支援卡）',sCards);groupSections('活动剧情',events);groupSections('其他剧情',others);
-  const chrono=[...rows].sort((m,n)=>rankOf(m)-rankOf(n)||String(m.title).localeCompare(String(n.title),'ja'));
-  if(chrono.length){list.append(el('div','时序（按官方先后）','subhead'));for(const row of chrono)list.append(window.inlineStoryGroups([row],row.group))}d.append(list);unit.append(d)}decorate(unit,name,members);document.querySelector('#units').append(unit)}
+  const chronoGroups=[...new Set(rows.map(x=>x.group))].sort(compareChronoGroups);
+  if(chronoGroups.length){list.append(el('div','时序（按腾讯文档官方先后）','subhead'));for(const group of chronoGroups){const gRows=rows.filter(x=>x.group===group);const dt=chronoDateOf(group);list.append(window.inlineStoryGroups(gRows,dt?`${dt} · ${group}`:group))}}d.append(list);unit.append(d)}decorate(unit,name,members);document.querySelector('#units').append(unit)}
 })().catch(e=>document.querySelector('#units').textContent='目录加载失败：'+e.message);
 const toggle=document.querySelector('#toggleDirectory');toggle?.addEventListener('click',()=>{const nodes=[document.querySelector('#units'),...document.querySelectorAll('#directory>.note')];const hidden=!nodes[0].hidden;nodes.forEach(x=>x.hidden=hidden);toggle.textContent=hidden?'展开导航':'收起导航';toggle.setAttribute('aria-expanded',String(!hidden))});
 document.querySelector('#directory').addEventListener('click',async event=>{const link=event.target.closest('a');if(!link)return;const url=new URL(link.href,location.href),group=url.searchParams.get('group');if(!group)return;event.preventDefault();await window.storyNavigationReady;const rows=window.navigationCatalog.filter(x=>x.group===group);if(!rows.length)return;const details=window.inlineStoryGroups(rows,link.textContent);link.replaceWith(details);details.open=true;});

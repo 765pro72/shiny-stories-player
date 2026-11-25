@@ -182,6 +182,10 @@ html[data-joytrans="1"] .ph-modal-backdrop {
   overflow: hidden;
   animation: phModalSpringIn 0.36s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
+.ph-modal.ph-modal--player {
+  width: min(1120px, 96vw);
+  max-height: min(94dvh, 920px);
+}
 .ph-modal::before {
   content: "";
   position: absolute;
@@ -921,6 +925,142 @@ html[data-joytrans="1"] .ph-modal-backdrop {
 .ph-toast-close:hover {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
+}
+
+/* Morning Modal Embedded Story Player */
+.ph-morning-player-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ph-morning-header--compact {
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 16px;
+  background: radial-gradient(circle at 12% 0%, rgba(251, 191, 36, 0.14), transparent 65%), rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(251, 191, 36, 0.28);
+}
+.ph-morning-header--compact .ph-morning-avatar {
+  width: 46px;
+  height: 46px;
+}
+.ph-morning-head-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+.ph-morning-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: min(60dvh, 560px);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #05070e;
+  border: 1px solid rgba(125, 211, 252, 0.25);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+}
+.ph-morning-stage:fullscreen,
+.ph-morning-stage:-webkit-full-screen {
+  max-height: none;
+  border-radius: 0;
+  border: none;
+  width: 100vw;
+  height: 100vh;
+}
+.ph-morning-stage iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  background: #05070e;
+}
+.ph-morning-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.68);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+.ph-morning-vol {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #cbd5e1;
+  padding: 0 6px;
+}
+.ph-morning-vol input[type="range"] {
+  width: 96px;
+  accent-color: #38bdf8;
+}
+.ph-morning-status {
+  margin: 0;
+  font-size: 12px;
+  color: #94a3b8;
+  padding: 0 4px;
+}
+.ph-morning-transcript-box {
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(15, 23, 42, 0.52);
+  padding: 8px 12px;
+}
+.ph-morning-transcript-box summary {
+  cursor: pointer;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #cbd5e1;
+}
+.ph-morning-transcript {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+.ph-morn-line {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+.ph-morn-line strong {
+  color: #7dd3fc;
+}
+.ph-morn-line small {
+  display: block;
+  margin-top: 2px;
+  color: #94a3b8;
+  font-size: 11px;
+}
+@media (max-width: 850px) {
+  .ph-modal.ph-modal--player {
+    width: 98vw;
+    max-height: 96dvh;
+    border-radius: 16px;
+  }
+  .ph-morning-stage {
+    max-height: 46dvh;
+    border-radius: 12px;
+  }
+  .ph-morning-head-actions {
+    width: 100%;
+    margin-left: 0;
+  }
+  .ph-morning-toolbar .ph-btn,
+  .ph-morning-toolbar .ph-select {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
 }
 
 /* Morning Modal Interactive Card */

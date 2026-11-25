@@ -135,14 +135,56 @@
     });
   }
 
+  const ARC_CANONICAL = [
+    { re: /^w\.?i\.?n\.?g\.?[編篇]?$/i, group: 'W.I.N.G.篇', label: 'W.I.N.G.篇 · 全偶像主线培育篇' },
+    { re: /^(ファン)?[感感谢謝]謝?祭[編篇]?$/i, group: 'ファン感謝祭篇', label: '粉丝感谢祭篇 · 全偶像主线培育篇' },
+    { re: /^g\.?r\.?a\.?d\.?[編篇]?$/i, group: 'G.R.A.D.篇', label: 'G.R.A.D.篇 · 全偶像主线培育篇' },
+    { re: /^landing\s*point[編篇]?$/i, group: 'Landing Point篇', label: 'Landing Point篇 · 全偶像主线培育篇' },
+    { re: /^s\.?t\.?e\.?p\.?[編篇]?$/i, group: 'S.T.E.P.篇', label: 'S.T.E.P.篇 · 全偶像主线培育篇' }
+  ];
+
+  function normGroupKey(s) {
+    return String(s || '')
+      .replace(/編/g, '篇')
+      .replace(/[·・•･]/g, '·')
+      .replace(/[―─—–-]/g, '-')
+      .replace(/[：:]/g, ':')
+      .replace(/[～~]/g, '~')
+      .replace(/\s+/g, '')
+      .toLowerCase();
+  }
+
+  function resolveTimelineLinks(row) {
+    const rawGroups = Array.isArray(row.groups) ? row.groups.filter(Boolean) : [];
+    if (!rawGroups.length) return [];
+    const arcHit = ARC_CANONICAL.find(a => a.re.test(String(row.title || '').trim()) || rawGroups.some(g => a.re.test(String(g).trim())));
+    if (arcHit) {
+      return [{ group: arcHit.group, label: arcHit.label }];
+    }
+    const seen = new Set();
+    const unique = [];
+    for (const g of rawGroups) {
+      const k = normGroupKey(g);
+      if (seen.has(k)) continue;
+      seen.add(k);
+      unique.push(g);
+    }
+    return unique.map(group => {
+      const sameAsTitle = normGroupKey(group) === normGroupKey(row.title);
+      const label = (unique.length > 1 && !sameAsTitle) ? `${row.title} ／ ${group}` : row.title;
+      return { group, label };
+    });
+  }
+
   function entries(rows) {
     const box = el('div', '', 'stories');
     for (const row of rows) {
       const item = el('div');
       item.append(el('small', row.date + ' · '));
-      if (row.groups.length) {
-        for (const group of row.groups) {
-          const link = el('a', row.title + (row.groups.length > 1 ? ' ／ ' + group : ''));
+      const links = resolveTimelineLinks(row);
+      if (links.length) {
+        for (const { group, label } of links) {
+          const link = el('a', label);
           link.href = '/guide.html?' + new URLSearchParams({ group }) + '#archive';
           link.dataset.timelineGroup = group;
           item.append(link, el('br'));

@@ -150,16 +150,22 @@
     });
   }
 
-  function openModal(sub, title) {
+  function openModal(sub, title, opts = {}) {
     ensureModalHost();
+    cleanupMorningPlayer();
     modalSubEl.textContent = sub;
     modalTitleEl.textContent = title;
     modalBodyEl.innerHTML = '';
+    const modalEl = backdropEl.querySelector('.ph-modal');
+    if (modalEl) modalEl.classList.toggle('ph-modal--player', Boolean(opts.widePlayer));
     backdropEl.hidden = false;
   }
 
   function closeModal() {
     stopMorningVoice();
+    cleanupMorningPlayer();
+    const modalEl = backdropEl?.querySelector('.ph-modal');
+    if (modalEl) modalEl.classList.remove('ph-modal--player');
     if (backdropEl) backdropEl.hidden = true;
   }
 
@@ -1048,8 +1054,9 @@
     setHomeFrameVisibility(true);
   }
 
-  // ── Feature #7: Morning Communication (朝コミュ) 3-Choice System ──
+  // ── Feature #7: Morning Communication (朝コミュ) Embedded Story Player ──
   let morningVoiceAudio = null;
+  let morningMsgHandler = null;
 
   function stopMorningVoice() {
     if (morningVoiceAudio) {
@@ -1060,6 +1067,20 @@
       morningVoiceAudio = null;
     }
     document.querySelectorAll('.ph-voice-btn.is-playing').forEach(b => b.classList.remove('is-playing'));
+  }
+
+  function cleanupMorningPlayer() {
+    if (morningMsgHandler) {
+      window.removeEventListener('message', morningMsgHandler);
+      morningMsgHandler = null;
+    }
+    const frame = document.getElementById('phMornFrame');
+    if (frame) {
+      try { frame.src = 'about:blank'; } catch {}
+    }
+    if (document.fullscreenElement) {
+      document.exitFullscreen().catch(() => {});
+    }
   }
 
   function playMorningVoice(url, btnEl) {
@@ -1080,11 +1101,11 @@
 
   async function openMorningGreetingModal(preloadedData = null) {
     stopMorningVoice();
-    openModal('283 MORNING COMMUNICATION', '☀️ 每日「晨间问候」朝コミュ · 3选1经典互动');
+    openModal('283 MORNING COMMUNICATION', '☀️ 每日「晨间问候」朝コミュ · 剧情互动剧场', { widePlayer: true });
     modalBodyEl.innerHTML = `
       <div style="text-align:center;padding:48px 20px;color:#94a3b8;">
         <div class="ph-spinner"></div>
-        <div style="margin-top:14px;font-size:14px;color:#cbd5e1;font-weight:600;">正在连通 283 事务所走廊，偶遇今日晨间偶像…</div>
+        <div style="margin-top:14px;font-size:14px;color:#cbd5e1;font-weight:600;">正在连通 283 事务所走廊，加载今日晨间互动舞台…</div>
       </div>
     `;
 
@@ -1099,7 +1120,7 @@
       }
     }
 
-    if (!data || !data.ok) {
+    if (!data || !data.ok || !data.key) {
       modalBodyEl.innerHTML = `<div class="ph-empty">${esc(data?.error || '未找到晨间剧本')}</div>`;
       return;
     }
@@ -1107,13 +1128,14 @@
     const todayStr = new Date().toISOString().slice(0, 10);
     const lastDate = localStorage.getItem('shiny.morningGreeting.lastDate') || '';
     let streak = parseInt(localStorage.getItem('shiny.morningGreeting.streak') || '0', 10);
+    let checkedToday = lastDate === todayStr;
 
-    const openingProducer = data.opening?.producer || '';
-    const openingLines = data.opening?.idolLines || [];
+    const savedLang = localStorage.getItem('shiny.lang') || 'zh';
+    const savedVol = Math.min(100, Math.max(0, parseInt(localStorage.getItem('shiny.volume') || '40', 10) || 40));
 
     modalBodyEl.innerHTML = `
-      <div class="ph-morning-card" id="phMornCard">
-        <div class="ph-morning-header">
+      <div class="ph-morning-player-shell" id="phMornCard">
+        <div class="ph-morning-header ph-morning-header--compact">
           <div class="ph-morning-avatar" id="phMornAvatar"></div>
           <div class="ph-morning-meta">
             <h3>
@@ -1121,187 +1143,156 @@
               <span class="ph-morning-badge">${esc(data.title || '朝コミュ')}</span>
             </h3>
             <div style="display:flex;gap:8px;align-items:center;margin-top:4px;flex-wrap:wrap;">
-              <span class="ph-morning-streak-badge" id="phMornStreakBadge">🔥 晨间连击 ${streak} 天</span>
-              <small style="color:#94a3b8;font-size:11px;">283 事务所早晨走廊 · 偶遇事件</small>
+              <span class="ph-morning-streak-badge" id="phMornStreakBadge">🔥 晨间连击 ${streak} 天${checkedToday ? ' (今日已打卡)' : ''}</span>
+              <small style="color:#94a3b8;font-size:11px;">直接点击舞台推进对话与 3 选 1 互动</small>
             </div>
+          </div>
+          <div class="ph-morning-head-actions">
+            <button type="button" class="ph-btn ghost" id="phMornFullscreen">⛶ 剧情全屏</button>
+            <button type="button" class="ph-btn ghost" id="phMornNextIdolBtn">🔄 换一位偶像</button>
+            <button type="button" class="ph-btn" id="phMornCheckinBtn">${checkedToday ? '✓ 今日已打卡' : '✓ 晨间打卡'}</button>
           </div>
         </div>
 
-        <div style="display:flex;flex-direction:column;gap:10px;">
-          ${openingProducer ? `
-            <div class="ph-bubble producer">
-              <div class="ph-bubble-speaker"><span>制作人</span></div>
-              <div class="ph-bubble-cn">${esc(openingProducer)}</div>
-            </div>
-          ` : ''}
-
-          ${openingLines.map((l, lIdx) => `
-            <div class="ph-bubble idol">
-              <div class="ph-bubble-speaker">
-                <span>${esc(l.speaker || data.idol)}</span>
-                ${l.voice ? `
-                  <button type="button" class="ph-voice-btn" data-voice="${esc(l.voice)}" id="phMornVoiceOpen_${lIdx}">
-                    <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-                    <span>播放语音</span>
-                  </button>
-                ` : ''}
-              </div>
-              ${l.text ? `<div class="ph-bubble-jp">${esc(l.text)}</div>` : ''}
-              <div class="ph-bubble-cn">${esc(l.trans || l.text)}</div>
-            </div>
-          `).join('')}
+        <div class="ph-morning-stage" id="phMornStage">
+          <iframe id="phMornFrame" title="晨间问候剧情播放器" allow="autoplay"></iframe>
         </div>
 
-        <div id="phMornInteractiveArea">
-          <div style="font-size:12.5px;font-weight:700;color:#fde047;margin-bottom:8px;display:flex;align-items:center;gap:6px;">
-            <span>✦ 制作人，请做出你的回应选择：</span>
-          </div>
-          <div class="ph-choice-list" id="phMornChoices">
-            ${data.choices.map((c, idx) => `
-              <button type="button" class="ph-choice-btn" data-choice-idx="${idx}">
-                <span class="ph-choice-tag">${['A', 'B', 'C'][idx]}</span>
-                <div class="ph-choice-content">
-                  <div class="ph-choice-cn">${esc(c.text)}</div>
-                  ${c.original && c.original !== c.text ? `<div class="ph-choice-jp">${esc(c.original)}</div>` : ''}
-                </div>
-              </button>
-            `).join('')}
-          </div>
+        <div class="ph-morning-toolbar">
+          <button type="button" class="ph-btn" id="phMornAdvance">下一句 →</button>
+          <button type="button" class="ph-btn ghost" id="phMornAuto">自动播放：关</button>
+          <select class="ph-select" id="phMornLang" aria-label="字幕语言">
+            <option value="zh"${savedLang === 'zh' ? ' selected' : ''}>中文</option>
+            <option value="both"${savedLang === 'both' ? ' selected' : ''}>中日双语</option>
+            <option value="jp"${savedLang === 'jp' ? ' selected' : ''}>日文</option>
+          </select>
+          <label class="ph-morning-vol">
+            <span>音量</span>
+            <input id="phMornVolume" type="range" min="0" max="100" value="${savedVol}">
+          </label>
+          <button type="button" class="ph-btn ghost" id="phMornRestart">从头播放</button>
+          <button type="button" class="ph-btn ghost" id="phMornOpenGuide">剧情馆打开 ↗</button>
         </div>
 
-        <div id="phMornResultArea" hidden style="display:flex;flex-direction:column;gap:12px;"></div>
+        <p id="phMornStatus" class="ph-morning-status">正在载入晨间剧情舞台与语音…</p>
+
+        <details class="ph-morning-transcript-box">
+          <summary>对话记录与翻译信息</summary>
+          <div id="phMornTranscript" class="ph-morning-transcript"></div>
+        </details>
       </div>
     `;
 
-    // Mount Avatar
     const avatarEl = document.getElementById('phMornAvatar');
     if (avatarEl && window.CharacterPortraits?.mount) {
       window.CharacterPortraits.mount(avatarEl, data.idol);
     }
 
-    // Bind Opening Voice Buttons
-    modalBodyEl.querySelectorAll('.ph-voice-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        playMorningVoice(btn.dataset.voice, btn);
-      });
-    });
+    const frame = document.getElementById('phMornFrame');
+    const stageEl = document.getElementById('phMornStage');
+    const statusEl = document.getElementById('phMornStatus');
+    const autoBtn = document.getElementById('phMornAuto');
+    const langSel = document.getElementById('phMornLang');
+    const volInput = document.getElementById('phMornVolume');
+    const transcriptEl = document.getElementById('phMornTranscript');
+    const checkinBtn = document.getElementById('phMornCheckinBtn');
 
-    // Autoplay first idol opening line if voice exists
-    const firstVoiceBtn = document.getElementById('phMornVoiceOpen_0');
-    if (firstVoiceBtn) {
-      setTimeout(() => firstVoiceBtn.click(), 300);
+    function markMorningCheckedIn() {
+      const curToday = new Date().toISOString().slice(0, 10);
+      const curLast = localStorage.getItem('shiny.morningGreeting.lastDate') || '';
+      if (curLast !== curToday) {
+        streak += 1;
+        checkedToday = true;
+        localStorage.setItem('shiny.morningGreeting.lastDate', curToday);
+        localStorage.setItem('shiny.morningGreeting.streak', String(streak));
+        const streakBadge = document.getElementById('phMornStreakBadge');
+        if (streakBadge) streakBadge.textContent = `🔥 晨间连击 ${streak} 天 (今日已打卡!)`;
+        if (checkinBtn) checkinBtn.textContent = '✓ 今日已打卡';
+        try {
+          const mhBadge = document.getElementById('mhMorningBadge');
+          if (mhBadge) {
+            mhBadge.textContent = `已打卡 🔥 ${streak}天`;
+            mhBadge.style.background = 'rgba(34, 197, 94, 0.25)';
+            mhBadge.style.color = '#86efac';
+          }
+        } catch {}
+      }
     }
 
-    // Choice Selection Handlers
-    const interactiveArea = document.getElementById('phMornInteractiveArea');
-    const resultArea = document.getElementById('phMornResultArea');
+    function sendToPlayer(type, value) {
+      try {
+        frame?.contentWindow?.postMessage({ type, value }, location.origin);
+      } catch {}
+    }
 
-    modalBodyEl.querySelectorAll('.ph-choice-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const cIdx = parseInt(btn.dataset.choiceIdx, 10);
-        const choice = data.choices[cIdx];
-        if (!choice) return;
+    function loadMorningStory() {
+      if (transcriptEl) transcriptEl.replaceChildren();
+      if (statusEl) statusEl.textContent = '正在载入晨间剧情舞台与语音…';
+      if (autoBtn) autoBtn.textContent = '自动播放：关';
+      const lang = langSel?.value || 'zh';
+      frame.src = '/player/main.html?key=' + encodeURIComponent(data.key) + '&lang=' + encodeURIComponent(lang);
+    }
 
-        // Hide choices
-        if (interactiveArea) interactiveArea.hidden = true;
-
-        // Update streak if not completed today
-        const curToday = new Date().toISOString().slice(0, 10);
-        const curLast = localStorage.getItem('shiny.morningGreeting.lastDate') || '';
-        if (curLast !== curToday) {
-          streak += 1;
-          localStorage.setItem('shiny.morningGreeting.lastDate', curToday);
-          localStorage.setItem('shiny.morningGreeting.streak', String(streak));
-          const streakBadge = document.getElementById('phMornStreakBadge');
-          if (streakBadge) streakBadge.textContent = `🔥 晨间连击 ${streak} 天 (今日已打卡!)`;
-          try {
-            const mhBadge = document.getElementById('mhMorningBadge');
-            if (mhBadge) {
-              mhBadge.textContent = `已打卡 🔥 ${streak}天`;
-              mhBadge.style.background = 'rgba(34, 197, 94, 0.25)';
-              mhBadge.style.color = '#86efac';
-            }
-          } catch {}
+    morningMsgHandler = (e) => {
+      if (e.origin !== location.origin || !frame || e.source !== frame.contentWindow) return;
+      const d = e.data;
+      if (!d || typeof d !== 'object') return;
+      if (d.type === 'ready') {
+        sendToPlayer('settings', { overrides: {}, volume: Number(volInput?.value || 40) / 100 });
+      } else if (d.type === 'status') {
+        if (statusEl) statusEl.textContent = d.value || '';
+        if (typeof d.value === 'string' && (d.value.includes('播放结束') || d.value.includes('已结束') || d.value.includes('结束'))) {
+          markMorningCheckedIn();
         }
+      } else if (d.type === 'auto') {
+        if (autoBtn) autoBtn.textContent = '自动播放：' + (d.value ? '开' : '关');
+      } else if (d.type === 'lines' && Array.isArray(d.value) && transcriptEl) {
+        transcriptEl.innerHTML = d.value.map(r => `
+          <div class="ph-morn-line">
+            <strong>${esc(r.speaker || '')}：</strong>
+            <div>${esc(r.translation || ('【待翻译】' + (r.original || '')))}</div>
+            ${r.original ? `<small>${esc(r.original)}</small>` : ''}
+          </div>
+        `).join('');
+      } else if (d.type === 'close') {
+        closeModal();
+      }
+    };
+    window.addEventListener('message', morningMsgHandler);
 
-        const gradeClass = choice.grade === 'Perfect' ? 'is-perfect' : (choice.grade === 'Good' ? 'is-good' : 'is-normal');
-        const gradeTitle = choice.grade === 'Perfect' ? '🌟 PERFECT COMMUNICATION 🌟'
-          : (choice.grade === 'Good' ? '✨ GOOD COMMUNICATION ✨' : '💬 NORMAL COMMUNICATION 💬');
-        const gradeDesc = choice.grade === 'Perfect' ? '亲密度大幅上升 · 心意相通，完美的一天开始了！'
-          : (choice.grade === 'Good' ? '交流顺畅 · 元气满满，偶像带着微笑投入了排练！' : '日常交流 · 虽然有点微妙，但更加了解了彼此！');
-
-        if (resultArea) {
-          resultArea.hidden = false;
-          resultArea.innerHTML = `
-            <div class="ph-bubble producer">
-              <div class="ph-bubble-speaker"><span>制作人的回应</span></div>
-              <div class="ph-bubble-cn" style="color:#7dd3fc;font-weight:700;">${esc(choice.text)}</div>
-            </div>
-
-            <div class="ph-grade-banner ${gradeClass}">
-              <div>
-                <div class="ph-grade-title">${gradeTitle}</div>
-                <div class="ph-grade-sub">${gradeDesc}</div>
-              </div>
-              <span style="font-size:22px;">${choice.grade === 'Perfect' ? '💖' : (choice.grade === 'Good' ? '🌸' : '💭')}</span>
-            </div>
-
-            ${choice.idolLines.map((l, rIdx) => `
-              <div class="ph-bubble idol" style="animation: phGradePop 0.35s ease;">
-                <div class="ph-bubble-speaker">
-                  <span>${esc(l.speaker || data.idol)}</span>
-                  ${l.voice ? `
-                    <button type="button" class="ph-voice-btn" data-voice="${esc(l.voice)}" id="phMornVoiceReact_${rIdx}">
-                      <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-                      <span>播放语音</span>
-                    </button>
-                  ` : ''}
-                </div>
-                ${l.text ? `<div class="ph-bubble-jp">${esc(l.text)}</div>` : ''}
-                <div class="ph-bubble-cn">${esc(l.trans || l.text)}</div>
-              </div>
-            `).join('')}
-
-            ${choice.producerComment ? `
-              <div class="ph-bubble producer">
-                <div class="ph-bubble-speaker"><span>💭 制作人的感想</span></div>
-                <div class="ph-bubble-cn" style="color:#94a3b8;font-style:italic;">${esc(choice.producerComment)}</div>
-              </div>
-            ` : ''}
-
-            <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:6px;">
-              <button type="button" class="ph-btn ghost" id="phMornReplayStoryBtn">🎬 在播放器中重温该剧 ↗</button>
-              <button type="button" class="ph-btn ghost" id="phMornNextIdolBtn">🔄 偶遇另一位偶像</button>
-              <button type="button" class="ph-btn" id="phMornFinishBtn">✓ 完成今日晨间问候</button>
-            </div>
-          `;
-
-          // Bind reaction voice buttons
-          resultArea.querySelectorAll('.ph-voice-btn').forEach(vBtn => {
-            vBtn.addEventListener('click', () => {
-              playMorningVoice(vBtn.dataset.voice, vBtn);
-            });
-          });
-
-          // Autoplay reaction voice
-          const reactVoiceBtn = document.getElementById('phMornVoiceReact_0');
-          if (reactVoiceBtn) {
-            setTimeout(() => reactVoiceBtn.click(), 300);
-          }
-
-          document.getElementById('phMornReplayStoryBtn')?.addEventListener('click', () => {
-            closeModal();
-            navigateStory(data.key);
-          });
-          document.getElementById('phMornNextIdolBtn')?.addEventListener('click', () => {
-            openMorningGreetingModal();
-          });
-          document.getElementById('phMornFinishBtn')?.addEventListener('click', () => {
-            closeModal();
-          });
-        }
-      });
+    document.getElementById('phMornAdvance')?.addEventListener('click', () => sendToPlayer('next'));
+    autoBtn?.addEventListener('click', () => sendToPlayer('auto'));
+    langSel?.addEventListener('change', () => {
+      localStorage.setItem('shiny.lang', langSel.value);
+      sendToPlayer('lang', langSel.value);
     });
+    volInput?.addEventListener('input', () => {
+      localStorage.setItem('shiny.volume', volInput.value);
+      sendToPlayer('volume', Number(volInput.value) / 100);
+    });
+    document.getElementById('phMornRestart')?.addEventListener('click', loadMorningStory);
+    document.getElementById('phMornOpenGuide')?.addEventListener('click', () => {
+      const k = data.key;
+      closeModal();
+      navigateStory(k);
+    });
+    document.getElementById('phMornNextIdolBtn')?.addEventListener('click', () => {
+      openMorningGreetingModal();
+    });
+    checkinBtn?.addEventListener('click', () => {
+      markMorningCheckedIn();
+      if (checkinBtn) checkinBtn.textContent = '✓ 今日已打卡';
+    });
+    document.getElementById('phMornFullscreen')?.addEventListener('click', () => {
+      if (!stageEl) return;
+      if (document.fullscreenElement) {
+        document.exitFullscreen().catch(() => {});
+      } else {
+        (stageEl.requestFullscreen || stageEl.webkitRequestFullscreen)?.call(stageEl)?.catch?.(() => {});
+      }
+    });
+
+    loadMorningStory();
   }
 
   let morningToastEl = null;
@@ -1591,6 +1582,27 @@
     loadIdol(curIdol);
   }
 
+  function openPack4kModal() {
+    openModal('283 4K ULTRA HD ASSET PACK', '💎 4K 超清画质包 · 一键加载与画质切换');
+    modalBodyEl.innerHTML = `
+      <div class="ph-morning-card" id="phPack4kBox" style="gap:14px;">
+        <div style="font-size:15px;font-weight:800;color:#fde047;" data-p4k-status>正在检测 4K 画质包状态…</div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <button type="button" class="ph-btn" data-p4k-archive>📦 一键加载 4K 包（.zip / .7z）</button>
+          <button type="button" class="ph-btn ghost" data-p4k-folder>📁 直接挂载 cache-4k 文件夹</button>
+          <button type="button" class="ph-btn ghost" data-p4k-toggle hidden aria-pressed="true">🖼️ 切换为原图</button>
+        </div>
+        <p style="margin:0;font-size:12.5px;line-height:1.65;color:#cbd5e1;" data-p4k-hint>
+          加载后默认使用 4K 超清静态卡面与 2x Spine 动态模型，可随时一键切换原图并自动刷新画面。
+        </p>
+      </div>
+    `;
+    const box = document.getElementById('phPack4kBox');
+    if (box && window.Pack4kUI?.bindContainer) {
+      window.Pack4kUI.bindContainer(box);
+    }
+  }
+
   function mountMoreHub() {
     const utils = document.querySelector('.shell-utils');
     if (!utils || document.getElementById('btnMoreHub')) return;
@@ -1646,6 +1658,10 @@
           <span class="mh-txt"><strong>透明桌面伙伴 · AI / 记事本 / 语音</strong><small>置顶悬浮伙伴、整点报时与语音一键接入</small></span>
           <span class="mh-badge">桌面</span>
         </button>
+        <button type="button" class="mh-item" data-act="pack4k">
+          <span class="mh-ico">💎</span>
+          <span class="mh-txt"><strong>4K 超清画质包（一键加载 / 切换原图）</strong><small id="mhPack4kSub">静态 4K 卡面 + Spine 动态模型一键挂载与切换</small></span>
+        </button>
         <button type="button" class="mh-item" data-act="stagefx">
           <span class="mh-ico">✨</span>
           <span class="mh-txt"><strong>切换舞台灯光秀强度</strong><small id="mhStageFxSub">当前：全力拉满（点击切换柔光）</small></span>
@@ -1696,6 +1712,7 @@
         else if (act === 'resume') openProducerResume();
         else if (act === 'ambient') openAmbientFrame();
         else if (act === 'companion') document.getElementById('btnCompanion')?.click();
+        else if (act === 'pack4k') openPack4kModal();
         else if (act === 'stagefx') document.getElementById('btnStageFx')?.click();
       });
     });
