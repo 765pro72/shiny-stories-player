@@ -138,6 +138,13 @@
   window.addEventListener('keydown', e => {
     if (ambientEl && !ambientEl.hidden) {
       if (e.key === 'Escape') {
+        const ip = document.getElementById('islandPopover');
+        if (ip?.classList.contains('is-open')) {
+          e.preventDefault();
+          e.stopPropagation();
+          window.__shinyCloseMusicCapsule?.();
+          return;
+        }
         e.preventDefault();
         e.stopPropagation();
         closeAmbientFrame();
@@ -931,7 +938,7 @@
           </div>
         </header>
         <footer class="ph-af-bottom">
-          <div class="ph-af-vinyl-card" id="phAfVinylCard">
+          <div class="ph-af-vinyl-card" id="phAfVinylCard" role="button" tabindex="0" title="点击展开音乐胶囊（歌词 / 进度 / 列表 / 音质）">
             <img class="ph-af-disc" id="phAfDisc" src="/app-icon.png" alt="">
             <div style="min-width:0;">
               <small style="color:#7dd3fc;font-weight:700;font-size:10.5px;">NOW SPINNING · 283 JUKEBOX</small>
@@ -958,13 +965,30 @@
         ambientEl?.classList.remove('is-zen');
         clearTimeout(idleFadeTimer);
         idleFadeTimer = setTimeout(() => {
-          if (ambientEl && !ambientEl.hidden) {
+          const capOpen = document.getElementById('islandPopover')?.classList.contains('is-open');
+          if (ambientEl && !ambientEl.hidden && !capOpen) {
             ambientEl.classList.add('is-zen');
           }
         }, 3600);
       };
       ambientEl.addEventListener('mousemove', resetIdleTimer);
       ambientEl.addEventListener('pointerdown', resetIdleTimer);
+
+      const vinylCard = document.getElementById('phAfVinylCard');
+      vinylCard?.addEventListener('click', e => {
+        if (e.target.closest('#phAfPlayBtn') || e.target.closest('#phAfNextSongBtn')) return;
+        e.stopPropagation();
+        resetIdleTimer();
+        window.__shinyToggleMusicCapsule?.();
+      });
+      vinylCard?.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          e.stopPropagation();
+          resetIdleTimer();
+          window.__shinyToggleMusicCapsule?.();
+        }
+      });
 
       const moreBtn = document.getElementById('phAfMoreBtn');
       const moreMenu = document.getElementById('phAfMoreMenu');
@@ -1073,6 +1097,7 @@
     };
 
     ambientEl.hidden = false;
+    document.body.classList.add('is-ambient-open');
     try { ambientEl.focus({ preventScroll: true }); } catch {}
     cycleArt();
     tick();
@@ -1091,6 +1116,8 @@
     if (m) m.hidden = true;
     if (b) b.setAttribute('aria-expanded', 'false');
     if (ambientEl) ambientEl.hidden = true;
+    document.body.classList.remove('is-ambient-open');
+    try { window.__shinyCloseMusicCapsule?.(); } catch {}
     if (document.fullscreenElement) {
       document.exitFullscreen().catch(() => {});
     }

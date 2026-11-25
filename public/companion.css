@@ -594,6 +594,49 @@ html, body {
 }
 
 /* Local TTS Form */
+.cmp-tts-pack-box {
+  padding: 9px 10px;
+  border-radius: 12px;
+  background: rgba(14, 165, 233, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cmp-tts-pack-head {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cmp-tts-pack-head strong {
+  font-size: 11.5px;
+  color: #e0f2fe;
+}
+
+.cmp-tts-pack-head small {
+  font-size: 10.5px;
+  line-height: 1.4;
+  color: #bae6fd;
+}
+
+.cmp-tts-pack-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.cmp-tts-pack-grid button {
+  height: 28px;
+  font-size: 10.5px;
+  padding: 0 7px;
+  border-radius: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .cmp-tts-presets {
   display: flex;
   flex-wrap: wrap;

@@ -10,7 +10,7 @@
    const original=norm(text),match=byId.get(String(t.id)),tr=own(overrides,original)||own(overrides,text)||norm(match?.find(r=>norm(r.text)===original)?.trans)||(!match||match.length!==1?'':norm(match[0].trans))||byText.get(original)||own(common,original)||'';
    const display=language==='jp'?original:language==='both'&&tr?tr+'\n'+original:tr||original;
    if(t.text)e.text=display;else e.select=display;
-   rows.push({id:String(t.id||index),speaker:speakerLabel(names[t.speaker]||t.speaker||'选项'),original,translation:tr,previous:norm(raw.slice(0,index).findLast(x=>x.text)?.text),next:norm(raw.slice(index+1).find(x=>x.text)?.text)});
+   rows.push({id:String(t.id||index),trackIndex:index,speaker:speakerLabel(names[t.speaker]||t.speaker||'选项'),original,translation:tr,previous:norm(raw.slice(0,index).findLast(x=>x.text)?.text),next:norm(raw.slice(index+1).find(x=>x.text)?.text)});
    return e;
   });return{tracks,rows};
  }

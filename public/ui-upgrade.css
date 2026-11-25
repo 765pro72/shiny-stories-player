@@ -2335,4 +2335,20 @@ html[data-theme="dark"] audio::-webkit-media-controls-mute-button {
   filter: invert(1) hue-rotate(180deg) brightness(1.2) !important;
 }
 
+/* ── Bottom Toolbar Branch Inspector Button ── */
+#btnBranchInspector.has-branches {
+  border-color: rgba(16, 185, 129, 0.55) !important;
+  background: rgba(16, 185, 129, 0.14) !important;
+  color: #065f46 !important;
+}
+html[data-theme="dark"] #btnBranchInspector.has-branches {
+  border-color: rgba(52, 211, 153, 0.52) !important;
+  background: rgba(15, 42, 46, 0.85) !important;
+  color: #a7f3d0 !important;
+}
+#btnBranchInspector.pulse-choice {
+  border-color: #10b981 !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.28) !important;
+}
+
 

@@ -9,6 +9,8 @@
   const esc = (s) => String(s || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const cleanText = (s) => String(s || '').replace(/\\n|\r\n|\r/g, '\n').trim();
 
+  const isEmbedded = window.self !== window.top;
+
   let triggerBtn = null;
   let backdropEl = null;
   let drawerTitleEl = null;
@@ -21,6 +23,7 @@
   let auditionAudio = null;
   let wasPlayingBeforeOpen = false;
   let pollTimer = 0;
+  let lastChoiceActive = null;
 
   function stopAudition() {
     if (auditionAudio) {
@@ -196,6 +199,7 @@
     triggerBtn.className = 'bi-trigger';
     triggerBtn.title = '查看剧情分支对比与台词大纲';
     triggerBtn.innerHTML = '<span>📋</span><span>剧本大纲</span>';
+    if (isEmbedded) triggerBtn.hidden = true;
     triggerBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       openDrawer();
@@ -249,13 +253,22 @@
   function updateTriggerBadge() {
     ensureUI();
     const gCount = parsed.groups.length;
+    const totalOpts = parsed.groups.reduce((s, g) => s + g.options.length, 0);
     if (gCount > 0) {
       triggerBtn.classList.add('has-branches');
-      const totalOpts = parsed.groups.reduce((s, g) => s + g.options.length, 0);
       triggerBtn.innerHTML = `<span>🌳</span><span>分支透视</span><span class="bi-badge">${gCount}组·${totalOpts}项</span>`;
     } else {
       triggerBtn.classList.remove('has-branches');
       triggerBtn.innerHTML = `<span>📋</span><span>剧本大纲</span>`;
+    }
+    if (isEmbedded) {
+      triggerBtn.hidden = true;
+      try {
+        parent.postMessage({
+          type: 'branchInfo',
+          value: { hasBranches: gCount > 0, groupCount: gCount, optionCount: totalOpts }
+        }, location.origin);
+      } catch {}
     }
   }
 
@@ -425,11 +438,20 @@
 
   window.addEventListener('scenario-tracks-ready', onScenarioReady);
 
+  window.addEventListener('message', (e) => {
+    if (e.origin !== location.origin || e.source !== parent) return;
+    if (e.data?.type === 'openBranchInspector') openDrawer();
+  });
+
   // Lightweight watcher to pulse the trigger pill when player reaches a choice screen
   pollTimer = setInterval(() => {
     if (!triggerBtn || document.hidden || !parsed.groups.length) return;
     const active = !!window.ScenarioBridge?.player?._selectList?.active;
     triggerBtn.classList.toggle('pulse-choice', active);
+    if (isEmbedded && active !== lastChoiceActive) {
+      lastChoiceActive = active;
+      try { parent.postMessage({ type: 'branchChoiceActive', value: active }, location.origin); } catch {}
+    }
   }, 600);
 
   window.addEventListener('pagehide', () => {

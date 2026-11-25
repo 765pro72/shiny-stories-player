@@ -825,6 +825,12 @@ html[data-android="1"] .ph-af-more-menu {
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(18px);
   max-width: min(580px, 92vw);
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.18s ease, box-shadow 0.2s ease;
+}
+.ph-af-vinyl-card:hover {
+  border-color: rgba(125, 211, 252, 0.55);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.65), 0 0 22px rgba(56, 189, 248, 0.2);
 }
 .ph-af-disc {
   width: 60px;

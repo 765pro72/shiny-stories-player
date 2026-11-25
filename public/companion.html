@@ -122,6 +122,32 @@
         <button type="button" class="cmp-drawer-close" data-close-drawer>×</button>
       </div>
 
+      <div class="cmp-tts-pack-box" id="cmpTtsPackBox">
+        <div class="cmp-tts-pack-head">
+          <strong>🎙️ 283 全员 30 声线一键部署（GPT-SoVITS v4）</strong>
+          <small id="cmpTtsPackStatus">正在检测本地 30 声线整合包…</small>
+        </div>
+        <div class="cmp-tts-pack-grid">
+          <button type="button" class="cmp-primary-btn" id="btnTtsPackArchive">📦 一键部署全部声音</button>
+          <button type="button" class="cmp-ghost-btn" id="btnTtsPackFolder">📁 挂载语音文件夹</button>
+          <button type="button" class="cmp-ghost-btn" id="btnTtsRuntimePick">⚙ 指定 GPT-SoVITS 目录</button>
+          <button type="button" class="cmp-ghost-btn" id="btnTtsRuntimeLaunch">🚀 启动推理引擎</button>
+        </div>
+        <div class="cmp-field-row" style="margin-top:6px;">
+          <label class="cmp-field">
+            <span>语音模式</span>
+            <select id="ttsModeSelect">
+              <option value="gptsovits">283 全员 v4 包 (GPT-SoVITS)</option>
+              <option value="openai">外部兼容接口 (Irodori / OpenAI)</option>
+            </select>
+          </label>
+          <label class="cmp-field">
+            <span>GPT-SoVITS 服务地址</span>
+            <input type="url" id="ttsGptSovitsUrl" value="http://127.0.0.1:9880" placeholder="http://127.0.0.1:9880">
+          </label>
+        </div>
+      </div>
+
       <div class="cmp-tts-presets">
         <button type="button" class="cmp-preset-chip" data-url="http://127.0.0.1:8088" data-voice="nichika">SHHis · 日花 (8088)</button>
         <button type="button" class="cmp-preset-chip" data-url="http://127.0.0.1:8088" data-voice="mikoto">SHHis · 美琴 (8088)</button>

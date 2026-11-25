@@ -16,11 +16,16 @@
     rain: '雨天'
   };
 
+  const p4kRev = (() => {
+    try { return localStorage.getItem('shiny.pack4kRev') || ''; } catch { return ''; }
+  })();
+  const p4kQ = p4kRev ? '?p4k=' + encodeURIComponent(p4kRev) : '';
+
   const BG_URLS = {
-    day: "url('home-assets/office.jpg')",
-    evening: "url('home-assets/office-evening.jpg')",
-    night: "url('home-assets/office-night.jpg')",
-    rain: "url('home-assets/office-rain.jpg')"
+    day: `url('home-assets/office.jpg${p4kQ}')`,
+    evening: `url('home-assets/office-evening.jpg${p4kQ}')`,
+    night: `url('home-assets/office-night.jpg${p4kQ}')`,
+    rain: `url('home-assets/office-rain.jpg${p4kQ}')`
   };
 
   let userMode = 'auto';
@@ -306,10 +311,10 @@
     // so day <-> evening <-> night <-> rain crossfades have zero decode stutter!
     const preloadOfficeBgs = () => {
       for (const src of [
-        'home-assets/office.jpg',
-        'home-assets/office-evening.jpg',
-        'home-assets/office-night.jpg',
-        'home-assets/office-rain.jpg'
+        `home-assets/office.jpg${p4kQ}`,
+        `home-assets/office-evening.jpg${p4kQ}`,
+        `home-assets/office-night.jpg${p4kQ}`,
+        `home-assets/office-rain.jpg${p4kQ}`
       ]) {
         const img = new Image();
         img.decoding = 'async';

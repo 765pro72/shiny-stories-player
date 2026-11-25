@@ -1036,6 +1036,7 @@
   }
 
   function openIslandPopover() {
+    lastPopToggleTime = Date.now();
     // Close weather popover if open
     const envPop = $('#envPopover');
     if (envPop && !envPop.hidden) {
@@ -1059,6 +1060,14 @@
     elIslandPopover.setAttribute('aria-hidden', 'true');
     syncPopBackdrop();
   }
+
+  window.__shinyToggleMusicCapsule = () => {
+    lastPopToggleTime = Date.now();
+    if (islandPopoverOpen || elIslandPopover?.classList.contains('is-open')) closeIslandPopover();
+    else openIslandPopover();
+    return islandPopoverOpen;
+  };
+  window.__shinyCloseMusicCapsule = () => closeIslandPopover();
 
   async function withMusicAPI(fn) {
     let entry = frames.get('music.html');
@@ -2353,11 +2362,13 @@
     (async () => {
       try {
         // 1. Preload all 4 official 283 office backgrounds immediately so day/night switch never flashes
+        const p4kRev = (() => { try { return localStorage.getItem('shiny.pack4kRev') || ''; } catch { return ''; } })();
+        const p4kQ = p4kRev ? '?p4k=' + encodeURIComponent(p4kRev) : '';
         for (const src of [
-          'home-assets/office.jpg',
-          'home-assets/office-evening.jpg',
-          'home-assets/office-night.jpg',
-          'home-assets/office-rain.jpg'
+          `home-assets/office.jpg${p4kQ}`,
+          `home-assets/office-evening.jpg${p4kQ}`,
+          `home-assets/office-night.jpg${p4kQ}`,
+          `home-assets/office-rain.jpg${p4kQ}`
         ]) {
           const img = new Image();
           img.decoding = 'async';

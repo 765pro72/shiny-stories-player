@@ -33,7 +33,7 @@ function request(input){
 }
 async function readJSON(req){let size=0;const parts=[];for await(const p of req){if((size+=p.length)>128*1024)throw Error('配音请求过大');parts.push(p)}return JSON.parse(Buffer.concat(parts).toString('utf8'))}
 function createStoryVoiceService(options={}){
- const fetcher=options.fetch||globalThis.fetch;let running=0,catalog=null;
+ const fetcher=options.fetch||globalThis.fetch,packTts=options.packTts||null;let running=0,catalog=null;
  return async(req,res,url)=>{
   if(!url.pathname.startsWith('/api/story-voice/'))return false;
   let controller,timer,counted=false,key='';
@@ -43,12 +43,25 @@ function createStoryVoiceService(options={}){
    if(url.pathname==='/api/story-voice/catalog'&&req.method==='GET'){
     if(!catalog&&!url.searchParams.has('refresh')){catalog=require('./data/story-voice-profiles.json').profiles}
     if(!catalog||url.searchParams.has('refresh')){const r=await fetcher(catalogURL,{signal:AbortSignal.timeout(25000),redirect:'error'});if(!r.ok)throw Error('读取参考仓库失败（HTTP '+r.status+'），可手动填写音色 ID');const text=await r.text();if(text.length>500000)throw Error('角色配置过大');catalog=profiles(text)}
-    json(200,{source:sourceURL,configuration:catalogURL,license:'AGPL-3.0-or-later（上游仓库）',profiles:catalog});return true;
+    const localPack=packTts?await packTts.getStatus(url.searchParams.get('probe')==='1'):null;
+    json(200,{source:sourceURL,configuration:catalogURL,license:'AGPL-3.0-or-later（上游仓库）',profiles:catalog,localPack});return true;
    }
    if(url.pathname!=='/api/story-voice/generate'||req.method!=='POST'){json(404,{error:'配音接口不存在'});return true}
    if(!String(req.headers['content-type']).startsWith('application/json'))throw Error('请使用 JSON 请求');
    if(running>=2)throw Error('已有配音正在进行，请稍后重试');
-   const input=await readJSON(req);key=String(input.connection?.apiKey||'');const q=request(input);controller=new AbortController();timer=setTimeout(()=>controller.abort(Error('配音服务超时，可重试；原有配音保留')),180000);res.on('close',()=>controller.abort());running++;counted=true;
+   const input=await readJSON(req);key=String(input.connection?.apiKey||'');
+   if(input.connection?.provider==='gptsovits'){
+    if(!packTts)throw Error('本机语音包服务未就绪');
+    speech.validate(input.speech);
+    const text=input.speech?.language==='segments'?speech.compile(input.speech,'openai'):String(input.text||'').trim();
+    const voice=String(input.voice||'').trim();
+    if(!text||text.length>10000)throw Error('每次配音请输入 1–10000 字');
+    if(!voice||voice.length>200||/[\r\n]/.test(voice))throw Error('请选择偶像声线或填写声线 ID');
+    controller=new AbortController();timer=setTimeout(()=>controller.abort(Error('配音服务超时，可重试；原有配音保留')),180000);res.on('close',()=>controller.abort());running++;counted=true;
+    const out=await packTts.synthesize({voiceId:voice,text,textLang:input.textLang||'auto',speed:input.speed,apiUrl:input.connection?.baseURL,signal:controller.signal});
+    res.writeHead(200,{'Content-Type':out.contentType||'audio/wav','Content-Length':out.buffer.length,'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});res.end(out.buffer);return true;
+   }
+   const q=request(input);controller=new AbortController();timer=setTimeout(()=>controller.abort(Error('配音服务超时，可重试；原有配音保留')),180000);res.on('close',()=>controller.abort());running++;counted=true;
    const r=await fetcher(q.url,{...q.options,signal:controller.signal});
    if(!r.ok){let detail='';try{const v=await r.json();detail=v.error?.message||v.message||v.detail||''}catch{}throw Error('配音失败（HTTP '+r.status+'）'+(detail?'：'+String(detail).slice(0,300):''))}
    const type=r.headers.get('content-type')||'';if(/json|text\/|html/i.test(type))throw Error('语音服务未返回音频，请检查模型、音色和余额');

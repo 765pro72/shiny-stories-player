@@ -32,8 +32,65 @@
  });
   window.StoryText={exportStory};
 
-  window.mountTranscriptLines = function(div, lines, storyKey, onUpdated) {
+  function ensureTranscriptJumpStyles() {
+    if (document.getElementById('transcriptJumpStyles')) return;
+    const style = document.createElement('style');
+    style.id = 'transcriptJumpStyles';
+    style.textContent = `
+      .transcript-line-head {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .transcript-line-jump-btn {
+        margin-left: auto;
+        padding: 3px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(14, 165, 233, 0.38);
+        background: rgba(14, 165, 233, 0.12);
+        color: #0369a1;
+        font-size: 11.5px;
+        font-weight: 600;
+        line-height: 1.4;
+        cursor: pointer;
+        transition: background 0.16s ease, border-color 0.16s ease, color 0.16s ease;
+        touch-action: manipulation;
+      }
+      .transcript-line-jump-btn:hover {
+        background: #0284c7;
+        border-color: #0284c7;
+        color: #fff;
+      }
+      html[data-theme="dark"] .transcript-line-jump-btn {
+        border-color: rgba(56, 189, 248, 0.36);
+        background: rgba(56, 189, 248, 0.15);
+        color: #7dd3fc;
+      }
+      html[data-theme="dark"] .transcript-line-jump-btn:hover {
+        background: rgba(56, 189, 248, 0.32);
+        border-color: rgba(56, 189, 248, 0.78);
+        color: #fff;
+      }
+      .line.has-jump .transcript-line-text {
+        cursor: pointer;
+        border-radius: 6px;
+        transition: background 0.16s ease;
+      }
+      .line.has-jump .transcript-line-text:hover {
+        background: rgba(56, 189, 248, 0.1);
+      }
+      .line.is-jumped {
+        outline: 1.5px solid rgba(56, 189, 248, 0.65);
+        background: rgba(56, 189, 248, 0.12) !important;
+        transition: background 0.25s ease;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  window.mountTranscriptLines = function(div, lines, storyKey, onUpdated, onJump) {
     if (!div) return;
+    ensureTranscriptJumpStyles();
     div.replaceChildren();
     const allOverrides = () => {
       try { return JSON.parse(localStorage.getItem('overrides') || '{}'); }
@@ -44,8 +101,9 @@
       if (r.defaultTranslation === undefined) {
         r.defaultTranslation = r.translation || '';
       }
+      const canJump = typeof onJump === 'function' && Number.isInteger(r.trackIndex);
       const row = document.createElement('div');
-      row.className = 'line';
+      row.className = 'line' + (canJump ? ' has-jump' : '');
 
       const head = document.createElement('div');
       head.className = 'transcript-line-head';
@@ -61,7 +119,29 @@
       editBtn.setAttribute('aria-label', '直接修改此句中文台词');
       editBtn.innerHTML = '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>';
 
-      head.append(speaker, editBtn);
+      const triggerJump = () => {
+        if (!canJump) return;
+        div.querySelectorAll('.line.is-jumped').forEach(el => el.classList.remove('is-jumped'));
+        row.classList.add('is-jumped');
+        onJump(r.trackIndex, r);
+        document.getElementById('stage')?.scrollIntoView?.({ behavior: 'smooth', block: 'nearest' });
+        setTimeout(() => row.classList.remove('is-jumped'), 1800);
+      };
+
+      if (canJump) {
+        const jumpBtn = document.createElement('button');
+        jumpBtn.type = 'button';
+        jumpBtn.className = 'transcript-line-jump-btn';
+        jumpBtn.textContent = '▶ 从这播放';
+        jumpBtn.title = '从这一句开始恢复场景与语音并播放';
+        jumpBtn.onclick = e => {
+          e.stopPropagation();
+          triggerJump();
+        };
+        head.append(speaker, jumpBtn, editBtn);
+      } else {
+        head.append(speaker, editBtn);
+      }
 
       const curMap = allOverrides();
       const storyMap = storyKey ? (curMap[storyKey] || {}) : {};
@@ -70,6 +150,14 @@
       const textDiv = document.createElement('div');
       textDiv.className = 'transcript-line-text';
       textDiv.textContent = effectiveTranslation || ('【待翻译】' + (r.original || ''));
+      if (canJump) {
+        textDiv.title = '点击从这一句开始播放';
+        textDiv.onclick = () => {
+          if (!editBox.hidden) return;
+          if (window.getSelection && window.getSelection().toString()) return;
+          triggerJump();
+        };
+      }
 
       const origSmall = document.createElement('small');
       origSmall.className = 'transcript-line-orig';

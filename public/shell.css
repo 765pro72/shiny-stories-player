@@ -3195,3 +3195,54 @@ html:not([data-theme="dark"]) .island-popover .ip-volume {
   text-align: right !important;
   opacity: 0.84;
 }
+
+/* ── Fullscreen Ambient Vinyl Art Frame: Expandable Bottom-Left Music Capsule ── */
+body.is-ambient-open .shell-pop-backdrop {
+  z-index: 9940 !important;
+}
+body.is-ambient-open .shell-header {
+  z-index: 9950 !important;
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  pointer-events: none !important;
+  -webkit-app-region: no-drag !important;
+}
+body.is-ambient-open .shell-header > .shell-left,
+body.is-ambient-open .shell-header > .prism-dock,
+body.is-ambient-open .shell-header .shell-utils,
+body.is-ambient-open .shell-header .dynamic-island,
+body.is-ambient-open .shell-header #shellEnvCapsule,
+body.is-ambient-open .shell-header #envPopover,
+body.is-ambient-open .shell-header #moreHubAnchor {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+body.is-ambient-open .shell-header #islandAnchor {
+  position: static !important;
+}
+body.is-ambient-open #islandPopover {
+  position: fixed !important;
+  left: clamp(14px, 3vw, 48px) !important;
+  bottom: 108px !important;
+  top: auto !important;
+  right: auto !important;
+  margin: 0 !important;
+  width: min(336px, calc(100vw - 28px)) !important;
+  max-height: calc(100dvh - 134px) !important;
+  overflow-y: auto !important;
+  transform-origin: bottom left !important;
+  border-radius: 26px !important;
+}
+body.is-ambient-open #islandPopover.is-open {
+  z-index: 9960 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translate3d(0, 0, 0) scale(1, 1) !important;
+}
+body.is-ambient-open #islandPopover:not(.is-open) {
+  transform: translate3d(0, 14px, 0) scale(0.84, 0.72) !important;
+}

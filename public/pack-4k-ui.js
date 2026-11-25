@@ -60,18 +60,28 @@
     } catch {}
   }
 
-  function reloadVisibleStage() {
+  function bumpPack4kRev() {
+    try { localStorage.setItem('shiny.pack4kRev', String(Date.now())); } catch {}
+  }
+
+  async function reloadVisibleStage() {
     try {
       const d = getDesktop();
       if (d?.reloadIgnoringCache) {
-        d.reloadIgnoringCache();
+        await d.reloadIgnoringCache();
         return;
       }
       const topWin = (window.parent && window.parent !== window) ? window.parent : window;
       const frames = topWin.document.querySelectorAll('#shellStage iframe');
       if (frames.length) {
         frames.forEach(f => {
-          try { f.contentWindow.location.reload(); } catch {}
+          try {
+            const u = new URL(f.contentWindow.location.href);
+            u.searchParams.set('p4k', String(Date.now()));
+            f.contentWindow.location.replace(u.toString());
+          } catch {
+            try { f.contentWindow.location.reload(); } catch {}
+          }
         });
         return;
       }
@@ -105,7 +115,7 @@
       if (hintEl) {
         hintEl.textContent = latest.installed
           ? `已加载路径：${latest.activeDir || latest.source || 'cache-4k'}。切换 4K / 原图后将自动刷新画面生效。`
-          : '支持选择 ShinyStories-4K-Pack.zip / .7z 一键自动解压加载，或直接挂载已解压的 cache-4k 文件夹；加载后默认开启 4K，随时可切换原图。';
+          : '支持单包 ShinyStories-4K-Pack.7z/.zip，或全选 QQ 分卷（.7z.001/.002/.003）直接一键合并解压；也可直接挂载已解压的 cache-4k 文件夹。';
       }
       if (btnToggle) {
         btnToggle.hidden = !latest.installed;
@@ -139,6 +149,7 @@
           return;
         }
         if (res?.enabled) disableRealtimeUpscalerForNative4k();
+        bumpPack4kRev();
         render(res);
         setTimeout(reloadVisibleStage, 450);
       } catch (e) {
@@ -163,6 +174,7 @@
           return;
         }
         if (res?.enabled) disableRealtimeUpscalerForNative4k();
+        bumpPack4kRev();
         render(res);
         setTimeout(reloadVisibleStage, 350);
       } catch (e) {
@@ -180,6 +192,7 @@
       try {
         const res = await toggleEnabled(next);
         if (res?.enabled) disableRealtimeUpscalerForNative4k();
+        bumpPack4kRev();
         render(res);
         setTimeout(reloadVisibleStage, 250);
       } catch (e) {

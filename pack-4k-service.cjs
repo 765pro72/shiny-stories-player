@@ -7,6 +7,69 @@ const SEVEN_ZIP_CANDIDATES = [
   'C:\\Program Files (x86)\\7-Zip\\7z.exe'
 ];
 
+function resolveArchiveInput(archiveInput) {
+  const inputs = (Array.isArray(archiveInput) ? archiveInput : [archiveInput])
+    .filter(p => typeof p === 'string' && p.trim())
+    .map(p => p.trim());
+  if (!inputs.length) throw new Error('未选择 4K 压缩包文件');
+  for (const p of inputs) {
+    if (!fs.existsSync(p)) throw new Error('所选 4K 压缩包不存在：' + p);
+  }
+  const dirs = new Set(inputs.map(p => path.dirname(path.resolve(p))));
+  if (dirs.size > 1) {
+    throw new Error('分卷压缩包必须位于同一个文件夹内，请一起选择同目录下的分卷文件');
+  }
+  const dir = path.dirname(path.resolve(inputs[0]));
+  const firstCandidate = inputs.slice().sort()[0];
+  const baseName = path.basename(firstCandidate);
+
+  const numMatch = baseName.match(/^(.+)\.(\d{3})$/i);
+  if (numMatch) {
+    const stem = numMatch[1];
+    const siblings = fs.readdirSync(dir)
+      .filter(f => f.startsWith(stem + '.') && /^\d{3}$/.test(f.slice(stem.length + 1)))
+      .sort();
+    const first = siblings[0];
+    if (!first || !first.endsWith('.001')) {
+      throw new Error(`未找到起始分卷「${stem}.001」，请确认所有分卷已下载到同一文件夹`);
+    }
+    const maxNum = Number(siblings[siblings.length - 1].slice(stem.length + 1));
+    for (let i = 1; i <= maxNum; i++) {
+      const expected = `${stem}.${String(i).padStart(3, '0')}`;
+      if (!fs.existsSync(path.join(dir, expected))) {
+        throw new Error(`分卷不完整：缺少 ${expected}（共需 ${String(maxNum).padStart(3, '0')} 个分卷）`);
+      }
+    }
+    return {
+      entryPath: path.join(dir, first),
+      displayName: `${first}（共 ${siblings.length} 个分卷）`,
+      volumeCount: siblings.length,
+      isSplit: true
+    };
+  }
+
+  const zipSplitMatch = baseName.match(/^(.+)\.z\d{2,}$/i);
+  if (zipSplitMatch) {
+    const zipEntry = path.join(dir, zipSplitMatch[1] + '.zip');
+    if (!fs.existsSync(zipEntry)) {
+      throw new Error(`未找到主压缩包「${zipSplitMatch[1]}.zip」，请确认全部分卷在同一文件夹内`);
+    }
+    return {
+      entryPath: zipEntry,
+      displayName: `${path.basename(zipEntry)}（分卷）`,
+      volumeCount: inputs.length,
+      isSplit: true
+    };
+  }
+
+  return {
+    entryPath: inputs[0],
+    displayName: path.basename(inputs[0]),
+    volumeCount: 1,
+    isSplit: false
+  };
+}
+
 function safeJoin(root, rel) {
   const full = path.resolve(root, rel);
   const normRoot = path.resolve(root);
@@ -142,40 +205,39 @@ function createPack4kService({ base, userDir, onChange = () => {} }) {
     return getStatus();
   }
 
-  async function extractArchive(archivePath, onProgress = () => {}) {
-    if (!archivePath || !fs.existsSync(archivePath)) {
-      throw new Error('所选 4K 压缩包不存在');
-    }
-    const ext = path.extname(archivePath).toLowerCase();
+  async function extractArchive(archiveInput, onProgress = () => {}) {
+    const resolved = resolveArchiveInput(archiveInput);
+    const entryPath = resolved.entryPath;
+    const ext = path.extname(entryPath).toLowerCase();
     fs.mkdirSync(defaultExtractDir, { recursive: true });
-    const sevenZip = SEVEN_ZIP_CANDIDATES.find(p => fs.existsSync(p));
+    const sevenZip = [...SEVEN_ZIP_CANDIDATES, path.join(base, 'vendor', '7zip', '7z.exe')].find(p => fs.existsSync(p));
 
     let cmd, args;
     if (sevenZip) {
       cmd = sevenZip;
-      args = ['x', archivePath, '-o' + defaultExtractDir, '-y', '-mmt=on'];
-    } else if (ext === '.zip' && process.platform === 'win32') {
+      args = ['x', entryPath, '-o' + defaultExtractDir, '-y', '-mmt=on'];
+    } else if (!resolved.isSplit && ext === '.zip' && process.platform === 'win32') {
       cmd = 'tar.exe';
-      args = ['-xf', archivePath, '-C', defaultExtractDir];
+      args = ['-xf', entryPath, '-C', defaultExtractDir];
     } else {
-      throw new Error('解压 .7z 格式需要安装 7-Zip，请改选 .zip 格式的 4K 包或先手动解压后选择文件夹');
+      throw new Error('解压 .7z 或分卷压缩包需要 7-Zip，请确认 vendor/7zip/7z.exe 存在或安装 7-Zip');
     }
 
-    onProgress(`正在解压 ${path.basename(archivePath)} 到本地 4K 目录，请稍候…`);
+    onProgress(`正在解压 ${resolved.displayName} 到本地 4K 目录，请稍候…`);
     await new Promise((resolve, reject) => {
       const child = spawn(cmd, args, { windowsHide: true, stdio: ['ignore', 'pipe', 'pipe'] });
       let errBuf = '';
       let tick = 0;
       const timer = setInterval(() => {
         tick += 2;
-        onProgress(`正在解压 4K 超清画质包…（已用时 ${tick} 秒，静态 + 动态模型体积较大请耐心等待）`);
+        onProgress(`正在解压 ${resolved.displayName}…（已用时 ${tick} 秒，静态 + 动态模型体积较大请耐心等待）`);
       }, 2000);
       child.stderr.on('data', d => { errBuf += d.toString('utf8').slice(-400); });
       child.on('error', e => { clearInterval(timer); reject(e); });
       child.on('close', code => {
         clearInterval(timer);
         if (code === 0) resolve();
-        else reject(new Error(`解压失败（退出码 ${code}）：${errBuf.trim() || '请检查磁盘空间是否充足'}`));
+        else reject(new Error(`解压失败（退出码 ${code}）：${errBuf.trim() || '请检查分卷是否完整及磁盘空间是否充足'}`));
       });
     });
 
@@ -186,7 +248,7 @@ function createPack4kService({ base, userDir, onChange = () => {} }) {
     cfg.customDir = info.root === defaultExtractDir ? '' : info.root;
     cfg.enabled = true; // 加载后默认开启 4K
     cfg.loadedAt = new Date().toISOString();
-    cfg.source = path.basename(archivePath);
+    cfg.source = resolved.displayName;
     saveCfg();
     onChange();
     onProgress('4K 超清画质包加载完成！已默认切换至 4K 超清模式。');
@@ -220,7 +282,7 @@ function createPack4kService({ base, userDir, onChange = () => {} }) {
     return false;
   }
 
-  return { handler, resolve4kAsset, getStatus, setEnabled, setCustomDir, extractArchive, normalizeSpineAtlas };
+  return { handler, resolve4kAsset, getStatus, setEnabled, setCustomDir, extractArchive, normalizeSpineAtlas, resolveArchiveInput };
 }
 
 module.exports = { createPack4kService, normalizeSpineAtlas };

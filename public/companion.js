@@ -33,7 +33,8 @@
     { id: 'hinana', name: '市川雏菜', unit: 'noctchill', color: '#fde047', voiceId: 'hinana', lines: ['プロデューサー、しあわせ〜な一日にしようね！', '制作人，开心最重要啦〜！'] },
     { id: 'luca', name: '斑鸠路加', unit: 'CoMETIK', color: '#64748b', voiceId: 'luca', lines: ['……別に、あんたを見てたわけじゃない。', '……别太勉强自己了，麻烦死了。'] },
     { id: 'hana', name: '铃木羽那', unit: 'CoMETIK', color: '#f59e0b', voiceId: 'hana', lines: ['プロデューサーさん！今日も笑顔でいきましょー！', '制作人！羽那一直都在为你加油哦！'] },
-    { id: 'haruki', name: '郁田春希', unit: 'CoMETIK', color: '#d97706', voiceId: 'haruki', lines: ['プロデューサーさん、今の光、すごく綺麗ですね。', '制作人，我想把今天的这份灵感画下来呢。'] }
+    { id: 'haruki', name: '郁田春希', unit: 'CoMETIK', color: '#d97706', voiceId: 'haruki', lines: ['プロデューサーさん、今の光、すごく綺麗ですね。', '制作人，我想把今天的这份灵感画下来呢。'] },
+    { id: 'hazuki', name: '七草叶月', unit: '283 Production', color: '#38bdf8', voiceId: 'hazuki', lines: ['プロデューサーさん、今日のお仕事もよろしくお願いします！', '制作人，行程安排我都整理好啦，有什么需要随时告诉我！', '今天也请一起守护 283 事务所的大家哦。'] }
   ];
 
   const CFG_KEY = 'shiny.companionConfig';
@@ -59,7 +60,9 @@
   // Local TTS is OFF by default — user clicks "一键检测并接入" when their local server is running
   const ttsCfg = readJson(TTS_KEY, {
     enabled: false,
+    mode: 'openai',
     baseUrl: 'http://127.0.0.1:8088',
+    gptsovitsUrl: 'http://127.0.0.1:9880',
     voice: 'nichika',
     emotion: '',
     apiKey: ''
@@ -97,6 +100,9 @@
   const elTtsApiKey = $('#ttsApiKey');
   const elTtsSampleText = $('#ttsSampleText');
   const elTtsStatus = $('#ttsStatusText');
+  const elTtsPackStatus = $('#cmpTtsPackStatus');
+  const elTtsMode = $('#ttsModeSelect');
+  const elTtsGptSovitsUrl = $('#ttsGptSovitsUrl');
   const elAiUrl = $('#aiApiUrl');
   const elAiModel = $('#aiApiModel');
   const elAiKey = $('#aiApiKey');
@@ -225,7 +231,9 @@
       elStage?.classList.add('is-speaking');
     } else if (ttsCfg.enabled) {
       elTtsBadge.dataset.state = 'connected';
-      elTtsBadge.textContent = `● 已接入 ${ttsCfg.voice || '本机语音'}`;
+      elTtsBadge.textContent = ttsCfg.mode === 'gptsovits'
+        ? `● 283 v4 · ${ttsCfg.voice || currentIdol?.voiceId || 'nichika'}`
+        : `● 已接入 ${ttsCfg.voice || '本机语音'}`;
       elStage?.classList.remove('is-speaking');
     } else {
       elTtsBadge.dataset.state = 'idle';
@@ -255,6 +263,13 @@
     elIdolGrid?.querySelectorAll('.cmp-idol-tile').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.idolId === idol.id);
     });
+    if (ttsCfg.mode === 'gptsovits') {
+      const keepFuyukoAlt = idol.id === 'fuyuko' && (ttsCfg.voice === 'fuyuko_fuyu' || ttsCfg.voice === 'fuyuko_real');
+      ttsCfg.voice = keepFuyukoAlt ? ttsCfg.voice : (idol.voiceId || idol.id);
+      if (elTtsVoice) elTtsVoice.value = ttsCfg.voice;
+      writeJson(TTS_KEY, ttsCfg);
+      updateTtsBadge(false);
+    }
   }
 
   function spawnSparkles(count = 7) {
@@ -302,15 +317,45 @@
     updateTtsBadge(true);
     try {
       const ctrl = new AbortController();
-      const timer = setTimeout(() => ctrl.abort(), 30000);
-      const res = await fetch(`${base}/v1/audio/speech`, {
-        method: 'POST',
-        headers,
-        body: JSON.stringify(payload),
-        signal: ctrl.signal
-      });
+      const timer = setTimeout(() => ctrl.abort(), 90000);
+      let res;
+      if (ttsCfg.mode === 'gptsovits') {
+        const apiUrl = String(ttsCfg.gptsovitsUrl || elTtsGptSovitsUrl?.value || 'http://127.0.0.1:9880').trim().replace(/\/+$/, '');
+        res = await fetch('/api/tts-pack/synthesize', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            voiceId: ttsCfg.voice || currentIdol.voiceId || 'nichika',
+            text: clean,
+            textLang: 'auto',
+            apiUrl
+          }),
+          signal: ctrl.signal
+        });
+      } else {
+        const base = String(ttsCfg.baseUrl || 'http://127.0.0.1:8088').replace(/\/+$/, '');
+        const headers = { 'Content-Type': 'application/json' };
+        if (ttsCfg.apiKey) headers.Authorization = `Bearer ${ttsCfg.apiKey}`;
+        const payload = {
+          model: 'irodori-tts',
+          input: clean,
+          voice: ttsCfg.voice || currentIdol.voiceId || 'nichika',
+          response_format: 'wav'
+        };
+        if (ttsCfg.emotion) payload.emotion = ttsCfg.emotion;
+        res = await fetch(`${base}/v1/audio/speech`, {
+          method: 'POST',
+          headers,
+          body: JSON.stringify(payload),
+          signal: ctrl.signal
+        });
+      }
       clearTimeout(timer);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      if (!res.ok) {
+        let errDetail = `HTTP ${res.status}`;
+        try { const j = await res.json(); if (j?.error) errDetail = j.error; } catch {}
+        throw new Error(errDetail);
+      }
       const blob = await res.blob();
       const url = URL.createObjectURL(blob);
       const audio = new Audio(url);
@@ -333,7 +378,79 @@
     }
   }
 
+  async function refreshTtsPackStatus(probe = false) {
+    try {
+      const st = window.desktop?.getTtsPackStatus
+        ? await window.desktop.getTtsPackStatus(probe)
+        : await (await fetch('/api/tts-pack/status' + (probe ? '?probe=1' : ''), { cache: 'no-store' })).json();
+      if (st?.voices?.length && elTtsVoiceList) {
+        elTtsVoiceList.innerHTML = st.voices.map(v => `<option value="${v.id}">${v.id} (${v.name})</option>`).join('');
+      }
+      if (st?.apiUrl && elTtsGptSovitsUrl && !elTtsGptSovitsUrl.matches(':focus')) {
+        elTtsGptSovitsUrl.value = ttsCfg.gptsovitsUrl || st.apiUrl;
+      }
+      if (elTtsPackStatus) {
+        if (st?.installed) {
+          elTtsPackStatus.textContent = `已部署 ${st.voiceCount} 组偶像声线 · 推理引擎${st.apiOnline ? '在线 (' + st.apiUrl + ')' : (st.runtimeReady ? '待启动（可点下方 🚀）' : '未检测到服务')}`;
+        } else {
+          elTtsPackStatus.textContent = '未部署 30 声线包（点下方「📦 一键部署全部声音」选择 ShinyStories-TTS-Pack.7z）';
+        }
+      }
+      if (st?.installed && st?.enabled && localStorage.getItem('shiny.companionTtsPackInitV1') !== '1') {
+        localStorage.setItem('shiny.companionTtsPackInitV1', '1');
+        ttsCfg.mode = 'gptsovits';
+        ttsCfg.enabled = true;
+        ttsCfg.gptsovitsUrl = st.apiUrl || 'http://127.0.0.1:9880';
+        ttsCfg.voice = currentIdol.voiceId || 'nichika';
+        if (elTtsMode) elTtsMode.value = 'gptsovits';
+        if (elTtsVoice) elTtsVoice.value = ttsCfg.voice;
+        writeJson(TTS_KEY, ttsCfg);
+        updateTtsBadge(false);
+      }
+      return st;
+    } catch {
+      if (elTtsPackStatus) elTtsPackStatus.textContent = '检测本地语音包状态失败';
+      return null;
+    }
+  }
+
   async function probeAndConnectTts() {
+    if (elTtsMode?.value === 'gptsovits') {
+      const apiUrl = String(elTtsGptSovitsUrl?.value || 'http://127.0.0.1:9880').trim().replace(/\/+$/, '');
+      elTtsStatus.className = 'cmp-tts-status';
+      elTtsStatus.textContent = `正在检测 30 声线整合包与 ${apiUrl} …`;
+      try {
+        await fetch('/api/tts-pack/config', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ apiUrl, enabled: true })
+        });
+      } catch {}
+      const st = await refreshTtsPackStatus(true);
+      ttsCfg.mode = 'gptsovits';
+      ttsCfg.gptsovitsUrl = apiUrl;
+      ttsCfg.voice = String(elTtsVoice.value || currentIdol.voiceId || 'nichika').trim();
+      if (!st?.installed) {
+        ttsCfg.enabled = false;
+        writeJson(TTS_KEY, ttsCfg);
+        updateTtsBadge(false);
+        elTtsStatus.className = 'cmp-tts-status is-err';
+        elTtsStatus.textContent = '尚未部署 30 声线整合包，请先点击上方「📦 一键部署全部声音」或「📁 挂载语音文件夹」。';
+        return;
+      }
+      ttsCfg.enabled = true;
+      writeJson(TTS_KEY, ttsCfg);
+      updateTtsBadge(false);
+      if (st.apiOnline) {
+        elTtsStatus.className = 'cmp-tts-status is-ok';
+        elTtsStatus.textContent = `已接入 283 全员 ${st.voiceCount} 组 GPT-SoVITS v4 声线！切换偶像即自动切声音。`;
+        spawnSparkles(10);
+      } else {
+        elTtsStatus.className = 'cmp-tts-status';
+        elTtsStatus.textContent = `已挂载 ${st.voiceCount} 组声线，但 ${apiUrl} 未启动；请点击上方「🚀 启动推理引擎」或启动 api_v2.py。`;
+      }
+      return;
+    }
     const base = String(elTtsBaseUrl.value || 'http://127.0.0.1:8088').trim().replace(/\/+$/, '');
     const apiKey = String(elTtsApiKey.value || '').trim();
     const headers = apiKey ? { Authorization: `Bearer ${apiKey}` } : {};
@@ -422,6 +539,8 @@
 
   // Hydrate TTS & AI inputs from saved config (stays disconnected until user connects)
   elTtsBaseUrl.value = ttsCfg.baseUrl || 'http://127.0.0.1:8088';
+  if (elTtsMode) elTtsMode.value = ttsCfg.mode || 'openai';
+  if (elTtsGptSovitsUrl) elTtsGptSovitsUrl.value = ttsCfg.gptsovitsUrl || 'http://127.0.0.1:9880';
   elTtsVoice.value = ttsCfg.voice || 'nichika';
   elTtsEmotion.value = ttsCfg.emotion || '';
   elTtsApiKey.value = ttsCfg.apiKey || '';
@@ -491,6 +610,7 @@
     const willOpen = elTtsDrawer.hidden;
     closeAllDrawers();
     elTtsDrawer.hidden = !willOpen;
+    if (willOpen) refreshTtsPackStatus(true);
   });
 
   document.querySelectorAll('[data-close-drawer]').forEach(btn => {
@@ -678,12 +798,154 @@
     });
   });
 
+  if (window.desktop?.onTtsPackProgress) {
+    window.desktop.onTtsPackProgress(msg => {
+      if (msg && elTtsPackStatus) elTtsPackStatus.textContent = msg;
+      if (msg && elTtsStatus) {
+        elTtsStatus.className = 'cmp-tts-status';
+        elTtsStatus.textContent = msg;
+      }
+    });
+  }
+
+  elTtsMode?.addEventListener('change', () => {
+    ttsCfg.mode = elTtsMode.value === 'gptsovits' ? 'gptsovits' : 'openai';
+    if (ttsCfg.mode === 'gptsovits') ttsCfg.voice = currentIdol.voiceId || ttsCfg.voice || 'nichika';
+    if (elTtsVoice) elTtsVoice.value = ttsCfg.voice;
+    writeJson(TTS_KEY, ttsCfg);
+    updateTtsBadge(false);
+  });
+
+  elTtsGptSovitsUrl?.addEventListener('change', async () => {
+    const apiUrl = String(elTtsGptSovitsUrl.value || 'http://127.0.0.1:9880').trim().replace(/\/+$/, '');
+    ttsCfg.gptsovitsUrl = apiUrl;
+    writeJson(TTS_KEY, ttsCfg);
+    try {
+      await fetch('/api/tts-pack/config', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ apiUrl })
+      });
+    } catch {}
+  });
+
+  $('#btnTtsPackArchive')?.addEventListener('click', async () => {
+    if (!window.desktop?.loadTtsPackArchive) {
+      elTtsStatus.className = 'cmp-tts-status is-err';
+      elTtsStatus.textContent = '请在桌面端使用一键部署压缩包功能。';
+      return;
+    }
+    const btn = $('#btnTtsPackArchive');
+    if (btn) btn.disabled = true;
+    elTtsStatus.className = 'cmp-tts-status';
+    elTtsStatus.textContent = '请选择 ShinyStories-TTS-Pack.7z（或分卷压缩包）…';
+    try {
+      const res = await window.desktop.loadTtsPackArchive();
+      if (res?.canceled) {
+        await refreshTtsPackStatus(false);
+        return;
+      }
+      if (!res?.ok) throw new Error(res?.error || '部署失败');
+      ttsCfg.mode = 'gptsovits';
+      ttsCfg.enabled = true;
+      ttsCfg.gptsovitsUrl = res.apiUrl || elTtsGptSovitsUrl?.value || 'http://127.0.0.1:9880';
+      ttsCfg.voice = currentIdol.voiceId || 'nichika';
+      if (elTtsMode) elTtsMode.value = 'gptsovits';
+      if (elTtsVoice) elTtsVoice.value = ttsCfg.voice;
+      writeJson(TTS_KEY, ttsCfg);
+      updateTtsBadge(false);
+      await refreshTtsPackStatus(true);
+      elTtsStatus.className = 'cmp-tts-status is-ok';
+      elTtsStatus.textContent = `全部 ${res.voiceCount} 位角色声音已部署！${res.apiOnline ? '推理引擎在线，可立即试听。' : '请启动本机 api_v2.py 或点击「🚀 启动推理引擎」。'}`;
+      spawnSparkles(10);
+    } catch (e) {
+      elTtsStatus.className = 'cmp-tts-status is-err';
+      elTtsStatus.textContent = `部署失败：${e.message}`;
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  });
+
+  $('#btnTtsPackFolder')?.addEventListener('click', async () => {
+    if (!window.desktop?.loadTtsPackFolder) return;
+    const btn = $('#btnTtsPackFolder');
+    if (btn) btn.disabled = true;
+    try {
+      const res = await window.desktop.loadTtsPackFolder();
+      if (res?.canceled) return;
+      if (!res?.ok) throw new Error(res?.error || '文件夹无效');
+      ttsCfg.mode = 'gptsovits';
+      ttsCfg.enabled = true;
+      ttsCfg.gptsovitsUrl = res.apiUrl || elTtsGptSovitsUrl?.value || 'http://127.0.0.1:9880';
+      ttsCfg.voice = currentIdol.voiceId || 'nichika';
+      if (elTtsMode) elTtsMode.value = 'gptsovits';
+      if (elTtsVoice) elTtsVoice.value = ttsCfg.voice;
+      writeJson(TTS_KEY, ttsCfg);
+      updateTtsBadge(false);
+      await refreshTtsPackStatus(true);
+      elTtsStatus.className = 'cmp-tts-status is-ok';
+      elTtsStatus.textContent = `已挂载 ${res.voiceCount} 组偶像声音模型！`;
+      spawnSparkles(8);
+    } catch (e) {
+      elTtsStatus.className = 'cmp-tts-status is-err';
+      elTtsStatus.textContent = `挂载失败：${e.message}`;
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  });
+
+  $('#btnTtsRuntimePick')?.addEventListener('click', async () => {
+    if (!window.desktop?.pickTtsRuntimeFolder) return;
+    const res = await window.desktop.pickTtsRuntimeFolder();
+    if (res?.canceled) return;
+    if (res?.ok) {
+      elTtsStatus.className = 'cmp-tts-status is-ok';
+      elTtsStatus.textContent = `已记住 GPT-SoVITS 目录：${res.runtimeDir}，现在可点「🚀 启动推理引擎」。`;
+      await refreshTtsPackStatus(false);
+    } else {
+      elTtsStatus.className = 'cmp-tts-status is-err';
+      elTtsStatus.textContent = res?.error || '目录无效';
+    }
+  });
+
+  $('#btnTtsRuntimeLaunch')?.addEventListener('click', async () => {
+    const btn = $('#btnTtsRuntimeLaunch');
+    if (btn) btn.disabled = true;
+    elTtsStatus.className = 'cmp-tts-status';
+    elTtsStatus.textContent = '正在后台启动 GPT-SoVITS v4 推理引擎，首次加载约需数秒…';
+    try {
+      const res = window.desktop?.launchTtsRuntime
+        ? await window.desktop.launchTtsRuntime()
+        : await (await fetch('/api/tts-pack/launch', { method: 'POST' })).json();
+      if (!res?.ok) throw new Error(res?.error || '启动失败');
+      ttsCfg.enabled = true;
+      ttsCfg.mode = 'gptsovits';
+      if (elTtsMode) elTtsMode.value = 'gptsovits';
+      writeJson(TTS_KEY, ttsCfg);
+      await refreshTtsPackStatus(true);
+      updateTtsBadge(false);
+      elTtsStatus.className = 'cmp-tts-status is-ok';
+      elTtsStatus.textContent = res.alreadyRunning ? 'GPT-SoVITS 推理引擎已在运行！可直接朗读。' : 'GPT-SoVITS 推理引擎已启动就绪！可直接点击试听或对话朗读。';
+      spawnSparkles(10);
+    } catch (e) {
+      elTtsStatus.className = 'cmp-tts-status is-err';
+      elTtsStatus.textContent = e.message;
+    } finally {
+      if (btn) btn.disabled = false;
+    }
+  });
+
   $('#btnTtsConnect')?.addEventListener('click', probeAndConnectTts);
   $('#btnTtsTest')?.addEventListener('click', () => {
+    ttsCfg.mode = elTtsMode?.value === 'gptsovits' ? 'gptsovits' : 'openai';
     ttsCfg.baseUrl = String(elTtsBaseUrl.value || 'http://127.0.0.1:8088').trim().replace(/\/+$/, '');
-    ttsCfg.voice = String(elTtsVoice.value || 'nichika').trim();
+    ttsCfg.gptsovitsUrl = String(elTtsGptSovitsUrl?.value || 'http://127.0.0.1:9880').trim().replace(/\/+$/, '');
+    ttsCfg.voice = String(elTtsVoice.value || currentIdol.voiceId || 'nichika').trim();
     ttsCfg.emotion = String(elTtsEmotion.value || '');
     ttsCfg.apiKey = String(elTtsApiKey.value || '').trim();
+    if (ttsCfg.mode === 'gptsovits') ttsCfg.enabled = true;
+    writeJson(TTS_KEY, ttsCfg);
+    updateTtsBadge(false);
     speakText(elTtsSampleText.value || elBubbleText.textContent);
   });
   $('#btnTtsDisconnect')?.addEventListener('click', () => {
@@ -701,4 +963,5 @@
   applyIdol(currentIdol, true);
   checkHourlyChime();
   updateTtsBadge(false);
+  refreshTtsPackStatus(false);
 })();

@@ -163,7 +163,7 @@
   const movie=p._movieLayer.control.bind(p._movieLayer);p._movieLayer.control=(url,options={})=>{const result=movie(url,{...options,onError:message=>{if(disposed)return;status('一段过场影片暂未取得或无法播放，已跳过；其余剧情继续播放。'+message);$('#loading').style.display='none'}});setVolume(volume);return result};
   const nativePause=p.pause.bind(p),nativeResume=p.resume.bind(p);p.pause=()=>{nativePause();stage._spineMap.forEach(s=>{s.autoUpdate=false})};p.resume=()=>{nativeResume();stage._spineMap.forEach(s=>{s.autoUpdate=true})};
   const fatal=p._handleFatalError.bind(p);p._handleFatalError=(message,error,context)=>{fatal(message,error,context);fail(error||message)};
-  p.once('end',()=>{
+  p.on('end',()=>{
    ended=true;p._schedule.cancelAll();p._detachVoiceEndListener();p._detachCurrentVoiceEndHandler();sound.removeAll();stage.stopLipAnimations();
    status('本篇剧情播放完毕。');
    $('#loading').style.display='grid';
@@ -181,6 +181,35 @@
    $('#loading').append(actions);
   });
  }
+ function normalize4kTextures(loader){
+  const list=Object.values(loader?.resources||{});
+  for(const res of list){
+   if(!res||!res.texture||res.spineData||res.spritesheet||res.textures)continue;
+   const bt=res.texture.baseTexture;
+   if(!bt)continue;
+   const rw=bt.realWidth||bt.width,rh=bt.realHeight||bt.height;
+   if(!rw||!rh)continue;
+   const url=String(res.url||res.name||'');
+   let scale=1;
+   if((/\/images\/event\/(?:bg|fg|still)\//i.test(url)||/\/images\/content\/[^/]+\/card\//i.test(url))&&rw>1500)scale=rw/1136;
+   else if(/\/images\/event\/text_frame\//i.test(url)&&rw>1200)scale=rw/840;
+   else if(/\/images\/event\/select_frame\//i.test(url)&&rw>600)scale=rw/318;
+   else if(/\/images\/content\/characters\/icon_phone\//i.test(url)&&rw>400)scale=rw/240;
+   else if(/\/images\/(?:event|content\/characters)\/phone_bg\//i.test(url)&&rw>800)scale=rw/542;
+   else if(/\/images\/ui\/phone\/parts/i.test(url)&&rw>1200)scale=rw/729;
+   if(scale>1.05){
+    if(bt.resolution<=1.01){
+     if(typeof bt.setResolution==='function')bt.setResolution(scale);
+     else{bt.resolution=scale;bt.update();}
+    }
+    if(res.texture.orig.width>bt.width+1||res.texture.frame.width>bt.width+1){
+     res.texture.orig=new PIXI.Rectangle(0,0,bt.width,bt.height);
+     res.texture.frame=new PIXI.Rectangle(0,0,bt.width,bt.height);
+     res.texture.updateUvs();
+    }
+   }
+  }
+ }
  async function preload(){
   const loader=PIXI.Loader.shared,optional=new Set(),added=new Set(),errors=[];loader.concurrency=8;
   const add=(id,url,isOptional=false)=>{if(isOptional)optional.add(url);if(!added.has(id)&&!loader.resources[id]){added.add(id);loader.add(id,url,{timeout:30000})}};
@@ -191,6 +220,7 @@
   loader.onProgress.add(l=>status('正在准备立绘与声音 '+Math.round(l.progress)+'% · 读取已下载资源'));
   loader.onError.add((error,l,r)=>errors.push(r?.url||String(error)));
   await new Promise(resolve=>loader.load(resolve));if(disposed)return;
+  normalize4kTextures(loader);
   const critical=errors.filter(url=>!optional.has(url)&&!url.includes('/sounds/')&&!knownUnavailable.has(url.replace('/asset-original/','')));if(critical.length)throw Error(critical.length+' 个画面资源加载失败，例如 '+critical[0]);
   return errors;
  }
@@ -219,6 +249,7 @@
   if(type==='next')next();if(type==='volume')setVolume(value);
   if(type==='lang'&&['zh','jp','both'].includes(value)){language=value;if(raw.length)annotate()}
   if(type==='auto')setAuto(player?._mode!==SpeedMode.AUTO);
+  if(type==='jump'&&Number.isInteger(value))jumpToTrack(value);
  });
  addEventListener('pagehide',()=>{disposed=true;if(player){player._schedule.cancelAll();player._deferredTasks=[];player._detachVoiceEndListener();player._detachCurrentVoiceEndHandler();player.soundController.removeAll();player._movieLayer.reset();player._characterStage.stopLipAnimations();player._scenarioPlayer.destroy()}app?.ticker.stop()},{once:true});
  addEventListener('error',e=>{
@@ -234,6 +265,109 @@
    }
    fail(e.reason);
  });
+ function jumpToTrack(targetIndex){
+  if(!player||!started||disposed||!Array.isArray(tracks))return false;
+  if(!Number.isInteger(targetIndex)||targetIndex<0||targetIndex>=tracks.length)return false;
+  ended=false;
+  $('#loading').style.display='none';
+  if(player._paused)player.resume();
+  player._schedule.cancelAll();
+  player._deferredTasks=[];
+  player._detachVoiceEndListener();
+  player._detachCurrentVoiceEndHandler();
+  player._currentVoice=null;
+  player._currentVoiceIsLooping=false;
+  player._currentVoiceKeepActive=false;
+  player._soundController.removeAll();
+  player._characterStage.stopLipAnimations();
+  player._selectList?.reset?.();
+  player._movieLayer?.reset?.();
+  player._isMoviePlaying=false;
+  player._mainController.stageObj.visible=true;
+  player._mainController.stageObj.interactiveChildren=true;
+  player._interactionLayer.interactive=true;
+
+  player._bgLayer?.reset?.();
+  player._middleFgLayer?.reset?.();
+  player._fgLayer?.reset?.();
+  player._stillLayer?.reset?.();
+  player._characterStage?.reset?.();
+  player._effectLayer?.reset?.();
+  player._scenarioPlayer?.reset?.();
+  player._scenarioPlayer?.controlSpeaker?.('off');
+
+  let lastBg=null,lastMiddleFg=null,lastFg=null,lastStill=null,lastBgm=null,lastTextFrame=null,lastSpeaker=null;
+  const chars=new Map();
+  for(let i=0;i<targetIndex;i++){
+   const t=tracks[i];
+   if(!t)continue;
+   if(t.bg!==undefined)lastBg=(t.bg==='off'||t.bg==='fade_out')?null:t.bg;
+   if(t.middleFg!==undefined)lastMiddleFg=(t.middleFg==='off'||t.middleFg==='fade_out')?null:t.middleFg;
+   if(t.fg!==undefined)lastFg=(t.fg==='off'||t.fg==='fade_out')?null:t.fg;
+   if(t.charStill!==undefined)lastStill=(t.charStill==='off'||t.charStill==='fade_out')?null:t.charStill;
+   if(t.still!==undefined)lastStill=(t.still==='off'||t.still==='fade_out')?null:t.still;
+   if(t.stillCtrl==='off'||t.stillCtrl==='fade_out'||/^\d+$/.test(String(t.stillCtrl||'')))lastStill=null;
+   if(t.bgm!==undefined)lastBgm=(t.bgm==='off'||t.bgm==='fade_out')?null:t.bgm;
+   if(t.textFrame&&t.textFrame!=='on')lastTextFrame=(t.textFrame==='off')?null:t.textFrame;
+   if(t.speaker!==undefined)lastSpeaker=t.speaker;
+   if(t.charLabel){
+    const gone=t.charSpine==='off'||t.charCategory==='off'||t.charEffect?.type==='fade_out'||(t.charEffect?.type==='to'&&Number(t.charEffect?.alpha)===0);
+    if(gone){
+     chars.delete(t.charLabel);
+    }else{
+     const prev=chars.get(t.charLabel)||{label:t.charLabel};
+     if(t.charSpine)prev.asset=t.charSpine;
+     if(t.charPosition)prev.position=t.charPosition;
+     if(t.charScale!==undefined)prev.scale=t.charScale;
+     for(let n=1;n<=5;n++){
+      if(t['charAnim'+n])prev['anim'+n]=t['charAnim'+n];
+      if(t['charAnim'+n+'Loop']!==undefined)prev['anim'+n+'Loop']=t['charAnim'+n+'Loop'];
+     }
+     if(prev.asset)chars.set(t.charLabel,prev);
+    }
+   }
+  }
+
+  try{
+   if(lastBg)player._bgLayer.control(lastBg,'normal');
+   if(lastMiddleFg)player._middleFgLayer.control(lastMiddleFg,'normal');
+   if(lastFg)player._fgLayer.control(lastFg,'normal');
+   if(lastStill)player._stillLayer.control(lastStill,{instant:true});
+   for(const ch of chars.values()){
+    player._characterStage.control({...ch,effect:null});
+   }
+   if(lastBgm&&!player._soundController?._soundDisabled){
+    player._soundController.control('bgm',lastBgm,0);
+   }
+   if(lastTextFrame&&!tracks[targetIndex]?.textFrame){
+    player._scenarioPlayer.controlFrame(lastTextFrame);
+   }
+   if(lastSpeaker&&lastSpeaker!=='off'&&tracks[targetIndex]?.speaker===undefined){
+    player._scenarioPlayer.controlSpeaker(lastSpeaker);
+   }
+  }catch{}
+
+  history.length=0;
+  const log=player._scenarioLogLayer;
+  if(log){
+   log._tracks=[];
+   for(let i=0;i<targetIndex;i++){
+    const t=tracks[i];
+    if(t&&t.text){
+     history.push(Number.isInteger(t._storyIndex)?t._storyIndex:i);
+     log.stackTrackOriginal(t);
+    }
+   }
+  }
+
+  player._trackManager._current=targetIndex;
+  player._trackManager._nextLabel=null;
+  player._trackManager.resetStopTrack();
+  player._changeToFree();
+  player._scenarioPlayer.setTextControl('cm');
+  player._playTrack(tracks[targetIndex]);
+  return true;
+ }
  function selectActiveOption(nextLabel){
   if(!player||!player._selectList?.active||!nextLabel)return false;
   try{
@@ -246,7 +380,7 @@
   }catch{}
   return false;
  }
- window.ScenarioBridge={get player(){return player},get tracks(){return tracks},get raw(){return raw},get lastRows(){return lastRows},get names(){return names},get key(){return key},get language(){return language},get history(){return history},get started(){return started},get ended(){return ended},next,setAuto,selectActiveOption,inspect:()=>({engine:'ShinyScenarioViewer',commit:'66e8d76',key,language,started,ended,volume,current:player?._trackManager?._current,state:player?._state,error:player?._fatalError?.message||null,characters:player?._characterStage._spineMap.size||0})};
+ window.ScenarioBridge={get player(){return player},get tracks(){return tracks},get raw(){return raw},get lastRows(){return lastRows},get names(){return names},get key(){return key},get language(){return language},get history(){return history},get started(){return started},get ended(){return ended},next,setAuto,jumpToTrack,selectActiveOption,inspect:()=>({engine:'ShinyScenarioViewer',commit:'66e8d76',key,language,started,ended,volume,current:player?._trackManager?._current,state:player?._state,error:player?._fatalError?.message||null,characters:player?._characterStage._spineMap.size||0})};
  init().catch(fail);
 })();
 

@@ -1,0 +1,1409 @@
+{
+  "updatedAt": "2026-11-25",
+  "engine": "GPT-SoVITS v4",
+  "voiceCount": 30,
+  "voices": [
+    {
+      "id": "mano",
+      "slot": "01_mano",
+      "name": "樱木真乃",
+      "shortName": "真乃",
+      "aliases": [
+        "mano",
+        "01_mano",
+        "樱木真乃",
+        "真乃",
+        "櫻木真乃"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/01_mano-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/01_mano_e2_s104_l32.pth",
+      "refAudio": "refs/01_mano/ref_01.wav",
+      "refText": "す、すみません……っ もしかして、髪の毛くしゃくしゃでしたでしょうか……？",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/01_mano/ref_01.wav",
+          "text_jp": "す、すみません……っ もしかして、髪の毛くしゃくしゃでしたでしょうか……？",
+          "story": "home:mypage_001_head_01"
+        },
+        {
+          "file": "refs/01_mano/ref_02.wav",
+          "text_jp": "プロデューサーさんの手、とっても あったかくて……撫でてもらうと眠く なっちゃいそうです",
+          "story": "home:mypage_001_head_02"
+        },
+        {
+          "file": "refs/01_mano/ref_03.wav",
+          "text_jp": "ほわっ ぷ、プロデューサーさん……っ あのっ……や、やめてください",
+          "story": "home:mypage_001_breast_02"
+        },
+        {
+          "file": "refs/01_mano/ref_04.wav",
+          "text_jp": "す、すみません……ぶつかってしまったかもしれなくて、その……",
+          "story": "home:mypage_001_breast_03"
+        },
+        {
+          "file": "refs/01_mano/ref_05.wav",
+          "text_jp": "今日は灯織ちゃんのお誕生日なので、バウムクーヘンでケーキを作ってきましたっ",
+          "story": "home:mypage_001_birthday_002_0010"
+        }
+      ]
+    },
+    {
+      "id": "hiori",
+      "slot": "02_hiori",
+      "name": "风野灯织",
+      "shortName": "灯織",
+      "aliases": [
+        "hiori",
+        "02_hiori",
+        "风野灯织",
+        "灯織",
+        "風野灯織",
+        "灯织"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/02_hiori-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/02_hiori_e2_s102_l32.pth",
+      "refAudio": "refs/02_hiori/ref_01.wav",
+      "refText": "理由があるなら伺います 正当な理由があれば、ですが",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/02_hiori/ref_01.wav",
+          "text_jp": "理由があるなら伺います 正当な理由があれば、ですが",
+          "story": "home:mypage_002_breast_01"
+        },
+        {
+          "file": "refs/02_hiori/ref_02.wav",
+          "text_jp": "……プロデューサーの手って、 大きいですよね あ、いえ……なんでもないです",
+          "story": "home:mypage_002_belly_02"
+        },
+        {
+          "file": "refs/02_hiori/ref_03.wav",
+          "text_jp": "今日は、０時ちょうどにメッセージを送りました。──『真乃、お誕生日おめでとう』って",
+          "story": "home:mypage_002_birthday_001_0010"
+        },
+        {
+          "file": "refs/02_hiori/ref_04.wav",
+          "text_jp": "夜に『おめでとう』って メッセしたら、朝電話がかかってきた んです。めぐるらしいですよね",
+          "story": "home:mypage_002_birthday_003_0010"
+        },
+        {
+          "file": "refs/02_hiori/ref_05.wav",
+          "text_jp": "！ これ、前に骨が折れた傘…… 間違って持ってきちゃったみたい……",
+          "story": "business_unit_communication/99010001.json"
+        }
+      ]
+    },
+    {
+      "id": "meguru",
+      "slot": "03_meguru",
+      "name": "八宫巡",
+      "shortName": "めぐる",
+      "aliases": [
+        "meguru",
+        "03_meguru",
+        "八宫巡",
+        "めぐる",
+        "八宮めぐる",
+        "巡"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/03_meguru-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/03_meguru_e2_s102_l32.pth",
+      "refAudio": "refs/03_meguru/ref_01.wav",
+      "refText": "撫でるの？ どうぞだよー！ でも、髪結び直す時は、プロデューサーにやってほしいなっ！",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/03_meguru/ref_01.wav",
+          "text_jp": "撫でるの？ どうぞだよー！ でも、髪結び直す時は、プロデューサーにやってほしいなっ！",
+          "story": "home:mypage_003_head_02"
+        },
+        {
+          "file": "refs/03_meguru/ref_02.wav",
+          "text_jp": "もう、わざとでしょー！ そういうの、あんまりやると 嫌われちゃうんだよー？",
+          "story": "home:mypage_003_breast_02"
+        },
+        {
+          "file": "refs/03_meguru/ref_03.wav",
+          "text_jp": "事務所に来てすぐに おめでとうってお祝いしたよ！ やっぱり顔を見て言いたくて！",
+          "story": "home:mypage_003_birthday_001_0010"
+        },
+        {
+          "file": "refs/03_meguru/ref_04.wav",
+          "text_jp": "おめでとー！ って灯織に抱きついたけど、今日は「離れて」って言われなかったんだー！",
+          "story": "home:mypage_003_birthday_002_0010"
+        },
+        {
+          "file": "refs/03_meguru/ref_05.wav",
+          "text_jp": "えへへ……実はわたしも また真乃の傘に入りたくって忘れちゃったのかも！",
+          "story": "business_unit_communication/99010001.json"
+        }
+      ]
+    },
+    {
+      "id": "kogane",
+      "slot": "04_kogane",
+      "name": "月冈恋钟",
+      "shortName": "恋鐘",
+      "aliases": [
+        "kogane",
+        "04_kogane",
+        "月冈恋钟",
+        "恋鐘",
+        "月岡恋鐘",
+        "恋钟"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/04_kogane-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/04_kogane_e2_s102_l32.pth",
+      "refAudio": "refs/04_kogane/ref_01.wav",
+      "refText": "うちの勢いはまだまだ止まらんよ！ やけん、うちにまかせとってね プロデューサー！",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/04_kogane/ref_01.wav",
+          "text_jp": "うちの勢いはまだまだ止まらんよ！ やけん、うちにまかせとってね プロデューサー！",
+          "story": "home:mypage_004_04"
+        },
+        {
+          "file": "refs/04_kogane/ref_02.wav",
+          "text_jp": "んふふ～！ うちの髪、ふわふわで 気持ちよかやろ～？",
+          "story": "home:mypage_004_head_02"
+        },
+        {
+          "file": "refs/04_kogane/ref_03.wav",
+          "text_jp": "ふえっ！？ も～、驚かせんでよ プロデューサー！",
+          "story": "home:mypage_004_belly_02"
+        },
+        {
+          "file": "refs/04_kogane/ref_04.wav",
+          "text_jp": "もう、なんやろ～？ つっつかれたら、気になってしまう～",
+          "story": "home:mypage_004_belly_03"
+        },
+        {
+          "file": "refs/04_kogane/ref_05.wav",
+          "text_jp": "摩美々の好きな物～～～ ラーメン！？ ……は、 うちの好きやね～",
+          "story": "home:mypage_004_birthday_005_0010"
+        }
+      ]
+    },
+    {
+      "id": "mamimi",
+      "slot": "05_mamimi",
+      "name": "田中摩美美",
+      "shortName": "摩美々",
+      "aliases": [
+        "mamimi",
+        "05_mamimi",
+        "田中摩美美",
+        "摩美々",
+        "摩美美"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/05_mamimi-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/05_mamimi_e2_s140_l32.pth",
+      "refAudio": "refs/05_mamimi/ref_01.wav",
+      "refText": "勝手に触らないでくださいー いきなりなんですかぁ",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/05_mamimi/ref_01.wav",
+          "text_jp": "勝手に触らないでくださいー いきなりなんですかぁ",
+          "story": "home:mypage_005_head_01"
+        },
+        {
+          "file": "refs/05_mamimi/ref_02.wav",
+          "text_jp": "……もしかしてー プロデューサーも頭撫でて欲しいんですかぁ？ ふふー",
+          "story": "home:mypage_005_head_02"
+        },
+        {
+          "file": "refs/05_mamimi/ref_03.wav",
+          "text_jp": "んー……納得いく説明、してくれますー？",
+          "story": "home:mypage_005_breast_03"
+        },
+        {
+          "file": "refs/05_mamimi/ref_04.wav",
+          "text_jp": "……何するんですかぁ プロデューサーのせいで服が汚れたかもしれませんー",
+          "story": "home:mypage_005_belly_01"
+        },
+        {
+          "file": "refs/05_mamimi/ref_05.wav",
+          "text_jp": "……ふふー……プロデューサー イタズラにはイタズラで返しますねー",
+          "story": "home:mypage_005_belly_02"
+        }
+      ]
+    },
+    {
+      "id": "sakuya",
+      "slot": "06_sakuya",
+      "name": "白濑咲耶",
+      "shortName": "咲耶",
+      "aliases": [
+        "sakuya",
+        "06_sakuya",
+        "白濑咲耶",
+        "咲耶",
+        "白瀬咲耶"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/06_sakuya-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/06_sakuya_e2_s106_l32.pth",
+      "refAudio": "refs/06_sakuya/ref_01.wav",
+      "refText": "っと…… ……いや、頭に触れられるのは あまり慣れてなくてね",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/06_sakuya/ref_01.wav",
+          "text_jp": "っと…… ……いや、頭に触れられるのは あまり慣れてなくてね",
+          "story": "home:mypage_006_head_01"
+        },
+        {
+          "file": "refs/06_sakuya/ref_02.wav",
+          "text_jp": "おや？急にどうしたの？頭に何かついていた？",
+          "story": "home:mypage_006_head_03"
+        },
+        {
+          "file": "refs/06_sakuya/ref_03.wav",
+          "text_jp": "……他の子たちにも、 こんなことをしては いないだろうね？",
+          "story": "home:mypage_006_breast_01"
+        },
+        {
+          "file": "refs/06_sakuya/ref_04.wav",
+          "text_jp": "全く…… 私だけにしてくれないかな、 こういうことは",
+          "story": "home:mypage_006_breast_02"
+        },
+        {
+          "file": "refs/06_sakuya/ref_05.wav",
+          "text_jp": "悪ふざけにしては、少し度が過ぎているんじゃない？",
+          "story": "home:mypage_006_breast_03"
+        }
+      ]
+    },
+    {
+      "id": "yuika",
+      "slot": "07_yuika",
+      "name": "三峰结华",
+      "shortName": "結華",
+      "aliases": [
+        "yuika",
+        "07_yuika",
+        "三峰结华",
+        "結華",
+        "三峰結華",
+        "结华"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/07_yuika-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/07_yuika_e2_s102_l32.pth",
+      "refAudio": "refs/07_yuika/ref_01.wav",
+      "refText": "……まったく～ 三峰は猫とかじゃ ないんですけどねー？",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/07_yuika/ref_01.wav",
+          "text_jp": "……まったく～ 三峰は猫とかじゃ ないんですけどねー？",
+          "story": "home:mypage_007_head_02"
+        },
+        {
+          "file": "refs/07_yuika/ref_02.wav",
+          "text_jp": "甘やかしたいって言ってくれたら、甘やかされないこともないけどー？どうー？",
+          "story": "home:mypage_007_head_03"
+        },
+        {
+          "file": "refs/07_yuika/ref_03.wav",
+          "text_jp": "えっ、何どうしたの、怖い！ 急に触らないでよプロデューサー！",
+          "story": "home:mypage_007_belly_01"
+        },
+        {
+          "file": "refs/07_yuika/ref_04.wav",
+          "text_jp": "どうしたのー？ スキンシップのつもりー？ んー？",
+          "story": "home:mypage_007_belly_02"
+        },
+        {
+          "file": "refs/07_yuika/ref_05.wav",
+          "text_jp": "──こがたんにバレずにプレゼント を仕込む、それが我々のミッション です。おっけー？",
+          "story": "home:mypage_007_birthday_004_0010"
+        }
+      ]
+    },
+    {
+      "id": "kiriko",
+      "slot": "08_kiriko",
+      "name": "幽谷雾子",
+      "shortName": "霧子",
+      "aliases": [
+        "kiriko",
+        "08_kiriko",
+        "幽谷雾子",
+        "霧子",
+        "幽谷霧子",
+        "雾子"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/08_kiriko-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/08_kiriko_e2_s106_l32.pth",
+      "refAudio": "refs/08_kiriko/ref_01.wav",
+      "refText": "『もうちょっとだね ぴょんぴょんぴょんぴょん』",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/08_kiriko/ref_01.wav",
+          "text_jp": "『もうちょっとだね ぴょんぴょんぴょんぴょん』",
+          "story": "game_event_communications/400101606.json"
+        },
+        {
+          "file": "refs/08_kiriko/ref_02.wav",
+          "text_jp": "『できたよ！ ぴょんぴょんぴょんぴょんぴょん』",
+          "story": "game_event_communications/400101606.json"
+        },
+        {
+          "file": "refs/08_kiriko/ref_03.wav",
+          "text_jp": "『みんなのおかげで とっても しあわせ』",
+          "story": "game_event_communications/400101606.json"
+        },
+        {
+          "file": "refs/08_kiriko/ref_04.wav",
+          "text_jp": "大切なお友達に…… たくさん、手伝ってもらって……",
+          "story": "game_event_communications/400101608.json"
+        },
+        {
+          "file": "refs/08_kiriko/ref_05.wav",
+          "text_jp": "数字を取れるドキュメントバラエティの傾向③ 『ほったらかし＆ツッコミが新しい』",
+          "story": "game_event_communications/400102404.json"
+        }
+      ]
+    },
+    {
+      "id": "kaho",
+      "slot": "09_kaho",
+      "name": "小宫果穗",
+      "shortName": "果穂",
+      "aliases": [
+        "kaho",
+        "09_kaho",
+        "小宫果穗",
+        "果穂",
+        "小宮果穂",
+        "果穗"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/09_kaho-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/09_kaho_e2_s76_l32.pth",
+      "refAudio": "refs/09_kaho/ref_01.wav",
+      "refText": "……？ プロデューサーさん、 どうして頭をなでるんですか？",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/09_kaho/ref_01.wav",
+          "text_jp": "……？ プロデューサーさん、 どうして頭をなでるんですか？",
+          "story": "home:mypage_009_head_01"
+        },
+        {
+          "file": "refs/09_kaho/ref_02.wav",
+          "text_jp": "心臓の音は、なんだか安心しますっ！ プロデューサーさんの心臓にも…… タッチですっ！",
+          "story": "home:mypage_009_breast_02"
+        },
+        {
+          "file": "refs/09_kaho/ref_03.wav",
+          "text_jp": "ちょこ先輩、いっぱいもらって ると思ったんですけど…… やっぱりチョコをあげました！",
+          "story": "home:mypage_009_birthday_010_0010"
+        },
+        {
+          "file": "refs/09_kaho/ref_04.wav",
+          "text_jp": "樹里ちゃんに「お願いを叶える 券」をあげました！ 何回でも 使えるんです！ えへへっ",
+          "story": "home:mypage_009_birthday_011_0010"
+        },
+        {
+          "file": "refs/09_kaho/ref_05.wav",
+          "text_jp": "凛世さんに、お手紙を渡しまし たっ！ お誕生日おめでとうの お手紙です！",
+          "story": "home:mypage_009_birthday_012_0010"
+        }
+      ]
+    },
+    {
+      "id": "chiyoko",
+      "slot": "10_chiyoko",
+      "name": "园田智代子",
+      "shortName": "智代子",
+      "aliases": [
+        "chiyoko",
+        "10_chiyoko",
+        "园田智代子",
+        "智代子",
+        "園田智代子"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/10_chiyoko-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/10_chiyoko_e2_s104_l32.pth",
+      "refAudio": "refs/10_chiyoko/ref_01.wav",
+      "refText": "ほ、ダメだって言いましたよね！？なんでー！？",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/10_chiyoko/ref_01.wav",
+          "text_jp": "ほ、ダメだって言いましたよね！？なんでー！？",
+          "story": "home:mypage_010_breast_03"
+        },
+        {
+          "file": "refs/10_chiyoko/ref_02.wav",
+          "text_jp": "っ、ふふーん、来ると思ってたん です！ だから耐えました！ お返しいきますよ、覚悟～っ",
+          "story": "home:mypage_010_belly_02"
+        },
+        {
+          "file": "refs/10_chiyoko/ref_03.wav",
+          "text_jp": "ひっ、何でしょうプロデューサーさん？悪戯がしたい感じですか？",
+          "story": "home:mypage_010_belly_03"
+        },
+        {
+          "file": "refs/10_chiyoko/ref_04.wav",
+          "text_jp": "今日になってすぐ連絡するのは我慢しました……！ 起こしちゃったら可哀想ですから……！",
+          "story": "home:mypage_010_birthday_009_0010"
+        },
+        {
+          "file": "refs/10_chiyoko/ref_05.wav",
+          "text_jp": "樹里ちゃんには、この時期一番美味しいチョコをプレゼントしました！ 間違いない品です！",
+          "story": "home:mypage_010_birthday_011_0010"
+        }
+      ]
+    },
+    {
+      "id": "juri",
+      "slot": "11_juri",
+      "name": "西城树里",
+      "shortName": "樹里",
+      "aliases": [
+        "juri",
+        "11_juri",
+        "西城树里",
+        "樹里",
+        "西城樹里",
+        "树里"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/11_juri-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/11_juri_e2_s72_l32.pth",
+      "refAudio": "refs/11_juri/ref_01.wav",
+      "refText": "前に進めてるって…… 成長できてるって、アンタが 言うなら、そうなのかもな",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/11_juri/ref_01.wav",
+          "text_jp": "前に進めてるって…… 成長できてるって、アンタが 言うなら、そうなのかもな",
+          "story": "home:mypage_011_04"
+        },
+        {
+          "file": "refs/11_juri/ref_02.wav",
+          "text_jp": "今度一緒にジャスティスVの ショーに行くんだよ プレゼントはそれがいいって",
+          "story": "home:mypage_011_birthday_009_0010"
+        },
+        {
+          "file": "refs/11_juri/ref_03.wav",
+          "text_jp": "気持ちだけで十分だって言って たけど、限定のチョコケーキ 渡したらすげー喜んでたよ",
+          "story": "home:mypage_011_birthday_010_0010"
+        },
+        {
+          "file": "refs/11_juri/ref_04.wav",
+          "text_jp": "凛世と寮でコロッケパーティー するんだけどさ、よかったら プロデューサーも来るか？",
+          "story": "home:mypage_011_birthday_012_0010"
+        },
+        {
+          "file": "refs/11_juri/ref_05.wav",
+          "text_jp": "「おめでとう」ってメッセージ 送ったら、すぐに折返しの電話 かかってきたんだよな……",
+          "story": "home:mypage_011_birthday_013_0010"
+        }
+      ]
+    },
+    {
+      "id": "rinze",
+      "slot": "12_rinze",
+      "name": "杜野凛世",
+      "shortName": "凛世",
+      "aliases": [
+        "rinze",
+        "12_rinze",
+        "杜野凛世",
+        "凛世"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/12_rinze-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/12_rinze_e2_s140_l32.pth",
+      "refAudio": "refs/12_rinze/ref_01.wav",
+      "refText": "プロデューサー様……お疲れでしたら、凛世が、お茶を……",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/12_rinze/ref_01.wav",
+          "text_jp": "プロデューサー様……お疲れでしたら、凛世が、お茶を……",
+          "story": "home:mypage_012_breast_03"
+        },
+        {
+          "file": "refs/12_rinze/ref_02.wav",
+          "text_jp": "古い文献に…… アンドロメダに近い世界に棲む、と……",
+          "story": "game_event_communications/400101707.json"
+        },
+        {
+          "file": "refs/12_rinze/ref_03.wav",
+          "text_jp": "ヤマを当てたい、時間を巻き戻したい、夢ならいいのにと 解決できない問題を神様に相談する",
+          "story": "game_event_communications/400102805.json"
+        },
+        {
+          "file": "refs/12_rinze/ref_04.wav",
+          "text_jp": "プロデューサーさま…… ありがとうございます……",
+          "story": "game_event_communications/400105406.json"
+        },
+        {
+          "file": "refs/12_rinze/ref_05.wav",
+          "text_jp": "ふと、見上げると…… まるで星空のような光景が、眼前に……",
+          "story": "game_event_communications/400105408.json"
+        }
+      ]
+    },
+    {
+      "id": "natsuha",
+      "slot": "13_natsuha",
+      "name": "有栖川夏叶",
+      "shortName": "夏葉",
+      "aliases": [
+        "natsuha",
+        "13_natsuha",
+        "有栖川夏叶",
+        "夏葉",
+        "有栖川夏葉",
+        "夏叶"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/13_natsuha-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/13_natsuha_e2_s72_l32.pth",
+      "refAudio": "refs/13_natsuha/ref_01.wav",
+      "refText": "ここはあくまで通過点──…… だけど、そうね……アナタには お礼を言いたいわ、ありがとう",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/13_natsuha/ref_01.wav",
+          "text_jp": "ここはあくまで通過点──…… だけど、そうね……アナタには お礼を言いたいわ、ありがとう",
+          "story": "home:mypage_013_04"
+        },
+        {
+          "file": "refs/13_natsuha/ref_02.wav",
+          "text_jp": "………… アナタ、自分が何をしたか わかっているの？",
+          "story": "home:mypage_013_breast_01"
+        },
+        {
+          "file": "refs/13_natsuha/ref_03.wav",
+          "text_jp": "ちょっと！ 何のつもりかしら 信じられないわ",
+          "story": "home:mypage_013_belly_01"
+        },
+        {
+          "file": "refs/13_natsuha/ref_04.wav",
+          "text_jp": "お肌のコンディションを保つには、毎日の運動も効果的なのよ？",
+          "story": "home:mypage_013_belly_03"
+        },
+        {
+          "file": "refs/13_natsuha/ref_05.wav",
+          "text_jp": "いい？ 果穂が入ってきたら アナタはそっちから、せーので 「ハッピーバースデー！」よ？",
+          "story": "home:mypage_013_birthday_009_0010"
+        }
+      ]
+    },
+    {
+      "id": "amana",
+      "slot": "14_amana",
+      "name": "大崎甘奈",
+      "shortName": "甘奈",
+      "aliases": [
+        "amana",
+        "14_amana",
+        "大崎甘奈",
+        "甘奈"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/14_amana-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/14_amana_e2_s72_l32.pth",
+      "refAudio": "refs/14_amana/ref_01.wav",
+      "refText": "プロデューサーさん。甘奈ね ちょっとだけふたご座の輝きに 近づけた気がするよ……！",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/14_amana/ref_01.wav",
+          "text_jp": "プロデューサーさん。甘奈ね ちょっとだけふたご座の輝きに 近づけた気がするよ……！",
+          "story": "home:mypage_014_04"
+        },
+        {
+          "file": "refs/14_amana/ref_02.wav",
+          "text_jp": "えへへー、甘奈、髪のサラサラ感には自信あるよー？",
+          "story": "home:mypage_014_head_03"
+        },
+        {
+          "file": "refs/14_amana/ref_03.wav",
+          "text_jp": "もう、めっ！て言ってるでしょー！甘奈怒っちゃうよー？",
+          "story": "home:mypage_014_breast_03"
+        },
+        {
+          "file": "refs/14_amana/ref_04.wav",
+          "text_jp": "甜花ちゃんと一緒に バースデーケーキ作ったんだ～ 喜んでくれるといいな～☆",
+          "story": "home:mypage_014_birthday_016_0010"
+        },
+        {
+          "file": "refs/14_amana/ref_05.wav",
+          "text_jp": "今日のお仕事終わりのケーキ、 どれにしよっかなぁって、悩んでるんだ～",
+          "story": "business_unit_communication/99040001.json"
+        }
+      ]
+    },
+    {
+      "id": "tenka",
+      "slot": "15_tenka",
+      "name": "大崎甜花",
+      "shortName": "甜花",
+      "aliases": [
+        "tenka",
+        "15_tenka",
+        "大崎甜花",
+        "甜花"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/15_tenka-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/15_tenka_e2_s72_l32.pth",
+      "refAudio": "refs/15_tenka/ref_01.wav",
+      "refText": "プロデューサーさん……？ 服、変だった……？",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/15_tenka/ref_01.wav",
+          "text_jp": "プロデューサーさん……？ 服、変だった……？",
+          "story": "home:mypage_015_belly_01"
+        },
+        {
+          "file": "refs/15_tenka/ref_02.wav",
+          "text_jp": "にへへ……せーの…… ハッピーバースデー なーちゃん！",
+          "story": "home:mypage_015_birthday_014_0010"
+        },
+        {
+          "file": "refs/15_tenka/ref_03.wav",
+          "text_jp": "甜花…… 明日、朝しか出てこないモンスター、探しに……",
+          "story": "game_event_communications/400101506.json"
+        },
+        {
+          "file": "refs/15_tenka/ref_04.wav",
+          "text_jp": "でも…… 風野さん、真乃ちゃんたちとジョギングするんじゃ……",
+          "story": "game_event_communications/400101507.json"
+        },
+        {
+          "file": "refs/15_tenka/ref_05.wav",
+          "text_jp": "ふたりとも…… お部屋の誰にも言わずに出てきたんだよね……？",
+          "story": "game_event_communications/400101507.json"
+        }
+      ]
+    },
+    {
+      "id": "chiyuki",
+      "slot": "16_chiyuki",
+      "name": "桑山千雪",
+      "shortName": "千雪",
+      "aliases": [
+        "chiyuki",
+        "16_chiyuki",
+        "桑山千雪",
+        "千雪"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/16_chiyuki-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/16_chiyuki_e2_s202_l32.pth",
+      "refAudio": "refs/16_chiyuki/ref_01.wav",
+      "refText": "やったぞえらいぞーって、褒めたくて 自分のこと、それから プロデューサーさんのことも",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/16_chiyuki/ref_01.wav",
+          "text_jp": "やったぞえらいぞーって、褒めたくて 自分のこと、それから プロデューサーさんのことも",
+          "story": "home:mypage_016_04"
+        },
+        {
+          "file": "refs/16_chiyuki/ref_02.wav",
+          "text_jp": "なでなで……？ もう、ふふ…… 子どもじゃないですから",
+          "story": "home:mypage_016_head_01"
+        },
+        {
+          "file": "refs/16_chiyuki/ref_03.wav",
+          "text_jp": "ダメです、プロデューサーさん そういうの、 勘違いされちゃいますよ？",
+          "story": "home:mypage_016_breast_02"
+        },
+        {
+          "file": "refs/16_chiyuki/ref_04.wav",
+          "text_jp": "──いたた…… 筋肉痛みたいです ふふ、見抜かれちゃいますね",
+          "story": "home:mypage_016_belly_02"
+        },
+        {
+          "file": "refs/16_chiyuki/ref_05.wav",
+          "text_jp": "ジングルベルは、 ハッピーバースデーのあと♪ 天使たちの声、聞こえませんか",
+          "story": "home:mypage_016_birthday_014_0010"
+        }
+      ]
+    },
+    {
+      "id": "asahi",
+      "slot": "17_asahi",
+      "name": "芹泽朝日",
+      "shortName": "あさひ",
+      "aliases": [
+        "asahi",
+        "17_asahi",
+        "芹泽朝日",
+        "あさひ",
+        "芹沢あさひ",
+        "朝日"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/17_asahi-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/17_asahi_e2_s202_l32.pth",
+      "refAudio": "refs/17_asahi/ref_01.wav",
+      "refText": "プロデューサーさんって 意味ないことするの 好きなんすか？ ヒマなんすね",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/17_asahi/ref_01.wav",
+          "text_jp": "プロデューサーさんって 意味ないことするの 好きなんすか？ ヒマなんすね",
+          "story": "home:mypage_017_breast_01"
+        },
+        {
+          "file": "refs/17_asahi/ref_02.wav",
+          "text_jp": "どういう意味っすか、これ？ 教えてほしいっす そしたら何も言わないっす",
+          "story": "home:mypage_017_breast_02"
+        },
+        {
+          "file": "refs/17_asahi/ref_03.wav",
+          "text_jp": "冬優子ちゃん、プレゼントに びくびくしてたっす どうしたっすかねぇ……",
+          "story": "home:mypage_017_birthday_018_0010"
+        },
+        {
+          "file": "refs/17_asahi/ref_04.wav",
+          "text_jp": "わたし、それはすごくわかったっすよ！",
+          "story": "game_event_communications/400101402.json"
+        },
+        {
+          "file": "refs/17_asahi/ref_05.wav",
+          "text_jp": "愛依ちゃんサビ前の振りずっとやってたっすよね？ あそこ、何かあるんすか？",
+          "story": "game_event_communications/400101405.json"
+        }
+      ]
+    },
+    {
+      "id": "fuyuko_fuyu",
+      "slot": "18a_fuyuko_fuyu",
+      "name": "黛冬优子（营业夹子音·ふゆ）",
+      "shortName": "冬優子",
+      "aliases": [
+        "fuyuko_fuyu",
+        "18a_fuyuko_fuyu",
+        "黛冬优子（营业夹子音·ふゆ）",
+        "冬優子",
+        "黛冬优子",
+        "fuyuko",
+        "黛冬優子",
+        "冬优子",
+        "ふゆ",
+        "黛冬优子(ふゆ)"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/18a_fuyuko_fuyu-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/18a_fuyuko_fuyu_e2_s202_l32.pth",
+      "refAudio": "refs/18a_fuyuko_fuyu/ref_01.wav",
+      "refText": "ふゆ、愛依ちゃんのファンが増えたら嬉しいなぁって、 そう思っただけなの……！",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/18a_fuyuko_fuyu/ref_01.wav",
+          "text_jp": "ふゆ、愛依ちゃんのファンが増えたら嬉しいなぁって、 そう思っただけなの……！",
+          "story": "game_event_communications/400101406.json"
+        },
+        {
+          "file": "refs/18a_fuyuko_fuyu/ref_02.wav",
+          "text_jp": "みんなの気持ち、すっごく嬉しいから…… ふゆも、頑張らなきゃ！",
+          "story": "game_event_communications/400101906.json"
+        },
+        {
+          "file": "refs/18a_fuyuko_fuyu/ref_03.wav",
+          "text_jp": "今日はよろしくお願いします ふゆのことはふゆって呼んでくれるとうれしいな♡",
+          "story": "game_event_communications/400109107.json"
+        },
+        {
+          "file": "refs/18a_fuyuko_fuyu/ref_04.wav",
+          "text_jp": "……なんて、ふゆには難しそうです えへへ",
+          "story": "produce_events/201800401.json"
+        },
+        {
+          "file": "refs/18a_fuyuko_fuyu/ref_05.wav",
+          "text_jp": "……プロデューサーさん？ ふゆ、もうすぐ本番なんです",
+          "story": "produce_events/201800602.json"
+        }
+      ]
+    },
+    {
+      "id": "fuyuko_real",
+      "slot": "18b_fuyuko_real",
+      "name": "黛冬优子（素颜本音·冬优子）",
+      "shortName": "冬優子",
+      "aliases": [
+        "fuyuko_real",
+        "18b_fuyuko_real",
+        "黛冬优子（素颜本音·冬优子）",
+        "冬優子",
+        "黛冬优子",
+        "冬优子本音",
+        "冬优子(素颜)"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/18b_fuyuko_real-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/18b_fuyuko_real_e2_s202_l32.pth",
+      "refAudio": "refs/18b_fuyuko_real/ref_01.wav",
+      "refText": "今回のことは、あんたにしては気が利いてたんじゃない？ 褒めてあげる",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/18b_fuyuko_real/ref_01.wav",
+          "text_jp": "今回のことは、あんたにしては気が利いてたんじゃない？ 褒めてあげる",
+          "story": "game_event_communications/400101405.json"
+        },
+        {
+          "file": "refs/18b_fuyuko_real/ref_02.wav",
+          "text_jp": "ちょっと考えたいって言ってるだけで ダメとは言ってないじゃない！",
+          "story": "game_event_communications/400104202.json"
+        },
+        {
+          "file": "refs/18b_fuyuko_real/ref_03.wav",
+          "text_jp": "なんとか歩み寄ろう、譲歩しようと思ってるのが バカバカしくなってきてるだけ……！",
+          "story": "game_event_communications/400104202.json"
+        },
+        {
+          "file": "refs/18b_fuyuko_real/ref_04.wav",
+          "text_jp": "よってあんたが謝る必要は１ミリもなし、わかった？",
+          "story": "game_event_communications/400104202.json"
+        },
+        {
+          "file": "refs/18b_fuyuko_real/ref_05.wav",
+          "text_jp": "幸い種目はわかってんだもの、 あいつの同意がなくたって勝手にできる",
+          "story": "game_event_communications/400104202.json"
+        }
+      ]
+    },
+    {
+      "id": "mei",
+      "slot": "19_mei",
+      "name": "和泉爱依",
+      "shortName": "愛依",
+      "aliases": [
+        "mei",
+        "19_mei",
+        "和泉爱依",
+        "愛依",
+        "和泉愛依",
+        "爱依"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/19_mei-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/19_mei_e2_s202_l32.pth",
+      "refAudio": "refs/19_mei/ref_01.wav",
+      "refText": "撫でんのはいいけどさ～ セットが崩れないくらいで ヨロシクね～♪",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/19_mei/ref_01.wav",
+          "text_jp": "撫でんのはいいけどさ～ セットが崩れないくらいで ヨロシクね～♪",
+          "story": "home:mypage_019_head_02"
+        },
+        {
+          "file": "refs/19_mei/ref_02.wav",
+          "text_jp": "許してあげたいけどさぁ ……これはちょっと無理～",
+          "story": "home:mypage_019_breast_02"
+        },
+        {
+          "file": "refs/19_mei/ref_03.wav",
+          "text_jp": "こういうのさー、ダメって言わなかった？次はマジで怒るよ？",
+          "story": "home:mypage_019_breast_03"
+        },
+        {
+          "file": "refs/19_mei/ref_04.wav",
+          "text_jp": "別にくすぐりとか 弱くないけど？ 何がしたいん？",
+          "story": "home:mypage_019_belly_01"
+        },
+        {
+          "file": "refs/19_mei/ref_05.wav",
+          "text_jp": "だーから～、弱くないし～ 構ってほしいなら言いなよ～ 寂しがり屋さん♪",
+          "story": "home:mypage_019_belly_02"
+        }
+      ]
+    },
+    {
+      "id": "toru",
+      "slot": "20_toru",
+      "name": "浅仓透",
+      "shortName": "透",
+      "aliases": [
+        "toru",
+        "20_toru",
+        "浅仓透",
+        "透",
+        "浅倉透"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/20_toru-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/20_toru_e2_s204_l32.pth",
+      "refAudio": "refs/20_toru/ref_01.wav",
+      "refText": "雛菜、誕生日だって ふふっ、しあわせあげなきゃ",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/20_toru/ref_01.wav",
+          "text_jp": "雛菜、誕生日だって ふふっ、しあわせあげなきゃ",
+          "story": "home:mypage_020_birthday_023_0010"
+        },
+        {
+          "file": "refs/20_toru/ref_02.wav",
+          "text_jp": "なんか、ちょっと進んでるっていうか のぼってるっていうか……",
+          "story": "game_event_communications/400102608.json"
+        },
+        {
+          "file": "refs/20_toru/ref_03.wav",
+          "text_jp": "なんで観たいんだろ 上手いわけでもないし、歌。そんな",
+          "story": "game_event_communications/400104906.json"
+        },
+        {
+          "file": "refs/20_toru/ref_04.wav",
+          "text_jp": "ファンの人たちでもないし 業界の人？ でもないし",
+          "story": "game_event_communications/400104906.json"
+        },
+        {
+          "file": "refs/20_toru/ref_05.wav",
+          "text_jp": "──なんか…… 私のなんだってー、これ。この舞台ー",
+          "story": "game_event_communications/400104907.json"
+        }
+      ]
+    },
+    {
+      "id": "madoka",
+      "slot": "21_madoka",
+      "name": "樋口圆香",
+      "shortName": "円香",
+      "aliases": [
+        "madoka",
+        "21_madoka",
+        "樋口圆香",
+        "円香",
+        "樋口円香",
+        "圆香"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/21_madoka-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/21_madoka_e2_s202_l32.pth",
+      "refAudio": "refs/21_madoka/ref_01.wav",
+      "refText": "小糸にはもうおめでとうって 言いました。何年の付き合い だと思っているんですか",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/21_madoka/ref_01.wav",
+          "text_jp": "小糸にはもうおめでとうって 言いました。何年の付き合い だと思っているんですか",
+          "story": "home:mypage_021_birthday_022_0010"
+        },
+        {
+          "file": "refs/21_madoka/ref_02.wav",
+          "text_jp": "雛菜へのプレゼント？ ハグとかでいいのでは？ 知らないけど",
+          "story": "home:mypage_021_birthday_023_0010"
+        },
+        {
+          "file": "refs/21_madoka/ref_03.wav",
+          "text_jp": "……でも、運転めんきょがいるんだよ おとなにならないと、運転できないんだから",
+          "story": "game_event_communications/400102601.json"
+        },
+        {
+          "file": "refs/21_madoka/ref_04.wav",
+          "text_jp": "────…… 『初仕事が決まった』って、顔に書いてある",
+          "story": "game_event_communications/400102601.json"
+        },
+        {
+          "file": "refs/21_madoka/ref_05.wav",
+          "text_jp": "私の幼馴染がそちらに所属することになりまして 騙されてないか、確かめに来たんです",
+          "story": "game_event_communications/400102602.json"
+        }
+      ]
+    },
+    {
+      "id": "koito",
+      "slot": "22_koito",
+      "name": "福丸小糸",
+      "shortName": "小糸",
+      "aliases": [
+        "koito",
+        "22_koito",
+        "福丸小糸",
+        "小糸"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/22_koito-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/22_koito_e2_s204_l32.pth",
+      "refAudio": "refs/22_koito/ref_01.wav",
+      "refText": "プ、プロデューサーさん……！ ほ、褒めてくれてるんですか……？",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/22_koito/ref_01.wav",
+          "text_jp": "プ、プロデューサーさん……！ ほ、褒めてくれてるんですか……？",
+          "story": "home:mypage_022_head_03"
+        },
+        {
+          "file": "refs/22_koito/ref_02.wav",
+          "text_jp": "透ちゃん…… 何が欲しいかわからなくて いつものお菓子に……",
+          "story": "home:mypage_022_birthday_020_0010"
+        },
+        {
+          "file": "refs/22_koito/ref_03.wav",
+          "text_jp": "プレゼントにお菓子買ったら わたしの好きなのばっかりに なっちゃいました……",
+          "story": "home:mypage_022_birthday_021_0010"
+        },
+        {
+          "file": "refs/22_koito/ref_04.wav",
+          "text_jp": "み、みなさん…… や、やっぱりプライベートの写真も可愛いんですね……",
+          "story": "game_event_communications/400101109.json"
+        },
+        {
+          "file": "refs/22_koito/ref_05.wav",
+          "text_jp": "……と、とおるちゃん 夏休み、ずっといないの……？",
+          "story": "game_event_communications/400102601.json"
+        }
+      ]
+    },
+    {
+      "id": "hinana",
+      "slot": "23_hinana",
+      "name": "市川雏菜",
+      "shortName": "雛菜",
+      "aliases": [
+        "hinana",
+        "23_hinana",
+        "市川雏菜",
+        "雛菜",
+        "市川雛菜",
+        "雏菜"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/23_hinana-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/23_hinana_e2_s204_l32.pth",
+      "refAudio": "refs/23_hinana/ref_01.wav",
+      "refText": "あは～、プロデューサーって いつも雛菜のことで 雛菜よりうれしそうだね～？",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/23_hinana/ref_01.wav",
+          "text_jp": "あは～、プロデューサーって いつも雛菜のことで 雛菜よりうれしそうだね～？",
+          "story": "home:mypage_023_04"
+        },
+        {
+          "file": "refs/23_hinana/ref_02.wav",
+          "text_jp": "ん～、パパのおっきい車で行けば だいじょうぶじゃないかな～？",
+          "story": "game_event_communications/400102601.json"
+        },
+        {
+          "file": "refs/23_hinana/ref_03.wav",
+          "text_jp": "ん～、もしかしてダンスの練習してた～？ 雛菜も透先輩とやりたい～～～",
+          "story": "game_event_communications/400102602.json"
+        },
+        {
+          "file": "refs/23_hinana/ref_04.wav",
+          "text_jp": "そしたら、その次の仕事って もっとすごくなるのかな～？",
+          "story": "game_event_communications/400102602.json"
+        },
+        {
+          "file": "refs/23_hinana/ref_05.wav",
+          "text_jp": "『ノクチル様』だって～ これ写真撮ってもいいよね～？",
+          "story": "game_event_communications/400102604.json"
+        }
+      ]
+    },
+    {
+      "id": "nichika",
+      "slot": "24_nichika",
+      "name": "七草日花",
+      "shortName": "にちか",
+      "aliases": [
+        "nichika",
+        "24_nichika",
+        "七草日花",
+        "にちか",
+        "七草にちか",
+        "日花"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/24_nichika-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/24_nichika_e2_s202_l32.pth",
+      "refAudio": "refs/24_nichika/ref_01.wav",
+      "refText": "もしかして、頭撫でたら喜ぶんだろうなーとか、思ってます？",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/24_nichika/ref_01.wav",
+          "text_jp": "もしかして、頭撫でたら喜ぶんだろうなーとか、思ってます？",
+          "story": "home:mypage_024_head_03"
+        },
+        {
+          "file": "refs/24_nichika/ref_02.wav",
+          "text_jp": "……っ 美琴さんのとこ、寄ってきましたね……！",
+          "story": "business_unit_communication/99070001.json"
+        },
+        {
+          "file": "refs/24_nichika/ref_03.wav",
+          "text_jp": "え、だって……職場体験ですよね？ 正直、そういうのお店の管理ミスもあると思いますけど……",
+          "story": "game_event_communications/400103907.json"
+        },
+        {
+          "file": "refs/24_nichika/ref_04.wav",
+          "text_jp": "それは……はい でもなんていうか、どこかで見たような気がして────",
+          "story": "game_event_communications/400104107.json"
+        },
+        {
+          "file": "refs/24_nichika/ref_05.wav",
+          "text_jp": "……もう現場着いてるのでー 後でお願いしますー",
+          "story": "game_event_communications/400104801.json"
+        }
+      ]
+    },
+    {
+      "id": "mikoto",
+      "slot": "25_mikoto",
+      "name": "绯田美琴",
+      "shortName": "美琴",
+      "aliases": [
+        "mikoto",
+        "25_mikoto",
+        "绯田美琴",
+        "美琴",
+        "緋田美琴"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/25_mikoto-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/25_mikoto_e2_s204_l32.pth",
+      "refAudio": "refs/25_mikoto/ref_01.wav",
+      "refText": "いつまで……どこまで 成長ってしていけるんだろうね ……プロデューサーは、知ってる？",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/25_mikoto/ref_01.wav",
+          "text_jp": "いつまで……どこまで 成長ってしていけるんだろうね ……プロデューサーは、知ってる？",
+          "story": "home:mypage_025_04"
+        },
+        {
+          "file": "refs/25_mikoto/ref_02.wav",
+          "text_jp": "あの位の歳の子は何が嬉しいの？ ……だけど、あの子って 少し変わってるみたいだし……",
+          "story": "home:mypage_025_birthday_024_0010"
+        },
+        {
+          "file": "refs/25_mikoto/ref_03.wav",
+          "text_jp": "脚を見つけた者が言う 『これは台車に違いない』",
+          "story": "game_event_communications/400104802.json"
+        },
+        {
+          "file": "refs/25_mikoto/ref_04.wav",
+          "text_jp": "弦を見つけた者が言う 『これは罠に違いない』",
+          "story": "game_event_communications/400104802.json"
+        },
+        {
+          "file": "refs/25_mikoto/ref_05.wav",
+          "text_jp": "蓋を見つけた者が言う 『これは棺に違いない』",
+          "story": "game_event_communications/400104802.json"
+        }
+      ]
+    },
+    {
+      "id": "luca",
+      "slot": "26_luca",
+      "name": "斑鸠路加",
+      "shortName": "ルカ",
+      "aliases": [
+        "luca",
+        "26_luca",
+        "斑鸠路加",
+        "ルカ",
+        "ruka",
+        "斑鳩ルカ",
+        "路加"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/26_luca-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/26_luca_e2_s202_l32.pth",
+      "refAudio": "refs/26_luca/ref_01.wav",
+      "refText": "とりあえず終わったか。ま、上出来だろ。",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/26_luca/ref_01.wav",
+          "text_jp": "とりあえず終わったか。ま、上出来だろ。",
+          "story": "home:mypage_026_04"
+        },
+        {
+          "file": "refs/26_luca/ref_02.wav",
+          "text_jp": "────違うんだよ、美琴…… 違うの、違う……っ",
+          "story": "game_event_communications/400103808.json"
+        },
+        {
+          "file": "refs/26_luca/ref_03.wav",
+          "text_jp": "──ねぇ、こういうの誰かにやってもらってよ ママ……",
+          "story": "game_event_communications/400104802.json"
+        },
+        {
+          "file": "refs/26_luca/ref_04.wav",
+          "text_jp": "……電話ばっかりくる オマエら、出る？",
+          "story": "game_event_communications/400104805.json"
+        },
+        {
+          "file": "refs/26_luca/ref_05.wav",
+          "text_jp": "はい、これ。頼まれたの──── ヨーグルトとパンと……",
+          "story": "game_event_communications/400104805.json"
+        }
+      ]
+    },
+    {
+      "id": "hana",
+      "slot": "27_hana",
+      "name": "铃木羽那",
+      "shortName": "羽那",
+      "aliases": [
+        "hana",
+        "27_hana",
+        "铃木羽那",
+        "羽那",
+        "鈴木羽那"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/27_hana-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/27_hana_e2_s202_l32.pth",
+      "refAudio": "refs/27_hana/ref_01.wav",
+      "refText": "ちょっとー！声かけてくれればいいのに。",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/27_hana/ref_01.wav",
+          "text_jp": "ちょっとー！声かけてくれればいいのに。",
+          "story": "home:mypage_027_breast_02"
+        },
+        {
+          "file": "refs/27_hana/ref_02.wav",
+          "text_jp": "んふっ、構ってほしいなら、そう言ってほしいな～",
+          "story": "home:mypage_027_belly_02"
+        },
+        {
+          "file": "refs/27_hana/ref_03.wav",
+          "text_jp": "その時は、ルカちゃんも一緒に 楽しんでもらえたらいいよね──！",
+          "story": "game_event_communications/400101111.json"
+        },
+        {
+          "file": "refs/27_hana/ref_04.wav",
+          "text_jp": "うーん クリスマスプレゼントをくれるとか？",
+          "story": "game_event_communications/400106801.json"
+        },
+        {
+          "file": "refs/27_hana/ref_05.wav",
+          "text_jp": "……外、ちょっとだけ見に行ってみない？",
+          "story": "game_event_communications/400106802.json"
+        }
+      ]
+    },
+    {
+      "id": "haruki",
+      "slot": "28_haruki",
+      "name": "郁田春希",
+      "shortName": "はるき",
+      "aliases": [
+        "haruki",
+        "28_haruki",
+        "郁田春希",
+        "はるき",
+        "郁田阳希",
+        "郁田はるき",
+        "春希",
+        "阳希"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/28_haruki-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/28_haruki_e2_s202_l32.pth",
+      "refAudio": "refs/28_haruki/ref_01.wav",
+      "refText": "郁田はるき、高校2年生です。アイドル、始めます！",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/28_haruki/ref_01.wav",
+          "text_jp": "郁田はるき、高校2年生です。アイドル、始めます！",
+          "story": "home:mypage_028_03"
+        },
+        {
+          "file": "refs/28_haruki/ref_02.wav",
+          "text_jp": "プロデューサーさんがいれば、私、どんなことでもできそうな気がするんです！",
+          "story": "home:mypage_028_04"
+        },
+        {
+          "file": "refs/28_haruki/ref_03.wav",
+          "text_jp": "あ……急に触られると、驚いちゃいます……。",
+          "story": "home:mypage_028_head_01"
+        },
+        {
+          "file": "refs/28_haruki/ref_04.wav",
+          "text_jp": "ふぁ……えへっ、うとうとしちゃいますね……。",
+          "story": "home:mypage_028_head_02"
+        },
+        {
+          "file": "refs/28_haruki/ref_05.wav",
+          "text_jp": "アイドルってだけでもすごいのに みなさん多才なんですねぇ……！",
+          "story": "game_event_communications/400101111.json"
+        }
+      ]
+    },
+    {
+      "id": "hazuki",
+      "slot": "29_hazuki",
+      "name": "七草叶月",
+      "shortName": "はづき",
+      "aliases": [
+        "hazuki",
+        "29_hazuki",
+        "七草叶月",
+        "はづき",
+        "七草はづき",
+        "叶月",
+        "葉月"
+      ],
+      "version": "v4",
+      "gpt": "models/GPT_weights_v4/29_hazuki-e15.ckpt",
+      "sovits": "models/SoVITS_weights_v4/29_hazuki_e2_s204_l32.pth",
+      "refAudio": "refs/29_hazuki/ref_01.wav",
+      "refText": "プロデューサーさん バスへの乗車状況について、報告よろしいでしょうか～",
+      "refLang": "ja",
+      "refs": [
+        {
+          "file": "refs/29_hazuki/ref_01.wav",
+          "text_jp": "プロデューサーさん バスへの乗車状況について、報告よろしいでしょうか～",
+          "story": "game_event_communications/400101501.json"
+        },
+        {
+          "file": "refs/29_hazuki/ref_02.wav",
+          "text_jp": "はい～ あとはあさひさんと愛依さんですね",
+          "story": "game_event_communications/400101501.json"
+        },
+        {
+          "file": "refs/29_hazuki/ref_03.wav",
+          "text_jp": "『返信遅れましたー 打ち上げの買い出しをしてて……♪』",
+          "story": "game_event_communications/400101908.json"
+        },
+        {
+          "file": "refs/29_hazuki/ref_04.wav",
+          "text_jp": "『プレゼントの件、社長用のサプライズで １つ多く混ぜてるんです』",
+          "story": "game_event_communications/400101908.json"
+        },
+        {
+          "file": "refs/29_hazuki/ref_05.wav",
+          "text_jp": "『金のリボンのなので 社長を見かけたら 渡してあげてくださいねー』",
+          "story": "game_event_communications/400101908.json"
+        }
+      ]
+    }
+  ]
+}
