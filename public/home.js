@@ -17,7 +17,7 @@ function setCleanFullscreen(active){
   cleanExitPill.classList.remove('faded');
  }
  if(isClean){
-  if(window.homeStage?.applySilent)window.homeStage.applySilent(true);
+  if(window.homeStage?.stop)window.homeStage.stop(true);
   try{if(!document.fullscreenElement&&document.documentElement.requestFullscreen)document.documentElement.requestFullscreen().catch(()=>{});}catch{}
   try{window.parent?.postMessage?.({type:'shiny-clean-fullscreen',active:true},location.origin);}catch{}
   clearTimeout(cleanPillTimer);
@@ -28,6 +28,7 @@ function setCleanFullscreen(active){
  }
 }
 if(btnCleanScreen)btnCleanScreen.onclick=()=>setCleanFullscreen(true);
+const ambientFrameBtn=$('#ambientFrameBtn');if(ambientFrameBtn)ambientFrameBtn.onclick=()=>{try{(window.parent?.PrismHub?.openAmbientFrame||window.PrismHub?.openAmbientFrame)?.()}catch{}};
 if(cleanExitPill)cleanExitPill.onclick=()=>setCleanFullscreen(false);
 document.addEventListener('keydown',e=>{
  if(e.key==='Escape'&&document.body.classList.contains('is-clean-fullscreen'))setCleanFullscreen(false);

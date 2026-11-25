@@ -685,7 +685,7 @@
       return ASCII_GLYPHS[(Math.random() * ASCII_GLYPHS.length) | 0];
     };
 
-    const runTextScramble = (el, durationMs = 1150) => {
+    const runTextScramble = (el, durationMs = 460) => {
       if (!el || !el.isConnected) return;
       const prev = scrambleActive.get(el);
       if (prev) {
@@ -703,8 +703,8 @@
       const totalChars = segments.reduce((sum, s) => sum + s.orig.length, 0);
       if (totalChars === 0 || totalChars > 90) return;
 
-      const dur = isJoyTrans ? Math.min(durationMs, 1100) : durationMs;
-      const glyphStepMs = 82; // ~12fps calm, deliberate glyph cadence
+      const dur = isJoyTrans ? Math.min(durationMs, 420) : durationMs;
+      const glyphStepMs = 36; // ~28fps crisp, snappy prism decode
       let start = 0;
       let lastGlyphTick = -999;
 
@@ -780,9 +780,9 @@
         if (entry.isIntersecting) {
           if (!scramblePlayed.has(el)) {
             scramblePlayed.add(el);
-            const delay = Math.min(delayIdx * 130, 380);
+            const delay = Math.min(delayIdx * 45, 140);
             delayIdx++;
-            setTimeout(() => runTextScramble(el, el.matches('h1, h2') ? 1900 : 1500), delay);
+            setTimeout(() => runTextScramble(el, el.matches('h1, h2') ? 560 : 440), delay);
           }
         } else {
           const r = entry.boundingClientRect;
@@ -809,7 +809,7 @@
             if (cur && cur !== lastTitle) {
               lastTitle = cur;
               scrambleOrigMap.delete(heroTitle);
-              runTextScramble(heroTitle, 900);
+              runTextScramble(heroTitle, 420);
             }
           }).observe(heroTitle, { childList: true, characterData: true, subtree: true });
         }
@@ -871,8 +871,8 @@
       const running = countActive.get(el);
       if (running) cancelAnimationFrame(running.raf);
 
-      // Unhurried, readable duration with graceful easeOutQuad deceleration & strict >= 0 clamp
-      const duration = isJoyTrans ? 1500 : (spec.value >= 100 ? 2800 : 2200);
+      // Snappy duration with crisp easeOutCubic deceleration & strict >= 0 clamp
+      const duration = isJoyTrans ? 500 : (spec.value >= 100 ? 780 : 600);
       let start = 0;
       const state = { raf: 0, animating: true };
       countActive.set(el, state);
@@ -881,8 +881,8 @@
       const step = (now) => {
         if (!start) start = now;
         const t = Math.max(0, Math.min(1, (now - start) / duration));
-        // easeOutQuad: steady, readable climb with gentle landing (never negative!)
-        const eased = 1 - (1 - t) * (1 - t);
+        // easeOutCubic: fast climb with crisp landing (never negative!)
+        const eased = 1 - Math.pow(1 - t, 3);
         const current = Math.max(0, spec.value * eased);
         const formatted = t >= 1 ? spec.raw : formatNumber(current, spec);
         if (el.textContent !== formatted) el.textContent = formatted;
@@ -911,7 +911,7 @@
               countLastTarget.set(el, spec.raw);
               el.textContent = formatNumber(0, spec);
             }
-            const delay = Math.min(i * 110, 360);
+            const delay = Math.min(i * 40, 140);
             i++;
             setTimeout(() => animateCountUp(el, true), delay);
           }

@@ -8,9 +8,10 @@
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
-  gap: 10px !important;
-  flex-wrap: nowrap !important;
-  overflow-x: auto !important;
+  row-gap: 8px !important;
+  column-gap: 10px !important;
+  flex-wrap: wrap !important;
+  overflow-x: visible !important;
   margin: 12px 0 16px !important;
   scrollbar-width: none !important;
 }
@@ -20,9 +21,9 @@
   display: flex !important;
   align-items: center !important;
   gap: 6px !important;
-  flex-wrap: nowrap !important;
+  flex-wrap: wrap !important;
   margin: 0 !important;
-  flex-shrink: 0 !important;
+  flex-shrink: 1 !important;
 }
 
 .guide-top-bar-row .guide-actions button {
@@ -36,13 +37,13 @@
   display: flex !important;
   align-items: center !important;
   gap: 6px !important;
-  flex-wrap: nowrap !important;
+  flex-wrap: wrap !important;
   margin: 0 !important;
   padding: 0 !important;
   background: transparent !important;
   backdrop-filter: none !important;
   position: static !important;
-  flex-shrink: 0 !important;
+  flex-shrink: 1 !important;
 }
 
 .guide-top-bar-row .shortcuts a {

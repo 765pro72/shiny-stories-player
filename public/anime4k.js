@@ -84,14 +84,27 @@
     // Do not advance dialogue when changing the rendering setting.
     for (const event of ['click', 'pointerdown', 'touchstart']) wrapper.addEventListener(event, e => e.stopPropagation());
     wrapper.append(title, list);
+    if (!document.getElementById('anime4k-vram-warn-style')) {
+      const st = document.createElement('style');
+      st.id = 'anime4k-vram-warn-style';
+      st.textContent = '.anime4k-vram-warn{display:block;flex-basis:100%;margin:6px 0 0;font-size:12px;line-height:1.5;color:#b45309;}html[data-theme="dark"] .anime4k-vram-warn{color:#fbbf24;}.anime4k-floating .anime4k-vram-warn{text-align:right;padding:0 5px;font-size:.78em;margin-top:3px;}#cardDetail .anime4k-vram-warn{display:none;}';
+      document.head.append(st);
+    }
     let status;
     if (detailed) {
       status = document.createElement('p'); status.setAttribute('role', 'status');
       const hint = document.createElement('p');
       hint.textContent='拖动调整实时处理顺序，关闭项跳过，默认全部关闭。ArtCNN C4F16 优先速度，C4F32 更精细但更耗性能；4×连续运行两次2×。全部在显卡本地处理，无需下载大权重、上传图片或等待图集推理。角色、卡面和视频共用实时链；持续低帧率会降档并提示。';
-      wrapper.append(status, hint);
+      const vramWarn = document.createElement('p');
+      vramWarn.className = 'anime4k-vram-warn';
+      vramWarn.textContent = '⚠️ 显存提示：桌面端 2× 实时超分将以 2K→4.5K 渲染，4× 或双模型串联显存占用较高（建议 ≥8GB 显存，低显存设备可能卡顿或显存不足）；如已开启离线 4K 画质包，原生即 4K 渲染，无需再开实时超分。';
+      wrapper.append(status, hint, vramWarn);
     } else {
-      status = document.createElement('small'); status.className = 'anime4k-actual'; wrapper.append(status);
+      status = document.createElement('small'); status.className = 'anime4k-actual';
+      const vramWarn = document.createElement('small');
+      vramWarn.className = 'anime4k-vram-warn';
+      vramWarn.textContent = '⚠️ 桌面 2×(4.5K)/4×/串联较吃显存（建议 ≥8GB）；开离线 4K 包时无需再开。';
+      wrapper.append(status, vramWarn);
     }
     host.append(wrapper);
     let diagnostic;
@@ -131,14 +144,15 @@
       if (fill) Object.assign(output.style, { position: 'absolute', inset: '0', transform: 'none', width: '100%', height: '100%', objectFit: getComputedStyle(source).objectFit || 'contain' });
     }
     function calcNativeRes() {
+      const lw = app.screen?.width || 1136;
       const ds = document.documentElement.dataset;
-      if (ds.joytrans === '1' || ds.kirin === '1') return 1.5;
+      if (ds.joytrans === '1' || ds.kirin === '1') return lw >= 1920 ? 1 : Math.min(1.5, 1920 / lw);
       const isMob = ds.mobile === '1' || ds.android === '1' || ds.platform === 'android' || /Android|iPhone|iPad|Mobile|HarmonyOS/i.test(navigator.userAgent);
-      if (isMob) return Math.min(2, Math.max(1.5, window.devicePixelRatio || 1.5));
+      if (isMob) return lw >= 2560 ? 1 : Math.min(2, Math.max(1, Math.min(Math.max(1.5, window.devicePixelRatio || 1.5), 2560 / lw)));
+      if (lw >= 3840) return 1;
       const dpr = window.devicePixelRatio || 1;
-      const lw = Math.max(app.screen?.width || 1136, 900);
       const targetW = Math.max(window.innerWidth || 1920, 1920) * dpr;
-      return Math.min(3.375, Math.max(2.25, targetW / lw));
+      return Math.min(3.375, 3840 / lw, Math.max(1, targetW / lw, 2560 / lw));
     }
     let _inResizeSync = false;
     function applyStageResolution(targetRes) {
@@ -186,9 +200,13 @@
       // synchronously be reused. The source canvas and PIXI stage stay intact.
       if (passes.length || state.active) reset();
       if (preset === 'off' || destroyed) { applyStageResolution(calcNativeRes()); notify(); return; }
-      applyStageResolution(1);
       try {
         const stages=override|| (preset==='artcnn'?enabledStages():[{id:'anime4k',level:preset}]);
+        const totalScale=stages.reduce((acc,s)=>acc*((s.level==='ultra'||s.level==='c324x'||s.level==='c164x')?4:2),1);
+        const ds=document.documentElement.dataset;
+        const isLowPower=ds.joytrans==='1'||ds.kirin==='1'||ds.mobile==='1'||ds.android==='1'||ds.platform==='android'||/Android|iPhone|iPad|Mobile|HarmonyOS/i.test(navigator.userAgent);
+        const lw=app.screen?.width||1136;
+        applyStageResolution(!isLowPower&&totalScale<=2&&lw<=1600?2:1);
         state.actualStages=stages.map(s=>({...s}));
         const core=stages.some(s=>s.id==='anime4k')?await loadCore():null,art=stages.some(s=>s.id==='artcnn')?await loadArt():null;
         if(destroyed||token!==generation)return;

@@ -133,22 +133,25 @@
     modalBodyEl = document.getElementById('phModalBody');
     document.getElementById('phModalClose')?.addEventListener('click', closeModal);
     backdropEl.addEventListener('click', e => { if (e.target === backdropEl) closeModal(); });
-    window.addEventListener('keydown', e => {
-      if (ambientEl && !ambientEl.hidden) {
-        if (e.key === 'Escape') {
-          closeAmbientFrame();
-        } else if (e.key === ' ' || e.code === 'Space') {
-          const tag = (e.target?.tagName || '').toLowerCase();
-          if (tag !== 'input' && tag !== 'textarea') {
-            e.preventDefault();
-            document.getElementById('phAfPlayBtn')?.click();
-          }
-        }
-      } else if (e.key === 'Escape') {
-        if (backdropEl && !backdropEl.hidden) closeModal();
-      }
-    });
   }
+
+  window.addEventListener('keydown', e => {
+    if (ambientEl && !ambientEl.hidden) {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        e.stopPropagation();
+        closeAmbientFrame();
+      } else if (e.key === ' ' || e.code === 'Space') {
+        const tag = (e.target?.tagName || '').toLowerCase();
+        if (tag !== 'input' && tag !== 'textarea') {
+          e.preventDefault();
+          document.getElementById('phAfPlayBtn')?.click();
+        }
+      }
+    } else if (e.key === 'Escape') {
+      if (backdropEl && !backdropEl.hidden) closeModal();
+    }
+  }, true);
 
   function openModal(sub, title, opts = {}) {
     ensureModalHost();
@@ -905,6 +908,7 @@
     if (!ambientEl) {
       ambientEl = document.createElement('div');
       ambientEl.className = 'ph-ambient-frame';
+      ambientEl.tabIndex = -1;
       ambientEl.hidden = true;
       ambientEl.innerHTML = `
         <div class="ph-af-art-bg" id="phAfBg"></div>
@@ -914,11 +918,16 @@
             <div class="ph-af-clock" id="phAfClock">00:00</div>
             <div class="ph-af-date" id="phAfDate">283 PRODUCTION · AMBIENT ART FRAME</div>
           </div>
-          <div style="display:flex;gap:8px;align-items:center;">
-            <button type="button" class="ph-btn ghost" id="phAfNextArtBtn">🖼 换画作</button>
-            <button type="button" class="ph-btn ghost" id="phAfDimBtn" title="切换夜间调光亮度">🌙 调光: 100%</button>
-            <button type="button" class="ph-btn ghost" id="phAfFullscreenBtn" title="切换操作系统全屏 (F11)">⛶ 全屏</button>
-            <button type="button" class="ph-btn ghost" id="phAfExitBtn">退出 (ESC) ×</button>
+          <div class="ph-af-actions">
+            <div class="ph-af-more-wrap">
+              <button type="button" class="ph-btn ghost" id="phAfMoreBtn" aria-expanded="false">··· 更多</button>
+              <div class="ph-af-more-menu" id="phAfMoreMenu" hidden>
+                <button type="button" class="ph-af-menu-item" id="phAfNextArtBtn">🖼 换画作</button>
+                <button type="button" class="ph-af-menu-item" id="phAfDimBtn">🌙 调光: 100%</button>
+                <button type="button" class="ph-af-menu-item" id="phAfFullscreenBtn">⛶ 全屏</button>
+              </div>
+            </div>
+            <button type="button" class="ph-btn ghost" id="phAfExitBtn">退出 ×</button>
           </div>
         </header>
         <footer class="ph-af-bottom">
@@ -957,8 +966,30 @@
       ambientEl.addEventListener('mousemove', resetIdleTimer);
       ambientEl.addEventListener('pointerdown', resetIdleTimer);
 
+      const moreBtn = document.getElementById('phAfMoreBtn');
+      const moreMenu = document.getElementById('phAfMoreMenu');
+      const closeMoreMenu = () => {
+        if (moreMenu) moreMenu.hidden = true;
+        if (moreBtn) moreBtn.setAttribute('aria-expanded', 'false');
+      };
+      moreBtn?.addEventListener('click', e => {
+        e.stopPropagation();
+        if (!moreMenu) return;
+        const willOpen = moreMenu.hidden;
+        moreMenu.hidden = !willOpen;
+        moreBtn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+      });
+      ambientEl.addEventListener('click', e => {
+        if (moreMenu && !moreMenu.hidden && !e.target.closest('.ph-af-more-wrap')) {
+          closeMoreMenu();
+        }
+      });
+
       document.getElementById('phAfExitBtn')?.addEventListener('click', closeAmbientFrame);
-      document.getElementById('phAfNextArtBtn')?.addEventListener('click', () => cycleArt());
+      document.getElementById('phAfNextArtBtn')?.addEventListener('click', () => {
+        cycleArt();
+        closeMoreMenu();
+      });
       document.getElementById('phAfPlayBtn')?.addEventListener('click', () => {
         document.getElementById('islandMiniPlay')?.click();
         setTimeout(tick, 60);
@@ -987,6 +1018,10 @@
         } else {
           document.exitFullscreen().catch(() => {});
         }
+        const m = document.getElementById('phAfMoreMenu');
+        const b = document.getElementById('phAfMoreBtn');
+        if (m) m.hidden = true;
+        if (b) b.setAttribute('aria-expanded', 'false');
       });
       document.getElementById('phAfJumpStoryBtn')?.addEventListener('click', () => {
         if (currentArtPick?.storyKey) {
@@ -1038,6 +1073,7 @@
     };
 
     ambientEl.hidden = false;
+    try { ambientEl.focus({ preventScroll: true }); } catch {}
     cycleArt();
     tick();
     clearInterval(ambientTimer);
@@ -1050,7 +1086,14 @@
   function closeAmbientFrame() {
     clearTimeout(idleFadeTimer);
     clearInterval(ambientTimer);
+    const m = document.getElementById('phAfMoreMenu');
+    const b = document.getElementById('phAfMoreBtn');
+    if (m) m.hidden = true;
+    if (b) b.setAttribute('aria-expanded', 'false');
     if (ambientEl) ambientEl.hidden = true;
+    if (document.fullscreenElement) {
+      document.exitFullscreen().catch(() => {});
+    }
     setHomeFrameVisibility(true);
   }
 
@@ -1648,10 +1691,6 @@
         <button type="button" class="mh-item" data-act="resume">
           <span class="mh-ico">📊</span>
           <span class="mh-txt"><strong>制作人 283 履历书与成就印章册</strong><small>阅历统计、12 枚成就印章与高清长图导出</small></span>
-        </button>
-        <button type="button" class="mh-item" data-act="ambient">
-          <span class="mh-ico">🖼️</span>
-          <span class="mh-txt"><strong>全屏「黑胶艺术画框 / 待机屏保」</strong><small>全景卡面轮播 + 旋转黑胶与时钟（自动静音背景偶像）</small></span>
         </button>
         <button type="button" class="mh-item" data-act="companion" id="mhCompanionItem">
           <span class="mh-ico">💬</span>

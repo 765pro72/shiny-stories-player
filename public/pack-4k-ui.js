@@ -62,6 +62,11 @@
 
   function reloadVisibleStage() {
     try {
+      const d = getDesktop();
+      if (d?.reloadIgnoringCache) {
+        d.reloadIgnoringCache();
+        return;
+      }
       const topWin = (window.parent && window.parent !== window) ? window.parent : window;
       const frames = topWin.document.querySelectorAll('#shellStage iframe');
       if (frames.length) {

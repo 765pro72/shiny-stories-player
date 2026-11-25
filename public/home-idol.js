@@ -2,6 +2,7 @@
  const $=s=>document.querySelector(s);let catalog=[],model,selected,clothes,loadSerial=0,voiceSerial=0,audio=null,userGesture=false,lastVoice=null;
  let prefs={idol:'1',outfit:'1040010010-plain',volume:60,idle:true,silent:false,language:"zh",trustById:{}};try{Object.assign(prefs,JSON.parse(localStorage.getItem('home')||'{}'))}catch{}
  if(localStorage.getItem('shiny.homeSilent')==='1')prefs.silent=true;
+ try{if(localStorage.getItem('shiny.homeSilentCleanFixV1')!=='1'){if(prefs.silent||localStorage.getItem('shiny.homeSilent')==='1'){prefs.silent=false;localStorage.setItem('shiny.homeSilent','0');const v=JSON.stringify(prefs);localStorage.setItem('home',v);window.desktop?.saveState?.({home:v});}localStorage.setItem('shiny.homeSilentCleanFixV1','1');}}catch{}
  // One-time default migration: ensure Home subtitle defaults to Chinese-only (JP fallback when missing) instead of legacy bilingual 'both'
  try{if(localStorage.getItem('shiny.homeSubZhDefaultV1')!=='1'){if(prefs.language==='both'||!['zh','both','jp'].includes(prefs.language)){prefs.language='zh';const v=JSON.stringify(prefs);localStorage.setItem('home',v);window.desktop?.saveState?.({home:v});}localStorage.setItem('shiny.homeSubZhDefaultV1','1');}}catch{}
  // CSS must override autoDensity's fixed inline logical size at desktop resolutions.
