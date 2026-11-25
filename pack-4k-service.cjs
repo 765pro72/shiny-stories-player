@@ -48,6 +48,12 @@ function inspectDir(dir) {
   return { root, hasImages, hasSpine, hasMovies };
 }
 
+function normalizeSpineAtlas(txt) {
+  return String(txt || '')
+    .replace(/(size:\s*\d+\s*,\s*\d+)\s*(format:|filter:|repeat:|pma:)/g, '$1\n$2')
+    .replace(/([^\r\n \t])[ \t]+(?=(?:xy|size|orig|offset|offsets|bounds|rotate|index|split|pad):\s)/g, '$1\n  ');
+}
+
 function createPack4kService({ base, userDir, onChange = () => {} }) {
   const cfgFile = path.join(userDir, 'pack-4k.json');
   const defaultExtractDir = path.join(userDir, 'cache-4k');
@@ -214,7 +220,7 @@ function createPack4kService({ base, userDir, onChange = () => {} }) {
     return false;
   }
 
-  return { handler, resolve4kAsset, getStatus, setEnabled, setCustomDir, extractArchive };
+  return { handler, resolve4kAsset, getStatus, setEnabled, setCustomDir, extractArchive, normalizeSpineAtlas };
 }
 
-module.exports = { createPack4kService };
+module.exports = { createPack4kService, normalizeSpineAtlas };
