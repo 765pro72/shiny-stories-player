@@ -120,9 +120,10 @@
    try{
      const ctx=PIXI.sound&&PIXI.sound.context;
      if(ctx&&typeof ctx.resume==='function'){
+       const wasSuspended=ctx.audioContext?.state==='suspended';
        const r=ctx.resume();
        const tryResumeVoice = ()=>{
-         if(player&&!player._soundController?._soundDisabled&&player._trackManager){
+         if(wasSuspended&&player&&!player._paused&&!ended&&!player._soundController?._soundDisabled&&player._trackManager){
            const cur=player._trackManager.currentTrack||player._trackManager.current?.();
            if(cur&&cur.voice){
              const v=player._currentVoice;
