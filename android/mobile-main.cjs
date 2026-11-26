@@ -9,7 +9,7 @@ async function mobileAPI(req,res,url){
  if(!url.pathname.startsWith('/api/mobile/'))return false;const send=value=>{res.setHeader('Content-Type','application/json; charset=utf-8');res.setHeader('Cache-Control','no-store');res.end(JSON.stringify(value))};
  if(req.headers.origin&&req.headers.origin!=='http://'+req.headers.host){res.writeHead(403);res.end();return true}
  const route=url.pathname.slice(12);try{
- if(route==='health'){send({ok:true,platform:process.platform,arch:process.arch,node:process.versions.node,version:'2026-11-16.75',root:core});return true}
+ if(route==='health'){send({ok:true,platform:process.platform,arch:process.arch,node:process.versions.node,version:'2026-11-16.77',root:core});return true}
  if(route==='update-state'){send(updates?.snapshot()||{status:'idle',history:[]});return true}
  if(route==='check-updates'){try{const checkP=updates?updates.check():Promise.resolve({sources:[],hasUpdate:false});const result=await Promise.race([checkP,new Promise(r=>setTimeout(()=>r({sources:[],hasUpdate:false}),2000))]);send(result)}catch(err){send({sources:[],hasUpdate:false,error:err.message})}return true}
  if(route==='update'){if(req.method!=='POST')throw Error('需要POST');send(downloading?{ok:false,error:'请等待离线下载完成'}:updates.start());return true}
@@ -30,7 +30,7 @@ const {start}=require('./server.cjs');
  const options={mobile:true,mobileAPI,customStoryRoot:path.join(user,'怪文书'),assistantWorkRoot:path.join(user,'AI助手'),canApplyRepair:false,assistantCodeEnabled:false};
  try{server=await start(path.join(user,'asset-cache'),preferred,()=>data,options)}catch(e){if(e.code!=='EADDRINUSE')throw e;server=await start(path.join(user,'asset-cache'),0,()=>data,options)}
  updates=new(require('./update-background.cjs').BackgroundUpdates)(user,{onActivate:r=>{data=r.data}});
- const port=new URL(server.url).port;fs.writeFileSync(path.join(user,'port.txt'),port);fs.writeFileSync(path.join(user,'ready.json'),JSON.stringify({url:server.url,pid:process.pid,version:'2026-11-16.75'}));console.log('SHINY_READY',server.url);
+ const port=new URL(server.url).port;fs.writeFileSync(path.join(user,'port.txt'),port);fs.writeFileSync(path.join(user,'ready.json'),JSON.stringify({url:server.url,pid:process.pid,version:'2026-11-16.77'}));console.log('SHINY_READY',server.url);
 })().catch(e=>{fs.writeFileSync(path.join(user,'startup-error.txt'),e.stack||String(e));console.error(e)});
 
 

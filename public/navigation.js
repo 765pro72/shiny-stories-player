@@ -19,7 +19,7 @@
     } catch {}
   }
   if(typeof document.querySelector==='function'){
-    if(window.top===window.self&&!document.querySelector('script[data-idol-assistant]')&&document.head){const script=document.createElement('script');script.src='/assistant.js?v=2026-11-16.75';script.dataset.idolAssistant='';script.defer=true;document.head.append(script)}
+    if(window.top===window.self&&!document.querySelector('script[data-idol-assistant]')&&document.head){const script=document.createElement('script');script.src='/assistant.js?v=2026-11-16.77';script.dataset.idolAssistant='';script.defer=true;document.head.append(script)}
     if(!document.querySelector('link[href*="ui-upgrade.css"]')&&document.head){const link=document.createElement('link');link.rel='stylesheet';link.href='/ui-upgrade.css';document.head.append(link)}
     if(!document.querySelector('link[href*="apple-reset.css"]')&&document.head){const link=document.createElement('link');link.rel='stylesheet';link.href='/apple-reset.css';document.head.append(link)}
     if(!document.querySelector('script[data-ui-upgrade]')&&document.head){const script=document.createElement('script');script.src='/ui-upgrade.js';script.dataset.uiUpgrade='';script.defer=true;document.head.append(script)}

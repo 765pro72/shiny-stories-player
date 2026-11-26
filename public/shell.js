@@ -190,6 +190,10 @@
   let activePage = null;
   let bootDismissed = false;
   let islandPopoverOpen = false;
+  // Shared debounce timestamp for the music capsule popover.  Keep this in
+  // the shell scope because both the island handlers and the global toggle
+  // call openIslandPopover()/closeIslandPopover().
+  let lastPopToggleTime = 0;
   let islandSeeking = false;
   let musicState = {
     song: null,
@@ -1299,7 +1303,6 @@
       }
     } catch {}
 
-    let lastPopToggleTime = 0;
     const togglePop = (e) => {
       if (e.target.closest('#islandMiniNext') || e.target.closest('#islandMiniPlay') || e.target.closest('#islandCoverBtn')) return;
       e.stopPropagation();
