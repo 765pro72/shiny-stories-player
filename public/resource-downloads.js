@@ -4,6 +4,7 @@
   try{const r=await fetch('/api/resource-download',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({keys})});if(!r.ok)throw Error(await r.text());const result=await r.json();if(result.failed)throw Error(`${result.failed} 项未完成，点击重试`);button.textContent='已下载';button.title='已保存到下载资源文件夹，可离线使用'}
   catch(e){button.textContent='重试下载';button.title=e.message}finally{button.disabled=false}
  }
+ window.downloadResources=(keys,button)=>save(keys,button);
  window.storyDownloadButton=key=>{const b=document.createElement('button');b.type='button';b.className='story-download story-action-btn';b.innerHTML='<svg class="download-ic" viewBox="0 0 24 24" width="11" height="11" stroke="currentColor" stroke-width="2.5" fill="none"><path d="M12 3v13m0 0l-4-4m4 4l4-4M4 20h16"/></svg><span>下载</span>';b.setAttribute('aria-label','下载这篇剧情');b.onclick=e=>{e.stopPropagation();save(['json/'+key],b)};return b};
  const style=document.createElement('style');style.textContent='.story-download:disabled{opacity:.6;cursor:wait}.story-download-row{display:flex;align-items:center;justify-content:space-between;gap:10px}.story-download-row>.inline-story,.story-download-row>.story-item{flex:1;min-width:0}';document.head.append(style);
  const settings=document.querySelector('#wardrobeDialog');

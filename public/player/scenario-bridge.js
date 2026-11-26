@@ -64,6 +64,7 @@
    const msg = error?.message || String(error || '');
    if (msg.toLowerCase().includes('transition was skipped') || error?.name === 'AbortError') return;
    hasFailed = true;
+   emit('error', msg);
    document.body.classList.add('has-error');
    console.error(error);
    $('#loading').style.display='grid';
@@ -166,19 +167,7 @@
   p.on('end',()=>{
    ended=true;p._schedule.cancelAll();p._detachVoiceEndListener();p._detachCurrentVoiceEndHandler();sound.removeAll();stage.stopLipAnimations();
    status('本篇剧情播放完毕。');
-   $('#loading').style.display='grid';
-   const existingActions = $('#loading .loading-actions');
-   if (existingActions) existingActions.remove();
-   const actions = document.createElement('div');
-   actions.className = 'loading-actions';
-   actions.style.cssText = 'display:flex;align-items:center;justify-content:center;gap:12px;margin-top:20px;';
-   const returnBtn = document.createElement('button');
-   returnBtn.type = 'button';
-   returnBtn.textContent = '返回主页';
-   returnBtn.style.cssText = 'padding:10px 24px;border-radius:999px;background:#c04b78;color:#fff;border:none;font-weight:600;cursor:pointer;font-size:14px;box-shadow:0 4px 12px rgba(192,75,120,0.3);touch-action:manipulation;';
-   returnBtn.onclick = exitPlayer;
-   actions.append(returnBtn);
-   $('#loading').append(actions);
+   $('#loading').style.display='none';
   });
  }
  function normalize4kTextures(loader){
@@ -232,7 +221,7 @@
   for(const item of await missingPromise)if(item.key)knownUnavailable.add(item.key);
   const portraits=await portraitPromise;converter=new AdvResourceConverter();converter._getSpeakerIconPath=sp=>{const id=SPEAKER_ICON_MAIN[sp]||SPEAKER_ICON_SUB[sp],match=portraits.find(p=>String(Number(p.id))===String(Number(id))||p.name===(names[sp]||sp));return match&&!match.crop?'/asset-original/'+match.path:null};
   const convert=converter.convertResourcePaths.bind(converter);converter.convertResourcePaths=input=>convert(input).map(t=>{if(t.logTextFrame){const id=t.logTextFrame.split('/').pop();if(['001.png','002.png','003.png'].includes(id))t.logTextFrame='/player/scenario-ui/images/event/log_text_frame/'+id}return t});
-  annotate();emit('ready');const errors=await preload();if(disposed)return;
+  annotate();emit('ready');const errors=await preload();if(params.has('standby'))await activateStandby;if(disposed)return;
   PIXI.utils.skipHello();gsap.registerPlugin(PixiPlugin);PixiPlugin.registerPIXI(PIXI);
   if(PIXI.settings&&PIXI.MIPMAP_MODES)PIXI.settings.MIPMAP_TEXTURES=PIXI.MIPMAP_MODES.ON;
   const _sds=document.documentElement.dataset,_sJoy=_sds.joytrans==='1'||_sds.kirin==='1',_sMob=_sds.mobile==='1'||_sds.android==='1'||_sds.platform==='android'||/Android|iPhone|iPad|Mobile|HarmonyOS/i.test(navigator.userAgent);
@@ -242,6 +231,9 @@
   app.ticker.add(delta=>{if(!disposed)player.update(delta)});started=true;player.start(tracks);setVolume(volume);unlockAudio();
   status('准备完成 · 翻译：'+(translation.translator||'暂无汉化')+(translation.additionalSources?.length?' · 补译来源：'+translation.additionalSources.map(s=>s.credit).join('、'):'')+(errors.length?' · '+errors.length+' 个辅助或音频资源未加载':''));if(!ended)$('#loading').style.display='none';
  }
+ const activateStandby=new Promise(resolve=>addEventListener('message',e=>{
+  if(e.origin===location.origin&&e.source===parent&&e.data?.type==='activate')resolve();
+ }));
  addEventListener('resize',resize);
  for(const type of ['pointerdown','touchstart','keydown'])addEventListener(type,unlockAudio,{passive:true,capture:true});addEventListener('interface-font-change',applyFont);
  addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==parent)return;const {type,value}=e.data||{};
@@ -250,6 +242,7 @@
   if(type==='lang'&&['zh','jp','both'].includes(value)){language=value;if(raw.length)annotate()}
   if(type==='auto')setAuto(player?._mode!==SpeedMode.AUTO);
   if(type==='jump'&&Number.isInteger(value))jumpToTrack(value);
+  if(type==='log'&&started&&!disposed&&!player._paused)player._openLog();
  });
  addEventListener('pagehide',()=>{disposed=true;if(player){player._schedule.cancelAll();player._deferredTasks=[];player._detachVoiceEndListener();player._detachCurrentVoiceEndHandler();player.soundController.removeAll();player._movieLayer.reset();player._characterStage.stopLipAnimations();player._scenarioPlayer.destroy()}app?.ticker.stop()},{once:true});
  addEventListener('error',e=>{

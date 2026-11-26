@@ -37,6 +37,19 @@ app.whenReady().then(async()=>{const timer=setTimeout(()=>app.exit(1),150000);tr
  const js=code=>win.webContents.executeJavaScript(code,true),wait=async(code,label)=>{const at=Date.now();while(!await js(code)){if(Date.now()-at>(label==='branch'?6000:25000))throw Error(label+': '+JSON.stringify(await js('({parent:document.querySelector("#status")?.textContent,child:document.querySelector("iframe")?.contentDocument?.querySelector("#loading")?.textContent,state:document.querySelector("iframe")?.contentWindow?.ScenarioBridge?.inspect(),choices:(()=>{const p=document.querySelector("iframe")?.contentWindow?.player;return{active:p?._selectList?.active,selecting:p?._selectList?._selecting,items:p?._selectList?._items?.length,next:p?._trackManager?._nextLabel,debug:document.querySelector("iframe")?.contentWindow?.choiceDebug,tweens:document.querySelector("iframe")?.contentWindow?.gsap?.globalTimeline.getChildren().map(t=>({time:t.time(),duration:t.duration(),paused:t.paused(),active:t.isActive(),start:t.startTime(),delay:t.delay(),target:t.targets?.().map(x=>x.constructor.name),parentTime:t.parent?.time(),parentScale:t.parent?.timeScale(),ease:String(t.vars.ease)}))}})()})')));await new Promise(r=>setTimeout(r,35))}};
  await win.loadURL(service.url+'/library.html');await wait('typeof openStoryByKey==="function"&&!!document.querySelector("#list button")','library ready');await js(`openStoryByKey(${JSON.stringify(key)})`);
  await wait('document.querySelector("#frame").contentWindow.ScenarioBridge?.started&&document.querySelector("#frame").contentWindow.ScenarioBridge?.player._trackManager._current===5','voice track');
+ if(process.argv.includes('--backlog-only')){
+  await js(`document.querySelector('#backlog').click()`);
+  await wait('document.querySelector("#frame").contentWindow.player._paused','backlog button');
+  await js(`document.querySelector('#frame').contentWindow.player._scenarioLogLayer.close()`);
+  await wait('!document.querySelector("#frame").contentWindow.player._paused','log closed');
+  await js(`document.querySelector('#frame').contentWindow.player.emit('end')`);
+  await wait('document.querySelector("#frame").contentWindow.ScenarioBridge.ended','story end');
+  assert.equal(await js('document.querySelector("#frame").contentDocument.querySelector("#loading").style.display'),'none');
+  await js(`document.querySelector('#backlog').click()`);
+  await wait('document.querySelector("#frame").contentWindow.player._paused','backlog after story end');
+  console.log('Backlog opens during and after playback');
+  return;
+ }
  const initial=await js(`(()=>{const w=document.querySelector('#frame').contentWindow,p=w.player;return{engine:w.ScenarioBridge.inspect(),translated:w.ScenarioBridge.tracks[5].text,fg:p._middleFgLayer._main.texture.width,characters:p._characterStage._spineMap.size,mouth:[...p._characterStage._spineMap.values()].map(s=>s.state.getCurrent(5)?.animation?.name),menu:!!document.querySelector('.story-engine-settings select'),quality:!!document.querySelector('.story-quality-settings'),transcript:document.querySelector('#transcript').textContent}})()`);
  assert.equal(initial.translated,'制作人，辛苦了。');assert.equal(initial.fg,16);assert.equal(initial.characters,2);assert.ok(initial.mouth.includes('lip_home_compatible'));assert.ok(initial.menu&&initial.quality);assert.match(initial.transcript,/模拟测试译文|制作人，辛苦了/);
  await js(`document.querySelector('.story-engine-settings button').click()`);await wait(`document.querySelector('dialog[aria-label="播放器源码与许可"] iframe')?.contentDocument?.body?.textContent.includes('AGPL')||document.querySelector('dialog[aria-label="播放器源码与许可"] iframe')?.contentDocument?.body?.textContent.includes('Affero')`,'source notice');assert.ok(await js(`document.querySelector('dialog[aria-label="播放器源码与许可"]').open`));await js(`document.querySelector('dialog[aria-label="播放器源码与许可"] button').click()`);
@@ -50,13 +63,17 @@ app.whenReady().then(async()=>{const timer=setTimeout(()=>app.exit(1),150000);tr
  const producer=await js(`(()=>{const p=document.querySelector('#frame').contentWindow.player;return{bubble:p._currentVoiceIsLooping,closed:[...p._characterStage._spineMap.values()].every(s=>!s.state.getCurrent(5)||s.state.getCurrent(5).timeScale===0)}})()`);assert.ok(producer.bubble&&producer.closed);
  await js(`document.querySelector('#frame').contentWindow.player._scenarioPlayer.endText();send('next')`);await wait('document.querySelector("#frame").contentWindow.player._trackManager._current===7','second speaker');
  const ownership=await js(`(()=>{const p=document.querySelector('#frame').contentWindow.player,s=p._characterStage,a=s._spineMap.get(s._getUid('a')),b=s._spineMap.get(s._getUid('b'));return{a:a.state.getCurrent(5)?.timeScale||0,b:b.state.getCurrent(5)?.timeScale||0}})()`);assert.equal(ownership.a,0);assert.equal(ownership.b,1);
- await js(`document.querySelector('#frame').contentWindow.player._openLog()`);assert.equal(await js('document.querySelector("#frame").contentWindow.player._paused'),true);
+ await js(`document.querySelector('#backlog').click()`);await wait('document.querySelector("#frame").contentWindow.player._paused','backlog button');
  await js(`(()=>{const p=document.querySelector('#frame').contentWindow.player;p._replayLogVoice(p._trackManager.currentTrack.voice)})()`);assert.ok(await js('!!document.querySelector("#frame").contentWindow.player.soundController._currentLogVoice'));
  await js(`document.querySelector('#frame').contentWindow.player._scenarioLogLayer.close()`);await wait('document.querySelector("#frame").contentWindow.player._paused===false','log close animation');assert.equal(await js('!!document.querySelector("#frame").contentWindow.player.soundController._currentLogVoice'),false);
  await js(`document.querySelector('#frame').contentWindow.player._scenarioPlayer.endText();send('next')`);await wait('document.querySelector("#frame").contentWindow.player._selectList.active','choices');
  assert.equal(await js('document.querySelector("#frame").contentWindow.player._selectList._items.length'),2);
  await js(`document.querySelector('#frame').contentWindow.player._selectList._items[0].emit('pointertap')`);await wait('document.querySelector("#frame").contentWindow.player._trackManager.currentTrack.label==="yes"','branch');
  await new Promise(r=>setTimeout(r,230));assert.equal(await js('document.querySelector("#frame").contentWindow.player._characterStage._spineMap.size'),2);assert.match(await js('document.querySelector("#frame").contentWindow.player._scenarioPlayer._textPlayer.content'),/ありがとう/);
+ await js(`document.querySelector('#frame').contentWindow.player.emit('end')`);
+ await wait('document.querySelector("#frame").contentWindow.ScenarioBridge.ended','story end');
+ assert.equal(await js('document.querySelector("#frame").contentDocument.querySelector("#loading").style.display'),'none');
+ await js(`document.querySelector('#backlog').click()`);await wait('document.querySelector("#frame").contentWindow.player._paused','backlog after story end');
  // Engine changes and reload use the same host protocol and no extra dialog.
  await js(`(()=>{const s=document.querySelector('.story-engine-settings select');s.value='legacy';s.dispatchEvent(new Event('change'))})()`);await wait('document.querySelector("#frame").contentWindow.location.pathname.endsWith("legacy.html")&&!!document.querySelector("#frame").contentWindow.player?._tm','legacy fallback');
  await js(`(()=>{const s=document.querySelector('.story-engine-settings select');s.value='scenario';s.dispatchEvent(new Event('change'))})()`);await wait('document.querySelector("#frame").contentWindow.ScenarioBridge?.started','return new player');

@@ -589,6 +589,25 @@ img[src=""] {
   transform: translateY(-1px) !important;
 }
 
+/* Queue action uses the same compact pill geometry as download/export/import. */
+.story-actions-cluster .story-queue-add {
+  color: #5f4a86 !important;
+  background: rgba(247, 243, 255, 0.72) !important;
+  border-color: rgba(221, 207, 247, 0.82) !important;
+}
+.story-actions-cluster .story-queue-add:hover {
+  background: #f7f3ff !important;
+  color: #4b3671 !important;
+  border-color: #d9c7f3 !important;
+  box-shadow: 0 2px 6px rgba(107, 70, 193, 0.14) !important;
+  transform: translateY(-1px) !important;
+}
+.story-actions-cluster .story-queue-add[aria-pressed="true"] {
+  color: #237a62 !important;
+  background: rgba(232, 250, 242, 0.82) !important;
+  border-color: rgba(166, 225, 201, 0.9) !important;
+}
+
 /* Tactile press feedback */
 .story-actions-cluster .story-action-btn:active {
   transform: scale(0.95) !important;

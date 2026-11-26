@@ -52,3 +52,23 @@
   font-size: 12.5px !important;
 }
 
+#storyQueue {
+  width: min(34rem, calc(100% - 1.5rem));
+  max-height: min(84dvh, 38rem);
+  overflow: auto;
+  padding: 1rem;
+}
+#storyQueue header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .75rem;
+}
+#storyQueue .queue-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem; margin-block: .75rem; }
+#storyQueue h2 { margin: 0; }
+#storyQueue .queue-help { margin: .4rem 0 .75rem; color: #7a6d7c; font-size: .86rem; line-height: 1.5; }
+#storyQueue ol { padding-inline-start: 1.4em; }
+#storyQueue li { margin-block: .6rem; overflow-wrap: anywhere; }
+#storyQueue li span { display: block; margin-bottom: .25rem; }
+#storyQueue li button { margin-inline-end: .35rem; }
+.story-queue-add[aria-pressed=true] { font-weight: 700; }

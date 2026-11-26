@@ -142,9 +142,18 @@ function buildIndex(){
 function markUnit(unit){document.querySelectorAll('#unitIndex>.unit').forEach(node=>{node.classList.toggle('is-selected',node.dataset.unit===unit);const heading=node.querySelector('.unit-heading');if(matchMedia('(max-width:850px)').matches)heading?.setAttribute('aria-expanded',String(node.dataset.unit===unit));else heading?.removeAttribute('aria-expanded')})}
 function clearSelection(){currentIdol='';currentUnit='';markUnit('');document.querySelectorAll('#unitIndex button').forEach(b=>b.classList.remove('active'));filter()}
 function selectUnit(unit){currentIdol='';currentUnit=unit;markUnit(unit);document.querySelectorAll('#unitIndex button').forEach(b=>b.classList.toggle('active',b.classList.contains('unit-heading')&&b.textContent.includes(unit)));filter();if(matchMedia('(min-width:851px)').matches)$('#cardArchive').scrollIntoView({behavior:'smooth',block:'start'})}
-function selectIdol(idol,unit){currentIdol=idol;currentUnit=unit;markUnit(unit);document.querySelectorAll('#unitIndex button').forEach(b=>b.classList.toggle('active',b.dataset.idol===idol));filter();$('#cardArchive').scrollIntoView({behavior:'smooth',block:'start'})}
+function selectIdol(idol,unit){if(currentIdol===idol){clearSelection();return;}currentIdol=idol;currentUnit=unit;markUnit(unit);document.querySelectorAll('#unitIndex button').forEach(b=>b.classList.toggle('active',b.dataset.idol===idol));filter();$('#cardArchive').scrollIntoView({behavior:'smooth',block:'start'})}
 function jump(){const n=Number($('#cardPageInput').value);if(Number.isInteger(n))page=Math.min(Math.max(n,1),Math.max(1,Math.ceil(filtered.length/perPage)))-1;render();$('#cardGrid').scrollIntoView({block:'start'})}
-let currentMovieIsCostume=false,currentMovieHasBgm=false;
+let currentMovieIsCostume=false,currentMovieHasBgm=false,activeMovie=null,activeMovieItem=null;
+function clearCardMovie(){
+  activeMovie=null;
+  activeMovieItem=null;
+  movieSubtitleBar.hidden=true;
+  movieSubZh.textContent=movieSubJa.textContent='';
+  $('#cardMovie').pause();
+  cardVoiceAudio?.pause();
+  cardBgmAudio?.pause();
+}
 function syncMovieBgmButton(){
   if(!currentMovieHasBgm){
     btnBgmToggle.disabled=true;
@@ -160,53 +169,65 @@ function showMedia(item,type){
   window.cardUpscale?.clear();$('#cardDetail').dataset.content=type;
   $('#mediaTabs').querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.key===`${type}:${item?.kind||''}`));
   $('#cardStoryPane').hidden=true;$('#cardMediaPane').hidden=false;const img=$('#fullCard'),video=$('#cardMovie');
-  video.onplay=video.onplaying=video.onwaiting=video.onpause=video.onseeking=video.onended=null;
-  video.pause();video.removeAttribute('src');video.muted=false;video.load();
+  video.onplay=video.onplaying=video.onwaiting=video.onpause=video.onseeking=video.onended=video.oncanplay=null;
+  clearCardMovie();video.removeAttribute('src');video.muted=false;video.load();
   if(cardVoiceAudio){cardVoiceAudio.onerror=null;cardVoiceAudio.pause();cardVoiceAudio.removeAttribute('src');}
   if(cardBgmAudio){cardBgmAudio.pause();cardBgmAudio.removeAttribute('src');}
   currentMovieIsCostume=false;currentMovieHasBgm=false;
-  activeMedia=type==='image'?item:null;$('.card-media-tools').hidden=false;$('.card-media-tools').dataset.kind=type==='image'?'image':'video';$('#cardImageViewport').hidden=type!=='image';setCardZoom(1);
+  activeMedia=type==='image'?item:null;$('.card-media-tools').hidden=false;$('.card-media-tools').dataset.kind=type==='image'?'image':'video';$('#cardImageViewport').hidden=type!=='image';$('#downloadMovie').hidden=type!=='movie';setCardZoom(1);
+  activeMovieItem=type==='movie'?item:null;
   btnVoiceToggle.hidden=type!=='movie';btnBgmToggle.hidden=type!=='movie';
   if(type==='image'){video.hidden=true;img.hidden=false;movieSubtitleBar.hidden=true;img.src=asset(item.path);window.cardUpscale?.show(img);$('#cardMediaStatus').textContent=item.label+' · 可缩放并保存'}
   else{
     img.hidden=true;video.hidden=false;window.cardUpscale?.show(video);$('#cardMediaStatus').textContent=`${item.label}：${item.path}`;
+    const card=current;
+    const movie={resumeVoice:null};
+    activeMovie=movie;
+    video.oncanplay=()=>{
+      if(activeMovie!==movie||!$('#cardDetail').open)return;
+      video.oncanplay=null;
+      window.ShinyBanners?.registerLoadedMovie?.(card,item.path,item.label);
+    };
     const isCostume=item.kind==='costume'||String(item.path||'').includes('/card_costume/');
     currentMovieIsCostume=isCostume;
     const movieId=String(item.path||'').split('/').pop().replace(/\.mp4$/i,'');
     if(isCostume){
       btnBgmToggle.hidden=true;
-      movieSubZh.textContent='';movieSubJa.textContent='';movieSubtitleBar.hidden=true;
       video.muted=!cardVoiceEnabled;
       video.src=asset(item.path);video.load();
-      video.addEventListener('canplay',()=>window.ShinyBanners?.registerLoadedMovie?.(current,item.path,item.label),{once:true});
       return;
     }
     const vKind=item.kind==='awake'?'awake':'gasha';
-    const voiceEntry=cardVoiceIndex?.get(String(current.id))?.[vKind]||cardVoiceIndex?.get(String(current.id))?.gasha;
     const applyGashaAudio=()=>{
+      if(activeMovie!==movie||!$('#cardDetail').open)return;
+      const voiceEntry=cardVoiceIndex?.get(String(card.id))?.[vKind];
       const audioInfo=cardMovieAudioIndex?.[movieId]||null;
       const sePath=audioInfo?.se||(/^\d{8,}$/.test(movieId)?`sounds/se/event/${movieId}.m4a`:'');
-      if(voiceEntry){
-        movieSubZh.textContent=voiceEntry.translation||'';
-        movieSubJa.textContent=voiceEntry.original||'';
-        movieSubtitleBar.hidden=!cardVoiceEnabled||(!voiceEntry.translation&&!voiceEntry.original);
-      }else{
-        movieSubZh.textContent='';movieSubJa.textContent='';movieSubtitleBar.hidden=true;
-      }
       if(!cardVoiceAudio)cardVoiceAudio=new Audio();
       cardVoiceAudio.volume=0.9;
-      if(sePath){
-        let fellBack=false;
-        cardVoiceAudio.onerror=()=>{
-          if(!fellBack&&voiceEntry?.key){fellBack=true;cardVoiceAudio.src=asset(voiceEntry.key);}
-          else{cardVoiceAudio.onerror=null;cardVoiceAudio.removeAttribute('src');}
-        };
-        cardVoiceAudio.src=asset(sePath);
-      }else if(voiceEntry?.key){
-        cardVoiceAudio.src=asset(voiceEntry.key);
-      }else{
-        cardVoiceAudio.removeAttribute('src');
-      }
+      const voicePath=voiceEntry?.key||'';
+      let audioPath=sePath||voicePath;
+      const hideSubtitle=()=>{movieSubtitleBar.hidden=true;};
+      cardVoiceAudio.onplaying=()=>{
+        if(activeMovie!==movie||!$('#cardDetail').open||!cardVoiceEnabled||video.paused||video.seeking||cardVoiceAudio.paused||!voicePath||audioPath!==voicePath)return;
+        movieSubZh.textContent=voiceEntry.translation||'';
+        movieSubJa.textContent=voiceEntry.original||'';
+        movieSubtitleBar.hidden=!movieSubZh.textContent&&!movieSubJa.textContent;
+      };
+      cardVoiceAudio.onpause=cardVoiceAudio.onwaiting=cardVoiceAudio.onseeking=cardVoiceAudio.onended=hideSubtitle;
+      cardVoiceAudio.onerror=()=>{
+        hideSubtitle();
+        if(activeMovie!==movie||!$('#cardDetail').open)return;
+        if(voicePath&&audioPath!==voicePath){
+          audioPath=voicePath;
+          cardVoiceAudio.src=asset(voicePath);
+          if(!video.paused&&!video.seeking)movie.resumeVoice();
+        }else{
+          cardVoiceAudio.onerror=null;
+          cardVoiceAudio.removeAttribute('src');
+        }
+      };
+      if(audioPath)cardVoiceAudio.src=asset(audioPath);
       if(!cardBgmAudio){cardBgmAudio=new Audio();cardBgmAudio.loop=true;}
       cardBgmAudio.volume=0.32;
       if(audioInfo?.bgm){
@@ -227,22 +248,39 @@ function showMedia(item,type){
           cardVoiceAudio.currentTime=Math.max(0,Math.min(vt,dur));
         }
       };
-      video.onplay=()=>{if(cardVoiceEnabled&&cardVoiceAudio?.src){syncSe();cardVoiceAudio.play().catch(()=>{});}if(cardBgmEnabled&&cardBgmAudio?.src)cardBgmAudio.play().catch(()=>{});};
-      video.onplaying=()=>{if(cardVoiceEnabled&&cardVoiceAudio?.src){syncSe();if(cardVoiceAudio.paused)cardVoiceAudio.play().catch(()=>{});}if(cardBgmEnabled&&cardBgmAudio?.src&&cardBgmAudio.paused)cardBgmAudio.play().catch(()=>{});};
-      video.onwaiting=()=>{cardVoiceAudio?.pause();};
-      video.onpause=()=>{cardVoiceAudio?.pause();cardBgmAudio?.pause();};
-      video.onseeking=()=>{syncSe();};
-      video.onended=()=>{cardVoiceAudio?.pause();cardBgmAudio?.pause();};
+      movie.resumeVoice=()=>{
+        if(!cardVoiceEnabled||!cardVoiceAudio.hasAttribute('src'))return;
+        syncSe();
+        if(cardVoiceAudio.paused)cardVoiceAudio.play().catch(()=>{});
+      };
+      video.onplay=video.onplaying=()=>{movie.resumeVoice();if(cardBgmEnabled&&cardBgmAudio?.src&&cardBgmAudio.paused)cardBgmAudio.play().catch(()=>{});};
+      video.onwaiting=()=>{hideSubtitle();cardVoiceAudio.pause();};
+      video.onpause=video.onended=()=>{hideSubtitle();cardVoiceAudio.pause();cardBgmAudio?.pause();};
+      video.onseeking=()=>{hideSubtitle();syncSe();};
       video.src=asset(item.path);video.load();
-      video.addEventListener('canplay',()=>window.ShinyBanners?.registerLoadedMovie?.(current,item.path,item.label),{once:true});
     };
-    if(cardMovieAudioIndex)applyGashaAudio();
-    else cardMovieAudioReady.then(applyGashaAudio);
+    if(cardMovieAudioIndex&&cardVoiceIndex)applyGashaAudio();
+    else Promise.all([cardMovieAudioReady,cardVoiceReady]).then(applyGashaAudio);
   }
+}
+async function downloadCurrentMovie(){
+  const item=activeMovieItem;if(!item?.path)return;
+  await cardMovieAudioReady.catch(()=>{});await cardVoiceReady.catch(()=>{});
+  const keys=[item.path];
+  // Costume videos carry their soundtrack in the MP4. Gasha videos use the
+  // same companion files as playback (SE/voice and optional original BGM).
+  if(!currentMovieIsCostume){
+    const id=String(item.path).split('/').pop().replace(/\.mp4$/i,'');
+    const kind=item.kind==='awake'?'awake':'gasha';
+    const info=cardMovieAudioIndex?.[id];
+    const voice=cardVoiceIndex?.get(String(current?.id))?.[kind];
+    for(const p of [info?.se,info?.bgm,voice?.key])if(typeof p==='string'&&p)keys.push(p);
+  }
+  const b=$('#downloadMovie');await window.downloadResources([...new Set(keys)],b);
 }
 function setCardZoom(value){cardZoom=Math.min(4,Math.max(.5,value));$('#fullCard').style.setProperty('--card-zoom',cardZoom);$('#cardZoomValue').textContent=Math.round(cardZoom*100)+'%';window.cardUpscale?.setZoom(cardZoom)}
 function saveCurrentCard(){if(!activeMedia)return;const a=document.createElement('a');a.href=asset(activeMedia.path);a.download=`${current?.name||current?.id||'card'}-${activeMedia.label||activeMedia.kind}.jpg`.replace(/[\\/:*?"<>|]/g,'_');document.body.append(a);a.click();a.remove()}
-function showStories(){$('#cardDetail').dataset.content='stories';$('#cardMovie').pause();cardVoiceAudio?.pause();cardBgmAudio?.pause();movieSubtitleBar.hidden=true;window.cardUpscale?.clear();$('#mediaTabs').querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.key==='stories'));$('#cardMediaPane').hidden=true;$('#cardStoryPane').hidden=false}
+function showStories(){$('#cardDetail').dataset.content='stories';clearCardMovie();window.cardUpscale?.clear();$('#mediaTabs').querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.key==='stories'));$('#cardMediaPane').hidden=true;$('#cardStoryPane').hidden=false}
 function renderTabs(c){
   const tabs=$('#mediaTabs');tabs.replaceChildren();for(const item of c.images||[]){const b=el('button',item.label);b.dataset.key=`image:${item.kind}`;b.onclick=()=>showMedia(item,'image');tabs.append(b)}for(const item of c.movies||[]){const b=el('button',item.label);b.dataset.key=`movie:${item.kind}`;b.onclick=()=>showMedia(item,'movie');tabs.append(b)}const stories=el('button',`关联剧情 ${c.stories.length}`);stories.dataset.key='stories';stories.onclick=showStories;tabs.append(stories)
 }
@@ -259,16 +297,28 @@ function closeCard(){
 function init(){lines=[];const biBtn=$('#btnBranchInspector');if(biBtn){biBtn.hidden=true;biBtn.classList.remove('has-branches','pulse-choice');}$('#transcript').replaceChildren();$('#status').textContent='正在载入剧情脚本与翻译…';$('#auto').textContent='自动播放：关';$('#frame').src='/player/main.html?key='+encodeURIComponent(pt.key)+'&lang='+$('#lang').value}
 function playStory(s){pt=s;$('#storyTitle').textContent=s.title;$('#storyGroup').textContent=[s.idol,s.group].filter(Boolean).join(' / ');const cover=$('#storyArt');cover.hidden=false;cover.src=art(current);$('#cardDetail').close();$('#storyViewer').showModal();init()}
 function send(type,value){$('#frame').contentWindow.postMessage({type,value},location.origin)}
-const imageViewport=document.createElement('div');imageViewport.id='cardImageViewport';$('#fullCard').before(imageViewport);imageViewport.append($('#fullCard'));const mediaTools=document.createElement('div');mediaTools.className='card-media-tools';mediaTools.innerHTML='<button id="cardZoomOut" title="缩小卡面">−</button><output id="cardZoomValue">100%</output><button id="cardZoomIn" title="放大卡面">＋</button><button id="cardZoomReset">适应窗口</button><button id="saveCard">保存当前卡面</button>';imageViewport.before(mediaTools);window.cardUpscale?.mountTools(mediaTools);$('#cardZoomOut').onclick=()=>setCardZoom(cardZoom-.25);$('#cardZoomIn').onclick=()=>setCardZoom(cardZoom+.25);$('#cardZoomReset').onclick=()=>setCardZoom(1);$('#saveCard').onclick=saveCurrentCard;imageViewport.ondblclick=()=>setCardZoom(cardZoom===1?2:1);imageViewport.onwheel=e=>{if(!e.ctrlKey)return;e.preventDefault();setCardZoom(cardZoom+(e.deltaY<0?.25:-.25))};
+const storyBacklog = $('#backlog');
+if (storyBacklog) storyBacklog.onclick = () => send('log');
+const imageViewport=document.createElement('div');imageViewport.id='cardImageViewport';$('#fullCard').before(imageViewport);imageViewport.append($('#fullCard'));const mediaTools=document.createElement('div');mediaTools.className='card-media-tools';mediaTools.innerHTML='<button id="cardZoomOut" title="缩小卡面">−</button><output id="cardZoomValue">100%</output><button id="cardZoomIn" title="放大卡面">＋</button><button id="cardZoomReset">适应窗口</button><button id="saveCard">保存当前卡面</button><button id="downloadMovie" hidden>下载动态视频和声音</button>';imageViewport.before(mediaTools);window.cardUpscale?.mountTools(mediaTools);$('#cardZoomOut').onclick=()=>setCardZoom(cardZoom-.25);$('#cardZoomIn').onclick=()=>setCardZoom(cardZoom+.25);$('#cardZoomReset').onclick=()=>setCardZoom(1);$('#saveCard').onclick=saveCurrentCard;$('#downloadMovie').onclick=downloadCurrentMovie;imageViewport.ondblclick=()=>setCardZoom(cardZoom===1?2:1);imageViewport.onwheel=e=>{if(!e.ctrlKey)return;e.preventDefault();setCardZoom(cardZoom+(e.deltaY<0?.25:-.25))};
 
 const movieSubtitleBar=document.createElement('div');movieSubtitleBar.id='cardMovieSubtitleBar';movieSubtitleBar.className='card-movie-subtitle-bar';movieSubtitleBar.hidden=true;const movieSubZh=document.createElement('div');movieSubZh.id='cardMovieSubZh';movieSubZh.className='card-movie-sub-zh';const movieSubJa=document.createElement('div');movieSubJa.id='cardMovieSubJa';movieSubJa.className='card-movie-sub-ja';movieSubtitleBar.append(movieSubZh,movieSubJa);$('#cardMovie').after(movieSubtitleBar);
 let cardVoiceAudio=null,cardBgmAudio=null,cardVoiceEnabled=localStorage.getItem('shiny.cardVoiceEnabled')!=='0',cardBgmEnabled=localStorage.getItem('shiny.cardBgmEnabled')!=='0',cardVoiceIndex=null,cardMovieAudioIndex=null;
 const cardMovieAudioReady=fetch('/data/card-movie-audio.json').then(r=>r.json()).then(m=>{cardMovieAudioIndex=m||{};}).catch(()=>{cardMovieAudioIndex={};});
-fetch('/data/voice-index.json').then(r=>r.json()).then(vi=>{cardVoiceIndex=new Map();vi.filter(x=>x.kind==='卡片语音').forEach(v=>{const m=v.key.match(/sounds\/voice\/idols\/(\d+)\/(\w+)\.m4a/);if(m){const [,cId,vKind]=m;if(!cardVoiceIndex.has(cId))cardVoiceIndex.set(cId,{});cardVoiceIndex.get(cId)[vKind]=v;}});}).catch(()=>{});
-const btnVoiceToggle=document.createElement('button');btnVoiceToggle.id='btnCardVoiceToggle';btnVoiceToggle.className='btn-card-voice-toggle';btnVoiceToggle.textContent=cardVoiceEnabled?'🔊 演出原声：开':'🔈 演出原声：关';btnVoiceToggle.onclick=()=>{cardVoiceEnabled=!cardVoiceEnabled;localStorage.setItem('shiny.cardVoiceEnabled',cardVoiceEnabled?'1':'0');btnVoiceToggle.textContent=cardVoiceEnabled?'🔊 演出原声：开':'🔈 演出原声：关';btnVoiceToggle.classList.toggle('is-muted',!cardVoiceEnabled);if(currentMovieIsCostume){$('#cardMovie').muted=!cardVoiceEnabled;return;}if(!cardVoiceEnabled){cardVoiceAudio?.pause();movieSubtitleBar.hidden=true;}else if($('#cardDetail').dataset.content==='movie'&&!$('#cardMovie').paused){if(cardVoiceAudio?.src){const vt=Number($('#cardMovie').currentTime)||0,dur=Number.isFinite(cardVoiceAudio.duration)?cardVoiceAudio.duration:999;cardVoiceAudio.currentTime=Math.max(0,Math.min(vt,dur));cardVoiceAudio.play().catch(()=>{});}if(movieSubZh.textContent||movieSubJa.textContent)movieSubtitleBar.hidden=false;}};
+const cardVoiceReady=fetch('/data/voice-index.json?v=20261126').then(r=>r.json()).then(vi=>{cardVoiceIndex=new Map();vi.filter(x=>x.kind==='卡片语音').forEach(v=>{const m=v.key.match(/sounds\/voice\/idols\/(\d+)\/(\w+)\.m4a/);if(m){const [,cId,vKind]=m;if(!cardVoiceIndex.has(cId))cardVoiceIndex.set(cId,{});cardVoiceIndex.get(cId)[vKind]=v;}});}).catch(()=>{cardVoiceIndex=new Map();});
+const btnVoiceToggle=document.createElement('button');btnVoiceToggle.id='btnCardVoiceToggle';btnVoiceToggle.className='btn-card-voice-toggle';btnVoiceToggle.textContent=cardVoiceEnabled?'🔊 演出原声：开':'🔈 演出原声：关';
+btnVoiceToggle.onclick=()=>{
+  cardVoiceEnabled=!cardVoiceEnabled;
+  localStorage.setItem('shiny.cardVoiceEnabled',cardVoiceEnabled?'1':'0');
+  btnVoiceToggle.textContent=cardVoiceEnabled?'🔊 演出原声：开':'🔈 演出原声：关';
+  btnVoiceToggle.classList.toggle('is-muted',!cardVoiceEnabled);
+  const video=$('#cardMovie');
+  if(currentMovieIsCostume){video.muted=!cardVoiceEnabled;return;}
+  if(!cardVoiceEnabled){cardVoiceAudio?.pause();movieSubtitleBar.hidden=true;}
+  else if(!video.paused&&!video.seeking)activeMovie?.resumeVoice?.();
+};
 const btnBgmToggle=document.createElement('button');btnBgmToggle.id='btnCardBgmToggle';btnBgmToggle.className='btn-card-voice-toggle';btnBgmToggle.textContent=cardBgmEnabled?'🎵 剧情原配BGM：开':'🔇 剧情原配BGM：关';btnBgmToggle.onclick=()=>{if(!currentMovieHasBgm)return;cardBgmEnabled=!cardBgmEnabled;localStorage.setItem('shiny.cardBgmEnabled',cardBgmEnabled?'1':'0');syncMovieBgmButton();if(!cardBgmEnabled){cardBgmAudio?.pause();}else if($('#cardDetail').dataset.content==='movie'&&!$('#cardMovie').paused&&cardBgmAudio?.src){cardBgmAudio.play().catch(()=>{});}};
 mediaTools.append(btnVoiceToggle,btnBgmToggle);
-$('#closeCard').onclick=closeCard;$('#cardDetail').oncancel=e=>{e.preventDefault();closeCard()};$('#cardDetail').onclose=()=>{$('#cardMovie').pause();cardVoiceAudio?.pause();cardBgmAudio?.pause();movieSubtitleBar.hidden=true;window.cardUpscale?.clear();if(document.fullscreenElement)document.exitFullscreen().catch(()=>{})};$('#cardSearch').oninput=filter;$('#typeFilter').onchange=filter;$('#mediaFilter').onchange=filter;$('#rarityFilter').onchange=filter;$('#sortField').onchange=filter;$('#sortDirection').onchange=filter;$('#prevCards').onclick=()=>{page--;render()};$('#nextCards').onclick=()=>{page++;render()};$('#cardPageInput').onchange=jump;$('#cardPageInput').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();jump()}};
+$('#closeCard').onclick=closeCard;$('#cardDetail').oncancel=e=>{e.preventDefault();closeCard()};$('#cardDetail').onclose=()=>{clearCardMovie();window.cardUpscale?.clear();if(document.fullscreenElement)document.exitFullscreen().catch(()=>{})};$('#cardSearch').oninput=filter;$('#typeFilter').onchange=filter;$('#mediaFilter').onchange=filter;$('#rarityFilter').onchange=filter;$('#sortField').onchange=filter;$('#sortDirection').onchange=filter;$('#prevCards').onclick=()=>{page--;render()};$('#nextCards').onclick=()=>{page++;render()};$('#cardPageInput').onchange=jump;$('#cardPageInput').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();jump()}};
 $('#allCards').onclick=clearSelection;
 $('#closeStory').onclick=()=>$('#storyViewer').close();$('#storyViewer').onclose=()=>{$('#frame').src='about:blank';if(document.fullscreenElement)document.exitFullscreen().catch(()=>{})};$('#advance').onclick=()=>send('next');$('#auto').onclick=()=>send('auto');$('#lang').onchange=()=>send('lang',$('#lang').value);$('#volume').value=volume;$('#volume').oninput=()=>send('volume',Number($('#volume').value)/100);$('#restart').onclick=init;const btnBi=$('#btnBranchInspector');if(btnBi)btnBi.onclick=()=>send('openBranchInspector');
 window.addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==$('#frame').contentWindow||!pt)return;const d=e.data;if(d.type==='ready')send('settings',{overrides:overrides[pt.key]||{},volume:Number($('#volume').value)/100});if(d.type==='status')$('#status').textContent=d.value;if(d.type==='auto')$('#auto').textContent='自动播放：'+(d.value?'开':'关');if(d.type==='branchInfo'&&d.value){const biBtn=$('#btnBranchInspector');if(biBtn){biBtn.hidden=false;biBtn.classList.toggle('has-branches',!!d.value.hasBranches);biBtn.classList.remove('pulse-choice');biBtn.textContent=d.value.hasBranches?`🌳 分支透视 (${d.value.groupCount}组·${d.value.optionCount}项)`:'📋 剧本大纲';}}if(d.type==='branchChoiceActive'){$('#btnBranchInspector')?.classList.toggle('pulse-choice',!!d.value);}if(d.type==='lines'){

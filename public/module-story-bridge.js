@@ -107,6 +107,8 @@
     syncBingeBtn();
     btnBinge?.addEventListener('click', () => {
       bingeOn = !bingeOn;
+      if (bingeOn) prepareNext();
+      else discardStandby();
       localStorage.setItem('shiny.bingeMode', bingeOn ? '1' : '0');
       syncBingeBtn();
     });
@@ -140,6 +142,9 @@
         }
       }
       window.__currentSeriesSiblings = siblings;
+
+      currentKey = s.key;
+      currentReady = false;
 
       // 2. Song bridge button
       if (btnSong) {
@@ -177,21 +182,57 @@
       }
     };
 
-    // Auto-advance to next chapter when story finishes & bingeMode is ON
-    let bingeTimer = 0;
-    window.triggerBingeNextIfReady = (finishedKey) => {
-      if (!bingeOn || !viewer.open) return;
+    let currentKey = '', currentReady = false, standby = null;
+    function nextEpisode(key) {
       const siblings = window.__currentSeriesSiblings || [];
-      const idx = siblings.findIndex(x => x.key === finishedKey);
-      if (idx >= 0 && idx + 1 < siblings.length) {
-        const nextEp = siblings[idx + 1];
-        const st = document.getElementById('status');
-        if (st) st.textContent = `✓ 本话已看完 · 追番模式将在 2 秒后自动连播下一话《${nextEp.title}》…`;
-        clearTimeout(bingeTimer);
-        bingeTimer = setTimeout(() => {
-          if (viewer.open && window.openStoryByKey) window.openStoryByKey(nextEp.key);
-        }, 2100);
+      const index = siblings.findIndex(ep => ep.key === key);
+      return index < 0 ? undefined : siblings[index + 1];
+    }
+    function discardStandby() {
+      standby?.frame.remove();
+      standby = null;
+    }
+    function prepareNext() {
+      const episode = nextEpisode(currentKey);
+      if (!bingeOn || !viewer.open || !currentReady || !episode ||
+          !/^\w+\/[\w-]+\.json$/.test(episode.key) || standby?.key === episode.key) return;
+      discardStandby();
+      const frame = document.createElement('iframe');
+      frame.title = '下一话预加载';
+      frame.allow = 'autoplay';
+      frame.hidden = true;
+      frame.src = '/player/main.html?' + new URLSearchParams({key: episode.key, standby: '1', lang: document.getElementById('lang').value});
+      standby = {key: episode.key, frame, status: ''};
+      document.getElementById('stage').append(frame);
+    }
+    viewer.addEventListener('close', discardStandby);
+    window.addEventListener('message', event => {
+      if (event.origin !== location.origin) return;
+      const {type, value} = event.data || {};
+      if (standby && event.source === standby.frame.contentWindow) {
+        if (type === 'status') standby.status = value;
+        if (type === 'error' || (type === 'status' && /失败|无法播放/.test(value))) discardStandby();
+        return;
       }
+      if (viewer.open && event.source === document.getElementById('frame').contentWindow &&
+          type === 'status' && typeof value === 'string' && value.startsWith('准备完成')) {
+        currentReady = true;
+        prepareNext();
+      }
+    });
+    window.takePreparedEpisode = key => {
+      if (standby?.key !== key) {
+        discardStandby();
+        return null;
+      }
+      const episode = standby;
+      standby = null;
+      return episode;
+    };
+    window.triggerBingeNextIfReady = (finishedKey) => {
+      if (!bingeOn || !viewer.open || currentKey !== finishedKey) return;
+      const episode = nextEpisode(finishedKey);
+      if (episode) window.openStoryByKey?.(episode.key);
     };
 
     // Expose global transcript line highlighter for Dialogue Search jumps

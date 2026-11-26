@@ -3,7 +3,7 @@ let rawKey = (params.get('key') || params.get('story') || '').trim();
 if (rawKey && !rawKey.endsWith('.json')) rawKey += '.json';
 const key = rawKey;
 if (window.self !== window.top) document.body.classList.add('in-iframe');
-try { window.top?.postMessage({ type: 'shiny-shell-story-open' }, location.origin); } catch {}
+try { if(!params.has('standby'))window.top?.postMessage({ type: 'shiny-shell-story-open' }, location.origin); } catch {}
 
 function exitPlayer() {
   try {
@@ -40,6 +40,7 @@ let hasFailed = false;
 const emit=(type,value)=>parent.postMessage({type,value},location.origin);
 const status=s=>{if(hasFailed)return;document.querySelector('#loading').textContent=s;emit('status',s);};
 const fail=e=>{
+ emit('error',e?.message || String(e));
   const msg = e?.message || String(e || '');
   if (msg.toLowerCase().includes('transition was skipped') || e?.name === 'AbortError') return;
   hasFailed = true;
@@ -81,6 +82,7 @@ const add=(id,p)=>{if(!added.has(id)&&!loader.resources[id]){added.add(id);loade
 for(const t of tracks){if(t.textFrame&&t.textFrame!=='off')add('textFrame'+t.textFrame,`images/event/text_frame/${t.textFrame}.png`);if(t.bg&&!['fade_out','off'].includes(t.bg))add('bg'+t.bg,`images/event/bg/${t.bg}.jpg`);if(t.fg&&!['off','fade_out'].includes(t.fg))add('fg'+t.fg,`images/event/fg/${t.fg}.png`);for(const [k,dir]of[['se','sounds/se/event'],['voice','sounds/voice/events'],['bgm','sounds/bgm']])if(t[k]&&!['fade_out','off','pause','resume'].includes(t[k]))add(k+t[k],`${dir}/${t[k]}.m4a`);if(t.movie)add('movie'+t.movie,`movies/idols/card/${t.movie}.mp4`);if(t.charId&&t.charLabel){const cat=tm._spineManager.spineAlias[t.charCategory]||'stand';add(`${t.charLabel}_${t.charId}_${cat}`,`spine/${t.charType}/${cat}/${t.charId}/data.json`);}if(t.select){for(let n=1;n<=3;n++)add('selectFrame'+n,`images/event/select_frame/00${n}.png`);}if(t.still&&t.still!=='off')add('still'+t.still,`images/event/still/${t.still}.jpg`);if(t.stillType&&t.stillId&&!(t.stillType==='game_event_communications'&&String(t.stillId)==='400103307'))add('still'+t.stillType+t.stillId,`images/content/${t.stillType}/card/${t.stillId}.jpg`);}
 loader.onProgress.add(l=>status(`正在准备立绘与声音 ${Math.round(l.progress)}% · 读取已下载资源`));loader.onError.add((err,l,r)=>errors.push(r?.url||String(err)));
 await new Promise(resolve=>loader.load(resolve));
+if(params.has('standby'))await activateStandby;
 normalize4kTextures(loader);
 if(errors.length){const critical=errors.filter(x=>!x.includes('/sounds/'));if(critical.length)throw Error(`${critical.length} 个画面资源加载失败，例如 ${critical[0]}`);}
 // Missing audio must not abort the visual track. Preserve the remaining voices.
@@ -101,6 +103,9 @@ document.querySelector('#loading').style.display='none';const render=tm._renderT
   actions.append(returnBtn);
   document.querySelector('#loading').append(actions);
 }};player._app.stage.interactive=true;player._app.stage.on('click',next);status(`准备完成 · 翻译：${(translation.translator||'暂无汉化')+(translation.additionalSources?.length?' · 补译来源：'+translation.additionalSources.map(s=>s.credit).join('、'):'')}${errors.length?' · '+errors.length+' 个音频未加载':''}`);document.querySelector('#loading').style.display='none';tm._renderTrack();}
+const activateStandby=new Promise(resolve=>addEventListener('message',e=>{
+ if(e.origin===location.origin&&e.source===parent&&e.data?.type==='activate')resolve();
+}));
 let lastAdvance=0;
 function next(){const tm=player?._tm;if(!tm||tm._selecting||tm._stopped)return;if(player?._isMoviePlaying){lastAdvance=Date.now();player._movieLayer?.reset();return;}if(tm._autoPlayEnabled||tm._timeoutToClear||tm._renderQueued||Date.now()-lastAdvance<180)return;lastAdvance=Date.now();const text=tm._textManager;if(text._typingEffect){clearInterval(text._typingEffect);text._typingEffect=null;const t=tracks[tm._current-1];if(text.textObj)text.textObj.text=t?.translated_text||t?.text||'';return;}tm._soundManager.stopVoice();tm._renderTrack();}
 window.addEventListener('pagehide',()=>{const tm=player?._tm;if(tm){tm._stopped=true;clearTimeout(tm._renderQueued);clearTimeout(tm._timeoutToClear);clearInterval(tm._textManager._typingEffect);tm._soundManager.reset();}});
