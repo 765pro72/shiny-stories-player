@@ -172,6 +172,7 @@
   }
 
   function closeModal() {
+    if (backdropEl && !backdropEl.hidden && morningRequest) dismissMorningReminder();
     stopMorningVoice();
     cleanupMorningPlayer();
     const modalEl = backdropEl?.querySelector('.ph-modal');
@@ -1139,7 +1140,23 @@
     document.querySelectorAll('.ph-voice-btn.is-playing').forEach(b => b.classList.remove('is-playing'));
   }
 
+  const localMorningDate = () => new Date().toLocaleDateString('sv-SE');
+  const morningLastDate = 'shiny.morningGreeting.lastDate';
+  const morningDismissedDate = 'shiny.morningGreeting.dismissedDate';
+  const morningReminderSuppressed = () => {
+    const day = localMorningDate();
+    return localStorage.getItem(morningLastDate) === day ||
+      localStorage.getItem(morningDismissedDate) === day;
+  };
+  let morningRequest = null;
+  function dismissMorningReminder() {
+    localStorage.setItem(morningDismissedDate, localMorningDate());
+    hideMorningToast();
+  }
+
   function cleanupMorningPlayer() {
+    morningRequest?.abort();
+    morningRequest = null;
     if (morningMsgHandler) {
       window.removeEventListener('message', morningMsgHandler);
       morningMsgHandler = null;
@@ -1171,7 +1188,10 @@
 
   async function openMorningGreetingModal(preloadedData = null) {
     stopMorningVoice();
+    hideMorningToast();
     openModal('283 MORNING COMMUNICATION', '☀️ 每日「晨间问候」朝コミュ · 剧情互动剧场', { widePlayer: true });
+    const request = new AbortController();
+    morningRequest = request;
     modalBodyEl.innerHTML = `
       <div style="text-align:center;padding:48px 20px;color:#94a3b8;">
         <div class="ph-spinner"></div>
@@ -1182,21 +1202,23 @@
     let data = preloadedData;
     if (!data) {
       try {
-        const res = await fetch('/api/morning-greeting');
+        const res = await fetch('/api/morning-greeting', { signal: request.signal });
         data = await res.json();
       } catch (err) {
+        if (request.signal.aborted) return;
         modalBodyEl.innerHTML = `<div class="ph-empty">获取晨间问候失败，请检查网络或服务运行状态。</div>`;
         return;
       }
     }
 
+    if (request.signal.aborted) return;
     if (!data || !data.ok || !data.key) {
       modalBodyEl.innerHTML = `<div class="ph-empty">${esc(data?.error || '未找到晨间剧本')}</div>`;
       return;
     }
 
-    const todayStr = new Date().toISOString().slice(0, 10);
-    const lastDate = localStorage.getItem('shiny.morningGreeting.lastDate') || '';
+    const todayStr = localMorningDate();
+    const lastDate = localStorage.getItem(morningLastDate) || '';
     let streak = parseInt(localStorage.getItem('shiny.morningGreeting.streak') || '0', 10);
     let checkedToday = lastDate === todayStr;
 
@@ -1220,7 +1242,6 @@
           <div class="ph-morning-head-actions">
             <button type="button" class="ph-btn ghost" id="phMornFullscreen">⛶ 剧情全屏</button>
             <button type="button" class="ph-btn ghost" id="phMornNextIdolBtn">🔄 换一位偶像</button>
-            <button type="button" class="ph-btn" id="phMornCheckinBtn">${checkedToday ? '✓ 今日已打卡' : '✓ 晨间打卡'}</button>
           </div>
         </div>
 
@@ -1265,19 +1286,27 @@
     const langSel = document.getElementById('phMornLang');
     const volInput = document.getElementById('phMornVolume');
     const transcriptEl = document.getElementById('phMornTranscript');
-    const checkinBtn = document.getElementById('phMornCheckinBtn');
-
     function markMorningCheckedIn() {
-      const curToday = new Date().toISOString().slice(0, 10);
-      const curLast = localStorage.getItem('shiny.morningGreeting.lastDate') || '';
+      const key = 'shiny.watchedStories';
+      let watched;
+      try { watched = new Set(JSON.parse(localStorage.getItem(key) || window.desktop?.getState?.()?.[key] || '[]')); }
+      catch { watched = new Set(); }
+      if (!watched.has(data.key)) {
+        watched.add(data.key);
+        const serialized = JSON.stringify([...watched]);
+        localStorage.setItem(key, serialized);
+        try { window.desktop?.saveState?.({ [key]: serialized }); } catch {}
+      }
+      const curToday = localMorningDate();
+      const curLast = localStorage.getItem(morningLastDate);
       if (curLast !== curToday) {
-        streak += 1;
+        streak = (parseInt(localStorage.getItem('shiny.morningGreeting.streak'), 10) || 0) + 1;
         checkedToday = true;
-        localStorage.setItem('shiny.morningGreeting.lastDate', curToday);
+        localStorage.setItem(morningLastDate, curToday);
         localStorage.setItem('shiny.morningGreeting.streak', String(streak));
+        hideMorningToast();
         const streakBadge = document.getElementById('phMornStreakBadge');
         if (streakBadge) streakBadge.textContent = `🔥 晨间连击 ${streak} 天 (今日已打卡!)`;
-        if (checkinBtn) checkinBtn.textContent = '✓ 今日已打卡';
         try {
           const mhBadge = document.getElementById('mhMorningBadge');
           if (mhBadge) {
@@ -1311,7 +1340,7 @@
         sendToPlayer('settings', { overrides: {}, volume: Number(volInput?.value || 40) / 100 });
       } else if (d.type === 'status') {
         if (statusEl) statusEl.textContent = d.value || '';
-        if (typeof d.value === 'string' && (d.value.includes('播放结束') || d.value.includes('已结束') || d.value.includes('结束'))) {
+        if (typeof d.value === 'string' && /^本篇剧情播放(?:完毕|结束)[。！!\s]*$/.test(d.value.trim())) {
           markMorningCheckedIn();
         }
       } else if (d.type === 'auto') {
@@ -1349,10 +1378,6 @@
     document.getElementById('phMornNextIdolBtn')?.addEventListener('click', () => {
       openMorningGreetingModal();
     });
-    checkinBtn?.addEventListener('click', () => {
-      markMorningCheckedIn();
-      if (checkinBtn) checkinBtn.textContent = '✓ 今日已打卡';
-    });
     document.getElementById('phMornFullscreen')?.addEventListener('click', () => {
       if (!stageEl) return;
       if (document.fullscreenElement) {
@@ -1366,9 +1391,16 @@
   }
 
   let morningToastEl = null;
+  function hideMorningToast() {
+    const toast = morningToastEl;
+    if (!toast) return;
+    morningToastEl = null;
+    toast.classList.remove('show');
+    setTimeout(() => toast.remove(), 400);
+  }
 
   function showMorningGreetingToast(data) {
-    if (!data || !data.ok) return;
+    if (!data || !data.ok || morningRequest || morningReminderSuppressed()) return;
     if (document.getElementById('phMorningToast')) return;
 
     morningToastEl = document.createElement('div');
@@ -1380,7 +1412,7 @@
         <span class="ph-toast-title">☀️ 晨间问候待查收</span>
         <span class="ph-toast-sub">来自 ${esc(data.idol)} 的早晨对话 · 点击交流</span>
       </div>
-      <button type="button" class="ph-toast-close" title="稍后提醒">✕</button>
+      <button type="button" class="ph-toast-close" title="今日不再提醒" aria-label="今日不再提醒">✕</button>
     `;
     document.body.appendChild(morningToastEl);
 
@@ -1395,20 +1427,15 @@
     morningToastEl.addEventListener('click', e => {
       if (e.target.closest('.ph-toast-close')) {
         e.stopPropagation();
-        morningToastEl.classList.remove('show');
-        setTimeout(() => morningToastEl?.remove(), 400);
+        dismissMorningReminder();
         return;
       }
-      morningToastEl.classList.remove('show');
-      setTimeout(() => morningToastEl?.remove(), 400);
       openMorningGreetingModal(data);
     });
   }
 
   async function checkMorningGreetingAuto() {
-    const todayStr = new Date().toISOString().slice(0, 10);
-    const lastDate = localStorage.getItem('shiny.morningGreeting.lastDate') || '';
-    if (lastDate === todayStr) return;
+    if (morningRequest || morningReminderSuppressed()) return;
 
     const hour = new Date().getHours();
     if (hour < 5 || hour >= 12) return;
@@ -1677,8 +1704,7 @@
     const utils = document.querySelector('.shell-utils');
     if (!utils || document.getElementById('btnMoreHub')) return;
 
-    const todayStr = new Date().toISOString().slice(0, 10);
-    const isDoneToday = localStorage.getItem('shiny.morningGreeting.lastDate') === todayStr;
+    const isDoneToday = localStorage.getItem(morningLastDate) === localMorningDate();
     const streak = parseInt(localStorage.getItem('shiny.morningGreeting.streak') || '0', 10);
 
     const anchor = document.createElement('div');

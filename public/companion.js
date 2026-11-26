@@ -115,9 +115,10 @@
 
   function getTimeGreeting() {
     const h = new Date().getHours();
-    const todayStr = new Date().toISOString().slice(0, 10);
+    const todayStr = new Date().toLocaleDateString('sv-SE');
     const lastDate = localStorage.getItem('shiny.morningGreeting.lastDate') || '';
-    if (h >= 5 && h < 12 && lastDate !== todayStr) {
+    const dismissed = localStorage.getItem('shiny.morningGreeting.dismissedDate') === todayStr;
+    if (h >= 5 && h < 12 && lastDate !== todayStr && !dismissed) {
       return { tag: '早安 · 朝コミュ', outfit: '🌅 晨间便服', text: '☀️ 制作人早安！今天的晨间问候还没完成哦，去主窗口回应一下吧♪' };
     }
     if (h >= 5 && h < 11) return { tag: '早安 · 283 事务所', outfit: '🌅 晨间便服', text: '早安制作人！新的一天从 283 事务所开始吧！' };

@@ -286,6 +286,13 @@ window.addEventListener('translation-overrides-changed',()=>{overrides=JSON.pars
   };
 
   window.ShinyWatchedStories = api;
+  window.addEventListener('storage', event => {
+    if (event.key !== KEY_STORIES) return;
+    watchedStories.clear();
+    for (const key of loadSet(KEY_STORIES)) watchedStories.add(key);
+    if (document.querySelector('#watchedFilter')?.value) filter(false);
+    else syncAll();
+  });
 
   // Sleek Floating Right-Click Context Menu for Manual Watched Marking
   const menu = document.createElement('div');
