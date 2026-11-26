@@ -242,7 +242,6 @@
   if(type==='lang'&&['zh','jp','both'].includes(value)){language=value;if(raw.length)annotate()}
   if(type==='auto')setAuto(player?._mode!==SpeedMode.AUTO);
   if(type==='jump'&&Number.isInteger(value))jumpToTrack(value);
-  if(type==='log'&&started&&!disposed&&!player._paused)player._openLog();
  });
  addEventListener('pagehide',()=>{disposed=true;if(player){player._schedule.cancelAll();player._deferredTasks=[];player._detachVoiceEndListener();player._detachCurrentVoiceEndHandler();player.soundController.removeAll();player._movieLayer.reset();player._characterStage.stopLipAnimations();player._scenarioPlayer.destroy()}app?.ticker.stop()},{once:true});
  addEventListener('error',e=>{

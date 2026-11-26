@@ -38,14 +38,14 @@ app.whenReady().then(async()=>{const timer=setTimeout(()=>app.exit(1),150000);tr
  await win.loadURL(service.url+'/library.html');await wait('typeof openStoryByKey==="function"&&!!document.querySelector("#list button")','library ready');await js(`openStoryByKey(${JSON.stringify(key)})`);
  await wait('document.querySelector("#frame").contentWindow.ScenarioBridge?.started&&document.querySelector("#frame").contentWindow.ScenarioBridge?.player._trackManager._current===5','voice track');
  if(process.argv.includes('--backlog-only')){
-  await js(`document.querySelector('#backlog').click()`);
+  await js(`document.querySelector('#frame').contentWindow.player._mainController._ui.btnLog.emit('pointerup')`);
   await wait('document.querySelector("#frame").contentWindow.player._paused','backlog button');
   await js(`document.querySelector('#frame').contentWindow.player._scenarioLogLayer.close()`);
   await wait('!document.querySelector("#frame").contentWindow.player._paused','log closed');
   await js(`document.querySelector('#frame').contentWindow.player.emit('end')`);
   await wait('document.querySelector("#frame").contentWindow.ScenarioBridge.ended','story end');
   assert.equal(await js('document.querySelector("#frame").contentDocument.querySelector("#loading").style.display'),'none');
-  await js(`document.querySelector('#backlog').click()`);
+  await js(`document.querySelector('#frame').contentWindow.player._mainController._ui.btnLog.emit('pointerup')`);
   await wait('document.querySelector("#frame").contentWindow.player._paused','backlog after story end');
   console.log('Backlog opens during and after playback');
   return;
@@ -63,7 +63,7 @@ app.whenReady().then(async()=>{const timer=setTimeout(()=>app.exit(1),150000);tr
  const producer=await js(`(()=>{const p=document.querySelector('#frame').contentWindow.player;return{bubble:p._currentVoiceIsLooping,closed:[...p._characterStage._spineMap.values()].every(s=>!s.state.getCurrent(5)||s.state.getCurrent(5).timeScale===0)}})()`);assert.ok(producer.bubble&&producer.closed);
  await js(`document.querySelector('#frame').contentWindow.player._scenarioPlayer.endText();send('next')`);await wait('document.querySelector("#frame").contentWindow.player._trackManager._current===7','second speaker');
  const ownership=await js(`(()=>{const p=document.querySelector('#frame').contentWindow.player,s=p._characterStage,a=s._spineMap.get(s._getUid('a')),b=s._spineMap.get(s._getUid('b'));return{a:a.state.getCurrent(5)?.timeScale||0,b:b.state.getCurrent(5)?.timeScale||0}})()`);assert.equal(ownership.a,0);assert.equal(ownership.b,1);
- await js(`document.querySelector('#backlog').click()`);await wait('document.querySelector("#frame").contentWindow.player._paused','backlog button');
+ await js(`document.querySelector('#frame').contentWindow.player._mainController._ui.btnLog.emit('pointerup')`);await wait('document.querySelector("#frame").contentWindow.player._paused','backlog button');
  await js(`(()=>{const p=document.querySelector('#frame').contentWindow.player;p._replayLogVoice(p._trackManager.currentTrack.voice)})()`);assert.ok(await js('!!document.querySelector("#frame").contentWindow.player.soundController._currentLogVoice'));
  await js(`document.querySelector('#frame').contentWindow.player._scenarioLogLayer.close()`);await wait('document.querySelector("#frame").contentWindow.player._paused===false','log close animation');assert.equal(await js('!!document.querySelector("#frame").contentWindow.player.soundController._currentLogVoice'),false);
  await js(`document.querySelector('#frame').contentWindow.player._scenarioPlayer.endText();send('next')`);await wait('document.querySelector("#frame").contentWindow.player._selectList.active','choices');
@@ -73,7 +73,7 @@ app.whenReady().then(async()=>{const timer=setTimeout(()=>app.exit(1),150000);tr
  await js(`document.querySelector('#frame').contentWindow.player.emit('end')`);
  await wait('document.querySelector("#frame").contentWindow.ScenarioBridge.ended','story end');
  assert.equal(await js('document.querySelector("#frame").contentDocument.querySelector("#loading").style.display'),'none');
- await js(`document.querySelector('#backlog').click()`);await wait('document.querySelector("#frame").contentWindow.player._paused','backlog after story end');
+ await js(`document.querySelector('#frame').contentWindow.player._mainController._ui.btnLog.emit('pointerup')`);await wait('document.querySelector("#frame").contentWindow.player._paused','backlog after story end');
  // Engine changes and reload use the same host protocol and no extra dialog.
  await js(`(()=>{const s=document.querySelector('.story-engine-settings select');s.value='legacy';s.dispatchEvent(new Event('change'))})()`);await wait('document.querySelector("#frame").contentWindow.location.pathname.endsWith("legacy.html")&&!!document.querySelector("#frame").contentWindow.player?._tm','legacy fallback');
  await js(`(()=>{const s=document.querySelector('.story-engine-settings select');s.value='scenario';s.dispatchEvent(new Event('change'))})()`);await wait('document.querySelector("#frame").contentWindow.ScenarioBridge?.started','return new player');
