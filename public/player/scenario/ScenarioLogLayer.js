@@ -88,6 +88,7 @@ class ScenarioLogLayer extends PIXI.utils.EventEmitter {
             voice:         track.voice,
             isSelectedItem: !!track.isSelectedItem,
             textCtrl:      track.textCtrl,
+            playbackPosition: track._logPosition,
         });
     }
 
@@ -105,14 +106,18 @@ class ScenarioLogLayer extends PIXI.utils.EventEmitter {
         this._tween(this._panelBase.scale, 0.18, { x: 1, y: 1, ease: 'back.out(1.7)' });
     }
 
-    close() {
+    close(afterClose) {
+        if (this._closing) return;
+        this._closing = true;
         this._tween(this._backdropGfx, 0.18, { alpha: 0 });
         this._tween(this._panelBase.scale, 0.18, {
             x: 0, y: 0,
             ease: 'back.in(1.7)',
             onComplete: () => {
                 this._container.visible = false;
-                this.emit('closeLog');
+                this._closing = false;
+                if (afterClose) afterClose();
+                else this.emit('closeLog');
             }
         });
     }
@@ -305,6 +310,21 @@ class ScenarioLogLayer extends PIXI.utils.EventEmitter {
         for (const e of resolved) {
             const producer = isProducer(e.speaker);
             const entry = producer ? this._buildProducerEntry(e) : this._buildNormalEntry(e);
+            if (Number.isInteger(e.playbackPosition)) {
+                entry.interactive = true;
+                entry.buttonMode = true;
+                let down;
+                entry.on('pointerdown', event => {
+                    const { x, y } = event.data.global;
+                    down = { x, y, scroll: this._scroll };
+                });
+                entry.on('pointertap', event => {
+                    const { x, y } = event.data.global;
+                    if (!down || Math.hypot(x - down.x, y - down.y) > 8 ||
+                        Math.abs(this._scroll - down.scroll) > 8) return;
+                    this.emit('jumpToLine', e.playbackPosition);
+                });
+            }
             entry.position.set(producer ? 96 : 0, y);
             this._listHost.addChild(entry);
             y += entry._entryHeight + 32;

@@ -92,7 +92,10 @@
  }
  function refreshLanguage(){
   if(!player)return;const log=player._scenarioLogLayer;log._tracks=[];
-  for(const item of history){const track=typeof item==='number'?tracks[item]:{...item,text:tracks.find(t=>t.select&&t.nextLabel===item.nextLabel)?.select||item.text};log.stackTrackOriginal(track)}
+  history.forEach((item, i) => {
+   const track=typeof item==='number'?tracks[item]:{...item,text:tracks.find(t=>t.select&&t.nextLabel===item.nextLabel)?.select||item.text};
+   log.stackTrackOriginal({...track,_logPosition:historyPositions[i]});
+  });
   if(log.isOpen)log._render();
   const current=player._trackManager?.currentTrack;if(current?.text){let content='',previous;
    for(const item of history){if(typeof item!=='number'||!tracks[item]?.text)continue;const t=tracks[item];if(!previous||!['n','r','l'].includes(previous.textCtrl))content='';else if(['r','l'].includes(previous.textCtrl))content+='\n';content+=t.text;previous=t}
@@ -160,7 +163,33 @@
    if(preset.opensLog){controlMode(preset);return}const waiting=p._isWaiting();p._detachVoiceEndListener();if(waiting){p._schedule.cancelAll();p._state=State.LOCKED}controlMode(preset);if(waiting)p._changeToWaiting();if(preset.soundDisabled)stage.stopLipAnimations();emit('auto',p._mode===SpeedMode.AUTO);
   });
   const speaker=p._scenarioPlayer.controlSpeaker.bind(p._scenarioPlayer);const producerRe=/^(?:制作人|製作人|プロデューサー|producer|p)(?:[（(].*[）)])?$/i;let producerName='';try{producerName=(localStorage.getItem('shiny.producerName')||'').trim()}catch(e){}const speakerLabel=name=>{const text=names[name]||name;return producerName&&producerRe.test(String(text).replace(/[\s\u3000]/g,''))?producerName:text};p._scenarioPlayer.controlSpeaker=name=>speaker(speakerLabel(name));
-  const log=p._scenarioLogLayer;log.stackTrackOriginal=log.stackTrack.bind(log);log.stackTrack=t=>{history.push(Number.isInteger(t?._storyIndex)?t._storyIndex:{...t});if(t&&t.text){const row=Number.isInteger(t._storyIndex)?lastRows.find(r=>r.index===t._storyIndex):null;const rawLine=String(t.text||'').trim();emit('currentLine',{speaker:speakerLabel(t.speaker||row?.speaker||''),original:row?.original||rawLine,translation:row?.translation||rawLine})}log.stackTrackOriginal(t)};
+  const playTrack = p._playTrack.bind(p);
+  p._playTrack = track => {
+   playedPath.push(p._trackManager._current);
+   return playTrack(track);
+  };
+  const log = p._scenarioLogLayer;
+  log.stackTrackOriginal = log.stackTrack.bind(log);
+  log.stackTrack = track => {
+   const index = track?._storyIndex;
+   const position = Number.isInteger(index) ? playedPath.length - 1 : undefined;
+   history.push(Number.isInteger(index) ? index : {...track});
+   historyPositions.push(position);
+   if (track?.text) {
+    const row = lastRows.find(r => r.index === index);
+    const rawLine = String(track.text).trim();
+    emit('currentLine', {speaker:speakerLabel(track.speaker||row?.speaker||''),original:row?.original||rawLine,translation:row?.translation||rawLine});
+   }
+   log.stackTrackOriginal({...track,_logPosition:position});
+  };
+  log.on('jumpToLine', position => {
+   const index = playedPath[position];
+   if (!Number.isInteger(index)) return;
+   if (!ended && position === playedPath.length-1) { log.close(); return; }
+   log.close(() => {
+    if (!jumpToTrack(index, playedPath.slice(0, position))) p._closeLog();
+   });
+  });
   const movie=p._movieLayer.control.bind(p._movieLayer);p._movieLayer.control=(url,options={})=>{const result=movie(url,{...options,onError:message=>{if(disposed)return;status('一段过场影片暂未取得或无法播放，已跳过；其余剧情继续播放。'+message);$('#loading').style.display='none'}});setVolume(volume);return result};
   const nativePause=p.pause.bind(p),nativeResume=p.resume.bind(p);p.pause=()=>{nativePause();stage._spineMap.forEach(s=>{s.autoUpdate=false})};p.resume=()=>{nativeResume();stage._spineMap.forEach(s=>{s.autoUpdate=true})};
   const fatal=p._handleFatalError.bind(p);p._handleFatalError=(message,error,context)=>{fatal(message,error,context);fail(error||message)};
@@ -257,7 +286,8 @@
    }
    fail(e.reason);
  });
- function jumpToTrack(targetIndex){
+ const playedPath = [], historyPositions = [];
+ function jumpToTrack(targetIndex, priorPath){
   if(!player||!started||disposed||!Array.isArray(tracks))return false;
   if(!Number.isInteger(targetIndex)||targetIndex<0||targetIndex>=tracks.length)return false;
   ended=false;
@@ -288,9 +318,10 @@
   player._scenarioPlayer?.reset?.();
   player._scenarioPlayer?.controlSpeaker?.('off');
 
+  const path = priorPath ?? Array.from({length:targetIndex}, (_, index) => index);
   let lastBg=null,lastMiddleFg=null,lastFg=null,lastStill=null,lastBgm=null,lastTextFrame=null,lastSpeaker=null;
   const chars=new Map();
-  for(let i=0;i<targetIndex;i++){
+  for(const i of path){
    const t=tracks[i];
    if(!t)continue;
    if(t.bg!==undefined)lastBg=(t.bg==='off'||t.bg==='fade_out')?null:t.bg;
@@ -340,14 +371,19 @@
   }catch{}
 
   history.length=0;
+  historyPositions.length=0;
+  playedPath.length=0;
+  for(const index of path)playedPath.push(index);
   const log=player._scenarioLogLayer;
   if(log){
    log._tracks=[];
-   for(let i=0;i<targetIndex;i++){
+   for(let position=0;position<path.length;position++){
+    const i=path[position];
     const t=tracks[i];
     if(t&&t.text){
      history.push(Number.isInteger(t._storyIndex)?t._storyIndex:i);
-     log.stackTrackOriginal(t);
+     historyPositions.push(position);
+     log.stackTrackOriginal({...t,_logPosition:position});
     }
    }
   }

@@ -47,7 +47,16 @@ app.whenReady().then(async()=>{const timer=setTimeout(()=>app.exit(1),150000);tr
   assert.equal(await js('document.querySelector("#frame").contentDocument.querySelector("#loading").style.display'),'none');
   await js(`document.querySelector('#frame').contentWindow.player._mainController._ui.btnLog.emit('pointerup')`);
   await wait('document.querySelector("#frame").contentWindow.player._paused','backlog after story end');
-  console.log('Backlog opens during and after playback');
+  await js(`(()=>{
+   const p=document.querySelector('#frame').contentWindow.player;
+   const entry=p._scenarioLogLayer._listHost.children.find(child=>child.buttonMode);
+   const event={data:{global:{x:250,y:200}}};
+   entry.emit('pointerdown',event);
+   entry.emit('pointertap',event);
+  })()`);
+  await wait('(()=>{const w=document.querySelector("#frame").contentWindow;return !w.ScenarioBridge.ended&&!w.player._paused&&w.player._trackManager._current===5})()','click log to replay');
+  assert.equal(await js('!!document.querySelector("#backlog")'),false);
+  console.log('Native backlog opens during and after playback, and clicking a line resumes it');
   return;
  }
  const initial=await js(`(()=>{const w=document.querySelector('#frame').contentWindow,p=w.player;return{engine:w.ScenarioBridge.inspect(),translated:w.ScenarioBridge.tracks[5].text,fg:p._middleFgLayer._main.texture.width,characters:p._characterStage._spineMap.size,mouth:[...p._characterStage._spineMap.values()].map(s=>s.state.getCurrent(5)?.animation?.name),menu:!!document.querySelector('.story-engine-settings select'),quality:!!document.querySelector('.story-quality-settings'),transcript:document.querySelector('#transcript').textContent}})()`);
