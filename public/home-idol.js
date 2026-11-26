@@ -10,9 +10,13 @@
  const isJoyTrans=document.documentElement.dataset.joytrans==='1'||document.documentElement.dataset.kirin==='1';
  if(window.PIXI?.settings&&window.PIXI?.MIPMAP_MODES)PIXI.settings.MIPMAP_TEXTURES=PIXI.MIPMAP_MODES.ON;
  const initRes=isJoyTrans?1.5:isMobile?Math.min(2,Math.max(1.5,window.devicePixelRatio||1.5)):Math.min(3.375,Math.max(2.25,(Math.max(window.innerWidth||1920,1920)*(window.devicePixelRatio||1))/1136));
- const app=new PIXI.Application({width:1136,height:640,resolution:initRes,autoDensity:true,backgroundAlpha:0,antialias:!isMobile,preserveDrawingBuffer:!isMobile,powerPreference:isMobile?'default':'high-performance'});app.ticker.maxFPS=isMobile?30:0;$('#idol').append(app.view);app.view.style.width='100%';app.view.style.height='100%';
+ const app=new PIXI.Application({width:1136,height:640,resolution:initRes,autoDensity:true,backgroundAlpha:0,antialias:!isMobile,preserveDrawingBuffer:!isMobile,powerPreference:isMobile?'default':'high-performance'});
+ const applySpineFps=(mode)=>{const v=mode||(localStorage.getItem('shiny.spineFps')||(isJoyTrans?'30':isMobile?'60':'auto'));app.ticker.maxFPS=v==='30'?30:v==='60'?60:0;};
+ applySpineFps();
+ $('#idol').append(app.view);app.view.style.width='100%';app.view.style.height='100%';
  window.ShinyAnime4K?.attach(app,{fill:true});
  const qualitySettings=document.createElement('section');$('#wardrobeClose').before(qualitySettings);window.ShinyAnime4K?.mountControl(qualitySettings,{detailed:true});
+ const fpsRow=document.createElement('label');fpsRow.style.marginTop='8px';fpsRow.textContent='立绘刷新率（Spine 原生插值）';const fpsSel=document.createElement('select');fpsSel.id='spineFpsSelect';fpsSel.innerHTML='<option value="auto">跟随屏幕高刷（60 / 120 / 144Hz）</option><option value="60">标准 60fps</option><option value="30">省电 30fps（卓易通推荐）</option>';fpsSel.value=localStorage.getItem('shiny.spineFps')||(isJoyTrans?'30':isMobile?'60':'auto');fpsSel.onchange=()=>{localStorage.setItem('shiny.spineFps',fpsSel.value);window.desktop?.saveState?.({'shiny.spineFps':fpsSel.value});applySpineFps(fpsSel.value);};fpsRow.append(fpsSel);qualitySettings.append(fpsRow);
  // Idle clips contain an intro and a loop_start event. Narrow the animation
  // range at that event, before the runtime renders a frame from the intro again.
  function installIdleLoop(m){m.state.addListener({event(entry,event){if(entry.trackIndex!==0||!entry.loop||!entry.animation.name.startsWith('wait')||event.data?.name!=='loop_start'||entry.animationStart>0)return;const start=event.time;if(start<=0||start>=entry.animationEnd)return;entry.animationStart=start;entry.trackTime=0;entry.trackLast=0;entry.nextTrackLast=0;entry.animationLast=start;entry.nextAnimationLast=start}})}
@@ -39,8 +43,7 @@ window.addEventListener('translation-overrides-changed',()=>{if(window.currentSu
      const alts=waits.filter(n=>n!==base);
      if(alts.length){
       const pick=alts[Math.floor(Math.random()*alts.length)];
-      model.stateData.defaultMix=0.35;
-      model.state.setAnimation(0,pick,false);
+      anim(pick,0,false);
       if(base)model.state.addAnimation(0,base,true,0);
      }
     }
@@ -49,7 +52,7 @@ window.addEventListener('translation-overrides-changed',()=>{if(window.currentSu
   },10000+Math.floor(Math.random()*6500));
  }
  scheduleOfficialIdleMotion();
- function stop(resetPose=true){window.dispatchEvent(new CustomEvent('home-voice',{detail:false}));voiceSerial++;if(audio){audio.pause();audio.currentTime=0;audio=null}if(resetPose)idle();$('#voiceStatus').textContent='点击偶像，听主页原声'}
+ function stop(resetPose=true){window.dispatchEvent(new CustomEvent('home-voice',{detail:false}));voiceSerial++;HomeVoicePolicy.cancelIdle(model);if(audio){audio.pause();audio.currentTime=0;audio=null}if(resetPose)idle();$('#voiceStatus').textContent='点击偶像，听主页原声'}
  const retryModel=document.createElement('button');retryModel.textContent='重新加载当前服装';retryModel.hidden=true;$('#outfitStatus').after(retryModel);retryModel.onclick=()=>setOutfit($('#outfitSelect').value);
  async function setOutfit(key){retryModel.hidden=true;const choice=selected.outfits.find(x=>x.key===key);if(!choice)return;delete $('#idol').dataset.sceneReady;stop();const serial=++loadSerial;$('#outfitStatus').textContent='正在加载服装…';$('#idolTouch').disabled=true;
  const url=choice.id==='1040210030'&&choice.key.endsWith('-plain')?'/home-assets/madoka/data.json':'/asset-original/'+choice.path;
@@ -63,7 +66,7 @@ window.addEventListener('translation-overrides-changed',()=>{if(window.currentSu
  if(performance.returnToIdle&&performance.idle)model.state.addAnimation(0,performance.idle,true,0);
  window.dispatchEvent(new CustomEvent("home-voice",{detail:true}));
  const current=window.homeStage.audioFor?.(v.path)||new Audio('/asset/'+v.path);audio=current;current.volume=prefs.volume/100;
- current.onended=()=>{if(serial===voiceSerial){window.dispatchEvent(new CustomEvent('home-voice',{detail:false}));idle();$('#voiceStatus').textContent='播放结束 · 点击偶像再听一句'}};current.onerror=()=>{if(serial===voiceSerial){window.dispatchEvent(new CustomEvent('home-voice',{detail:false}));idle();$('#voiceStatus').textContent='该语音暂时不可用，请重试或换一条'}};
+ current.onended=()=>{if(serial===voiceSerial){window.dispatchEvent(new CustomEvent('home-voice',{detail:false}));HomeVoicePolicy.scheduleIdle(model,()=>{if(serial===voiceSerial)idle()},1400);$('#voiceStatus').textContent='播放结束 · 点击偶像再听一句'}};current.onerror=()=>{if(serial===voiceSerial){window.dispatchEvent(new CustomEvent('home-voice',{detail:false}));idle();$('#voiceStatus').textContent='该语音暂时不可用，请重试或换一条'}};
  try{await current.play();if(serial!==voiceSerial)return;const speakingMouth=HomeVoicePolicy.bindMouth(model,performance.lip,current);$('#voiceStatus').textContent=v.translation?'原声播放中 · 已有译文':v.original?'原声播放中 · 中文待补':'原声播放中 · 台词原文待补';if(speakingMouth&&HomeVoicePolicy.mouthMode(model)==='compatible')$('#voiceStatus').textContent+=' · 使用原素材兼容嘴型';if(!speakingMouth)$('#voiceStatus').textContent+=' · 当前模型未提供说话嘴型，可换用日常或剧情模型'}catch(e){if(serial===voiceSerial){window.dispatchEvent(new CustomEvent('home-voice',{detail:false}));idle();$('#voiceStatus').textContent='语音未能播放，请点击重试'}} }
  $('#wardrobe').onclick=()=>{const d=$('#wardrobeDialog');d.showModal();d.setAttribute('tabindex','-1');d.focus();const sc=d.querySelector('.settings-scroll');if(sc)sc.scrollTop=0;userGesture=true};$('#wardrobeClose').onclick=()=>$('#wardrobeDialog').close();$('#idolSelect').onchange=e=>chooseIdol(e.target.value);$('#outfitSelect').onchange=e=>setOutfit(e.target.value);$('#idolTouch').onclick=e=>{if(e.detail===0)return speak();const rect=e.currentTarget.getBoundingClientRect(),y=(e.clientY-rect.top)/rect.height;return speak('touch:'+(y<.40?'head':y<.70?'breast':'belly'))};$('#trustLevel').oninput=e=>{prefs.trustById??={};prefs.trustById[selected.id]=Number(e.target.value);$('#trustValue').textContent=e.target.value;save()};$('#replayVoice').onclick=()=>speak('replay');$('#subtitleLanguage').value=prefs.language;$('#subtitleLanguage').onchange=e=>{prefs.language=e.target.value;save();if(lastVoice)showSubtitle(lastVoice)};$('#playVoice').onclick=()=>speak(true);$('#stopVoice').onclick=stop;$('#voiceVolume').value=prefs.volume;$('#idleTalk').checked=prefs.idle;$('#voiceVolume').oninput=e=>{prefs.volume=Number(e.target.value);if(audio)audio.volume=prefs.volume/100;save()};$('#idleTalk').onchange=e=>{prefs.idle=e.target.checked;userGesture=true;save()};
  function applySilent(silent){prefs.silent=!!silent;localStorage.setItem('shiny.homeSilent',prefs.silent?'1':'0');document.body.classList.toggle('home-silent',prefs.silent);const sc=$('.screen');if(sc)sc.classList.toggle('home-silent',prefs.silent);const chk=$('#homeSilent');if(chk)chk.checked=prefs.silent;if(prefs.silent){stop(true);const cap=$('.caption');if(cap)cap.style.setProperty('display','none','important');}else{const cap=$('.caption');if(cap)cap.style.removeProperty('display');}save();}

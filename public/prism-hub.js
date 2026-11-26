@@ -1074,7 +1074,7 @@
       const cl = document.getElementById('phAfClock');
       const dt = document.getElementById('phAfDate');
       if (cl) cl.textContent = `${hh}:${mm}`;
-      if (dt) dt.textContent = `${now.getFullYear()}年${now.getMonth() + 1}月${now.getDate()}日 · 283 待机黑胶艺术画框`;
+      if (dt) dt.textContent = `${now.getFullYear()}年${now.getMonth() + 1}月${now.getDate()}日`;
       try {
         const isPlaying = document.getElementById('dynamicIsland')?.classList.contains('is-playing') ||
                           localStorage.getItem('shiny.musicPlaying') === '1';

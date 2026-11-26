@@ -1004,6 +1004,7 @@
       elIpLyric.classList.add('is-empty');
     }
     renderIslandModeAndVolume();
+    try { window.dispatchEvent(new CustomEvent('shiny-music-state', { detail: { ...musicState } })); } catch {}
     // Render Music Capsule upcoming queue (collapsed completely by default; expanded via top playlist icon!)
     if (elIpQueueSection && elIpQueueList) {
       const items = Array.isArray(musicState.queuePreview) ? musicState.queuePreview : [];
@@ -1072,6 +1073,8 @@
     return islandPopoverOpen;
   };
   window.__shinyCloseMusicCapsule = () => closeIslandPopover();
+  window.__shinyMusicAction = (fn) => withMusicAPI(fn);
+  window.__shinyGetMusicState = () => ({ ...musicState });
 
   async function withMusicAPI(fn) {
     let entry = frames.get('music.html');

@@ -1,10 +1,10 @@
 /* Optional realtime post-processing: never changes Spine textures, layout or hit areas. */
 (() => {
   'use strict';
-  const KEY = 'anime4k', modes = ['off', 'balanced', 'quality', 'fine', 'max2x', 'ultra', 'artcnn'];
-  const labels={balanced:'流畅 S · 2×',quality:'清晰 M · 2×',fine:'精细 L · 2×',max2x:'最高 UL · 2×',ultra:'最高 UL · 4×',artcnn:'ArtCNN · 实时 C4F16 · 2×'};
-  const engine=value=>value==='artcnn'?'ArtCNN':'Anime4K';
-  let mode='off',corePromise,artPromise;
+  const KEY = 'anime4k', modes = ['off', 'balanced', 'quality', 'fine', 'max2x', 'ultra', 'artcnn', 'fsr'];
+  const labels={balanced:'流畅 S · 2×',quality:'清晰 M · 2×',fine:'精细 L · 2×',max2x:'最高 UL · 2×',ultra:'最高 UL · 4×',artcnn:'ArtCNN · 实时 C4F16 · 2×',fsr:'AMD FSR 1.0 · 2×'};
+  const engine=value=>value==='artcnn'?'ArtCNN':value==='fsr'?'AMD FSR 1.0':'Anime4K';
+  let mode='off',corePromise,artPromise,fsrPromise;
   const instances = new Set(), controls = new Set();
   let toast, toastTimer;
   function announce(message) {
@@ -28,11 +28,11 @@
     if (!initialized) window.desktop?.saveState({ [KEY]: 'off' });
   } catch { /* Private browsing may prohibit storage. */ }
 
-  const PIPELINE='qualityPipeline',defaults=[{id:'artcnn',enabled:false,level:'c16'},{id:'anime4k',enabled:false,level:'max2x'}];
-  function normalize(value){const out=[];for(const item of Array.isArray(value)?value:[]){if(!defaults.some(d=>d.id===item.id)||out.some(d=>d.id===item.id))continue;const levels=item.id==='artcnn'?['c16','c32','c164x','c324x']:['balanced','quality','fine','max2x','ultra'];out.push({id:item.id,enabled:item.enabled===true,level:levels.includes(item.level)?item.level:defaults.find(d=>d.id===item.id).level})}for(const d of defaults)if(!out.some(v=>v.id===d.id))out.push({...d});return out}
-  let pipeline=defaults.map(d=>({...d}));try{const saved=window.desktop?.getState()?.[PIPELINE]||localStorage.getItem(PIPELINE);if(saved)pipeline=normalize(JSON.parse(saved));else if(mode!=='off')pipeline.forEach(d=>{d.enabled=d.id===(mode==='artcnn'?'artcnn':'anime4k');if(d.id==='anime4k'&&mode!=='artcnn')d.level=mode});if(mode==='off')pipeline.forEach(d=>d.enabled=false)}catch{}
+  const PIPELINE='qualityPipeline',defaults=[{id:'artcnn',enabled:false,level:'c16'},{id:'fsr',enabled:false,level:'standard'},{id:'anime4k',enabled:false,level:'max2x'}];
+  function normalize(value){const out=[];for(const item of Array.isArray(value)?value:[]){if(!defaults.some(d=>d.id===item.id)||out.some(d=>d.id===item.id))continue;const levels=item.id==='artcnn'?['c16','c32','c164x','c324x']:item.id==='fsr'?['soft','standard','sharp','ultra']:['balanced','quality','fine','max2x','ultra'];out.push({id:item.id,enabled:item.enabled===true,level:levels.includes(item.level)?item.level:defaults.find(d=>d.id===item.id).level})}for(const d of defaults)if(!out.some(v=>v.id===d.id))out.push({...d});return out}
+  let pipeline=defaults.map(d=>({...d}));try{const saved=window.desktop?.getState()?.[PIPELINE]||localStorage.getItem(PIPELINE);if(saved)pipeline=normalize(JSON.parse(saved));else if(mode!=='off')pipeline.forEach(d=>{d.enabled=d.id===(mode==='artcnn'?'artcnn':mode==='fsr'?'fsr':'anime4k');if(d.id==='anime4k'&&mode!=='artcnn'&&mode!=='fsr')d.level=mode});if(mode==='off')pipeline.forEach(d=>d.enabled=false)}catch{}
   const enabledStages=()=>pipeline.filter(d=>d.enabled).map(({id,level})=>({id,level}));
-  const selectedMode=()=>pipeline.some(d=>d.enabled&&d.id==='artcnn')?'artcnn':pipeline.find(d=>d.enabled&&d.id==='anime4k')?.level||'off';
+  const selectedMode=()=>pipeline.some(d=>d.enabled&&d.id==='artcnn')?'artcnn':pipeline.some(d=>d.enabled&&d.id==='fsr')?'fsr':pipeline.find(d=>d.enabled&&d.id==='anime4k')?.level||'off';
   mode=selectedMode();
   function setPipeline(value,force=false){const before=JSON.stringify(enabledStages()),next=normalize(value);if(parent!==window&&parent.ShinyAnime4K){parent.ShinyAnime4K.setPipeline(next,force);pipeline=next;if(!force&&before===JSON.stringify(enabledStages()))notify();else applyMode(selectedMode(),true);return}pipeline=next;const encoded=JSON.stringify(pipeline);try{localStorage.setItem(PIPELINE,encoded);localStorage.setItem(KEY,selectedMode());window.desktop?.saveState({[PIPELINE]:encoded,[KEY]:selectedMode()})}catch{}if(!force&&before===JSON.stringify(enabledStages()))notify();else applyMode(selectedMode(),true)}
 
@@ -46,12 +46,14 @@
     });
   }
   function loadArt(){return artPromise ||= new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='/artcnn.js';script.onload=()=>resolve(window.ArtCNN);script.onerror=()=>{artPromise=null;script.remove();reject(Error('ArtCNN 组件加载失败'))};document.head.append(script)})}
+  function loadFsr(){return fsrPromise ||= new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='/fsr.js';script.onload=()=>resolve(window.FSR1);script.onerror=()=>{fsrPromise=null;script.remove();reject(Error('FSR 1.0 组件加载失败'))};document.head.append(script)})}
   function notify() {
     for (const control of controls) {
       control.render?.();
       if (control.status) {
         const active = [...instances].find(i => i.active), error = [...instances].find(i => i.error),preparing=[...instances].find(i=>i.message&&!i.error);
-        control.status.textContent = active?.effectiveMode==='artcnn' ? ((active.actualStages||enabledStages()).map(s=>(s.id==='artcnn'?'ArtCNN '+s.level:'Anime4K '+s.level)).join(' → ')+' · 实时已启用'+(active.adapted?'（自动降档）':'')) : !control.detailed ? error ? '实际：原图' : active ? '实际：' + labels[active.effectiveMode] : mode === 'off' ? '原图' : preparing?.message||'正在准备…' : error?.error || (active
+        const stageLabel = s => s.id==='artcnn'?'ArtCNN '+s.level:s.id==='fsr'?'FSR 1.0 '+s.level:'Anime4K '+s.level;
+        control.status.textContent = (active?.effectiveMode==='artcnn'||active?.effectiveMode==='fsr') ? ((active.actualStages||enabledStages()).map(stageLabel).join(' → ')+' · 实时已启用'+(active.adapted?'（自动降档）':'')) : !control.detailed ? error ? '实际：原图' : active ? '实际：' + labels[active.effectiveMode] : mode === 'off' ? '原图' : preparing?.message||'正在准备…' : error?.error || (active
           ? `${engine(active.effectiveMode)} 已启用 · ${active.output.width} × ${active.output.height} · ${labels[active.effectiveMode]}${active.adapted ? '（帧率过低，自动调整）' : ''}`
           : mode === 'off' ? '使用官方原图。' : preparing?.message||'正在准备实时超分…');
       }
@@ -73,7 +75,7 @@
     const wrapper=document.createElement(detailed?'fieldset':'div');wrapper.className=detailed?'anime4k-panel':'anime4k-control'+(floating?' anime4k-floating':'');
     const title=document.createElement(detailed?'legend':'strong');title.textContent='画质增强 · 从上到下执行';
     const list=document.createElement('div');list.className='quality-pipeline';const rows=new Map();let dragging=null;
-    const names={artcnn:'ArtCNN',anime4k:'Anime4K'},levels={artcnn:[['c16','实时 C4F16 · 2×'],['c32','精细 C4F32 · 2×'],['c164x','实时 C4F16 · 4×（两次 2×）'],['c324x','精细 C4F32 · 4×（两次 2×）']],anime4k:[['balanced','流畅 S · 2×'],['quality','清晰 M · 2×'],['fine','精细 L · 2×'],['max2x','最高 UL · 2×'],['ultra','最高 UL · 4×']]};
+    const names={artcnn:'ArtCNN',fsr:'AMD FSR 1.0',anime4k:'Anime4K'},levels={artcnn:[['c16','实时 C4F16 · 2×'],['c32','精细 C4F32 · 2×'],['c164x','实时 C4F16 · 4×（两次 2×）'],['c324x','精细 C4F32 · 4×（两次 2×）']],fsr:[['soft','柔和抗锯齿 · 2×'],['standard','标准超清 · 2×'],['sharp','锐利线条 · 2×'],['ultra','高锐度 · 2×']],anime4k:[['balanced','流畅 S · 2×'],['quality','清晰 M · 2×'],['fine','精细 L · 2×'],['max2x','最高 UL · 2×'],['ultra','最高 UL · 4×']]};
     const reorder=(id,target)=>{const next=pipeline.map(d=>({...d})),from=next.findIndex(d=>d.id===id),to=next.findIndex(d=>d.id===target);if(from<0||to<0||from===to)return;const [item]=next.splice(from,1);next.splice(to,0,item);setPipeline(next)};
     for(const entry of pipeline){const row=document.createElement('div');row.className='quality-model';row.draggable=true;row.dataset.engine=entry.id;const grip=document.createElement('span');grip.className='quality-grip';grip.textContent='⠿';grip.title='拖动以调整处理顺序';
       const label=document.createElement('label'),toggle=document.createElement('input');toggle.type='checkbox';toggle.setAttribute('aria-label','启用 '+names[entry.id]);label.append(toggle,document.createTextNode(names[entry.id]));const select=document.createElement('select');select.setAttribute('aria-label',names[entry.id]+' 档位');for(const [value,text]of levels[entry.id])select.add(new Option(text,value));
@@ -130,7 +132,7 @@
 
     let sourceAt=0,sourceInterval=0,lastNoticeAt=0,cpuSubmitMs=0;
     const state = { active: false, error: '', output, frames: 0, effectiveMode: 'off', adapted: false, configure: () => configure(), destroy };
-    state.diagnostics=()=>{const metrics=passes[0]?.upscaler?.metrics?.()||{},gl=renderer.gl,debug=!metrics.adapter&&gl?.getExtension('WEBGL_debug_renderer_info');return{显卡:metrics.adapter||(debug?gl.getParameter(debug.UNMASKED_RENDERER_WEBGL):'未取得'),首选档位:mode==='artcnn'?enabledStages().map(s=>s.id+' '+s.level).join(' → '):labels[mode]||'原图',实际档位:state.effectiveMode==='artcnn'?(state.actualStages||[]).map(s=>s.id+' '+s.level).join(' → '):labels[state.effectiveMode]||'原图',输入:[source.width,source.height],输出:state.active?[state.output.width,state.output.height]:null,来源帧率:sourceInterval?+(1000/sourceInterval).toFixed(1):null,处理帧率:averageInterval?+(1000/averageInterval).toFixed(1):null,GPU耗时毫秒:passes.length>1||metrics.gpuMs==null?null:+metrics.gpuMs.toFixed(2),处理链:passes.map((p,i)=>({引擎:p.id==='artcnn'?'ArtCNN':'Anime4K',档位:p.level,输出:[p.canvas.width,p.canvas.height],GPU耗时毫秒:i===0&&metrics.gpuMs!=null?+metrics.gpuMs.toFixed(2):null})),CPU提交毫秒:+cpuSubmitMs.toFixed(2),跳过积压帧:metrics.skipped||0,自动降档:state.adapted,错误:state.error||null};};
+    state.diagnostics=()=>{const metrics=passes[0]?.upscaler?.metrics?.()||{},gl=renderer.gl,debug=!metrics.adapter&&gl?.getExtension('WEBGL_debug_renderer_info');const stageFmt=s=>s.id+' '+s.level;return{显卡:metrics.adapter||(debug?gl.getParameter(debug.UNMASKED_RENDERER_WEBGL):'未取得'),首选档位:(mode==='artcnn'||mode==='fsr')?enabledStages().map(stageFmt).join(' → '):labels[mode]||'原图',实际档位:(state.effectiveMode==='artcnn'||state.effectiveMode==='fsr')?(state.actualStages||[]).map(stageFmt).join(' → '):labels[state.effectiveMode]||'原图',输入:[source.width,source.height],输出:state.active?[state.output.width,state.output.height]:null,来源帧率:sourceInterval?+(1000/sourceInterval).toFixed(1):null,处理帧率:averageInterval?+(1000/averageInterval).toFixed(1):null,GPU耗时毫秒:passes.length>1||metrics.gpuMs==null?null:+metrics.gpuMs.toFixed(2),处理链:passes.map((p,i)=>({引擎:p.id==='artcnn'?'ArtCNN':p.id==='fsr'?'AMD FSR 1.0':'Anime4K',档位:p.level,输出:[p.canvas.width,p.canvas.height],GPU耗时毫秒:i===0&&metrics.gpuMs!=null?+metrics.gpuMs.toFixed(2):null})),CPU提交毫秒:+cpuSubmitMs.toFixed(2),跳过积压帧:metrics.skipped||0,自动降档:state.adapted,错误:state.error||null};};
     instances.add(state);
 
     // Reuse precisely the existing CSS box, including cover/contain cropping.
@@ -156,7 +158,7 @@
     }
     let _inResizeSync = false;
     function applyStageResolution(targetRes) {
-      if (_inResizeSync) return;
+      if (!fill || _inResizeSync || (app.screen?.width || 0) < 640) return;
       try {
         const lw = app.screen?.width, lh = app.screen?.height;
         if (!lw || !lh) return;
@@ -201,20 +203,23 @@
       if (passes.length || state.active) reset();
       if (preset === 'off' || destroyed) { applyStageResolution(calcNativeRes()); notify(); return; }
       try {
-        const stages=override|| (preset==='artcnn'?enabledStages():[{id:'anime4k',level:preset}]);
+        const stages=override|| ((preset==='artcnn'||preset==='fsr')?enabledStages():[{id:'anime4k',level:preset}]);
         const totalScale=stages.reduce((acc,s)=>acc*((s.level==='ultra'||s.level==='c324x'||s.level==='c164x')?4:2),1);
         const ds=document.documentElement.dataset;
         const isLowPower=ds.joytrans==='1'||ds.kirin==='1'||ds.mobile==='1'||ds.android==='1'||ds.platform==='android'||/Android|iPhone|iPad|Mobile|HarmonyOS/i.test(navigator.userAgent);
         const lw=app.screen?.width||1136;
         applyStageResolution(!isLowPower&&totalScale<=2&&lw<=1600?2:1);
         state.actualStages=stages.map(s=>({...s}));
-        const core=stages.some(s=>s.id==='anime4k')?await loadCore():null,art=stages.some(s=>s.id==='artcnn')?await loadArt():null;
+        const core=stages.some(s=>s.id==='anime4k')?await loadCore():null,art=stages.some(s=>s.id==='artcnn')?await loadArt():null,fsr=stages.some(s=>s.id==='fsr')?await loadFsr():null;
         if(destroyed||token!==generation)return;
         const fresh=document.createElement('canvas');fresh.className=output.className;fresh.setAttribute('aria-hidden','true');output.replaceWith(fresh);output=fresh;state.output=fresh;
         let input=source;for(let index=0;index<stages.length;index++){
           const stage=stages[index],canvas=index===stages.length-1?fresh:document.createElement('canvas');let upscaler,gl;
           if(stage.id==='artcnn'){
             upscaler=await art.Upscaler.create(input,canvas,stage.level,message=>{if(token===generation){state.message=message;notify()}});gl=upscaler.gl;
+            if(destroyed||token!==generation){upscaler.detachSource();gl.getExtension('WEBGL_lose_context')?.loseContext();return}
+          }else if(stage.id==='fsr'){
+            upscaler=await fsr.Upscaler.create(input,canvas,stage.level,message=>{if(token===generation){state.message=message;notify()}});gl=upscaler.gl;
             if(destroyed||token!==generation){upscaler.detachSource();gl.getExtension('WEBGL_lose_context')?.loseContext();return}
           }else{const highest=[core.Clamp,core.Restore_UL,core.CNN_UL],profile=stage.level==='ultra'?[...highest,core.CNN_UL]:stage.level==='max2x'?highest:[stage.level==='fine'?core.CNN_L:stage.level==='quality'?core.CNN_M:core.CNN_S];upscaler=new core.ImageUpscaler(profile);upscaler.attachSource(input,canvas);gl=canvas.getContext('webgl');}
           passes.push({upscaler,canvas,gl,id:stage.id,level:stage.level});
@@ -276,7 +281,7 @@
           if (monitorPerformance() && now - firstFrame > 3500 && ((samples >= 12 && averageInterval > 100) || (samples >= 3 && averageInterval > 500))) {
             const order = ['ultra', 'max2x', 'fine', 'quality', 'balanced'];
             const next = order[order.indexOf(state.effectiveMode) + 1];
-            if(state.effectiveMode==='artcnn'){const current=state.actualStages,nextStages=current.map(s=>({...s,level:s.level==='c324x'?'c32':s.level==='c164x'?'c16':s.level==='c32'?'c16':s.id==='anime4k'?'balanced':s.level}));if(JSON.stringify(nextStages)!==JSON.stringify(current)){announce('持续低帧率，实时处理链已降低档位；首选保持不变。');configure('artcnn',true,nextStages)}else fallback('持续帧率过低');return}
+            if(state.effectiveMode==='artcnn'||state.effectiveMode==='fsr'){const current=state.actualStages,nextStages=current.map(s=>({...s,level:s.level==='c324x'?'c32':s.level==='c164x'?'c16':s.level==='c32'?'c16':s.id==='fsr'&&s.level!=='soft'?'soft':s.id==='anime4k'?'balanced':s.level}));if(JSON.stringify(nextStages)!==JSON.stringify(current)){announce('持续低帧率，实时处理链已降低档位；首选保持不变。');configure(state.effectiveMode,true,nextStages)}else fallback('持续帧率过低');return}
             if (next) {
               announce(`${engine(state.effectiveMode)} 检测到持续低帧率，已从「${labels[state.effectiveMode]}」降为「${labels[next]}」。你选择的画质偏好仍保留。`);
               configure(next, true); notify();

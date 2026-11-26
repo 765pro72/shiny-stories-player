@@ -25,6 +25,7 @@ async function get(url,signal,onHeaders){const timeout=AbortSignal.timeout(25000
 async function fetchAsset(key,options={}){
  if(!/^(json|images|sounds|movies|spine)\/[\w/.@-]+$/.test(key)||key.split('/').includes('..'))throw Error('Invalid asset path');
  const official=async(signal,onHeaders)=>{
+  if(options.signal)signal=AbortSignal.any([signal,options.signal]);
   const {codec}=await loadCodec(),assetPath='/assets/'+key;
   const extension=path.posix.extname(key),media=/^\.(mp3|mp4|m4a)$/.test(extension)?extension:'';
   const candidates=[assetPath],match=(key.match(/^images\/content\/(idols|support_idols)\/(card|fes_card)\/(\d+)\.jpg$/)||key.match(/^movies\/(idols)\/(card|card_costume)\/(\d+)\.mp4$/));
@@ -37,7 +38,7 @@ async function fetchAsset(key,options={}){
   }
   validate(key,bytes,result.type);return{bytes,source:'official'};
  };
- const mirror=async signal=>{const result=await get('https://viewer.shinycolors.moe/'+key,signal);validate(key,result.bytes,result.type);return{bytes:result.bytes}};
+ const mirror=async signal=>{if(options.signal)signal=AbortSignal.any([signal,options.signal]);const result=await get('https://viewer.shinycolors.moe/'+key,signal);validate(key,result.bytes,result.type);return{bytes:result.bytes}};
  try{return await preferOfficial(official,mirror,{hedgeAfter:key.startsWith('spine/')?1800:25000})}catch(e){throw Error(`资源获取失败 ${key}；${e.message}`)}
 }
 module.exports={fetchAsset,loadCodec};

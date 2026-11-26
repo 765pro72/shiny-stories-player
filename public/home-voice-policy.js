@@ -6,8 +6,23 @@
   if(!animations[0]||(generic&&/^wait/.test(animations[0]))){const candidates=['hello','smile1','smile2','yes','shy1','talk1','talk'].filter(has);if(candidates.length){const seed=[...(voice.id||'')].reduce((n,c)=>n+c.charCodeAt(0),0);animations[0]=candidates[seed%candidates.length];adapted=true}}
   const lip=has(voice.lip)?voice.lip:['lip_smile','lip_smile1','lip_wait','lip_wait1',...names.filter(n=>/^lip_(?:smile|wait)\d+$/.test(n)),'lip_a'].find(has);return{animations,lip,adapted,returnToIdle:adapted&&!/^wait/.test(animations[0]),idle:['wait1','wait'].find(has)||names.find(n=>/^wait/.test(n))};
  }
- function animate(model,name,track,loop=true){if(!model||!name||!model.spineData.animations.some(a=>a.name===name))return false;const current=model.state.getCurrent(track);if(current?.animation.name===name){current.loop=loop;current.alpha=1;return true}const relay=current?.animation.timelines.flatMap(t=>t.events||[]).find(e=>e.data?.name==='relay')?.stringValue;if(relay&&model.spineData.animations.some(a=>a.name===relay)){model.state.setAnimation(track,relay,false);model.state.addAnimation(track,name,loop,0)}else model.state.setAnimation(track,name,loop);return true}
- const mouths=new WeakMap(),installed=new WeakSet(),compatible=new WeakMap(),closedParts=new WeakMap(),mouthBones=new WeakMap(),mouthAnimations=new WeakMap();
+ function animate(model,name,track,loop=true){if(!model||!name||!model.spineData.animations.some(a=>a.name===name))return false;if(track===0)cancelIdle(model);const current=model.state.getCurrent(track);if(current?.animation.name===name){current.loop=loop;current.alpha=1;return true}const relay=current?.animation.timelines.flatMap(t=>t.events||[]).find(e=>e.data?.name==='relay')?.stringValue;const prev=current?.animation.name,canMix=typeof model.stateData?.setMix==='function'&&prev&&prev!=='<empty>'&&!/^lip_/.test(name);if(relay&&model.spineData.animations.some(a=>a.name===relay)){if(canMix){model.stateData.setMix(prev,relay,.3);model.stateData.setMix(relay,name,.3)}model.state.setAnimation(track,relay,false);model.state.addAnimation(track,name,loop,0)}else{if(canMix)model.stateData.setMix(prev,name,.3);model.state.setAnimation(track,name,loop)}return true}
+ const mouths=new WeakMap(),installed=new WeakSet(),compatible=new WeakMap(),closedParts=new WeakMap(),mouthBones=new WeakMap(),mouthAnimations=new WeakMap(),idleTimers=new WeakMap(),limbSlotsCache=new WeakMap(),unkeyedArmWait=new WeakMap();
+ function cancelIdle(model){const t=model&&idleTimers.get(model);if(t){clearTimeout(t);idleTimers.delete(model)}}
+ function scheduleIdle(model,onIdle,delayMs=1400){if(!model)return;cancelIdle(model);stopMouth(model);const t=setTimeout(()=>{idleTimers.delete(model);if(typeof onIdle==='function')onIdle()},Math.max(0,delayMs));idleTimers.set(model,t)}
+ function resetUnkeyedLimbSlots(model,anim){
+  if(!model?.skeleton?.slots||!anim)return;
+  let noArmKeys=unkeyedArmWait.get(anim);
+  if(noArmKeys===undefined){
+   const armIdx=new Set(model.skeleton.slots.filter(s=>/^(?:arm|hand)_/i.test(s.data?.name||'')).map(s=>s.data.index));
+   noArmKeys=!anim.timelines?.some(t=>armIdx.has(t.slotIndex));
+   unkeyedArmWait.set(anim,noArmKeys);
+  }
+  if(!noArmKeys)return;
+  let slots=limbSlotsCache.get(model);
+  if(!slots){slots=model.skeleton.slots.filter(s=>/^(?:arm|hand)_/i.test(s.data?.name||''));limbSlotsCache.set(model,slots)}
+  for(const s of slots){if(s.data?.color&&s.color?.setFromColor)s.color.setFromColor(s.data.color)}
+ }
  // A lip_* name can be a single held attachment, including a closed mouth.
  // Inspect the authored timelines instead of treating every lip track as speech.
  function mouthInfo(model){
@@ -47,7 +62,7 @@
   resetMouthBones(model);
  }
  function guardMouth(model){
-  if(installed.has(model))return;installed.add(model);const apply=model.state.apply;model.state.apply=function(...args){const active=mouths.get(model);if(active){if(active.audio.ended||active.audio.paused){mouths.delete(model);this.clearTrack(4)}else{let entry=this.getCurrent(4);if(entry?.animation.name!==active.name||!entry.loop||entry.alpha===0){this.clearTrack(4);entry=this.setAnimation(4,active.name,true);entry.mixDuration=0}entry.loop=true;entry.alpha=1;entry.timeScale=1;entry.trackTime=Math.max(0,active.audio.currentTime)}}const result=apply.apply(this,args);if(!mouths.has(model))closeMouth(model);return result};
+  if(installed.has(model))return;installed.add(model);const apply=model.state.apply;model.state.apply=function(...args){const active=mouths.get(model);if(active){if(active.audio.ended||active.audio.paused){mouths.delete(model);this.clearTrack(4)}else if(!active.audible||active.audible()){let entry=this.getCurrent(4);if(entry?.animation.name!==active.name||!entry.loop||entry.alpha===0){this.clearTrack(4);entry=this.setAnimation(4,active.name,true);entry.mixDuration=0}entry.loop=true;entry.alpha=1;entry.timeScale=1;entry.trackTime=Math.max(0,active.audio.currentTime)}else if(this.getCurrent(4))this.clearTrack(4)}const result=apply.apply(this,args);if(!mouths.has(model)||!this.getCurrent(4))closeMouth(model);const t0=this.getCurrent(0);if(t0&&!t0.mixingFrom&&/^wait/i.test(t0.animation?.name||''))resetUnkeyedLimbSlots(model,t0.animation);return result};
  }
  // Gasha models omit lip animations but often retain their original open/closed
  // mouth attachments. Build a small attachment-only track; never redraw a face.
@@ -64,12 +79,12 @@
  function stopMouth(model){if(!model)return;mouths.delete(model);guardMouth(model);model.state.clearTrack(4);closeMouth(model)}
  // Bind the mouth to the actual audio, including automatic replies. A queued idle
  // transition must not leave a silent/empty mouth track while this line is playing.
- function bindMouth(model,name,audio){
-  stopMouth(model);if(!model||!audio)return false;if(!name)name=compatibleLip(model)?.name;if(!name||!model.spineData.animations.some(a=>a.name===name))return false;
+ function bindMouth(model,name,audio,audible){
+  cancelIdle(model);stopMouth(model);if(!model||!audio)return false;name=speakingMouth(model,name)||compatibleLip(model)?.name;if(!name||!model.spineData.animations.some(a=>a.name===name))return false;
   const start=()=>{model.state.clearTrack(4);const entry=model.state.setAnimation(4,name,true);entry.mixDuration=0;entry.alpha=1;return entry};
-  start();mouths.set(model,{name,audio});
+  if(!audible)start();mouths.set(model,{name,audio,audible});
   return true;
  }
  function inspect(model){if(!model)return null;const active=mouths.get(model),track=model.state.getCurrent(4);return{mode:compatible.has(model)?'compatible':'native',bound:!!active,animation:track?.animation?.name||'',trackTime:track?.trackTime||0,audio:active?{paused:active.audio.paused,ended:active.audio.ended,currentTime:active.audio.currentTime,error:active.audio.error?.message||'',src:active.audio.currentSrc||active.audio.src}:null,mouthSlots:model.skeleton.slots.filter(s=>/^(?:mouth|mouse|lip)(?:_|$)/i.test(s.data.name)).map(s=>({name:s.data.name,attachment:s.getAttachment()?.name||''}))}}
- const api={prepare,plan,animate,bindMouth,stopMouth,inspect,speakingMouth,restingMouth,openMouthTime,closeMouth,prepareMouth:model=>plan(model.spineData.animations.map(a=>a.name),{}).lip||compatibleLip(model)?.name,mouthMode:model=>compatible.has(model)?'compatible':'native'};if(typeof module==='object')module.exports=api;else root.HomeVoicePolicy=api;
+ const api={prepare,plan,animate,bindMouth,stopMouth,scheduleIdle,cancelIdle,inspect,speakingMouth,restingMouth,openMouthTime,closeMouth,prepareMouth:model=>plan(model.spineData.animations.map(a=>a.name),{}).lip||compatibleLip(model)?.name,mouthMode:model=>compatible.has(model)?'compatible':'native'};if(typeof module==='object')module.exports=api;else root.HomeVoicePolicy=api;
 })(typeof window==='object'?window:globalThis);

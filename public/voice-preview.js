@@ -1,6 +1,6 @@
 (()=>{
   const $ = s => document.querySelector(s);
-  let catalog = [], current = null, model = null, app = null, serial = 0, lastVoice = null, graph = null, lipFrame = 0, bounds = null;
+  let catalog = [], current = null, model = null, app = null, serial = 0, lastVoice = null, graph = null, bounds = null;
 
   function fit() {
     if (!app || !model || !bounds) return;
@@ -74,30 +74,18 @@
     } catch {}
   }
 
-  function genericLip(audio) {
-    cancelAnimationFrame(lipFrame);
-    if (!model || !graph) return;
-    const lip = ['lip_smile', 'lip_smile2', 'lip_trouble'].find(n => model.spineData.animations.some(a => a.name === n));
-    if (!lip) return;
-    let talking = false, lastSound = 0;
-    const target = model;
-    function tick() {
-      if (target !== model || audio.paused || audio.ended) return;
+  function bindLip(audio, lip) {
+    let lastSound = -Infinity;
+    HomeVoicePolicy.bindMouth(model, lip, audio, () => {
+      if (audio.seeking || audio.readyState < 3) return false;
+      if (!graph || graph.context.state !== "running") return true;
       graph.analyser.getByteTimeDomainData(graph.samples);
       let power = 0;
       for (const x of graph.samples) power += ((x - 128) / 128) ** 2;
       const now = performance.now();
       if (Math.sqrt(power / graph.samples.length) > 0.012) lastSound = now;
-      const active = now - lastSound < 120;
-      if (active !== talking) {
-        talking = active;
-        $('#previewModel').dataset.speaking = String(active);
-        if (active) target.state.setAnimation(4, lip, true);
-        else target.state.setEmptyAnimation(4, 0.1);
-      }
-      lipFrame = requestAnimationFrame(tick);
-    }
-    tick();
+      return now - lastSound < 120;
+    });
   }
 
   const ready = fetch('/home-assets/catalog.json').then(r => r.json()).then(c => catalog = c);
@@ -150,7 +138,7 @@
   $('#performAction').onclick = perform;
 
   function idle() {
-    cancelAnimationFrame(lipFrame);
+    HomeVoicePolicy.stopMouth(model);
     if (!model) return;
     const a = model.spineData.animations.map(a => a.name);
     const wait = a.includes('wait1') ? 'wait1' : a.find(n => n.startsWith('wait'));
@@ -218,6 +206,7 @@
 
   async function select(id) {
     await ready;
+    if (!id) return;
     const p = catalog.find(p => p.id === (Number(id) === 91 ? 'staff' : String(Number(id))));
     if (!p) return;
     if (current === p) return;
@@ -322,11 +311,7 @@
       model.state.setAnimation(1, faceToPlay, true);
     }
 
-    if (anim?.lip && model.spineData.animations.some(a => a.name === anim.lip)) {
-      model.state.setAnimation(4, anim.lip, true);
-    } else {
-      genericLip(audio);
-    }
+    bindLip(audio, anim?.lip);
 
     const actionDesc = (userAction || anim?.body) ? ` · 动作 [${label(userAction || anim?.body)}]` : '';
     $('#previewStatus').textContent = anim?.isNative 
@@ -347,20 +332,21 @@
       audio.pause();
       await select(v.characterId);
       if (token !== playSerial) return;
-      const getOverride = (voice) => {
-        try {
-          const map = JSON.parse(localStorage.getItem('overrides') || '{}');
-          return (map['home:voices'] || {})[voice.key] || (map['home:voices'] || {})[voice.id] || (map['home:voices'] || {})[voice.original] || (map['voice:key'] || {})[voice.key] || '';
-        } catch { return ''; }
-      };
-      const override = getOverride(v);
+      const override = VoiceCatalog.overrideFor(v);
       const text = override || v.translation || v.original || '此语音字幕尚未收录。';
       $('#previewSubtitle').textContent = text;
       const editBtn = $('#editGallerySubtitle');
       if (editBtn) editBtn.disabled = false;
       $('#previewAudio').append(audio);
       audio.src = '/asset/' + v.key;
-      audio.onplaying = () => animate(v, audio);
+      audio.onplaying = () => {
+        if (token !== playSerial) return;
+        if (v.characterId && Number(current?.id === 'staff' ? 91 : current?.id) === Number(v.characterId)) animate(v, audio);
+        else {
+          idle();
+          $('#previewStatus').textContent = '原声播放中 · 说话人待核实';
+        }
+      };
       audio.onended = () => { idle(); $('#previewStatus').textContent = '播放结束'; };
       audio.onpause = () => idle();
       try {
