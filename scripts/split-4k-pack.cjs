@@ -3,8 +3,8 @@ const path = require('node:path');
 const { execFileSync } = require('node:child_process');
 
 const SRC = path.resolve(__dirname, '..', 'dist', 'ShinyStories-4K-Pack.7z');
-const OUT_DIR = path.resolve(__dirname, '..', 'dist', 'ShinyStories-4K-Pack-QQ分卷');
-const CHUNK_SIZE = 8500 * 1000 * 1000; // 8.5 GB (< 10 GB QQ file limit)
+const OUT_DIR = path.resolve(__dirname, '..', 'dist', 'ShinyStories-4K-Pack-QQ分卷-小于4GB');
+const CHUNK_SIZE = 3900 * 1000 * 1000; // 3.9 GB in decimal bytes
 const SEVEN_ZIP = ['C:\\Program Files\\7-Zip\\7z.exe', 'C:\\Program Files (x86)\\7-Zip\\7z.exe'].find(p => fs.existsSync(p));
 
 if (!fs.existsSync(SRC)) {
@@ -35,8 +35,13 @@ try {
       while (written < CHUNK_SIZE && offset < total) {
         const toRead = Math.min(buf.length, CHUNK_SIZE - written, total - offset);
         const n = fs.readSync(fd, buf, 0, toRead, offset);
-        if (n <= 0) break;
-        fs.writeSync(outFd, buf, 0, n);
+        if (n <= 0) throw new Error('Unexpected end of source archive');
+        let copied = 0;
+        while (copied < n) {
+          const count = fs.writeSync(outFd, buf, copied, n - copied);
+          if (count <= 0) throw new Error('Unable to write archive volume');
+          copied += count;
+        }
         written += n;
         offset += n;
       }
@@ -52,7 +57,7 @@ try {
 }
 
 const readme = [
-  '=== 闪耀色彩 4K 超清画质包 · QQ 分卷传输版（每卷约 7.9 GiB） ===',
+  '=== 闪耀色彩 4K 超清画质包 · QQ 分卷传输版（每卷严格小于 4 GB） ===',
   '',
   '使用说明：',
   '1. 请将本文件夹内的全部分卷下载到电脑的同一个文件夹中：',
