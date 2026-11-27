@@ -61,6 +61,13 @@
       tip: '怪文书工坊',
       accent: '#6366f1',
       icon: '<svg viewBox="0 0 24 24"><path d="M17.5 3.5a2.8 2.8 0 0 1 4 4L9.2 19.8 4 21l1.2-5.2L17.5 3.5z"/><path d="M14.5 6.5l3 3"/></svg>'
+    },
+    {
+      page: 'shinsekai.html',
+      label: '新世界',
+      tip: '283 新世界 · 互动剧场、分支画布、长期记忆与扫码伴聊',
+      accent: '#ec4899',
+      icon: '<svg viewBox="0 0 24 24"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z"/></svg>'
     }
   ];
 

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <link rel="icon" href="/app-icon.png">
+  <title>283 · 新世界剧场与分支工坊</title>
+  <link rel="stylesheet" href="/fonts.css">
+  <script src="/interface-font-core.js"></script>
+  <script src="/interface-font.js"></script>
+  <link rel="stylesheet" href="/interface.css">
+  <link rel="stylesheet" href="/navigation.css">
+  <link rel="stylesheet" href="/shinsekai.css">
+  <script src="/navigation.js"></script>
+</head>
+<body class="page-shinsekai">
+  <div class="window-drag-handle" aria-hidden="true"></div>
+  <header class="site-header">
+    <a href="index.html" class="site-brand"><b>283</b><span>闪耀色彩<small>SHINSEKAI STAGE</small></span></a>
+    <div class="header-drag-space" aria-hidden="true"></div>
+    <nav class="site-nav" aria-label="模块导航">
+      <a href="index.html">事务所</a>
+      <a href="guide.html">剧情馆</a>
+      <a href="card-gallery.html">卡片相册</a>
+      <a href="voice-gallery.html">语音馆</a>
+      <a href="model-picker.html">衣装室</a>
+      <a href="music.html">音乐馆</a>
+      <a href="custom-story.html">怪文书</a>
+      <a href="shinsekai.html" class="active" aria-current="page">新世界</a>
+    </nav>
+  </header>
+
+  <main class="sk-shell">
+    <section class="sk-hero">
+      <div>
+        <h1>✨ 283 · 新世界剧场（Shinsekai Edition）</h1>
+        <small>Galgame 全链路演出 · 可视化分支节点画布 · 长期记忆与设定集 RAG · 好感度体系 · 局域网扫码伴聊</small>
+      </div>
+      <div class="sk-row">
+        <label style="font-size:12px;">当前搭档偶像
+          <select id="skIdolSelect" class="sk-select"></select>
+        </label>
+        <span id="skAffinityBadge" class="sk-speaker-pill" style="background:rgba(236,72,153,0.22);border:1px solid rgba(236,72,153,0.5);">♥ 好感度 10 · 初识</span>
+      </div>
+    </section>
+
+    <div class="sk-tabs" role="tablist">
+      <button type="button" class="sk-tab active" data-tab="stage">🎭 互动演出舞台</button>
+      <button type="button" class="sk-tab" data-tab="canvas">🕸️ 分支剧情画布</button>
+      <button type="button" class="sk-tab" data-tab="memory">🧠 记忆与设定集 RAG</button>
+      <button type="button" class="sk-tab" data-tab="relations">💞 角色关系与好感度</button>
+      <button type="button" class="sk-tab" data-tab="lan">📱 局域网伴聊与提醒</button>
+    </div>
+
+    <!-- Tab 1: VN Stage -->
+    <section class="sk-pane active" data-pane="stage">
+      <div class="sk-card" style="margin-bottom:12px;">
+        <div class="sk-row" style="justify-content:space-between;">
+          <div class="sk-row">
+            <label style="font-size:12px;">主题皮肤
+              <select id="skThemeSelect" class="sk-select">
+                <option value="prism-glass">✨ 闪耀玻璃 (Prism Glass)</option>
+                <option value="classic-gal">📘 经典 Galgame 蓝框</option>
+                <option value="otome-rose">🌹 乙女玫瑰微光</option>
+                <option value="cyber-neon">⚡ 赛博霓虹终端</option>
+                <option value="minimal-paper">📜 极简和纸手账</option>
+              </select>
+            </label>
+            <label style="font-size:12px;">形态
+              <select id="skFormSelect" class="sk-select">
+                <option value="chibi">🐾 两头身小人</option>
+                <option value="stand">💃 等身立绘</option>
+              </select>
+            </label>
+            <label style="font-size:12px;">舞台背景
+              <select id="skBgSelect" class="sk-select">
+                <option value="office">🏢 283 事务所（昼）</option>
+                <option value="office-night">🌙 283 事务所（夜）</option>
+                <option value="rehearsal">🎵 排练室</option>
+                <option value="live">🎤 LIVE 舞台</option>
+                <option value="street">🌆 夕阳街道</option>
+                <option value="cafe">☕ 咖啡厅</option>
+              </select>
+            </label>
+          </div>
+          <div class="sk-row">
+            <button type="button" class="sk-btn" id="btnSkReplay">▶ 剧场回放</button>
+            <button type="button" class="sk-btn" id="btnSkSnapshot">🖼 导出长图 PNG</button>
+            <button type="button" class="sk-btn primary" id="btnSkExportVn">📦 导出离线可玩 VN</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sk-stage-grid">
+        <div class="sk-vn-viewport" id="skViewport" data-theme="prism-glass">
+          <div class="sk-vn-bg" id="skVnBg"></div>
+          <div id="skStageCanvasWrap"></div>
+          <div class="sk-choices-overlay" id="skChoicesOverlay" hidden></div>
+          <div class="sk-dialog-box">
+            <div class="sk-dialog-head">
+              <span class="sk-speaker-pill" id="skSpeakerName">七草日花</span>
+              <small id="skStageEmotionTag" style="color:var(--sk-muted);">calm</small>
+            </div>
+            <p class="sk-dialog-text" id="skDialogText">制作人先生，欢迎来到 283 新世界互动剧场！你可以直接输入台词对话，或在“分支剧情画布”中编排多分支互动故事。</p>
+          </div>
+        </div>
+
+        <div class="sk-card">
+          <div class="sk-row" style="justify-content:space-between;margin-bottom:8px;">
+            <strong style="font-size:14px;">💬 实时对戏 & 剧本记录</strong>
+            <button type="button" class="sk-btn" id="btnSkClearChat" style="padding:4px 9px;font-size:12px;">清空</button>
+          </div>
+          <div class="sk-chat-log" id="skChatLog"></div>
+          <div class="sk-row">
+            <input type="text" id="skChatInput" class="sk-input" style="flex:1;" placeholder="输入对白或行动指令（回车发送）…">
+            <button type="button" class="sk-btn primary" id="btnSkSend">发送</button>
+          </div>
+          <p id="skChatStatus" style="margin:8px 0 0;font-size:12px;color:var(--sk-muted);">自动挂载长期记忆、世界书设定集与好感度联动。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 2: Branching Story Node Canvas -->
+    <section class="sk-pane" data-pane="canvas">
+      <div class="sk-card" style="margin-bottom:12px;">
+        <div class="sk-row" style="justify-content:space-between;">
+          <div class="sk-row">
+            <input type="text" id="skStoryTitle" class="sk-input" value="283 事务所的秘密约定" placeholder="分支剧本标题">
+            <button type="button" class="sk-btn" id="btnNodeAddDialogue">+ 剧情节点</button>
+            <button type="button" class="sk-btn" id="btnNodeAddChoice">+ 分支选择</button>
+            <button type="button" class="sk-btn" id="btnNodeAddEnding">+ 结局节点</button>
+            <button type="button" class="sk-btn" id="btnNodeValidate">✔ 路径校验</button>
+          </div>
+          <div class="sk-row">
+            <button type="button" class="sk-btn" id="btnNodeSave">💾 保存工程</button>
+            <button type="button" class="sk-btn primary" id="btnNodePlayOnStage">▶ 送到舞台试玩</button>
+            <button type="button" class="sk-btn primary" id="btnNodeExportHtml">📦 导出独立离线 VN</button>
+          </div>
+        </div>
+        <div class="sk-row" style="margin-top:10px;">
+          <input type="text" id="skAiStoryPrompt" class="sk-input" style="flex:1;" placeholder="输入一句话脑洞（例：雨夜留在事务所排练，发现日花偷偷准备了惊喜礼物，带两个不同结局）…">
+          <button type="button" class="sk-btn primary" id="btnAiGenGraph">✨ AI 一键生成分支节点图</button>
+        </div>
+      </div>
+
+      <div class="sk-canvas-layout">
+        <div class="sk-graph-wrap" id="skGraphWrap">
+          <div class="sk-graph-inner" id="skGraphInner">
+            <svg class="sk-graph-svg" id="skGraphSvg"></svg>
+          </div>
+        </div>
+        <div class="sk-card">
+          <strong style="font-size:14px;">节点属性编辑</strong>
+          <div id="skNodeInspector" style="margin-top:10px;display:flex;flex-direction:column;gap:8px;">
+            <small style="color:var(--sk-muted);">点击左侧画布中的任意节点进行编辑与连线。</small>
+          </div>
+          <hr style="border:none;border-top:1px solid var(--sk-border);margin:14px 0;">
+          <strong style="font-size:13px;">已保存的分支剧本</strong>
+          <div id="skSavedStories" style="margin-top:8px;max-height:180px;overflow-y:auto;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 3: Long-term Memory & Worldbook RAG -->
+    <section class="sk-pane" data-pane="memory">
+      <div class="sk-two-col">
+        <div class="sk-card">
+          <strong style="font-size:15px;">👤 制作人档案（Self-Persona）</strong>
+          <div style="display:grid;gap:8px;margin-top:10px;">
+            <label style="font-size:12px;">制作人姓名 <input type="text" id="skPersonaName" class="sk-input" style="width:100%;margin-top:4px;"></label>
+            <label style="font-size:12px;">被偶像如何称呼 <input type="text" id="skPersonaTitle" class="sk-input" style="width:100%;margin-top:4px;"></label>
+            <label style="font-size:12px;">生日 / 纪念日 <input type="text" id="skPersonaBirthday" class="sk-input" style="width:100%;margin-top:4px;" placeholder="例：10月24日"></label>
+            <label style="font-size:12px;">喜好与特长 <input type="text" id="skPersonaLikes" class="sk-input" style="width:100%;margin-top:4px;"></label>
+            <label style="font-size:12px;">补充设定 <textarea id="skPersonaBio" class="sk-textarea" rows="2" style="width:100%;margin-top:4px;"></textarea></label>
+            <button type="button" class="sk-btn primary" id="btnSavePersona">保存制作人档案</button>
+          </div>
+
+          <hr style="border:none;border-top:1px solid var(--sk-border);margin:14px 0;">
+          <strong style="font-size:15px;">📚 设定集 / 世界书 RAG 导入</strong>
+          <div style="display:grid;gap:8px;margin-top:10px;">
+            <input type="text" id="skWbTitle" class="sk-input" placeholder="设定集标题（如：SHHis 组合补充设定）">
+            <textarea id="skWbContent" class="sk-textarea" rows="4" placeholder="粘贴世界观、剧情背景、角色细节文本，系统自动按段落切片入库…"></textarea>
+            <div class="sk-row">
+              <input type="file" id="skWbFile" accept=".txt,.md" hidden>
+              <button type="button" class="sk-btn" id="btnWbImportFile">导入 TXT/MD</button>
+              <button type="button" class="sk-btn primary" id="btnWbAdd">写入知识库</button>
+            </div>
+            <div id="skWbList" style="max-height:200px;overflow-y:auto;"></div>
+          </div>
+        </div>
+
+        <div class="sk-card">
+          <div class="sk-row" style="justify-content:space-between;">
+            <strong style="font-size:15px;">🧠 长期记忆与艾宾浩斯保留率</strong>
+            <input type="text" id="skMemSearch" class="sk-input" placeholder="检索记忆关键词…" style="width:170px;">
+          </div>
+          <div class="sk-row" style="margin-top:10px;">
+            <input type="text" id="skMemInput" class="sk-input" style="flex:1;" placeholder="手动记录一条长期事实或约定…">
+            <select id="skMemCat" class="sk-select">
+              <option value="canon">核心设定</option>
+              <option value="episode">日常经历</option>
+              <option value="preference">制作人喜好</option>
+            </select>
+            <button type="button" class="sk-btn primary" id="btnMemAdd">写入记忆</button>
+          </div>
+          <div id="skMemList" style="margin-top:12px;max-height:480px;overflow-y:auto;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab 4: Affinity & Relations -->
+    <section class="sk-pane" data-pane="relations">
+      <div class="sk-card">
+        <div class="sk-row" style="justify-content:space-between;margin-bottom:12px;">
+          <div>
+            <strong style="font-size:15px;">💞 283 偶像关系图谱与好感度</strong>
+            <small style="display:block;color:var(--sk-muted);">好感度范围 -10 ~ 100，会实时注入 AI 对话与分支剧场上下文。</small>
+          </div>
+          <button type="button" class="sk-btn" id="btnRelRefresh">刷新列表</button>
+        </div>
+        <div class="sk-rel-grid" id="skRelGrid"></div>
+      </div>
+    </section>
+
+    <!-- Tab 5: LAN QR & Reminders -->
+    <section class="sk-pane" data-pane="lan">
+      <div class="sk-two-col">
+        <div class="sk-card">
+          <strong style="font-size:15px;">📱 局域网手机扫码伴聊（LAN Companion）</strong>
+          <p style="font-size:13px;color:var(--sk-muted);">开启后，手机与电脑在同一 Wi-Fi 下扫码即可用手机浏览器与当前 283 偶像实时对话，共享长期记忆与好感度。</p>
+          <div class="sk-row" style="margin-bottom:12px;">
+            <button type="button" class="sk-btn primary" id="btnLanToggle">🚀 开启局域网伴聊</button>
+            <button type="button" class="sk-btn" id="btnLanCopy" hidden>复制链接</button>
+          </div>
+          <div id="skLanBox" hidden style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;">
+            <canvas id="skQrCanvas" width="180" height="180" style="background:#fff;padding:8px;border-radius:12px;"></canvas>
+            <div style="flex:1;min-width:200px;">
+              <div style="font-size:12px;color:var(--sk-muted);">手机访问地址（含安全令牌）：</div>
+              <code id="skLanUrl" style="display:block;word-break:break-all;margin-top:6px;padding:8px;background:rgba(0,0,0,0.35);border-radius:8px;font-size:12px;"></code>
+            </div>
+          </div>
+        </div>
+
+        <div class="sk-card">
+          <strong style="font-size:15px;">⏰ 桌面偶像定时语音提醒</strong>
+          <p style="font-size:13px;color:var(--sk-muted);">桌面伙伴窗口会每 20 秒检查一次提醒列表，到点自动气泡提示并配合语音朗读。</p>
+          <div class="sk-row" style="margin-bottom:10px;">
+            <input type="time" id="skRemTime" class="sk-input" value="22:00">
+            <input type="text" id="skRemText" class="sk-input" style="flex:1;" placeholder="输入提醒事项（例：制作人，该喝水休息啦）">
+            <button type="button" class="sk-btn primary" id="btnSkRemAdd">添加提醒</button>
+          </div>
+          <div id="skRemList" style="max-height:280px;overflow-y:auto;"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/portraits.js"></script>
+  <script src="/player/lib/pixi.js"></script>
+  <script src="/player/lib/pixi-spine.umd.js"></script>
+  <script src="/shinsekai.js"></script>
+</body>
+</html>

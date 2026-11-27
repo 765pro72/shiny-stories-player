@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <link rel="icon" href="/app-icon.png">
+  <title>283 手机伴聊 · 新世界</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #0b1120;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "HarmonyOS Sans SC", sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100dvh;
+      padding-bottom: env(safe-area-inset-bottom, 0);
+    }
+    header {
+      padding: 12px 16px;
+      background: #111827;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    select, input, button {
+      font: inherit;
+      color: inherit;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: #1e293b;
+      padding: 8px 12px;
+    }
+    #badge {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(236, 72, 153, 0.22);
+      color: #fbcfe8;
+      white-space: nowrap;
+    }
+    main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .msg {
+      max-width: 85%;
+      padding: 10px 14px;
+      border-radius: 14px;
+      font-size: 15px;
+      line-height: 1.5;
+      word-break: break-word;
+    }
+    .msg.user {
+      align-self: flex-end;
+      background: #0284c7;
+      color: #fff;
+    }
+    .msg.assistant {
+      align-self: flex-start;
+      background: #1e293b;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    footer {
+      padding: 10px 12px;
+      background: #111827;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      gap: 8px;
+    }
+    #inp { flex: 1; min-width: 0; }
+    #send {
+      background: linear-gradient(135deg, #0ea5e9, #ec4899);
+      border: none;
+      font-weight: 600;
+      padding: 8px 18px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <select id="idolSel"></select>
+    <span id="badge">♥ 好感度 10</span>
+  </header>
+  <main id="log"></main>
+  <footer>
+    <input id="inp" type="text" placeholder="给小偶像发消息…">
+    <button id="send" type="button">发送</button>
+  </footer>
+  <script>
+    (() => {
+      const token = new URLSearchParams(location.search).get('token') || '';
+      const IDOLS = [
+        ['1', '樱木真乃', 'illumination STARS'], ['2', '风野灯织', 'illumination STARS'], ['3', '八宫巡', 'illumination STARS'],
+        ['4', '月冈恋钟', 'L\'Antica'], ['5', '田中摩美美', 'L\'Antica'], ['6', '白濑咲耶', 'L\'Antica'],
+        ['7', '三峰结华', 'L\'Antica'], ['8', '幽谷雾子', 'L\'Antica'], ['9', '小宫果穗', '放课后Climax Girls'],
+        ['14', '大崎甘奈', 'ALSTROEMERIA'], ['17', '芹泽朝日', 'Straylight'], ['18', '黛冬优子', 'Straylight'],
+        ['20', '浅仓透', 'noctchill'], ['21', '樋口圆香', 'noctchill'], ['24', '七草日花', 'SHHis'],
+        ['25', '绯田美琴', 'SHHis'], ['26', '斑鸠路加', 'CoMETIK'], ['27', '铃木羽那', 'CoMETIK']
+      ];
+      const sel = document.getElementById('idolSel');
+      const log = document.getElementById('log');
+      const badge = document.getElementById('badge');
+      const inp = document.getElementById('inp');
+      const sendBtn = document.getElementById('send');
+      IDOLS.forEach(([id, name]) => sel.append(new Option(name, id)));
+      sel.value = '24';
+
+      let history = [];
+      const api = (path, opt = {}) => fetch(path + (path.includes('?') ? '&' : '?') + 'token=' + encodeURIComponent(token), opt).then(r => r.json());
+
+      function render() {
+        log.innerHTML = '';
+        for (const m of history) {
+          const div = document.createElement('div');
+          div.className = 'msg ' + (m.role === 'user' ? 'user' : 'assistant');
+          div.textContent = m.content;
+          log.append(div);
+        }
+        log.scrollTop = log.scrollHeight;
+      }
+
+      async function load() {
+        try {
+          const [s, r] = await Promise.all([
+            api('/api/shinsekai/sessions?idolId=' + encodeURIComponent(sel.value)),
+            api('/api/shinsekai/relations')
+          ]);
+          history = Array.isArray(s.messages) ? s.messages : [];
+          const rel = r.relations?.[sel.value] || { affinity: 10, stage: '初识' };
+          badge.textContent = `♥ ${rel.affinity} · ${rel.stage}`;
+          render();
+        } catch {}
+      }
+
+      async function send() {
+        const text = inp.value.trim();
+        if (!text) return;
+        inp.value = '';
+        const row = IDOLS.find(x => x[0] === sel.value) || IDOLS[0];
+        history.push({ role: 'user', content: text });
+        render();
+        sendBtn.disabled = true;
+        try {
+          const d = await api('/api/shinsekai/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ idolId: row[0], idolName: row[1], idolUnit: row[2], message: text, history: history.slice(-10) })
+          });
+          if (!d.ok) throw new Error(d.error || '发送失败');
+          history.push({ role: 'assistant', content: d.cleanText });
+          badge.textContent = `♥ ${d.affinityAfter} · ${d.stageAfter}`;
+          render();
+        } catch (e) {
+          history.push({ role: 'assistant', content: '连接提示：' + e.message });
+          render();
+        } finally {
+          sendBtn.disabled = false;
+        }
+      }
+
+      sel.onchange = load;
+      sendBtn.onclick = send;
+      inp.onkeydown = e => { if (e.key === 'Enter') send(); };
+      load();
+    })();
+  </script>
+</body>
+</html>

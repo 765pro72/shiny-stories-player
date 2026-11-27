@@ -722,45 +722,78 @@
     }
     elChatLog.scrollTop = elChatLog.scrollHeight;
   };
+  const applyEmotionAction = (emotion) => {
+    if (getChibiMode() === 'avatar' || !chibiSpine) return;
+    const map = {
+      happy: ['jump', 'win', 'appeal', 'ok'],
+      shy: ['touch', 'talk_ok', 'photo_ok'],
+      surprised: ['ok', 'jump', 'touch'],
+      thinking: ['pr', 'talk_wait'],
+      sad: ['ng', 'talk_ng'],
+      angry: ['ng', 'appeal'],
+      calm: ['talk_ok', 'wait']
+    };
+    const cands = map[String(emotion || '').toLowerCase()] || ['talk_ok', 'ok'];
+    playChibiAnim(cands, false, true);
+  };
+
   const sendFusedChat = async () => {
     const prompt = String(elChatInput?.value || '').trim();
     if (!prompt) return;
     elChatInput.value = '';
+    unansweredProactive = 0;
     chatHistory.push({ role: 'user', text: prompt });
     saveChat();
     renderChatLog();
 
     const base = String(aiCfg.baseUrl || elAiUrl?.value || '').trim().replace(/\/+$/, '');
+    const key = String(aiCfg.apiKey || elAiKey?.value || '').trim();
+    const model = String(aiCfg.model || elAiModel?.value || '').trim();
+    const conn = base ? {
+      provider: 'custom',
+      protocol: base.includes('anthropic') ? 'anthropic' : base.includes('generativelanguage') ? 'gemini' : 'openai',
+      baseURL: base,
+      apiKey: key,
+      model: model || 'gpt-4o-mini'
+    } : null;
+
     let reply = '';
-    if (base) {
-      try {
-        const headers = { 'Content-Type': 'application/json' };
-        const key = String(aiCfg.apiKey || elAiKey?.value || '').trim();
-        if (key) headers.Authorization = `Bearer ${key}`;
-        const msgs = [
-          { role: 'system', content: `你是《偶像大师 闪耀色彩》283事务所的偶像「${currentIdol.name}」（所属组合 ${currentIdol.unit}）。请用自然、贴合角色性格的中文简短回复制作人。` },
-          ...chatHistory.slice(-8).map(m => ({ role: m.role, content: m.text }))
-        ];
-        const res = await fetch(`${base}/chat/completions`, {
-          method: 'POST',
-          headers,
-          body: JSON.stringify({ model: aiCfg.model || elAiModel?.value || 'gpt-4o-mini', messages: msgs, max_tokens: 180 })
-        });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = await res.json();
-        reply = String(data?.choices?.[0]?.message?.content || '').trim();
-      } catch (err) {
-        reply = `外部 AI 接口暂未连通（${err.message}）。你可以点右上角 ⚙ 检查接口地址，或先和我用内置语音互动哦！`;
+    try {
+      const res = await fetch('/api/shinsekai/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          idolId: IDOL_TO_CATALOG_OWNER[currentIdol.id] || currentIdol.id,
+          idolName: currentIdol.name,
+          idolUnit: currentIdol.unit,
+          message: prompt,
+          history: chatHistory.slice(-10).map(m => ({ role: m.role, content: m.text })),
+          connection: conn || undefined
+        })
+      });
+      const data = await res.json();
+      if (res.ok && data.ok) {
+        reply = data.cleanText || data.replyText || '';
+        if (data.tags?.emotion) applyEmotionAction(data.tags.emotion);
+        if (data.tags?.affinityDelta) {
+          reply += `（好感度 ${data.tags.affinityDelta > 0 ? '+' : ''}${data.tags.affinityDelta}）`;
+        }
+      } else if (data.needsConfig && !base) {
+        const line = currentIdol.lines[Math.floor(Math.random() * currentIdol.lines.length)];
+        reply = `${line}（提示：点击右上角 ⚙ 填入任意 OpenAI/Gemini/Claude 接口后，即可开启新世界记忆与自由多轮聊天！）`;
+      } else {
+        throw new Error(data.error || `HTTP ${res.status}`);
       }
-    } else {
-      // Friendly offline/unconfigured idol reply + guide to ⚙
+    } catch (err) {
       const line = currentIdol.lines[Math.floor(Math.random() * currentIdol.lines.length)];
-      reply = `${line}（提示：点击右上角 ⚙ 填入任意 OpenAI 兼容 API 后，我就能和你自由多轮聊天啦！）`;
+      reply = `${line}\n（AI 接口提示：${err.message}）`;
     }
+
     chatHistory.push({ role: 'assistant', who: currentIdol.name, text: reply });
     saveChat();
     renderChatLog();
     elBubbleText.textContent = reply;
+    showBubbleBriefly(5200);
     spawnSparkles(6);
     if (ttsCfg.enabled) speakText(reply);
   };
@@ -1173,6 +1206,13 @@
     return base?.path || '';
   }
 
+  let chibiHitBox = null;
+
+  function isSittingAnim(name) {
+    if (!name) return false;
+    return /sales_tea|visual_|radio_|ok_down|ng_down|tour_down/.test(name);
+  }
+
   function playChibiAnim(candidates, loop = true, returnToIdle = false) {
     if (!chibiSpine || !chibiAnims.length) return false;
     const hit = candidates.find(name => chibiAnims.includes(name));
@@ -1191,9 +1231,11 @@
   function pickIdleAnimName() {
     if (chibiMusicPlaying) {
       return ['live_dance_01', 'live_dance_02', 'live_dance_04', 'dance_ok', 'vocal_ok', 'wait']
-        .find(n => chibiAnims.includes(n)) || chibiAnims[0] || '';
+        .find(n => chibiAnims.includes(n)) || 'wait';
     }
-    return ['wait', 'wait_01', 'talk_wait', 'pattern1'].find(n => chibiAnims.includes(n)) || chibiAnims[0] || '';
+    // 待机时只挑选纯正站立待机动作，彻底杜绝空中虚空坐姿
+    return ['wait', 'wait_01', 'talk_wait', 'dance_wait', 'vocal_wait', 'photo_wait']
+      .find(n => chibiAnims.includes(n)) || chibiAnims.find(n => !isSittingAnim(n)) || chibiAnims[0] || 'wait';
   }
 
   function loadChibiModel(modelPath) {
@@ -1251,6 +1293,14 @@
       const fit = Math.min((cw * 0.68) / bw, (ch * 0.78) / bh);
       spine.scale.set(fit);
       spine.position.set(cw * 0.5 - (b.x + bw / 2) * fit, ch * 0.90 - (b.y + bh) * fit);
+
+      chibiHitBox = {
+        cx: cw * 0.5,
+        cy: ch * 0.90,
+        w: bw * fit,
+        h: bh * fit,
+        scale: sc
+      };
 
       chibiStool = new PIXI.Graphics();
       drawStudioStool(chibiStool, cw * 0.5, ch * 0.90, bh * fit);
@@ -1387,7 +1437,11 @@
       }
       if (dragging) {
         pendingX = startWinX + dx;
-        pendingY = startWinY + dy;
+        // 状态栏防腿被挡住：若屏幕可用区域底边已知，限制窗口底边不深陷任务栏
+        const availH = window.screen?.availHeight || 1080;
+        const curH = cachedWinBounds.height || 280;
+        const maxSafeY = availH - curH + 8; // 保留小人双腿鞋底位于任务栏上方
+        pendingY = Math.min(maxSafeY, startWinY + dy);
         if (!rafDrag) {
           rafDrag = requestAnimationFrame(() => {
             rafDrag = 0;
@@ -1407,15 +1461,37 @@
       document.body.classList.remove('is-dragging');
       try { elStage.releasePointerCapture(e.pointerId); } catch {}
       if (!wasDragging && e.type === 'pointerup') {
+        // 精准身体局部点击检测：点击小人身侧透明空白区域不触发
+        if (getChibiMode() !== 'avatar' && chibiHitBox) {
+          const rect = (elChibiWrap || elStage).getBoundingClientRect();
+          const clickX = e.clientX - rect.left;
+          const clickY = e.clientY - rect.top;
+          const rx = chibiHitBox.w * 0.38;
+          const ry = chibiHitBox.h * 0.48;
+          const centerY = chibiHitBox.cy - chibiHitBox.h * 0.48;
+          const dx = (clickX - chibiHitBox.cx) / Math.max(16, rx);
+          const dy = (clickY - centerY) / Math.max(20, ry);
+          const inBody = (dx * dx + dy * dy <= 1.05) ||
+            (Math.abs(clickX - chibiHitBox.cx) <= rx * 0.92 && clickY >= chibiHitBox.cy - chibiHitBox.h * 0.98 && clickY <= chibiHitBox.cy + 6);
+          if (!inBody) return; // 点在身侧透明空白处，忽略
+        }
         lastInteractAt = Date.now();
         isIdleMotion = false;
+        unansweredProactive = 0;
         if (getChibiMode() !== 'avatar') {
           playChibiAnim(['touch', 'ok', 'jump', 'appeal', 'win', 'pattern2'], false, true);
         }
         nextLine();
         showBubbleBriefly(4600);
       } else if (wasDragging) {
-        refreshCachedWinBounds();
+        refreshCachedWinBounds().then?.(() => { updateEdgeDockState(); }).catch?.(() => {});
+        setTimeout(updateEdgeDockState, 80);
+        // 核心体验修复：拖拽拿开后，自动起立站好！
+        if (getChibiMode() !== 'avatar' && chibiSpine) {
+          isIdleMotion = false;
+          playChibiAnim(['wait', 'wait_01'], true);
+          if (chibiStool) chibiStool.visible = false;
+        }
       }
     };
     elStage.addEventListener('pointerup', endDrag);
@@ -1452,15 +1528,17 @@
     });
   } catch {}
 
-  // Gentle idle behavior after 25s without interaction: play official tea/pr/stand animations (with auto stool on sales_tea)
+  // Gentle idle behavior after 25s without interaction: play official standing poses & stage actions
   setInterval(() => {
     if (getChibiMode() === 'avatar' || !chibiSpine || chibiMusicPlaying) return;
     if (Date.now() - lastInteractAt > 25000 && !isIdleMotion) {
       isIdleMotion = true;
-      const pool = ['sales_tea', 'photo_ok', 'pr', 'talk_wait', 'visual_wait'].filter(n => chibiAnims.includes(n));
+      // 严禁任何虚空坐姿（补妆、广播、趴下等），只在安全站姿和舞台表演动作中挑选
+      const pool = ['talk_wait', 'photo_ok', 'photo_ok_01', 'photo_ok_02', 'photo_wait', 'pr', 'vocal_wait', 'dance_wait', 'channel', 'shop', 'wait']
+        .filter(n => chibiAnims.includes(n) && !isSittingAnim(n));
       const pick = pool.length ? pool[Math.floor(Math.random() * pool.length)] : '';
       if (pick) {
-        const keepLoop = (pick === 'sales_tea' || pick.endsWith('_wait'));
+        const keepLoop = pick.endsWith('_wait');
         playChibiAnim([pick], keepLoop, !keepLoop);
       }
     }
@@ -1479,6 +1557,263 @@
       syncModeUI();
     })
     .catch(() => { syncModeUI(); });
+
+  // ── Shinsekai Screen Perception, Edge Dock, Global Hotkey & Reminders ──
+  let unansweredProactive = 0;
+  let screenSenseTimer = 0;
+  let screenSenseBusy = false;
+
+  const SCENE_INTERVALS_MS = {
+    gaming: 45000,
+    cowatch: 35000,
+    coding: 90000,
+    reading: 75000,
+    chatting: 30000,
+    idle: 150000,
+    auto: 60000
+  };
+
+  function updateEdgeDockState() {
+    document.body.classList.remove('is-edge-docked-left', 'is-edge-docked-right');
+    if (cfg.edgeDock === false || !cachedWinBounds) return;
+    const wa = cachedWinBounds.workArea || { x: 0, width: window.screen?.availWidth || 1920 };
+    const leftDist = Math.abs((cachedWinBounds.x || 0) - (wa.x || 0));
+    const rightDist = Math.abs(((cachedWinBounds.x || 0) + (cachedWinBounds.width || 280)) - ((wa.x || 0) + (wa.width || 1920)));
+    if (leftDist < 22) document.body.classList.add('is-edge-docked-left');
+    else if (rightDist < 22) document.body.classList.add('is-edge-docked-right');
+  }
+
+  const btnEdgeDock = $('#btnEdgeDock');
+  const syncEdgeDockUI = () => {
+    const on = cfg.edgeDock !== false;
+    if (btnEdgeDock) {
+      btnEdgeDock.classList.toggle('active', on);
+      btnEdgeDock.textContent = on ? '🧲 已开启' : '🧲 已关闭';
+    }
+    updateEdgeDockState();
+  };
+  btnEdgeDock?.addEventListener('click', () => {
+    cfg.edgeDock = cfg.edgeDock === false;
+    writeJson(CFG_KEY, cfg);
+    syncEdgeDockUI();
+  });
+  syncEdgeDockUI();
+
+  const btnGlobalHotkey = $('#btnGlobalHotkey');
+  const syncHotkeyUI = async (apply = false) => {
+    const on = !!cfg.globalHotkey;
+    if (apply && window.desktop?.setCompanionHotkey) {
+      try { await window.desktop.setCompanionHotkey(on); } catch {}
+    }
+    if (btnGlobalHotkey) {
+      btnGlobalHotkey.classList.toggle('active', on);
+      btnGlobalHotkey.textContent = on ? '⌨ 已开启' : '⌨ 未开启';
+    }
+  };
+  btnGlobalHotkey?.addEventListener('click', async () => {
+    cfg.globalHotkey = !cfg.globalHotkey;
+    writeJson(CFG_KEY, cfg);
+    await syncHotkeyUI(true);
+  });
+  syncHotkeyUI(true);
+
+  try {
+    window.desktop?.onCompanionQuickChat?.(() => {
+      closeAllDrawers();
+      if (elChatDrawer) {
+        elChatDrawer.hidden = false;
+        syncWindowSizeForDrawers();
+        setTimeout(() => elChatInput?.focus(), 60);
+      }
+    });
+  } catch {}
+
+  const btnScreenSense = $('#btnScreenSense');
+  const btnToggleScreenSense = $('#btnToggleScreenSense');
+  const selPerceptionScene = $('#selPerceptionScene');
+  if (selPerceptionScene) {
+    selPerceptionScene.value = cfg.perceptionScene || 'auto';
+    selPerceptionScene.addEventListener('change', () => {
+      cfg.perceptionScene = selPerceptionScene.value;
+      writeJson(CFG_KEY, cfg);
+      if (cfg.screenSense) schedulePerceptionTick();
+    });
+  }
+
+  async function runPerceptionTick() {
+    if (!cfg.screenSense || screenSenseBusy || document.hidden) return;
+    if (!window.desktop?.captureScreen) {
+      elBubbleText.textContent = '屏幕感知仅支持桌面端窗口，当前环境不支持截屏。';
+      showBubbleBriefly(3200);
+      return;
+    }
+    screenSenseBusy = true;
+    try {
+      const cap = await window.desktop.captureScreen();
+      if (!cap?.ok || !cap.dataUrl) return;
+      const base = String(aiCfg.baseUrl || elAiUrl?.value || '').trim().replace(/\/+$/, '');
+      const key = String(aiCfg.apiKey || elAiKey?.value || '').trim();
+      const model = String(aiCfg.model || elAiModel?.value || '').trim();
+      const conn = base ? {
+        provider: 'custom',
+        protocol: base.includes('anthropic') ? 'anthropic' : base.includes('generativelanguage') ? 'gemini' : 'openai',
+        baseURL: base,
+        apiKey: key,
+        model: model || 'gpt-4o-mini'
+      } : null;
+      const res = await fetch('/api/shinsekai/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          idolId: IDOL_TO_CATALOG_OWNER[currentIdol.id] || currentIdol.id,
+          idolName: currentIdol.name,
+          idolUnit: currentIdol.unit,
+          message: '请结合我当前的屏幕画面自然吐槽或关心一句。',
+          imageBase64: cap.dataUrl,
+          sceneMode: cfg.perceptionScene || 'auto',
+          connection: conn || undefined
+        })
+      });
+      const data = await res.json();
+      if (res.ok && data.ok && data.cleanText) {
+        unansweredProactive = Math.min(5, unansweredProactive + 1);
+        elBubbleText.textContent = data.cleanText;
+        showBubbleBriefly(6500);
+        if (data.tags?.emotion) applyEmotionAction(data.tags.emotion);
+        spawnSparkles(5);
+        if (ttsCfg.enabled) speakText(data.cleanText);
+      } else if (data.needsConfig) {
+        cfg.screenSense = false;
+        writeJson(CFG_KEY, cfg);
+        syncScreenSenseUI();
+        elBubbleText.textContent = '开启屏幕感知需要配置支持视觉的多模态 API（点右上角 ⚙ 填入即可）。';
+        showBubbleBriefly(4800);
+      }
+    } catch {
+      // 静默容错，避免打断桌面体验
+    } finally {
+      screenSenseBusy = false;
+      if (cfg.screenSense) schedulePerceptionTick();
+    }
+  }
+
+  function schedulePerceptionTick() {
+    clearTimeout(screenSenseTimer);
+    if (!cfg.screenSense) return;
+    const baseMs = SCENE_INTERVALS_MS[cfg.perceptionScene || 'auto'] || 60000;
+    const backoff = 1 + 0.6 * Math.min(4, unansweredProactive);
+    screenSenseTimer = setTimeout(runPerceptionTick, Math.round(baseMs * backoff));
+  }
+
+  function syncScreenSenseUI() {
+    const on = !!cfg.screenSense;
+    btnScreenSense?.classList.toggle('active', on);
+    if (btnToggleScreenSense) {
+      btnToggleScreenSense.classList.toggle('active', on);
+      btnToggleScreenSense.textContent = on ? '👁 陪伴感知中' : '👁 已关闭';
+    }
+    clearTimeout(screenSenseTimer);
+    if (on) schedulePerceptionTick();
+  }
+  const toggleScreenSense = () => {
+    cfg.screenSense = !cfg.screenSense;
+    writeJson(CFG_KEY, cfg);
+    syncScreenSenseUI();
+    if (cfg.screenSense) {
+      elBubbleText.textContent = `已开启屏幕陪伴（${selPerceptionScene?.selectedOptions?.[0]?.textContent || '自动'}），我会安静看着屏幕陪你的～`;
+      showBubbleBriefly(3600);
+      setTimeout(runPerceptionTick, 1800);
+    }
+  };
+  btnScreenSense?.addEventListener('click', toggleScreenSense);
+  btnToggleScreenSense?.addEventListener('click', toggleScreenSense);
+  syncScreenSenseUI();
+
+  $('#btnOpenShinsekaiStage')?.addEventListener('click', () => {
+    window.open('/shinsekai.html', '_blank', 'width=1280,height=800');
+  });
+
+  // ── 定时语音提醒 CRUD 与轮询 ──
+  const elRemList = $('#cmpRemList');
+  const elRemTime = $('#cmpRemTime');
+  const elRemText = $('#cmpRemText');
+  let cachedReminders = [];
+
+  async function loadReminders() {
+    try {
+      const r = await fetch('/api/shinsekai/reminders');
+      const d = await r.json();
+      if (d.ok && Array.isArray(d.items)) {
+        cachedReminders = d.items;
+        renderReminders();
+      }
+    } catch {}
+  }
+
+  function renderReminders() {
+    if (!elRemList) return;
+    elRemList.innerHTML = '';
+    for (const rem of cachedReminders) {
+      const li = document.createElement('li');
+      li.className = 'cmp-todo-item' + (rem.enabled === false ? ' done' : '');
+      const sp = document.createElement('span');
+      sp.textContent = `⏰ ${rem.timeHHMM} · ${rem.text}`;
+      const del = document.createElement('button');
+      del.type = 'button';
+      del.className = 'cmp-todo-del';
+      del.textContent = '×';
+      del.onclick = async () => {
+        await fetch('/api/shinsekai/reminders?id=' + encodeURIComponent(rem.id), { method: 'DELETE' });
+        loadReminders();
+      };
+      li.append(sp, del);
+      elRemList.append(li);
+    }
+  }
+
+  $('#btnAddRem')?.addEventListener('click', async () => {
+    const timeHHMM = String(elRemTime?.value || '').trim();
+    const text = String(elRemText?.value || '').trim();
+    if (!timeHHMM || !text) return;
+    await fetch('/api/shinsekai/reminders', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        idolId: IDOL_TO_CATALOG_OWNER[currentIdol.id] || currentIdol.id,
+        timeHHMM,
+        text,
+        repeat: 'daily'
+      })
+    });
+    if (elRemText) elRemText.value = '';
+    loadReminders();
+  });
+
+  setInterval(async () => {
+    if (!cachedReminders.length) return;
+    const now = new Date();
+    const hhmm = String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+    const today = now.toISOString().slice(0, 10);
+    for (const rem of cachedReminders) {
+      if (rem.enabled === false || rem.timeHHMM !== hhmm) continue;
+      const lastDate = rem.lastFiredAt ? new Date(rem.lastFiredAt).toISOString().slice(0, 10) : '';
+      if (lastDate === today) continue;
+      rem.lastFiredAt = Date.now();
+      const msg = `⏰ ${rem.timeHHMM} 提醒：${rem.text}`;
+      elBubbleText.textContent = msg;
+      showBubbleBriefly(9000);
+      applyEmotionAction('happy');
+      spawnSparkles(8);
+      if (ttsCfg.enabled) speakText(rem.text);
+      fetch('/api/shinsekai/reminders', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ markFiredId: rem.id })
+      }).catch(() => {});
+    }
+  }, 20000);
+
+  loadReminders();
 
   renderIdolPicker();
   applyIdol(currentIdol, true);

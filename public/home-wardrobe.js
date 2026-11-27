@@ -5,6 +5,12 @@
     if (!choice) return;
     $('#chosenOutfitName').textContent = person.name + ' · ' + choice.label;
     $('#chooseModel').href = 'model-picker.html?' + new URLSearchParams({ target: 'home', slot: String(window.homeMulti?.getEditingSlot?.() || 0), idol: person.id });
+    if (choice.icon) {
+      $('#chosenOutfitImage').src = '/asset-original/' + choice.icon;
+      $('#chosenOutfitImage').hidden = false;
+      $('#chosenOutfitHint').textContent = '';
+      return;
+    }
     $('#chosenOutfitImage').hidden = true; $('#chosenOutfitHint').textContent = '正在准备服装预览…';
     try { const image = await modelThumbnails.get(choice.path,{priority:100,valid:()=>token===serial,spineData:homeStage.getOutfit()?.path===choice.path?homeStage.getModel()?.spineData:undefined}); if (token !== serial) return; $('#chosenOutfitImage').src = image; $('#chosenOutfitImage').hidden = false; $('#chosenOutfitHint').textContent = ''; }
     catch { if (token === serial) $('#chosenOutfitHint').textContent = '预览暂未载入，点击进入衣装室重试。'; }

@@ -917,3 +917,41 @@ body.is-minimal .cmp-stage {
   border-bottom: 1px dashed rgba(148, 163, 184, 0.18);
 }
 .cmp-setting-row:last-child { border-bottom: 0; }
+
+
+/* ── Shinsekai Screen Perception, Edge Dock & Reminders ── */
+.cmp-btn.active {
+  background: rgba(16, 185, 129, 0.28);
+  color: #6ee7b7;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+}
+.cmp-mini-select {
+  background: rgba(15, 23, 42, 0.85);
+  color: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 11px;
+  max-width: 122px;
+}
+.cmp-stage {
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.24s ease;
+}
+body.is-edge-docked-left:not(:hover):not(.has-drawer-open) .cmp-stage {
+  transform: translateX(-42%);
+  opacity: 0.88;
+}
+body.is-edge-docked-right:not(:hover):not(.has-drawer-open) .cmp-stage {
+  transform: translateX(42%);
+  opacity: 0.88;
+}
+.cmp-reminder-box {
+  margin-top: 6px;
+}
+html[data-joytrans="1"] .cmp-topbar,
+html[data-joytrans="1"] .cmp-drawer,
+html[data-joytrans="1"] .cmp-bubble {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  background: rgba(15, 23, 42, 0.94);
+}
