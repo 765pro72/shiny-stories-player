@@ -223,7 +223,8 @@
   function syncPopBackdrop() {
     if (!elPopBackdrop) return;
     const envOpen = !$('#envPopover')?.hidden;
-    elPopBackdrop.hidden = !(islandPopoverOpen || envOpen);
+    const moreOpen = !$('#moreHubPopover')?.hidden;
+    elPopBackdrop.hidden = !(islandPopoverOpen || envOpen || moreOpen);
   }
 
   function closeAllPopovers() {
@@ -233,6 +234,12 @@
     if (envPop && !envPop.hidden) {
       envPop.hidden = true;
       envBtn?.setAttribute('aria-expanded', 'false');
+    }
+    const morePop = $('#moreHubPopover');
+    const moreBtn = $('#btnMoreHub');
+    if (morePop && !morePop.hidden) {
+      morePop.hidden = true;
+      moreBtn?.setAttribute('aria-expanded', 'false');
     }
     syncPopBackdrop();
   }
@@ -503,8 +510,21 @@
     if (stEl && text) stEl.textContent = text;
   }
 
-  function dismissBoot() {
+  let bootPinnedByComic = false;
+  let bootReadyToEnter = false;
+
+  function dismissBoot(force = false) {
     if (bootDismissed) return;
+    if (!force && bootPinnedByComic) {
+      bootReadyToEnter = true;
+      setBootProgress(100, '加载完成 · 看完四格漫画后点击进入');
+      const pinBtn = document.getElementById('bootComicPin');
+      if (pinBtn) {
+        pinBtn.textContent = '进入 283 事务所 →';
+        pinBtn.classList.add('is-ready');
+      }
+      return;
+    }
     bootDismissed = true;
     setBootProgress(100, '准备就绪，欢迎回到 283 事务所');
     setTimeout(() => {
@@ -512,6 +532,82 @@
       setTimeout(() => { elBoot?.remove(); }, 560);
     }, 180);
   }
+
+  function initBootComicCard() {
+    const layout = document.querySelector('#shellBoot .boot-layout');
+    const card = document.getElementById('bootComicCard');
+    const controls = document.getElementById('bootComicControls');
+    const img = document.getElementById('bootComicImg');
+    const badge = document.getElementById('bootComicBadge');
+    const reroll = document.getElementById('bootComicReroll');
+    const zoomBtn = document.getElementById('bootComicZoom');
+    const pinBtn = document.getElementById('bootComicPin');
+    const imgWrap = document.getElementById('bootComicImgWrap');
+    const tip = document.getElementById('bootComicTip');
+    if (!card || !img) return;
+    let comicsPool = [];
+    let retryLeft = 3;
+    let zoomed = false;
+    const syncZoomUI = () => {
+      layout?.classList.toggle('is-comic-zoomed', zoomed);
+      if (zoomBtn) zoomBtn.textContent = zoomed ? '🔎 整页' : '🔍 放大';
+      if (tip) tip.textContent = zoomed ? '上下滑动阅读 · 点击还原整页' : '点击漫画可放大 · 整页四格';
+    };
+    const pickRandomComic = () => {
+      if (!comicsPool.length) return;
+      const item = comicsPool[Math.floor(Math.random() * comicsPool.length)];
+      const groupLbl = item.group === 'limited' ? '限定四格' : item.group === 'special' ? '特别四格' : 'WEB四格';
+      if (badge) badge.textContent = `📖 ${groupLbl} #${item.id}`;
+      const nextImg = new Image();
+      nextImg.onload = () => {
+        if (bootDismissed) return;
+        img.src = nextImg.src;
+        card.hidden = false;
+        if (controls) controls.hidden = false;
+        layout?.classList.add('has-comic');
+      };
+      nextImg.onerror = () => {
+        if (!bootDismissed && retryLeft > 0) {
+          retryLeft--;
+          pickRandomComic();
+        }
+      };
+      nextImg.src = '/asset-original/' + item.page;
+    };
+    const pinComic = () => {
+      if (bootReadyToEnter) { dismissBoot(true); return; }
+      bootPinnedByComic = true;
+      if (pinBtn && !bootReadyToEnter) pinBtn.textContent = '已暂停进入 · 加载中';
+    };
+    reroll?.addEventListener('click', (e) => { e.stopPropagation(); pinComic(); pickRandomComic(); });
+    zoomBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (!bootReadyToEnter) pinComic();
+      zoomed = !zoomed;
+      syncZoomUI();
+    });
+    imgWrap?.addEventListener('click', () => {
+      if (!bootReadyToEnter) pinComic();
+      zoomed = !zoomed;
+      syncZoomUI();
+    });
+    pinBtn?.addEventListener('click', (e) => { e.stopPropagation(); pinComic(); });
+    window.addEventListener('keydown', (e) => {
+      if (!bootDismissed && bootReadyToEnter && (e.key === 'Escape' || e.key === 'Enter')) {
+        e.preventDefault();
+        dismissBoot(true);
+      }
+    });
+    fetch('/data/official-extras.json')
+      .then(r => (r.ok ? r.json() : null))
+      .then(data => {
+        if (!data || !Array.isArray(data.comics) || !data.comics.length || bootDismissed) return;
+        comicsPool = data.comics;
+        pickRandomComic();
+      })
+      .catch(() => {});
+  }
+  initBootComicCard();
 
   async function preloadRandomDynamicCards() {
     try {
@@ -1075,6 +1171,8 @@
   window.__shinyCloseMusicCapsule = () => closeIslandPopover();
   window.__shinyMusicAction = (fn) => withMusicAPI(fn);
   window.__shinyGetMusicState = () => ({ ...musicState });
+  window.__shinyCycleMusicMode = () => cycleShellPlayMode();
+  window.__shinySetMusicVolume = (v) => setShellVolume(v);
 
   async function withMusicAPI(fn) {
     let entry = frames.get('music.html');
@@ -1421,6 +1519,12 @@
       if (envPop && !envPop.hidden && !e.target.closest('#envAnchor')) {
         envPop.hidden = true;
         $('#shellEnvCapsule')?.setAttribute('aria-expanded', 'false');
+        syncPopBackdrop();
+      }
+      const morePop = $('#moreHubPopover');
+      if (morePop && !morePop.hidden && !e.target.closest('.more-hub-anchor')) {
+        morePop.hidden = true;
+        $('#btnMoreHub')?.setAttribute('aria-expanded', 'false');
         syncPopBackdrop();
       }
     });
@@ -2360,6 +2464,7 @@
     const initial = params.get('page') || hashTarget || 'index.html';
     const bootStart = Date.now();
     setBootProgress(18, '正在唤醒 283 事务所…');
+    try { window.ShinyTitleCall?.play(); } catch {}
     navigate(initial, { skipHistory: true });
 
     // Hard safety cap (9.2s, strictly < 10s) so serialized boot pre-warms & GPU-rasterizes all tabs cleanly!

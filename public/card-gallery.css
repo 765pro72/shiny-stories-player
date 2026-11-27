@@ -102,12 +102,36 @@ html[data-theme="dark"] .card-thumb-stack .card-phase-pill{border-color:rgba(230
 }
 
 /* ── Single-Row Header & Compact Alignment (一行紧凑对齐) ── */
+.cg-heading-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.cg-comics-btn {
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid rgba(14, 165, 233, 0.42);
+  background: rgba(14, 165, 233, 0.12);
+  color: #0369a1;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.14s ease, background 0.18s ease;
+}
+.cg-comics-btn:hover { background: rgba(14, 165, 233, 0.22); transform: translateY(-1px); }
+html[data-theme="dark"] .cg-comics-btn {
+  border-color: rgba(56, 189, 248, 0.45);
+  background: rgba(56, 189, 248, 0.18);
+  color: #bae6fd;
+}
 .card-archive .gallery-results > .collection-heading {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
   gap: 12px !important;
-  flex-wrap: nowrap !important;
+  flex-wrap: wrap !important;
   margin-bottom: 8px !important;
   min-height: 42px;
 }

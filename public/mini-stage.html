@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <link rel="icon" href="/app-icon.png">
+  <title>283 迷你排练室 &amp; LIVE 小剧场 · 闪耀色彩</title>
+  <link rel="stylesheet" href="/fonts.css">
+  <script src="/interface-font-core.js"></script>
+  <script src="/interface-font.js"></script>
+  <link rel="stylesheet" href="/interface.css">
+  <link rel="stylesheet" href="/navigation.css">
+  <link rel="stylesheet" href="/liquid-glass.css">
+  <link rel="stylesheet" href="/ui-upgrade.css">
+  <link rel="stylesheet" href="/mini-stage.css">
+  <script src="/navigation.js"></script>
+  <script src="/interface.js" defer></script>
+  <script src="/liquid-glass.js" defer></script>
+</head>
+<body class="page-mini-stage">
+  <div class="window-drag-handle" aria-hidden="true"></div>
+  <header class="site-header">
+    <a href="index.html" class="site-brand"><b>283</b><span>闪耀色彩<small>STORIES &amp; MEMORIES</small></span></a>
+    <div class="header-drag-space" aria-hidden="true"></div>
+    <nav class="site-nav" aria-label="模块导航">
+      <a href="index.html">事务所</a>
+      <a href="guide.html">剧情馆</a>
+      <a href="card-gallery.html">卡片相册</a>
+      <a href="voice-gallery.html">语音馆</a>
+      <a href="model-picker.html">衣装室</a>
+      <a href="music.html">音乐馆</a>
+      <a href="custom-story.html">怪文书</a>
+    </nav>
+  </header>
+
+  <main class="ms-main">
+    <header class="ms-head">
+      <div>
+        <p class="ms-eyebrow">283 PRODUCTION · CHIBI MINI THEATER</p>
+        <h1>283 迷你排练室 &amp; 5人 LIVE 小剧场</h1>
+      </div>
+      <div class="ms-mode-switch" role="tablist" aria-label="舞台模式切换">
+        <button type="button" class="ms-tab active" data-stage-mode="rehearsal" aria-selected="true">🏃‍♀️ 培育排练室</button>
+        <button type="button" class="ms-tab" data-stage-mode="live" aria-selected="false">🎤 5人 LIVE 舞台</button>
+      </div>
+    </header>
+
+    <!-- Main PIXI-Spine Stage -->
+    <section class="ms-stage-card" id="msStageCard">
+      <div class="ms-stage-bg" id="msStageBg"></div>
+      <div class="ms-stage-beams" id="msStageBeams" aria-hidden="true"></div>
+      <div class="ms-pixi-host" id="msPixiHost"></div>
+      <div class="ms-stage-status" id="msStageStatus">正在准备 283 小人舞台…</div>
+      <div class="ms-stage-toolbar">
+        <label class="ms-inline-field">
+          <span>人数</span>
+          <select id="msCountSelect">
+            <option value="1">1 人</option>
+            <option value="2">2 人</option>
+            <option value="3">3 人</option>
+            <option value="4">4 人</option>
+            <option value="5" selected>5 人</option>
+          </select>
+        </label>
+        <button type="button" class="ms-btn" id="btnMsBgPicker">🖼️ 切换官方背景 (215+)</button>
+        <button type="button" class="ms-btn" id="btnMsRandomSquad">🎲 随机 5 人</button>
+      </div>
+    </section>
+
+    <!-- Action Controls -->
+    <section class="ms-controls-card">
+      <div class="ms-ctrl-group" id="msRehearsalCtrls">
+        <span class="ms-ctrl-title">排练课程</span>
+        <div class="ms-btn-row">
+          <button type="button" class="ms-act-btn active" data-lesson="wait">🧘 待机</button>
+          <button type="button" class="ms-act-btn" data-lesson="vocal">🎵 声乐 Vocal</button>
+          <button type="button" class="ms-act-btn" data-lesson="dance">💃 舞蹈 Dance</button>
+          <button type="button" class="ms-act-btn" data-lesson="visual">✨ 形体 Visual</button>
+          <button type="button" class="ms-act-btn" data-lesson="talk">💬 谈话 Talk</button>
+          <button type="button" class="ms-act-btn" data-lesson="radio">📻 电台 Radio</button>
+          <button type="button" class="ms-act-btn" data-lesson="photo">📷 摄影 Photo</button>
+          <button type="button" class="ms-act-btn" data-lesson="tea">🍵 摸鱼喝茶</button>
+        </div>
+        <span class="ms-ctrl-title" style="margin-top:8px;">实时反应</span>
+        <div class="ms-btn-row">
+          <button type="button" class="ms-act-btn is-ok" data-react="ok">✨ 大成功 OK</button>
+          <button type="button" class="ms-act-btn is-ng" data-react="ng">💦 失误 NG</button>
+          <button type="button" class="ms-act-btn" data-react="touch">🫶 摸头 / 蹦跳</button>
+        </div>
+      </div>
+
+      <div class="ms-ctrl-group" id="msLiveCtrls" hidden>
+        <span class="ms-ctrl-title">FES 舞台编排</span>
+        <div class="ms-btn-row">
+          <button type="button" class="ms-act-btn" data-live="startup">🚀 入场 Standby</button>
+          <button type="button" class="ms-act-btn active" data-live="dance1">💃 劲舞 01</button>
+          <button type="button" class="ms-act-btn" data-live="dance2">💃 劲舞 02</button>
+          <button type="button" class="ms-act-btn" data-live="dance4">💃 劲舞 04</button>
+          <button type="button" class="ms-act-btn is-ok" data-live="appeal">🌟 个人 Appeal</button>
+          <button type="button" class="ms-act-btn is-ok" data-live="skill">⚡ 技能爆发 Skill</button>
+          <button type="button" class="ms-act-btn" data-live="kiai">🔥 气合 Kiai</button>
+          <button type="button" class="ms-act-btn is-ok" data-live="win">🏆 谢幕胜利 Win</button>
+        </div>
+      </div>
+
+      <div class="ms-ctrl-group">
+        <span class="ms-ctrl-title">官方组合一键整团上场</span>
+        <div class="ms-btn-row" id="msUnitPresets"></div>
+      </div>
+    </section>
+
+    <!-- 5 Squad Slot Cards -->
+    <section class="ms-slots-grid" id="msSlotsGrid"></section>
+  </main>
+
+  <dialog id="msBgDialog" class="ms-dialog">
+    <div class="ms-dialog-head">
+      <strong>🖼️ 选择舞台背景（官方 215+ 场景）</strong>
+      <div>
+        <button type="button" class="ms-btn" id="btnMsBgReset">恢复默认</button>
+        <button type="button" class="ms-btn" id="btnMsBgClose">关闭 ×</button>
+      </div>
+    </div>
+    <div class="ms-bg-grid" id="msBgGrid"></div>
+  </dialog>
+
+  <script src="/player/lib/pixi.js"></script>
+  <script src="/player/lib/pixi-spine.umd.js"></script>
+  <script src="/mini-stage.js"></script>
+</body>
+</html>

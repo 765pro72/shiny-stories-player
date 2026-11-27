@@ -115,6 +115,7 @@
     })();
   </script>
   <script src="/portraits.js" defer></script>
+  <script src="/title-call.js" defer></script>
   <script src="/shell.js" defer></script>
   <script src="/live-stage.js" defer></script>
   <script src="/pack-4k-ui.js" defer></script>
@@ -131,7 +132,8 @@
 
   <!-- Cold-Boot 283 Geometric Prism Awakening (preloads stage + all dynamic video cards) -->
   <div class="shell-boot" id="shellBoot" aria-hidden="true">
-    <div class="boot-core">
+    <div class="boot-layout">
+      <div class="boot-core">
       <div class="boot-geo" aria-hidden="true">
         <svg class="boot-geo-svg" viewBox="0 0 120 120" width="108" height="108" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -181,6 +183,21 @@
           <span class="boot-percent" id="bootPercent">12%</span>
         </div>
       </div>
+      <div class="boot-comic-controls" id="bootComicControls" hidden>
+        <span class="boot-comic-badge" id="bootComicBadge">📖 283 官方四格</span>
+        <div class="boot-comic-actions">
+          <button type="button" class="boot-comic-btn" id="bootComicReroll" title="随机换一篇">🎲 换一篇</button>
+          <button type="button" class="boot-comic-btn" id="bootComicZoom" title="放大 / 整页切换">🔍 放大</button>
+          <button type="button" class="boot-comic-btn is-pin" id="bootComicPin">⏸ 看完再进</button>
+        </div>
+      </div>
+      </div>
+      <aside class="boot-comic-card" id="bootComicCard" hidden>
+        <div class="boot-comic-img-wrap" id="bootComicImgWrap" title="点击放大阅读 / 停留">
+          <img id="bootComicImg" alt="283 官方四格漫画">
+        </div>
+        <span class="boot-comic-tip" id="bootComicTip">点击漫画可放大 · 整页四格</span>
+      </aside>
     </div>
   </div>
 

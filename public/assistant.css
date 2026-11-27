@@ -243,3 +243,8 @@ html[data-theme="dark"] .ia-context-menu button:focus-visible {
   color: #fde8b4 !important;
 }
 
+html[data-joytrans="1"] :where(.idol-assistant-window, .ia-context-menu, .idol-assistant-trigger) {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+

@@ -45,3 +45,19 @@ window.storyNavigationReady=(async()=>{
 })().catch(e=>document.querySelector('#units').textContent='目录加载失败：'+e.message);
 const toggle=document.querySelector('#toggleDirectory');toggle?.addEventListener('click',()=>{const nodes=[document.querySelector('#units'),...document.querySelectorAll('#directory>.note')];const hidden=!nodes[0].hidden;nodes.forEach(x=>x.hidden=hidden);toggle.textContent=hidden?'展开导航':'收起导航';toggle.setAttribute('aria-expanded',String(!hidden))});
 document.querySelector('#directory').addEventListener('click',async event=>{const link=event.target.closest('a');if(!link)return;const url=new URL(link.href,location.href),group=url.searchParams.get('group');if(!group)return;event.preventDefault();await window.storyNavigationReady;const rows=window.navigationCatalog.filter(x=>x.group===group);if(!rows.length)return;const details=window.inlineStoryGroups(rows,link.textContent);link.replaceWith(details);details.open=true;});
+(() => {
+  const hub = () => window.parent?.PrismHub || window.PrismHub;
+  document.querySelectorAll('[data-hub]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const h = hub();
+      const act = btn.dataset.hub;
+      if (act === 'search') h?.openSearch?.(document.getElementById('search')?.value?.trim() || '');
+      else if (act === 'chain') h?.openChain?.('chain');
+      else if (act === 'matrix') h?.openMatrix?.();
+      else if (act === 'dossier') h?.openDossier?.();
+    });
+  });
+  document.getElementById('btnDialogueSearchInline')?.addEventListener('click', () => {
+    hub()?.openSearch?.(document.getElementById('search')?.value?.trim() || '');
+  });
+})();

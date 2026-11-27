@@ -56,7 +56,17 @@
     try { window.desktop?.saveState?.({ [key]: JSON.stringify(val) }); } catch {}
   };
 
-  const cfg = readJson(CFG_KEY, { idolId: 'nichika', alwaysOnTop: true, hourlyChime: true });
+  const cfg = readJson(CFG_KEY, {
+    idolId: 'nichika',
+    alwaysOnTop: true,
+    hourlyChime: true,
+    mode: 'chibi-desk',
+    scale: 1,
+    inputHook: true,
+    chibiOwnerId: '',
+    chibiPath: '',
+    chibiLabel: ''
+  });
   // Local TTS is OFF by default — user clicks "一键检测并接入" when their local server is running
   const ttsCfg = readJson(TTS_KEY, {
     enabled: false,
@@ -181,6 +191,7 @@
     if (elMusicTitle && playing) {
       elMusicTitle.textContent = `♪ ${state.title}${state.artist ? ' · ' + state.artist : ''}`;
     }
+    try { window.__companionNowPlayingHook?.(playing); } catch {}
   }
 
   async function sendAiChat() {
@@ -271,6 +282,7 @@
       writeJson(TTS_KEY, ttsCfg);
       updateTtsBadge(false);
     }
+    try { window.__companionApplyIdolHook?.(idol); } catch {}
   }
 
   function spawnSparkles(count = 7) {
@@ -577,18 +589,68 @@
   });
   try { applyNowPlaying(JSON.parse(localStorage.getItem(NOW_PLAYING_KEY) || 'null')); } catch {}
 
+  // Ephemeral Speech Bubble (hidden by default; shows briefly on click / chime / AI reply)
+  const elBubble = $('#cmpBubble');
+  let bubbleTimer = 0;
+  function showBubbleBriefly(ms = 4600) {
+    if (!elBubble) return;
+    const wasHidden = elBubble.hidden;
+    elBubble.hidden = false;
+    if (wasHidden) syncWindowSizeForDrawers();
+    clearTimeout(bubbleTimer);
+    bubbleTimer = setTimeout(() => {
+      if (elBubble && !elBubble.matches(':hover')) {
+        elBubble.hidden = true;
+        syncWindowSizeForDrawers();
+      }
+    }, ms);
+  }
+  elBubble?.addEventListener('pointerleave', () => showBubbleBriefly(1800));
+
+  const elSettingsDrawer = $('#cmpSettingsDrawer');
+
+  function syncWindowSizeForDrawers() {
+    const anyOpen = !(
+      elIdolDrawer.hidden &&
+      elTtsDrawer.hidden &&
+      elMemoDrawer.hidden &&
+      elChatDrawer.hidden &&
+      (!elSettingsDrawer || elSettingsDrawer.hidden)
+    );
+    document.body.classList.toggle('has-drawer-open', anyOpen);
+    const sc = Number(cfg.scale) || 1;
+    const bubbleOpen = !anyOpen && elBubble && !elBubble.hidden;
+    const targetW = anyOpen ? 368 : Math.round(280 * sc);
+    const targetH = anyOpen ? 496 : (Math.round(280 * sc) + (bubbleOpen ? 98 : 0));
+    try {
+      window.desktop?.setCompanionBounds?.({ width: targetW, height: targetH });
+    } catch {}
+    refreshCachedWinBounds();
+  }
+
   // Wire controls
   const closeAllDrawers = () => {
     elIdolDrawer.hidden = true;
     elTtsDrawer.hidden = true;
     elMemoDrawer.hidden = true;
     elChatDrawer.hidden = true;
+    if (elSettingsDrawer) elSettingsDrawer.hidden = true;
+    syncWindowSizeForDrawers();
   };
+
+  $('#btnSettingsDrawer')?.addEventListener('click', () => {
+    if (!elSettingsDrawer) return;
+    const willOpen = elSettingsDrawer.hidden;
+    closeAllDrawers();
+    elSettingsDrawer.hidden = !willOpen;
+    syncWindowSizeForDrawers();
+  });
 
   $('#btnAiChat')?.addEventListener('click', () => {
     const willOpen = elChatDrawer.hidden;
     closeAllDrawers();
     elChatDrawer.hidden = !willOpen;
+    syncWindowSizeForDrawers();
     if (willOpen) {
       if (elChatTitle) elChatTitle.textContent = `💬 与${currentIdol.name}对话`;
       renderChatLog();
@@ -600,6 +662,7 @@
     const willOpen = elMemoDrawer.hidden;
     closeAllDrawers();
     elMemoDrawer.hidden = !willOpen;
+    syncWindowSizeForDrawers();
     if (willOpen) elMemoTextarea?.focus();
   });
 
@@ -607,13 +670,20 @@
     const willOpen = elIdolDrawer.hidden;
     closeAllDrawers();
     elIdolDrawer.hidden = !willOpen;
+    syncWindowSizeForDrawers();
   });
 
   $('#btnTtsSlot')?.addEventListener('click', () => {
     const willOpen = elTtsDrawer.hidden;
     closeAllDrawers();
     elTtsDrawer.hidden = !willOpen;
+    syncWindowSizeForDrawers();
     if (willOpen) refreshTtsPackStatus(true);
+  });
+
+  elStage?.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    document.body.classList.toggle('show-controls');
   });
 
   document.querySelectorAll('[data-close-drawer]').forEach(btn => {
@@ -697,7 +767,7 @@
   $('#btnChatSend')?.addEventListener('click', sendFusedChat);
   elChatInput?.addEventListener('keydown', e => { if (e.key === 'Enter') sendFusedChat(); });
   $('#btnChatClear')?.addEventListener('click', () => { chatHistory = []; saveChat(); renderChatLog(); });
-  $('#btnChatConfig')?.addEventListener('click', () => { closeAllDrawers(); elTtsDrawer.hidden = false; });
+  $('#btnChatConfig')?.addEventListener('click', () => { closeAllDrawers(); elTtsDrawer.hidden = false; syncWindowSizeForDrawers(); });
 
   // Producer Desktop Sticky Notepad & Todo Runtime
   const memoState = readJson(MEMO_KEY, { text: '', todos: [] });
@@ -790,7 +860,6 @@
     else window.close();
   });
 
-  $('#cmpAvatarBtn')?.addEventListener('click', nextLine);
   $('#btnNextLine')?.addEventListener('click', nextLine);
   $('#btnSpeakNow')?.addEventListener('click', () => speakText(elBubbleText.textContent));
 
@@ -986,6 +1055,430 @@
 
   // Periodic time-of-day & hourly chime check every 15s
   setInterval(checkHourlyChime, 15000);
+
+  /* ═══════════════════════════════════════════════════════════════════════════
+     283 Chibi Spine Typing & LIVE Companion Engine (3 Modes)
+     ═══════════════════════════════════════════════════════════════════════════ */
+  const IDOL_TO_CATALOG_OWNER = {
+    mano: '1', hiori: '2', meguru: '3', kogane: '4', mamimi: '5', sakuya: '6', yuika: '7', kiriko: '8',
+    kaho: '9', chiyoko: '10', juri: '11', rinze: '12', natsuha: '13', amana: '14', tenka: '15', chiyuki: '16',
+    asahi: '17', fuyuko: '18', mei: '19', toru: '20', madoka: '21', koito: '22', hinana: '23',
+    nichika: '24', mikoto: '25', luca: '26', hana: '27', haruki: '28', hazuki: 'staff'
+  };
+
+  const MODES = ['chibi', 'avatar'];
+  const MODE_TIPS = {
+    chibi: '当前：两头身小人（点击切换极简头像）',
+    avatar: '当前：极简头像模式（点击切回两头身小人）'
+  };
+  const SCALES = [0.85, 1.0, 1.2, 1.4];
+
+  const elChibiWrap = $('#cmpChibiWrap');
+  const elAvatarBtn = $('#cmpAvatarBtn');
+  const elChibiOutfits = $('#cmpChibiOutfits');
+  const btnMode = $('#btnCompanionMode');
+  const btnScale = $('#btnCompanionScale');
+
+  let chibiCatalog = [];
+  let chibiApp = null;
+  let chibiSpine = null;
+  let chibiStool = null;
+  let chibiAnims = [];
+  let chibiLoadToken = 0;
+  let chibiMusicPlaying = false;
+  let lastInteractAt = Date.now();
+  let isIdleMotion = false;
+  let cachedWinBounds = { x: window.screenX || 0, y: window.screenY || 0, width: 280, height: 280 };
+
+  function refreshCachedWinBounds() {
+    try {
+      window.desktop?.getCompanionBounds?.().then(b => {
+        if (b && Number.isFinite(b.x)) cachedWinBounds = b;
+      }).catch(() => {});
+    } catch {}
+  }
+  refreshCachedWinBounds();
+
+  function getChibiMode() {
+    if (cfg.mode === 'avatar') return 'avatar';
+    return 'chibi';
+  }
+
+  function destroyChibiCompanionApp() {
+    if (chibiApp) {
+      try { chibiApp.destroy(true, { children: true, texture: false, baseTexture: false }); } catch {}
+      chibiApp = null;
+      chibiSpine = null;
+      chibiStool = null;
+      chibiAnims = [];
+    }
+    if (elChibiWrap) elChibiWrap.replaceChildren();
+  }
+  window.addEventListener('pagehide', destroyChibiCompanionApp);
+
+  function drawStudioStool(g, cx, footY, visH) {
+    if (!g) return;
+    g.clear();
+    const w = Math.max(visH * 0.36, 44);
+    const seatY = footY - visH * 0.27;
+    const padH = Math.max(8, visH * 0.065);
+    const rimH = Math.max(4, visH * 0.032);
+    const legTopY = seatY + padH * 0.6;
+    const legSpreadTop = w * 0.32;
+    const legSpreadBot = w * 0.41;
+    const legW = Math.max(3.5, w * 0.09);
+
+    // 地面柔和投影
+    g.beginFill(0x0f172a, 0.24);
+    g.drawEllipse(cx, footY + 2, w * 0.54, Math.max(4, padH * 0.45));
+    g.endFill();
+
+    // 暖木色四支微外八椅腿与横撑
+    g.lineStyle(legW, 0x8b5a2b, 1);
+    g.moveTo(cx - legSpreadTop, legTopY);
+    g.lineTo(cx - legSpreadBot, footY);
+    g.moveTo(cx + legSpreadTop, legTopY);
+    g.lineTo(cx + legSpreadBot, footY);
+    g.lineStyle(Math.max(2.5, legW * 0.72), 0xa47148, 0.95);
+    const braceY = legTopY + (footY - legTopY) * 0.56;
+    const braceHalf = legSpreadTop + (legSpreadBot - legSpreadTop) * 0.56;
+    g.moveTo(cx - braceHalf, braceY);
+    g.lineTo(cx + braceHalf, braceY);
+
+    // 木质座框
+    g.lineStyle(0);
+    g.beginFill(0x9c6644, 1);
+    g.drawRoundedRect(cx - w * 0.48, seatY + padH * 0.45, w * 0.96, rimH + 3, 4);
+    g.endFill();
+
+    // 奶油白圆角软垫与高光
+    g.beginFill(0xfaf4e8, 1);
+    g.lineStyle(1.4, 0xd4a373, 0.85);
+    g.drawRoundedRect(cx - w * 0.5, seatY, w, padH, Math.min(8, padH * 0.5));
+    g.endFill();
+    g.lineStyle(0);
+    g.beginFill(0xffffff, 0.65);
+    g.drawRoundedRect(cx - w * 0.4, seatY + 2, w * 0.8, Math.max(2, padH * 0.3), 3);
+    g.endFill();
+  }
+
+  function pickDefaultChibiPath(ownerId) {
+    const grp = chibiCatalog.find(g => String(g.id) === String(ownerId));
+    if (!grp || !grp.outfits?.length) return '';
+    if (chibiMusicPlaying) {
+      const stage = grp.outfits.find(o => o.kind === 'cb_costume');
+      if (stage) return stage.path;
+    }
+    const base = grp.outfits.find(o => o.subKind === 'char_cb' && o.kind === 'cb') || grp.outfits[0];
+    return base?.path || '';
+  }
+
+  function playChibiAnim(candidates, loop = true, returnToIdle = false) {
+    if (!chibiSpine || !chibiAnims.length) return false;
+    const hit = candidates.find(name => chibiAnims.includes(name));
+    if (!hit) return false;
+    try {
+      chibiSpine.state.setAnimation(0, hit, loop);
+      if (chibiStool) chibiStool.visible = (hit === 'sales_tea');
+      if (returnToIdle && !loop) {
+        const idleName = pickIdleAnimName();
+        if (idleName) chibiSpine.state.addAnimation(0, idleName, true, 0);
+      }
+      return true;
+    } catch { return false; }
+  }
+
+  function pickIdleAnimName() {
+    if (chibiMusicPlaying) {
+      return ['live_dance_01', 'live_dance_02', 'live_dance_04', 'dance_ok', 'vocal_ok', 'wait']
+        .find(n => chibiAnims.includes(n)) || chibiAnims[0] || '';
+    }
+    return ['wait', 'wait_01', 'talk_wait', 'pattern1'].find(n => chibiAnims.includes(n)) || chibiAnims[0] || '';
+  }
+
+  function loadChibiModel(modelPath) {
+    if (!modelPath || !elChibiWrap || !window.PIXI?.spine?.Spine) return;
+    if (getChibiMode() === 'avatar') return;
+    const token = ++chibiLoadToken;
+    destroyChibiCompanionApp();
+
+    const loader = new PIXI.Loader();
+    const resKey = 'cb_' + token;
+    loader.add(resKey, '/asset-original/' + modelPath).load((l, res) => {
+      if (token !== chibiLoadToken || getChibiMode() === 'avatar') return;
+      const spineData = res[resKey]?.spineData;
+      if (!spineData) {
+        if (elBubbleText) {
+          elBubbleText.textContent = '小人模型加载失败，请检查网络或切换其他衣装。';
+          showBubbleBriefly(3200);
+        }
+        return;
+      }
+
+      const sc = Number(cfg.scale) || 1;
+      const cw = Math.round(280 * sc);
+      const ch = Math.round(280 * sc);
+
+      const app = new PIXI.Application({
+        width: cw,
+        height: ch,
+        backgroundAlpha: 0,
+        antialias: true,
+        resolution: Math.min(2, window.devicePixelRatio || 1.5),
+        autoDensity: true
+      });
+      chibiApp = app;
+      elChibiWrap.replaceChildren(app.view);
+
+      const spine = new PIXI.spine.Spine(spineData);
+      spine.autoUpdate = false;
+      try { spine.skeleton.setSkinByName('normal'); } catch {
+        if (spine.spineData.skins.some(s => s.name === 'default')) spine.skeleton.setSkinByName('default');
+      }
+      spine.skeleton.setToSetupPose();
+      spine.stateData.defaultMix = 0.22;
+      chibiSpine = spine;
+      chibiAnims = (spine.spineData.animations || []).map(a => a.name);
+      app.stage.addChild(spine);
+
+      const idleName = pickIdleAnimName();
+      if (idleName) spine.state.setAnimation(0, idleName, true);
+      try { spine.update(0.016); } catch {}
+
+      const b = spine.getLocalBounds();
+      const bw = Math.max(40, b.width || 240);
+      const bh = Math.max(40, b.height || 340);
+      const fit = Math.min((cw * 0.68) / bw, (ch * 0.78) / bh);
+      spine.scale.set(fit);
+      spine.position.set(cw * 0.5 - (b.x + bw / 2) * fit, ch * 0.90 - (b.y + bh) * fit);
+
+      chibiStool = new PIXI.Graphics();
+      drawStudioStool(chibiStool, cw * 0.5, ch * 0.90, bh * fit);
+      chibiStool.visible = (idleName === 'sales_tea');
+      app.stage.addChildAt(chibiStool, 0);
+
+      app.ticker.add(() => {
+        if (!chibiSpine) return;
+        const dt = Math.min(0.04, (app.ticker.deltaMS || 16.6) / 1000);
+        chibiSpine.update(dt);
+      });
+    });
+  }
+
+  function syncModeUI() {
+    const mode = getChibiMode();
+    const isAvatar = mode === 'avatar';
+    document.body.classList.toggle('mode-chibi', !isAvatar);
+    if (elAvatarBtn) elAvatarBtn.hidden = !isAvatar;
+    if (elChibiWrap) elChibiWrap.hidden = isAvatar;
+    if (btnMode) {
+      btnMode.textContent = isAvatar ? '⚪ 极简头像' : '🐾 两头身小人';
+      btnMode.title = MODE_TIPS[mode] || '';
+      btnMode.classList.toggle('active', !isAvatar);
+    }
+    if (btnScale) {
+      btnScale.textContent = `🔍 ${Math.round((Number(cfg.scale) || 1) * 100)}%`;
+    }
+    if (isAvatar) {
+      destroyChibiCompanionApp();
+    } else {
+      const ownerId = cfg.chibiOwnerId || IDOL_TO_CATALOG_OWNER[currentIdol.id] || '24';
+      const path = cfg.chibiPath || pickDefaultChibiPath(ownerId);
+      if (path) {
+        cfg.chibiOwnerId = ownerId;
+        cfg.chibiPath = path;
+        loadChibiModel(path);
+      }
+    }
+  }
+
+  function renderChibiOutfits(ownerId) {
+    if (!elChibiOutfits || !chibiCatalog.length) return;
+    const grp = chibiCatalog.find(g => String(g.id) === String(ownerId));
+    const specialGrp = chibiCatalog.find(g => g.id === 'special');
+    const items = [
+      ...(grp?.outfits || []).slice(0, 24),
+      ...(specialGrp?.outfits || []).slice(0, 8)
+    ];
+    elChibiOutfits.replaceChildren();
+    for (const item of items) {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'cmp-chibi-outfit-btn' + (cfg.chibiPath === item.path ? ' active' : '');
+      btn.title = item.label;
+      if (item.icon) {
+        btn.innerHTML = `<img src="/asset-original/${item.icon}" loading="lazy" alt=""><span>${item.label.replace(/^两头身(常服|演出服)\s*·\s*/, '')}</span>`;
+      } else {
+        btn.innerHTML = `<span style="font-size:16px;line-height:34px;">✨</span><span>${item.label.slice(0, 10)}</span>`;
+      }
+      btn.onclick = () => {
+        cfg.chibiOwnerId = ownerId;
+        cfg.chibiPath = item.path;
+        cfg.chibiLabel = item.label;
+        if (getChibiMode() === 'avatar') cfg.mode = 'chibi';
+        writeJson(CFG_KEY, cfg);
+        syncModeUI();
+        renderChibiOutfits(ownerId);
+      };
+      elChibiOutfits.append(btn);
+    }
+  }
+
+  window.__companionApplyIdolHook = (idol) => {
+    const oid = IDOL_TO_CATALOG_OWNER[idol.id] || '24';
+    if (cfg.chibiOwnerId !== oid) {
+      cfg.chibiOwnerId = oid;
+      cfg.chibiPath = pickDefaultChibiPath(oid);
+      writeJson(CFG_KEY, cfg);
+      if (getChibiMode() !== 'avatar' && cfg.chibiPath) loadChibiModel(cfg.chibiPath);
+    }
+    renderChibiOutfits(oid);
+  };
+
+  window.__companionNowPlayingHook = (playing) => {
+    const changed = chibiMusicPlaying !== !!playing;
+    chibiMusicPlaying = !!playing;
+    if (changed && chibiSpine && getChibiMode() !== 'avatar') {
+      playChibiAnim([pickIdleAnimName()], true);
+    }
+  };
+
+  // Unified Free Anywhere-Dragging on #cmpStage (click <=4px triggers interaction; drag moves window)
+  (() => {
+    if (!elStage) return;
+    let pointerDown = false;
+    let dragging = false;
+    let startSX = 0, startSY = 0;
+    let startWinX = 0, startWinY = 0;
+    let rafDrag = 0;
+    let pendingX = 0, pendingY = 0;
+
+    elStage.addEventListener('pointerdown', async (e) => {
+      if (e.button !== 0) return;
+      if (e.target.closest('.cmp-topbar, .cmp-bubble, .cmp-drawer')) return;
+      pointerDown = true;
+      dragging = false;
+      startSX = e.screenX;
+      startSY = e.screenY;
+      try { elStage.setPointerCapture(e.pointerId); } catch {}
+      try {
+        const b = await window.desktop?.getCompanionBounds?.();
+        if (b && Number.isFinite(b.x)) {
+          cachedWinBounds = b;
+          startWinX = b.x;
+          startWinY = b.y;
+        } else {
+          startWinX = window.screenX || 0;
+          startWinY = window.screenY || 0;
+        }
+      } catch {
+        startWinX = window.screenX || 0;
+        startWinY = window.screenY || 0;
+      }
+    });
+
+    elStage.addEventListener('pointermove', (e) => {
+      if (!pointerDown) return;
+      const dx = e.screenX - startSX;
+      const dy = e.screenY - startSY;
+      if (!dragging && Math.hypot(dx, dy) > 4) {
+        dragging = true;
+        document.body.classList.add('is-dragging');
+      }
+      if (dragging) {
+        pendingX = startWinX + dx;
+        pendingY = startWinY + dy;
+        if (!rafDrag) {
+          rafDrag = requestAnimationFrame(() => {
+            rafDrag = 0;
+            cachedWinBounds.x = pendingX;
+            cachedWinBounds.y = pendingY;
+            try { window.desktop?.setCompanionPosition?.({ x: pendingX, y: pendingY }); } catch {}
+          });
+        }
+      }
+    });
+
+    const endDrag = (e) => {
+      if (!pointerDown) return;
+      const wasDragging = dragging;
+      pointerDown = false;
+      dragging = false;
+      document.body.classList.remove('is-dragging');
+      try { elStage.releasePointerCapture(e.pointerId); } catch {}
+      if (!wasDragging && e.type === 'pointerup') {
+        lastInteractAt = Date.now();
+        isIdleMotion = false;
+        if (getChibiMode() !== 'avatar') {
+          playChibiAnim(['touch', 'ok', 'jump', 'appeal', 'win', 'pattern2'], false, true);
+        }
+        nextLine();
+        showBubbleBriefly(4600);
+      } else if (wasDragging) {
+        refreshCachedWinBounds();
+      }
+    };
+    elStage.addEventListener('pointerup', endDrag);
+    elStage.addEventListener('pointercancel', endDrag);
+  })();
+
+  btnMode?.addEventListener('click', () => {
+    const next = MODES[(MODES.indexOf(getChibiMode()) + 1) % MODES.length];
+    cfg.mode = next;
+    writeJson(CFG_KEY, cfg);
+    syncModeUI();
+  });
+
+  btnScale?.addEventListener('click', async () => {
+    const cur = Number(cfg.scale) || 1;
+    const idx = SCALES.findIndex(s => Math.abs(s - cur) < 0.08);
+    const next = SCALES[(idx + 1) % SCALES.length];
+    cfg.scale = next;
+    writeJson(CFG_KEY, cfg);
+    syncModeUI();
+    syncWindowSizeForDrawers();
+  });
+
+  try {
+    window.desktop?.onCompanionOutfit?.((p) => {
+      if (!p || !p.path) return;
+      if (getChibiMode() === 'avatar') cfg.mode = 'chibi';
+      if (p.ownerId) cfg.chibiOwnerId = String(p.ownerId);
+      cfg.chibiPath = p.path;
+      cfg.chibiLabel = p.label || '';
+      writeJson(CFG_KEY, cfg);
+      syncModeUI();
+      renderChibiOutfits(cfg.chibiOwnerId);
+    });
+  } catch {}
+
+  // Gentle idle behavior after 25s without interaction: play official tea/pr/stand animations (with auto stool on sales_tea)
+  setInterval(() => {
+    if (getChibiMode() === 'avatar' || !chibiSpine || chibiMusicPlaying) return;
+    if (Date.now() - lastInteractAt > 25000 && !isIdleMotion) {
+      isIdleMotion = true;
+      const pool = ['sales_tea', 'photo_ok', 'pr', 'talk_wait', 'visual_wait'].filter(n => chibiAnims.includes(n));
+      const pick = pool.length ? pool[Math.floor(Math.random() * pool.length)] : '';
+      if (pick) {
+        const keepLoop = (pick === 'sales_tea' || pick.endsWith('_wait'));
+        playChibiAnim([pick], keepLoop, !keepLoop);
+      }
+    }
+  }, 5000);
+
+  fetch('/data/chibi-catalog.json')
+    .then(r => (r.ok ? r.json() : []))
+    .then(rows => {
+      chibiCatalog = Array.isArray(rows) ? rows : [];
+      const oid = cfg.chibiOwnerId || IDOL_TO_CATALOG_OWNER[currentIdol.id] || '24';
+      if (!cfg.chibiPath) {
+        cfg.chibiPath = pickDefaultChibiPath(oid);
+        cfg.chibiOwnerId = oid;
+      }
+      renderChibiOutfits(oid);
+      syncModeUI();
+    })
+    .catch(() => { syncModeUI(); });
 
   renderIdolPicker();
   applyIdol(currentIdol, true);

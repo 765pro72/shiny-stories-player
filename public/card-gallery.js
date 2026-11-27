@@ -165,19 +165,101 @@ function syncMovieBgmButton(){
     btnBgmToggle.classList.toggle('is-muted',!cardBgmEnabled);
   }
 }
+let pmPixiApp = null, pmLoadSerial = 0;
+let extrasSignatures = {}, pmIdolById = new Map(), pmSupportById = new Map();
+fetch('/data/official-extras.json').then(r => (r.ok ? r.json() : null)).then(ex => {
+  if (!ex) return;
+  extrasSignatures = ex.signatures || {};
+  for (const x of (ex.pictureMotions?.idols || [])) pmIdolById.set(String(x.id), x);
+  for (const x of (ex.pictureMotions?.support || [])) pmSupportById.set(String(x.id), x);
+}).catch(() => {});
+
+function clearPictureMotionSpine() {
+  pmLoadSerial++;
+  if (pmPixiApp) {
+    try { pmPixiApp.destroy(true, { children: true, texture: false, baseTexture: false }); } catch {}
+    pmPixiApp = null;
+  }
+  const host = $('#cardPictureMotionHost');
+  if (host) { host.replaceChildren(); host.hidden = true; }
+}
+
+function mountCardSignature(c) {
+  const head = document.querySelector('#cardDetail .card-detail-head');
+  if (!head) return;
+  let img = head.querySelector('.card-detail-sign');
+  const num = parseInt(String(c?.id || '').slice(3, 6), 10);
+  const oid = num === 91 ? 'staff' : (Number.isFinite(num) ? String(num) : '');
+  const sp = oid ? extrasSignatures[oid] : '';
+  if (!sp) {
+    if (img) img.hidden = true;
+    return;
+  }
+  if (!img) {
+    img = document.createElement('img');
+    img.className = 'card-detail-sign';
+    img.alt = '官方亲笔签名';
+    img.style.cssText = 'height:34px;width:auto;max-width:130px;object-fit:contain;margin-left:auto;margin-right:10px;opacity:0.9;pointer-events:none;';
+    const closeBtn = $('#closeCard');
+    if (closeBtn) head.insertBefore(img, closeBtn);
+    else head.append(img);
+  }
+  img.src = '/asset-original/' + sp;
+  img.hidden = false;
+  img.onerror = () => { img.hidden = true; };
+}
+
 function showMedia(item,type){
-  window.cardUpscale?.clear();$('#cardDetail').dataset.content=type;
+  window.cardUpscale?.clear();clearPictureMotionSpine();$('#cardDetail').dataset.content=type;
   $('#mediaTabs').querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.key===`${type}:${item?.kind||''}`));
-  $('#cardStoryPane').hidden=true;$('#cardMediaPane').hidden=false;const img=$('#fullCard'),video=$('#cardMovie');
+  $('#cardStoryPane').hidden=true;$('#cardMediaPane').hidden=false;const img=$('#fullCard'),video=$('#cardMovie'),pmHost=$('#cardPictureMotionHost');
   video.onplay=video.onplaying=video.onwaiting=video.onpause=video.onseeking=video.onended=video.oncanplay=null;
   clearCardMovie();video.removeAttribute('src');video.muted=false;video.load();
   if(cardVoiceAudio){cardVoiceAudio.onerror=null;cardVoiceAudio.pause();cardVoiceAudio.removeAttribute('src');}
   if(cardBgmAudio){cardBgmAudio.pause();cardBgmAudio.removeAttribute('src');}
   currentMovieIsCostume=false;currentMovieHasBgm=false;
-  activeMedia=type==='image'?item:null;$('.card-media-tools').hidden=false;$('.card-media-tools').dataset.kind=type==='image'?'image':'video';$('#cardImageViewport').hidden=type!=='image';$('#downloadMovie').hidden=type!=='movie';setCardZoom(1);
+  activeMedia=type==='image'?item:null;$('.card-media-tools').hidden=type==='pm_spine';$('.card-media-tools').dataset.kind=type==='image'?'image':'video';$('#cardImageViewport').hidden=type!=='image';$('#downloadMovie').hidden=type!=='movie';setCardZoom(1);
   activeMovieItem=type==='movie'?item:null;
   btnVoiceToggle.hidden=type!=='movie';btnBgmToggle.hidden=type!=='movie';
-  if(type==='image'){video.hidden=true;img.hidden=false;movieSubtitleBar.hidden=true;img.src=asset(item.path);window.cardUpscale?.show(img);$('#cardMediaStatus').textContent=item.label+' · 可缩放并保存'}
+  if(type==='image'){video.hidden=true;if(pmHost)pmHost.hidden=true;img.hidden=false;movieSubtitleBar.hidden=true;img.src=asset(item.path);window.cardUpscale?.show(img);$('#cardMediaStatus').textContent=item.label+' · 可缩放并保存'}
+  else if(type==='pm_movie'){
+    img.hidden=true;if(pmHost)pmHost.hidden=true;video.hidden=false;movieSubtitleBar.hidden=true;
+    video.muted=false;video.loop=true;video.src='/asset-original/'+item.path;video.load();video.play().catch(()=>{});
+    $('#cardMediaStatus').textContent=`${item.label} · 官方 UR 动态插画视频`;
+  }
+  else if(type==='pm_spine'){
+    img.hidden=true;video.hidden=true;movieSubtitleBar.hidden=true;
+    if(!pmHost||!window.PIXI?.spine?.Spine){$('#cardMediaStatus').textContent='PIXI-Spine 运行时未就绪';return;}
+    pmHost.hidden=false;
+    const token=++pmLoadSerial;
+    $('#cardMediaStatus').textContent='正在加载官方 UR 动态插画（Spine）…';
+    const loader=new PIXI.Loader();
+    loader.add('pm_'+token,'/asset-original/'+item.path).load((l,res)=>{
+      if(token!==pmLoadSerial||!$('#cardDetail').open)return;
+      const data=res['pm_'+token]?.spineData;
+      if(!data){$('#cardMediaStatus').textContent='UR 动态插画加载失败';return;}
+      const isLt=document.documentElement.dataset.joytrans==='1'||document.documentElement.dataset.android==='1';
+      const w=Math.max(640,pmHost.clientWidth||840),h=Math.max(360,Math.round(w*9/16));
+      const app=new PIXI.Application({width:w,height:h,backgroundAlpha:0,antialias:!isLt,resolution:isLt?1.25:Math.min(2,window.devicePixelRatio||1.5),autoDensity:true});
+      if(isLt)app.ticker.maxFPS=30;
+      pmPixiApp=app;
+      pmHost.replaceChildren(app.view);
+      app.view.style.width='100%';app.view.style.height='100%';app.view.style.objectFit='contain';
+      const spine=new PIXI.spine.Spine(data);
+      const anims=(spine.spineData.animations||[]).map(a=>a.name);
+      const animName=anims.includes('wait')?'wait':anims[0];
+      if(animName)spine.state.setAnimation(0,animName,true);
+      try{spine.update(0.016);}catch{}
+      const b=spine.getLocalBounds();
+      const bw=Math.max(100,b.width||1136),bh=Math.max(100,b.height||640);
+      const scale=Math.min(w/bw,h/bh)*0.96;
+      spine.scale.set(scale);
+      spine.position.set(w/2-(b.x+bw/2)*scale,h/2-(b.y+bh/2)*scale);
+      app.stage.addChild(spine);
+      $('#cardMediaStatus').textContent=`${item.label} · 官方 UR 原生 Spine 动态插画`;
+    });
+    loader.onError.add(()=>{if(token===pmLoadSerial)$('#cardMediaStatus').textContent='UR 动态插画在线加载失败，请重试';});
+  }
   else{
     img.hidden=true;video.hidden=false;window.cardUpscale?.show(video);$('#cardMediaStatus').textContent=`${item.label}：${item.path}`;
     const card=current;
@@ -280,14 +362,55 @@ async function downloadCurrentMovie(){
 }
 function setCardZoom(value){cardZoom=Math.min(4,Math.max(.5,value));$('#fullCard').style.setProperty('--card-zoom',cardZoom);$('#cardZoomValue').textContent=Math.round(cardZoom*100)+'%';window.cardUpscale?.setZoom(cardZoom)}
 function saveCurrentCard(){if(!activeMedia)return;const a=document.createElement('a');a.href=asset(activeMedia.path);a.download=`${current?.name||current?.id||'card'}-${activeMedia.label||activeMedia.kind}.jpg`.replace(/[\\/:*?"<>|]/g,'_');document.body.append(a);a.click();a.remove()}
-function showStories(){$('#cardDetail').dataset.content='stories';clearCardMovie();window.cardUpscale?.clear();$('#mediaTabs').querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.key==='stories'));$('#cardMediaPane').hidden=true;$('#cardStoryPane').hidden=false}
+function showStories(){$('#cardDetail').dataset.content='stories';clearCardMovie();clearPictureMotionSpine();window.cardUpscale?.clear();$('#mediaTabs').querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.key==='stories'));$('#cardMediaPane').hidden=true;$('#cardStoryPane').hidden=false}
 function renderTabs(c){
-  const tabs=$('#mediaTabs');tabs.replaceChildren();for(const item of c.images||[]){const b=el('button',item.label);b.dataset.key=`image:${item.kind}`;b.onclick=()=>showMedia(item,'image');tabs.append(b)}for(const item of c.movies||[]){const b=el('button',item.label);b.dataset.key=`movie:${item.kind}`;b.onclick=()=>showMedia(item,'movie');tabs.append(b)}const stories=el('button',`关联剧情 ${c.stories.length}`);stories.dataset.key='stories';stories.onclick=showStories;tabs.append(stories)
+  const tabs=$('#mediaTabs');tabs.replaceChildren();
+  for(const item of c.images||[]){const b=el('button',item.label);b.dataset.key=`image:${item.kind}`;b.onclick=()=>showMedia(item,'image');tabs.append(b)}
+  for(const item of c.movies||[]){const b=el('button',item.label);b.dataset.key=`movie:${item.kind}`;b.onclick=()=>showMedia(item,'movie');tabs.append(b)}
+  const pmIdol=pmIdolById.get(String(c.id));
+  if(pmIdol){
+    if(pmIdol.movie){const b=el('button','✨ UR 动态插画');b.dataset.key='pm_movie:pm';b.onclick=()=>showMedia({kind:'pm',label:'UR 动态插画',path:pmIdol.movie},'pm_movie');tabs.append(b);}
+    if(pmIdol.costumeMovie){const b=el('button','✨ UR 演出动态插画');b.dataset.key='pm_movie:pm_costume';b.onclick=()=>showMedia({kind:'pm_costume',label:'UR 演出动态插画',path:pmIdol.costumeMovie},'pm_movie');tabs.append(b);}
+  }
+  const pmSup=pmSupportById.get(String(c.id));
+  if(pmSup?.spine){
+    const b=el('button','✨ UR 动态插画 (Spine)');b.dataset.key='pm_spine:pm_sup';b.onclick=()=>showMedia({kind:'pm_sup',label:'UR 动态插画',path:pmSup.spine},'pm_spine');tabs.append(b);
+  }
+  const stories=el('button',`关联剧情 ${c.stories.length}`);stories.dataset.key='stories';stories.onclick=showStories;tabs.append(stories)
 }
 function renderStories(c){const list=$('#cardStoryList');list.replaceChildren();for(const s of c.stories){const b=el('button',null,'story-item'),img=el('img');img.src=art(c);img.alt='';img.loading='lazy';img.onerror=()=>img.remove();const info=el('span',null,'story-item-info');info.append(el('span',s.category||'卡片剧情','tag'),el('b',s.title),el('small',[s.idol,s.group].filter(Boolean).join(' / ')));b.append(img,info,el('span',!s.translated?'待汉化':s.missing?`汉化 · ${s.missing} 句待补`:'已有汉化',s.missing?'pending':'good'));b.onclick=()=>playStory(s);const row=el('div',null,'story-download-row');const cluster=el('div',null,'story-actions-cluster');cluster.append(window.storyDownloadButton(s.key),window.storyTextActions(s));row.append(b,cluster);list.append(row)}$('#cardStoryHint').textContent=c.stories.length?'点任意一篇即可在此播放。':'当前目录未收录这张卡片的剧情。'}
+function notifyCardModalState(isOpen){
+  document.body.classList.toggle('has-card-modal-open', !!isOpen);
+  const bannerVid = document.querySelector('video.archive-banner-video');
+  if (bannerVid) {
+    if (isOpen) {
+      try { bannerVid.pause(); } catch {}
+    } else if (!document.hidden && !document.querySelector('dialog[open]')) {
+      bannerVid.play().catch(() => {});
+    }
+  }
+  document.querySelectorAll('video.pm-live-preview').forEach(v => {
+    if (isOpen) {
+      try { v.pause(); } catch {}
+    }
+  });
+  window.dispatchEvent(new CustomEvent('card-modal-state', { detail: { isOpen: !!isOpen } }));
+}
 function show(c,origin){
  cardOrigin=origin;
- const open=()=>{current=c;$('#cardTitle').textContent=c.name;$('#cardMeta').textContent=`${c.id} · ${c.type==='idols'?'偶像卡':'支援卡'} · ${CardTaxonomy.rarity(c)} · ${idolOf(c)}`;renderTabs(c);renderStories(c);showMedia(c.images[0],'image');if(!$('#cardDetail').open)$('#cardDetail').showModal()};
+ const open=()=>{
+   current=c;
+   $('#cardTitle').textContent=c.name;
+   $('#cardMeta').textContent=`${c.id} · ${c.type==='idols'?'偶像卡':'支援卡'} · ${CardTaxonomy.rarity(c)} · ${idolOf(c)}`;
+   mountCardSignature(c);
+   renderTabs(c);
+   renderStories(c);
+   showMedia(c.images[0],'image');
+   if(!$('#cardDetail').open){
+     $('#cardDetail').showModal();
+     notifyCardModalState(true);
+   }
+ };
  if(window.UIFlow)UIFlow.morph(origin,()=>$('#cardImageViewport'),open);else open();
 }
 function closeCard(){
@@ -295,7 +418,7 @@ function closeCard(){
  if(window.UIFlow&&cardOrigin?.isConnected&&!$('#cardImageViewport').hidden)UIFlow.morph($('#cardImageViewport'),cardOrigin,close);else close();
 }
 function init(){lines=[];const biBtn=$('#btnBranchInspector');if(biBtn){biBtn.hidden=true;biBtn.classList.remove('has-branches','pulse-choice');}$('#transcript').replaceChildren();$('#status').textContent='正在载入剧情脚本与翻译…';$('#auto').textContent='自动播放：关';$('#frame').src='/player/main.html?key='+encodeURIComponent(pt.key)+'&lang='+$('#lang').value}
-function playStory(s){pt=s;$('#storyTitle').textContent=s.title;$('#storyGroup').textContent=[s.idol,s.group].filter(Boolean).join(' / ');const cover=$('#storyArt');cover.hidden=false;cover.src=art(current);$('#cardDetail').close();$('#storyViewer').showModal();init()}
+function playStory(s){pt=s;$('#storyTitle').textContent=s.title;$('#storyGroup').textContent=[s.idol,s.group].filter(Boolean).join(' / ');const cover=$('#storyArt');cover.hidden=false;cover.src=art(current);$('#cardDetail').close();$('#storyViewer').showModal();notifyCardModalState(true);init()}
 function send(type,value){$('#frame').contentWindow.postMessage({type,value},location.origin)}
 const imageViewport=document.createElement('div');imageViewport.id='cardImageViewport';$('#fullCard').before(imageViewport);imageViewport.append($('#fullCard'));const mediaTools=document.createElement('div');mediaTools.className='card-media-tools';mediaTools.innerHTML='<button id="cardZoomOut" title="缩小卡面">−</button><output id="cardZoomValue">100%</output><button id="cardZoomIn" title="放大卡面">＋</button><button id="cardZoomReset">适应窗口</button><button id="saveCard">保存当前卡面</button><button id="downloadMovie" hidden>下载动态视频和声音</button>';imageViewport.before(mediaTools);window.cardUpscale?.mountTools(mediaTools);$('#cardZoomOut').onclick=()=>setCardZoom(cardZoom-.25);$('#cardZoomIn').onclick=()=>setCardZoom(cardZoom+.25);$('#cardZoomReset').onclick=()=>setCardZoom(1);$('#saveCard').onclick=saveCurrentCard;$('#downloadMovie').onclick=downloadCurrentMovie;imageViewport.ondblclick=()=>setCardZoom(cardZoom===1?2:1);imageViewport.onwheel=e=>{if(!e.ctrlKey)return;e.preventDefault();setCardZoom(cardZoom+(e.deltaY<0?.25:-.25))};
 
@@ -316,9 +439,12 @@ btnVoiceToggle.onclick=()=>{
 };
 const btnBgmToggle=document.createElement('button');btnBgmToggle.id='btnCardBgmToggle';btnBgmToggle.className='btn-card-voice-toggle';btnBgmToggle.textContent=cardBgmEnabled?'🎵 剧情原配BGM：开':'🔇 剧情原配BGM：关';btnBgmToggle.onclick=()=>{if(!currentMovieHasBgm)return;cardBgmEnabled=!cardBgmEnabled;localStorage.setItem('shiny.cardBgmEnabled',cardBgmEnabled?'1':'0');syncMovieBgmButton();if(!cardBgmEnabled){cardBgmAudio?.pause();}else if($('#cardDetail').dataset.content==='movie'&&!$('#cardMovie').paused&&cardBgmAudio?.src){cardBgmAudio.play().catch(()=>{});}};
 mediaTools.append(btnVoiceToggle,btnBgmToggle);
-$('#closeCard').onclick=closeCard;$('#cardDetail').oncancel=e=>{e.preventDefault();closeCard()};$('#cardDetail').onclose=()=>{clearCardMovie();window.cardUpscale?.clear();if(document.fullscreenElement)document.exitFullscreen().catch(()=>{})};$('#cardSearch').oninput=filter;$('#typeFilter').onchange=filter;$('#mediaFilter').onchange=filter;$('#rarityFilter').onchange=filter;$('#sortField').onchange=filter;$('#sortDirection').onchange=filter;$('#prevCards').onclick=()=>{page--;render()};$('#nextCards').onclick=()=>{page++;render()};$('#cardPageInput').onchange=jump;$('#cardPageInput').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();jump()}};
+$('#closeCard').onclick=closeCard;$('#cardDetail').oncancel=e=>{e.preventDefault();closeCard()};$('#cardDetail').onclose=()=>{clearCardMovie();clearPictureMotionSpine();window.cardUpscale?.clear();notifyCardModalState(false);if(document.fullscreenElement)document.exitFullscreen().catch(()=>{})};$('#cardSearch').oninput=filter;$('#typeFilter').onchange=filter;$('#mediaFilter').onchange=filter;$('#rarityFilter').onchange=filter;$('#sortField').onchange=filter;$('#sortDirection').onchange=filter;$('#prevCards').onclick=()=>{page--;render()};$('#nextCards').onclick=()=>{page++;render()};$('#cardPageInput').onchange=jump;$('#cardPageInput').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();jump()}};
 $('#allCards').onclick=clearSelection;
-$('#closeStory').onclick=()=>$('#storyViewer').close();$('#storyViewer').onclose=()=>{$('#frame').src='about:blank';if(document.fullscreenElement)document.exitFullscreen().catch(()=>{})};$('#advance').onclick=()=>send('next');$('#auto').onclick=()=>send('auto');$('#lang').onchange=()=>send('lang',$('#lang').value);$('#volume').value=volume;$('#volume').oninput=()=>send('volume',Number($('#volume').value)/100);$('#restart').onclick=init;const btnBi=$('#btnBranchInspector');if(btnBi)btnBi.onclick=()=>send('openBranchInspector');
+$('#btnOpenComicsGallery')?.addEventListener('click', () => {
+  (window.parent?.PrismHub || window.PrismHub)?.openComics?.();
+});
+$('#closeStory').onclick=()=>$('#storyViewer').close();$('#storyViewer').onclose=()=>{$('#frame').src='about:blank';notifyCardModalState(false);if(document.fullscreenElement)document.exitFullscreen().catch(()=>{})};$('#advance').onclick=()=>send('next');$('#auto').onclick=()=>send('auto');$('#lang').onchange=()=>send('lang',$('#lang').value);$('#volume').value=volume;$('#volume').oninput=()=>send('volume',Number($('#volume').value)/100);$('#restart').onclick=init;const btnBi=$('#btnBranchInspector');if(btnBi)btnBi.onclick=()=>send('openBranchInspector');
 window.addEventListener('message',e=>{if(e.origin!==location.origin||e.source!==$('#frame').contentWindow||!pt)return;const d=e.data;if(d.type==='ready')send('settings',{overrides:overrides[pt.key]||{},volume:Number($('#volume').value)/100});if(d.type==='status')$('#status').textContent=d.value;if(d.type==='auto')$('#auto').textContent='自动播放：'+(d.value?'开':'关');if(d.type==='branchInfo'&&d.value){const biBtn=$('#btnBranchInspector');if(biBtn){biBtn.hidden=false;biBtn.classList.toggle('has-branches',!!d.value.hasBranches);biBtn.classList.remove('pulse-choice');biBtn.textContent=d.value.hasBranches?`🌳 分支透视 (${d.value.groupCount}组·${d.value.optionCount}项)`:'📋 剧本大纲';}}if(d.type==='branchChoiceActive'){$('#btnBranchInspector')?.classList.toggle('pulse-choice',!!d.value);}if(d.type==='lines'){
   lines=d.value;
   const div=$('#transcript');
@@ -343,10 +469,14 @@ function openCardById(cardId,preferMovie=true){
   const c=cards.find(x=>String(x.id)===String(cardId));
   if(!c)return false;
   current=c;$('#cardTitle').textContent=c.name;$('#cardMeta').textContent=`${c.id} · ${c.type==='idols'?'偶像卡':'支援卡'} · ${CardTaxonomy.rarity(c)} · ${idolOf(c)}`;
+  mountCardSignature(c);
   renderTabs(c);renderStories(c);
   if(preferMovie&&c.movies?.length)showMedia(c.movies[0],'movie');
   else if(c.images?.length)showMedia(c.images[0],'image');
-  if(!$('#cardDetail').open)$('#cardDetail').showModal();
+  if(!$('#cardDetail').open){
+    $('#cardDetail').showModal();
+    notifyCardModalState(true);
+  }
   return true;
 }
 window.openCardById=openCardById;

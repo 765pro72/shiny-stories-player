@@ -28,7 +28,7 @@ async function fetchAsset(key,options={}){
   if(options.signal)signal=AbortSignal.any([signal,options.signal]);
   const {codec}=await loadCodec(),assetPath='/assets/'+key;
   const extension=path.posix.extname(key),media=/^\.(mp3|mp4|m4a)$/.test(extension)?extension:'';
-  const candidates=[assetPath],match=(key.match(/^images\/content\/(idols|support_idols)\/(card|fes_card)\/(\d+)\.jpg$/)||key.match(/^movies\/(idols)\/(card|card_costume)\/(\d+)\.mp4$/));
+  const candidates=[assetPath],match=(key.match(/^images\/content\/(idols|support_idols)\/(card|fes_card)\/(\d+)\.jpg$/)||key.match(/^movies\/(idols)\/(card|card_costume|picture_motion|picture_motion_costume)\/(\d+)\.mp4$/));
   if(match)try{const card=JSON.parse(fs.readFileSync(path.join(options.dataRoot||path.join(__dirname,'data'),'card-supplement.json'),'utf8')).find(c=>c.type===match[1]&&c.id===match[3]);if(card?.hash)candidates.unshift(assetPath.replace(/\/([^/]+)$/, '/'+card.hash+'_$1'))}catch{}
   let result,last;for(const candidate of candidates){try{const name=path.posix.basename(candidate).replace(/\.[^.]+$/,'');result=await get('https://shinycolors.enza.fun/assets/'+codec.encryptPath(candidate,name)+media,signal,onHeaders);break}catch(e){last=e}}if(!result)throw last;
   let bytes=result.bytes;

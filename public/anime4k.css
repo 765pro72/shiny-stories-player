@@ -1,13 +1,13 @@
-.anime4k-panel{border:1px solid #bfd2e8;border-radius:12px;padding:14px;margin:18px 0;background:#f5f9ff;color:#354965}
+.anime4k-panel{border:1px solid var(--ap-border,rgba(15,23,42,.1));border-radius:18px;padding:14px;margin:18px 0;background:var(--ap-surface,rgba(255,255,255,.82));color:var(--ap-ink,#141821);box-shadow:var(--ap-shadow-xs,0 2px 8px rgba(15,23,42,.045))}
 .anime4k-panel legend{font-weight:600;padding:0 6px}
-.anime4k-panel select,.anime4k-control select{font:inherit;color:inherit;background:#fff;border:1px solid #bcd0e7;border-radius:8px;padding:8px}
+.anime4k-panel select,.anime4k-control select{font:inherit;color:inherit;background:var(--ap-surface-solid,#fff);border:1px solid var(--ap-border,rgba(15,23,42,.14));border-radius:10px;padding:8px}
 .anime4k-panel p{font-size:13px;line-height:1.6;margin:8px 0 0}
-.anime4k-control{display:inline-flex;align-items:center;gap:6px;font:14px 'Microsoft YaHei',sans-serif;color:#354965}
+.anime4k-control{display:inline-flex;align-items:center;gap:6px;font:14px var(--interface-font-family,-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif);color:var(--ap-ink,#141821)}
 .anime4k-control select{max-width:210px}
-.anime4k-actual{font-size:.8em;color:#536d8c}.anime4k-floating{max-width:92vw;flex-wrap:wrap}.anime4k-floating .anime4k-actual{flex-basis:100%;text-align:right;padding:0 5px}
-.anime4k-floating{position:fixed;right:10px;top:10px;z-index:8;padding:4px;border-radius:10px;background:#ffffffd9;box-shadow:0 2px 8px #0002;font-size:clamp(12px,1.1vw,20px)}
+.anime4k-actual{font-size:.8em;color:var(--ap-ink-2,#4e596c)}.anime4k-floating{max-width:92vw;flex-wrap:wrap}.anime4k-floating .anime4k-actual{flex-basis:100%;text-align:right;padding:0 5px}
+.anime4k-floating{position:fixed;right:10px;top:10px;z-index:8;padding:6px;border-radius:12px;background:var(--ap-glass-strong,rgba(255,255,255,.88));border:1px solid var(--ap-border,rgba(15,23,42,.09));box-shadow:var(--ap-shadow-sm,0 6px 20px rgba(15,23,42,.08));font-size:clamp(12px,1.1vw,20px)}
 .anime4k-output{pointer-events:none!important}
-.anime4k-toast{position:fixed;top:4.5rem;left:50%;transform:translateX(-50%);z-index:2147483000;display:flex;align-items:center;gap:12px;width:max-content;max-width:min(90vw,680px);padding:12px 16px;border:1px solid #c2d3e6;border-radius:12px;background:#f5fafff5;color:#263e5a;box-shadow:0 6px 24px #102b4b33;font:clamp(13px,1.1vw,20px)/1.6 'Microsoft YaHei',sans-serif}
+.anime4k-toast{position:fixed;top:4.5rem;left:50%;transform:translateX(-50%);z-index:2147483000;display:flex;align-items:center;gap:12px;width:max-content;max-width:min(90vw,680px);padding:12px 16px;border:1px solid var(--ap-border,rgba(15,23,42,.1));border-radius:14px;background:var(--ap-glass-strong,rgba(255,255,255,.94));color:var(--ap-ink,#141821);box-shadow:var(--ap-shadow-md,0 14px 36px rgba(15,23,42,.12));font:clamp(13px,1.1vw,20px)/1.6 var(--interface-font-family,-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif)}
 .anime4k-toast[hidden]{display:none}.anime4k-toast button{flex-shrink:0;border:0;background:transparent;font:inherit;color:inherit;padding:4px;cursor:pointer}
 
 .render-diagnostics{font-size:12px;max-width:100%;min-width:0}.render-diagnostics summary{cursor:pointer}.render-diagnostics pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:11px;line-height:1.7}.render-diagnostics button{font-size:12px}

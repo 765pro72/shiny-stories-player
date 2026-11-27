@@ -6,55 +6,94 @@
   <link rel="icon" href="/app-icon.png">
   <title>283 透明桌面伙伴 · 闪耀色彩</title>
   <link rel="stylesheet" href="/fonts.css">
+  <script src="/interface-font-core.js"></script>
+  <script src="/interface-font.js"></script>
   <link rel="stylesheet" href="/companion.css">
 </head>
-<body class="companion-body">
+<body class="companion-body is-minimal">
   <div class="cmp-shell" id="cmpShell">
-    <!-- Top Drag & Mini Controls Bar (reveals smoothly on hover) -->
+    <!-- Auto-hide Mini Hover Capsule (hidden until hover / right-click / drawer open) -->
     <header class="cmp-topbar" id="cmpTopbar">
       <div class="cmp-drag-grip" title="按住此处拖动桌面伙伴">
         <span class="cmp-dot"></span>
         <span class="cmp-name" id="cmpIdolName">七草日花</span>
-        <span class="cmp-unit" id="cmpIdolUnit">SHHis</span>
+        <span class="cmp-unit" id="cmpIdolUnit" hidden>SHHis</span>
       </div>
       <div class="cmp-actions">
-        <button type="button" class="cmp-btn" id="btnAiChat" title="小偶像 AI 对话助手">💬</button>
-        <button type="button" class="cmp-btn" id="btnMemoPad" title="制作人桌面记事本与待办">📝</button>
-        <button type="button" class="cmp-btn" id="btnSwitchIdol" title="切换 283 偶像">🎭</button>
-        <button type="button" class="cmp-btn" id="btnTtsSlot" title="本地语音模型与 AI API 一键接入">🔌</button>
-        <button type="button" class="cmp-btn active" id="btnPinTop" title="窗口置顶：开">📌</button>
-        <button type="button" class="cmp-btn cmp-btn-close" id="btnCloseCompanion" title="关闭桌面伙伴">×</button>
+        <button type="button" class="cmp-btn" id="btnSwitchIdol" title="切换偶像与两头身衣装" aria-label="切换偶像与衣装">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46L16 2 12 5 8 2 3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+        </button>
+        <button type="button" class="cmp-btn" id="btnAiChat" title="AI 对话助手" aria-label="AI 对话助手">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </button>
+        <button type="button" class="cmp-btn" id="btnMemoPad" title="随手记事本" aria-label="随手记事本">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </button>
+        <button type="button" class="cmp-btn" id="btnSettingsDrawer" title="更多设置与形态切换" aria-label="更多设置">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.6.79 1 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </button>
+        <button type="button" class="cmp-btn cmp-btn-close" id="btnCloseCompanion" title="关闭桌面伙伴" aria-label="关闭">×</button>
       </div>
     </header>
 
-    <!-- Speech Bubble -->
-    <div class="cmp-bubble" id="cmpBubble" role="status" aria-live="polite">
+    <!-- Ephemeral Speech Bubble (hidden by default; appears briefly on click / chime / AI reply) -->
+    <div class="cmp-bubble" id="cmpBubble" role="status" aria-live="polite" hidden>
       <div class="cmp-bubble-meta">
         <span class="cmp-time-tag" id="cmpTimeTag">283 事务所</span>
-        <span class="cmp-outfit-tag" id="cmpOutfitTag">☀ 日间便服</span>
+        <span class="cmp-outfit-tag" id="cmpOutfitTag" hidden>☀ 日间便服</span>
         <span class="cmp-tts-badge" id="cmpTtsBadge" data-state="idle">未接入语音</span>
       </div>
-      <p class="cmp-bubble-text" id="cmpBubbleText">制作人，今天也一起加油吧！点击我可以随机对话，点击 🔌 可一键接入本机语音或 AI 对话 API。</p>
+      <p class="cmp-bubble-text" id="cmpBubbleText"></p>
       <div class="cmp-music-strip" id="cmpMusicStrip" hidden>
         <span class="cmp-music-eq" aria-hidden="true"><i></i><i></i><i></i></span>
         <span class="cmp-music-title" id="cmpMusicTitle">正在随音乐馆打拍子…</span>
       </div>
       <div class="cmp-bubble-foot">
-        <button type="button" class="cmp-mini-btn active" id="btnHourlyChime" title="整点自动报时">🔔 整点报时</button>
-        <button type="button" class="cmp-mini-btn" id="btnNextLine">下一句 ✦</button>
-        <button type="button" class="cmp-mini-btn" id="btnSpeakNow" title="使用已接入的本机语音模型朗读">🔊 朗读</button>
+        <button type="button" class="cmp-mini-btn" id="btnNextLine">换一句 ✦</button>
+        <button type="button" class="cmp-mini-btn" id="btnSpeakNow" title="朗读">🔊 朗读</button>
       </div>
     </div>
 
-    <!-- Transparent Character Avatar Stage -->
-    <div class="cmp-stage" id="cmpStage" title="点击互动 · 双击应援 · 顶部可拖动">
+    <!-- Transparent Character Stage (283 Official Chibi Desktop Pet) -->
+    <div class="cmp-stage" id="cmpStage">
       <div class="cmp-aura" id="cmpAura" aria-hidden="true"></div>
       <div class="cmp-voice-ring" id="cmpVoiceRing" aria-hidden="true"></div>
+      <div class="cmp-chibi-canvas-wrap" id="cmpChibiWrap" hidden></div>
       <button type="button" class="cmp-avatar-btn" id="cmpAvatarBtn" aria-label="与桌面伙伴互动">
         <span class="cmp-avatar-frame" id="cmpAvatarFrame"></span>
       </button>
       <div class="cmp-sparkle-layer" id="cmpSparkleLayer" aria-hidden="true"></div>
     </div>
+
+    <!-- Compact Settings Drawer (tucked behind ⚙️ button) -->
+    <section class="cmp-drawer cmp-settings-drawer" id="cmpSettingsDrawer" hidden aria-label="桌宠设置">
+      <div class="cmp-drawer-head">
+        <strong>⚙️ 桌宠设置</strong>
+        <button type="button" class="cmp-drawer-close" data-close-drawer>×</button>
+      </div>
+      <div class="cmp-settings-list">
+        <div class="cmp-setting-row">
+          <span>桌宠形态</span>
+          <button type="button" class="cmp-mini-btn active" id="btnCompanionMode">🐾 两头身小人</button>
+        </div>
+        <div class="cmp-setting-row">
+          <span>显示尺寸</span>
+          <button type="button" class="cmp-mini-btn" id="btnCompanionScale">🔍 100%</button>
+        </div>
+        <div class="cmp-setting-row">
+          <span>窗口置顶</span>
+          <button type="button" class="cmp-mini-btn active" id="btnPinTop">📌 已置顶</button>
+        </div>
+        <div class="cmp-setting-row">
+          <span>整点自动报时</span>
+          <button type="button" class="cmp-mini-btn active" id="btnHourlyChime">🔔 已开启</button>
+        </div>
+        <div class="cmp-setting-row">
+          <span>语音与 AI 接口</span>
+          <button type="button" class="cmp-mini-btn" id="btnTtsSlot">🔌 打开配置</button>
+        </div>
+      </div>
+    </section>
 
     <!-- Fused 283 Idol AI Assistant Multi-Turn Chat Drawer -->
     <section class="cmp-drawer cmp-chat-drawer" id="cmpChatDrawer" hidden aria-label="283 小偶像 AI 对话助手">
@@ -76,13 +115,17 @@
       </div>
     </section>
 
-    <!-- Quick Idol Picker Popover -->
+    <!-- Quick Idol & Chibi Outfit Picker Popover -->
     <section class="cmp-drawer" id="cmpIdolDrawer" hidden aria-label="选择 283 桌面伙伴">
       <div class="cmp-drawer-head">
-        <strong>选择 283 桌面伙伴</strong>
+        <strong>选择 283 偶像与两头身衣装</strong>
         <button type="button" class="cmp-drawer-close" data-close-drawer>×</button>
       </div>
       <div class="cmp-idol-grid" id="cmpIdolGrid"></div>
+      <div class="cmp-chibi-outfit-head">
+        <span>两头身小人衣装（点击即时换装）</span>
+      </div>
+      <div class="cmp-chibi-outfits" id="cmpChibiOutfits"></div>
     </section>
 
     <!-- Producer Desktop Sticky Notepad & Todo List -->
@@ -237,6 +280,8 @@
   </div>
 
   <script src="/portraits.js"></script>
+  <script src="/player/lib/pixi.js"></script>
+  <script src="/player/lib/pixi-spine.umd.js"></script>
   <script src="/companion.js"></script>
 </body>
 </html>

@@ -90,15 +90,31 @@
     return String(s || '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   }
 
+  function cleanScriptText(s) {
+    return String(s || '')
+      .replace(/\\r\\n|\\n|\\r/g, '\n')
+      .replace(/\r\n?/g, '\n')
+      .split('\n')
+      .map(l => l.trim())
+      .join('\n')
+      .trim();
+  }
+
+  function formatScriptHtml(s) {
+    return esc(cleanScriptText(s)).replace(/\n/g, '<br>');
+  }
+
   function highlightQuery(text, query) {
-    if (!text || !query) return esc(text);
+    const cleaned = cleanScriptText(text);
+    if (!cleaned || !query) return esc(cleaned).replace(/\n/g, '<br>');
     const words = String(query).trim().split(/\s+/).filter(Boolean);
-    if (!words.length) return esc(text);
+    if (!words.length) return esc(cleaned).replace(/\n/g, '<br>');
     const pattern = new RegExp(`(${words.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
-    const parts = String(text).split(pattern);
+    const parts = cleaned.split(pattern);
     return parts.map(part => {
       const isMatch = words.some(w => w.toLowerCase() === part.toLowerCase());
-      return isMatch ? `<mark class="ph-hl">${esc(part)}</mark>` : esc(part);
+      const html = esc(part).replace(/\n/g, '<br>');
+      return isMatch ? `<mark class="ph-hl">${html}</mark>` : html;
     }).join('');
   }
 
@@ -138,11 +154,12 @@
   window.addEventListener('keydown', e => {
     if (ambientEl && !ambientEl.hidden) {
       if (e.key === 'Escape') {
-        const ip = document.getElementById('islandPopover');
-        if (ip?.classList.contains('is-open')) {
+        const vc = document.getElementById('phAfVinylCard');
+        if (vc?.classList.contains('is-expanded')) {
           e.preventDefault();
           e.stopPropagation();
-          window.__shinyCloseMusicCapsule?.();
+          vc.classList.remove('is-expanded');
+          vc.setAttribute('aria-expanded', 'false');
           return;
         }
         e.preventDefault();
@@ -160,8 +177,28 @@
     }
   }, true);
 
+  let chatVoiceAudio = null;
+  let chatVoiceBtn = null;
+
+  function stopChatVoice() {
+    if (chatVoiceAudio) {
+      try {
+        chatVoiceAudio.onended = null;
+        chatVoiceAudio.onerror = null;
+        chatVoiceAudio.pause();
+        chatVoiceAudio.currentTime = 0;
+      } catch {}
+      chatVoiceAudio = null;
+    }
+    if (chatVoiceBtn) {
+      chatVoiceBtn.textContent = '🔊 原声';
+      chatVoiceBtn = null;
+    }
+  }
+
   function openModal(sub, title, opts = {}) {
     ensureModalHost();
+    stopChatVoice();
     cleanupMorningPlayer();
     modalSubEl.textContent = sub;
     modalTitleEl.textContent = title;
@@ -173,6 +210,7 @@
 
   function closeModal() {
     if (backdropEl && !backdropEl.hidden && morningRequest) dismissMorningReminder();
+    stopChatVoice();
     stopMorningVoice();
     cleanupMorningPlayer();
     const modalEl = backdropEl?.querySelector('.ph-modal');
@@ -246,7 +284,9 @@
         card.querySelector('[data-act="copy"]')?.addEventListener('click', async (e) => {
           e.stopPropagation();
           const btn = e.currentTarget;
-          const quoteText = `[${h.speaker}] ${h.trans || h.text}${h.trans && h.text ? ' (' + h.text + ')' : ''} —— 出处：《${h.title}》`;
+          const cleanZh = cleanScriptText(h.trans || h.text).replace(/\n+/g, ' ');
+          const cleanJp = cleanScriptText(h.text).replace(/\n+/g, ' ');
+          const quoteText = `[${h.speaker}] ${cleanZh}${h.trans && h.text ? ' (' + cleanJp + ')' : ''} —— 出处：《${h.title}》`;
           try {
             await navigator.clipboard.writeText(quoteText);
             btn.textContent = '✓ 已复制';
@@ -259,8 +299,10 @@
         card.querySelector('[data-act="bookmark"]')?.addEventListener('click', (e) => {
           e.stopPropagation();
           const btn = e.currentTarget;
+          const cleanZh = cleanScriptText(h.trans || h.text).replace(/\n+/g, ' ');
+          const cleanJp = cleanScriptText(h.text).replace(/\n+/g, ' ');
           const quotes = JSON.parse(localStorage.getItem('shiny.quoteBookmarks') || '[]');
-          const dup = quotes.some(q => q.storyKey === h.key && q.translation === (h.trans || h.text));
+          const dup = quotes.some(q => q.storyKey === h.key && q.translation === cleanZh);
           if (!dup) {
             quotes.unshift({
               id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
@@ -269,8 +311,8 @@
               storyGroup: h.group,
               idol: h.idol,
               speaker: h.speaker,
-              translation: h.trans || h.text,
-              original: h.text,
+              translation: cleanZh,
+              original: cleanJp,
               savedAt: new Date().toISOString().slice(0, 10)
             });
             localStorage.setItem('shiny.quoteBookmarks', JSON.stringify(quotes.slice(0, 300)));
@@ -384,6 +426,7 @@
     const tab1v1 = document.getElementById('phTab1v1');
 
     const renderThread = (item) => {
+      stopChatVoice();
       screenEl.innerHTML = '';
       const head = document.createElement('div');
       head.style.cssText = 'display:flex;align-items:center;justify-content:space-between;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.1);margin-bottom:4px;';
@@ -432,21 +475,44 @@
             <span>${esc(spk)}</span>
             ${l.voice ? `<button type="button" class="ph-btn ghost" data-voice="${esc(l.voice)}" style="height:20px;padding:0 6px;font-size:10px;">🔊 原声</button>` : ''}
           </div>
-          <div class="ph-bubble-zh">${esc(l.trans || l.text)}</div>
-          ${l.trans && l.text ? `<div class="ph-bubble-jp">${esc(l.text)}</div>` : ''}
+          <div class="ph-bubble-zh">${formatScriptHtml(l.trans || l.text)}</div>
+          ${l.trans && l.text ? `<div class="ph-bubble-jp">${formatScriptHtml(l.text)}</div>` : ''}
         `;
         const vBtn = b.querySelector('[data-voice]');
         if (vBtn) {
           vBtn.addEventListener('click', e => {
             e.stopPropagation();
-            vBtn.textContent = '🔊 播放中…';
+            if (chatVoiceBtn === vBtn && chatVoiceAudio && !chatVoiceAudio.paused) {
+              stopChatVoice();
+              return;
+            }
+            stopChatVoice();
+            stopMorningVoice();
             const audio = new Audio(vBtn.dataset.voice);
-            audio.onended = () => { vBtn.textContent = '🔊 原声'; };
-            audio.onerror = () => {
-              vBtn.textContent = '⚠️ 无音频';
-              setTimeout(() => { vBtn.textContent = '🔊 原声'; }, 1500);
+            chatVoiceAudio = audio;
+            chatVoiceBtn = vBtn;
+            vBtn.textContent = '🔊 播放中…';
+            audio.onended = () => {
+              if (chatVoiceAudio !== audio) return;
+              chatVoiceAudio = null;
+              chatVoiceBtn = null;
+              vBtn.textContent = '🔊 原声';
             };
-            audio.play().catch(() => { vBtn.textContent = '🔊 原声'; });
+            audio.onerror = () => {
+              if (chatVoiceAudio !== audio) return;
+              chatVoiceAudio = null;
+              chatVoiceBtn = null;
+              vBtn.textContent = '⚠️ 无音频';
+              setTimeout(() => {
+                if (vBtn.textContent === '⚠️ 无音频') vBtn.textContent = '🔊 原声';
+              }, 1500);
+            };
+            audio.play().catch(() => {
+              if (chatVoiceAudio !== audio) return;
+              chatVoiceAudio = null;
+              chatVoiceBtn = null;
+              vBtn.textContent = '🔊 原声';
+            });
           });
         }
         row.append(av, b);
@@ -455,6 +521,7 @@
     };
 
     const loadData = async () => {
+      stopChatVoice();
       listEl.innerHTML = '<div style="padding:12px;color:#94a3b8;font-size:12px;">正在载入对话记录…</div>';
       screenEl.innerHTML = '';
       const idol = idolSel.value;
@@ -606,7 +673,7 @@
           row.className = 'ph-hit-card';
           row.innerHTML = `
             <div class="ph-hit-meta"><span>🗣 ${esc(spkName)} 称呼「${esc(ev.form)}」</span><span>📖 ${esc(ev.storyTitle)} ↗</span></div>
-            <div class="ph-hit-line">${esc(ev.text)}</div>
+            <div class="ph-hit-line">${formatScriptHtml(ev.text)}</div>
           `;
           row.onclick = () => navigateStory(ev.key, ev.line || 0);
           evEl.append(row);
@@ -939,22 +1006,68 @@
           </div>
         </header>
         <footer class="ph-af-bottom">
-          <div class="ph-af-vinyl-card" id="phAfVinylCard" role="button" tabindex="0" title="点击展开音乐胶囊（歌词 / 进度 / 列表 / 音质）">
-            <img class="ph-af-disc" id="phAfDisc" src="/app-icon.png" alt="">
-            <div style="min-width:0;">
-              <small style="color:#7dd3fc;font-weight:700;font-size:10.5px;">NOW SPINNING · 283 JUKEBOX</small>
-              <strong id="phAfSong" style="display:block;font-size:15px;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Spread the Wings!!</strong>
-              <span id="phAfArtist" style="display:block;font-size:12px;color:#cbd5e1;">283 Production</span>
+          <div class="ph-af-vinyl-card" id="phAfVinylCard" role="region" aria-label="全屏黑胶音乐胶囊" aria-expanded="false" tabindex="0" title="点击展开 / 收起音乐胶囊">
+            <div class="ph-af-island-head">
+              <img class="ph-af-disc" id="phAfDisc" src="/app-icon.png" alt="">
+              <div class="ph-af-track-meta">
+                <strong id="phAfSong">Spread the Wings!!</strong>
+                <span id="phAfArtist">283 Production</span>
+              </div>
+              <div class="ph-af-mini-ctrls">
+                <button type="button" class="ph-af-ctrl-btn play-btn" id="phAfPlayBtn" aria-label="播放或暂停" data-tip="播放 / 暂停" title="播放 / 暂停 (Space)">
+                  <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg>
+                  <svg class="ic-pause" viewBox="0 0 24 24"><rect x="6.5" y="5" width="3.8" height="14" rx="1.4"/><rect x="13.7" y="5" width="3.8" height="14" rx="1.4"/></svg>
+                </button>
+                <button type="button" class="ph-af-ctrl-btn" id="phAfNextSongBtn" aria-label="下一首歌曲" data-tip="下一首歌曲" title="下一首歌曲">
+                  <svg viewBox="0 0 24 24"><path d="M16 6.5h2.2v11H16zM5.8 6.5l8.4 5.5-8.4 5.5z"/></svg>
+                </button>
+              </div>
+              <div class="ph-af-exp-head-ctrls">
+                <button type="button" class="ph-af-ctrl-btn ph-af-fav-btn" id="phAfFavBtn" aria-label="收藏歌曲" title="收藏">
+                  <svg viewBox="0 0 24 24"><path d="M12 20.4l-1.35-1.23C5.4 14.36 2 11.27 2 7.5 2 4.42 4.42 2 7.5 2c1.74 0 3.41.81 4.5 2.09C13.09 2.81 14.76 2 16.5 2 19.58 2 22 4.42 22 7.5c0 3.77-3.4 6.86-8.65 11.68z"/></svg>
+                </button>
+                <button type="button" class="ph-af-ctrl-btn" id="phAfCollapseBtn" aria-label="收起音乐胶囊" title="收起">
+                  <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+                </button>
+              </div>
             </div>
-            <button type="button" class="ph-af-ctrl-btn play-btn" id="phAfPlayBtn" aria-label="播放或暂停" data-tip="播放 / 暂停" title="播放 / 暂停 (Space)">
-              <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg>
-              <svg class="ic-pause" viewBox="0 0 24 24"><rect x="6.5" y="5" width="3.8" height="14" rx="1.4"/><rect x="13.7" y="5" width="3.8" height="14" rx="1.4"/></svg>
-            </button>
-            <button type="button" class="ph-af-ctrl-btn" id="phAfNextSongBtn" aria-label="下一首歌曲" data-tip="下一首歌曲" title="下一首歌曲">
-              <svg viewBox="0 0 24 24"><path d="M16 6.5h2.2v11H16zM5.8 6.5l8.4 5.5-8.4 5.5z"/></svg>
-            </button>
+            <div class="ph-af-island-body">
+              <div class="ph-af-island-inner">
+                <div class="ph-af-lyrics">
+                  <div class="ph-af-lyric-jp" id="phAfLyricJp">♪ 纯享音乐时光 ♪</div>
+                  <div class="ph-af-lyric-zh" id="phAfLyricZh"></div>
+                </div>
+                <div class="ph-af-seek-row">
+                  <span id="phAfCurTime">0:00</span>
+                  <input type="range" id="phAfSeek" min="0" max="100" step="0.1" value="0" aria-label="播放进度">
+                  <span id="phAfDurTime">0:00</span>
+                </div>
+                <div class="ph-af-transport-row">
+                  <div class="ph-af-transport-left">
+                    <button type="button" class="ph-af-ctrl-btn ph-af-mode-btn" id="phAfModeBtn" aria-label="切换播放模式" title="列表循环" data-tip="列表循环">
+                      <svg viewBox="0 0 24 24"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/></svg>
+                    </button>
+                    <button type="button" class="ph-af-ctrl-btn" id="phAfPrevBtn" aria-label="上一首" title="上一首">
+                      <svg viewBox="0 0 24 24"><path d="M5.8 6.5H8v11H5.8zM18.2 6.5l-8.4 5.5 8.4 5.5z"/></svg>
+                    </button>
+                    <button type="button" class="ph-af-ctrl-btn play-btn" id="phAfPlayLgBtn" aria-label="播放或暂停" title="播放 / 暂停 (Space)">
+                      <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg>
+                      <svg class="ic-pause" viewBox="0 0 24 24"><rect x="6.5" y="5" width="3.8" height="14" rx="1.4"/><rect x="13.7" y="5" width="3.8" height="14" rx="1.4"/></svg>
+                    </button>
+                    <button type="button" class="ph-af-ctrl-btn" id="phAfNextLgBtn" aria-label="下一首" title="下一首">
+                      <svg viewBox="0 0 24 24"><path d="M16 6.5h2.2v11H16zM5.8 6.5l8.4 5.5-8.4 5.5z"/></svg>
+                    </button>
+                  </div>
+                  <div class="ph-af-vol-pill">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+                    <input type="range" id="phAfVol" min="0" max="100" step="1" value="50" aria-label="音量">
+                    <span id="phAfVolVal">50%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+          <div class="ph-af-card-meta">
             <div id="phAfCardName" style="font-size:12.5px;color:rgba(226,232,240,0.85);font-weight:600;"></div>
             <button type="button" class="ph-btn ghost" id="phAfJumpStoryBtn" style="height:26px;padding:0 9px;font-size:11px;" hidden>📖 观看此卡剧情 ↗</button>
           </div>
@@ -962,11 +1075,33 @@
       `;
       document.body.appendChild(ambientEl);
 
+      const vinylCard = document.getElementById('phAfVinylCard');
+      const trackMetaEl = vinylCard?.querySelector('.ph-af-track-meta');
+      const jumpToMusicRoom = () => {
+        closeAmbientFrame();
+        if (window.__shinyShell?.navigate) {
+          window.__shinyShell.navigate('music.html');
+        } else {
+          document.querySelector('#prismDock [data-page="music.html"]')?.click();
+        }
+      };
+
+      const setIslandExpanded = (next) => {
+        if (!vinylCard) return;
+        const expanded = !!next;
+        vinylCard.classList.toggle('is-expanded', expanded);
+        vinylCard.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        if (trackMetaEl) {
+          trackMetaEl.title = expanded ? '点击前往音乐馆 · Jukebox' : '点击展开音乐胶囊';
+          trackMetaEl.setAttribute('tabindex', expanded ? '0' : '-1');
+        }
+      };
+
       const resetIdleTimer = () => {
         ambientEl?.classList.remove('is-zen');
         clearTimeout(idleFadeTimer);
         idleFadeTimer = setTimeout(() => {
-          const capOpen = document.getElementById('islandPopover')?.classList.contains('is-open');
+          const capOpen = vinylCard?.classList.contains('is-expanded');
           if (ambientEl && !ambientEl.hidden && !capOpen) {
             ambientEl.classList.add('is-zen');
           }
@@ -975,19 +1110,29 @@
       ambientEl.addEventListener('mousemove', resetIdleTimer);
       ambientEl.addEventListener('pointerdown', resetIdleTimer);
 
-      const vinylCard = document.getElementById('phAfVinylCard');
       vinylCard?.addEventListener('click', e => {
-        if (e.target.closest('#phAfPlayBtn') || e.target.closest('#phAfNextSongBtn')) return;
+        if (e.target.closest('button') || e.target.closest('input')) return;
+        if (vinylCard.classList.contains('is-expanded') && e.target.closest('.ph-af-track-meta')) {
+          e.stopPropagation();
+          jumpToMusicRoom();
+          return;
+        }
         e.stopPropagation();
         resetIdleTimer();
-        window.__shinyToggleMusicCapsule?.();
+        setIslandExpanded(!vinylCard.classList.contains('is-expanded'));
+      });
+      trackMetaEl?.addEventListener('keydown', e => {
+        if (e.key === 'Enter' && vinylCard.classList.contains('is-expanded')) {
+          e.stopPropagation();
+          jumpToMusicRoom();
+        }
       });
       vinylCard?.addEventListener('keydown', e => {
-        if (e.key === 'Enter') {
+        if (e.key === 'Enter' && e.target === vinylCard) {
           e.preventDefault();
           e.stopPropagation();
           resetIdleTimer();
-          window.__shinyToggleMusicCapsule?.();
+          setIslandExpanded(!vinylCard.classList.contains('is-expanded'));
         }
       });
 
@@ -1008,20 +1153,148 @@
         if (moreMenu && !moreMenu.hidden && !e.target.closest('.ph-af-more-wrap')) {
           closeMoreMenu();
         }
+        if (vinylCard?.classList.contains('is-expanded') && !e.target.closest('#phAfVinylCard')) {
+          setIslandExpanded(false);
+        }
       });
+
+      const fmtTime = (sec) => {
+        if (!Number.isFinite(sec) || sec < 0) return '0:00';
+        const m = Math.floor(sec / 60);
+        const s = Math.floor(sec % 60);
+        return `${m}:${String(s).padStart(2, '0')}`;
+      };
+      let afSeeking = false;
+      const syncIslandState = (st) => {
+        if (!st || !vinylCard) return;
+        const song = st.song;
+        const isPlaying = typeof st.isPlaying === 'boolean'
+          ? st.isPlaying
+          : (document.getElementById('dynamicIsland')?.classList.contains('is-playing') || localStorage.getItem('shiny.musicPlaying') === '1');
+        vinylCard.classList.toggle('is-paused', !isPlaying);
+
+        const playBtn = document.getElementById('phAfPlayBtn');
+        if (playBtn) {
+          playBtn.setAttribute('title', isPlaying ? '暂停 (Space)' : '播放 (Space)');
+          playBtn.setAttribute('data-tip', isPlaying ? '暂停' : '播放');
+        }
+        if (song?.color) vinylCard.style.setProperty('--af-accent', song.color);
+        const songEl = document.getElementById('phAfSong');
+        const artistEl = document.getElementById('phAfArtist');
+        const discEl = document.getElementById('phAfDisc');
+        if (song?.title && songEl) songEl.textContent = song.title;
+        if (artistEl) {
+          artistEl.textContent = song ? (song.unitName || song.vocalists || '283 Production') : '283 Production';
+        }
+        const cover = song?.cover || document.getElementById('islandCover')?.getAttribute('src');
+        if (cover && discEl && discEl.getAttribute('src') !== cover) discEl.src = cover;
+
+        const favBtn = document.getElementById('phAfFavBtn');
+        if (favBtn) favBtn.classList.toggle('is-fav', !!st.isFav);
+
+        const modeBtn = document.getElementById('phAfModeBtn');
+        if (modeBtn) {
+          const mode = st.playMode || 'loop';
+          const PLAY_MODE_ICONS = {
+            loop: {
+              title: '列表循环',
+              svg: '<path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/>'
+            },
+            shuffle: {
+              title: '随机播放',
+              svg: '<path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/>'
+            },
+            single: {
+              title: '单曲循环',
+              svg: '<path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/><text x="12" y="14" font-size="8" font-weight="bold" text-anchor="middle" fill="currentColor">1</text>'
+            }
+          };
+          const meta = PLAY_MODE_ICONS[mode] || PLAY_MODE_ICONS.loop;
+          modeBtn.innerHTML = `<svg viewBox="0 0 24 24">${meta.svg}</svg>`;
+          modeBtn.title = meta.title;
+          modeBtn.setAttribute('data-tip', meta.title);
+          modeBtn.classList.toggle('is-accent', mode !== 'loop');
+        }
+
+        const jpEl = document.getElementById('phAfLyricJp');
+        const zhEl = document.getElementById('phAfLyricZh');
+        if (jpEl) jpEl.textContent = st.lyricJp || '♪ 纯享音乐时光 ♪';
+        if (zhEl) zhEl.textContent = st.lyricZh || '';
+
+        const dur = st.duration > 0 ? st.duration : (song?.duration || 0);
+        const cur = Number(st.currentTime || 0);
+        const pct = dur > 0 ? Math.max(0, Math.min(100, (cur / dur) * 100)) : 0;
+        const curEl = document.getElementById('phAfCurTime');
+        const durEl = document.getElementById('phAfDurTime');
+        const seekEl = document.getElementById('phAfSeek');
+        if (curEl) curEl.textContent = fmtTime(cur);
+        if (durEl) durEl.textContent = fmtTime(dur);
+        if (seekEl && !afSeeking) seekEl.value = String(pct.toFixed(1));
+
+        const volEl = document.getElementById('phAfVol');
+        const volVal = document.getElementById('phAfVolVal');
+        if (Number.isFinite(Number(st.volume))) {
+          const vv = Math.round(Number(st.volume));
+          if (volEl) volEl.value = String(vv);
+          if (volVal) volVal.textContent = `${vv}%`;
+        }
+      };
+      ambientEl._syncIslandState = syncIslandState;
+      window.addEventListener('shiny-music-state', e => {
+        if (ambientEl && !ambientEl.hidden) syncIslandState(e.detail);
+      });
+
+      const doTogglePlay = () => {
+        if (window.__shinyMusicAction) window.__shinyMusicAction(api => api.togglePlay?.());
+        else document.getElementById('islandMiniPlay')?.click();
+        setTimeout(tick, 60);
+      };
+      const doNextSong = () => {
+        if (window.__shinyMusicAction) window.__shinyMusicAction(api => api.next?.());
+        else document.getElementById('islandMiniNext')?.click();
+        setTimeout(tick, 100);
+      };
 
       document.getElementById('phAfExitBtn')?.addEventListener('click', closeAmbientFrame);
       document.getElementById('phAfNextArtBtn')?.addEventListener('click', () => {
         cycleArt();
         closeMoreMenu();
       });
-      document.getElementById('phAfPlayBtn')?.addEventListener('click', () => {
-        document.getElementById('islandMiniPlay')?.click();
-        setTimeout(tick, 60);
+      document.getElementById('phAfPlayBtn')?.addEventListener('click', e => { e.stopPropagation(); doTogglePlay(); });
+      document.getElementById('phAfPlayLgBtn')?.addEventListener('click', e => { e.stopPropagation(); doTogglePlay(); });
+      document.getElementById('phAfNextSongBtn')?.addEventListener('click', e => { e.stopPropagation(); doNextSong(); });
+      document.getElementById('phAfNextLgBtn')?.addEventListener('click', e => { e.stopPropagation(); doNextSong(); });
+      document.getElementById('phAfPrevBtn')?.addEventListener('click', e => {
+        e.stopPropagation();
+        window.__shinyMusicAction?.(api => api.prev?.());
       });
-      document.getElementById('phAfNextSongBtn')?.addEventListener('click', () => {
-        document.getElementById('islandMiniNext')?.click();
-        setTimeout(tick, 100);
+      document.getElementById('phAfFavBtn')?.addEventListener('click', e => {
+        e.stopPropagation();
+        window.__shinyMusicAction?.(api => api.toggleFav?.());
+      });
+      document.getElementById('phAfModeBtn')?.addEventListener('click', e => {
+        e.stopPropagation();
+        window.__shinyCycleMusicMode?.();
+      });
+      document.getElementById('phAfCollapseBtn')?.addEventListener('click', e => {
+        e.stopPropagation();
+        setIslandExpanded(false);
+        resetIdleTimer();
+      });
+      const afSeek = document.getElementById('phAfSeek');
+      afSeek?.addEventListener('pointerdown', () => { afSeeking = true; });
+      afSeek?.addEventListener('input', () => { afSeeking = true; });
+      afSeek?.addEventListener('change', () => {
+        const pct = parseFloat(afSeek.value) / 100;
+        afSeeking = false;
+        window.__shinyMusicAction?.(api => api.seekPercent?.(pct));
+      });
+      const afVol = document.getElementById('phAfVol');
+      afVol?.addEventListener('input', () => {
+        const vv = Number(afVol.value);
+        const volVal = document.getElementById('phAfVolVal');
+        if (volVal) volVal.textContent = `${Math.round(vv)}%`;
+        window.__shinySetMusicVolume?.(vv);
       });
       document.getElementById('phAfDimBtn')?.addEventListener('click', () => {
         dimLevel = (dimLevel + 1) % 3;
@@ -1075,30 +1348,22 @@
       const dt = document.getElementById('phAfDate');
       if (cl) cl.textContent = `${hh}:${mm}`;
       if (dt) dt.textContent = `${now.getFullYear()}年${now.getMonth() + 1}月${now.getDate()}日`;
+      if (ambientEl._syncIslandState) {
+        ambientEl._syncIslandState(window.__shinyGetMusicState?.() || {});
+      }
       try {
-        const isPlaying = document.getElementById('dynamicIsland')?.classList.contains('is-playing') ||
-                          localStorage.getItem('shiny.musicPlaying') === '1';
-        const vinylCard = document.getElementById('phAfVinylCard');
-        if (vinylCard) {
-          vinylCard.classList.toggle('is-paused', !isPlaying);
-        }
-        const playBtn = document.getElementById('phAfPlayBtn');
-        if (playBtn) {
-          playBtn.setAttribute('title', isPlaying ? '暂停 (Space)' : '播放 (Space)');
-          playBtn.setAttribute('data-tip', isPlaying ? '暂停' : '播放');
-        }
         const np = JSON.parse(localStorage.getItem('shiny.nowPlaying') || 'null');
-        if (np && np.title) {
+        if (np && np.title && !window.__shinyGetMusicState?.()?.song) {
           document.getElementById('phAfSong').textContent = np.title;
           document.getElementById('phAfArtist').textContent = np.artist || '283 Production';
         }
-        const coverSrc = document.getElementById('islandCover')?.getAttribute('src');
-        if (coverSrc) document.getElementById('phAfDisc').src = coverSrc;
       } catch {}
     };
 
     ambientEl.hidden = false;
     document.body.classList.add('is-ambient-open');
+    document.getElementById('phAfVinylCard')?.classList.remove('is-expanded');
+    document.getElementById('phAfVinylCard')?.setAttribute('aria-expanded', 'false');
     try { ambientEl.focus({ preventScroll: true }); } catch {}
     cycleArt();
     tick();
@@ -1112,6 +1377,9 @@
   function closeAmbientFrame() {
     clearTimeout(idleFadeTimer);
     clearInterval(ambientTimer);
+    const vc = document.getElementById('phAfVinylCard');
+    vc?.classList.remove('is-expanded');
+    vc?.setAttribute('aria-expanded', 'false');
     const m = document.getElementById('phAfMoreMenu');
     const b = document.getElementById('phAfMoreBtn');
     if (m) m.hidden = true;
@@ -1523,7 +1791,7 @@
         <section class="ph-dossier-hero" style="--idol-c:${esc(color)};">
           <div class="ph-dossier-avatar" id="phDossierHeroAv"></div>
           <div style="width:100%;min-width:0;">
-            <div class="ph-dossier-name-row">
+            <div class="ph-dossier-name-row" id="phDossierNameRow">
               <h3>${esc(ov.idol)}</h3>
               <span class="ph-dossier-unit">${esc(ov.unit)}</span>
               <span style="font-size:11.5px;color:#94a3b8;">${(ov.categories || []).slice(0, 3).map(c => `${esc(c.name)} ${c.count}`).join(' · ')}</span>
@@ -1596,6 +1864,22 @@
       const heroAv = document.getElementById('phDossierHeroAv');
       if (heroAv && window.CharacterPortraits?.mount) {
         window.CharacterPortraits.mount(heroAv, ov.idol);
+      }
+
+      const idolEntry = allIdols.find(x => x.name === ov.idol);
+      const nameRow = document.getElementById('phDossierNameRow');
+      if (idolEntry && nameRow) {
+        fetch('/data/official-extras.json').then(r => (r.ok ? r.json() : null)).then(ex => {
+          const sp = ex?.signatures?.[String(idolEntry.id)];
+          if (sp && nameRow.isConnected && !nameRow.querySelector('.ph-dossier-sign')) {
+            const img = document.createElement('img');
+            img.className = 'ph-dossier-sign';
+            img.alt = `${ov.idol} 官方亲笔签名`;
+            img.src = '/asset-original/' + sp;
+            img.onerror = () => img.remove();
+            nameRow.append(img);
+          }
+        }).catch(() => {});
       }
 
       contentEl.querySelectorAll('[data-word]').forEach(btn => {
@@ -1700,6 +1984,179 @@
     }
   }
 
+  async function openComicsGallery() {
+    openModal('283 PRODUCTION · OFFICIAL 4-KOMA ARCHIVE', '📖 官方四格漫画馆');
+    modalBodyEl.innerHTML = `<div class="ph-empty">正在加载官方四格漫画索引…</div>`;
+    let extras;
+    try {
+      const r = await fetch('/data/official-extras.json');
+      extras = await r.json();
+    } catch {
+      modalBodyEl.innerHTML = `<div class="ph-empty">四格漫画索引加载失败，请稍后重试。</div>`;
+      return;
+    }
+    const allComics = Array.isArray(extras?.comics) ? extras.comics : [];
+    if (modalTitleEl && allComics.length) {
+      modalTitleEl.textContent = `📖 官方四格漫画馆（${allComics.length} 篇）`;
+    }
+    if (!allComics.length) {
+      modalBodyEl.innerHTML = `<div class="ph-empty">暂未收录四格漫画数据。</div>`;
+      return;
+    }
+    const FAV_KEY = 'shiny.favoriteComics';
+    let favSet = new Set();
+    try { favSet = new Set(JSON.parse(localStorage.getItem(FAV_KEY) || '[]')); } catch {}
+    const saveFavs = () => {
+      try { localStorage.setItem(FAV_KEY, JSON.stringify([...favSet])); } catch {}
+    };
+
+    let groupFilter = 'all';
+    let searchQ = '';
+    let filtered = allComics;
+    let activeComic = allComics[Math.floor(Math.random() * allComics.length)];
+    let page = 0;
+    const perPage = 24;
+
+    modalBodyEl.innerHTML = `
+      <div class="ph-bar" style="flex-wrap:wrap;gap:8px;margin-bottom:12px;">
+        <select class="ph-select" id="phComicGroup" style="max-width:160px;">
+          <option value="all">全部 (${allComics.length})</option>
+          <option value="web">WEB 连载 (${allComics.filter(c => c.group === 'web').length})</option>
+          <option value="limited">限定四格 (${allComics.filter(c => c.group === 'limited').length})</option>
+          <option value="special">特别四格 (${allComics.filter(c => c.group === 'special').length})</option>
+          <option value="fav">★ 我的收藏</option>
+        </select>
+        <input type="search" class="ph-input" id="phComicSearch" placeholder="按编号筛选…" style="max-width:160px;">
+        <button type="button" class="ph-btn" id="phComicRandomBtn">🎲 随机抽一篇</button>
+      </div>
+      <div class="ph-comics-layout">
+        <div class="ph-comics-viewer" id="phComicViewer">
+          <div class="ph-comics-viewer-head">
+            <strong id="phComicTitle">—</strong>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;">
+              <button type="button" class="ph-btn ghost" id="phComicZoomBtn" style="height:28px;padding:0 10px;font-size:12px;">🔍 放大阅读</button>
+              <button type="button" class="ph-btn ghost" id="phComicFavBtn" style="height:28px;padding:0 10px;font-size:12px;">♡ 收藏</button>
+              <button type="button" class="ph-btn ghost" id="phComicPrevBtn" style="height:28px;padding:0 10px;font-size:12px;">← 上一篇</button>
+              <button type="button" class="ph-btn ghost" id="phComicNextBtn" style="height:28px;padding:0 10px;font-size:12px;">下一篇 →</button>
+            </div>
+          </div>
+          <div class="ph-comics-stage" id="phComicStage">
+            <img id="phComicFullImg" alt="官方四格漫画">
+          </div>
+        </div>
+        <div class="ph-comics-list-wrap">
+          <div class="ph-comics-grid" id="phComicGrid"></div>
+          <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:10px;">
+            <button type="button" class="ph-btn ghost" id="phComicPgPrev" style="height:28px;padding:0 12px;">上一页</button>
+            <span id="phComicPgInfo" style="font-size:12px;color:#cbd5e1;">1 / 1</span>
+            <button type="button" class="ph-btn ghost" id="phComicPgNext" style="height:28px;padding:0 12px;">下一页</button>
+          </div>
+        </div>
+      </div>
+    `;
+
+    const groupEl = document.getElementById('phComicGroup');
+    const searchEl = document.getElementById('phComicSearch');
+    const gridEl = document.getElementById('phComicGrid');
+    const titleEl = document.getElementById('phComicTitle');
+    const fullImg = document.getElementById('phComicFullImg');
+    const favBtn = document.getElementById('phComicFavBtn');
+    const zoomBtn = document.getElementById('phComicZoomBtn');
+    const stageEl = document.getElementById('phComicStage');
+    const pgInfo = document.getElementById('phComicPgInfo');
+    const pgPrev = document.getElementById('phComicPgPrev');
+    const pgNext = document.getElementById('phComicPgNext');
+
+    const toggleComicZoom = () => {
+      if (!stageEl) return;
+      const isZoomed = stageEl.classList.toggle('is-zoomed');
+      if (zoomBtn) zoomBtn.textContent = isZoomed ? '🔎 整页适配' : '🔍 放大阅读';
+    };
+    zoomBtn?.addEventListener('click', toggleComicZoom);
+    stageEl?.addEventListener('click', toggleComicZoom);
+
+    const comicKey = (c) => `${c.group}:${c.id}`;
+    const showComic = (c) => {
+      if (!c) return;
+      activeComic = c;
+      const gName = c.group === 'limited' ? '限定四格' : c.group === 'special' ? '特别四格' : 'WEB 连载四格';
+      if (titleEl) titleEl.textContent = `${gName} #${c.id}`;
+      if (fullImg) fullImg.src = '/asset-original/' + c.page;
+      if (favBtn) {
+        const isF = favSet.has(comicKey(c));
+        favBtn.textContent = isF ? '♥ 已收藏' : '♡ 收藏';
+        favBtn.style.color = isF ? '#fb7185' : '';
+      }
+      gridEl?.querySelectorAll('.ph-comic-thumb').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.ckey === comicKey(c));
+      });
+    };
+
+    const renderGrid = () => {
+      if (!gridEl) return;
+      const totalPages = Math.max(1, Math.ceil(filtered.length / perPage));
+      page = Math.max(0, Math.min(page, totalPages - 1));
+      const slice = filtered.slice(page * perPage, (page + 1) * perPage);
+      gridEl.replaceChildren();
+      if (!slice.length) {
+        gridEl.innerHTML = `<div class="ph-empty" style="grid-column:1/-1;">没有符合条件的四格漫画</div>`;
+      } else {
+        for (const c of slice) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'ph-comic-thumb' + (activeComic && comicKey(activeComic) === comicKey(c) ? ' active' : '');
+          btn.dataset.ckey = comicKey(c);
+          btn.innerHTML = `<img src="/asset-original/${esc(c.icon)}" loading="lazy" alt="#${esc(c.id)}"><span>#${esc(c.id)}</span>`;
+          btn.onclick = () => showComic(c);
+          gridEl.appendChild(btn);
+        }
+      }
+      if (pgInfo) pgInfo.textContent = `${page + 1} / ${totalPages}（共 ${filtered.length} 篇）`;
+      if (pgPrev) pgPrev.disabled = page === 0;
+      if (pgNext) pgNext.disabled = page + 1 >= totalPages;
+    };
+
+    const applyFilter = () => {
+      filtered = allComics.filter(c => {
+        if (groupFilter === 'fav' && !favSet.has(comicKey(c))) return false;
+        if (groupFilter !== 'all' && groupFilter !== 'fav' && c.group !== groupFilter) return false;
+        if (searchQ && !c.id.toLowerCase().includes(searchQ)) return false;
+        return true;
+      });
+      page = 0;
+      renderGrid();
+    };
+
+    groupEl?.addEventListener('change', () => { groupFilter = groupEl.value; applyFilter(); });
+    searchEl?.addEventListener('input', () => { searchQ = searchEl.value.trim().toLowerCase(); applyFilter(); });
+    pgPrev?.addEventListener('click', () => { page--; renderGrid(); });
+    pgNext?.addEventListener('click', () => { page++; renderGrid(); });
+    document.getElementById('phComicRandomBtn')?.addEventListener('click', () => {
+      const pool = filtered.length ? filtered : allComics;
+      showComic(pool[Math.floor(Math.random() * pool.length)]);
+    });
+    favBtn?.addEventListener('click', () => {
+      if (!activeComic) return;
+      const k = comicKey(activeComic);
+      if (favSet.has(k)) favSet.delete(k);
+      else favSet.add(k);
+      saveFavs();
+      showComic(activeComic);
+      if (groupFilter === 'fav') applyFilter();
+    });
+    const stepComic = (delta) => {
+      const pool = filtered.length ? filtered : allComics;
+      const idx = pool.findIndex(c => comicKey(c) === comicKey(activeComic));
+      const next = pool[(idx + delta + pool.length) % pool.length];
+      showComic(next);
+    };
+    document.getElementById('phComicPrevBtn')?.addEventListener('click', () => stepComic(-1));
+    document.getElementById('phComicNextBtn')?.addEventListener('click', () => stepComic(1));
+
+    showComic(activeComic);
+    applyFilter();
+  }
+
   function mountMoreHub() {
     const utils = document.querySelector('.shell-utils');
     if (!utils || document.getElementById('btnMoreHub')) return;
@@ -1714,41 +2171,21 @@
         <svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg>
       </button>
       <div class="more-hub-popover" id="moreHubPopover" hidden>
-        <div class="mh-head">283 PRODUCTION · 百宝箱与扩展</div>
-        <button type="button" class="mh-item" data-act="morning">
-          <span class="mh-ico">☀️</span>
-          <span class="mh-txt"><strong>每日「晨间问候」朝コミュ</strong><small>28 位偶像晨间走廊对话与经典三选一</small></span>
-          <span class="mh-badge" id="mhMorningBadge" style="${isDoneToday ? 'background:rgba(34,197,94,0.25);color:#86efac;border-color:rgba(34,197,94,0.4);' : 'background:rgba(251,191,36,0.25);color:#fde047;border-color:rgba(251,191,36,0.4);'}">${isDoneToday ? `已打卡 🔥 ${streak}天` : (streak > 0 ? `待打卡 · 连击${streak}天` : '今日待打卡')}</span>
-        </button>
-        <button type="button" class="mh-item" data-act="dossier">
-          <span class="mh-ico">🌟</span>
-          <span class="mh-txt"><strong>偶像个人高光档案 & 词云羁绊</strong><small>28 位偶像口头禅词云、同框搭档热力图与私藏名台词墙</small></span>
-          <span class="mh-badge" style="background:rgba(168,85,247,0.25);color:#e9d5ff;border-color:rgba(168,85,247,0.45);">新功能</span>
-        </button>
-        <button type="button" class="mh-item" data-act="search">
-          <span class="mh-ico">🔍</span>
-          <span class="mh-txt"><strong>全剧本「台词级」秒搜</strong><small>50 万+ 句双语台词毫秒级定位名场面</small></span>
-        </button>
-        <button type="button" class="mh-item" data-act="fortune">
-          <span class="mh-ico">🎲</span>
-          <span class="mh-txt"><strong>晨间电视占卜 & 沧海遗珠盲盒</strong><small>今日幸运偶像与未看汉化好剧随机抽</small></span>
-        </button>
-        <button type="button" class="mh-item" data-act="chain">
-          <span class="mh-ico">📱</span>
-          <span class="mh-txt"><strong>283 手机 Chain 群聊 & 1v1 合集</strong><small>组合群聊、私密来电与晨间试镜互动流</small></span>
-        </button>
-        <button type="button" class="mh-item" data-act="matrix">
-          <span class="mh-ico">🕸️</span>
-          <span class="mh-txt"><strong>全员 640 组互称与原句考据盘</strong><small>28×28 双向称呼表与剧本原句出处跳转</small></span>
-        </button>
-        <button type="button" class="mh-item" data-act="resume">
-          <span class="mh-ico">📊</span>
-          <span class="mh-txt"><strong>制作人 283 履历书与成就印章册</strong><small>阅历统计、12 枚成就印章与高清长图导出</small></span>
-        </button>
+        <div class="mh-head">283 PRODUCTION · 全局工具</div>
+        <div class="mh-quick-grid">
+          <button type="button" class="mh-quick-btn" data-act="morning" title="每日晨间问候 朝コミュ"><span>☀️</span><b>晨间问候</b>${isDoneToday ? '' : '<i class="mh-quick-dot" aria-hidden="true"></i>'}</button>
+          <button type="button" class="mh-quick-btn" data-act="fortune" title="晨间电视占卜 &amp; 沧海遗珠盲盒"><span>🎲</span><b>占卜盲盒</b></button>
+          <button type="button" class="mh-quick-btn" data-act="resume" title="制作人 283 履历书与成就印章册"><span>📊</span><b>制作人履历</b></button>
+        </div>
         <button type="button" class="mh-item" data-act="companion" id="mhCompanionItem">
-          <span class="mh-ico">💬</span>
-          <span class="mh-txt"><strong>透明桌面伙伴 · AI / 记事本 / 语音</strong><small>置顶悬浮伙伴、整点报时与语音一键接入</small></span>
+          <span class="mh-ico">🐾</span>
+          <span class="mh-txt"><strong>桌面小人伙伴（透明桌宠）</strong><small>283 两头身小人常驻桌面、随歌起舞、AI 对话与记事本</small></span>
           <span class="mh-badge">桌面</span>
+        </button>
+        <button type="button" class="mh-item" data-act="ministage">
+          <span class="mh-ico">🎭</span>
+          <span class="mh-txt"><strong>283 迷你排练室 &amp; 5人 LIVE 小剧场</strong><small>官方两头身 5 人编队、培育排练与 LIVE 应援</small></span>
+          <span class="mh-badge" style="background:rgba(244,114,182,0.24);color:#fbcfe8;border-color:rgba(244,114,182,0.45);">小人</span>
         </button>
         <button type="button" class="mh-item" data-act="pack4k">
           <span class="mh-ico">💎</span>
@@ -1772,25 +2209,57 @@
     const closePop = () => {
       pop.hidden = true;
       btn.setAttribute('aria-expanded', 'false');
+      const bd = document.getElementById('shellPopBackdrop');
+      if (bd) {
+        const islandOpen = document.getElementById('islandPopover')?.classList.contains('is-open');
+        const envOpen = !document.getElementById('envPopover')?.hidden;
+        bd.hidden = !(islandOpen || envOpen);
+      }
     };
 
-    btn.addEventListener('click', e => {
-      e.stopPropagation();
-      const open = pop.hidden;
-      pop.hidden = !open;
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    const openPop = () => {
+      pop.hidden = false;
+      btn.setAttribute('aria-expanded', 'true');
+      const bd = document.getElementById('shellPopBackdrop');
+      if (bd) bd.hidden = false;
       const fxSub = document.getElementById('mhStageFxSub');
       if (fxSub) {
         const isSoft = document.documentElement.dataset.stageFx === 'soft';
         fxSub.textContent = isSoft ? '当前：柔光省电（点击切换全力拉满）' : '当前：全力拉满（点击切换柔光）';
       }
+    };
+
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const willOpen = pop.hidden;
+      if (willOpen) openPop();
+      else closePop();
+    });
+
+    document.addEventListener('pointerdown', e => {
+      if (!pop.hidden && !anchor.contains(e.target)) closePop();
     });
 
     document.addEventListener('click', e => {
       if (!pop.hidden && !anchor.contains(e.target)) closePop();
     });
 
-    pop.querySelectorAll('.mh-item').forEach((item, idx) => {
+    document.getElementById('shellPopBackdrop')?.addEventListener('pointerdown', () => {
+      if (!pop.hidden) closePop();
+    });
+
+    window.addEventListener('blur', () => {
+      if (!pop.hidden) closePop();
+    });
+
+    window.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && !pop.hidden) {
+        e.stopPropagation();
+        closePop();
+      }
+    });
+
+    pop.querySelectorAll('.mh-item, .mh-quick-btn').forEach((item, idx) => {
       item.style.setProperty('--mh-i', String(idx));
       item.addEventListener('click', () => {
         const act = item.dataset.act;
@@ -1805,6 +2274,11 @@
         else if (act === 'ambient') openAmbientFrame();
         else if (act === 'companion') document.getElementById('btnCompanion')?.click();
         else if (act === 'pack4k') openPack4kModal();
+        else if (act === 'comics') openComicsGallery();
+        else if (act === 'ministage') {
+          if (window.__shinyShell?.navigate) window.__shinyShell.navigate('mini-stage.html');
+          else location.href = 'mini-stage.html';
+        }
         else if (act === 'stagefx') document.getElementById('btnStageFx')?.click();
       });
     });
@@ -1828,6 +2302,7 @@
     openResume: openProducerResume,
     openFortune: openDailyFortune,
     openAmbientFrame,
-    openMorning: openMorningGreetingModal
+    openMorning: openMorningGreetingModal,
+    openComics: openComicsGallery
   };
 })();

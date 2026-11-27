@@ -11,7 +11,7 @@ html, body.page-constellation {
   overflow: hidden;
   background: radial-gradient(ellipse at 50% 45%, #0c1428 0%, #060913 62%, #020308 100%);
   color: #f1f5f9;
-  font-family: var(--app-font, 'Segoe UI', 'Microsoft YaHei', sans-serif);
+  font-family: var(--interface-font-family, 'Segoe UI', 'Microsoft YaHei', sans-serif);
   user-select: none;
   -webkit-user-select: none;
 }
@@ -512,4 +512,40 @@ html, body.page-constellation {
   .cn-hint-bar {
     display: none;
   }
+}
+
+/* ── 283 Prism Glass Alignment & JoyTrans Fallback ── */
+.cn-brand,
+.cn-inspector,
+.cn-unit-legend,
+.cn-hint-bar {
+  background: rgba(14, 15, 22, 0.84);
+  border-color: rgba(230, 194, 122, 0.24);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.52);
+}
+.cn-brand,
+.cn-inspector {
+  border-radius: 18px;
+}
+.cn-title-block small {
+  color: #e6c27a;
+}
+.cn-title-block h1 {
+  background: linear-gradient(135deg, #fff8e7 20%, #e6c27a 62%, #7dd3fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.cn-back-btn {
+  background: rgba(230, 194, 122, 0.14);
+  border-color: rgba(230, 194, 122, 0.42);
+  color: #fde68a;
+}
+.cn-back-btn:hover {
+  background: rgba(230, 194, 122, 0.26);
+  color: #ffffff;
+}
+html[data-joytrans="1"] :where(.cn-brand, .cn-inspector, .cn-unit-legend, .cn-hint-bar) {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  background: rgba(14, 15, 22, 0.96) !important;
 }

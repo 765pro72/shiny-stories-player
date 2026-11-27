@@ -91,20 +91,35 @@
    vid.setAttribute('aria-hidden','true');
    image.after(vid);
   }
+  const isModalActive = () => !!document.querySelector('dialog[open]') || document.body.classList.contains('has-card-modal-open');
   if(vid.dataset.movieUrl===movieUrl){
    if(vid.readyState>=2){vid.classList.add('ready');image.classList.add('video-covered');}
-   vid.play().catch(()=>{});
+   if(!isModalActive())vid.play().catch(()=>{});
    return;
   }
   vid.dataset.movieUrl=movieUrl;
   vid.classList.remove('ready');
   image.classList.remove('video-covered');
-  vid.oncanplay=()=>{vid.classList.add('ready');image.classList.add('video-covered');vid.play().catch(()=>{});};
+  vid.oncanplay=()=>{
+   vid.classList.add('ready');
+   image.classList.add('video-covered');
+   if(!isModalActive())vid.play().catch(()=>{});
+  };
   vid.onerror=()=>{vid.classList.remove('ready');image.classList.remove('video-covered');};
   vid.src=movieUrl;
   vid.load();
-  vid.play().catch(()=>{});
+  if(!isModalActive())vid.play().catch(()=>{});
  }
+ window.addEventListener('card-modal-state', (e) => {
+  const v = document.querySelector('video.archive-banner-video');
+  if (v) {
+   if (e.detail?.isOpen) {
+    try { v.pause(); } catch {}
+   } else if (!document.hidden && !document.querySelector('dialog[open]') && !document.body.classList.contains('has-card-modal-open')) {
+    v.play().catch(() => {});
+   }
+  }
+ });
  // Resume & randomly decide whether to switch dynamic hero video when Shell activates this tab
  window.addEventListener('message',e=>{
   if(e.origin!==location.origin||e.data?.type!=='shiny-shell-visibility')return;
@@ -238,7 +253,12 @@
  // Includes BOTH 觉醒前 & 觉醒后 movies; stops automatically once 100 videos are cached!
  function pumpBackgroundOnlineVideo(allEntries, onReady) {
   const sp = getSharedPool();
-  if (sp.loading || sp.readyOnline.length >= MAX_ONLINE_VIDEOS) return;
+  if (sp.loading || sp.readyOnline.length >= MAX_ONLINE_VIDEOS || document.querySelector('dialog[open]') || document.body.classList.contains('has-card-modal-open')) {
+   if (sp.readyOnline.length < MAX_ONLINE_VIDEOS) {
+    setTimeout(() => pumpBackgroundOnlineVideo(allEntries, onReady), 4000);
+   }
+   return;
+  }
   const userLocalPaths = new Set(sp.userLocalPool.map(x => x.moviePath));
   const candidates = allEntries.filter(e =>
    e.moviePath &&

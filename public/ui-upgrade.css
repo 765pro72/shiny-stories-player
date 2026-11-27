@@ -4,36 +4,35 @@
    and staggered entrance animations onto the existing interface.
    ═══════════════════════════════════════════════════════════════════ */
 
-/* ── 1. Warm Color Tokens ─────────────────────────────────── */
+/* ── 1. Unified Prism Glass Color Tokens (aligned with apple-reset.css) ── */
 :root {
-  /* Shift the palette from cool blue-gray to warm rose-gold */
-  --paper: #faf7f4;
-  --surface: #fffbf8;
-  --ink: #2d2438;
-  --muted: #8b7f8e;
-  --line: #ebe4e0;
-  --rose: #d06888;
-  --rose-light: #fdf0f4;
-  --blue: #f0ebf6;
+  --paper: var(--ap-bg, #f5f6fa);
+  --surface: var(--ap-surface-solid, #ffffff);
+  --ink: var(--ap-ink, #141821);
+  --muted: var(--ap-ink-2, #4e596c);
+  --line: var(--ap-border, rgba(15, 23, 42, 0.08));
+  --rose: var(--ap-rose, #ec4899);
+  --rose-light: rgba(14, 165, 233, 0.08);
+  --blue: rgba(56, 189, 248, 0.08);
 
-  /* New aurora tokens */
-  --aurora-rose: #e8a0b8;
-  --aurora-gold: #d4b896;
-  --aurora-violet: #b8a0d4;
-  --aurora-sky: #a0c4d8;
+  /* Prism aurora tokens */
+  --aurora-rose: #f472b6;
+  --aurora-gold: #e6c27a;
+  --aurora-violet: #818cf8;
+  --aurora-sky: #38bdf8;
 
-  /* Depth shadow system (warm undertones) */
-  --shadow-xs: 0 1px 3px #d4789a08, 0 1px 2px #2d243804;
-  --shadow-sm: 0 2px 8px #d4789a0a, 0 1px 3px #2d243806;
-  --shadow-md: 0 8px 24px #d4789a0d, 0 3px 8px #2d243805;
-  --shadow-lg: 0 16px 48px #d4789a12, 0 6px 16px #2d243808;
-  --shadow-xl: 0 24px 64px #d4789a18, 0 8px 24px #2d24380a;
+  /* Depth shadow system */
+  --shadow-xs: var(--ap-shadow-xs, 0 2px 8px rgba(15, 23, 42, 0.045));
+  --shadow-sm: var(--ap-shadow-sm, 0 6px 20px rgba(15, 23, 42, 0.065), 0 1px 3px rgba(15, 23, 42, 0.035));
+  --shadow-md: var(--ap-shadow-md, 0 14px 36px rgba(15, 23, 42, 0.095), 0 3px 10px rgba(15, 23, 42, 0.045));
+  --shadow-lg: var(--ap-shadow-lg, 0 24px 64px rgba(15, 23, 42, 0.16), 0 6px 18px rgba(15, 23, 42, 0.07));
+  --shadow-xl: 0 28px 72px rgba(15, 23, 42, 0.18), 0 8px 24px rgba(15, 23, 42, 0.08);
 
-  /* Warm glass */
-  --glass-fill: #fffbf8e6;
-  --glass-shadow: 0 12px 32px #d4789a0d, 0 4px 8px #2d243805,
-    inset 0 1px 0 #ffffffea, inset 1px 0 0 #ffffff70,
-    inset 0 -1px 0 #d4789a0c;
+  /* Prism glass */
+  --glass-fill: var(--ap-surface, rgba(255, 255, 255, 0.78));
+  --glass-shadow: 0 12px 32px rgba(15, 23, 42, 0.07), 0 4px 8px rgba(15, 23, 42, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92), inset 1px 0 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1px 0 rgba(15, 23, 42, 0.05);
   --glass-blur: blur(20px) saturate(148%);
 
   /* Motion curves */
@@ -43,20 +42,11 @@
   --ease-bounce: cubic-bezier(.34, 1.56, .64, 1);
 
   /* Shimmer */
-  --shimmer-base: #f0e8ec;
-  --shimmer-highlight: #fdf5f8;
+  --shimmer-base: rgba(148, 163, 184, 0.16);
+  --shimmer-highlight: rgba(255, 255, 255, 0.45);
 }
 
-/* ── 2. Surface & Background ───────────────────────────────── */
-/* Warm radial glow on body background */
-body:not(.page-home) {
-  background:
-    radial-gradient(ellipse at 80% 8%, #f5dfe84a, transparent 44%),
-    radial-gradient(ellipse at 10% 50%, #ede0f04a, transparent 38%),
-    radial-gradient(ellipse at 50% 90%, #e8ddd44a, transparent 40%),
-    var(--paper) !important;
-  background-attachment: fixed !important;
-}
+/* ── 2. Surface & Background (delegated to apple-reset.css Prism Glass) ─ */
 
 /* ── 3. Header & Navigation Refinements (Apple Pro Glass) ──────────────────── */
 .site-header {

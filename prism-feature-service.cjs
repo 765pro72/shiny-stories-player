@@ -2,6 +2,20 @@
 const fs = require('fs');
 const path = require('path');
 
+function normalizeScriptLine(s) {
+  return String(s || '')
+    .replace(/\\r\\n|\\n|\\r/g, '\n')
+    .replace(/\r\n?/g, '\n')
+    .split('\n')
+    .map(l => l.trim())
+    .join('\n')
+    .trim();
+}
+
+function flattenScriptLine(s) {
+  return normalizeScriptLine(s).replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
 function createPrismFeatureService({ base, dataRoot }) {
   let corpusCache = null; // [{ key, title, idol, group, category, rows: [{ name, text, trans, id }] }]
   let catalogByKey = null;
@@ -36,8 +50,8 @@ function createPrismFeatureService({ base, dataRoot }) {
           rows: rows.map(r => ({
             id: r.id || '',
             name: String(r.name || r.speaker || '').trim(),
-            text: String(r.text || r.original || '').trim(),
-            trans: String(r.trans || r.translation || '').trim()
+            text: normalizeScriptLine(r.text || r.original || ''),
+            trans: normalizeScriptLine(r.trans || r.translation || '')
           }))
         });
       } catch {}
@@ -84,8 +98,8 @@ function createPrismFeatureService({ base, dataRoot }) {
             speaker: r.name || doc.idol || '旁白',
             text: r.text,
             trans: r.trans,
-            prev: prev ? { speaker: prev.name, text: prev.trans || prev.text } : null,
-            next: next ? { speaker: next.name, text: next.trans || next.text } : null
+            prev: prev ? { speaker: prev.name, text: flattenScriptLine(prev.trans || prev.text) } : null,
+            next: next ? { speaker: next.name, text: flattenScriptLine(next.trans || next.text) } : null
           });
         }
         total++;
@@ -158,8 +172,8 @@ function createPrismFeatureService({ base, dataRoot }) {
             participants: speakers,
             lines: seq.map(l => ({
               speaker: l.speaker || l.characterName || '偶像',
-              text: l.original || l.text || '',
-              trans: l.translation || l.trans || '',
+              text: normalizeScriptLine(l.original || l.text || ''),
+              trans: normalizeScriptLine(l.translation || l.trans || ''),
               voice: l.path ? '/asset/' + l.path : ''
             }))
           });
@@ -217,6 +231,7 @@ function createPrismFeatureService({ base, dataRoot }) {
       const s = catalogByKey?.get(e.key);
       return {
         ...e,
+        text: e.text ? normalizeScriptLine(e.text) : e.text,
         storyTitle: s ? `${s.group ? s.group + ' · ' : ''}${s.title}` : e.key
       };
     });

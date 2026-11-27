@@ -88,6 +88,16 @@
     return;
   }
 
+  // Standalone index.html: trigger official startup Title Call once
+  const triggerStandaloneTitleCall = () => {
+    try { window.ShinyTitleCall?.play?.(); } catch {}
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', triggerStandaloneTitleCall, { once: true });
+  } else {
+    triggerStandaloneTitleCall();
+  }
+
   // Universal fail-safe: wait for real assets (up to 4200ms desktop / 3600ms mobile)
   const MAX_BOOT_WAIT = isMobilePlatform ? 3600 : 4200;
   setTimeout(() => {

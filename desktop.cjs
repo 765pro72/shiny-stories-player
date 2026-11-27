@@ -1,5 +1,24 @@
 if(!require('./assistant-test-entry.cjs').tryRun()){
-const {app,BrowserWindow,ipcMain,shell,net,dialog,screen}=require('electron'),path=require('path'),fs=require('fs');const {start}=require('./server.cjs');const {BackgroundUpdates}=require('./update-background.cjs');const {downloadAll}=require('./offline-downloader.cjs');let server,w,companionWin=null,busy=false,updates,assistant;
+const {app,BrowserWindow,ipcMain,shell,net,dialog,screen}=require('electron'),path=require('path'),fs=require('fs'),{spawn}=require('child_process');const {start}=require('./server.cjs');const {BackgroundUpdates}=require('./update-background.cjs');const {downloadAll}=require('./offline-downloader.cjs');let server,w,companionWin=null,companionSize={width:280,height:280},companionHookProc=null,companionHookBuf='',busy=false,updates,assistant;
+function stopCompanionInputHook(){if(companionHookProc){try{companionHookProc.kill();}catch{}companionHookProc=null;companionHookBuf='';}}
+function startCompanionInputHook(){
+ if(process.platform!=='win32'||!companionWin||companionWin.isDestroyed()||companionHookProc)return;
+ const script=path.join(__dirname,'companion-input-hook.ps1');if(!fs.existsSync(script))return;
+ try{
+  const proc=spawn('powershell.exe',['-NoProfile','-NonInteractive','-WindowStyle','Hidden','-ExecutionPolicy','Bypass','-File',script],{windowsHide:true,stdio:['ignore','pipe','ignore']});
+  companionHookProc=proc;companionHookBuf='';
+  proc.stdout.setEncoding('utf8');
+  proc.stdout.on('data',chunk=>{
+   companionHookBuf+=chunk;let nl;
+   while((nl=companionHookBuf.indexOf('\n'))!==-1){
+    const line=companionHookBuf.slice(0,nl).trim();companionHookBuf=companionHookBuf.slice(nl+1);
+    if(!line||!companionWin||companionWin.isDestroyed())continue;
+    try{companionWin.webContents.send('companion-input',JSON.parse(line));}catch{}
+   }
+  });
+  proc.on('exit',()=>{if(companionHookProc===proc)companionHookProc=null;});
+ }catch{companionHookProc=null;}
+}
 try{
   app.commandLine.appendSwitch('high-dpi-support','1');
   app.commandLine.appendSwitch('autoplay-policy','no-user-gesture-required');
@@ -80,26 +99,32 @@ ipcMain.handle('is-fullscreen',()=>w&&!w.isDestroyed()?w.isFullScreen():false);
 ipcMain.handle('set-zoom-factor',(e,factor)=>{if(w&&!w.isDestroyed()){w.webContents.setZoomFactor(factor);return w.webContents.getZoomFactor();}return 1;});
 ipcMain.handle('get-zoom-factor',()=>w&&!w.isDestroyed()?w.webContents.getZoomFactor():1);
 ipcMain.handle('toggle-companion',async()=>{
- if(companionWin&&!companionWin.isDestroyed()){companionWin.close();companionWin=null;return{open:false};}
+ if(companionWin&&!companionWin.isDestroyed()){stopCompanionInputHook();companionWin.close();companionWin=null;return{open:false};}
  const wa=screen.getPrimaryDisplay().workArea;
- const cw=350,ch=490;
+ const cw=280,ch=280;
+ companionSize={width:cw,height:ch};
  companionWin=new BrowserWindow({
-  width:cw,height:ch,minWidth:260,minHeight:360,
+  width:cw,height:ch,minWidth:cw,minHeight:ch,maxWidth:cw,maxHeight:ch,
   x:Math.max(wa.x+20,wa.x+wa.width-cw-28),
   y:Math.max(wa.y+20,wa.y+wa.height-ch-24),
-  transparent:true,frame:false,alwaysOnTop:true,resizable:true,hasShadow:false,
+  transparent:true,frame:false,alwaysOnTop:true,resizable:false,maximizable:false,hasShadow:false,
   backgroundColor:'#00000000',title:'283 桌面伙伴',icon:path.join(__dirname,'assets/app.ico'),
   webPreferences:{preload:path.join(__dirname,'preload.cjs'),nodeIntegration:false,contextIsolation:true,sandbox:true,backgroundThrottling:false,autoplayPolicy:'no-user-gesture-required'}
  });
  companionWin.setMenuBarVisibility(false);
- companionWin.on('closed',()=>{companionWin=null;if(w&&!w.isDestroyed())w.webContents.send('companion-state',{open:false});});
+ companionWin.on('closed',()=>{stopCompanionInputHook();companionWin=null;if(w&&!w.isDestroyed())w.webContents.send('companion-state',{open:false});});
  await companionWin.loadURL(s.url+'/companion.html');
  if(w&&!w.isDestroyed())w.webContents.send('companion-state',{open:true});
  return{open:true};
 });
 ipcMain.handle('is-companion-open',()=>!!(companionWin&&!companionWin.isDestroyed()));
-ipcMain.handle('companion-close',()=>{if(companionWin&&!companionWin.isDestroyed()){companionWin.close();companionWin=null;}return{open:false};});
+ipcMain.handle('companion-close',()=>{stopCompanionInputHook();if(companionWin&&!companionWin.isDestroyed()){companionWin.close();companionWin=null;}return{open:false};});
 ipcMain.handle('companion-set-always-on-top',(e,flag)=>{if(companionWin&&!companionWin.isDestroyed()){companionWin.setAlwaysOnTop(!!flag);return companionWin.isAlwaysOnTop();}return false;});
 ipcMain.handle('companion-set-ignore-mouse',(e,ignore,opts)=>{if(companionWin&&!companionWin.isDestroyed()){companionWin.setIgnoreMouseEvents(!!ignore,opts||{forward:true});return true;}return false;});
-w=new BrowserWindow(require('./desktop-window.cjs').windowOptions(__dirname));w.on('closed',()=>{if(companionWin&&!companionWin.isDestroyed())companionWin.close();});require('./desktop-window.cjs').watchWindowChrome(w);require('./desktop-window.cjs').watchUnsaved(w,dialog);w.setMenuBarVisibility(false);w.webContents.setWindowOpenHandler(()=>({action:'deny'}));w.webContents.on('will-navigate',(e,url)=>{if(new URL(url).origin!==s.url)e.preventDefault();});require('./assistant-desktop.cjs').bind({app,win:w,ipcMain,dialog,assistant,userData:dir,runtimeRoot:path.dirname(app.getPath('exe')),isBusy:()=>busy||updates?.state.status==='running'});await w.loadURL(s.url+'/'+(repairReceipt?.config.page||'shell.html'));if(repairReceipt)try{await require('./assistant-desktop.cjs').restore({receipt:repairReceipt,win:w,assistant})}catch(e){await dialog.showMessageBox(w,{type:'error',title:'修复启动确认',message:e.message,detail:'原程序备份和恢复草稿保留在本次任务文件夹。'})}});app.on('window-all-closed',()=>{assistant?.dispose();server?.close();updates?.dispose();app.quit();});
+ipcMain.handle('companion-set-input-hook',()=>false);
+ipcMain.handle('companion-get-bounds',()=>{if(companionWin&&!companionWin.isDestroyed()){const b=companionWin.getBounds();return{x:b.x,y:b.y,width:companionSize.width,height:companionSize.height};}return null;});
+ipcMain.handle('companion-set-position',(e,pos)=>{if(companionWin&&!companionWin.isDestroyed()&&pos){const nx=Math.round(Number(pos.x));const ny=Math.round(Number(pos.y));if(Number.isFinite(nx)&&Number.isFinite(ny)){companionWin.setBounds({x:nx,y:ny,width:companionSize.width,height:companionSize.height});return true;}}return false;});
+ipcMain.handle('companion-set-bounds',(e,b)=>{if(companionWin&&!companionWin.isDestroyed()&&b){const cur=companionWin.getBounds();const wa=screen.getDisplayMatching(cur).workArea;const curW=companionSize.width,curH=companionSize.height;const nw=Math.max(220,Math.min(720,Math.round(Number(b.width)||curW)));const nh=Math.max(210,Math.min(820,Math.round(Number(b.height)||curH)));const nearRight=(cur.x+curW/2)>(wa.x+wa.width/2);const rawX=nearRight?(cur.x+curW-nw):cur.x;const rawY=cur.y+(curH-nh);const nx=Math.max(wa.x+6,Math.min(rawX,wa.x+wa.width-nw-6));const ny=Math.max(wa.y+6,Math.min(rawY,wa.y+wa.height-nh-6));companionSize={width:nw,height:nh};companionWin.setResizable(true);companionWin.setMinimumSize(nw,nh);companionWin.setMaximumSize(nw,nh);companionWin.setBounds({x:Math.round(nx),y:Math.round(ny),width:nw,height:nh});companionWin.setResizable(false);return true;}return false;});
+ipcMain.handle('companion-notify-outfit',(e,payload)=>{if(companionWin&&!companionWin.isDestroyed()){companionWin.webContents.send('companion-outfit',payload);return true;}return false;});
+w=new BrowserWindow(require('./desktop-window.cjs').windowOptions(__dirname));w.on('closed',()=>{stopCompanionInputHook();if(companionWin&&!companionWin.isDestroyed())companionWin.close();});require('./desktop-window.cjs').watchWindowChrome(w);require('./desktop-window.cjs').watchUnsaved(w,dialog);w.setMenuBarVisibility(false);w.webContents.setWindowOpenHandler(()=>({action:'deny'}));w.webContents.on('will-navigate',(e,url)=>{if(new URL(url).origin!==s.url)e.preventDefault();});require('./assistant-desktop.cjs').bind({app,win:w,ipcMain,dialog,assistant,userData:dir,runtimeRoot:path.dirname(app.getPath('exe')),isBusy:()=>busy||updates?.state.status==='running'});await w.loadURL(s.url+'/'+(repairReceipt?.config.page||'shell.html'));if(repairReceipt)try{await require('./assistant-desktop.cjs').restore({receipt:repairReceipt,win:w,assistant})}catch(e){await dialog.showMessageBox(w,{type:'error',title:'修复启动确认',message:e.message,detail:'原程序备份和恢复草稿保留在本次任务文件夹。'})}});app.on('window-all-closed',()=>{stopCompanionInputHook();assistant?.dispose();server?.close();updates?.dispose();app.quit();});
 }

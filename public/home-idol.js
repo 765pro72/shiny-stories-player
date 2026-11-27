@@ -73,10 +73,25 @@ window.addEventListener('translation-overrides-changed',()=>{if(window.currentSu
  window.homeStage.applySilent=applySilent;
  const chkSilent=$('#homeSilent');if(chkSilent){chkSilent.checked=!!prefs.silent;chkSilent.onchange=e=>applySilent(e.target.checked);}
  if(prefs.silent)applySilent(true);
+ const tcApi=()=>window.parent?.ShinyTitleCall||window.ShinyTitleCall;
+ const chkTitleCall=$('#bootTitleCallToggle');
+ if(chkTitleCall){
+  const api=tcApi();
+  chkTitleCall.checked=api?api.isEnabled():(localStorage.getItem('shiny.titleCall')!=='0');
+  chkTitleCall.onchange=e=>{const v=!!e.target.checked;window.ShinyTitleCall?.setEnabled?.(v);try{window.parent?.ShinyTitleCall?.setEnabled?.(v)}catch{}if(!v)try{localStorage.setItem('shiny.titleCall','0')}catch{}};
+ }
+ const btnPreviewTc=$('#btnPreviewTitleCall'),tcStatus=$('#titleCallPreviewStatus');
+ if(btnPreviewTc){
+  btnPreviewTc.onclick=async()=>{
+   const api=tcApi();if(!api)return;
+   if(tcStatus)tcStatus.textContent='准备播放…';
+   await api.play({force:true,onPick:p=>{if(tcStatus&&p)tcStatus.textContent=`正在播放：${p.name}（${p.unit}）`;},onEnd:()=>{if(tcStatus)tcStatus.textContent+=' · 播放完成';}});
+  };
+ }
  let shellActive=true;
  const syncTickerPower=()=>{try{if(shellActive&&!document.hidden){if(typeof app.render==='function')app.render();if(!app.ticker.started)app.ticker.start();}else{if(app.ticker.started)app.ticker.stop();}}catch{}};
  window.addEventListener('message',e=>{if(e.origin!==location.origin||e.data?.type!=='shiny-shell-visibility')return;shellActive=!!e.data.active;syncTickerPower();if(!shellActive)stop();else scheduleOfficialIdleTalk(false);});
- let idleTalkTimer=0;const scheduleOfficialIdleTalk=(first=false)=>{clearTimeout(idleTalkTimer);idleTalkTimer=setTimeout(()=>{if(shellActive&&prefs.idle&&!prefs.silent&&localStorage.getItem('shiny.homeSilent')!=='1'&&!document.hidden&&!$('#wardrobeDialog').open&&(!audio||audio.paused)&&!window.homeMulti?.isConversationPlaying?.())(window.homeMulti?.speakBlank||speak)();scheduleOfficialIdleTalk(false)},first?6500:(18000+Math.floor(Math.random()*8000)))};scheduleOfficialIdleTalk(true);document.addEventListener('visibilitychange',()=>{syncTickerPower();if(document.hidden)stop()});window.addEventListener('pagehide',stop);
+ let idleTalkTimer=0;const scheduleOfficialIdleTalk=(first=false)=>{clearTimeout(idleTalkTimer);idleTalkTimer=setTimeout(()=>{const tcPlaying=Boolean(window.__shinyTitleCallPlaying||window.parent?.__shinyTitleCallPlaying);if(shellActive&&prefs.idle&&!prefs.silent&&localStorage.getItem('shiny.homeSilent')!=='1'&&!document.hidden&&!$('#wardrobeDialog').open&&(!audio||audio.paused)&&!tcPlaying&&!window.homeMulti?.isConversationPlaying?.())(window.homeMulti?.speakBlank||speak)();scheduleOfficialIdleTalk(false)},first?6500:(18000+Math.floor(Math.random()*8000)))};scheduleOfficialIdleTalk(true);document.addEventListener('visibilitychange',()=>{syncTickerPower();if(document.hidden)stop()});window.addEventListener('pagehide',stop);
  // Speculatively start fetching saved Spine model in parallel with 2MB catalog.json!
  if(prefs.outfitPath&&window.getSpineData){const fastUrl=prefs.outfit==='1040210030-plain'?'/home-assets/madoka/data.json':'/asset-original/'+prefs.outfitPath;window.getSpineData(fastUrl).catch(()=>{});}
  Promise.all(['/home-assets/catalog.json','/home-assets/generic-voices.json'].map(url=>fetch(url).then(r=>r.json()))).then(([c,generic])=>{HomeVoicePolicy.prepare(c,generic);catalog=c;window.dispatchEvent(new CustomEvent('home-catalog-ready'));options($('#idolSelect'),c);$('#idolSelect').value=c.some(x=>x.id===prefs.idol)?prefs.idol:c[0].id;chooseIdol($('#idolSelect').value)}).catch(e=>$('#greeting').textContent='看板目录载入失败：'+e.message);

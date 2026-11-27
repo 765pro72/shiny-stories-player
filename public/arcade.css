@@ -2115,3 +2115,8 @@ body.is-arcade-fullscreen .hand-cards-fan {
   .poker-card .pc-rank { font-size: 20px !important; }
   .poker-card .pc-suit { font-size: 30px !important; }
 }
+
+html[data-joytrans="1"] :where(.arcade-hero, .game-card, .arcade-modal, .casino-table, .arcade-pill) {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}

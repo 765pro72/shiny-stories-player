@@ -99,8 +99,72 @@
   window.addEventListener('shiny-office-bind-changed', () => applyAtmosphere());
 
   let currentBgKey = '';
+  let currentCustomUrl = '';
   let bgFadeLayer = null;
   let bgFadeAnim = null;
+
+  const BG_MODE_KEY = 'shiny.officeBgMode';
+  const BG_CUSTOM_KEY = 'shiny.officeCustomBg';
+  const BG_FAV_KEY = 'shiny.officeFavoriteBgs';
+  let officeBgMode = (() => {
+    try {
+      const m = localStorage.getItem(BG_MODE_KEY);
+      return ['classic', 'contextual', 'random-hourly', 'custom'].includes(m) ? m : 'classic';
+    } catch { return 'classic'; }
+  })();
+  let officeCustomBg = (() => {
+    try { return localStorage.getItem(BG_CUSTOM_KEY) || ''; } catch { return ''; }
+  })();
+  let officialBgs = null;
+  let officialBgsPromise = null;
+  let pickedPoolUrl = '';
+  let lastPoolBucket = '';
+  let bgLoadSerial = 0;
+
+  function loadOfficialBgs() {
+    if (officialBgs) return Promise.resolve(officialBgs);
+    if (!officialBgsPromise) {
+      officialBgsPromise = fetch('/data/official-extras.json')
+        .then(r => (r.ok ? r.json() : null))
+        .then(d => {
+          officialBgs = Array.isArray(d?.backgrounds) ? d.backgrounds : [];
+          return officialBgs;
+        })
+        .catch(() => { officialBgs = []; return []; });
+    }
+    return officialBgsPromise;
+  }
+
+  function pickBgForMode(list, state, forceNew = false) {
+    if (!list.length) return null;
+    if (officeBgMode === 'custom' && officeCustomBg) {
+      const hit = list.find(x => x.bg === officeCustomBg);
+      if (hit) return hit;
+    }
+    const now = new Date();
+    const hourKey = `${now.getFullYear()}-${now.getMonth()}-${now.getDate()}-${now.getHours()}`;
+    const musicPlaying = localStorage.getItem('shiny.musicPlaying') === '1' ? '1' : '0';
+    const bucket = officeBgMode === 'contextual'
+      ? `${hourKey}:${state.bg}:${musicPlaying}`
+      : `${hourKey}:hourly`;
+    if (!forceNew && pickedPoolUrl && lastPoolBucket === bucket) {
+      const existing = list.find(x => ('/asset-original/' + x.bg) === pickedPoolUrl);
+      if (existing) return existing;
+    }
+    lastPoolBucket = bucket;
+    if (officeBgMode === 'contextual') {
+      // Spread cleanly across the 215-entry official catalog by season + timeSlot + music state
+      const month = now.getMonth();
+      const seedStr = `${bucket}:${month}:${forceNew ? Math.random() : 'stable'}`;
+      let hash = 2166136261;
+      for (let i = 0; i < seedStr.length; i++) {
+        hash = Math.imul(hash ^ seedStr.charCodeAt(i), 16777619);
+      }
+      const idx = Math.abs(hash) % list.length;
+      return list[idx];
+    }
+    return list[Math.floor(Math.random() * list.length)];
+  }
 
   function ensureBgFadeLayer(screen) {
     if (bgFadeLayer && bgFadeLayer.isConnected) return bgFadeLayer;
@@ -122,14 +186,9 @@
     return bgFadeLayer;
   }
 
-  function applyAtmosphere() {
-    const screen = document.querySelector('.screen');
-    if (!screen) return;
-    const state = computeEffectiveState();
-    const nextUrl = BG_URLS[state.bg] || BG_URLS.day;
-
-    if (currentBgKey && currentBgKey !== state.bg) {
-      const prevUrl = BG_URLS[currentBgKey] || BG_URLS.day;
+  function crossfadeToBg(screen, nextUrl, nextKey) {
+    const prevUrl = currentCustomUrl || BG_URLS[currentBgKey] || BG_URLS.day;
+    if (currentBgKey && prevUrl !== nextUrl) {
       const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (!reduced) {
         const layer = ensureBgFadeLayer(screen);
@@ -155,10 +214,53 @@
     } else {
       screen.style.backgroundImage = nextUrl;
     }
-    currentBgKey = state.bg;
+    currentBgKey = nextKey;
+    currentCustomUrl = nextUrl;
+  }
+
+  function updateOfficeBgHint(label) {
+    const hint = document.getElementById('officeBgCurrentHint');
+    if (hint) hint.textContent = label;
+  }
+
+  function applyAtmosphere(forceNew = false) {
+    const screen = document.querySelector('.screen');
+    if (!screen) return;
+    const state = computeEffectiveState();
     screen.dataset.officeTime = state.bg;
     screen.dataset.officeRain = state.rain ? '1' : '0';
     screen.dataset.officeNightRain = state.nightRain ? '1' : '0';
+
+    if (officeBgMode !== 'classic') {
+      const serial = ++bgLoadSerial;
+      loadOfficialBgs().then(list => {
+        if (serial !== bgLoadSerial || officeBgMode === 'classic') return;
+        const picked = pickBgForMode(list, state, forceNew);
+        if (!picked) {
+          crossfadeToBg(screen, BG_URLS[state.bg] || BG_URLS.day, state.bg);
+          return;
+        }
+        const rawUrl = '/asset-original/' + picked.bg;
+        const cssUrl = `url('${rawUrl}')`;
+        pickedPoolUrl = rawUrl;
+        const pre = new Image();
+        pre.onload = () => {
+          if (serial !== bgLoadSerial || officeBgMode === 'classic') return;
+          crossfadeToBg(screen, cssUrl, `official:${picked.id}`);
+          updateOfficeBgHint(`当前：官方场景 #${picked.id}（${officeBgMode === 'contextual' ? '智能情境' : officeBgMode === 'random-hourly' ? '每小时随机' : '自选固定'}）`);
+        };
+        pre.onerror = () => {
+          if (serial !== bgLoadSerial) return;
+          crossfadeToBg(screen, BG_URLS[state.bg] || BG_URLS.day, state.bg);
+        };
+        pre.src = rawUrl;
+      });
+    } else {
+      bgLoadSerial++;
+      const nextUrl = BG_URLS[state.bg] || BG_URLS.day;
+      crossfadeToBg(screen, nextUrl, state.bg);
+      updateOfficeBgHint(`当前：经典 283 事务所窗口（${state.label}）`);
+    }
 
     if (pillBtn) {
       const modeTag = userMode === 'auto' ? '' : ` · ${MODE_LABELS[userMode]}`;
@@ -302,8 +404,98 @@
     } catch {}
   }
 
+  async function openOfficeBgGallery() {
+    let dlg = document.getElementById('officeBgGalleryDialog');
+    if (!dlg) {
+      dlg = document.createElement('dialog');
+      dlg.id = 'officeBgGalleryDialog';
+      dlg.style.cssText = 'width:min(920px,94vw);max-height:88vh;padding:18px 20px;border-radius:22px;background:rgba(15,23,42,0.96);color:#f8fafc;border:1px solid rgba(125,211,252,0.28);box-shadow:0 24px 64px rgba(0,0,0,0.65);';
+      dlg.innerHTML = `
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;flex-wrap:wrap;">
+          <div>
+            <strong style="font-size:16px;">🖼️ 283 官方主页背景库（215+ 场景）</strong>
+            <div style="font-size:12px;color:#94a3b8;margin-top:2px;">点击任意场景立即设为事务所背景，或开启智能情境自动轮换</div>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <input type="search" id="officeBgSearch" placeholder="搜索编号…" style="height:32px;padding:0 10px;border-radius:8px;border:1px solid rgba(148,163,184,0.3);background:rgba(30,41,59,0.8);color:#fff;width:120px;">
+            <button type="button" id="officeBgClassicBtn" style="height:32px;padding:0 12px;border-radius:8px;border:1px solid rgba(148,163,184,0.3);background:rgba(56,189,248,0.16);color:#bae6fd;cursor:pointer;">恢复经典窗口</button>
+            <button type="button" id="officeBgCloseBtn" style="height:32px;padding:0 12px;border-radius:8px;border:1px solid rgba(148,163,184,0.3);background:rgba(255,255,255,0.08);color:#fff;cursor:pointer;">关闭 ×</button>
+          </div>
+        </div>
+        <div id="officeBgGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;overflow-y:auto;max-height:66vh;padding-right:4px;"></div>
+      `;
+      document.body.appendChild(dlg);
+      dlg.querySelector('#officeBgCloseBtn')?.addEventListener('click', () => dlg.close());
+      dlg.querySelector('#officeBgClassicBtn')?.addEventListener('click', () => {
+        officeBgMode = 'classic';
+        try { localStorage.setItem(BG_MODE_KEY, 'classic'); } catch {}
+        const sel = document.getElementById('officeBgModeSelect');
+        if (sel) sel.value = 'classic';
+        applyAtmosphere();
+        dlg.close();
+      });
+    }
+    const grid = dlg.querySelector('#officeBgGrid');
+    const search = dlg.querySelector('#officeBgSearch');
+    if (grid) grid.innerHTML = '<div style="grid-column:1/-1;padding:24px;text-align:center;color:#94a3b8;">正在加载官方背景索引…</div>';
+    dlg.showModal();
+    const list = await loadOfficialBgs();
+    const render = () => {
+      if (!grid) return;
+      const q = (search?.value || '').trim().toLowerCase();
+      const rows = q ? list.filter(b => b.id.toLowerCase().includes(q)) : list;
+      grid.replaceChildren();
+      for (const b of rows) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        const isCur = officeBgMode === 'custom' && officeCustomBg === b.bg;
+        btn.style.cssText = `display:flex;flex-direction:column;gap:5px;padding:6px;border-radius:12px;border:1.5px solid ${isCur ? '#38bdf8' : 'rgba(148,163,184,0.22)'};background:${isCur ? 'rgba(56,189,248,0.18)' : 'rgba(30,41,59,0.55)'};color:#e2e8f0;cursor:pointer;text-align:left;`;
+        btn.innerHTML = `<img src="/asset-original/${b.thumb}" loading="lazy" alt="背景 #${b.id}" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;background:#0f172a;"><span style="font-size:11.5px;font-weight:700;">官方场景 #${b.id}${isCur ? ' · 使用中' : ''}</span>`;
+        btn.onclick = () => {
+          officeBgMode = 'custom';
+          officeCustomBg = b.bg;
+          try {
+            localStorage.setItem(BG_MODE_KEY, 'custom');
+            localStorage.setItem(BG_CUSTOM_KEY, b.bg);
+          } catch {}
+          const sel = document.getElementById('officeBgModeSelect');
+          if (sel) sel.value = 'custom';
+          applyAtmosphere();
+          render();
+        };
+        grid.appendChild(btn);
+      }
+    };
+    if (search) search.oninput = render;
+    render();
+  }
+
+  function bindOfficeBgControls() {
+    const sel = document.getElementById('officeBgModeSelect');
+    const shuffleBtn = document.getElementById('btnShuffleOfficeBg');
+    const galleryBtn = document.getElementById('btnOpenOfficeBgGallery');
+    if (sel) {
+      sel.value = officeBgMode;
+      sel.addEventListener('change', () => {
+        officeBgMode = sel.value || 'classic';
+        try { localStorage.setItem(BG_MODE_KEY, officeBgMode); } catch {}
+        applyAtmosphere(true);
+      });
+    }
+    shuffleBtn?.addEventListener('click', () => {
+      if (officeBgMode === 'classic' || officeBgMode === 'custom') {
+        officeBgMode = 'random-hourly';
+        try { localStorage.setItem(BG_MODE_KEY, officeBgMode); } catch {}
+        if (sel) sel.value = officeBgMode;
+      }
+      applyAtmosphere(true);
+    });
+    galleryBtn?.addEventListener('click', () => openOfficeBgGallery());
+  }
+
   function init() {
     mountWeatherPill();
+    bindOfficeBgControls();
     applyAtmosphere();
     fetchWeather();
 

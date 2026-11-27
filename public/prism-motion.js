@@ -149,8 +149,9 @@
       || document.documentElement.dataset.android === '1'
       || document.documentElement.dataset.joytrans === '1'
       || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || '');
-    const MAX_LIVE_CARDS = isLite ? 2 : 12;
-    let shellPageActive = !document.hidden;
+    const MAX_LIVE_CARDS = isLite ? 2 : 4;
+    const isModalOpen = () => !!document.querySelector('#cardDetail[open], #storyViewer[open], dialog[open]') || document.body.classList.contains('has-card-modal-open');
+    let shellPageActive = !document.hidden && !isModalOpen();
 
     const syncCardPhaseUI = (card, slot) => {
       const stack = card.querySelector('.card-thumb-stack');
@@ -221,9 +222,10 @@
         const s = state.slots[i];
         if (i === idx) {
           s.vid.loop = !shouldCycle;
+          s.vid.preload = 'auto';
           try { s.vid.currentTime = 0; } catch {}
           s.vid.classList.add('is-ready');
-          if (shellPageActive) s.vid.play().catch(() => {});
+          if (shellPageActive && !isModalOpen()) s.vid.play().catch(() => {});
         } else {
           s.vid.loop = false;
           s.vid.classList.remove('is-ready');
@@ -256,7 +258,7 @@
     };
 
     const attachCardVideo = (card) => {
-      if (activeCards.has(card) || !card.isConnected) return;
+      if (activeCards.has(card) || !card.isConnected || isModalOpen()) return;
       const movies = parseCardMovies(card);
       if (!movies.length) return;
 
@@ -285,7 +287,7 @@
         vid.loop = true;
         vid.autoplay = false;
         vid.playsInline = true;
-        vid.preload = 'auto';
+        vid.preload = 'metadata';
         vid.src = '/asset-original/' + m.path;
 
         const slot = { ...m, vid, ready: false, failed: false };
@@ -343,7 +345,7 @@
     };
 
     const syncAllCardVideosPower = (active) => {
-      shellPageActive = !!active && !document.hidden;
+      shellPageActive = !!active && !document.hidden && !isModalOpen();
       for (const [card, state] of activeCards.entries()) {
         if (state.disposed || state.activeIdx < 0) continue;
         const cur = state.slots[state.activeIdx];
@@ -357,6 +359,9 @@
       }
     };
 
+    window.addEventListener('card-modal-state', (e) => {
+      syncAllCardVideosPower(!e.detail?.isOpen);
+    });
     document.addEventListener('visibilitychange', () => syncAllCardVideosPower(!document.hidden));
     window.addEventListener('message', (e) => {
       if (e.origin === location.origin && e.data?.type === 'shiny-shell-visibility') {

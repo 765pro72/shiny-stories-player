@@ -742,7 +742,7 @@ body:not(.page-home):not(.page-music) :is(input, select, textarea):focus {
 
 /* Sidebar / Pill Buttons */
 .guide-unified > aside .nav,
-.guide-unified .shortcuts a,
+.guide-unified .shortcuts :is(a, button),
 .guide-actions button,
 .page-wardrobe .collection-scopes button,
 .page-custom .writer-actions button {
@@ -755,7 +755,7 @@ body:not(.page-home):not(.page-music) :is(input, select, textarea):focus {
 }
 
 .guide-unified > aside .nav:hover,
-.guide-unified .shortcuts a:hover,
+.guide-unified .shortcuts :is(a, button):hover,
 .guide-actions button:hover,
 .page-wardrobe .collection-scopes button:hover,
 .page-custom .writer-actions button:hover {
@@ -921,7 +921,7 @@ html[data-theme="dark"] *::-webkit-scrollbar-thumb {
   margin-bottom: 14px !important;
 }
 
-.guide-unified .shortcuts a {
+.guide-unified .shortcuts :is(a, button) {
   padding: 5px 12px !important;
   font-size: 12px !important;
   border-radius: 999px !important;
@@ -1712,7 +1712,7 @@ html[data-theme="dark"] .guide-unified .unit,
 html[data-theme="dark"] .guide-unified #list .card,
 html[data-theme="dark"] .guide-unified .note,
 html[data-theme="dark"] .guide-unified .guide-actions button,
-html[data-theme="dark"] .guide-unified .shortcuts a,
+html[data-theme="dark"] .guide-unified .shortcuts :is(a, button),
 html[data-theme="dark"] .card-archive .unit-sidebar,
 html[data-theme="dark"] .card-archive .gallery-results,
 html[data-theme="dark"] .card-archive .gallery-controls,
@@ -1752,7 +1752,7 @@ html[data-theme="dark"] .page-wardrobe .model-card:hover,
 html[data-theme="dark"] .collection-stat:hover,
 html[data-theme="dark"] #storyTextToolbar.story-text-toolbar button:hover:not(:disabled),
 html[data-theme="dark"] .guide-unified .guide-actions button:hover:not(:disabled),
-html[data-theme="dark"] .guide-unified .shortcuts a:hover {
+html[data-theme="dark"] .guide-unified .shortcuts :is(a, button):hover {
   border-color: rgba(245, 215, 142, 0.76) !important;
   box-shadow:
     0 14px 36px rgba(0, 0, 0, 0.54),
@@ -2076,4 +2076,45 @@ html[data-theme="dark"] .page-custom .stage-caption {
   background: rgba(18, 22, 34, 0.9) !important;
   border-color: rgba(255, 255, 255, 0.2) !important;
   color: #f8fafc !important;
+}
+
+/* ── Unified Cross-Page Visual Alignment Tokens & Controls ── */
+:root {
+  --ap-radius-xl: 24px;
+  --ap-radius-lg: 18px;
+  --ap-radius-md: 12px;
+  --ap-radius-pill: 999px;
+  --ap-focus-ring: 0 0 0 3px rgba(14, 165, 233, 0.28);
+}
+
+html[data-theme="dark"] {
+  --ap-focus-ring: 0 0 0 3px rgba(230, 194, 122, 0.32);
+}
+
+body {
+  font-family: var(--interface-font-family, -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Segoe UI", "Microsoft YaHei", sans-serif);
+}
+
+:where(button, [role="button"], a, input, select, textarea):focus-visible {
+  outline: none !important;
+  box-shadow: var(--ap-focus-ring) !important;
+}
+
+/* Tabular numerals for counters, timestamps, and progress indicators */
+:where(.count, .badge, .stat, time, #count, #modelCount, #status) {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Consistent page-level main gutter & top safe spacing across embedded iframe tabs */
+body:not(.page-home):not(.page-constellation):not(.player-page):not(.companion-body) > main {
+  padding-top: max(20px, env(safe-area-inset-top, 0px));
+}
+
+/* Global JoyTrans (卓易通) / Android low-GPU backdrop-filter fallback */
+html[data-joytrans="1"] :where(.site-header, .panel, .card, .modal, dialog, .anime4k-panel, .anime4k-toast, .anime4k-floating, .assistant-panel, .card-wiki-dialog, .cg-drawer, .vg-stage) {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+html[data-joytrans="1"] :where(.panel, .card, dialog, .anime4k-panel, .anime4k-toast) {
+  background-color: var(--ap-surface-solid) !important;
 }
